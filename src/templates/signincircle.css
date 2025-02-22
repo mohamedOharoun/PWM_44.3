@@ -1,0 +1,72 @@
+
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+.circle-container {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 5px 0 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+.options {
+    font-size: 12px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+.btn-signin {
+    background: linear-gradient(90deg, #006D77, #23CFA7);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-signin:hover {
+    text-decoration: underline;
+}
