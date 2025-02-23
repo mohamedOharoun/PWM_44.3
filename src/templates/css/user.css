@@ -1,21 +1,40 @@
-html body {
-    margin: 0;
-}
-
-#user {
-    padding: 10px;
+.user_card {
+    padding: 3px 10px 3px 10px;
     display: flex;
-    border: 3px solid #23CFA7;
-    border-radius: 10px;
+    border: 4px solid #23CFA7;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 30%;
-    justify-self: center;
+    align-items: center;
+    margin: 10px 0 1px 0;
 }
 
-#photo {
+.user_card p {
+    font-size: 20px;
+}
+
+.user_card button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 4px solid grey;
+    color: grey;
+    margin: 0 20px 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.user_photo {
     border-radius: 10px;
-    border: 2px solid black;
+    border: 4px solid #23CFA7;
     width: 50px;
     height: 50px;
     margin: 0 15px 0 10px;
+}
+
+.user_photo img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }

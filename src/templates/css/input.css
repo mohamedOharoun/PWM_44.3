@@ -2,17 +2,31 @@ html body {
     margin: 0;
 }
 
-label {
-    margin: 25px;
+* {
     font-family: "League Spartan", sans-serif;
+}
+
+label {
+    margin-top: 70px;
+    font-size: 32px;
     display: flex;
     flex-direction: column;
 }
 
 input {
-    padding: 10px 15px 10px 15px;
-    border-radius: 5px;
+    margin-top: 5px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 10px;
     border: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 90%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+}
+
+label span {
+    margin-left: 5px;
+}
+
+section p {
+    font-size: 40px;
+    font-weight: bold;
 }
