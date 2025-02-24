@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/templates/css/social_navigation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/css/social_container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/social_container.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/social_navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/social_navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/user_social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
       <workItem from="1740346522600" duration="407000" />
       <workItem from="1740347110090" duration="514000" />
       <workItem from="1740422551784" duration="418000" />
-      <workItem from="1740422992623" duration="2865000" />
+      <workItem from="1740422992623" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
