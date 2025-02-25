@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="SignUpFirstStep.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="input-group single-subinput">
+        <div class="subinput-group">
+          <img src="/src/Mail.svg" alt="Mail icon" class="logo">
+          <input type="email" id="email" placeholder="Introduce your email address" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="subinput-group">
+          <img src="/src/Password.svg" alt="Mail icon" class="logo">
+          <input type="password" id="password" placeholder="Choose your password" required>
+        </div>
+        <div class="progress-bar"><div id="password-strength"></div></div>
+      </div>
+
+      <div class="input-group">
+        <div class="subinput-group">
+          <img src="/src/Password.svg" alt="Mail icon" class="logo">
+          <input type="password" id="confirm-password" placeholder="Repeat your password" required>
+        </div>
+        <div class="progress-bar"><div id="confirm-strength"></div></div>
+      </div>
+
+    </div>
+  </body>
+</html>
