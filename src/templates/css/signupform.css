@@ -19,11 +19,14 @@ body {
 .input-group {
     width: 100%;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.input-group .subinput-group{
+.input-group .subinput-group {
     display: flex;
     align-items: center;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 8px;
@@ -31,18 +34,20 @@ body {
     gap: 8px;
 }
 
+.input-group img,
 .subinput-group img {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
 }
 
+.input-group input,
 .subinput-group input {
     border: none;
     outline: none;
     width: 100%;
     padding: 0;
     font-size: 10px;
+    text-align: left;
 }
 
 .progress-bar {
@@ -53,3 +58,8 @@ body {
     margin-top: 5px;
     position: relative;
 }
+
+.input-group input[type="text"][onfocus="this.type='date']"] {
+    cursor: pointer;
+}
+

@@ -33,6 +33,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+.signupform{
+    margin: 40px 0;
+}
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -59,6 +63,10 @@ button:hover {
     background: linear-gradient(90deg, #006D77, #23CFA7);
     color: white;
     border: none;
+}
+
+.btn-container.single .btn-2 {
+    width: 100%;
 }
 
 .message, a  {
