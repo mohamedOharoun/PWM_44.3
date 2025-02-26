@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/templates/css/comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/comment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/gorup_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/gorup_creation.html" afterDir="false" />
-    </list>
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +112,7 @@
       <workItem from="1740422992623" duration="4327000" />
       <workItem from="1740503499683" duration="2598000" />
       <workItem from="1740567984923" duration="634000" />
-      <workItem from="1740586167272" duration="8146000" />
+      <workItem from="1740586167272" duration="8713000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
