@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/js/xlu-include-file.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/gorup_creation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/xlu-include-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/xlu-include-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/group_creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,6 +55,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
     "JavaScript Debug.group_creation.html.executor": "Run",
     "JavaScript Debug.header.html.executor": "Run",
     "JavaScript Debug.social_navegation.html.executor": "Run",
@@ -81,6 +81,8 @@
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Subjects\PWM_44.3\src\templates\html" />
+      <recent name="D:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
@@ -114,7 +116,7 @@
       <workItem from="1740422992623" duration="4327000" />
       <workItem from="1740503499683" duration="2598000" />
       <workItem from="1740567984923" duration="634000" />
-      <workItem from="1740586167272" duration="474000" />
+      <workItem from="1740586167272" duration="2150000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
