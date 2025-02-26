@@ -65,6 +65,7 @@ input[type="password"] {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .btn-signin:hover {
