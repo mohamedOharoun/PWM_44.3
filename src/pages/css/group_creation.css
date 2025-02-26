@@ -24,11 +24,27 @@ main {
     margin: 10px 0;
 }
 
+#group_creation h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
 #members_list {
-    height: 450px;
+    height: 370px;
     overflow-y: auto;
     padding-right: 5px;
-    margin: 10px 0;
+    margin: 40px 0;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 2px solid #23CFA7;
+    border-radius: 10px;
 }
 
 #members_list::-webkit-scrollbar {
@@ -39,4 +55,5 @@ main {
 #members_list::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #006D77, #23CFA7);
     border-radius: 10px;
+    border: none;
 }
