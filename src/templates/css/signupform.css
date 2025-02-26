@@ -54,3 +54,55 @@ body {
 .input-group input[type="text"][onfocus="this.type='date']"] {
     cursor: pointer;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#profilephoto {
+    width: 150px;
+    height: 150px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    cursor: pointer;
+    padding: 2px;
+    background-color: #cccccc;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    flex-grow: 1;
+    min-width: 50px;
+    max-width: 100px;
+}
+
+#uploadphoto {
+    width: 15px;
+}
+
+label {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.terms {
+    margin-right: 5px;
+    transform: scale(1.2);
+    accent-color: #555555;
+    cursor: pointer;
+}
+
+label:hover {
+    background: #f9f9f9;
+    transition: background 0.3s ease-in-out;
+}
