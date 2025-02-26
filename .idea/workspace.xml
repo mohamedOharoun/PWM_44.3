@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/templates/css/social_container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/social_container.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/xlu-include-file.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/social_navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/social_navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user_social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +39,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
+    "accountId": "2501a540-e9fd-4524-b093-911d91a8d0b5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -63,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "develop-Javier",
-    "last_opened_file_path": "E:/Subjects/PWM_44.3/assets/images",
+    "last_opened_file_path": "D:/Subjects/PWM_44.3/src/js",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,6 +77,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Subjects\PWM_44.3\src\js" />
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -87,7 +89,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -109,7 +111,10 @@
       <workItem from="1740346522600" duration="407000" />
       <workItem from="1740347110090" duration="514000" />
       <workItem from="1740422551784" duration="418000" />
-      <workItem from="1740422992623" duration="4200000" />
+      <workItem from="1740422992623" duration="4327000" />
+      <workItem from="1740503499683" duration="2598000" />
+      <workItem from="1740567984923" duration="634000" />
+      <workItem from="1740586167272" duration="474000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
