@@ -5,13 +5,20 @@
     font-family: "League Spartan", sans-serif;
 }
 
-main {
-    height: 100%;
-    width: 100%;
+html body {
+    height: 100vh;
+    margin: 0;
     display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     background: linear-gradient(45deg, #006D77, #23CFA7);
+    overflow: auto;
 }
 
 #group_creation {
@@ -20,7 +27,7 @@ main {
     border-radius: 15px;
     padding: 30px;
     width: 652px;
-    height: 878px;
+    height: 828px;
     margin: 10px 0;
 }
 
@@ -30,7 +37,7 @@ main {
 }
 
 #members_list {
-    height: 370px;
+    height: 300px;
     overflow-y: auto;
     padding-right: 5px;
     margin: 40px 0;

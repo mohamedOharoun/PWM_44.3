@@ -7,7 +7,10 @@
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/group_creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/gorup_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/group_creation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/group_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/group_creation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/xlu-include-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/xlu-include-file.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +84,11 @@
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Subjects\PWM_44.3\src\js" />
       <recent name="D:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="D:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
-      <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -118,7 +121,7 @@
       <workItem from="1740567984923" duration="634000" />
       <workItem from="1740586167272" duration="8713000" />
       <workItem from="1740609395685" duration="124000" />
-      <workItem from="1740609529569" duration="571000" />
+      <workItem from="1740609529569" duration="3308000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
