@@ -1,0 +1,24 @@
+#message_input {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#message_input p {
+    margin: 30px 30px 30px 60px;
+    font-size: 24px;
+}
+
+#message_icons_utilities {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+#message_icons_utilities button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

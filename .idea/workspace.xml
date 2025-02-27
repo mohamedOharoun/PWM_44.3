@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
+      <change afterPath="$PROJECT_DIR$/src/templates/css/message_input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/message_input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <workItem from="1740609395685" duration="124000" />
       <workItem from="1740609529569" duration="8153000" />
       <workItem from="1740649808772" duration="178000" />
-      <workItem from="1740671324007" duration="3249000" />
+      <workItem from="1740671324007" duration="5076000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
