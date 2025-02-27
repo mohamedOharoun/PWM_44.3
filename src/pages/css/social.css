@@ -39,10 +39,20 @@ main {
 }
 
 #social_list {
-    height: auto;
     overflow-y: auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 2px solid #23CFA7;
+    border-radius: 10px;
 }
 
 #social_list::-webkit-scrollbar {
