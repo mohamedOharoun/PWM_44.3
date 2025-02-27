@@ -18,11 +18,11 @@ body {
 .panel {
     width: 400px;
     height: 500px;
-    margin: 30px auto;
     padding: 30px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 h1 {
@@ -69,24 +69,24 @@ button:hover {
     width: 100%;
 }
 
-.message, a  {
+.message, .custom_link  {
     font-size: 8px;
     margin-bottom: 10px;
     text-decoration: none;
 }
 
-a > strong {
+.custom_link > strong {
     font-size: 8px;
     font-weight: bold;
 }
 
-a:hover {
+.custom_link:hover {
     text-decoration: underline;
 }
 
 .steps-aside {
     position: absolute;
-    bottom: 25%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
