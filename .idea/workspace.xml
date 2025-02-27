@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,31 +48,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.footer.html.executor": "Run",
-    "JavaScript Debug.gorup_creation.html.executor": "Run",
-    "JavaScript Debug.group_creation.html.executor": "Run",
-    "JavaScript Debug.header.html.executor": "Run",
-    "JavaScript Debug.social_navegation.html.executor": "Run",
-    "JavaScript Debug.social_navigation.html.executor": "Run",
-    "JavaScript Debug.tag.html.executor": "Run",
-    "JavaScript Debug.user.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop-Javier",
-    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/css",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTCompactSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop-Javier&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/templates/css&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTCompactSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
@@ -98,7 +92,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -125,7 +119,9 @@
       <workItem from="1740567984923" duration="634000" />
       <workItem from="1740586167272" duration="8713000" />
       <workItem from="1740609395685" duration="124000" />
-      <workItem from="1740609529569" duration="7944000" />
+      <workItem from="1740609529569" duration="8153000" />
+      <workItem from="1740649808772" duration="178000" />
+      <workItem from="1740671324007" duration="3249000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
