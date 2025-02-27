@@ -1,6 +1,8 @@
 .social_navigation {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     justify-items: center;
+    background: white;
+    padding: 10px 100px;
 }
 
 .social_navigation li {
