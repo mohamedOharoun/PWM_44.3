@@ -1,9 +1,9 @@
 # JoinUp!
 ## Componentes
 - Javier Castilla Moreno
-- Mohamed Oulad
-- Ayman
-- Laura
+- Mohamed Oulad Haroun Zarkik
+- Ayman Asbai Ghoudan
+- Laura Herrera Negrín
 ## Descripción
 Nuestro proyecto se trata de una aplicación web en la que, los usuarios registrados, podrán unirse y crear eventos así como relacionarse con otros usuarios de la aplicación mediante chats individuales. Dentro de los nombrados eventos, se podrán dejar comentarios y establecer un presupuesto a repartir entre los miembros del mismo.
 ## Requisitos funcionales
