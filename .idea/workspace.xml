@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/message_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message_input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/message_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/message_input.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +36,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
-    "accountId": "2501a540-e9fd-4524-b093-911d91a8d0b5"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
+    &quot;accountId&quot;: &quot;2501a540-e9fd-4524-b093-911d91a8d0b5&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -51,32 +49,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop-Javier&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/templates/css&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTCompactSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.chat.html.executor": "Run",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
+    "JavaScript Debug.group_creation.html.executor": "Run",
+    "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.message_input.html.executor": "Run",
+    "JavaScript Debug.social_navegation.html.executor": "Run",
+    "JavaScript Debug.social_navigation.html.executor": "Run",
+    "JavaScript Debug.tag.html.executor": "Run",
+    "JavaScript Debug.user.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop-Javier",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/css",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MTCompactSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />

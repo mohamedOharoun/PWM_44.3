@@ -48,6 +48,7 @@ main {
 }
 
 #chat {
+    position: relative;
     display: flex;
     flex-direction: column;
     background: white;
@@ -80,6 +81,9 @@ main {
 }
 
 #message_input_wrapper {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px;
