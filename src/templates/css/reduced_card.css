@@ -196,12 +196,12 @@ body {
 
 .count {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .count-icon {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 .footer-center {
