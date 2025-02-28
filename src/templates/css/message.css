@@ -1,0 +1,26 @@
+.message {
+    display: flex;
+    margin: 20px;
+}
+
+.message_content {
+    border: 3px solid #23CFA7;
+    border-radius: 10px;
+    display: inline-block;
+    align-content: center;
+    padding: 20px;
+}
+
+.message_content p {
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.message button {
+    border: none;
+    background: transparent;
+    margin: 10px;
+    cursor: pointer;
+    padding: 0;
+}

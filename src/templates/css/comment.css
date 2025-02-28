@@ -1,0 +1,13 @@
+.user_card_photo {
+    border: 3px solid #23CFA7;
+    border-radius: 10px;
+}
+
+.comment {
+    align-items: center;
+    display: flex;
+}
+
+.comment p {
+    font-size: 20px;
+}
