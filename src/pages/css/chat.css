@@ -66,6 +66,12 @@ main {
     border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+#message_input_wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
 .self_message {
     margin-left: auto;
 }
