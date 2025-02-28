@@ -26,10 +26,9 @@ main {
     width: 800px;
 }
 
-#events_section{
+.events_section{
     justify-content: center;
     align-items: center;
-
     display: flex;
 }
 
