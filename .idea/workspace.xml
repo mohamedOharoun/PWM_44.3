@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/assets/images/user_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/social_requests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user_chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/remove_user_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/block_user_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "develop-Javier",
-    "last_opened_file_path": "E:/Subjects/PWM_44.3/assets/images",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,11 +81,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
+      <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
-      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="D:\Subjects\PWM_44.3\assets\images" />
-      <recent name="D:\Subjects\PWM_44.3\src\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
@@ -132,7 +131,7 @@
       <workItem from="1740745245589" duration="1069000" />
       <workItem from="1740752383528" duration="2826000" />
       <workItem from="1740761834877" duration="742000" />
-      <workItem from="1740844217350" duration="1112000" />
+      <workItem from="1740844217350" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
