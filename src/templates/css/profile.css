@@ -11,17 +11,19 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    position: relative;
 }
 
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+}
 h1 {
     font-size: 24px;
     font-weight: bold;
 }
 
 .edit-button {
-    position: absolute;
-    top: 18px;
+    top: 40px;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
@@ -42,14 +44,11 @@ h1 {
 .profile-avatar .avatar {
     width: 100px;
     height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.profile-avatar .avatar img {
-    width: 100px;
-    height: 100px;
 }
 
 .profile-info {
