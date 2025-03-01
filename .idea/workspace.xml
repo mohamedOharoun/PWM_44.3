@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/pages/css/event_members.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/comments_list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/comments_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/social_group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/remove_user_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/block_user_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/user_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/user_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/comment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/message_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message_input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user_chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/comment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserIcon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/privacypolicy.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/privacypolicy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +40,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mohamedOharoun/PWM_44.3",
+    "accountId": "b7c2c0aa-bca1-4b41-9711-17bd3fb5a77e"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -86,7 +68,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "develop-ayman",
     "last_opened_file_path": "E:/Subjects/PWM_44.3/src/pages/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -117,7 +99,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
       </set>
     </attachedChunks>
   </component>
@@ -151,6 +133,7 @@
       <workItem from="1740752383528" duration="2826000" />
       <workItem from="1740761834877" duration="742000" />
       <workItem from="1740844217350" duration="6090000" />
+      <workItem from="1740860983399" duration="2814000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
