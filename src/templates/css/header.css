@@ -29,17 +29,27 @@ header li {
     cursor: pointer;
 }
 
-header button {
+#header-buttons {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+#profile_button {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 10px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.log_button {
     font-weight: bold;
     padding: 10px 30px;
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 4px solid #23CFA7;
-    display: inline-block;
-    text-align: center;
     cursor: pointer;
-    position: relative;
-    margin-left: auto;
-    margin-right: 25px;
 }
