@@ -14,10 +14,28 @@ body {
     line-height: 1.6;
 }
 
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.first {
+    color: white;
+}
+
+.intro {
+    margin-bottom: 10px;
+}
+
+.privacy-policy > h1 {
+    color: white;
+}
+
 .privacy-policy {
     max-width: 800px;
     margin: 30px auto;
 }
+
 .panel {
     max-width: 100%;
     margin: 20px auto;
@@ -28,12 +46,16 @@ body {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h2 {
-    margin-top: 10px;
+    font-size: 20px;
+}
+
+h3 {
     font-size: 15px;
+    margin-top: 10px;
 }
 
 ul {
@@ -48,7 +70,7 @@ ul {
     color: #888;
 }
 
-a {
+.media {
     color: #0077cc;
     text-decoration: none;
 }
