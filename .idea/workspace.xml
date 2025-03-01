@@ -4,26 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0837dcd7-100c-4c80-9f3b-67b0c6af8add" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0837dcd7-100c-4c80-9f3b-67b0c6af8add" name="Changes" comment="edit: Sign Up Last Step form page edited">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/SignUpFirstStep.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/SignUpFirstStep.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/SignUpSecondStep.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/SignUpSecondStep.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/homecircle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/homecircle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/privacypolicy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/privacypolicy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/resetpassword.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/resetpassword.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/signincircle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/signincircle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/signup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/steps.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/steps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/resetpasswordpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/resetpasswordpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xlu-include-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/xlu-include-file.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,44 +34,47 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lauraheerrera"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lauraheerrera&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
-    "accountId": "bcf610b8-cc4a-4076-8d88-9886956e1348"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3&quot;,
+    &quot;accountId&quot;: &quot;b7c2c0aa-bca1-4b41-9711-17bd3fb5a77e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2tXfVQzy8YHWZUYQMKpA7paZz9m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop-Laura",
-    "last_opened_file_path": "C:/Users/Laura/WebstormProjects/PWM_44.3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop-ayman&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/WebstormProjects/PWM_44.3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eymen\WebstormProjects\PWM_44.3\src\js" />
       <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src\templates\css" />
       <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src\templates\html" />
       <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src" />
@@ -87,7 +84,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
       </set>
     </attachedChunks>
   </component>
@@ -101,7 +98,27 @@
       <updated>1740503363298</updated>
       <workItem from="1740503364830" duration="5685000" />
       <workItem from="1740519669356" duration="2319000" />
+      <workItem from="1740743496427" duration="1314000" />
+      <workItem from="1740762309420" duration="2392000" />
+      <workItem from="1740851652379" duration="842000" />
     </task>
+    <task id="LOCAL-00001" summary="build: Sign Up form pages created">
+      <option name="closed" value="true" />
+      <created>1740743935172</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740743935172</updated>
+    </task>
+    <task id="LOCAL-00002" summary="edit: Sign Up Last Step form page edited">
+      <option name="closed" value="true" />
+      <created>1740744234329</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740744234329</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +134,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build: Sign Up form pages created" />
+    <MESSAGE value="edit: Sign Up Last Step form page edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit: Sign Up Last Step form page edited" />
   </component>
 </project>
