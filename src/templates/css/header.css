@@ -44,7 +44,7 @@ header li {
     cursor: pointer;
 }
 
-.log_button {
+#log_button {
     font-weight: bold;
     padding: 10px 30px;
     background: white;
