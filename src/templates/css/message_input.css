@@ -1,0 +1,48 @@
+#message_input {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 20px 100px 20px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#message_form {
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: 70%;
+}
+
+#message_utilities {
+    position: absolute;
+    display: flex;
+    right: 0;
+    justify-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+#messages_utilities_icons {
+    align-content: center;
+    padding: 0;
+    margin: 0 20px;
+}
+
+#messages_utilities_icons img {
+    width: 20px;
+    height: 20px;
+}
+
+#message_utilities hr {
+    right: 100px;
+}
+
+#message_utilities button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

@@ -4,20 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0837dcd7-100c-4c80-9f3b-67b0c6af8add" name="Changes" comment="edit: Sign Up Last Step form page edited">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
+      <change afterPath="$PROJECT_DIR$/src/pages/css/event_members.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/css/comments_list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/comments_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/social_group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/resetpasswordpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/resetpasswordpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xlu-include-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/xlu-include-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/remove_user_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/block_user_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/user_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/user_icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/comment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/message_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message_input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/user_chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,97 +40,127 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sprint1_PWM_44.3" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;lauraheerrera&quot;
+    &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3&quot;,
-    &quot;accountId&quot;: &quot;b7c2c0aa-bca1-4b41-9711-17bd3fb5a77e&quot;
+    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
+    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2tXfVQzy8YHWZUYQMKpA7paZz9m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2tMOTMBmo9Ebyqs405k09jHk9FZ" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop-ayman&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/WebstormProjects/PWM_44.3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.chat.html.executor": "Run",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
+    "JavaScript Debug.group_creation.html.executor": "Run",
+    "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.message_input.html.executor": "Run",
+    "JavaScript Debug.social_navegation.html.executor": "Run",
+    "JavaScript Debug.social_navigation.html.executor": "Run",
+    "JavaScript Debug.tag.html.executor": "Run",
+    "JavaScript Debug.user.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/pages/html",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MTCompactSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
+      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
+      <recent name="E:\Subjects\PWM_44.3\assets\images" />
+      <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
+      <recent name="D:\Subjects\PWM_44.3\assets\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\eymen\WebstormProjects\PWM_44.3\src\js" />
-      <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src\templates\css" />
-      <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src\templates\html" />
-      <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src" />
-      <recent name="C:\Users\Laura\WebstormProjects\PWM_44.3\src\templates" />
+      <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
+      <recent name="E:\Subjects\PWM_44.3\src\js" />
+      <recent name="D:\Subjects\PWM_44.3\src\templates\html" />
+      <recent name="D:\Subjects\PWM_44.3\src\pages\html" />
+      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0837dcd7-100c-4c80-9f3b-67b0c6af8add" name="Changes" comment="" />
-      <created>1740503363298</created>
+      <changelist id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="" />
+      <created>1740158483357</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1740503363298</updated>
-      <workItem from="1740503364830" duration="5685000" />
-      <workItem from="1740519669356" duration="2319000" />
-      <workItem from="1740743496427" duration="1314000" />
-      <workItem from="1740762309420" duration="2392000" />
-      <workItem from="1740851652379" duration="842000" />
+      <updated>1740158483357</updated>
+      <workItem from="1740158484588" duration="1504000" />
+      <workItem from="1740160065615" duration="3429000" />
+      <workItem from="1740178353120" duration="6762000" />
+      <workItem from="1740257365970" duration="2907000" />
+      <workItem from="1740263219867" duration="2042000" />
+      <workItem from="1740342461518" duration="3000" />
+      <workItem from="1740342478074" duration="3980000" />
+      <workItem from="1740346522600" duration="407000" />
+      <workItem from="1740347110090" duration="514000" />
+      <workItem from="1740422551784" duration="418000" />
+      <workItem from="1740422992623" duration="4327000" />
+      <workItem from="1740503499683" duration="2598000" />
+      <workItem from="1740567984923" duration="634000" />
+      <workItem from="1740586167272" duration="8713000" />
+      <workItem from="1740609395685" duration="124000" />
+      <workItem from="1740609529569" duration="8153000" />
+      <workItem from="1740649808772" duration="178000" />
+      <workItem from="1740671324007" duration="5391000" />
+      <workItem from="1740745245589" duration="1069000" />
+      <workItem from="1740752383528" duration="2826000" />
+      <workItem from="1740761834877" duration="742000" />
+      <workItem from="1740844217350" duration="6090000" />
     </task>
-    <task id="LOCAL-00001" summary="build: Sign Up form pages created">
+    <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
-      <created>1740743935172</created>
+      <created>1740180160600</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1740743935172</updated>
+      <updated>1740180160600</updated>
     </task>
-    <task id="LOCAL-00002" summary="edit: Sign Up Last Step form page edited">
-      <option name="closed" value="true" />
-      <created>1740744234329</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1740744234329</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,8 +178,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build: Sign Up form pages created" />
-    <MESSAGE value="edit: Sign Up Last Step form page edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit: Sign Up Last Step form page edited" />
+    <MESSAGE value="build: header template created." />
+    <MESSAGE value="build: footer template created." />
+    <option name="LAST_COMMIT_MESSAGE" value="build: footer template created." />
   </component>
 </project>

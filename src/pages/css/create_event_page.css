@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html body {
+html, body {
     height: 100vh;
     margin: 0;
     display: flex;
@@ -11,21 +6,33 @@ html body {
     background: linear-gradient(45deg, #006D77, #23CFA7);
 }
 
-
 main {
-    display: flex;
     flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#resetpassword_section {
-    border-radius: 50%;
-    background: white;
+#events_form_section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#events_form_section article {
     width: 100%;
+}
+
+#event-form {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/create_event_form.css">
+    <title>Create Event</title>
+</head>
+<body>
+<main id="event-form">
+    <h1>Lorem Ipsum</h1>
+    <hr>
+    <form method="POST" action="">
+        <div id="lef-side" class="form-side">
+            <label for="event-name">Lorem Ipsum</label> <br>
+            <input id="event-name" name="event-name" type="text">
+            <br>
+            <label for="event-date">Lorem Ipsum</label>
+            <br>
+            <input type="date" name="event-date" id="event-date">
+            <br>
+            <div id="privacy-container">
+                <label for="is-private">Lorem Ipsum</label>
+                <input type="checkbox" name="is-private" id="is-private">
+            </div>
+            <br>
+            <label for="members-select">Lorem Ipsum</label>
+            <br>
+            <input id="members-select" list="members" placeholder="Select Members" />
+
+            <datalist id="members">
+                <option value="University">
+                <option value="Laura">
+                <option value="Ayman">
+                <option value="Javier">
+            </datalist>
+        </div>
+
+        <div id="right-side" class="form-side">
+            <label for="event-description">Lorem Ipsum</label>
+            <br>
+            <textarea rows="8" id="event-description" name="event-description"></textarea>
+            <br>
+            <label for="event-tags">Lorem Ipsum</label>
+            <br>
+            <input id="event-tags" name="event-tags" type="text">
+            <br>
+
+            <div id="tags-container">
+
+            </div>
+            <button type="submit">Lorem Ipsum</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>
