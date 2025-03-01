@@ -21,7 +21,7 @@ h1 {
 
 .edit-button {
     position: absolute;
-    top: 40px;
+    top: 18px;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
@@ -42,11 +42,14 @@ h1 {
 .profile-avatar .avatar {
     width: 100px;
     height: 100px;
-    border: 2px solid #000;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.profile-avatar .avatar img {
+    width: 100px;
+    height: 100px;
 }
 
 .profile-info {

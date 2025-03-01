@@ -50,6 +50,7 @@
     width: 99%;
 }
 #event-form button {
+    cursor: pointer;
     background: linear-gradient(90deg, #006D77, #23CFA7);
     border: none;
     border-radius: 5px;
