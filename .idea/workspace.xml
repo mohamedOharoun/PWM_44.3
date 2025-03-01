@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
     </list>
