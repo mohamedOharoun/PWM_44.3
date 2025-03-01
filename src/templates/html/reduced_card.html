@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Component</title>
+    <script src="../../js/xlu-include-file.js" defer></script>
     <link rel="stylesheet" href="../css/reduced_card.css">
 </head>
 <body>
@@ -51,14 +52,11 @@
     </main>
     <hr class="short-separator">
     <div class="tags-section">
-        <span class="tag"># LoremIpsum</span>
-        <span class="tag"># LoremIpsum</span>
-        <span class="tag"># LoremIpsum</span>
-        <span class="tag"># LoremIpsum</span>
-        <span class="tag"># LoremIpsum</span>
-        <span class="tag"># LoremIpsum</span>
-        <span class="tag"># LoremIps</span>
-        <span class="tag"># Lorem</span>
+        <span xlu-include-file="tag.html"></span>
+        <span xlu-include-file="tag.html"></span>
+        <span xlu-include-file="tag.html"></span>
+        <span xlu-include-file="tag.html"></span>
+        <span xlu-include-file="tag.html"></span>
 
         <span class="more-indicator">...</span>
     </div>
@@ -94,8 +92,6 @@
             <button class="action-button">Lorem</button>
         </div>
     </div>
-</article>
-
 </article>
 </body>
 </html>
