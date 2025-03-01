@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/social_group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/css/event_members.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/social_navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/social_navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -130,7 +129,7 @@
       <workItem from="1740745245589" duration="1069000" />
       <workItem from="1740752383528" duration="2826000" />
       <workItem from="1740761834877" duration="742000" />
-      <workItem from="1740844217350" duration="4217000" />
+      <workItem from="1740844217350" duration="5466000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
