@@ -1,0 +1,270 @@
+/* Base styles */
+:root {
+    --primary-color: #32b5a4;
+    --text-color: #333;
+    --light-gray: #eee;
+    --medium-gray: #ccc;
+    --border-radius: 8px;
+    --card-padding: 20px;
+    --border-color: #23CFA7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Card container */
+.card {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: var(--card-padding);
+    margin: 5px;
+    background-color: #fff;
+}
+
+/* Card header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.subtitle-separator {
+    margin: 0 8px;
+    color: #888;
+}
+
+.subtitle {
+    color: #666;
+    font-weight: normal;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin: 15px 0;
+}
+
+/* Description section */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.description-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.description-section {
+    width: 75%;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.short-separator {
+    width: 75%;
+}
+/* Info section */
+.info-section {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 22%;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.clock-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 2px;
+}
+
+.info-text {
+    font-size: 14px;
+}
+
+/* Tags section */
+.tags-section {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 76%;
+}
+
+.tag {
+    background-color: #f0faf9;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.more-indicator {
+    font-size: 18px;
+    color: #888;
+    align-self: center;
+}
+
+/* Card footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.statistics {
+    display: flex;
+    gap: 15px;
+}
+
+.count-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.count {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.count-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.see-more-button {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.participants-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: -80px;
+    margin-right: 10px;
+    width: 21%;
+}
+
+.participants-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.participants-count {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.participants-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.participants-label {
+    font-size: 18px;
+    padding-left: 12px;
+    margin-top: -20px;
+    text-align: center;
+    width: 100%;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+}
+.action-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
