@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="build: footer template created.">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix small UI aspects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +39,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+    &quot;accountId&quot;: &quot;6a1d2200-9dd6-48f0-b7d1-054ed64a3167&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -50,40 +52,39 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.chat.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop-Javier&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/pages/html&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTCompactSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
+    "JavaScript Debug.group_creation.html.executor": "Run",
+    "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.message_input.html.executor": "Run",
+    "JavaScript Debug.social_navegation.html.executor": "Run",
+    "JavaScript Debug.social_navigation.html.executor": "Run",
+    "JavaScript Debug.tag.html.executor": "Run",
+    "JavaScript Debug.user.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop-Mohamed",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/css",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MTCompactSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
-      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
-      <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
+      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="D:\Subjects\PWM_44.3\assets\images" />
+      <recent name="D:\Subjects\PWM_44.3\src\js" />
+      <recent name="E:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
@@ -129,7 +130,7 @@
       <workItem from="1740745245589" duration="1069000" />
       <workItem from="1740752383528" duration="2826000" />
       <workItem from="1740761834877" duration="742000" />
-      <workItem from="1740844217350" duration="6090000" />
+      <workItem from="1740829006234" duration="23589000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -139,7 +140,63 @@
       <option name="project" value="LOCAL" />
       <updated>1740180160600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge from main">
+      <option name="closed" value="true" />
+      <created>1740829556486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740829556486</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge from main and new expand_card template">
+      <option name="closed" value="true" />
+      <created>1740830761045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740830761045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix small CSS features, .info-text font-size and .tags-section width">
+      <option name="closed" value="true" />
+      <created>1740837616459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740837616459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add tags templates">
+      <option name="closed" value="true" />
+      <created>1740837670761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740837670761</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add events explore page">
+      <option name="closed" value="true" />
+      <created>1740857528256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740857528256</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix small UI aspects">
+      <option name="closed" value="true" />
+      <created>1740857609394</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740857609394</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix small UI aspects">
+      <option name="closed" value="true" />
+      <created>1740857632785</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740857632785</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +216,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build: header template created." />
     <MESSAGE value="build: footer template created." />
-    <option name="LAST_COMMIT_MESSAGE" value="build: footer template created." />
+    <MESSAGE value="Merge from main" />
+    <MESSAGE value="Merge from main and new expand_card template" />
+    <MESSAGE value="Fix small CSS features, .info-text font-size and .tags-section width" />
+    <MESSAGE value="Add tags templates" />
+    <MESSAGE value="Add events explore page" />
+    <MESSAGE value="Fix small UI aspects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix small UI aspects" />
   </component>
 </project>

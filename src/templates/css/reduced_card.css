@@ -9,12 +9,6 @@
     --border-color: #23CFA7;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -35,6 +29,7 @@ body {
 .card-header {
     display: flex;
     justify-content: space-between;
+    padding-right: 20px;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -107,6 +102,7 @@ body {
 
 .card-content {
     width: 100%;
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     gap: 60px;
@@ -145,7 +141,7 @@ body {
 }
 
 .info-text {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Tags section */
@@ -196,12 +192,12 @@ body {
 
 .count {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .count-icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
 
 .footer-center {
@@ -259,12 +255,13 @@ body {
     border: none;
 }
 .action-button {
-    background-color: var(--primary-color);
+    background: linear-gradient(45deg, #006D77, #23CFA7);;
     color: white;
     border: none;
     border-radius: 4px;
     padding: 8px 20px;
     font-size: 14px;
+    font-weight: lighter;
     cursor: pointer;
     width: 100%;
 }
