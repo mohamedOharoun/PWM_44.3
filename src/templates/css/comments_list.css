@@ -1,0 +1,4 @@
+.comments_list {
+    overflow-y: auto;
+    height: 500px;
+}
