@@ -46,6 +46,7 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
 
 ## Templates identificados
   - **Header**
+  -  Pepe
   - **Footer**
   - **Tarjeta de usuario**
   - **Mensaje**
@@ -68,7 +69,7 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
   - **Entrada de mensaje**
   
 
-El *Header* y *Footer* se utilizan en todos los archivos.  
+El *Header* y *Footer* se utilizan en todas las páginas.  
 El template de *Tarjeta de usuario*
 
 ## ❗Aspectos a tener en cuenta
