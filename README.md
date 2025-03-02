@@ -46,7 +46,7 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
 
 ## Templates identificados
   - **Header**
-  -  Pepe
+    - Pepe
   - **Footer**
   - **Tarjeta de usuario**
   - **Mensaje**
