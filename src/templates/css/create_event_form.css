@@ -18,6 +18,12 @@
     transition: box-shadow 0.2s ease-in-out;
 }
 
+#members_list_wrapper {
+    overflow-y: auto;
+    width: 90%;
+    height: 300px;
+}
+
 #event-form input:focus {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -62,10 +68,6 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-#tags-container {
-    height: 80px;
-}
-
 input[type="checkbox"] {
     width: 18px;
     height: 18px;
@@ -81,4 +83,11 @@ input[type="checkbox"] {
 
 #number-words {
     color: gray;
+}
+
+#members_list_wrapper button {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
 }
