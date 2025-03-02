@@ -68,31 +68,31 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
     - [Tarjeta de evento](src/templates/html/reduced_card.html)
     - [Tarjeta de evento expandido](src/templates/html/expand_card.html)
   - **Lista de usuarios**
-    - []()
-  - **Tarjetas de evento**
-    - []()
+    - [Template de formulario de creación de evento](src/templates/create_event_form.html)
+    - [Página de creación de grupo](src/pages/html/group_creation.html)
+    - [Página de miembros de un evento](src/pages/html/event_members.html)
   - **Tarjetas de evento expandido**
-    - []()
+    - [Página de evento expandido](src/pages/html/expanded_event_page.html)
   - **Usuario tipo amigo**
-    - []()
-  - **Usuario tipo bloqueado**
-    - []()
+    - [Página de amigos](src/pages/html/social_friends.html)
+  - **Usuario tipo bloqueado y solicitud enviada**
+    - [Página de usuarios bloqueados y solicitudes enviadas](src/pages/html/social_block_and_sent_requests.html)
   - **Usuario tipo solicitud recibida**
-    - []()
-  - **Usuario tipo solicitud enviada**
-    - []()
+    - [Página de solicitudes recibidas](src/pages/html/social_received_requests.html)
   - **Usuario tipo grupo**
-    - []()
+    - [Página de grupos](src/pages/html/social_groups.html)
   - **Tarjeta de evento de perfil**
-    - []()
+    - [Página de perfil propio](src/pages/html/self_profile.html)
+    - [Página de perfil propio](src/pages/html/user_profile_page.html)
   - **Tarjetas de HomePage**
-    - []()
+    - [HomePage](src/pages/html/home_page.html)
   - **Tarjeta de feature de LandingPage**
-    - []()
-  - **Lista de comentario**
-    - []()
+    - [LandingPage](src/pages/html/index.html)
+  - **Lista de comentarios**
+    - [Template de tarjeta de evento expandida](src/templates/html/expand_card.html)
   - **Entrada de mensaje**
-    - []()
+    - [Template de lista de tarjeta de evento expandida](src/templates/html/expand_card.html)
+    - [Página de chat individual](src/pages/html/chat.html)
   - **Sidebar de eventos**
     - [Página de eventos principal](src/pages/html/events.html)
     - [Página de eventos favoritos](src/pages/html/favorite_events.html)
