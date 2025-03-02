@@ -41,7 +41,30 @@ Este proyecto consta de una aplicación web en la que, los usuarios registrados,
 El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/)  
 
 ## Páginas HTML
-
+  - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png)
+  - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png)
+  - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png)
+  - [Página de eventos](src/pages/html/events.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png)
+  - [Página de evento expandido](src/pages/html/expanded_event_page.html) implementa el mockup [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png)
+  - [Página de eventos marcados como favoritos](src/pages/html/favorite_events.html) implementa el mockup [FavouriteEvents](docs/mockups/FavouriteEvents.png)
+  - [Página de creación de grupo](src/pages/html/group_creation.html) implementa el mockup [GroupCreation](docs/mockups/GroupCreation.png)
+  - [Página home](src/pages/html/home_page.html) implementa el mockup [Home](docs/mockups/Home.png)
+  - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png)
+  - [Página de eventos unidos](src/pages/html/joined_events.html) implementa el mockup [EventsJoined](docs/mockups/EventsJoined.png)
+  - [Página de eventos creados](src/pages/html/owned_events.html) implementa el mockup [MyEvents](docs/mockups/MyEvents.png)
+  - [Página de política de privacidad](src/pages/html/privacypolicypage.html) implementa el mockup [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)
+  - [Página de recuperar contraseña](src/pages/html/reset_password_page.html) implementa el mockup [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png)
+  - [Página de perfil propio](src/pages/html/self_profile_page.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png)
+  - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png)
+  - [Página con primer paso de registro](src/pages/html/signupfirststep.html) implementa el mockup [SignUpFirstStep](docs/mockups/SignUpFirstStep.png)
+  - [Página con segundo paso de registro](src/pages/html/signupsecondstep.html) implementa el mockup [SignUpSecondStep](docs/mockups/SignUpSecondStep.png)
+  - [Página con tercer paso de registro](src/pages/html/signupthirdstep.html) implementa el mockup [SignUpThirdStep](docs/mockups/SignUpThirdStep.png)
+  - [Página con último paso de registro](src/pages/html/signuplaststep.html) implementa el mockup [SignUpLastStep](docs/mockups/SignUpLastStep.png)
+  - [Página de usuarios bloqueados y peticiones pendientes](src/pages/html/social_block_and_send_request.html) implementa el mockup [Blocked](docs/mockups/Blocked.png)
+  - [Página de amigos agregados](src/pages/html/social_friends.html) implementa el mockup [Friends](docs/mockups/Friends.png)
+  - [Página de grupos de amigos](src/pages/html/social_groups.html) implementa el mockup [Groups](docs/mockups/Groups.png)
+  - [Página de peticiones de amistad](src/pages/html/social_received_request.html) implementa el mockup [Pending](docs/mockups/Pending.png)
+  - [Página de perfil ajeno](src/pages/html/user_profile_page.html) implementa el mockup [SomeonesProfile](docs/mockups/SomeonesProfile.png)
 
 ## Templates identificados
   - **Header**
