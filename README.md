@@ -38,7 +38,7 @@ Este proyecto consta de una aplicación web en la que, los usuarios registrados,
  - Reportar usuarios o eventos  
 
 ## Ubicación archivo Mockups y Storyboard
-El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf)  
+El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/)  
 
 ## Páginas HTML
 
