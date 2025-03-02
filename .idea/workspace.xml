@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="merge: develop-Laura merged into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/group_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/group_creation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/user_chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/user_social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
