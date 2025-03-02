@@ -7,7 +7,6 @@
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="merge: develop-Laura merged into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop-Mohamed",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/Subjects/PWM_44.3/src/pages/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -140,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740180160600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add input for price">
+      <option name="closed" value="true" />
+      <created>1740917459504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740917459504</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +168,7 @@
     <MESSAGE value="build: header template created." />
     <MESSAGE value="build: footer template created." />
     <MESSAGE value="merge: develop-Laura merged into main" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge: develop-Laura merged into main" />
+    <MESSAGE value="Add input for price" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add input for price" />
   </component>
 </project>
