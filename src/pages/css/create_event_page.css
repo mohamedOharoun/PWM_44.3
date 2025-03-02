@@ -30,5 +30,7 @@ main {
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content: flex-start;
 }
 

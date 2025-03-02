@@ -55,7 +55,7 @@
 #event-form hr {
     width: 99%;
 }
-#event-form button {
+#submit_button {
     cursor: pointer;
     background: linear-gradient(90deg, #006D77, #23CFA7);
     border: none;
