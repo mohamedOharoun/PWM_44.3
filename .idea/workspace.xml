@@ -5,81 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="merge: develop-Laura merged into main">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/block_user_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/event_members.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/events.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/home_page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/privacypolicypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/signupstep.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/group_creation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/home_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/resetpasswordpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/comments_list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/expanded_card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/form_container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/generic_input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/home_card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/message.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/message_input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/reduced_card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/social_container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/social_navigation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/tag.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/user.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/comments_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/expand_card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/generic_input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/home_card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/message_input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/reduced_card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/social_group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/tag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/user_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/user_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/privacypolicy.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/privacypolicy.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/eventssidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/eventssidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +65,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging develop-Laura",
+    "git-widget-placeholder": "develop-Mohamed",
     "last_opened_file_path": "E:/Subjects/PWM_44.3/src/pages/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
