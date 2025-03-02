@@ -45,12 +45,28 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
 
 
 ## Templates identificados
-  *1️⃣ ]* **Header**.  
-  *2️⃣ ]* **Footer**.  
-  *3️⃣ ]* **Tarjeta de usuario**.  
-  *4️⃣ ]* **Mensaje**.  
-  *5️⃣ ]* **Tarjeta de eventos**.  
-  *6️⃣ ]* **Comentario**.  
+  - **Header**
+  - **Footer**
+  - **Tarjeta de usuario**
+  - **Mensaje**
+  - **Tarjeta de eventos**
+  - **Comentario**
+  - **Tag Interactivo**
+  - **Tag no interactivo**
+  - **Lista de usuarios**
+  - **Tarjetas de evento**
+  - **Tarjetas de evento expandido**
+  - **Usuario tipo amigo**
+  - **Usuario tipo bloqueado**
+  - **Usuario tipo solicitud recibida**
+  - **Usuario tipo solicitud enviada**
+  - **Usuario tipo grupo**
+  - **Tarjeta de evento de perfil**
+  - **Tarjetas de HomePage**
+  - **Tarjeta de feature de LandingPage**
+  - **Lista de comentario**
+  - **Entrada de mensaje**
+  
 
 El *Header* y *Footer* se utilizan en todos los archivos.  
 El template de *Tarjeta de usuario*
