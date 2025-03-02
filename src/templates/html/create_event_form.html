@@ -4,11 +4,14 @@
     <form method="POST" action="">
         <div id="lef-side" class="form-side">
             <label for="event-name">Lorem Ipsum</label> <br>
-            <input id="event-name" name="event-name" type="text">
+            <input id="event-name" name="event-name" type="text" required>
             <br>
             <label for="event-date">Lorem Ipsum</label>
             <br>
-            <input type="date" name="event-date" id="event-date">
+            <input type="date" name="event-date" id="event-date" required>
+            <label for="event-price">Lorem Ipsum</label>
+            <br>
+            <input type="number" step="0.01" name="event-price" id="event-price" value="0">
             <br>
             <div id="privacy-container">
                 <label for="is-private">Lorem Ipsum</label>
@@ -31,6 +34,10 @@
             <label for="event-description">Lorem Ipsum</label>
             <br>
             <textarea rows="8" id="event-description" name="event-description"></textarea>
+            <br>
+            <div id="number-words-container">
+                <span id="number-words">0 lorems</span>
+            </div>
             <br>
             <label for="event-tags">Lorem Ipsum</label>
             <br>

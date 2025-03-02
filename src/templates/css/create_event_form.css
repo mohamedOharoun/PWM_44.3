@@ -65,3 +65,20 @@
 #tags-container {
     height: 80px;
 }
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+#number-words-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: -10px;
+    width: 92%;
+}
+
+#number-words {
+    color: gray;
+}
