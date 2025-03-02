@@ -46,27 +46,49 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
 
 ## Templates identificados
   - **Header**
-    - Pepe
+    - Se utiliza en todas las páginas
   - **Footer**
+    - Se utiliza en todas las páginas
   - **Tarjeta de usuario**
+    - [Página de Miembros](src/pages/html/event_members.html)
+    - [Página de crear grupo](src/pages/html/group_creation.html)
+    - [Página de crear evento](src/pages/html/create_event_page.html)
   - **Mensaje**
+    - []()
   - **Tarjeta de eventos**
+    - []()
   - **Comentario**
+    - []()
   - **Tag Interactivo**
+    - []()
   - **Tag no interactivo**
+    - []()
   - **Lista de usuarios**
+    - []()
   - **Tarjetas de evento**
+    - []()
   - **Tarjetas de evento expandido**
+    - []()
   - **Usuario tipo amigo**
+    - []()
   - **Usuario tipo bloqueado**
+    - []()
   - **Usuario tipo solicitud recibida**
+    - []()
   - **Usuario tipo solicitud enviada**
+    - []()
   - **Usuario tipo grupo**
+    - []()
   - **Tarjeta de evento de perfil**
+    - []()
   - **Tarjetas de HomePage**
+    - []()
   - **Tarjeta de feature de LandingPage**
+    - []()
   - **Lista de comentario**
+    - []()
   - **Entrada de mensaje**
+    - []()
   
 
 El *Header* y *Footer* se utilizan en todas las páginas.  
