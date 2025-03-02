@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
+      <change afterPath="$PROJECT_DIR$/src/pages/css/expanded_event_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/homecircle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/steps.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/expand_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/expand_card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/feauture_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/feature_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/homecircle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/message_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/message_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/steps.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,6 +67,7 @@
     "JavaScript Debug.gorup_creation.html.executor": "Run",
     "JavaScript Debug.group_creation.html.executor": "Run",
     "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.message_input.html.executor": "Run",
     "JavaScript Debug.social_navegation.html.executor": "Run",
     "JavaScript Debug.social_navigation.html.executor": "Run",
