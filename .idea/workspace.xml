@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="merge: develop-Laura merged into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop-Javier",
     "last_opened_file_path": "E:/Subjects/PWM_44.3/src/pages/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
