@@ -1,0 +1,11 @@
+#message_input_wrapper {
+    box-sizing: border-box;
+    bottom: 2%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+article {
+    position: relative;
+}

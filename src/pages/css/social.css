@@ -71,3 +71,8 @@ main {
     border-radius: 15px;
     border: 2px solid white;
 }
+
+#social_title_section {
+    display: flex;
+    align-items: center;
+}

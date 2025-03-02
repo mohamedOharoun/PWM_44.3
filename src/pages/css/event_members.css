@@ -34,6 +34,11 @@ main {
     margin: 40px;
 }
 
+#members_title_section {
+    display: flex;
+    align-items: center;
+}
+
 #members_list_wrapper {
     overflow-y: auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
