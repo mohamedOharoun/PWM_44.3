@@ -39,7 +39,11 @@ main {
 #see_more_button_section {
     flex: 1;
     align-content: center;
-    justify-content: center;
+    justify-items: center;
+}
+
+#see_more_button_section a {
+    margin-left: auto;
 }
 
 #features_info_section {
