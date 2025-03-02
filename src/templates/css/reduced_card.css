@@ -265,3 +265,15 @@ body {
     cursor: pointer;
     width: 100%;
 }
+
+.liked-event .like-icon {
+    width: 26px;
+    height: 26px;
+    content: url("../../../assets/images/filled_heart_icon.svg");
+}
+
+.joined-event .action-button {
+    background: white;
+    color: black;
+    border: 3px solid #23CFA7;
+}

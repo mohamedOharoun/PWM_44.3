@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="merge: develop-Laura merged into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/events.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/reduced_card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/reduced_card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/reduced_card.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop-Mohamed",
     "last_opened_file_path": "E:/Subjects/PWM_44.3/src/pages/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -85,11 +88,11 @@
       <recent name="D:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mohamed O. Haroun\PWM\src\templates\css" />
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\src\js" />
       <recent name="D:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="D:\Subjects\PWM_44.3\src\pages\html" />
-      <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
     </key>
   </component>
   <component name="SharedIndexes">
