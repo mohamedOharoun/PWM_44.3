@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    color: white;
+    flex: 1;
+    background: linear-gradient(45deg, #006D77, #239999);
+    overflow: auto;
+    padding: 70px;
+}
+
+#description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    gap: 20px;
+}
+
+#main_photo_section {
+    border: 1px solid black;
+    flex: 1;
+    background: white;
+}
+
+#main_photo_section img {
+    width: 100%;
+    height: 100%;
+}
+
+#see_more_button_section {
+    flex: 1;
+    align-content: center;
+    justify-items: center;
+}
+
+#features_info_section {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-right: 70px;
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#first_info_wrapper {
+    display: flex;
+    height: 90%;
+    margin-bottom: 200px;
+}
