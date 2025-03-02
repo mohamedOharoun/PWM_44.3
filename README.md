@@ -54,15 +54,18 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
     - [Página de crear grupo](src/pages/html/group_creation.html)
     - [Página de crear evento](src/pages/html/create_event_page.html)
   - **Mensaje**
-    - []()
+    - [Página de chat individual](src/pages/html/chat.html)
   - **Tarjeta de eventos**
-    - []()
+    - [Página de eventos principal](src/pages/html/events.html)
+    - [Página de eventos favoritos](src/pages/html/favorite_events.html)
+    - [Página de eventos unidos](src/pages/html/joined_events.html)
+    - [Página de eventos creados](src/pages/html/owned_events.html)
   - **Comentario**
-    - []()
+    - [Página de evento expandido](src/pages/html/)
   - **Tag Interactivo**
-    - []()
+    - [Página de creación de eventos](src/pages/html/create_event_page.html)
   - **Tag no interactivo**
-    - []()
+    - [Tarjeta de evento](src/template/html/reduced_card.html)
   - **Lista de usuarios**
     - []()
   - **Tarjetas de evento**
@@ -89,6 +92,11 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
     - []()
   - **Entrada de mensaje**
     - []()
+  - **Sidebar de eventos**
+    - [Página de eventos principal](src/pages/html/events.html)
+    - [Página de eventos favoritos](src/pages/html/favorite_events.html)
+    - [Página de eventos unidos](src/pages/html/joined_events.html)
+    - [Página de eventos creados](src/pages/html/owned_events.html)
   
 
 El *Header* y *Footer* se utilizan en todas las páginas.  
