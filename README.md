@@ -37,9 +37,8 @@ Este proyecto consta de una aplicación web en la que, los usuarios registrados,
 ### 7.  *Administración y moderación*
  - Reportar usuarios o eventos  
 
-## Ubicación archivo -> Mockups y Storyboard
-El fichero en cuestión se localiza en la siguiente ruta del repositorio:
-  *docs/storyboard.pdf*
+## Ubicación archivo Mockups y Storyboard
+El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf)  
 
 ## Páginas HTML
 
@@ -97,11 +96,7 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
     - [Página de eventos principal](src/pages/html/events.html)
     - [Página de eventos favoritos](src/pages/html/favorite_events.html)
     - [Página de eventos unidos](src/pages/html/joined_events.html)
-    - [Página de eventos creados](src/pages/html/owned_events.html)
-  
-
-El *Header* y *Footer* se utilizan en todas las páginas.  
-El template de *Tarjeta de usuario*
+    - [Página de eventos creados](src/pages/html/owned_events.html)  
 
 ## ❗Aspectos a tener en cuenta
 ### *Organización del código*
