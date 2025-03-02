@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="merge: develop-Laura merged into main">
-      <change afterPath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/interactive_tag.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/comments_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/comments_list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/expand_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/expand_card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/create_event_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/create_event_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/tag.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/tag.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

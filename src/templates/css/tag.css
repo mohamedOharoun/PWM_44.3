@@ -4,7 +4,21 @@
     font-size: 5px;
     margin: 5px;
     width: auto;
-    display: inline-block;
+    display: flex;
+}
+
+.tag button {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+    border: none;
+}
+
+.tag img {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
 }
 
 .tag p {
