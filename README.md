@@ -65,7 +65,7 @@ El fichero en cuestión se localiza en la siguiente ruta del repositorio:
   - **Tag Interactivo**
     - [Página de creación de eventos](src/pages/html/create_event_page.html)
   - **Tag no interactivo**
-    - [Tarjeta de evento](src/template/html/reduced.event.html)
+    - [Tarjeta de evento](src/template/html/reduced_card.html)
     - [Tarjeta de evento expandido](src/template/html/expand_card.html)
   - **Lista de usuarios**
     - []()
