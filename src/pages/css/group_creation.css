@@ -40,7 +40,7 @@ main {
 }
 
 #members_list {
-    height: 300px;
+    height: 45%;
     overflow-y: auto;
     padding-right: 5px;
     margin: 40px 0;
@@ -66,4 +66,35 @@ main {
     background: linear-gradient(45deg, #006D77, #23CFA7);
     border-radius: 10px;
     border: none;
+}
+
+#upper_input_group_creation {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#upper_input_group_creation img {
+    width: 150px;
+    height: 150px;
+}
+
+#group_name_input {
+    flex: 1;
+}
+
+#upload_photo_utilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#upload_photo_utilities img {
+    width: 30px;
+    height: 30px;
+}
+
+#upload_photo_utilities * {
+    cursor: pointer;
 }
