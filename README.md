@@ -60,14 +60,14 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/)
     - [Página de eventos unidos](src/pages/html/joined_events.html)
     - [Página de eventos creados](src/pages/html/owned_events.html)
   - **Comentario**
-    - [Página de evento expandido](src/pages/html/)
+    - [Página de evento expandido](src/templates/html/comment.html)
   - **Tag Interactivo**
     - [Página de creación de eventos](src/pages/html/create_event_page.html)
   - **Tag no interactivo**
     - [Tarjeta de evento](src/templates/html/reduced_card.html)
     - [Tarjeta de evento expandido](src/templates/html/expand_card.html)
   - **Lista de usuarios**
-    - [Template de formulario de creación de evento](src/templates/create_event_form.html)
+    - [Template de formulario de creación de evento](src/templates/html/create_event_form.html)
     - [Página de creación de grupo](src/pages/html/group_creation.html)
     - [Página de miembros de un evento](src/pages/html/event_members.html)
   - **Tarjetas de evento expandido**
@@ -81,7 +81,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/)
   - **Usuario tipo grupo**
     - [Página de grupos](src/pages/html/social_groups.html)
   - **Tarjeta de evento de perfil**
-    - [Página de perfil propio](src/pages/html/self_profile.html)
+    - [Página de perfil propio](src/pages/html/self_profile_page.html)
     - [Página de perfil propio](src/pages/html/user_profile_page.html)
   - **Tarjetas de HomePage**
     - [HomePage](src/pages/html/home_page.html)
