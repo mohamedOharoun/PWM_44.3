@@ -10,6 +10,10 @@
     margin: 0 70px 0 70px;
 }
 
+.user_social_icons a {
+    margin: 0;
+}
+
 .user_social img {
     margin: 10px 10px 10px auto;
 }
@@ -27,6 +31,7 @@
 
 .user_social_icons {
     margin-left: auto;
+    display: flex;
 }
 
 .user_social button {
