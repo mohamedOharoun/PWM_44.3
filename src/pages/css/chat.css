@@ -10,25 +10,11 @@ html body {
     flex-direction: column;
 }
 
-#current_chat_name_wrapper h1 {
-    font-size: 30px;
-}
-
-#current_chat_name_wrapper {
-    height: 10%;
-}
-
 main {
     display: flex;
     flex: 1;
     background: linear-gradient(45deg, #006D77, #23CFA7);
     overflow: auto;
-}
-
-#user_chat_list {
-    background: white;
-    overflow-y: auto;
-    width: 20%;
 }
 
 ::-webkit-scrollbar {
@@ -47,40 +33,41 @@ main {
     border: 2px solid white;
 }
 
-#chat {
+#chat-user-list {
+    background: white;
+    overflow-y: auto;
+    width: 20%;
+}
+
+#current-chat-name-container {
+    padding: 5% 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+#current-chat {
     position: relative;
     display: flex;
     flex-direction: column;
     background: white;
     flex-grow: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#current_chat_name_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
-    font-size: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-#current_chat_name_wrapper hr {
+#current-chat-name-container hr {
     width: 70%;
 }
 
-#messages_section {
+#messages-section {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     flex-grow: 1;
-    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.self_message .report_button {
-    display: none;
-}
-
-#message_input_wrapper {
+#message-input-container {
     position: absolute;
     box-sizing: border-box;
     bottom: 2%;

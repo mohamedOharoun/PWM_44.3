@@ -1,3 +1,7 @@
+* {
+    font-family: "League Spartan", sans-serif;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -5,4 +9,15 @@ a {
 
 input {
     outline: none;
+}
+
+#page-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
