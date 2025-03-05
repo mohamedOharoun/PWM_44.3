@@ -17,14 +17,3 @@ main {
     overflow: auto;
 }
 
-#tags-container {
-    margin-bottom: 10px;
-    overflow-y: auto;
-    width: 100%;
-    flex: 1 1 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    justify-content: flex-start;
-}
-
