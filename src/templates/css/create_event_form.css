@@ -1,40 +1,92 @@
+main {
+    justify-content: center;
+}
+
 #event-form form {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex: 1;
 }
 
-.form-side {
-    width: 50%;
+#event-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 70%;
+    max-height: calc(100vh - 40px);
 }
 
-#event-form  input {
+#event-form-title {
+    width: 100%;
+    margin: 20px;
+}
+
+#event-form-container {
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#event-form input {
     margin: 10px 0;
-    height: 2.5em;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 20px;
+    border: none;
     outline: none;
-    transition: box-shadow 0.2s ease-in-out;
-}
-
-#members_list_wrapper {
-    overflow-y: auto;
-    width: 90%;
-    height: 300px;
 }
 
 #event-form input:focus {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#event-form input:not(input[type=checkbox]) {
-    width: 90%;
+
+#event-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+#event-form input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    box-shadow: none;
+}
+
+#user-list-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#members-list-section {
+    overflow-y: auto;
+    flex: 1 1 0;
+}
+
+.form-side {
+    width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#user-list-container button {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
 }
 
 #event-form textarea {
-    width: 90%;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     outline: none;
     transition: box-shadow 0.2s ease-in-out;
 }
@@ -43,34 +95,27 @@
     margin-right: 5px;
     font-size: 1.4em;
 }
-
 #privacy-container {
     display: flex;
     align-items: center;
 }
 
-#event-form textarea {
-    margin: 10px 0;
-}
 #event-form hr {
     width: 99%;
 }
+
 #submit_button {
     cursor: pointer;
     background: linear-gradient(90deg, #006D77, #23CFA7);
     border: none;
     border-radius: 5px;
     color: white;
-    width: 91%;
+    width: 100%;
     font-size: 18px;
-    padding: 15px 40px;
+    padding: 15px;
     text-align: center;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+    margin-top: auto;
 }
 
 #number-words-container {
@@ -83,11 +128,4 @@ input[type="checkbox"] {
 
 #number-words {
     color: gray;
-}
-
-#members_list_wrapper button {
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-    width: auto;
 }
