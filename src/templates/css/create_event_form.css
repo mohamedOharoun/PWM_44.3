@@ -47,10 +47,15 @@ main {
     padding: 20px;
     border: none;
     outline: none;
+    transition: box-shadow 0.4s ease;
 }
 
 #event-form input:focus {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#event-form textarea:focus {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #event-form input[type="checkbox"] {
@@ -91,7 +96,7 @@ main {
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     outline: none;
-    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out;
 }
 
 #privacy-container {
@@ -111,7 +116,15 @@ main {
     text-align: center;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     margin-top: auto;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#submit_button:hover {
+    background: linear-gradient(90deg, #23CFA7, #006D77);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 #tags-container {
     margin-bottom: 10px;
