@@ -57,6 +57,9 @@
 }
 
 .tags ul {
+    gap: 30px;
     display: flex;
     flex-direction: column;
 }
+
+

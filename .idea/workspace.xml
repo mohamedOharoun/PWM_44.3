@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
+      <change afterPath="$PROJECT_DIR$/src/templates/css/members_list.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/events.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/joined_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/joined_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/reduced_card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/reduced_card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/event_members.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/event_members.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/event_members.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/members_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/members_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+    &quot;accountId&quot;: &quot;2501a540-e9fd-4524-b093-911d91a8d0b5&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -100,7 +101,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -140,7 +141,11 @@
       <workItem from="1741125857307" duration="8284000" />
       <workItem from="1741134525408" duration="1125000" />
       <workItem from="1741211902830" duration="3725000" />
-      <workItem from="1741261183629" duration="1928000" />
+      <workItem from="1741261183629" duration="3192000" />
+      <workItem from="1741271616411" duration="750000" />
+      <workItem from="1741275093282" duration="124000" />
+      <workItem from="1741275362781" duration="942000" />
+      <workItem from="1741277189076" duration="1269000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
