@@ -85,7 +85,6 @@ main {
 #user-list-container button {
     background: transparent;
     box-shadow: none;
-    width: auto;
 }
 
 #event-form textarea {

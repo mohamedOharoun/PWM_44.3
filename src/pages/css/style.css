@@ -2,9 +2,11 @@
     font-family: "League Spartan", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html body {
+    box-sizing: border-box;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -12,10 +14,10 @@ html body {
 }
 
 main {
-    display: flex;
     flex: 1;
+    display: flex;
     background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: auto;
+    overflow-y: auto;
 }
 
 a {
@@ -27,15 +29,36 @@ input {
     outline: none;
 }
 
+button {
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #23CFA7, #006D77);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 #page-header {
     display: flex;
     align-items: center;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: white;
-    position: sticky;
     z-index: 1000;
     top: 0;
+}
+
+footer:not(.card-footer) {
+    z-index: 1000;
+    padding: 20px;
+    font-family: "League Spartan", serif;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 100%;
+    bottom: 0;
 }
 
 ::-webkit-scrollbar {
