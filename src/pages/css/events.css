@@ -8,7 +8,8 @@
     background: white;
     padding-top: 30px;
     width: 15%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
 }
 
 #events-header {
