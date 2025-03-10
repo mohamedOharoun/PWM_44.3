@@ -1,28 +1,54 @@
-<article class="profile-container">
-    <div class="profile-header">
-        <h1 id="profile-header">Lorem Ipsum</h1>
-        <div class="edit-button">
-            <img src="../../../assets/images/edit_icon.svg" alt="Profile Image">
-        </div>
+<header id="profile-header">
+    <div id="profile-title-container">
+        <h1>Lorem Ipsum</h1>
+        <img src="../../../assets/images/edit_icon.svg" alt="Profile Image">
     </div>
     <hr>
-    <section class="profile-content">
+</header>
+<div id="profile-body">
+    <div class="profile-content">
         <div class="profile-avatar">
-            <div class="avatar">
-                <img src="../../../assets/images/userprofile_icon.svg" alt="Profile Image" class="profile-image">
-            </div>
+            <img src="../../../assets/images/userprofile_icon.svg" alt="Profile Image" class="profile-image">
         </div>
         <div class="profile-info">
-            <label>Lorem ipsum</label>
-            <input type="text" placeholder="Lorem ipsum">
-            <label>Lorem ipsum</label>
-            <input type="text" placeholder="Lorem ipsum">
-            <label>Lorem ipsum</label>
-            <input type="text" placeholder="Lorem ipsum">
+            <label>
+                Lorem ipsum
+                <input type="text" placeholder="Lorem ipsum" readonly>
+            </label>
+            <label>
+                Lorem ipsum
+                <input type="text" placeholder="Lorem ipsum" readonly>
+            </label>
+            <label>
+                Lorem ipsum
+                <input type="text" placeholder="Lorem ipsum" readonly>
+            </label>
         </div>
-    </section>
-    <div class="profile-description">
-        <label>Lorem ipsum</label>
-        <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...</textarea>
     </div>
-</article>
+    <div class="profile-description">
+        <label>
+            Lorem ipsum
+            <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...</textarea>
+        </label>
+    </div>
+    <section class="events-section">
+        <details>
+            <summary>Lorem Ipsum</summary>
+            <div class="summary-content">
+                <article class="event-card" xlu-include-file="../../templates/html/eventcardprofile.html"></article>
+                <article class="event-card" xlu-include-file="../../templates/html/eventcardprofile.html"></article>
+                <article class="event-card" xlu-include-file="../../templates/html/eventcardprofile.html"></article>
+            </div>
+        </details>
+    </section>
+    <section class="events-section">
+        <details>
+            <summary>Lorem Ipsum</summary>
+            <div class="summary-content">
+                <article class="event-card" xlu-include-file="../../templates/html/eventcardprofile.html"></article>
+                <article class="event-card" xlu-include-file="../../templates/html/eventcardprofile.html"></article>
+                <article class="event-card" xlu-include-file="../../templates/html/eventcardprofile.html"></article>
+            </div>
+        </details>
+    </section>
+</div>

@@ -1,5 +1,6 @@
 .event-card {
     display: flex;
+    width: 100%;
     align-items: center;
     border: 2px solid #00bfa5;
     margin: 10px auto;
@@ -32,35 +33,48 @@
     font-size: 14px;
 }
 
-.event-time, .event-location{
-    margin: 0;
-}
-
-.participants-container {
+.participants-icon-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    font-size: 14px;
+}
+
+.event-card-info {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.event-card-title {
+    width: 50%;
+}
+
+.event-members {
+    display: flex;
+    align-items: center;
+}
+
+.time-location {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.event-members hr {
+    margin: 0 20px;
+    width: 3px;
+    height: 50px;
+    background-color: black;
 }
 
 .participants {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
-.participants-container p {
-    margin: 0;
-}
-
-.participants-container img {
-    width: 40px;
-    height: 40px;
-    margin: 0;
-}
-
-.event-members span{
-    height: 100%;
-    display: flex;
-    align-items: center;
+.participants-icon-container img {
+    width: 25px;
+    height: 25px;
 }

@@ -6,20 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/group_creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/group_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/group_creation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/owned_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/owned_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/generic_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/generic_input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user_social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/generic_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/generic_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/members_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/members_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/social_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/profile_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/profile_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/eventcardprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/eventcardprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +155,8 @@
       <workItem from="1741368732301" duration="1395000" />
       <workItem from="1741371458644" duration="1809000" />
       <workItem from="1741527695801" duration="19241000" />
-      <workItem from="1741612892970" duration="1142000" />
+      <workItem from="1741612892970" duration="1642000" />
+      <workItem from="1741621413792" duration="4496000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
