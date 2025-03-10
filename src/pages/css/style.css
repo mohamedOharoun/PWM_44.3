@@ -49,7 +49,7 @@ button:hover {
 
 footer:not(.card-footer) {
     z-index: 1000;
-    padding: 20px;
+    padding: 30px;
     font-family: "League Spartan", serif;
     justify-items: center;
     align-content: center;
