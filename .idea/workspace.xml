@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/profile_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/profile_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/event_members.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/event_members.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/create_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/create_event_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/eventcardprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/eventcardprofile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/tag.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/interactive_tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/interactive_tag.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,7 @@
       <workItem from="1741371458644" duration="1809000" />
       <workItem from="1741527695801" duration="19241000" />
       <workItem from="1741612892970" duration="1642000" />
-      <workItem from="1741621413792" duration="4496000" />
+      <workItem from="1741621413792" duration="6644000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />

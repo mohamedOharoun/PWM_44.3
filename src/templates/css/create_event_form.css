@@ -36,7 +36,7 @@ main {
 #event-form-container {
     flex: 1;
     display: flex;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #event-form input {
@@ -67,18 +67,14 @@ main {
     font-size: 1.4em;
 }
 
-#user-list-container {
+#members-list-container {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
     flex: 1;
 }
 
-#members-list-section {
-    overflow-y: auto;
-    flex: 1 1 0;
-}
-
-#user-list-container button {
+#members-list-container button {
     background: transparent;
     box-shadow: none;
 }
@@ -124,14 +120,17 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+#tags-section-container {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+}
 
-#tags-container {
+#tags-section {
     margin-bottom: 10px;
     overflow-y: auto;
-    width: 100%;
-    flex: 1 1 0;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
-    align-self: flex-start;
-    justify-content: flex-start;
+    align-content: flex-start;
 }
