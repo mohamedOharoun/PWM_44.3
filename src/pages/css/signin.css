@@ -12,8 +12,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 75%;
-    gap: 20px;
+    width: 550px;
+    height: 550px;
 }
 

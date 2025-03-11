@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/signincircle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/signincircle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/feature_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/feature_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signincircle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signincircle.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +37,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
+    "accountId": "2501a540-e9fd-4524-b093-911d91a8d0b5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -103,7 +99,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -155,6 +151,8 @@
       <workItem from="1741527695801" duration="19241000" />
       <workItem from="1741612892970" duration="1642000" />
       <workItem from="1741621413792" duration="6644000" />
+      <workItem from="1741638729960" duration="238000" />
+      <workItem from="1741712731732" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
