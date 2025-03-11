@@ -1,4 +1,4 @@
-header {
+#page_header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -8,38 +8,48 @@ header {
     top: 0;
 }
 
-header img {
+#page_header img {
     margin: 10px 20px 10px 20px;
 }
 
-header nav {
+#page_header nav {
     margin: 0;
     padding: 0;
 }
 
-header ul {
+#page_header ul {
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-header li {
+#page_header li {
     list-style: none;
     cursor: pointer;
 }
 
-header button {
+#page_header_buttons {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+#profile_button {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 10px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#log_button {
     font-weight: bold;
     padding: 10px 30px;
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 4px solid #23CFA7;
-    display: inline-block;
-    text-align: center;
     cursor: pointer;
-    position: relative;
-    margin-left: auto;
-    margin-right: 25px;
 }

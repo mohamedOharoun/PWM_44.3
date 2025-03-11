@@ -28,7 +28,7 @@ main {
 #user_chat_list {
     background: white;
     overflow-y: auto;
-    width: 30%;
+    width: 20%;
 }
 
 ::-webkit-scrollbar {
@@ -48,6 +48,7 @@ main {
 }
 
 #chat {
+    position: relative;
     display: flex;
     flex-direction: column;
     background: white;
@@ -80,6 +81,10 @@ main {
 }
 
 #message_input_wrapper {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 2%;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px;

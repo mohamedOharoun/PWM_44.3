@@ -3,33 +3,41 @@
     flex-direction: row;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    padding: 30px 30px 30px 30px;
     font-size: 14px;
+    padding: 20px 100px 20px 20px;
     width: 100%;
+    border: none;
+    outline: none;
 }
 
 #message_form {
     position: relative;
-    display: inline-block;
-    width: 70%;
-}
-
-#messages_utilities_icons {
+    display: flex;
     align-content: center;
-    margin: 0 20px;
+    width: 70%;
 }
 
 #message_utilities {
     position: absolute;
-    right: -50px;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
+    right: 0;
+    justify-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+#messages_utilities_icons {
+    align-content: center;
+    padding: 0;
+    margin: 0 20px;
+}
+
+#messages_utilities_icons img {
+    width: 20px;
+    height: 20px;
 }
 
 #message_utilities hr {
-    height: 70px;
     right: 100px;
 }
 
