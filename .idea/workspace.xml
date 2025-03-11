@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix files' names">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/favorite_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/favorite_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/joined_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/joined_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/owned_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/owned_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/eventcardprofile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/event_card_profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/eventssidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/events_side_bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/eventcardprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/event_card_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/eventssidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_side_bar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740938223345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix files' names">
+      <option name="closed" value="true" />
+      <created>1741715014630</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741715014630</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +216,7 @@
     <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
     <MESSAGE value="Fix merge conflict" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix merge conflict" />
+    <MESSAGE value="Fix files' names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix files' names" />
   </component>
 </project>
