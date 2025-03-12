@@ -6,24 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/signupstep.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/signupstep.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/signupstep.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/sign_up_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/sign_up_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/signincircle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/signincircle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/eventssidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/eventssidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/reduced_card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_first_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_first_step_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_last_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_last_step_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_second_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_second_step_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_third_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_third_step_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signincircle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signincircle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" afterDir="false" />
@@ -59,7 +49,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
-    "accountId": "2501a540-e9fd-4524-b093-911d91a8d0b5"
+    "accountId": "253bd5c7-92ca-431c-ac0e-b725cdefdb39"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -118,7 +108,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -175,7 +165,8 @@
       <workItem from="1741730709455" duration="8639000" />
       <workItem from="1741741269769" duration="756000" />
       <workItem from="1741742749770" duration="840000" />
-      <workItem from="1741792627549" duration="8152000" />
+      <workItem from="1741792627549" duration="8835000" />
+      <workItem from="1741810535802" duration="4934000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
