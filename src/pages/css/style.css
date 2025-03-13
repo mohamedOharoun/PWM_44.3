@@ -17,6 +17,7 @@ main {
     flex: 1;
     display: flex;
     background: linear-gradient(45deg, #006D77, #23CFA7);
+    overflow: hidden;
 }
 
 a {

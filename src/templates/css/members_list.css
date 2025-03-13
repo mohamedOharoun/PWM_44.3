@@ -6,6 +6,6 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
     flex: 1;
 }
