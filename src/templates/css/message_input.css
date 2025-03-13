@@ -2,7 +2,7 @@
     display: flex;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    font-size: 14px;
+    font-size: 0.8rem;
     padding: 20px 100px 20px 20px;
     width: 100%;
     border: none;
@@ -20,13 +20,16 @@
     position: absolute;
     display: flex;
     right: 0;
-    justify-items: center;
+    align-items: center;
     margin: 0;
     height: 100%;
 }
 
 #message-utilities hr {
     width: 1px;
+    background: grey;
+    border: none;
+    height: 70%;
 }
 
 #message-utilities-icons {

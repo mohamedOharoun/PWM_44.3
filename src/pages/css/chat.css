@@ -1,50 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: auto;
-}
-
-::-webkit-scrollbar {
-    background: transparent;
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    border-radius: 15px;
-    border: 2px solid white;
-}
-
 #chat-user-list {
     background: white;
     overflow-y: auto;
     width: 20%;
-}
-
-#current-chat-name-container {
-    padding: 5% 0 5px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
 }
 
 #current-chat {
@@ -56,8 +13,19 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+#current-chat-name-container {
+    padding: 5% 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
 #current-chat-name-container hr {
     width: 70%;
+    border: none;
+    background: black;
+    height: 1px;
 }
 
 #messages-section {
@@ -77,6 +45,7 @@ main {
     padding: 10px;
 }
 
-.self_message {
-    margin-left: auto;
+.self-message {
+    display: flex;
+    justify-content: flex-end;
 }

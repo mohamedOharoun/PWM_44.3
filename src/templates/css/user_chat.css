@@ -1,16 +1,16 @@
-.user_chat {
-    padding: 20px 50px;
+.user-chat {
+    padding: 5% 5%;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     margin: 0;
 }
 
-.user_chat a {
-    margin: 0 30px;
+.user-chat a {
+    margin: 0 10px;
 }
 
-.user_rounded_photo {
+.user-chat-photo-container {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -21,21 +21,21 @@
     overflow: hidden;
 }
 
-.user_rounded_photo img {
+.user-chat-photo-container img {
     width: 40px;
     height: 40px;
 }
 
-.user_chat_icons {
+.user-chat-icons-container {
     margin-left: auto;
 }
 
-.user_chat_icons img {
+.user-chat-icons-container img {
     width: 30px;
     height: 30px;
 }
 
-.user_chat button {
+.user-chat button {
     display: inline-flex;
     align-items: center;
     justify-content: center;

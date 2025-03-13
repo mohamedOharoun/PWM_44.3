@@ -15,6 +15,7 @@ body {
 
 main {
     flex: 1;
+    height: 100vh;
     display: flex;
     background: linear-gradient(45deg, #006D77, #23CFA7);
     overflow: hidden;
@@ -37,7 +38,6 @@ a {
 }
 
 #page-footer {
-    position: sticky;
     z-index: 1000;
     padding: 20px;
     font-family: "League Spartan", serif;
