@@ -1,0 +1,134 @@
+{
+  "header": {
+    "nav": {
+      "titles": [
+        "Home",
+        "Events",
+        "Social",
+        "Messages"
+      ],
+      "links": [
+        "../../pages/html/home_page.html",
+        "../../pages/html/events_explore.html",
+        "../../pages/html/social_friends.html",
+        "../../pages/html/chat.html"
+      ]
+    },
+    "sign-in-button": "Sign in",
+    "log-out-button": "Log out"
+  },
+  "login": {
+    "logo-alt": "JoinUp Logo",
+    "title": "Log in",
+    "placeholders": {
+      "email": "johndoe@gmail.com",
+      "password": "Password"
+    },
+    "options": {
+      "keep-logged-in": "Keep Logged",
+      "forgot-password": "I forgot my password",
+      "register": "Sign up"
+    },
+    "button-text": "LOG IN"
+  },
+  "reset-password": {
+    "title": "Reset password",
+    "text-information": "Enter the email address you used to create your account.\nWe will send you instructions to reset your password.",
+    "email-placeholder": "johndoe@gmail.com",
+    "button-text": "SEND",
+    "message": {
+      "first-part": "Already have your password? Log in ",
+      "second-part": "here."
+    }
+  },
+  "profile": {
+    "title-user": "User profile",
+    "title-self": "Self profile",
+    "profile-content": {
+      "full-name-label": "Full name",
+      "username-label": "Username",
+      "email-label": "E-mail"
+    },
+    "profile-description": {
+      "label": "Description"
+    },
+    "events-section": {
+      "labels": [
+        "Events",
+        "Shared events"
+      ]
+    }
+  },
+  "events": {
+    "events-side-bar": {
+      "nav": [
+        "Explore",
+        "Joined",
+        "Favourites",
+        "My events"
+      ],
+      "event-search-input-placeholder": "Search"
+    },
+    "create-event-button": "Create event",
+    "join-event-button": "Join",
+    "leave-event-button": "Leave",
+    "event-members": {
+      "title": "member(s)"
+    }
+  },
+  "social": {
+    "nav": [
+      "Friends",
+      "Pending",
+      "Sent requests",
+      "Blocked",
+      "Groups"
+    ],
+    "friends-title": "Friends",
+    "pending-title": "Pending",
+    "sent-title": "Send requests",
+    "blocked-title": "Blocked",
+    "groups-title": "Groups"
+  },
+  "chats": {
+    "message-input-placeholder": "Send a message..."
+  },
+  "sign-up": {
+  },
+  "first": {
+    "first-title": "Basic information",
+    "second-title": "the first step",
+    "email-placeholder": "Introduce you e-mail address...",
+    "first-password-placeholder": "Create a password...",
+    "second-password-placeholder": "Repeat your password..."
+  },
+  "second": {
+    "first-title": "Account information",
+    "second-title": "we are looking forward to know you",
+    "name-placeholder": "Full name",
+    "username-placeholder": "Choose your username",
+    "birth-date-placeholder": "Birth date"
+  },
+  "third": {
+    "first-title": "Account photo",
+    "second-title": "represent yourself with it",
+    "photo-text": "Upload your photo"
+  },
+  "fourth": {
+    "first-title": "Privacy policy",
+    "second-title": "the last step",
+    "first-text": "",
+    "second-text": ""
+  },
+  "sign-up-lower-info": {
+    "next-step-button": "Next",
+    "previous-step-button": "Previous",
+    "sign-in-info": "Already have an account? Try signing in.",
+    "steps-info": {
+      "first-step": "Basic information",
+      "second-step": "Account information",
+      "third-step": "Account photo",
+      "ford-step": "Privacy policy"
+    }
+  }
+}
