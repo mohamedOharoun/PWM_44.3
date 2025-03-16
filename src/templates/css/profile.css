@@ -1,25 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.profile-container {
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 20px;
-    position: relative;
-}
-
-.profile-container hr {
-    width: 103%;
-}
-
 #profile-header {
     font-size: 24px;
     font-weight: bold;
+}
+
+#profile-title-container {
+    display: flex;
+}
+
+#profile-title-container img {
+    margin-left: auto;
 }
 
 .edit-button {
@@ -43,17 +32,17 @@ body {
     gap: 20px;
 }
 
-.profile-avatar .avatar {
-    width: 100px;
-    height: 100px;
+.profile-avatar {
+    margin: 30px 90px;
+    padding-bottom: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.profile-avatar .avatar img {
-    width: 100px;
-    height: 100px;
+.profile-avatar img {
+    width: 300px;
+    height: 300px;
 }
 
 .profile-info {
@@ -87,4 +76,75 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
+}
+
+#profile-body {
+    padding: 0 70px;
+}
+
+.summary-content {
+    width: 100%;
+}
+
+.events-section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+    position: relative;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.profile-info input {
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    transition: box-shadow 0.4s ease;
+}
+
+.profile-info input:focus {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-description textarea {
+    color: grey;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: box-shadow 0.4s ease-in-out;
+    height: 200px;
+}
+
+.profile-description textarea:focus {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#profile-header hr {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: black;
 }

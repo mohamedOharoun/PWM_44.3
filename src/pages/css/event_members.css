@@ -1,53 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 main {
-    display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: auto;
 }
 
-#members_section {
+#members-center-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: white;
     height: 98%;
-    width: 30%;
+    width: 35%;
     padding: 0;
     border-radius: 10px;
 }
 
-#members_section h1 {
-    margin: 40px;
-}
-
-#members_title_section {
+#members-title-section {
     display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 
-#members_list_wrapper {
-    overflow-y: auto;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
+#members-title-header a {
+    margin: 10px;
 }
 
-#members_list_section article {
-    margin: 5px 15px;
+#members-title-header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+#members-list-container {
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
 }
 
 ::-webkit-scrollbar {

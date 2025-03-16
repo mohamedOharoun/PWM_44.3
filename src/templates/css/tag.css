@@ -1,28 +1,30 @@
 .tag {
-    border: 3px solid #23CFA7;
+    display: flex;
+    border: 2px solid #23CFA7;
     border-radius: 10px;
     font-size: 5px;
     margin: 5px;
-    width: auto;
-    display: flex;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .tag button {
+    display: flex;
+    align-items: center;
     padding: 0;
     background: transparent;
     box-shadow: none;
     width: auto;
     border: none;
-}
-
-.tag img {
-    width: 25px;
-    height: 25px;
     margin-right: 3px;
 }
 
+.tag img {
+    width: 20px;
+    height: 20px;
+}
+
 .tag p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: lighter;
     margin: 5px;
 }

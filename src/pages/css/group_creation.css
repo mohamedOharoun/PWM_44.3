@@ -1,49 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "League Spartan", sans-serif;
-}
-
-html, body {
-    height: 100%;
-}
-
-.page-content {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 main {
-    display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: auto;
 }
 
-#group_creation {
+#center-panel {
+    display: flex;
+    flex-direction: column;
     background: white;
+    height: 98%;
+    width: 35%;
+    border-radius: 10px;
+    padding: 40px 40px 20px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    padding: 30px;
-    width: 652px;
-    height: 828px;
-    margin: 10px 0;
 }
 
-#group_creation h1 {
+#members-list-container {
+    margin: 10px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+#center-panel h1 {
     font-size: 40px;
     margin: 10px;
 }
 
-#members_list {
-    height: 45%;
-    overflow-y: auto;
-    padding-right: 5px;
-    margin: 40px 0;
+#upper-group-creations-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#upper-group-creations-inputs img {
+    width: 100px;
+    height: 100px;
+}
+
+#group-name-input {
+    flex: 1;
+}
+
+#group-upload-photo-utilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#group-upload-photo-container {
+    align-content: center;
+    justify-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#group-upload-photo-utilities img {
+    width: 20px;
+    height: 20px;
+}
+
+#group-upload-photo-utilities * {
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -51,50 +68,13 @@ main {
     width: 10px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: white;
-    border: 2px solid #23CFA7;
-    border-radius: 10px;
-}
-
-#members_list::-webkit-scrollbar {
+::-webkit-scrollbar-track {
     background: transparent;
     width: 10px;
 }
 
-#members_list::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #006D77, #23CFA7);
-    border-radius: 10px;
-    border: none;
-}
-
-#upper_input_group_creation {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-}
-
-#upper_input_group_creation img {
-    width: 150px;
-    height: 150px;
-}
-
-#group_name_input {
-    flex: 1;
-}
-
-#upload_photo_utilities {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-#upload_photo_utilities img {
-    width: 30px;
-    height: 30px;
-}
-
-#upload_photo_utilities * {
-    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid white;
 }

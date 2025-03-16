@@ -50,13 +50,15 @@
     text-align: center;
 }
 
-
 .tags li {
     list-style: none;
     font-size: 18px;
 }
 
 .tags ul {
+    gap: 30px;
     display: flex;
     flex-direction: column;
 }
+
+
