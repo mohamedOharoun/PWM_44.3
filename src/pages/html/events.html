@@ -33,52 +33,50 @@
   <script>
       const stringToHTML = (string) => {
             return new DOMParser().parseFromString(string, "text/html");
-      }
-      const makeEvent = async (event_structure) => {
-          const event_struct = stringToHTML(event_structure);
-          console.log(event_struct);
-          const dummyText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
-              "Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? " +
-              "Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam " +
-              "voluptatibus mollitia iusto asperiores eligendi." +
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
-              "Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? " +
-              "Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam " +
-              "voluptatibus mollitia iusto asperiores eligendi." +
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
-              "Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? " +
-              "Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam " +
-              "voluptatibus mollitia iusto asperiores eligendi.";
-          const price = 0.2;
-          event_struct.getElementsByClassName("main-title")[0].textContent = "Event Name";
-          event_struct.getElementsByClassName("subtitle")[0].textContent = "Host Name";
-          event_struct.getElementsByClassName("section-title")[0].textContent = "Description";
-          event_struct.getElementsByClassName("description-text")[0].textContent = dummyText;
-          event_struct.getElementsByClassName("event-time")[0].textContent = "Wed 20, January 22:00";
-          event_struct.getElementsByClassName("event-place")[0].textContent = "Mi Casa";
-          event_struct.getElementsByClassName("event-price")[0].textContent = price == 0 ? "FREE" : "$" + price;
-          event_struct.getElementsByClassName("likes-count")[0].textContent = "0";
-          event_struct.getElementsByClassName("comments-count")[0].textContent = "0";
-          event_struct.getElementsByClassName("see-more-button")[0].textContent = "SEE MORE";
-          event_struct.getElementsByClassName("participants-count")[0].textContent = "0";
-          event_struct.getElementsByClassName("participants-label")[0].textContent = "participants";
-          event_struct.getElementsByClassName("action-button")[0].textContent = "participants";
+      };
 
-          const eventsList = document.getElementById("events");
+      const makeEventCard = async (event_structure, event) => {
+          const event_struct = stringToHTML(event_structure);
+          event_struct.getElementsByClassName("main-title")[0].textContent = event.name;
+          event_struct.getElementsByClassName("subtitle")[0].textContent = event.author;
+          event_struct.getElementsByClassName("section-title")[0].textContent = "Description";
+          event_struct.getElementsByClassName("description-text")[0].textContent = event.description;
+          event_struct.getElementsByClassName("event-time")[0].textContent = event.time;
+          event_struct.getElementsByClassName("event-place")[0].textContent = event.place;
+          event_struct.getElementsByClassName("event-price")[0].textContent = event.price == 0 ? "FREE" : "$" + event.price;
+          event_struct.getElementsByClassName("likes-count")[0].textContent = event.likes;
+          event_struct.getElementsByClassName("comments-count")[0].textContent = event.comments;
+          event_struct.getElementsByClassName("see-more-button")[0].textContent = "SEE MORE";
+          event_struct.getElementsByClassName("participants-count")[0].textContent = event.participants;
+          event_struct.getElementsByClassName("participants-label")[0].textContent = "participants";
+          event_struct.getElementsByClassName("action-button")[0].textContent = "JOIN";
+
           const article = document.createElement("article");
           article.innerHTML = event_struct.body.innerHTML;
           article.className = "card";
-          eventsList.appendChild(article);
+          return article;
       };
+
       const loadEventStructure = async () => {
           return await fetch("../../templates/html/reduced_card.html")
               .then(res => res.text());
-      }
+      };
+
+      const loadJSON = async (file) => {
+          return await fetch(`../../locales/${file}`)
+              .then(res => res.json());
+      };
+
       const init = async () => {
           const event_structure = await loadEventStructure();
-          for (let i = 0; i < 10; i++)
-            await makeEvent(event_structure);
+          const events = await loadJSON("events.json");
+          const eventsList = document.getElementById("events");
+          for (const event of events) {
+              const eventCard = await makeEventCard(event_structure, event);
+              eventsList.appendChild(eventCard);
+          }
       };
+
       init();
   </script>
 </body>

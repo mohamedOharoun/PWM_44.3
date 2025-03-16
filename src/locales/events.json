@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "user": 1,
+    "name": "Event Name 1",
+    "author": "Host Name 1",
+    "description": "This is a sample description for event 1.",
+    "time": "Wed 20, January 22:00",
+    "place": "Mi Casa",
+    "price": "FREE",
+    "likes": 0,
+    "comments": 0,
+    "participants": 0
+  },
+  {
+    "id": 2,
+    "user": 1,
+    "name": "Event Name 2",
+    "subtitle": "Host Name 2",
+    "section_title": "Description 2",
+    "description": "This is a sample description for event 2.",
+    "time": "Thu 21, January 18:30",
+    "place": "Central Park",
+    "price": "10",
+    "likes": 5,
+    "comments": 2,
+    "see_more_button": "SEE MORE",
+    "participants": 15,
+    "participants_label": "participants",
+    "action_button": "Join Event"
+  },
+  {
+    "id": 3,
+    "user": 2,
+    "name": "Event Name 3",
+    "subtitle": "Host Name 3",
+    "section_title": "Description 3",
+    "description": "This is a sample description for event 3.",
+    "time": "Fri 22, January 20:00",
+    "place": "Downtown Club",
+    "price": "20",
+    "likes": 12,
+    "comments": 5,
+    "see_more_button": "SEE MORE",
+    "participants": 30,
+    "participants_label": "participants",
+    "action_button": "Join Now"
+  }
+]
