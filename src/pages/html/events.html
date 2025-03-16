@@ -20,18 +20,46 @@
         <main>
           <div id="events-header">
             <h1>Lorem Ipsum</h1>
-            <a href="create_event_page.html" id="create-event-link">Lorem Ipsum</a>
+            <a href="create_event_page.html" id="create-event_struct-link">Lorem Ipsum</a>
           </div>
           <hr id="events-hr">
-          <section class="events">
-              <article xlu-include-file="../../templates/html/reduced_card.html" class="card-event card"></article>
-              <article xlu-include-file="../../templates/html/reduced_card.html" class="card-event card"></article>
-              <article xlu-include-file="../../templates/html/reduced_card.html" class="card-event card"></article>
+          <section id="events">
           </section>
         </main>
     </div>
-
     <footer id="main_footer" xlu-include-file="../../templates/html/footer.html"></footer>
   </div>
+
+  <script>
+      const stringToHTML = (string) => {
+            return new DOMParser().parseFromString(string, "text/html");
+      }
+      const loadEvent = async () => {
+          const event_card = await fetch("../../templates/html/reduced_card.html")
+                            .then(res => res.text());
+          const event_struct = stringToHTML(event_card);
+          const dummyText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam voluptatibus mollitia iusto asperiores eligendi.";
+          const price = 0.2;
+          event_struct.getElementsByClassName("main-title")[0].textContent = "Event Name";
+          event_struct.getElementsByClassName("subtitle")[0].textContent = "Host Name";
+          event_struct.getElementsByClassName("section-title")[0].textContent = "Description";
+          event_struct.getElementsByClassName("description-text")[0].textContent = dummyText;
+          event_struct.getElementsByClassName("event-time")[0].textContent = "Wed 20, January 22:00";
+          event_struct.getElementsByClassName("event-place")[0].textContent = "Mi Casa";
+          event_struct.getElementsByClassName("event-price")[0].textContent = price == 0 ? "FREE" : "$" + price;
+          event_struct.getElementsByClassName("likes-count")[0].textContent = "0";
+          event_struct.getElementsByClassName("comments-count")[0].textContent = "0";
+          event_struct.getElementsByClassName("see-more-button")[0].textContent = "SEE MORE";
+          event_struct.getElementsByClassName("participants-count")[0].textContent = "0";
+          event_struct.getElementsByClassName("participants-label")[0].textContent = "participants";
+          event_struct.getElementsByClassName("action-button")[0].textContent = "participants";
+
+          const eventsList = document.getElementById("events");
+          const article = document.createElement("article");
+          article.innerHTML = event_struct.body.innerHTML;
+          eventsList.appendChild(article);
+      };
+      loadEvent();
+  </script>
 </body>
 </html>
