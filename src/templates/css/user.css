@@ -1,4 +1,4 @@
-.user_card {
+.user-card {
     padding: 10px;
     display: flex;
     border: 2px solid #23CFA7;
@@ -8,11 +8,11 @@
     margin: 10px 0 1px 0;
 }
 
-.user_card p {
+.user-card p {
     font-size: 20px;
 }
 
-.user_card button {
+.user-card button {
     display: flex;
     border-radius: 50%;
     width: 40px;
@@ -25,15 +25,16 @@
     justify-content: center;
 }
 
-.user_card_photo {
+.user-card-photo {
     border-radius: 10px;
     border: 2px solid #23CFA7;
     width: 40px;
     height: 40px;
     margin: 0 15px 0 10px;
+    overflow: hidden;
 }
 
-.user_card_photo img {
+.user-card-photo img {
     margin: 0;
     padding: 0;
     width: 100%;

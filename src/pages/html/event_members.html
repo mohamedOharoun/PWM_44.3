@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Social</title>
     <script src="../../js/xlu-include-file.js" defer></script>
+    <script type="module" src="../../js/event_members.js" defer></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../templates/css/header.css">
     <link rel="stylesheet" href="../../templates/css/footer.css">
@@ -12,18 +13,20 @@
     <link rel="stylesheet" href="../css/event_members.css">
 </head>
 <body>
-    <header id="page-header" xlu-include-file="../../templates/html/header.html"></header>
+    <header id="page-header"></header>
     <main>
         <div id="members-center-panel">
             <div id="members-title-section">
                 <div id="members-title-header">
                     <a href="events_explore.html"><img src="../../../assets/images/cancel_circle.svg"> </a>
                 </div>
-                <h1>+99 Lorem Ipsum</h1>
+                <h1 id="members-list-title">+99 Lorem Ipsum</h1>
             </div>
-            <div id="members-list-container" xlu-include-file="../../templates/html/members_list.html"></div>
+            <div id="members-list-container">
+                <section id="members-list-section"></section>
+            </div>
         </div>
     </main>
-    <footer id="page-footer" xlu-include-file="../../templates/html/footer.html"></footer>
+    <footer id="page-footer"></footer>
 </body>
 </html>

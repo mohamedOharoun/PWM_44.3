@@ -25,14 +25,14 @@
     height: 30px;
 }
 
-.profile-content {
+#profile-content {
     margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.profile-avatar {
+#profile-photo {
     margin: 30px 90px;
     padding-bottom: 60px;
     display: flex;
@@ -40,22 +40,22 @@
     justify-content: flex-start;
 }
 
-.profile-avatar img {
+#profile-image {
     width: 300px;
     height: 300px;
 }
 
-.profile-info {
+#profile-info {
     flex-grow: 1;
 }
 
-.profile-info label {
+#profile-info label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.profile-info input {
+#profile-info input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -63,13 +63,13 @@
     border-radius: 5px;
 }
 
-.profile-description label {
+#profile-description-container label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.profile-description textarea {
+#profile-description-container textarea {
     width: 100%;
     height: 100px;
     padding: 8px;
@@ -109,7 +109,7 @@ summary {
     width: 100%;
 }
 
-.profile-info input {
+#profile-info input {
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -120,11 +120,11 @@ summary {
     transition: box-shadow 0.4s ease;
 }
 
-.profile-info input:focus {
+#profile-info input:focus {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.profile-description textarea {
+#profile-description-container textarea {
     color: grey;
     font-size: 20px;
     margin: 10px 0;
@@ -138,7 +138,7 @@ summary {
     height: 200px;
 }
 
-.profile-description textarea:focus {
+#profile-description-container textarea:focus {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
