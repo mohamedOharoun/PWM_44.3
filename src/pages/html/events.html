@@ -20,7 +20,7 @@
         <main>
           <div id="events-header">
             <h1>Lorem Ipsum</h1>
-            <a href="create_event_page.html" id="create-event_struct-link">Lorem Ipsum</a>
+            <a href="create_event_page.html" id="create-event-link">Lorem Ipsum</a>
           </div>
           <hr id="events-hr">
           <section id="events">
@@ -34,11 +34,21 @@
       const stringToHTML = (string) => {
             return new DOMParser().parseFromString(string, "text/html");
       }
-      const loadEvent = async () => {
-          const event_card = await fetch("../../templates/html/reduced_card.html")
-                            .then(res => res.text());
-          const event_struct = stringToHTML(event_card);
-          const dummyText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam voluptatibus mollitia iusto asperiores eligendi.";
+      const makeEvent = async (event_structure) => {
+          const event_struct = stringToHTML(event_structure);
+          console.log(event_struct);
+          const dummyText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
+              "Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? " +
+              "Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam " +
+              "voluptatibus mollitia iusto asperiores eligendi." +
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
+              "Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? " +
+              "Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam " +
+              "voluptatibus mollitia iusto asperiores eligendi." +
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. " +
+              "Nobis modi dicta voluptas porro eius quisquam corporis fugiat odio recusandae? " +
+              "Explicabo, error, aut, maxime ea vero voluptate sapiente animi similique sed veniam " +
+              "voluptatibus mollitia iusto asperiores eligendi.";
           const price = 0.2;
           event_struct.getElementsByClassName("main-title")[0].textContent = "Event Name";
           event_struct.getElementsByClassName("subtitle")[0].textContent = "Host Name";
@@ -57,9 +67,19 @@
           const eventsList = document.getElementById("events");
           const article = document.createElement("article");
           article.innerHTML = event_struct.body.innerHTML;
+          article.className = "card";
           eventsList.appendChild(article);
       };
-      loadEvent();
+      const loadEventStructure = async () => {
+          return await fetch("../../templates/html/reduced_card.html")
+              .then(res => res.text());
+      }
+      const init = async () => {
+          const event_structure = await loadEventStructure();
+          for (let i = 0; i < 10; i++)
+            await makeEvent(event_structure);
+      };
+      init();
   </script>
 </body>
 </html>

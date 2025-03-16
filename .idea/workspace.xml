@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix renaming issues">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Make HTML load of event template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/events.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
@@ -76,7 +76,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTCompactSettingsConfigurable",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -168,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740938223345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Make HTML load of event template">
+      <option name="closed" value="true" />
+      <created>1742144863854</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742144863854</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +199,7 @@
     <MESSAGE value="merge: develop-Laura merged into main" />
     <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge resolution" />
+    <MESSAGE value="Make HTML load of event template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make HTML load of event template" />
   </component>
 </project>

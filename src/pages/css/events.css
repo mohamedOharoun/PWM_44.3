@@ -71,3 +71,10 @@ main {
     align-items: center;
     font-size: 16px;
 }
+
+.description-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
