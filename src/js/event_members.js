@@ -1,61 +1,55 @@
-import { loadTemplate } from "./main.js";
-
-loadTemplate("../../templates/html/header.html", "page-header");
-loadTemplate("../../templates/html/footer.html", "page-footer");
+import {initEssentials, loadTemplate} from "./main.js";
 
 let membersAmount = 0;
 const membersListSection = document.getElementById("members-list-section");
 const membersListTitle = document.getElementById("members-list-title");
+const userTemplate = await loadTemplate("../../templates/html/user.html");
 
-const userTemplate = fetch("../../templates/html/user.html")
-    .then(res => res.text())
-    .then(text => {
-        let article = document.createElement("article");
-        article.innerHTML = text;
-        article.classList.add("user-card");
-        return article;
-    })
-    .catch(err => console.error("Could not load user template:", err));
-
-const loadUsers = () => {
-    fetch("../../locales/users.json")
-        .then(res => res.json())
-        .then(users => {
-            userTemplate.then(template => {
-                const fragment = document.createDocumentFragment();
-                Object.entries(users).forEach(([userID, userData]) => {
-                    fragment.appendChild(buildUserTemplate(template, userID, userData));
-                });
-                membersListSection.appendChild(fragment);
-                updateMembersTitle();
-            });
-        })
-        .catch(err => console.error("Could not load users:", err));
+const loadUsers = async () => {
+    const users = await (await fetch("../../locales/users.json")).json();
+    await buildUsersSection(users, userTemplate);
+    await updateMembersTitle();
 };
 
-const buildUserTemplate = (template, userID, userData) => {
-    let userArticle = template.cloneNode(true);
-    userArticle.id = userID;
+const buildUsersSection = async (users, userTemplate) => {
+    const fragment = document.createDocumentFragment();
+    Object.entries(users).forEach(([userID, userData]) => {
+        fragment.appendChild(buildUserTemplate(userTemplate.cloneNode(true), userID, userData));
+    });
+    membersListSection.appendChild(fragment);
+}
 
+const buildUserProfileURL = (href, userID) => {
+    let userProfileURL = new URL(href);
+    let userProfileURLParameters = new URLSearchParams(userProfileURL.search);
+    console.log(userProfileURLParameters.toString());
+    userProfileURLParameters.set("user_id", userID);
+    userProfileURL.search = userProfileURLParameters.toString();
+    return userProfileURL;
+}
+
+const setUserData = (userArticle, userData, userID) => {
     let usernameLabel = userArticle.querySelector(".user-name");
     usernameLabel.textContent = userData.username;
-    usernameLabel.addEventListener("click", () => {
-        localStorage.setItem("lastUser", userID);
-    });
+    usernameLabel.href = buildUserProfileURL(usernameLabel.href, userID);
+}
 
-    let userPhoto = userArticle.querySelector(".user-card-photo");
-    userPhoto.innerHTML = "";
-    let img = document.createElement("img");
-    img.src = userData.photo;
-    img.alt = `${userData.username} photo`;
-    img.loading = "lazy";
-    userPhoto.appendChild(img);
+const setUserPhoto = (userArticle, userData) => {
+    let userPhoto = userArticle.querySelector(".user-photo");
+    userPhoto.src = userData.photo;
+    userPhoto.alt = `${userData.username} photo`;
+    userPhoto.loading = "lazy";
+}
 
+const buildUserTemplate = (userArticle, userID, userData) => {
+    userArticle.id = userID;
+    setUserData(userArticle, userData, userID);
+    setUserPhoto(userArticle, userData);
     membersAmount++;
     return userArticle;
 };
 
-const updateMembersTitle = () => {
+const updateMembersTitle = async () => {
     fetch("../../locales/config.json")
         .then(res => res.json())
         .then(data => {
@@ -64,4 +58,9 @@ const updateMembersTitle = () => {
         .catch(err => console.error("Could not load configuration:", err));
 };
 
-loadUsers();
+const init = async () => {
+    await initEssentials();
+    await loadUsers();
+}
+
+await init();

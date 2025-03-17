@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Social</title>
-    <script src="../../js/xlu-include-file.js" defer></script>
+    <script type="module" src="../../js/social.js" defer></script>
     <link rel="stylesheet" href="../../templates/css/header.css">
     <link rel="stylesheet" href="../../templates/css/footer.css">
     <link rel="stylesheet" href="../../templates/css/social_navigation.css">
@@ -12,18 +12,17 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header id="page-header" xlu-include-file="../../templates/html/header.html"></header>
+    <header id="page-header"></header>
     <main>
         <div id="social-container">
-            <header id="social-header" xlu-include-file="../../templates/html/social_navigation.html"></header>
+            <header id="social-header"></header>
             <div id="social-title-container">
-                <h1>+99 Lorem Ipsum</h1>
+                <h1 id="social-title"></h1>
             </div>
             <section id="social-list">
-                <article class="user-social" xlu-include-file="../../templates/html/user_social_block_and_sent_request.html"></article>
             </section>
         </div>
     </main>
-    <footer id="page-footer" xlu-include-file="../../templates/html/footer.html"></footer>
+    <footer id="page-footer"></footer>
 </body>
 </html>

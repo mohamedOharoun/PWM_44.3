@@ -5,30 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
-      <change afterPath="$PROJECT_DIR$/src/js/event_members.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/load_functions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/profile_page_self.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/profile_page_user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/profile_page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/sign_in.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/social.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/html/social_card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/translations.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/group_creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/event_members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/event_members.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/profile_page_self.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/profile_page_user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/sign_in.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/event_members.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/profile_page_self.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/profile_page_self.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/profile_page_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/profile_page_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/comment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social_friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social_groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/signincircle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/sign_in_circle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/social_navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/social_navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/user_social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/profile_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/profile_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/social_group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/social_navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_navigation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +71,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
-    "accountId": "253bd5c7-92ca-431c-ac0e-b725cdefdb39"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
+    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -73,40 +85,40 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.chat.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.expanded_event_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop-Javier&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/locales&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JSON&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.chat.html.executor": "Run",
+    "JavaScript Debug.expanded_event_page.html.executor": "Run",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
+    "JavaScript Debug.group_creation.html.executor": "Run",
+    "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.message_input.html.executor": "Run",
+    "JavaScript Debug.social_navegation.html.executor": "Run",
+    "JavaScript Debug.social_navigation.html.executor": "Run",
+    "JavaScript Debug.tag.html.executor": "Run",
+    "JavaScript Debug.user.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop-Javier",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/html",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JSON",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Subjects\PWM_44.3\src\locales" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
+      <recent name="E:\Subjects\PWM_44.3\src\locales" />
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
     </key>
@@ -193,6 +205,8 @@
       <workItem from="1741966459453" duration="762000" />
       <workItem from="1741972669215" duration="5054000" />
       <workItem from="1742063132721" duration="15808000" />
+      <workItem from="1742083950042" duration="208000" />
+      <workItem from="1742208131400" duration="27408000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />

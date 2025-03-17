@@ -1,110 +1,142 @@
 {
-  "header": {
-    "nav": {
-      "titles": [
-        "Home",
-        "Events",
-        "Social",
-        "Messages"
-      ],
-      "links": [
-        "../../pages/html/home_page.html",
-        "../../pages/html/events_explore.html",
-        "../../pages/html/social_friends.html",
-        "../../pages/html/chat.html"
-      ]
+    "header": {
+        "nav": {
+            "titles": [
+                "Home",
+                "Events",
+                "Social",
+                "Messages"
+            ]
+        },
+        "sign-in-button": "Sign in",
+        "log-out-button": "Log out"
     },
-    "sign-in-button": "Sign in",
-    "log-out-button": "Log out"
-  },
-  "profile": {
-    "title-user": "User profile",
-    "title-self": "Self profile",
-    "profile-content": {
-      "full-name-label": "Full name",
-      "username-label": "Username",
-      "email-label": "E-mail"
+    "profile": {
+        "titles": {
+            "user-profile": "User profile",
+            "self-profile": "Self profile"
+        },
+        "utils-icons": {
+            "self-profile": ["../../../assets/images/edit_icon.svg"]
+        },
+        "profile-content": {
+            "full-name": {
+                "label": "Full name"
+            },
+            "username": {
+                "label": "Username"
+            },
+            "email": {
+                "label": "E-mail"
+            }
+        },
+        "profile-description": {
+            "description": {
+                "label": "Description"
+            }
+        },
+        "events-sections-container": {
+            "labels": [
+                "Events",
+                "Shared events"
+            ]
+        }
     },
-    "profile-description": {
-      "label": "Description"
+    "events": {
+        "events-side-bar": {
+            "nav": [
+                "Explore",
+                "Joined",
+                "Favourites",
+                "My events"
+            ],
+            "event-search-input-placeholder": "Search"
+        },
+        "create-event-button": "Create event",
+        "join-event-button": "Join",
+        "leave-event-button": "Leave",
+        "event-members": {
+            "title": "member(s)"
+        }
     },
-    "events-section": {
-      "labels": [
-        "Events",
-        "Shared events"
-      ]
+    "social": {
+        "nav": {
+            "titles": [
+                "Friends",
+                "Pending",
+                "Sent requests",
+                "Blocked",
+                "Groups"
+            ]
+        },
+        "titles": {
+            "friends": "friend(s)",
+            "pending": "pending request(s)",
+            "sent-requests": "sent request(s)",
+            "blocked": "blocked user(s)",
+            "groups": "group(s)"
+        },
+        "cards-icons": {
+            "friends": [
+                "../../../assets/images/remove_user_icon.svg",
+                "../../../assets/images/block_user_icon.svg",
+                "../../../assets/images/message_icon.svg"
+            ],
+            "pending": [
+                "../../../assets/images/cross_icon.svg",
+                "../../../assets/images/check_icon.svg"
+            ],
+            "sent-requests": [
+                "../../../assets/images/cross_icon.svg"
+            ],
+            "blocked": [
+                "../../../assets/images/cross_icon.svg"
+            ],
+            "groups": [
+                "../../../assets/images/cross_icon.svg",
+                "../../../assets/images/edit_icon.svg"
+            ]
+        }
+    },
+    "chats": {
+        "message-input-placeholder": "Send a message..."
+    },
+    "sign-up": {
+    },
+    "first": {
+        "first-title": "Basic information",
+        "second-title": "the first step",
+        "email-placeholder": "Introduce you e-mail address...",
+        "first-password-placeholder": "Create a password...",
+        "second-password-placeholder": "Repeat your password..."
+    },
+    "second": {
+        "first-title": "Account information",
+        "second-title": "we are looking forward to know you",
+        "name-placeholder": "Full name",
+        "username-placeholder": "Choose your username",
+        "birth-date-placeholder": "Birth date"
+    },
+    "third": {
+        "first-title": "Account photo",
+        "second-title": "represent yourself with it",
+        "photo-text": "Upload your photo"
+    },
+    "fourth": {
+        "first-title": "Privacy policy",
+        "second-title": "the last step",
+        "first-text": "",
+        "second-text": ""
+    },
+    "sign-up-lower-info": {
+        "next-step-button": "Next",
+        "previous-step-button": "Previous",
+        "sign-in-info": "Already have an account? Try signing in.",
+        "steps-info": {
+            "first-step": "Basic information",
+            "second-step": "Account information",
+            "third-step": "Account photo",
+            "ford-step": "Privacy policy"
+        }
     }
-  },
-  "events": {
-    "events-side-bar": {
-      "nav": [
-        "Explore",
-        "Joined",
-        "Favourites",
-        "My events"
-      ],
-      "event-search-input-placeholder": "Search"
-    },
-    "create-event-button": "Create event",
-    "join-event-button": "Join",
-    "leave-event-button": "Leave",
-    "event-members": {
-      "title": "member(s)"
-    }
-  },
-  "social": {
-    "nav": [
-      "Friends",
-      "Pending",
-      "Sent requests",
-      "Blocked",
-      "Groups"
-    ],
-    "friends-title": "Friends",
-    "pending-title": "Pending",
-    "sent-title": "Send requests",
-    "blocked-title": "Blocked",
-    "groups-title": "Groups"
-  },
-  "chats": {
-    "message-input-placeholder": "Send a message..."
-  },
-  "sign-up": {
-  },
-  "first": {
-    "first-title": "Basic information",
-    "second-title": "the first step",
-    "email-placeholder": "Introduce you e-mail address...",
-    "first-password-placeholder": "Create a password...",
-    "second-password-placeholder": "Repeat your password..."
-  },
-  "second": {
-    "first-title": "Account information",
-    "second-title": "we are looking forward to know you",
-    "name-placeholder": "Full name",
-    "username-placeholder": "Choose your username",
-    "birth-date-placeholder": "Birth date"
-  },
-  "third": {
-    "first-title": "Account photo",
-    "second-title": "represent yourself with it",
-    "photo-text": "Upload your photo"
-  },
-  "fourth": {
-    "first-title": "Privacy policy",
-    "second-title": "the last step",
-    "first-text": "",
-    "second-text": ""
-  },
-  "sign-up-lower-info": {
-    "next-step-button": "Next",
-    "previous-step-button": "Previous",
-    "sign-in-info": "Already have an account? Try signing in.",
-    "steps-info": {
-      "first-step": "Basic information",
-      "second-step": "Account information",
-      "third-step": "Account photo",
-      "ford-step": "Privacy policy"
-    }
-  }
 }

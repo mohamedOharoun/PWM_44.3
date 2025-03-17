@@ -1,14 +1,15 @@
 <header id="profile-header">
     <div id="profile-title-container">
         <h1 id="profile-title">Lorem Ipsum</h1>
-        <img src="../../../assets/images/edit_icon.svg" alt="Profile Image">
+        <div id="profile-utils-icons">
+        </div>
     </div>
     <hr>
 </header>
 <div id="profile-body">
     <div id="profile-content">
         <div id="profile-photo">
-            <img src="../../../assets/images/userprofile_icon.svg" alt="Profile Image" id="profile-image">
+            <img src="../../../assets/images/userprofile_icon.svg" alt="Profile Image" loading="lazy" id="profile-image">
         </div>
         <div id="profile-info">
             <label id="user-full-name">
@@ -31,24 +32,32 @@
             <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...</textarea>
         </label>
     </div>
-    <section class="events-section">
-        <details>
-            <summary id="user-events">Lorem Ipsum</summary>
-            <div class="summary-content">
-                <article class="event-card" xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                <article class="event-card" xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                <article class="event-card" xlu-include-file="../../templates/html/event_card_profile.html"></article>
-            </div>
-        </details>
-    </section>
-    <section class="events-section">
-        <details>
-            <summary id="shared-events">Lorem Ipsum</summary>
-            <div class="summary-content">
-                <article class="event-card" xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                <article class="event-card" xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                <article class="event-card" xlu-include-file="../../templates/html/event_card_profile.html"></article>
-            </div>
-        </details>
-    </section>
+    <div id="events-sections-container">
+        <section class="events-section" id=user-events-section">
+            <details>
+                <summary id="user-events">Lorem Ipsum</summary>
+                <div class="summary-content">
+                    <article class="event-card"
+                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                    <article class="event-card"
+                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                    <article class="event-card"
+                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                </div>
+            </details>
+        </section>
+        <section class="events-section" id="shared-events-section">
+            <details>
+                <summary id="shared-events">Lorem Ipsum</summary>
+                <div class="summary-content">
+                    <article class="event-card"
+                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                    <article class="event-card"
+                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                    <article class="event-card"
+                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                </div>
+            </details>
+        </section>
+    </div>
 </div>

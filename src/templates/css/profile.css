@@ -33,16 +33,19 @@
 }
 
 #profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
     margin: 30px 90px;
-    padding-bottom: 60px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #profile-image {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 #profile-info {
