@@ -15,13 +15,20 @@ const priceFormatting = (price) => {
 const makeEventCard = async (event_structure, event) => {
     const event_struct = stringToHTML(event_structure);
     const event_id_param = `?event_id=${event.id}`;
+    const static = JSON.parse(`{
+      "expanded_event_button": "SEE MORE",
+      "description": "Description",
+      "participants": "participants",
+      "join_button": "JOIN"
+    }`);
+    console.log(static);
     const article = document.createElement("article");
     article.classList.add("card");
 
-    event_struct.getElementsByClassName("see-more-button")[0].textContent = "SEE MORE";
-    event_struct.getElementsByClassName("section-title")[0].textContent = "Description";
-    event_struct.getElementsByClassName("participants-label")[0].textContent = "participants";
-    event_struct.getElementsByClassName("action-button")[0].textContent = "JOIN";
+    event_struct.getElementsByClassName("see-more-button")[0].textContent = static.expanded_event_button;
+    event_struct.getElementsByClassName("section-title")[0].textContent = static.description;
+    event_struct.getElementsByClassName("participants-label")[0].textContent = static.participants;
+    event_struct.getElementsByClassName("action-button")[0].textContent = static.join_button;
 
     event_struct.getElementsByClassName("main-title")[0].textContent = event.name;
     event_struct.getElementsByClassName("subtitle")[0].textContent = event.author;

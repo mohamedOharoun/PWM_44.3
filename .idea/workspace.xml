@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add first version of event card loading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/translations.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/events.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/events_explore.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events_explore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/reduced_card.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +37,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
+    "accountId": "0d90619e-ac26-41ad-9c4c-28be0a2540b8"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -199,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740938223345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add first version of event card loading">
+      <option name="closed" value="true" />
+      <created>1742228206151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742228206151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +227,7 @@
     <MESSAGE value="merge: develop-Laura merged into main" />
     <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge resolution" />
+    <MESSAGE value="Add first version of event card loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add first version of event card loading" />
   </component>
 </project>
