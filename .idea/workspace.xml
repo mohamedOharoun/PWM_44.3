@@ -5,61 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/translations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/translations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/group_creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/event_members.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events_explore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/favorite_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events_favourite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/group_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/create_group_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/joined_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events_joined.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/owned_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events_owned.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/profile_page_self.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_up_first_step_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_up_fourth_step_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_up_second_step_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_up_third_step_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/profile_page_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/generic_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/generic_input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/message_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/message_input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user_chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/user_social.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/user_social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/events_side_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_owned_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/reduced_owned_card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/resetpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/resetpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_first_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_first_step_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_last_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_fourth_step_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_second_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_second_step_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/sign_up_third_step_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_third_step_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signincircle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_in_circle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_first_step.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_fourth_step.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_second_step.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_up_third_step.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/social_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/social_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/profile_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_block_and_sent_request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_friend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/user_social_received_request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/translations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/events.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/events_explore.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events_explore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/reduced_card.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,35 +54,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.chat.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.expanded_event_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop-Javier&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/templates/html&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JSON&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.chat.html.executor": "Run",
+    "JavaScript Debug.expanded_event_page.html.executor": "Run",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
+    "JavaScript Debug.group_creation.html.executor": "Run",
+    "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.message_input.html.executor": "Run",
+    "JavaScript Debug.social_navegation.html.executor": "Run",
+    "JavaScript Debug.social_navigation.html.executor": "Run",
+    "JavaScript Debug.tag.html.executor": "Run",
+    "JavaScript Debug.user.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "developer-Mohamed",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/html",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JSON",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />

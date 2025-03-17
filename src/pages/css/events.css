@@ -37,7 +37,7 @@
     margin-bottom: 20px;
 }
 
-.events-section{
+#events {
     margin: 20px auto;
     flex: 1;
 }
