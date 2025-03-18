@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate } from "./common.js";
+import {config, initEssentials, loadTemplate, loadJSON } from "./common.js";
 import {buildLinkURL, buildUserProfileURL} from "./utils.js";
 
 let socialConfig = "";
@@ -17,7 +17,7 @@ const normalizeString = (title) => {
 }
 
 const loadStaticsTexts = async () => {
-    await loadTemplate("../../templates/html/social_navigation.html", "social-header");
+    await loadTemplate("social_navigation.html", "social-header");
     let titles = socialConfig["nav"]["titles"];
     let i = 0;
     document.getElementById("social-header").querySelectorAll(".nav-link").forEach(a => {
@@ -70,8 +70,8 @@ function getNeededUsers(users, loggedUser) {
 }
 
 const loadCards = async () => {
-    const cardTemplate = await loadTemplate("../../templates/html/social_card.html");
-    let users = await fetch("../../locales/users.json").then(res => res.json());
+    const cardTemplate = await loadTemplate("social_card.html");
+    let users = await loadJSON("users.json");
     let loggedUser = users["10"];
     let friends = getNeededUsers(users, loggedUser);
     document.getElementById("social-list").appendChild(buildCards(friends, cardTemplate));

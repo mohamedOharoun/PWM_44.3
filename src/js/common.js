@@ -1,5 +1,5 @@
 export const loadTemplate = async (file, id, callback) => {
-    let text = await fetch(file).then(res => res.text());
+    let text = await fetch(`../../templates/html/${file}`).then(res => res.text());
     if (id !== undefined) document.getElementById(id).innerHTML = text;
     if (callback) callback();
     return document.createRange().createContextualFragment(text);
@@ -41,8 +41,12 @@ const fillHeaderNav = () => {
 }
 
 export const initEssentials = async () => {
-    config = await fetch("../../locales/config.json")
-        .then(res => res.json());
+    config = await loadJSON("config.json");
     await loadHeader();
     await loadTemplate("../../templates/html/footer.html", "page-footer");
 }
+
+export const loadJSON = async (file) => {
+    return await fetch(`../../db/${file}`)
+        .then(res => res.json());
+};

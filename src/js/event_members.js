@@ -1,12 +1,12 @@
-import {initEssentials, loadTemplate} from "./common.js";
+import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
 
 let membersAmount = 0;
 const membersListSection = document.getElementById("members-list-section");
 const membersListTitle = document.getElementById("members-list-title");
-const userTemplate = await loadTemplate("../../templates/html/user.html");
+const userTemplate = await loadTemplate("user.html");
 
 const loadUsers = async () => {
-    const users = await (await fetch("../../locales/users.json")).json();
+    const users = await loadJSON("users.json");
     await buildUsersSection(users, userTemplate);
     await updateMembersTitle();
 };
@@ -50,7 +50,7 @@ const buildUserTemplate = (userArticle, userID, userData) => {
 };
 
 const updateMembersTitle = async () => {
-    fetch("../../locales/config.json")
+    fetch("../../db/config.json")
         .then(res => res.json())
         .then(data => {
             membersListTitle.textContent = `${membersAmount} ${data.events["event-members"].title}`;

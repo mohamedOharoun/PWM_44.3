@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate, loggedUser} from "./common.js";
+import {config, initEssentials, loadTemplate, loggedUser, loadJSON} from "./common.js";
 
 const buildPhoto = (url) => {
     let img = document.getElementById("profile-image");
@@ -61,7 +61,7 @@ const fillProfileInformation = (profileParts, user) => {
 }
 
 const getUserData = async () => {
-    return await fetch("../../locales/users.json").then(res => res.json()).then(users => users[lastUser() !== null ? lastUser() : "0"]);
+    return await loadJSON("users.json").then(users => users[lastUser() !== null ? lastUser() : "0"]);
 }
 
 const fillProfile = async () => {
@@ -71,7 +71,7 @@ const fillProfile = async () => {
 }
 
 const loadProfileAndFill = async () => {
-    await loadTemplate("../../templates/html/profile.html", "profile-container");
+    await loadTemplate("profile.html", "profile-container");
     await fillProfile();
 }
 

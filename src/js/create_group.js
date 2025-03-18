@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate} from "./common.js";
+import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
 import {buildUserProfileURL} from "./utils.js";
 
 const getPageParts = () => {
@@ -41,8 +41,8 @@ const setMembersInput = async (input) => {
     input.querySelector("label").id = "member-input";
     document.getElementById("member-input-container").appendChild(input);
     let memberInput = document.getElementById("member-input-container").querySelector("input");
-    let userTemplate = await loadTemplate("../../templates/html/user.html");
-    let users = await fetch("../../locales/users.json").then(users => users.json());
+    let userTemplate = await loadTemplate("user.html");
+    let users = await loadJSON("users.json");
     memberInput.addEventListener('keydown',  function(event) {
         if (event.key === "Enter") {
             event.preventDefault();
@@ -76,7 +76,7 @@ const buildUserTemplate = (userArticle, userID, userData) => {
 };
 
 const loadInputs = async () => {
-    let inputTemplate = await loadTemplate("../../templates/html/generic_input.html");
+    let inputTemplate = await loadTemplate("generic_input.html");
     setNameInput(inputTemplate.cloneNode(true));
     await setMembersInput(inputTemplate.cloneNode(true));
 };
