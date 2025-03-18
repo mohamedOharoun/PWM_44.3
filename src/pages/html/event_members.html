@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <title>Social</title>
     <script src="../../js/xlu-include-file.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../templates/css/header.css">
     <link rel="stylesheet" href="../../templates/css/footer.css">
     <link rel="stylesheet" href="../../templates/css/user.css">
+    <link rel="stylesheet" href="../../templates/css/members_list.css">
     <link rel="stylesheet" href="../css/event_members.css">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header id="page_header" xlu-include-file="../../templates/html/header.html"></header>
+    <header id="page-header" xlu-include-file="../../templates/html/header.html"></header>
     <main>
-        <section id="members_section">
-            <div id="members_title_section">
+        <div id="members-center-panel">
+            <div id="members-title-section">
+                <div id="members-title-header">
+                    <a href="events_explore.html"><img src="../../../assets/images/cancel_circle.svg"> </a>
+                </div>
                 <h1>+99 Lorem Ipsum</h1>
-                <a href="events.html"><img src="../../../assets/images/cancel_circle.svg"> </a>
             </div>
-            <div id="members_list_wrapper" xlu-include-file="../../templates/html/members_list.html"></div>
-        </section>
+            <div id="members-list-container" xlu-include-file="../../templates/html/members_list.html"></div>
+        </div>
     </main>
-    <footer xlu-include-file="../../templates/html/footer.html"></footer>
+    <footer id="page-footer" xlu-include-file="../../templates/html/footer.html"></footer>
 </body>
 </html>

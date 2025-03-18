@@ -6,32 +6,30 @@
     <script src="../../js/xlu-include-file.js" defer></script>
     <link rel="stylesheet" href="../../templates/css/header.css">
     <link rel="stylesheet" href="../../templates/css/footer.css">
-    <link rel="stylesheet" href="../../templates/css/eventssidebar.css">
+    <link rel="stylesheet" href="../../templates/css/events_side_bar.css">
     <link rel="stylesheet" href="../../templates/css/reduced_card.css">
     <link rel="stylesheet" href="../css/events.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="page-content">
-    <header id="page_header" xlu-include-file="../../templates/html/header.html"></header>
-    <div id="page-area">
-        <aside id="sidebar-menu" xlu-include-file="../../templates/html/eventssidebar.html">
-        </aside>
-        <main>
+    <header id="page-header" xlu-include-file="../../templates/html/header.html"></header>
+    <main>
+        <aside id="sidebar-menu" xlu-include-file="../../templates/html/events_sidebar.html"></aside>
+        <div id="events-container">
             <div id="events-header">
-                <h1>Lorem Ipsum</h1>
-                <a href="create_event_page.html" id="create-event-link">Lorem Ipsum</a>
+                <div id="events-header-title">
+                    <h1>Lorem Ipsum</h1>
+                    <a href="create_event_page.html" id="create-event-link">Lorem Ipsum</a>
+                </div>
+                <hr id="events-hr">
             </div>
-            <hr id="events-hr">
-            <section class="events">
+            <section class="events-section">
                 <article xlu-include-file="../../templates/html/reduced_owned_card.html" class="card joined-event"></article>
                 <article xlu-include-file="../../templates/html/reduced_owned_card.html" class="card joined-event"></article>
                 <article xlu-include-file="../../templates/html/reduced_owned_card.html" class="card joined-event"></article>
             </section>
-        </main>
-    </div>
-
-    <footer id="main_footer" xlu-include-file="../../templates/html/footer.html"></footer>
-</div>
+        </div>
+    </main>
+    <footer id="page-footer" xlu-include-file="../../templates/html/footer.html"></footer>
 </body>
 </html>

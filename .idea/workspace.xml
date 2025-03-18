@@ -4,35 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge resolution">
-      <change afterPath="$PROJECT_DIR$/src/pages/css/style.css" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add first version of event card loading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/group_creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/group_creation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/create_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/create_event_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/event_members.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/expanded_event_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/favorite_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/favorite_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/group_creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/group_creation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/home_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/joined_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/joined_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/owned_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/owned_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/privacypolicypage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/reset_password_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/reset_password_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/self_profile_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupfirststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signuplaststep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupsecondstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/signupthirdstep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_block_and_sent_requests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/social_received_requests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/user_profile_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/generic_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/generic_input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -64,7 +40,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
-    "accountId": "253bd5c7-92ca-431c-ac0e-b725cdefdb39"
+    "accountId": "0d90619e-ac26-41ad-9c4c-28be0a2540b8"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -75,46 +51,46 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.chat.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.expanded_event_page.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/pages/html&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTCompactSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.chat.html.executor": "Run",
+    "JavaScript Debug.expanded_event_page.html.executor": "Run",
+    "JavaScript Debug.footer.html.executor": "Run",
+    "JavaScript Debug.gorup_creation.html.executor": "Run",
+    "JavaScript Debug.group_creation.html.executor": "Run",
+    "JavaScript Debug.header.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.message_input.html.executor": "Run",
+    "JavaScript Debug.social_navegation.html.executor": "Run",
+    "JavaScript Debug.social_navigation.html.executor": "Run",
+    "JavaScript Debug.tag.html.executor": "Run",
+    "JavaScript Debug.user.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "developer-Mohamed",
+    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/html",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JSON",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
+      <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
       <recent name="D:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
+      <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\js" />
       <recent name="D:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="D:\Subjects\PWM_44.3\src\pages\html" />
@@ -123,7 +99,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -159,6 +135,34 @@
       <workItem from="1740844217350" duration="6090000" />
       <workItem from="1740860983399" duration="2814000" />
       <workItem from="1740952951251" duration="1886000" />
+      <workItem from="1741041561646" duration="503000" />
+      <workItem from="1741125857307" duration="8284000" />
+      <workItem from="1741134525408" duration="1125000" />
+      <workItem from="1741211902830" duration="3725000" />
+      <workItem from="1741261183629" duration="3192000" />
+      <workItem from="1741271616411" duration="750000" />
+      <workItem from="1741275093282" duration="124000" />
+      <workItem from="1741275362781" duration="942000" />
+      <workItem from="1741277189076" duration="2528000" />
+      <workItem from="1741280893975" duration="275000" />
+      <workItem from="1741303930352" duration="1828000" />
+      <workItem from="1741368732301" duration="1395000" />
+      <workItem from="1741371458644" duration="1809000" />
+      <workItem from="1741527695801" duration="19241000" />
+      <workItem from="1741612892970" duration="1642000" />
+      <workItem from="1741621413792" duration="6644000" />
+      <workItem from="1741638729960" duration="238000" />
+      <workItem from="1741712731732" duration="1302000" />
+      <workItem from="1741730709455" duration="8639000" />
+      <workItem from="1741741269769" duration="756000" />
+      <workItem from="1741742749770" duration="840000" />
+      <workItem from="1741792627549" duration="8835000" />
+      <workItem from="1741810535802" duration="4934000" />
+      <workItem from="1741819693636" duration="7996000" />
+      <workItem from="1741863384223" duration="460000" />
+      <workItem from="1741865735558" duration="907000" />
+      <workItem from="1741867855140" duration="464000" />
+      <workItem from="1741876949816" duration="8751000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -192,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740938223345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add first version of event card loading">
+      <option name="closed" value="true" />
+      <created>1742228206151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742228206151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +227,7 @@
     <MESSAGE value="merge: develop-Laura merged into main" />
     <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge resolution" />
+    <MESSAGE value="Add first version of event card loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add first version of event card loading" />
   </component>
 </project>

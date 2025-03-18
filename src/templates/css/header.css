@@ -1,30 +1,20 @@
-#page_header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: white;
-    position: sticky;
-    top: 0;
-}
-
-#page_header img {
+#page-header img {
     margin: 10px 20px 10px 20px;
 }
 
-#page_header nav {
+#page-header nav {
     margin: 0;
     padding: 0;
 }
 
-#page_header ul {
+#page-header ul {
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-#page_header li {
+#page-header li {
     list-style: none;
     cursor: pointer;
 }

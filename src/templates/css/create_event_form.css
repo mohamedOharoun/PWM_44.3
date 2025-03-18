@@ -1,47 +1,97 @@
-#event-form form {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+main {
+    justify-content: center;
 }
 
 .form-side {
     width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-#event-form  input {
-    margin: 10px 0;
-    height: 2.5em;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    outline: none;
-    transition: box-shadow 0.2s ease-in-out;
+#event-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 70%;
 }
 
-#members_list_wrapper {
+#event-form form {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+}
+
+#event-form-title {
+    margin: 20px;
+}
+
+#event-form-title hr {
+    width: 100%;
+}
+
+#event-form-container {
+    flex: 1;
+    display: flex;
     overflow-y: auto;
-    width: 90%;
-    height: 300px;
+}
+
+#event-form input {
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    transition: box-shadow 0.4s ease;
 }
 
 #event-form input:focus {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-#event-form input:not(input[type=checkbox]) {
-    width: 90%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-#event-form textarea {
-    width: 90%;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    outline: none;
-    transition: box-shadow 0.2s ease-in-out;
+#event-form input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    box-shadow: none;
+    margin: 30px 10px;
 }
 
 #event-form label {
-    margin-right: 5px;
-    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+#members-list-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+#members-list-container button {
+    background: transparent;
+    box-shadow: none;
+}
+
+#event-form textarea {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+#event-form textarea:focus {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #privacy-container {
@@ -49,45 +99,37 @@
     align-items: center;
 }
 
-#event-form textarea {
-    margin: 10px 0;
-}
-#event-form hr {
-    width: 99%;
-}
 #submit_button {
     cursor: pointer;
     background: linear-gradient(90deg, #006D77, #23CFA7);
     border: none;
     border-radius: 5px;
     color: white;
-    width: 91%;
+    width: 100%;
     font-size: 18px;
-    padding: 15px 40px;
+    padding: 15px;
     text-align: center;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-top: auto;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+#submit_button:hover {
+    background: linear-gradient(90deg, #23CFA7, #006D77);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#number-words-container {
+#tags-section-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-top: -10px;
-    width: 92%;
+    height: 200px;
 }
 
-#number-words {
-    color: gray;
-}
-
-#members_list_wrapper button {
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-    width: auto;
+#tags-section {
+    margin-bottom: 10px;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
