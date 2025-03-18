@@ -14,9 +14,18 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+#group-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px;
+}
+
 #members-list-container {
     margin: 10px 0;
     display: flex;
+    flex: 1;
     overflow: hidden;
 }
 
@@ -36,7 +45,7 @@ main {
     height: 100px;
 }
 
-#group-name-input {
+#group-name-input-container {
     flex: 1;
 }
 
@@ -75,20 +84,4 @@ main {
 
 #submit-button:focus {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar {
-    background: transparent;
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    border-radius: 15px;
-    border: 2px solid white;
 }

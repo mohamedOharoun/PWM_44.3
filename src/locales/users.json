@@ -1,0 +1,3082 @@
+{
+  "0": {
+    "e-mail": "johnsmith0@gmail.com",
+    "password": "1234",
+    "full-name": "John Smith",
+    "username": "johnsmith0",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=0",
+    "friends": [
+      "73",
+      "44",
+      "61",
+      "19",
+      "3",
+      "69",
+      "89",
+      "43"
+    ],
+    "blocked": [
+      "6",
+      "26",
+      "74",
+      "54",
+      "14"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "4",
+      "40",
+      "57"
+    ],
+    "description": "Hello, my name is (insert name)."
+  },
+  "1": {
+    "e-mail": "lauragarcia1@outlook.com",
+    "password": "1234",
+    "full-name": "Laura Garcia",
+    "username": "lauragarcia1",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=1",
+    "friends": [
+      "70",
+      "94",
+      "60",
+      "68",
+      "33"
+    ],
+    "blocked": [
+      "77",
+      "13",
+      "47",
+      "7",
+      "19"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "96",
+      "39",
+      "74"
+    ]
+  },
+  "2": {
+    "e-mail": "sarahbrown2@outlook.com",
+    "password": "1234",
+    "full-name": "Sarah Brown",
+    "username": "sarahbrown2",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=2",
+    "friends": [
+      "89",
+      "84",
+      "9",
+      "99"
+    ],
+    "blocked": [
+      "27",
+      "92",
+      "72",
+      "67",
+      "29"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "48"
+    ]
+  },
+  "3": {
+    "e-mail": "danielmartinez3@hotmail.com",
+    "password": "1234",
+    "full-name": "Daniel Martinez",
+    "username": "danielmartinez3",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=3",
+    "friends": [
+      "5",
+      "56",
+      "48",
+      "76",
+      "9",
+      "21"
+    ],
+    "blocked": [
+      "59",
+      "4",
+      "45",
+      "91",
+      "83"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "16"
+    ]
+  },
+  "4": {
+    "e-mail": "michaelmartinez4@hotmail.com",
+    "password": "1234",
+    "full-name": "Michael Martinez",
+    "username": "michaelmartinez4",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=4",
+    "friends": [
+      "21",
+      "83",
+      "10",
+      "61",
+      "51",
+      "33",
+      "89",
+      "50",
+      "84"
+    ],
+    "blocked": [
+      "97",
+      "77"
+    ],
+    "groups": [],
+    "pending": [
+      "0"
+    ],
+    "sent-requests": [
+      "12",
+      "62",
+      "70",
+      "0"
+    ]
+  },
+  "5": {
+    "e-mail": "danieljones5@yahoo.com",
+    "password": "1234",
+    "full-name": "Daniel Jones",
+    "username": "danieljones5",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=5",
+    "friends": [
+      "50",
+      "60",
+      "9",
+      "14",
+      "41",
+      "33",
+      "56"
+    ],
+    "blocked": [
+      "47",
+      "62",
+      "52",
+      "36",
+      "66"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "97",
+      "0"
+    ]
+  },
+  "6": {
+    "e-mail": "emilylopez6@outlook.com",
+    "password": "1234",
+    "full-name": "Emily Lopez",
+    "username": "emilylopez6",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=6",
+    "friends": [
+      "19",
+      "59",
+      "18",
+      "35",
+      "90",
+      "26",
+      "85",
+      "34",
+      "96",
+      "44"
+    ],
+    "blocked": [
+      "45",
+      "92",
+      "12"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "87",
+      "58"
+    ]
+  },
+  "7": {
+    "e-mail": "davidsmith7@outlook.com",
+    "password": "1234",
+    "full-name": "David Smith",
+    "username": "davidsmith7",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=7",
+    "friends": [
+      "26",
+      "21",
+      "76",
+      "77",
+      "19",
+      "17",
+      "15"
+    ],
+    "blocked": [
+      "98",
+      "78"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "5",
+      "39",
+      "75",
+      "24"
+    ]
+  },
+  "8": {
+    "e-mail": "johnwilliams8@hotmail.com",
+    "password": "1234",
+    "full-name": "John Williams",
+    "username": "johnwilliams8",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=8",
+    "friends": [
+      "23",
+      "58",
+      "43",
+      "27",
+      "16",
+      "93",
+      "67",
+      "78",
+      "29"
+    ],
+    "blocked": [
+      "4",
+      "26",
+      "9"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "28"
+    ]
+  },
+  "9": {
+    "e-mail": "chrislopez9@hotmail.com",
+    "password": "1234",
+    "full-name": "Chris Lopez",
+    "username": "chrislopez9",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=9",
+    "friends": [
+      "68",
+      "76",
+      "37",
+      "57",
+      "5",
+      "52",
+      "23",
+      "70",
+      "58"
+    ],
+    "blocked": [
+      "36"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "83",
+      "63",
+      "44",
+      "84",
+      "33"
+    ]
+  },
+  "10": {
+    "e-mail": "janejones10@hotmail.com",
+    "password": "1234",
+    "full-name": "Jane Jones",
+    "username": "janejones10",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=10",
+    "friends": [
+      "59",
+      "32",
+      "85",
+      "81",
+      "92",
+      "91",
+      "12"
+    ],
+    "blocked": [
+      "20"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "25",
+      "74"
+    ]
+  },
+  "11": {
+    "e-mail": "jessicajohnson11@outlook.com",
+    "password": "1234",
+    "full-name": "Jessica Johnson",
+    "username": "jessicajohnson11",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=11",
+    "friends": [
+      "55",
+      "80",
+      "66",
+      "43",
+      "76"
+    ],
+    "blocked": [
+      "79",
+      "1",
+      "40"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "56",
+      "32",
+      "62",
+      "89"
+    ]
+  },
+  "12": {
+    "e-mail": "chrishernandez12@hotmail.com",
+    "password": "1234",
+    "full-name": "Chris Hernandez",
+    "username": "chrishernandez12",
+    "birth-date": "05-10-1989",
+    "photo": "https://picsum.photos/800/800?random=12",
+    "friends": [
+      "94",
+      "3",
+      "96",
+      "43",
+      "16",
+      "38",
+      "33"
+    ],
+    "blocked": [
+      "17",
+      "27",
+      "8"
+    ],
+    "groups": [],
+    "pending": [
+      "4"
+    ],
+    "sent-requests": [
+      "32",
+      "39",
+      "86",
+      "26",
+      "92"
+    ]
+  },
+  "13": {
+    "e-mail": "sarahbrown13@aol.com",
+    "password": "1234",
+    "full-name": "Sarah Brown",
+    "username": "sarahbrown13",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=13",
+    "friends": [
+      "85",
+      "73",
+      "44"
+    ],
+    "blocked": [
+      "89"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "88",
+      "43",
+      "48",
+      "32"
+    ]
+  },
+  "14": {
+    "e-mail": "johnwilliams14@aol.com",
+    "password": "1234",
+    "full-name": "John Williams",
+    "username": "johnwilliams14",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=14",
+    "friends": [
+      "96",
+      "29",
+      "37"
+    ],
+    "blocked": [
+      "46"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "55",
+      "40",
+      "61",
+      "58",
+      "90"
+    ]
+  },
+  "15": {
+    "e-mail": "michaellopez15@outlook.com",
+    "password": "1234",
+    "full-name": "Michael Lopez",
+    "username": "michaellopez15",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=15",
+    "friends": [
+      "19",
+      "79",
+      "51",
+      "76",
+      "85",
+      "73",
+      "65"
+    ],
+    "blocked": [
+      "98",
+      "50"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "52",
+      "84",
+      "13",
+      "89",
+      "5"
+    ]
+  },
+  "16": {
+    "e-mail": "davidlopez16@gmail.com",
+    "password": "1234",
+    "full-name": "David Lopez",
+    "username": "davidlopez16",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=16",
+    "friends": [
+      "33",
+      "6",
+      "34",
+      "77",
+      "58",
+      "69"
+    ],
+    "blocked": [
+      "92"
+    ],
+    "groups": [],
+    "pending": [
+      "3"
+    ],
+    "sent-requests": [
+      "28",
+      "67",
+      "5",
+      "21",
+      "63"
+    ]
+  },
+  "17": {
+    "e-mail": "sarahjohnson17@aol.com",
+    "password": "1234",
+    "full-name": "Sarah Johnson",
+    "username": "sarahjohnson17",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=17",
+    "friends": [
+      "64",
+      "16",
+      "62",
+      "97"
+    ],
+    "blocked": [
+      "10",
+      "76",
+      "81"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "82",
+      "57"
+    ]
+  },
+  "18": {
+    "e-mail": "jessicalopez18@yahoo.com",
+    "password": "1234",
+    "full-name": "Jessica Lopez",
+    "username": "jessicalopez18",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=18",
+    "friends": [
+      "40",
+      "68",
+      "82",
+      "86",
+      "31"
+    ],
+    "blocked": [
+      "81",
+      "93"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "35",
+      "43",
+      "9",
+      "16"
+    ]
+  },
+  "19": {
+    "e-mail": "jessicajones19@aol.com",
+    "password": "1234",
+    "full-name": "Jessica Jones",
+    "username": "jessicajones19",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=19",
+    "friends": [
+      "54",
+      "22",
+      "57",
+      "75"
+    ],
+    "blocked": [
+      "73",
+      "8"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "71"
+    ]
+  },
+  "20": {
+    "e-mail": "sarahgarcia20@gmail.com",
+    "password": "1234",
+    "full-name": "Sarah Garcia",
+    "username": "sarahgarcia20",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=20",
+    "friends": [
+      "13",
+      "0",
+      "16",
+      "84",
+      "56"
+    ],
+    "blocked": [
+      "37",
+      "78",
+      "61"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "75",
+      "3",
+      "53"
+    ]
+  },
+  "21": {
+    "e-mail": "davidgarcia21@yahoo.com",
+    "password": "1234",
+    "full-name": "David Garcia",
+    "username": "davidgarcia21",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=21",
+    "friends": [
+      "86",
+      "52",
+      "16",
+      "33"
+    ],
+    "blocked": [
+      "70",
+      "1"
+    ],
+    "groups": [],
+    "pending": [
+      "16"
+    ],
+    "sent-requests": [
+      "55",
+      "92",
+      "72",
+      "74",
+      "88"
+    ]
+  },
+  "22": {
+    "e-mail": "janejohnson22@yahoo.com",
+    "password": "1234",
+    "full-name": "Jane Johnson",
+    "username": "janejohnson22",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=22",
+    "friends": [
+      "88",
+      "25",
+      "9",
+      "43"
+    ],
+    "blocked": [
+      "70",
+      "81",
+      "63",
+      "49"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "30",
+      "2"
+    ]
+  },
+  "23": {
+    "e-mail": "danielwilliams23@yahoo.com",
+    "password": "1234",
+    "full-name": "Daniel Williams",
+    "username": "danielwilliams23",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=23",
+    "friends": [
+      "81",
+      "1",
+      "87",
+      "49",
+      "62"
+    ],
+    "blocked": [
+      "70",
+      "35",
+      "39"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "77",
+      "12",
+      "6",
+      "66",
+      "65"
+    ]
+  },
+  "24": {
+    "e-mail": "michaeljones24@hotmail.com",
+    "password": "1234",
+    "full-name": "Michael Jones",
+    "username": "michaeljones24",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=24",
+    "friends": [
+      "33",
+      "45",
+      "92",
+      "36",
+      "52"
+    ],
+    "blocked": [
+      "23",
+      "48",
+      "58",
+      "78",
+      "47"
+    ],
+    "groups": [],
+    "pending": [
+      "7"
+    ],
+    "sent-requests": [
+      "91",
+      "76",
+      "44"
+    ]
+  },
+  "25": {
+    "e-mail": "michaelwilliams25@yahoo.com",
+    "password": "1234",
+    "full-name": "Michael Williams",
+    "username": "michaelwilliams25",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=25",
+    "friends": [
+      "66",
+      "26",
+      "41"
+    ],
+    "blocked": [
+      "61",
+      "0",
+      "49",
+      "45",
+      "52"
+    ],
+    "groups": [],
+    "pending": [
+      "10"
+    ],
+    "sent-requests": [
+      "90",
+      "31",
+      "84"
+    ]
+  },
+  "26": {
+    "e-mail": "jessicamartinez26@aol.com",
+    "password": "1234",
+    "full-name": "Jessica Martinez",
+    "username": "jessicamartinez26",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=26",
+    "friends": [
+      "72",
+      "80",
+      "8",
+      "28",
+      "13"
+    ],
+    "blocked": [
+      "36"
+    ],
+    "groups": [],
+    "pending": [
+      "12"
+    ],
+    "sent-requests": [
+      "50",
+      "68"
+    ]
+  },
+  "27": {
+    "e-mail": "jessicasmith27@aol.com",
+    "password": "1234",
+    "full-name": "Jessica Smith",
+    "username": "jessicasmith27",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=27",
+    "friends": [
+      "31",
+      "8",
+      "50",
+      "67",
+      "3",
+      "40",
+      "14",
+      "82",
+      "9"
+    ],
+    "blocked": [
+      "98",
+      "62",
+      "33",
+      "25",
+      "51"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "56",
+      "64",
+      "15"
+    ]
+  },
+  "28": {
+    "e-mail": "danieljohnson28@outlook.com",
+    "password": "1234",
+    "full-name": "Daniel Johnson",
+    "username": "danieljohnson28",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=28",
+    "friends": [
+      "10",
+      "2",
+      "69",
+      "67",
+      "9",
+      "38",
+      "95",
+      "59",
+      "85"
+    ],
+    "blocked": [
+      "57",
+      "62",
+      "19",
+      "90",
+      "17"
+    ],
+    "groups": [],
+    "pending": [
+      "8",
+      "16"
+    ],
+    "sent-requests": [
+      "83"
+    ]
+  },
+  "29": {
+    "e-mail": "laurasmith29@outlook.com",
+    "password": "1234",
+    "full-name": "Laura Smith",
+    "username": "laurasmith29",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=29",
+    "friends": [
+      "26",
+      "7",
+      "63",
+      "37"
+    ],
+    "blocked": [
+      "25",
+      "48",
+      "34",
+      "86",
+      "82"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "45",
+      "73"
+    ]
+  },
+  "30": {
+    "e-mail": "michaelhernandez30@yahoo.com",
+    "password": "1234",
+    "full-name": "Michael Hernandez",
+    "username": "michaelhernandez30",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=30",
+    "friends": [
+      "54",
+      "34",
+      "28",
+      "29",
+      "10",
+      "16"
+    ],
+    "blocked": [
+      "93"
+    ],
+    "groups": [],
+    "pending": [
+      "22"
+    ],
+    "sent-requests": [
+      "3",
+      "44"
+    ]
+  },
+  "31": {
+    "e-mail": "sarahdavis31@outlook.com",
+    "password": "1234",
+    "full-name": "Sarah Davis",
+    "username": "sarahdavis31",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=31",
+    "friends": [
+      "22",
+      "29",
+      "53",
+      "24"
+    ],
+    "blocked": [
+      "21",
+      "49"
+    ],
+    "groups": [],
+    "pending": [
+      "25"
+    ],
+    "sent-requests": [
+      "35",
+      "51",
+      "85"
+    ]
+  },
+  "32": {
+    "e-mail": "danielwilliams32@outlook.com",
+    "password": "1234",
+    "full-name": "Daniel Williams",
+    "username": "danielwilliams32",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=32",
+    "friends": [
+      "44",
+      "78",
+      "50",
+      "49",
+      "34",
+      "88"
+    ],
+    "blocked": [
+      "97",
+      "5",
+      "16"
+    ],
+    "groups": [],
+    "pending": [
+      "11",
+      "12",
+      "13"
+    ],
+    "sent-requests": [
+      "59",
+      "86"
+    ]
+  },
+  "33": {
+    "e-mail": "jessicawilliams33@hotmail.com",
+    "password": "1234",
+    "full-name": "Jessica Williams",
+    "username": "jessicawilliams33",
+    "birth-date": "05-10-1989",
+    "photo": "https://picsum.photos/800/800?random=33",
+    "friends": [
+      "62",
+      "88",
+      "76",
+      "60",
+      "64",
+      "7"
+    ],
+    "blocked": [
+      "86",
+      "52",
+      "14"
+    ],
+    "groups": [],
+    "pending": [
+      "9"
+    ],
+    "sent-requests": [
+      "58"
+    ]
+  },
+  "34": {
+    "e-mail": "danielmartinez34@gmail.com",
+    "password": "1234",
+    "full-name": "Daniel Martinez",
+    "username": "danielmartinez34",
+    "birth-date": "05-10-1989",
+    "photo": "https://picsum.photos/800/800?random=34",
+    "friends": [
+      "22",
+      "30",
+      "2"
+    ],
+    "blocked": [
+      "20",
+      "14"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "80",
+      "23",
+      "70",
+      "94"
+    ]
+  },
+  "35": {
+    "e-mail": "johnhernandez35@outlook.com",
+    "password": "1234",
+    "full-name": "John Hernandez",
+    "username": "johnhernandez35",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=35",
+    "friends": [
+      "69",
+      "75",
+      "17",
+      "11"
+    ],
+    "blocked": [
+      "32",
+      "14",
+      "92",
+      "90"
+    ],
+    "groups": [],
+    "pending": [
+      "18",
+      "31"
+    ],
+    "sent-requests": [
+      "56",
+      "98",
+      "4",
+      "62"
+    ]
+  },
+  "36": {
+    "e-mail": "chrisjones36@outlook.com",
+    "password": "1234",
+    "full-name": "Chris Jones",
+    "username": "chrisjones36",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=36",
+    "friends": [
+      "15",
+      "93",
+      "79"
+    ],
+    "blocked": [
+      "16",
+      "5",
+      "44",
+      "61"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "11",
+      "86",
+      "54",
+      "80",
+      "94"
+    ]
+  },
+  "37": {
+    "e-mail": "laurajohnson37@outlook.com",
+    "password": "1234",
+    "full-name": "Laura Johnson",
+    "username": "laurajohnson37",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=37",
+    "friends": [
+      "86",
+      "75",
+      "11",
+      "33",
+      "26",
+      "83",
+      "43",
+      "99"
+    ],
+    "blocked": [
+      "32",
+      "12"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "79"
+    ]
+  },
+  "38": {
+    "e-mail": "chrishernandez38@yahoo.com",
+    "password": "1234",
+    "full-name": "Chris Hernandez",
+    "username": "chrishernandez38",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=38",
+    "friends": [
+      "76",
+      "96",
+      "91",
+      "10",
+      "55",
+      "77"
+    ],
+    "blocked": [
+      "47"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "34"
+    ]
+  },
+  "39": {
+    "e-mail": "janemartinez39@aol.com",
+    "password": "1234",
+    "full-name": "Jane Martinez",
+    "username": "janemartinez39",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=39",
+    "friends": [
+      "70",
+      "36",
+      "52",
+      "77",
+      "30",
+      "57",
+      "99",
+      "15"
+    ],
+    "blocked": [
+      "37",
+      "21"
+    ],
+    "groups": [],
+    "pending": [
+      "1",
+      "7",
+      "12"
+    ],
+    "sent-requests": [
+      "0",
+      "81",
+      "34"
+    ]
+  },
+  "40": {
+    "e-mail": "davidbrown40@outlook.com",
+    "password": "1234",
+    "full-name": "David Brown",
+    "username": "davidbrown40",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=40",
+    "friends": [
+      "88",
+      "52",
+      "85",
+      "0",
+      "31",
+      "92",
+      "35",
+      "81",
+      "41",
+      "14"
+    ],
+    "blocked": [
+      "18",
+      "56"
+    ],
+    "groups": [],
+    "pending": [
+      "0",
+      "14"
+    ],
+    "sent-requests": [
+      "37",
+      "24",
+      "53",
+      "46",
+      "12"
+    ]
+  },
+  "41": {
+    "e-mail": "michaeldavis41@yahoo.com",
+    "password": "1234",
+    "full-name": "Michael Davis",
+    "username": "michaeldavis41",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=41",
+    "friends": [
+      "47",
+      "57",
+      "97"
+    ],
+    "blocked": [
+      "23",
+      "16",
+      "75",
+      "94",
+      "71"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "31",
+      "89",
+      "91",
+      "64",
+      "8"
+    ]
+  },
+  "42": {
+    "e-mail": "michaelsmith42@outlook.com",
+    "password": "1234",
+    "full-name": "Michael Smith",
+    "username": "michaelsmith42",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=42",
+    "friends": [
+      "17",
+      "16",
+      "26"
+    ],
+    "blocked": [
+      "13",
+      "48",
+      "55",
+      "14",
+      "68"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "33",
+      "83",
+      "73",
+      "85",
+      "71"
+    ]
+  },
+  "43": {
+    "e-mail": "emilyjohnson43@aol.com",
+    "password": "1234",
+    "full-name": "Emily Johnson",
+    "username": "emilyjohnson43",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=43",
+    "friends": [
+      "94",
+      "25",
+      "93",
+      "92",
+      "88",
+      "77"
+    ],
+    "blocked": [
+      "59",
+      "62",
+      "24"
+    ],
+    "groups": [],
+    "pending": [
+      "13",
+      "18"
+    ],
+    "sent-requests": [
+      "79",
+      "84",
+      "87"
+    ]
+  },
+  "44": {
+    "e-mail": "laurahernandez44@aol.com",
+    "password": "1234",
+    "full-name": "Laura Hernandez",
+    "username": "laurahernandez44",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=44",
+    "friends": [
+      "33",
+      "37",
+      "39",
+      "73",
+      "66",
+      "45",
+      "81",
+      "27"
+    ],
+    "blocked": [
+      "93",
+      "87",
+      "19",
+      "89",
+      "35"
+    ],
+    "groups": [],
+    "pending": [
+      "9",
+      "24",
+      "30"
+    ],
+    "sent-requests": [
+      "20"
+    ]
+  },
+  "45": {
+    "e-mail": "chriswilliams45@aol.com",
+    "password": "1234",
+    "full-name": "Chris Williams",
+    "username": "chriswilliams45",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=45",
+    "friends": [
+      "64",
+      "76",
+      "17",
+      "65",
+      "26",
+      "75",
+      "28"
+    ],
+    "blocked": [
+      "56",
+      "1",
+      "16",
+      "96",
+      "30"
+    ],
+    "groups": [],
+    "pending": [
+      "29"
+    ],
+    "sent-requests": [
+      "72",
+      "41",
+      "90",
+      "8"
+    ]
+  },
+  "46": {
+    "e-mail": "chriswilliams46@hotmail.com",
+    "password": "1234",
+    "full-name": "Chris Williams",
+    "username": "chriswilliams46",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=46",
+    "friends": [
+      "92",
+      "73",
+      "66",
+      "97",
+      "88",
+      "11",
+      "50",
+      "34"
+    ],
+    "blocked": [
+      "72",
+      "16",
+      "61",
+      "81"
+    ],
+    "groups": [],
+    "pending": [
+      "40"
+    ],
+    "sent-requests": [
+      "91",
+      "57",
+      "94"
+    ]
+  },
+  "47": {
+    "e-mail": "emilymartinez47@gmail.com",
+    "password": "1234",
+    "full-name": "Emily Martinez",
+    "username": "emilymartinez47",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=47",
+    "friends": [
+      "75",
+      "58",
+      "82",
+      "2",
+      "44",
+      "73",
+      "74"
+    ],
+    "blocked": [
+      "12",
+      "59",
+      "29"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "3"
+    ]
+  },
+  "48": {
+    "e-mail": "jessicajones48@outlook.com",
+    "password": "1234",
+    "full-name": "Jessica Jones",
+    "username": "jessicajones48",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=48",
+    "friends": [
+      "15",
+      "77",
+      "83",
+      "89",
+      "54",
+      "33",
+      "39"
+    ],
+    "blocked": [
+      "66",
+      "28"
+    ],
+    "groups": [],
+    "pending": [
+      "2",
+      "13"
+    ],
+    "sent-requests": [
+      "38",
+      "45",
+      "1"
+    ]
+  },
+  "49": {
+    "e-mail": "davidsmith49@outlook.com",
+    "password": "1234",
+    "full-name": "David Smith",
+    "username": "davidsmith49",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=49",
+    "friends": [
+      "48",
+      "2",
+      "85",
+      "45",
+      "71",
+      "0",
+      "20"
+    ],
+    "blocked": [
+      "33",
+      "31",
+      "55",
+      "94",
+      "1"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "8",
+      "89",
+      "50",
+      "23"
+    ]
+  },
+  "50": {
+    "e-mail": "michaeljones50@gmail.com",
+    "password": "1234",
+    "full-name": "Michael Jones",
+    "username": "michaeljones50",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=50",
+    "friends": [
+      "51",
+      "66",
+      "73",
+      "47",
+      "43",
+      "78"
+    ],
+    "blocked": [
+      "26",
+      "14",
+      "19",
+      "37"
+    ],
+    "groups": [],
+    "pending": [
+      "26",
+      "49"
+    ],
+    "sent-requests": [
+      "56",
+      "58",
+      "46"
+    ]
+  },
+  "51": {
+    "e-mail": "emilylopez51@outlook.com",
+    "password": "1234",
+    "full-name": "Emily Lopez",
+    "username": "emilylopez51",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=51",
+    "friends": [
+      "63",
+      "60",
+      "76",
+      "44",
+      "49",
+      "14",
+      "97"
+    ],
+    "blocked": [
+      "87",
+      "83",
+      "47"
+    ],
+    "groups": [],
+    "pending": [
+      "31"
+    ],
+    "sent-requests": [
+      "15",
+      "74",
+      "45",
+      "8"
+    ]
+  },
+  "52": {
+    "e-mail": "janegarcia52@outlook.com",
+    "password": "1234",
+    "full-name": "Jane Garcia",
+    "username": "janegarcia52",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=52",
+    "friends": [
+      "13",
+      "4",
+      "98",
+      "65",
+      "55"
+    ],
+    "blocked": [
+      "51"
+    ],
+    "groups": [],
+    "pending": [
+      "15"
+    ],
+    "sent-requests": [
+      "25",
+      "54",
+      "32"
+    ]
+  },
+  "53": {
+    "e-mail": "laurahernandez53@outlook.com",
+    "password": "1234",
+    "full-name": "Laura Hernandez",
+    "username": "laurahernandez53",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=53",
+    "friends": [
+      "11",
+      "58",
+      "35",
+      "42",
+      "81",
+      "51",
+      "85",
+      "31",
+      "3",
+      "36"
+    ],
+    "blocked": [
+      "50",
+      "49",
+      "33"
+    ],
+    "groups": [],
+    "pending": [
+      "20",
+      "40"
+    ],
+    "sent-requests": [
+      "63",
+      "17",
+      "15",
+      "6"
+    ]
+  },
+  "54": {
+    "e-mail": "johndavis54@yahoo.com",
+    "password": "1234",
+    "full-name": "John Davis",
+    "username": "johndavis54",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=54",
+    "friends": [
+      "24",
+      "99",
+      "51",
+      "26",
+      "61",
+      "23",
+      "97"
+    ],
+    "blocked": [
+      "62",
+      "94",
+      "34",
+      "71"
+    ],
+    "groups": [],
+    "pending": [
+      "36",
+      "52"
+    ],
+    "sent-requests": [
+      "16"
+    ]
+  },
+  "55": {
+    "e-mail": "chrisbrown55@outlook.com",
+    "password": "1234",
+    "full-name": "Chris Brown",
+    "username": "chrisbrown55",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=55",
+    "friends": [
+      "19",
+      "91",
+      "93",
+      "80",
+      "0",
+      "50",
+      "99",
+      "69",
+      "70",
+      "12"
+    ],
+    "blocked": [
+      "36"
+    ],
+    "groups": [],
+    "pending": [
+      "14",
+      "21"
+    ],
+    "sent-requests": [
+      "37",
+      "87",
+      "4",
+      "34",
+      "8"
+    ]
+  },
+  "56": {
+    "e-mail": "davidgarcia56@hotmail.com",
+    "password": "1234",
+    "full-name": "David Garcia",
+    "username": "davidgarcia56",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=56",
+    "friends": [
+      "61",
+      "34",
+      "79"
+    ],
+    "blocked": [
+      "95"
+    ],
+    "groups": [],
+    "pending": [
+      "11",
+      "27",
+      "35",
+      "50"
+    ],
+    "sent-requests": [
+      "68",
+      "44",
+      "10",
+      "73",
+      "30"
+    ]
+  },
+  "57": {
+    "e-mail": "johndavis57@hotmail.com",
+    "password": "1234",
+    "full-name": "John Davis",
+    "username": "johndavis57",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=57",
+    "friends": [
+      "59",
+      "3",
+      "33",
+      "79",
+      "99",
+      "43"
+    ],
+    "blocked": [
+      "84",
+      "31",
+      "78"
+    ],
+    "groups": [],
+    "pending": [
+      "0",
+      "17",
+      "46"
+    ],
+    "sent-requests": [
+      "13",
+      "98",
+      "74",
+      "91"
+    ]
+  },
+  "58": {
+    "e-mail": "michaelwilliams58@aol.com",
+    "password": "1234",
+    "full-name": "Michael Williams",
+    "username": "michaelwilliams58",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=58",
+    "friends": [
+      "48",
+      "33",
+      "91",
+      "99",
+      "83",
+      "35",
+      "64",
+      "26",
+      "89"
+    ],
+    "blocked": [
+      "97",
+      "54",
+      "34"
+    ],
+    "groups": [],
+    "pending": [
+      "6",
+      "14",
+      "33",
+      "50"
+    ],
+    "sent-requests": [
+      "90",
+      "23"
+    ]
+  },
+  "59": {
+    "e-mail": "lauradavis59@hotmail.com",
+    "password": "1234",
+    "full-name": "Laura Davis",
+    "username": "lauradavis59",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=59",
+    "friends": [
+      "51",
+      "9",
+      "10",
+      "85",
+      "90",
+      "11",
+      "58"
+    ],
+    "blocked": [
+      "30",
+      "74"
+    ],
+    "groups": [],
+    "pending": [
+      "32"
+    ],
+    "sent-requests": [
+      "89",
+      "96",
+      "61"
+    ]
+  },
+  "60": {
+    "e-mail": "michaeljohnson60@outlook.com",
+    "password": "1234",
+    "full-name": "Michael Johnson",
+    "username": "michaeljohnson60",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=60",
+    "friends": [
+      "21",
+      "6",
+      "73",
+      "25",
+      "44",
+      "76"
+    ],
+    "blocked": [
+      "55",
+      "82",
+      "80"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "35",
+      "71",
+      "93",
+      "28",
+      "72"
+    ]
+  },
+  "61": {
+    "e-mail": "johnmartinez61@aol.com",
+    "password": "1234",
+    "full-name": "John Martinez",
+    "username": "johnmartinez61",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=61",
+    "friends": [
+      "63",
+      "67",
+      "12",
+      "19",
+      "75",
+      "87",
+      "92",
+      "4",
+      "44",
+      "93"
+    ],
+    "blocked": [
+      "91",
+      "24"
+    ],
+    "groups": [],
+    "pending": [
+      "14",
+      "59"
+    ],
+    "sent-requests": [
+      "16",
+      "45",
+      "89",
+      "35"
+    ]
+  },
+  "62": {
+    "e-mail": "sarahmartinez62@yahoo.com",
+    "password": "1234",
+    "full-name": "Sarah Martinez",
+    "username": "sarahmartinez62",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=62",
+    "friends": [
+      "80",
+      "36",
+      "86"
+    ],
+    "blocked": [
+      "60",
+      "65"
+    ],
+    "groups": [],
+    "pending": [
+      "4",
+      "11",
+      "35"
+    ],
+    "sent-requests": [
+      "49"
+    ]
+  },
+  "63": {
+    "e-mail": "sarahdavis63@yahoo.com",
+    "password": "1234",
+    "full-name": "Sarah Davis",
+    "username": "sarahdavis63",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=63",
+    "friends": [
+      "74",
+      "97",
+      "9",
+      "36"
+    ],
+    "blocked": [
+      "24",
+      "34",
+      "53"
+    ],
+    "groups": [],
+    "pending": [
+      "9",
+      "16",
+      "53"
+    ],
+    "sent-requests": [
+      "92",
+      "93",
+      "88",
+      "91"
+    ]
+  },
+  "64": {
+    "e-mail": "michaelsmith64@outlook.com",
+    "password": "1234",
+    "full-name": "Michael Smith",
+    "username": "michaelsmith64",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=64",
+    "friends": [
+      "24",
+      "90",
+      "62",
+      "59",
+      "17",
+      "99",
+      "86"
+    ],
+    "blocked": [
+      "76"
+    ],
+    "groups": [],
+    "pending": [
+      "27",
+      "41"
+    ],
+    "sent-requests": [
+      "71"
+    ]
+  },
+  "65": {
+    "e-mail": "michaelwilliams65@gmail.com",
+    "password": "1234",
+    "full-name": "Michael Williams",
+    "username": "michaelwilliams65",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=65",
+    "friends": [
+      "12",
+      "87",
+      "70",
+      "22"
+    ],
+    "blocked": [
+      "85",
+      "13"
+    ],
+    "groups": [],
+    "pending": [
+      "23"
+    ],
+    "sent-requests": [
+      "41",
+      "29",
+      "11"
+    ]
+  },
+  "66": {
+    "e-mail": "michaelmartinez66@gmail.com",
+    "password": "1234",
+    "full-name": "Michael Martinez",
+    "username": "michaelmartinez66",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=66",
+    "friends": [
+      "74",
+      "4",
+      "5",
+      "93",
+      "67",
+      "83",
+      "7"
+    ],
+    "blocked": [
+      "1",
+      "26",
+      "61",
+      "52"
+    ],
+    "groups": [],
+    "pending": [
+      "23"
+    ],
+    "sent-requests": [
+      "57",
+      "10",
+      "28",
+      "73"
+    ]
+  },
+  "67": {
+    "e-mail": "sarahdavis67@hotmail.com",
+    "password": "1234",
+    "full-name": "Sarah Davis",
+    "username": "sarahdavis67",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=67",
+    "friends": [
+      "16",
+      "90",
+      "11",
+      "55",
+      "38",
+      "66",
+      "69",
+      "63"
+    ],
+    "blocked": [
+      "27",
+      "43",
+      "12",
+      "95"
+    ],
+    "groups": [],
+    "pending": [
+      "16"
+    ],
+    "sent-requests": [
+      "21"
+    ]
+  },
+  "68": {
+    "e-mail": "danielwilliams68@aol.com",
+    "password": "1234",
+    "full-name": "Daniel Williams",
+    "username": "danielwilliams68",
+    "birth-date": "25-08-1990",
+    "photo": "https://picsum.photos/800/800?random=68",
+    "friends": [
+      "52",
+      "29",
+      "70",
+      "78",
+      "96",
+      "26",
+      "19"
+    ],
+    "blocked": [
+      "12"
+    ],
+    "groups": [],
+    "pending": [
+      "26",
+      "56"
+    ],
+    "sent-requests": [
+      "50",
+      "34"
+    ]
+  },
+  "69": {
+    "e-mail": "emilyjones69@yahoo.com",
+    "password": "1234",
+    "full-name": "Emily Jones",
+    "username": "emilyjones69",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=69",
+    "friends": [
+      "74",
+      "15",
+      "95",
+      "43",
+      "51",
+      "88",
+      "90"
+    ],
+    "blocked": [
+      "29"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "13",
+      "57",
+      "9"
+    ]
+  },
+  "70": {
+    "e-mail": "sarahjohnson70@yahoo.com",
+    "password": "1234",
+    "full-name": "Sarah Johnson",
+    "username": "sarahjohnson70",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=70",
+    "friends": [
+      "58",
+      "7",
+      "45",
+      "2",
+      "14",
+      "52",
+      "24",
+      "48",
+      "90"
+    ],
+    "blocked": [
+      "83",
+      "97",
+      "51",
+      "26"
+    ],
+    "groups": [],
+    "pending": [
+      "4",
+      "34"
+    ],
+    "sent-requests": [
+      "82",
+      "18",
+      "50"
+    ]
+  },
+  "71": {
+    "e-mail": "chrisbrown71@outlook.com",
+    "password": "1234",
+    "full-name": "Chris Brown",
+    "username": "chrisbrown71",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=71",
+    "friends": [
+      "30",
+      "12",
+      "57",
+      "21",
+      "25",
+      "50",
+      "93"
+    ],
+    "blocked": [
+      "4",
+      "72",
+      "33"
+    ],
+    "groups": [],
+    "pending": [
+      "19",
+      "42",
+      "60",
+      "64"
+    ],
+    "sent-requests": [
+      "18",
+      "81",
+      "23",
+      "68",
+      "44"
+    ]
+  },
+  "72": {
+    "e-mail": "danieldavis72@aol.com",
+    "password": "1234",
+    "full-name": "Daniel Davis",
+    "username": "danieldavis72",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=72",
+    "friends": [
+      "66",
+      "61",
+      "64",
+      "42",
+      "46",
+      "91",
+      "85",
+      "50"
+    ],
+    "blocked": [
+      "63",
+      "53"
+    ],
+    "groups": [],
+    "pending": [
+      "21",
+      "45",
+      "60"
+    ],
+    "sent-requests": [
+      "82",
+      "83"
+    ]
+  },
+  "73": {
+    "e-mail": "danielsmith73@hotmail.com",
+    "password": "1234",
+    "full-name": "Daniel Smith",
+    "username": "danielsmith73",
+    "birth-date": "05-10-1989",
+    "photo": "https://picsum.photos/800/800?random=73",
+    "friends": [
+      "18",
+      "48",
+      "44",
+      "77",
+      "66",
+      "16",
+      "46"
+    ],
+    "blocked": [
+      "30"
+    ],
+    "groups": [],
+    "pending": [
+      "29",
+      "42",
+      "56",
+      "66"
+    ],
+    "sent-requests": [
+      "7",
+      "47",
+      "83"
+    ]
+  },
+  "74": {
+    "e-mail": "sarahgarcia74@gmail.com",
+    "password": "1234",
+    "full-name": "Sarah Garcia",
+    "username": "sarahgarcia74",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=74",
+    "friends": [
+      "20",
+      "19",
+      "68",
+      "88",
+      "97",
+      "35",
+      "70",
+      "0",
+      "44"
+    ],
+    "blocked": [
+      "7",
+      "99"
+    ],
+    "groups": [],
+    "pending": [
+      "1",
+      "10",
+      "21",
+      "51",
+      "57"
+    ],
+    "sent-requests": [
+      "60",
+      "22"
+    ]
+  },
+  "75": {
+    "e-mail": "danieljohnson75@hotmail.com",
+    "password": "1234",
+    "full-name": "Daniel Johnson",
+    "username": "danieljohnson75",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=75",
+    "friends": [
+      "68",
+      "82",
+      "15",
+      "64",
+      "18",
+      "84",
+      "29",
+      "41",
+      "54",
+      "80"
+    ],
+    "blocked": [
+      "38",
+      "88",
+      "9",
+      "12"
+    ],
+    "groups": [],
+    "pending": [
+      "7",
+      "20"
+    ],
+    "sent-requests": [
+      "33",
+      "22",
+      "78"
+    ]
+  },
+  "76": {
+    "e-mail": "sarahjohnson76@gmail.com",
+    "password": "1234",
+    "full-name": "Sarah Johnson",
+    "username": "sarahjohnson76",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=76",
+    "friends": [
+      "58",
+      "5",
+      "48"
+    ],
+    "blocked": [
+      "95",
+      "25",
+      "49",
+      "23"
+    ],
+    "groups": [],
+    "pending": [
+      "24"
+    ],
+    "sent-requests": [
+      "83",
+      "8",
+      "66",
+      "21"
+    ]
+  },
+  "77": {
+    "e-mail": "davidgarcia77@gmail.com",
+    "password": "1234",
+    "full-name": "David Garcia",
+    "username": "davidgarcia77",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=77",
+    "friends": [
+      "39",
+      "97",
+      "75",
+      "69",
+      "9",
+      "33"
+    ],
+    "blocked": [
+      "70"
+    ],
+    "groups": [],
+    "pending": [
+      "23"
+    ],
+    "sent-requests": [
+      "43"
+    ]
+  },
+  "78": {
+    "e-mail": "chrissmith78@yahoo.com",
+    "password": "1234",
+    "full-name": "Chris Smith",
+    "username": "chrissmith78",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=78",
+    "friends": [
+      "21",
+      "15",
+      "67",
+      "62",
+      "76",
+      "4",
+      "90",
+      "25"
+    ],
+    "blocked": [
+      "60",
+      "80"
+    ],
+    "groups": [],
+    "pending": [
+      "75"
+    ],
+    "sent-requests": [
+      "0",
+      "13",
+      "70"
+    ]
+  },
+  "79": {
+    "e-mail": "davidbrown79@aol.com",
+    "password": "1234",
+    "full-name": "David Brown",
+    "username": "davidbrown79",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=79",
+    "friends": [
+      "61",
+      "34",
+      "27",
+      "89",
+      "21",
+      "44",
+      "12",
+      "17"
+    ],
+    "blocked": [
+      "59",
+      "60",
+      "7"
+    ],
+    "groups": [],
+    "pending": [
+      "37",
+      "43"
+    ],
+    "sent-requests": [
+      "85",
+      "88"
+    ]
+  },
+  "80": {
+    "e-mail": "michaelgarcia80@hotmail.com",
+    "password": "1234",
+    "full-name": "Michael Garcia",
+    "username": "michaelgarcia80",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=80",
+    "friends": [
+      "34",
+      "87",
+      "26",
+      "50",
+      "38",
+      "46",
+      "56",
+      "14",
+      "86",
+      "1"
+    ],
+    "blocked": [
+      "75",
+      "78",
+      "20",
+      "31",
+      "23"
+    ],
+    "groups": [],
+    "pending": [
+      "34",
+      "36"
+    ],
+    "sent-requests": [
+      "6",
+      "36",
+      "77",
+      "55",
+      "54"
+    ]
+  },
+  "81": {
+    "e-mail": "davidgarcia81@aol.com",
+    "password": "1234",
+    "full-name": "David Garcia",
+    "username": "davidgarcia81",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=81",
+    "friends": [
+      "27",
+      "19",
+      "38",
+      "3",
+      "31",
+      "14",
+      "65",
+      "8"
+    ],
+    "blocked": [
+      "5",
+      "55",
+      "93",
+      "82",
+      "98"
+    ],
+    "groups": [],
+    "pending": [
+      "39",
+      "71"
+    ],
+    "sent-requests": [
+      "18",
+      "25",
+      "67",
+      "96",
+      "30"
+    ]
+  },
+  "82": {
+    "e-mail": "daviddavis82@hotmail.com",
+    "password": "1234",
+    "full-name": "David Davis",
+    "username": "daviddavis82",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=82",
+    "friends": [
+      "26",
+      "8",
+      "9",
+      "31",
+      "67",
+      "60",
+      "69"
+    ],
+    "blocked": [
+      "97",
+      "16",
+      "73",
+      "54"
+    ],
+    "groups": [],
+    "pending": [
+      "17",
+      "70",
+      "72"
+    ],
+    "sent-requests": [
+      "63",
+      "27",
+      "64",
+      "10"
+    ]
+  },
+  "83": {
+    "e-mail": "chrisjohnson83@aol.com",
+    "password": "1234",
+    "full-name": "Chris Johnson",
+    "username": "chrisjohnson83",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=83",
+    "friends": [
+      "97",
+      "5",
+      "20"
+    ],
+    "blocked": [
+      "53",
+      "54",
+      "7",
+      "47",
+      "98"
+    ],
+    "groups": [],
+    "pending": [
+      "9",
+      "28",
+      "42",
+      "72",
+      "73",
+      "76"
+    ],
+    "sent-requests": [
+      "94"
+    ]
+  },
+  "84": {
+    "e-mail": "emilywilliams84@outlook.com",
+    "password": "1234",
+    "full-name": "Emily Williams",
+    "username": "emilywilliams84",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=84",
+    "friends": [
+      "98",
+      "14",
+      "0",
+      "72",
+      "80",
+      "7"
+    ],
+    "blocked": [
+      "96",
+      "43",
+      "12"
+    ],
+    "groups": [],
+    "pending": [
+      "9",
+      "15",
+      "25",
+      "43"
+    ],
+    "sent-requests": [
+      "33",
+      "45",
+      "71",
+      "86",
+      "78"
+    ]
+  },
+  "85": {
+    "e-mail": "sarahdavis85@outlook.com",
+    "password": "1234",
+    "full-name": "Sarah Davis",
+    "username": "sarahdavis85",
+    "birth-date": "01-01-1990",
+    "photo": "https://picsum.photos/800/800?random=85",
+    "friends": [
+      "43",
+      "13",
+      "96",
+      "40",
+      "54",
+      "69",
+      "67",
+      "39",
+      "50",
+      "10"
+    ],
+    "blocked": [
+      "97",
+      "16",
+      "88"
+    ],
+    "groups": [],
+    "pending": [
+      "31",
+      "42",
+      "79"
+    ],
+    "sent-requests": [
+      "83",
+      "2"
+    ]
+  },
+  "86": {
+    "e-mail": "sarahsmith86@hotmail.com",
+    "password": "1234",
+    "full-name": "Sarah Smith",
+    "username": "sarahsmith86",
+    "birth-date": "05-10-1989",
+    "photo": "https://picsum.photos/800/800?random=86",
+    "friends": [
+      "82",
+      "0",
+      "89",
+      "49",
+      "67",
+      "6",
+      "75",
+      "23",
+      "21"
+    ],
+    "blocked": [
+      "78",
+      "33"
+    ],
+    "groups": [],
+    "pending": [
+      "12",
+      "32",
+      "36",
+      "84"
+    ],
+    "sent-requests": [
+      "69",
+      "51"
+    ]
+  },
+  "87": {
+    "e-mail": "davidhernandez87@hotmail.com",
+    "password": "1234",
+    "full-name": "David Hernandez",
+    "username": "davidhernandez87",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=87",
+    "friends": [
+      "14",
+      "81",
+      "77",
+      "95",
+      "24",
+      "97"
+    ],
+    "blocked": [
+      "51"
+    ],
+    "groups": [],
+    "pending": [
+      "6",
+      "43",
+      "55"
+    ],
+    "sent-requests": [
+      "16",
+      "15",
+      "10"
+    ]
+  },
+  "88": {
+    "e-mail": "sarahwilliams88@aol.com",
+    "password": "1234",
+    "full-name": "Sarah Williams",
+    "username": "sarahwilliams88",
+    "birth-date": "10-05-1988",
+    "photo": "https://picsum.photos/800/800?random=88",
+    "friends": [
+      "29",
+      "99",
+      "6",
+      "38",
+      "70",
+      "53",
+      "94",
+      "83",
+      "39"
+    ],
+    "blocked": [
+      "80",
+      "17",
+      "5"
+    ],
+    "groups": [],
+    "pending": [
+      "13",
+      "21",
+      "63",
+      "79"
+    ],
+    "sent-requests": [
+      "68",
+      "54",
+      "10",
+      "41",
+      "21"
+    ]
+  },
+  "89": {
+    "e-mail": "sarahjohnson89@gmail.com",
+    "password": "1234",
+    "full-name": "Sarah Johnson",
+    "username": "sarahjohnson89",
+    "birth-date": "20-03-1991",
+    "photo": "https://picsum.photos/800/800?random=89",
+    "friends": [
+      "34",
+      "28",
+      "75",
+      "91",
+      "59",
+      "43"
+    ],
+    "blocked": [
+      "8",
+      "0",
+      "23",
+      "39"
+    ],
+    "groups": [],
+    "pending": [
+      "11",
+      "15",
+      "41",
+      "49",
+      "59",
+      "61"
+    ],
+    "sent-requests": [
+      "80",
+      "12",
+      "33",
+      "47",
+      "83"
+    ]
+  },
+  "90": {
+    "e-mail": "janesmith90@hotmail.com",
+    "password": "1234",
+    "full-name": "Jane Smith",
+    "username": "janesmith90",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=90",
+    "friends": [
+      "9",
+      "23",
+      "68",
+      "47",
+      "16",
+      "84",
+      "46",
+      "98"
+    ],
+    "blocked": [
+      "38",
+      "44",
+      "52"
+    ],
+    "groups": [],
+    "pending": [
+      "14",
+      "25",
+      "45",
+      "58"
+    ],
+    "sent-requests": [
+      "10",
+      "66"
+    ]
+  },
+  "91": {
+    "e-mail": "janewilliams91@outlook.com",
+    "password": "1234",
+    "full-name": "Jane Williams",
+    "username": "janewilliams91",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=91",
+    "friends": [
+      "15",
+      "43",
+      "89",
+      "70",
+      "35",
+      "49",
+      "75"
+    ],
+    "blocked": [
+      "90",
+      "12",
+      "1",
+      "78"
+    ],
+    "groups": [],
+    "pending": [
+      "24",
+      "41",
+      "46",
+      "57",
+      "63"
+    ],
+    "sent-requests": [
+      "82",
+      "83"
+    ]
+  },
+  "92": {
+    "e-mail": "michaelmartinez92@outlook.com",
+    "password": "1234",
+    "full-name": "Michael Martinez",
+    "username": "michaelmartinez92",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=92",
+    "friends": [
+      "88",
+      "52",
+      "27",
+      "34",
+      "50",
+      "86",
+      "2",
+      "24",
+      "5"
+    ],
+    "blocked": [
+      "72"
+    ],
+    "groups": [],
+    "pending": [
+      "12",
+      "21",
+      "63"
+    ],
+    "sent-requests": [
+      "56"
+    ]
+  },
+  "93": {
+    "e-mail": "lauramartinez93@outlook.com",
+    "password": "1234",
+    "full-name": "Laura Martinez",
+    "username": "lauramartinez93",
+    "birth-date": "11-06-1990",
+    "photo": "https://picsum.photos/800/800?random=93",
+    "friends": [
+      "25",
+      "1",
+      "99",
+      "72",
+      "22",
+      "20",
+      "3",
+      "80",
+      "81"
+    ],
+    "blocked": [
+      "65",
+      "30"
+    ],
+    "groups": [],
+    "pending": [
+      "60",
+      "63"
+    ],
+    "sent-requests": [
+      "74",
+      "51",
+      "47"
+    ]
+  },
+  "94": {
+    "e-mail": "janejones94@hotmail.com",
+    "password": "1234",
+    "full-name": "Jane Jones",
+    "username": "janejones94",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=94",
+    "friends": [
+      "63",
+      "99",
+      "87",
+      "57",
+      "18",
+      "24",
+      "54",
+      "37",
+      "13",
+      "22"
+    ],
+    "blocked": [
+      "40",
+      "46",
+      "38",
+      "47",
+      "20"
+    ],
+    "groups": [],
+    "pending": [
+      "34",
+      "36",
+      "46",
+      "83"
+    ],
+    "sent-requests": [
+      "62",
+      "67",
+      "41",
+      "48"
+    ]
+  },
+  "95": {
+    "e-mail": "lauramartinez95@outlook.com",
+    "password": "1234",
+    "full-name": "Laura Martinez",
+    "username": "lauramartinez95",
+    "birth-date": "15-02-1992",
+    "photo": "https://picsum.photos/800/800?random=95",
+    "friends": [
+      "1",
+      "61",
+      "99",
+      "33",
+      "51",
+      "45",
+      "17",
+      "64",
+      "27",
+      "92"
+    ],
+    "blocked": [
+      "90",
+      "22",
+      "54",
+      "49",
+      "53"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "73"
+    ]
+  },
+  "96": {
+    "e-mail": "emilymartinez96@gmail.com",
+    "password": "1234",
+    "full-name": "Emily Martinez",
+    "username": "emilymartinez96",
+    "birth-date": "01-07-1992",
+    "photo": "https://picsum.photos/800/800?random=96",
+    "friends": [
+      "36",
+      "72",
+      "82"
+    ],
+    "blocked": [
+      "12",
+      "41",
+      "87"
+    ],
+    "groups": [],
+    "pending": [
+      "1",
+      "59",
+      "81"
+    ],
+    "sent-requests": [
+      "93",
+      "21"
+    ]
+  },
+  "97": {
+    "e-mail": "chrisdavis97@aol.com",
+    "password": "1234",
+    "full-name": "Chris Davis",
+    "username": "chrisdavis97",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=97",
+    "friends": [
+      "4",
+      "64",
+      "52",
+      "40",
+      "9",
+      "24",
+      "7",
+      "99",
+      "71"
+    ],
+    "blocked": [
+      "93",
+      "59",
+      "23"
+    ],
+    "groups": [],
+    "pending": [
+      "5"
+    ],
+    "sent-requests": [
+      "38",
+      "82",
+      "31",
+      "36",
+      "58"
+    ]
+  },
+  "98": {
+    "e-mail": "davidbrown98@hotmail.com",
+    "password": "1234",
+    "full-name": "David Brown",
+    "username": "davidbrown98",
+    "birth-date": "30-04-1995",
+    "photo": "https://picsum.photos/800/800?random=98",
+    "friends": [
+      "59",
+      "41",
+      "19",
+      "89",
+      "2",
+      "1",
+      "58",
+      "82",
+      "87",
+      "54"
+    ],
+    "blocked": [
+      "39"
+    ],
+    "groups": [],
+    "pending": [
+      "35",
+      "57"
+    ],
+    "sent-requests": [
+      "51",
+      "26"
+    ]
+  },
+  "99": {
+    "e-mail": "sarahjohnson99@aol.com",
+    "password": "1234",
+    "full-name": "Sarah Johnson",
+    "username": "sarahjohnson99",
+    "birth-date": "12-09-1993",
+    "photo": "https://picsum.photos/800/800?random=99",
+    "friends": [
+      "2",
+      "32",
+      "77",
+      "88",
+      "84",
+      "55"
+    ],
+    "blocked": [
+      "94"
+    ],
+    "groups": [],
+    "pending": [],
+    "sent-requests": [
+      "98",
+      "34",
+      "7",
+      "33"
+    ]
+  }
+}

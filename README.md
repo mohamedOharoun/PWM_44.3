@@ -98,9 +98,9 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - **Usuario tipo amigo**
     - [Página de amigos](src/pages/html/social_friends.html)
   - **Usuario tipo bloqueado y solicitud enviada**
-    - [Página de usuarios bloqueados y solicitudes enviadas](src/pages/html/social_block_and_sent_requests.html)
+    - [Página de usuarios bloqueados y solicitudes enviadas](src/pages/html/social_blocked.html)
   - **Usuario tipo solicitud recibida**
-    - [Página de solicitudes recibidas](src/pages/html/social_received_requests.html)
+    - [Página de solicitudes recibidas](src/pages/html/social_pending.html)
   - **Usuario tipo grupo**
     - [Página de grupos](src/pages/html/social_groups.html)
   - **Tarjeta de evento de perfil**

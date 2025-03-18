@@ -19,13 +19,13 @@
     cursor: pointer;
 }
 
-#page_header_buttons {
+#page-header-buttons {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-#profile_button {
+#profile-button {
     background: none;
     padding: 0;
     border: none;
@@ -34,7 +34,7 @@
     cursor: pointer;
 }
 
-#log_button {
+#log-button {
     font-weight: bold;
     padding: 10px 30px;
     background: white;

@@ -38,12 +38,11 @@ a {
 }
 
 #page-footer {
+    font-size: 0.5rem;
     z-index: 1000;
-    padding: 20px;
+    padding: 0.5rem;
     font-family: "League Spartan", serif;
-    justify-items: center;
-    align-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
     background: white;
     width: 100%;
     bottom: 0;
