@@ -1,4 +1,4 @@
-import {initEssentials} from "./main";
+import {initEssentials} from "./common";
 
 const init = async () => {
     await initEssentials();

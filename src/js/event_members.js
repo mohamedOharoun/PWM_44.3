@@ -1,4 +1,4 @@
-import {initEssentials, loadTemplate} from "./main.js";
+import {initEssentials, loadTemplate} from "./common.js";
 
 let membersAmount = 0;
 const membersListSection = document.getElementById("members-list-section");

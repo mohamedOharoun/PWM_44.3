@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate } from "./main.js";
+import {config, initEssentials, loadTemplate } from "./common.js";
 import {buildLinkURL, buildUserProfileURL} from "./utils.js";
 
 let socialConfig = "";

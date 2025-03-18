@@ -98,6 +98,23 @@
             ]
         }
     },
+    "create-group": {
+        "titles": "Group Creation",
+        "form": {
+            "upload-photo": {
+                "label": "Upload photo"
+            },
+            "group-name": {
+                "label": "Group name",
+                "placeholder": "Introduce your group name..."
+            },
+            "members": {
+                "label": "Members",
+                "placeholder": "Type a username to add..."
+            },
+            "submit-button": "Create group"
+        }
+    },
     "chats": {
         "message-input-placeholder": "Send a message..."
     },

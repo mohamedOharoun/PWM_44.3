@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate, loggedUser} from "./main.js";
+import {config, initEssentials, loadTemplate, loggedUser} from "./common.js";
 
 const buildPhoto = (url) => {
     let img = document.getElementById("profile-image");
