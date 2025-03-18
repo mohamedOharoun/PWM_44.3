@@ -1,6 +1,5 @@
-[
-  {
-    "id": 1,
+{
+  "1": {
     "user": 1,
     "name": "Event Name 1",
     "author": "Host Name 1",
@@ -10,10 +9,14 @@
     "price": 0,
     "likes": 999900,
     "comments": 0,
-    "members": [13,17,21,34]
+    "members": [
+      13,
+      17,
+      21,
+      34
+    ]
   },
-  {
-    "id": 2,
+  "2": {
     "user": 1,
     "name": "Event Name 2",
     "author": "Host Name 2",
@@ -23,10 +26,13 @@
     "price": 10,
     "likes": 5,
     "comments": 2,
-    "members": [13,17,21]
+    "members": [
+      13,
+      17,
+      21
+    ]
   },
-  {
-    "id": 3,
+  "3": {
     "user": 2,
     "name": "Event Name 3",
     "author": "Host Name 3",
@@ -36,10 +42,13 @@
     "price": 20,
     "likes": 12,
     "comments": 5,
-    "members": [50,32,21]
+    "members": [
+      50,
+      32,
+      21
+    ]
   },
-  {
-    "id": 4,
+  "4": {
     "user": 3,
     "name": "Event Name 4",
     "author": "Host Name 4",
@@ -49,10 +58,14 @@
     "price": 5,
     "likes": 45,
     "comments": 10,
-    "members": [13, 25, 37, 49]
+    "members": [
+      13,
+      25,
+      37,
+      49
+    ]
   },
-  {
-    "id": 5,
+  "5": {
     "user": 4,
     "name": "Event Name 5",
     "author": "Host Name 5",
@@ -62,10 +75,14 @@
     "price": 0,
     "likes": 120,
     "comments": 25,
-    "members": [10, 20, 30, 40]
+    "members": [
+      10,
+      20,
+      30,
+      40
+    ]
   },
-  {
-    "id": 6,
+  "6": {
     "user": 5,
     "name": "Event Name 6",
     "author": "Host Name 6",
@@ -75,10 +92,14 @@
     "price": 15,
     "likes": 75,
     "comments": 15,
-    "members": [5, 15, 25, 35]
+    "members": [
+      5,
+      15,
+      25,
+      35
+    ]
   },
-  {
-    "id": 7,
+  "7": {
     "user": 6,
     "name": "Event Name 7",
     "author": "Host Name 7",
@@ -88,10 +109,15 @@
     "price": 30,
     "likes": 300,
     "comments": 50,
-    "members": [1, 2, 3, 4, 5]
+    "members": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   },
-  {
-    "id": 8,
+  "8": {
     "user": 7,
     "name": "Event Name 8",
     "author": "Host Name 8",
@@ -101,10 +127,15 @@
     "price": 0,
     "likes": 60,
     "comments": 8,
-    "members": [6, 7, 8, 9, 10]
+    "members": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   },
-  {
-    "id": 9,
+  "9": {
     "user": 8,
     "name": "Event Name 9",
     "author": "Host Name 9",
@@ -114,10 +145,15 @@
     "price": 10,
     "likes": 90,
     "comments": 20,
-    "members": [11, 12, 13, 14, 15]
+    "members": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
   },
-  {
-    "id": 10,
+  "10": {
     "user": 9,
     "name": "Event Name 10",
     "author": "Host Name 10",
@@ -127,6 +163,12 @@
     "price": 25,
     "likes": 200,
     "comments": 40,
-    "members": [16, 17, 18, 19, 20]
+    "members": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
   }
-]
+}

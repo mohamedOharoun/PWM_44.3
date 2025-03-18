@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add first version of event card loading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +39,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
-    "accountId": "0d90619e-ac26-41ad-9c4c-28be0a2540b8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
+    &quot;accountId&quot;: &quot;0d90619e-ac26-41ad-9c4c-28be0a2540b8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -68,7 +70,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "developer-Mohamed",
+    "git-widget-placeholder": "dev",
     "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/html",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
