@@ -1,54 +1,54 @@
-const stringToHTML = (string) => {
-    return new DOMParser().parseFromString(string, "text/html");
-};
+import {initEssentials, loadJSON, loadTemplate} from "./common.js";
 
 const compactNumbers = (number) => {
-    if (number < 999) return number;
-    if (number < 999_900) return (number / 1000).toFixed(0) + "K";
-    if (number < 999_999_999) return (number / 1_000_000).toFixed(0) + "M";
+    if (number <= 999) return number;
+    if (number <= 999_999) return Math.floor(number / 1000) + "K";
+    return Math.floor(number / 1_000_000) + "M";
 };
 
 const priceFormatting = (price) => {
     return price == 0 ? "FREE" : "$" + price;
 };
 
-const makeEventCard = async (event_structure, event) => {
-    const event_struct = stringToHTML(event_structure);
-    const event_id_param = `?event_id=${event.id}`;
-    const static = JSON.parse(`{
-      "expanded_event_button": "SEE MORE",
-      "description": "Description",
-      "participants": "participants",
-      "join_button": "JOIN"
-    }`);
-    console.log(static);
+const makeEventCard = async (event_card, event, event_id) => {
+    //const event_struct = stringToHTML(event_structure);
+    const event_id_param = `?event_id=${event_id}`;
+    const static_text = await loadJSON("config.json")
+        .then(data => data["events"]);
+
     const article = document.createElement("article");
     article.classList.add("card");
+    event_card.querySelector(".see-more-button").textContent = static_text["expanded_event_button"];
+    event_card.querySelector(".section-title").textContent = static_text["description"];
+    event_card.querySelector(".participants-label").textContent = static_text["participants"];
+    event_card.querySelector(".action-button").textContent = static_text["join_button"];
 
-    event_struct.getElementsByClassName("see-more-button")[0].textContent = static.expanded_event_button;
-    event_struct.getElementsByClassName("section-title")[0].textContent = static.description;
-    event_struct.getElementsByClassName("participants-label")[0].textContent = static.participants;
-    event_struct.getElementsByClassName("action-button")[0].textContent = static.join_button;
+    event_card.querySelector(".main-title").textContent = event.name;
+    event_card.querySelector(".subtitle").textContent = event.author;
+    event_card.querySelector(".description-text").textContent = event.description;
+    event_card.querySelector(".event-time").textContent = event.time;
+    event_card.querySelector(".event-place").textContent = event.place;
+    event_card.querySelector(".event-price").textContent = priceFormatting(event.price);
+    event_card.querySelector(".participants-count").textContent = event.members.length;
+    event_card.querySelector(".likes-count").textContent = compactNumbers(event.likes);
+    event_card.querySelector(".likes-count").setAttribute("number-likes", event.likes);
+    event_card.querySelector(".comments-count").textContent = compactNumbers(event.comments);
+    event_card.querySelector(".see-more-button").href += event_id_param;
+    event_card.querySelector(".participants-item").href += event_id_param;
 
-    event_struct.getElementsByClassName("main-title")[0].textContent = event.name;
-    event_struct.getElementsByClassName("subtitle")[0].textContent = event.author;
-    event_struct.getElementsByClassName("description-text")[0].textContent = event.description;
-    event_struct.getElementsByClassName("event-time")[0].textContent = event.time;
-    event_struct.getElementsByClassName("event-place")[0].textContent = event.place;
-    event_struct.getElementsByClassName("event-price")[0].textContent = priceFormatting(event.price);
-    event_struct.getElementsByClassName("participants-count")[0].textContent = event.members.length;
-    event_struct.getElementsByClassName("likes-count")[0].textContent = compactNumbers(event.likes);
-    event_struct.getElementsByClassName("comments-count")[0].textContent = compactNumbers(event.comments);
-    event_struct.getElementsByClassName("see-more-button")[0].href += event_id_param;
-    event_struct.getElementsByClassName("participants-item")[0].href += event_id_param;
-    const likeButton = event_struct.getElementsByClassName("like-button")[0];
+    const likesCount = event_card.querySelector(".likes-count");
+    const likeButton = event_card.querySelector(".like-button");
+
     likeButton.addEventListener("click", (event) => {
+        let count = parseInt(likesCount.getAttribute("number-likes"));
+        likeButton.classList.contains("liked-event") ? count-- : count++;
+        likesCount.setAttribute("number-likes", count);
+        likesCount.textContent = compactNumbers(count);
         likeButton.classList.toggle("liked-event");
     });
 
-    Array.from(event_struct.body.children).forEach(child => {
-        article.appendChild(child);
-    });
+
+    article.appendChild(event_card);
     return article;
 };
 
@@ -57,19 +57,15 @@ const loadEventStructure = async () => {
         .then(res => res.text());
 };
 
-const loadJSON = async (file) => {
-    return await fetch(`../../locales/${file}`)
-        .then(res => res.json());
-};
-
 const init = async () => {
-    const event_structure = await loadEventStructure();
+    await initEssentials();
+    const template = await loadTemplate("reduced_card.html");
     const events = await loadJSON("events.json");
     const eventsList = document.getElementById("events");
-    for (const event of events) {
-        const eventCard = await makeEventCard(event_structure, event);
+    for (const event in events) {
+        const eventCard = await makeEventCard(template.cloneNode(true), events[event], event);
         eventsList.appendChild(eventCard);
     }
 };
 
-init();
+await init();

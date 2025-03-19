@@ -1,31 +1,36 @@
 import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
+import {buildUserProfileURL} from "./utils.js";
 
 let membersAmount = 0;
 const membersListSection = document.getElementById("members-list-section");
 const membersListTitle = document.getElementById("members-list-title");
 const userTemplate = await loadTemplate("user.html");
+const events = await loadJSON("events.json");
+
+const getCurrentEventID = () => {
+    let urlParameters = new URLSearchParams(window.location.search);
+    let eventID = urlParameters.get("event_id");
+    return eventID !== null ? eventID : "1";
+};
+
+const getEventUsersFrom = (users) => {
+    let eventID = getCurrentEventID();
+    let membersIDs = events[eventID]["members"];
+    return Object.entries(users).filter(u => membersIDs.includes(u[0]));
+};
 
 const loadUsers = async () => {
-    const users = await loadJSON("users.json");
-    await buildUsersSection(users, userTemplate);
+    const eventUsers = getEventUsersFrom(await loadJSON("users.json"));
+    await buildUsersSection(eventUsers, userTemplate);
     await updateMembersTitle();
 };
 
 const buildUsersSection = async (users, userTemplate) => {
     const fragment = document.createDocumentFragment();
-    Object.entries(users).forEach(([userID, userData]) => {
+    users.forEach(([userID, userData]) => {
         fragment.appendChild(buildUserTemplate(userTemplate.cloneNode(true), userID, userData));
     });
     membersListSection.appendChild(fragment);
-}
-
-const buildUserProfileURL = (href, userID) => {
-    let userProfileURL = new URL(href);
-    let userProfileURLParameters = new URLSearchParams(userProfileURL.search);
-    console.log(userProfileURLParameters.toString());
-    userProfileURLParameters.set("user_id", userID);
-    userProfileURL.search = userProfileURLParameters.toString();
-    return userProfileURL;
 }
 
 const setUserData = (userArticle, userData, userID) => {
