@@ -14,7 +14,7 @@ const makeEventCard = async (event_card, event, event_id) => {
     //const event_struct = stringToHTML(event_structure);
     const event_id_param = `?event_id=${event_id}`;
     const static_text = await loadJSON("config.json")
-                        .then(data => data["events"]);
+        .then(data => data["events"]);
 
     const article = document.createElement("article");
     article.classList.add("card");
@@ -31,12 +31,19 @@ const makeEventCard = async (event_card, event, event_id) => {
     event_card.querySelector(".event-price").textContent = priceFormatting(event.price);
     event_card.querySelector(".participants-count").textContent = event.members.length;
     event_card.querySelector(".likes-count").textContent = compactNumbers(event.likes);
+    event_card.querySelector(".likes-count").setAttribute("number-likes", event.likes);
     event_card.querySelector(".comments-count").textContent = compactNumbers(event.comments);
     event_card.querySelector(".see-more-button").href += event_id_param;
     event_card.querySelector(".participants-item").href += event_id_param;
 
+    const likesCount = event_card.querySelector(".likes-count");
     const likeButton = event_card.querySelector(".like-button");
+
     likeButton.addEventListener("click", (event) => {
+        let count = parseInt(likesCount.getAttribute("number-likes"));
+        likeButton.classList.contains("liked-event") ? count-- : count++;
+        likesCount.setAttribute("number-likes", count);
+        likesCount.textContent = compactNumbers(count);
         likeButton.classList.toggle("liked-event");
     });
 
