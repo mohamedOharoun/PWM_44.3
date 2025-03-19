@@ -47,9 +47,11 @@ const setMembersInput = async (input) => {
         if (event.key === "Enter") {
             event.preventDefault();
             let user = getUser(users, memberInput.value);
-            memberInput.value = "";
-            if (!document.getElementById("members-list-section").querySelector("#user" + user))
-            document.getElementById("members-list-section").appendChild(buildUserTemplate(userTemplate.cloneNode(true), user, users[user]));
+            if (!document.getElementById("members-list-section").querySelector("#user" + user)) {
+                document.getElementById("members-list-section").appendChild(buildUserTemplate(userTemplate.cloneNode(true), user, users[user]));
+            } else {
+                console.log("This user is already in the list!");
+            }
         }
     });
 };
