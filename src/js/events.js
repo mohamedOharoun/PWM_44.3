@@ -1,4 +1,4 @@
-import {initEssentials, loadJSON, loadTemplate} from "./common.js";
+import { loadJSON, loadTemplate } from "./common.js";
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -58,7 +58,6 @@ const loadEventStructure = async () => {
 };
 
 const init = async () => {
-    await initEssentials();
     const template = await loadTemplate("reduced_card.html");
     const events = await loadJSON("events.json");
     const eventsList = document.getElementById("events");
@@ -68,4 +67,4 @@ const init = async () => {
     }
 };
 
-await init();
+init();

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add first version of event card loading">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/users.json" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add dynamic number of likes setting">
+      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;0d90619e-ac26-41ad-9c4c-28be0a2540b8&quot;
+    &quot;accountId&quot;: &quot;6a1d2200-9dd6-48f0-b7d1-054ed64a3167&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -53,35 +49,36 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.chat.html.executor": "Run",
-    "JavaScript Debug.expanded_event_page.html.executor": "Run",
-    "JavaScript Debug.footer.html.executor": "Run",
-    "JavaScript Debug.gorup_creation.html.executor": "Run",
-    "JavaScript Debug.group_creation.html.executor": "Run",
-    "JavaScript Debug.header.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.message_input.html.executor": "Run",
-    "JavaScript Debug.social_navegation.html.executor": "Run",
-    "JavaScript Debug.social_navigation.html.executor": "Run",
-    "JavaScript Debug.tag.html.executor": "Run",
-    "JavaScript Debug.user.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "E:/Subjects/PWM_44.3/src/templates/html",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JSON",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.chat.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.expanded_event_page.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developer-Mohamed&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/templates/html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JSON&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
@@ -101,7 +98,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
       </set>
     </attachedChunks>
   </component>
@@ -165,6 +162,7 @@
       <workItem from="1741865735558" duration="907000" />
       <workItem from="1741867855140" duration="464000" />
       <workItem from="1741876949816" duration="8751000" />
+      <workItem from="1742405542875" duration="841000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -206,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742228206151</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change events.json structure and raname locales dir to db">
+      <option name="closed" value="true" />
+      <created>1742319454230</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742319454230</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add dynamic number of likes setting">
+      <option name="closed" value="true" />
+      <created>1742408422953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742408422953</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +244,8 @@
     <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
     <MESSAGE value="Add first version of event card loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add first version of event card loading" />
+    <MESSAGE value="Change events.json structure and raname locales dir to db" />
+    <MESSAGE value="Add dynamic number of likes setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dynamic number of likes setting" />
   </component>
 </project>
