@@ -1,9 +1,9 @@
 import { loadJSON, loadTemplate } from "./common.js";
 
 const compactNumbers = (number) => {
-    if (number < 999) return number;
-    if (number < 999_900) return Math.floor(number / 1000).toFixed(0) + "K";
-    if (number < 999_999_999) return Math.floor(number / 1_000_000).toFixed(0) + "M";
+    if (number <= 999) return number;
+    if (number <= 999_999) return Math.floor(number / 1000) + "K";
+    return Math.floor(number / 1_000_000) + "M";
 };
 
 const priceFormatting = (price) => {
