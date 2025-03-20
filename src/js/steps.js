@@ -73,3 +73,9 @@ if (pagePath === "sign_up_first_step_page") {
 if (pageKey) {
     loadSignUpAndFill(pageKey);
 }
+
+const loadHeaderAndFill = async () => {
+    await loadTemplate("../../templates/html/header.html", "page-header");
+};
+
+loadHeaderAndFill();

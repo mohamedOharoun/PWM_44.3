@@ -127,7 +127,7 @@
         "first-step": "Basic information",
         "second-step": "Account information",
         "third-step": "Account photo",
-        "ford-step": "Privacy policy"
+        "fourth-step": "Privacy policy"
       }
     }
   }
