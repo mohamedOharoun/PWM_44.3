@@ -14,7 +14,7 @@ const fillSignUp = (page) => {
     let previousStepButton = document.getElementById("previous-step-button");
     let signInInfo = document.getElementById("sign-up-footer-info");
 
-    fetch("../../locales/config.json")
+    fetch("../../db/config.json")
         .then(res => res.json())
         .then(config => {
             let signup = config["sign-up"];

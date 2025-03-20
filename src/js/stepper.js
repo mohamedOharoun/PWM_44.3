@@ -13,7 +13,7 @@ const fillStepCircles = async () => {
     const currentStep = stepMapping[currentPage];
 
     try {
-        const response = await fetch("../../locales/config.json");
+        const response = await fetch("../../db/config.json");
         const config = await response.json();
         const stepTexts = config["sign-up"]["sign-up-lower-info"]["steps-info"];
 

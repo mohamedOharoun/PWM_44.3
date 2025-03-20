@@ -10,7 +10,7 @@ const fillResetPassword = () => {
     let message = document.getElementById("message");
     let loginLink = document.getElementById("login-link");
 
-    fetch("../../locales/config.json")
+    fetch("../../db/config.json")
         .then(res => res.json())
         .then(config => {
             let resetPasswordTexts = config["reset-password"];
@@ -33,7 +33,7 @@ const loadHeaderAndFill = async () => {
 };
 
 const loadResetPasswordAndFill = async () => {
-    await loadTemplate("../../templates/html/resetpassword.html", "reset-password-container");
+    await loadTemplate("../../templates/html/reset_password.html", "reset-password-container");
     fillResetPassword();
 };
 

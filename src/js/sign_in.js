@@ -39,7 +39,7 @@ const buildListItem = (text, link) => {
 };
 
 const fillHeader = () => {
-    fetch("../../locales/config.json")
+    fetch("../../db/config.json")
         .then(config => config.json())
         .then(config => {
             let headerElements = config["header"];
