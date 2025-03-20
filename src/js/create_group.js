@@ -4,12 +4,12 @@ import {buildUserProfileURL} from "./utils.js";
 const getPageParts = () => {
     let title = document.getElementById("title");
     let photoLabel = document.getElementById("upload-photo-text");
-    let nameLabel = document.getElementById("group-name-input").childNodes[0];
-    let namePlaceholder = document.getElementById("group-name-input").childNodes[1];
-    let memberLabel = document.getElementById("member-input").childNodes[0];
-    let memberPlaceholder = document.getElementById("member-input").childNodes[1];
+    let nameLabel = document.getElementById("group-name-label");
+    let nameInput = document.getElementById("group-name-input");
+    let memberLabel = document.getElementById("group-members-label");
+    let memberInput = document.getElementById("group-members-input");
     let submitButton = document.getElementById("submit-button");
-    return {title, photoLabel, nameLabel, namePlaceholder, memberLabel, memberPlaceholder, submitButton};
+    return {title, photoLabel, nameLabel, nameInput, memberLabel, memberInput, submitButton};
 };
 
 const loadStaticsTexts = () => {
@@ -18,40 +18,51 @@ const loadStaticsTexts = () => {
     pageParts.title.textContent = createGroupConfig["titles"];
     pageParts.photoLabel.textContent = createGroupConfig["form"]["upload-photo"]["label"];
     pageParts.nameLabel.textContent = createGroupConfig["form"]["group-name"]["label"];
-    pageParts.namePlaceholder.placeholder = createGroupConfig["form"]["group-name"]["placeholder"];
+    pageParts.nameInput.placeholder = createGroupConfig["form"]["group-name"]["placeholder"];
     pageParts.memberLabel.textContent = createGroupConfig["form"]["members"]["label"];
-    pageParts.memberPlaceholder.placeholder = createGroupConfig["form"]["members"]["placeholder"];
+    pageParts.memberInput.placeholder = createGroupConfig["form"]["members"]["placeholder"];
     pageParts.submitButton.textContent = createGroupConfig["form"]["submit-button"];
 };
 
-const setNameInput = (input) => {
-    input.querySelector("label").id = "group-name-input";
-    document.getElementById("group-name-input-container").appendChild(input);
+const getCoincidencesOf = (users, value) => {
+    return Object.entries(users).filter(e => {
+       return e[1]["username"].toLowerCase().trim().startsWith(value.toLowerCase().trim());
+    });
 };
 
-const getUser = (users, value) => {
-    let user;
-    Object.entries(users).forEach(([userID, userData]) => {
-        if (value.trim().toLowerCase() === userData["username"].trim().toLowerCase()) user = userID;
-    });
-    return user;
-};
+const addUserIfNotInSection = (userID, userTemplate, users, userData) => {
+    if (!document.getElementById("members-list-section").querySelector(`#user${userID}`)) document.getElementById("members-list-section").appendChild(buildUserTemplate(userTemplate.cloneNode(true), userID, users[userID]));
+}
 
 const setMembersInput = async (input) => {
-    input.querySelector("label").id = "member-input";
-    document.getElementById("member-input-container").appendChild(input);
-    let memberInput = document.getElementById("member-input-container").querySelector("input");
     let userTemplate = await loadTemplate("user.html");
     let users = await loadJSON("users.json");
-    memberInput.addEventListener('keydown',  function(event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            let user = getUser(users, memberInput.value);
-            if (!document.getElementById("members-list-section").querySelector("#user" + user)) {
-                document.getElementById("members-list-section").appendChild(buildUserTemplate(userTemplate.cloneNode(true), user, users[user]));
-            } else {
-                console.log("This user is already in the list!");
-            }
+
+    const suggestionsBox = document.getElementById("suggestions");
+
+    input.addEventListener("input", () => {
+        const searchText = input.value.toLowerCase();
+        suggestionsBox.innerHTML = "";
+
+        if (searchText === "") {
+            suggestionsBox.style.display = "none";
+            return;
+        }
+
+        const coincidences = getCoincidencesOf(users, input.value);
+
+        if (coincidences.length > 0) {
+            suggestionsBox.style.display = "block";
+            coincidences.forEach(([userID, userData]) => {
+                const div = document.createElement("div");
+                div.textContent = userData["username"];
+                div.addEventListener("click", () => {
+                    addUserIfNotInSection(userID, userTemplate.cloneNode(true), users, userData);
+                });
+                suggestionsBox.appendChild(div);
+            });
+        } else {
+            suggestionsBox.style.display = "none";
         }
     });
 };
@@ -78,9 +89,8 @@ const buildUserTemplate = (userArticle, userID, userData) => {
 };
 
 const loadInputs = async () => {
-    let inputTemplate = await loadTemplate("generic_input.html");
-    setNameInput(inputTemplate.cloneNode(true));
-    await setMembersInput(inputTemplate.cloneNode(true));
+    let inputTemplate = document.getElementById("group-members-input");
+    await setMembersInput(inputTemplate);
 };
 
 const init = async () => {

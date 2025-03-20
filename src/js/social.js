@@ -32,6 +32,7 @@ const fillCardUtils = (cardUtils) => {
     socialConfig["cards-icons"][getPageKey()].forEach(url => {
         let img = document.createElement("img");
         img.src = url;
+        img.loading = "lazy";
         let button = document.createElement("button");
         button.appendChild(img);
         fragment.appendChild(button);
@@ -52,6 +53,7 @@ const buildCards = (friends, template) => {
     Object.values(friends).forEach(([userID, userData]) => {
         let socialCard = getSocialCardFrom(template);
         socialCard.cardPhoto.src = userData.photo;
+        socialCard.cardPhoto.loading = "lazy";
         socialCard.cardName.textContent = userData.username;
         socialCard.cardName.href = buildUserProfileURL(socialCard.card.querySelector(".social-card-name").href, userID)
         fillCardUtils(socialCard.cardUtils);

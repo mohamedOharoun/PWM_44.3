@@ -1,4 +1,4 @@
-import { loadJSON, loadTemplate } from "./common.js";
+import {initEssentials, loadJSON, loadTemplate} from "./common.js";
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -7,7 +7,7 @@ const compactNumbers = (number) => {
 };
 
 const priceFormatting = (price) => {
-    return price == 0 ? "FREE" : "$" + price;
+    return price === 0 ? "FREE" : "$" + price;
 };
 
 const makeEventCard = async (event_card, event, event_id) => {
@@ -58,6 +58,8 @@ const loadEventStructure = async () => {
 };
 
 const init = async () => {
+    await initEssentials();
+    await loadTemplate("events_sidebar.html", "sidebar-menu");
     const template = await loadTemplate("reduced_card.html");
     const events = await loadJSON("events.json");
     const eventsList = document.getElementById("events");
@@ -67,4 +69,4 @@ const init = async () => {
     }
 };
 
-init();
+await init();

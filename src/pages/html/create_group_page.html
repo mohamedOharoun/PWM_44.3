@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../../templates/css/footer.css">
     <link rel="stylesheet" href="../../templates/css/user.css">
     <link rel="stylesheet" href="../../templates/css/members_list.css">
-    <link rel="stylesheet" href="../../templates/css/generic_input.css">
     <link rel="stylesheet" href="../css/group_creation.css">
 </head>
 <body>
@@ -27,9 +26,16 @@
                             <span id="upload-photo-text">Lorem Ipsum</span>
                         </div>
                     </div>
-                    <div id="group-name-input-container"></div>
+                    <div id="group-name-container">
+                        <label for="group-name-input" id="group-name-label"></label>
+                        <input id="group-name-input" type="text">
+                    </div>
                 </div>
-                <div id="member-input-container"></div>
+                <div id="members-input-container">
+                    <label for="group-members-input" id="group-members-label"></label>
+                    <input id="group-members-input" type="text">
+                    <div class="suggestions" id="suggestions"></div>
+                </div>
                 <div id="members-list-container">
                     <section id="members-list-section"></section>
                 </div>

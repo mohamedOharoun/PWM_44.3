@@ -43,6 +43,10 @@
         }
     },
     "events": {
+        "expanded_event_button": "SEE MORE",
+        "description": "Description",
+        "participants": "participants",
+        "join_button": "JOIN",
         "events-side-bar": {
             "nav": [
                 "Explore",
@@ -155,11 +159,5 @@
             "third-step": "Account photo",
             "ford-step": "Privacy policy"
         }
-    },
-    "events": {
-        "expanded_event_button": "SEE MORE",
-        "description": "Description",
-        "participants": "participants",
-        "join_button": "JOIN"
     }
 }
