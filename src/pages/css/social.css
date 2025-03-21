@@ -37,3 +37,10 @@ main {
     align-items: center;
     padding: 3rem;
 }
+
+.util-button {
+    display: flex;
+    margin: 1rem;
+    border: none;
+    background: transparent;
+}

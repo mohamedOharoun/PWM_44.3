@@ -80,6 +80,12 @@
             "blocked": "blocked user(s)",
             "groups": "group(s)"
         },
+        "utils": {
+            "groups": {
+                "icon": "../../../assets/images/add_icon.svg",
+                "url": "create_group_page.html"
+            }
+        },
         "cards-icons": {
             "friends": [
                 "../../../assets/images/remove_user_icon.svg",

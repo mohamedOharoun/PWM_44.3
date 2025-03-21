@@ -13,3 +13,8 @@ export const buildLinkURL = (href, key, value) => {
     givenURL.search = URLParameters.toString();
     return givenURL;
 }
+
+export const getLoggedUserID = () => {
+    let userID = localStorage.getItem("user_id");
+    return userID === null || userID === undefined ? "1" : userID;
+}
