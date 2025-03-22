@@ -32,6 +32,8 @@ const fillSignUp = (page) => {
     let usernameInput = document.getElementById("username-placeholder");
     let birthDateInput = document.getElementById("birth-date-placeholder");
     let photoText = document.getElementById("photo-text");
+    let firstText = document.getElementById("first-text");
+    let secondText = document.getElementById("second-text");
     let nextStepButton = document.getElementById("next-step-button");
     let previousStepButton = document.getElementById("previous-step-button");
     let signInInfo = document.getElementById("sign-up-footer-info");
@@ -60,6 +62,8 @@ const fillSignUp = (page) => {
             } else if (page === "fourth") {
                 firstTitle.textContent = signup["fourth"]["first-title"];
                 secondTitle.textContent = signup["fourth"]["second-title"];
+                firstText.textContent = signup["fourth"]["first-text"];
+                secondText.textContent = signup["fourth"]["second-text"];
             }
 
             if (page !== "first") {
@@ -91,12 +95,11 @@ const loadSignUpAndFill = async (page) => {
     });
 };
 
-
-const pageKey = getPageKey("first");
-loadSignUpAndFill(pageKey);
-
-const loadHeaderAndFill = async () => {
+const loadHeaderAndFooter = async () => {
+    await loadTemplate("../../templates/html/footer.html", "page-footer");
     await loadTemplate("../../templates/html/header.html", "page-header");
 };
 
-loadHeaderAndFill();
+const pageKey = getPageKey("first");
+loadSignUpAndFill(pageKey);
+loadHeaderAndFooter();

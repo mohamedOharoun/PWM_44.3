@@ -169,8 +169,8 @@
         "fourth": {
             "first-title": "Privacy policy",
             "second-title": "the last step",
-            "first-text": "",
-            "second-text": ""
+            "first-text": " I accept the Terms and Conditions of use for the platform. By accepting, I acknowledge that I have read, understood, and agree to comply with the rules and guidelines set forth, including those related to the proper use of the social network, intellectual property rights, and privacy of data.\n I accept the Privacy Policy, understanding how my personal data is collected, stored, and processed on the platform.",
+            "second-text": " I accept the Privacy Policy, understanding how my personal data is collected, stored, and processed on the platform. I am aware of my rights regarding the information I provide and how this data is used to enhance my experience on the social network. I understand that I have the ability to manage and modify my privacy preferences at any time, and that my trust in the handling of my data is crucial for maintaining a safe and transparent environment."
         },
         "sign-up-lower-info": {
             "next-step-button": "NEXT",
