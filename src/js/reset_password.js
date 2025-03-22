@@ -1,4 +1,4 @@
-import { loadTemplate } from "./main.js";
+import { loadTemplate} from "./common.js";
 
 await loadTemplate("../../templates/html/footer.html", "page-footer");
 
@@ -28,14 +28,10 @@ const fillResetPassword = () => {
         });
 };
 
-const loadHeaderAndFill = async () => {
-    await loadTemplate("../../templates/html/header.html", "page-header");
-};
 
 const loadResetPasswordAndFill = async () => {
     await loadTemplate("../../templates/html/reset_password.html", "reset-password-container");
     fillResetPassword();
 };
 
-await loadHeaderAndFill();
 await loadResetPasswordAndFill();

@@ -1,4 +1,26 @@
-import { loadTemplate } from "./main.js";
+import { loadTemplate, getPageKey } from "./common.js";
+import { buildLinkURL } from "./utils.js";
+
+const navigateStep = (direction, page) => {
+    const pageOrder = {
+        "first": { "next": "second", "prev": null },
+        "second": { "next": "third", "prev": "first" },
+        "third": { "next": "fourth", "prev": "second" },
+        "fourth": { "next": "home_page", "prev": "third" }
+    };
+
+    let targetPageKey = pageOrder[page]?.[direction];
+
+    if (targetPageKey) {
+        if (targetPageKey === "home_page") {
+            window.location.href = "home_page.html";
+        } else {
+            window.location.href = buildLinkURL(window.location.href, "page_key", targetPageKey);
+        }
+    } else {
+        console.error(`No se encontró la página ${direction === "next" ? "siguiente" : "anterior"}.`);
+    }
+};
 
 const fillSignUp = (page) => {
     let firstTitle = document.getElementById("first-title");
@@ -13,6 +35,7 @@ const fillSignUp = (page) => {
     let nextStepButton = document.getElementById("next-step-button");
     let previousStepButton = document.getElementById("previous-step-button");
     let signInInfo = document.getElementById("sign-up-footer-info");
+    let loginLink = document.getElementById("login-link");
 
     fetch("../../db/config.json")
         .then(res => res.json())
@@ -41,38 +64,36 @@ const fillSignUp = (page) => {
 
             if (page !== "first") {
                 previousStepButton.textContent = signup["sign-up-lower-info"]["previous-step-button"];
+                previousStepButton.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    navigateStep("prev", page);
+                });
             }
+
             nextStepButton.textContent = signup["sign-up-lower-info"]["next-step-button"];
-            signInInfo.textContent = signup["sign-up-lower-info"]["sign-in-info"];
+            nextStepButton.addEventListener("click", (event) => {
+                event.preventDefault();
+                navigateStep("next", page);
+            });
+
+            let firstPart = signup["sign-up-lower-info"]["sign-in-info"];
+            let secondPart = signup["sign-up-lower-info"]["login-link"];
+
+            loginLink.textContent = secondPart;
+            signInInfo.innerHTML = `${firstPart} <a href="../../pages/html/sign_in.html" id="login-link" class="custom_link"><strong>${secondPart}</strong></a>`;
         });
 };
 
 const loadSignUpAndFill = async (page) => {
-    const template = `../../templates/html/sign_up_${page}_step.html`;
-    await loadTemplate(template, "sign-up-card-container");
-    const form = `../../templates/html/sign_up_${page}_step_form.html`;
-    await loadTemplate(form, "sign-up-card-form");
-
-    fillSignUp(page);
+    await loadTemplate(`sign_up.html`, "sign-up-card-container");
+    await loadTemplate(`sign_up_${page}_step_form.html`, "sign-up-card-form", () => {
+        fillSignUp(page);
+    });
 };
 
 
-const pagePath = window.location.pathname.split("/").pop().replace(".html", "");
-
-let pageKey = "";
-if (pagePath === "sign_up_first_step_page") {
-    pageKey = "first";
-} else if (pagePath === "sign_up_second_step_page") {
-    pageKey = "second";
-} else if (pagePath === "sign_up_third_step_page") {
-    pageKey = "third";
-} else if (pagePath === "sign_up_fourth_step_page") {
-    pageKey = "fourth";
-}
-
-if (pageKey) {
-    loadSignUpAndFill(pageKey);
-}
+const pageKey = getPageKey("first");
+loadSignUpAndFill(pageKey);
 
 const loadHeaderAndFill = async () => {
     await loadTemplate("../../templates/html/header.html", "page-header");

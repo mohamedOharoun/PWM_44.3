@@ -1,4 +1,4 @@
-import { loadTemplate } from "./main.js";
+import { loadTemplate} from "./common.js";
 
 await loadTemplate("../../templates/html/footer.html", "page-footer");
 
@@ -12,7 +12,7 @@ const fillLogin = () => {
     let registerLink = document.getElementById("register-link");
     let signInButton = document.getElementById("sign-in-btn");
 
-    fetch("../../locales/config.json")
+    fetch("../../db/config.json")
         .then(res => res.json())
         .then(config => {
             let loginTexts = config["login"];
@@ -28,42 +28,10 @@ const fillLogin = () => {
         });
 };
 
-const buildListItem = (text, link) => {
-    let listItem = document.createElement("li");
-    let linkElement = document.createElement("a");
-    linkElement.target = "_self";
-    linkElement.href = link;
-    linkElement.textContent = text;
-    listItem.appendChild(linkElement);
-    return listItem;
-};
-
-const fillHeader = () => {
-    fetch("../../db/config.json")
-        .then(config => config.json())
-        .then(config => {
-            let headerElements = config["header"];
-            let navTexts = headerElements["nav"];
-
-            let fragment = document.createDocumentFragment();
-            let links = navTexts["links"];
-            navTexts["titles"].forEach((text, i) => {
-                fragment.appendChild(buildListItem(text, links[i]));
-            });
-            let navList = document.getElementById("header-navigation");
-            navList.appendChild(fragment);
-        });
-};
-
-const loadHeaderAndFill = async () => {
-    await loadTemplate("../../templates/html/header.html", "page-header");
-    fillHeader();
-};
 
 const loadLoginAndFill = async () => {
     await loadTemplate("../../templates/html/sign_in_circle.html", "sign-in-container");
     fillLogin();
 };
 
-await loadHeaderAndFill();
 await loadLoginAndFill();

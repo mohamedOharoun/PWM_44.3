@@ -1,14 +1,12 @@
-import { loadTemplate } from "./main.js";
-
-await loadTemplate("../../templates/html/footer.html", "page-footer");
+import { loadTemplate, getPageKey } from "./common.js";
 
 const fillStepCircles = async () => {
-    const currentPage = window.location.pathname.split("/").pop();
+    const currentPage = getPageKey("first");
     const stepMapping = {
-        "sign_up_first_step_page.html": "1",
-        "sign_up_second_step_page.html": "2",
-        "sign_up_third_step_page.html": "3",
-        "sign_up_fourth_step_page.html": "4"
+        "first": "1",
+        "second": "2",
+        "third": "3",
+        "fourth": "4"
     };
     const currentStep = stepMapping[currentPage];
 

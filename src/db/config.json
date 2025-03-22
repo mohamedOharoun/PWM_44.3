@@ -175,7 +175,8 @@
         "sign-up-lower-info": {
             "next-step-button": "NEXT",
             "previous-step-button": "PREVIOUS",
-            "sign-in-info": "Already have an account? Try signing in.",
+            "sign-in-info": "Already have an account? Try ",
+            "login-link": "signing in.",
             "steps-info": {
                 "first-step": "Basic information",
                 "second-step": "Account information",
