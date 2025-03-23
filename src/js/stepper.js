@@ -48,12 +48,10 @@ const fillStepCircles = async () => {
     }
 };
 
-const loadStepCirclesAndFill = async () => {
+export const loadStepCirclesAndFill = async () => {
     await loadTemplate("../../templates/html/stepper.html", "step-information-container");
 
     if (document.getElementById("step-information-container") && document.getElementById("circles-container")) {
         await fillStepCircles();
     }
 };
-
-await loadStepCirclesAndFill();

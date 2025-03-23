@@ -1,5 +1,6 @@
-import {loadTemplate, getPageKey, initEssentials} from "./common.js";
+import {loadTemplate, getPageKey, initEssentials, loadJSON} from "./common.js";
 import { buildLinkURL } from "./utils.js";
+import {loadStepCirclesAndFill} from "./stepper.js";
 
 const navigateStep = (direction, page) => {
     const pageOrder = {
@@ -15,11 +16,29 @@ const navigateStep = (direction, page) => {
         if (targetPageKey === "home_page") {
             window.location.href = "home_page.html";
         } else {
-            window.location.href = buildLinkURL(window.location.href, "page_key", targetPageKey);
+            window.location.href = buildLinkURL(window.location.href, "page_key", targetPageKey).toString();
         }
     } else {
         console.error(`No se encontró la página ${direction === "next" ? "siguiente" : "anterior"}.`);
     }
+};
+
+const addListenerToPasswordConfirmationInput = (repeatPasswordInput) => {
+    let passwordInput = document.getElementById("password");
+    repeatPasswordInput.addEventListener("input", (evt) => {
+        if (passwordInput.value !== repeatPasswordInput.value) repeatPasswordInput.setCustomValidity("Passwords does not match!");
+        else repeatPasswordInput.setCustomValidity("");
+        repeatPasswordInput.reportValidity();
+    });
+};
+
+const addListenerToEmailInput = (emailInput) => {
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    emailInput.addEventListener("input", (evt) => {
+        if (!emailPattern.test(emailInput.value)) emailInput.setCustomValidity("Invalid e-mail address!");
+        else emailInput.setCustomValidity("");
+        emailInput.reportValidity();
+    });
 };
 
 const fillSignUp = (page) => {
@@ -39,8 +58,7 @@ const fillSignUp = (page) => {
     let signInInfo = document.getElementById("sign-up-footer-info");
     let loginLink = document.getElementById("login-link");
 
-    fetch("../../db/config.json")
-        .then(res => res.json())
+    loadJSON("config.json")
         .then(config => {
             let signup = config["sign-up"];
 
@@ -53,6 +71,8 @@ const fillSignUp = (page) => {
                 emailInput.placeholder = signup["first"]["email-placeholder"];
                 passwordInput.placeholder = signup["first"]["first-password-placeholder"];
                 repeatPasswordInput.placeholder = signup["first"]["second-password-placeholder"];
+                addListenerToEmailInput(emailInput);
+                addListenerToPasswordConfirmationInput(repeatPasswordInput);
             } else if (page === "second") {
                 nameInput.placeholder = signup["second"]["name-placeholder"];
                 usernameInput.placeholder = signup["second"]["username-placeholder"];
@@ -95,9 +115,9 @@ const loadSignUpAndFill = async (page) => {
 };
 
 const init = async () => {
-    const pageKey = getPageKey("first");
     await initEssentials();
-    await loadSignUpAndFill(pageKey);
+    await loadSignUpAndFill(getPageKey("first"));
+    await loadStepCirclesAndFill();
 }
 
 await init();
