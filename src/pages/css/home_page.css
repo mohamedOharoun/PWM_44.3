@@ -31,7 +31,11 @@ main {
 .photo-container {
     width: 200px;
     height: 200px;
-    background: #cccccc;
+}
+
+.photo-container img {
+    width: 180%;
+    height: auto;
 }
 
 .main-text {
@@ -41,7 +45,7 @@ main {
     margin: 40px 0;
 }
 
-.home-tile{
+.home-title {
     color: white;
     font-weight: bold;
     font-size: 60px;

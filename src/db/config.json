@@ -35,6 +35,16 @@
             "second-part": "here."
         }
     },
+    "home-page" : {
+        "photo": ["../../../assets/images/home_icon.png"],
+        "title": "Welcome to JoinUp!",
+        "text-info":"Welcome to JoinUP, your platform to connect and discover unique events! Whether you're organizing an event or looking for something that interests you, we're here to make it happen. Ready to join the fun?",
+        "button-one": "Create event",
+        "button-two": "Create group",
+        "friends-container": "Friends online",
+        "events-container": "Upcoming events",
+        "payments-container": "Pending payments"
+    },
     "profile": {
         "titles": {
             "user-profile": "User profile",
