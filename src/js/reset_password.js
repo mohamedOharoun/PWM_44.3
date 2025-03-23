@@ -1,6 +1,4 @@
-import { loadTemplate} from "./common.js";
-
-await loadTemplate("../../templates/html/footer.html", "page-footer");
+import {initEssentials, loadTemplate} from "./common.js";
 
 const fillResetPassword = () => {
     let title = document.getElementById("title");
@@ -34,4 +32,9 @@ const loadResetPasswordAndFill = async () => {
     fillResetPassword();
 };
 
-await loadResetPasswordAndFill();
+const init = async () => {
+    await initEssentials();
+    await loadResetPasswordAndFill();
+}
+
+await init();

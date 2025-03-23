@@ -1,6 +1,4 @@
-import { loadTemplate} from "./common.js";
-
-await loadTemplate("../../templates/html/footer.html", "page-footer");
+import {initEssentials, loadTemplate} from "./common.js";
 
 const fillLogin = () => {
     let logoImage = document.getElementById("logo-image");
@@ -34,4 +32,9 @@ const loadLoginAndFill = async () => {
     fillLogin();
 };
 
-await loadLoginAndFill();
+const init = async () => {
+    await initEssentials();
+    await loadLoginAndFill();
+}
+
+await init();

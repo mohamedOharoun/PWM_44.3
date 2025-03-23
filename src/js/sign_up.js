@@ -1,4 +1,4 @@
-import { loadTemplate, getPageKey } from "./common.js";
+import {loadTemplate, getPageKey, initEssentials} from "./common.js";
 import { buildLinkURL } from "./utils.js";
 
 const navigateStep = (direction, page) => {
@@ -90,16 +90,14 @@ const fillSignUp = (page) => {
 
 const loadSignUpAndFill = async (page) => {
     await loadTemplate(`sign_up.html`, "sign-up-card-container");
-    await loadTemplate(`sign_up_${page}_step_form.html`, "sign-up-card-form", () => {
-        fillSignUp(page);
-    });
+    await loadTemplate(`sign_up_${page}_step_form.html`, "sign-up-card-form");
+    fillSignUp(page);
 };
 
-const loadHeaderAndFooter = async () => {
-    await loadTemplate("../../templates/html/footer.html", "page-footer");
-    await loadTemplate("../../templates/html/header.html", "page-header");
-};
+const init = async () => {
+    const pageKey = getPageKey("first");
+    await initEssentials();
+    await loadSignUpAndFill(pageKey);
+}
 
-const pageKey = getPageKey("first");
-loadSignUpAndFill(pageKey);
-loadHeaderAndFooter();
+await init();
