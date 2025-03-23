@@ -31,7 +31,7 @@ const buildUsersSection = async (eventUsersIds, userTemplate) => {
 
 const setUserData = (userArticle, userData, userID) => {
     let usernameLabel = userArticle.querySelector(".user-name");
-    usernameLabel.textContent = userData.username;
+    usernameLabel.textContent = userData["name"];
     usernameLabel.href = buildUserProfileURL(usernameLabel.href, userID);
 }
 

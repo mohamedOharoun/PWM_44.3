@@ -17,8 +17,8 @@ main {
     flex: 1;
     height: 100vh;
     display: flex;
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: hidden;
+    background: radial-gradient(circle, #006D77, #23CFA7);
+    overflow: auto;
 }
 
 a {
@@ -85,4 +85,14 @@ input {
     background: linear-gradient(45deg, #006D77, #23CFA7);
     border-radius: 15px;
     border: 2px solid white;
+}
+
+.animated-input {
+    background: #eeeeff;
+    transition: background 0.3s ease, box-shadow 0.3s ease, backgorund 0.3s ease;
+}
+
+.animated-input:focus {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }

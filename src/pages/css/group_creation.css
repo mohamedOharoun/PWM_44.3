@@ -118,3 +118,18 @@ main {
 .suggestions div:hover {
     background: #f0f0f0;
 }
+
+#uploaded-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#uploaded-img {
+    width: 100%;
+    height: auto;
+}

@@ -16,7 +16,7 @@ const getUserFriends = () => {
 const buildUserCardFrom = (userTemplate, userID, userData) => {
     let userCard = userTemplate.cloneNode(true);
     let photo = userData["photo"];
-    let name = userData["username"];
+    let name = userData["name"];
     userCard.querySelector(".user-photo").src = photo;
     let nameTag = userCard.querySelector(".user-name");
     nameTag.id = userID;
@@ -63,7 +63,7 @@ const fillMessagesSectionFor = async (currentChatUser, messagesSection) => {
 const loadUserChats = async () => {
     let pageParts = getPageParts();
     await fillUserList(pageParts.userList);
-    pageParts.currentChatName.textContent = getCurrentChatUser()["username"];
+    pageParts.currentChatName.textContent = getCurrentChatUser()["name"];
     fillMessagesSectionFor(getCurrentChatUser(), pageParts.messagesSection);
     await loadTemplate("message_input.html", "message-input-container");
 };

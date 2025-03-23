@@ -23,7 +23,7 @@
             "full-name": {
                 "label": "Full name"
             },
-            "username": {
+            "name": {
                 "label": "Username"
             },
             "email": {
@@ -87,25 +87,25 @@
             }
         },
         "cards-icons": {
-            "friends": [
-                "../../../assets/images/remove_user_icon.svg",
-                "../../../assets/images/block_user_icon.svg",
-                "../../../assets/images/message_icon.svg"
-            ],
-            "pending": [
-                "../../../assets/images/cross_icon.svg",
-                "../../../assets/images/check_icon.svg"
-            ],
-            "sent-requests": [
-                "../../../assets/images/cross_icon.svg"
-            ],
-            "blocked": [
-                "../../../assets/images/cross_icon.svg"
-            ],
-            "groups": [
-                "../../../assets/images/cross_icon.svg",
-                "../../../assets/images/edit_icon.svg"
-            ]
+            "friends": {
+                "remove-user": "../../../assets/images/remove_user_icon.svg",
+                "block-user": "../../../assets/images/block_user_icon.svg",
+                "message": "../../../assets/images/message_icon.svg"
+            },
+            "pending": {
+                "cancel": "../../../assets/images/cross_icon.svg",
+                "accept": "../../../assets/images/check_icon.svg"
+            },
+            "sent-requests": {
+                "cancel": "../../../assets/images/cross_icon.svg"
+            },
+            "blocked": {
+                "cancel": "../../../assets/images/cross_icon.svg"
+            },
+            "groups": {
+                "cancel": "../../../assets/images/cross_icon.svg",
+                "edit": "../../../assets/images/edit_icon.svg"
+            }
         }
     },
     "create-group": {

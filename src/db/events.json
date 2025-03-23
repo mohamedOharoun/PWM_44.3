@@ -1,6 +1,6 @@
 {
   "1": {
-    "user": 1,
+    "user": "1",
     "name": "Event Name 1",
     "author": "Host Name 1",
     "description": "This is a sample description for event 1.",
@@ -10,6 +10,8 @@
     "likes": 901110,
     "comments": 0,
     "members": [
+      "1",
+      "2",
       "13",
       "17",
       "21",
@@ -17,7 +19,7 @@
     ]
   },
   "2": {
-    "user": 1,
+    "user": "1",
     "name": "Event Name 2",
     "author": "Host Name 2",
     "description": "This is a sample description for event 2.",
@@ -27,6 +29,7 @@
     "likes": 5,
     "comments": 2,
     "members": [
+      "1",
       "13",
       "17",
       "21"
@@ -111,7 +114,7 @@
     "comments": 50,
     "members": [
       "1",
-      "2",
+      "0",
       "3",
       "4",
       "5"

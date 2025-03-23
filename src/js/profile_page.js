@@ -1,4 +1,5 @@
 import {config, initEssentials, loadTemplate, loggedUser, loadJSON} from "./common.js";
+import {buildLinkURL, getLoggedUserID} from "./utils.js";
 
 const buildPhoto = (url) => {
     let img = document.getElementById("profile-image");
@@ -7,7 +8,7 @@ const buildPhoto = (url) => {
 };
 
 const getPageKey = () => {
-    return lastUser() !== null || lastUser() === loggedUser() ? "user-profile" : "self-profile";
+    return lastUser() !== null ? "user-profile" : "self-profile";
 }
 
 function getProfileParts() {
@@ -34,12 +35,63 @@ const fillProfileUtils = (utilsContainer) => {
     utilsContainer.appendChild(fragment);
 };
 
+const getUserEvents = async (user) => {
+    let events = await loadJSON("events.json");
+    return Object.entries(events).filter(e => e[1]["members"].includes(user.userID));
+};
+
+const fillUserEvents = async (userEventsContainer, user) => {
+    userEventsContainer = document.getElementById("user-events-content");
+    let userEvents = await getUserEvents(user);
+    let eventCardTemplate = loadTemplate("event_card_profile.html");
+    let fragment = document.createDocumentFragment();
+    for (let event in userEvents) {
+        let eventData = userEvents[event][1];
+        let card = (await eventCardTemplate).cloneNode(true);
+        card.querySelector(".event-name").textContent = eventData["name"];
+        card.querySelector(".event-description").textContent = eventData["description"];
+        card.querySelector(".participants").textContent = eventData["members"].length;
+        card.querySelector(".event-time-text").textContent = eventData["time"];
+        card.querySelector(".event-location-text").textContent = eventData["place"];
+        card.querySelector("article").addEventListener("click", (evt) => {
+            let a = document.createElement("a");
+            a.href = "../../pages/html/expanded_event_page.html";
+            window.location.href = buildLinkURL(a.href, "event_id", event).toString();
+        });
+        fragment.appendChild(card);
+    }
+    userEventsContainer.appendChild(fragment);
+};
+
+const getSharedEvents = async (user) => {
+    let events = await loadJSON("events.json");
+    return Object.entries(events).filter(e => e[1]["members"].includes(user.userID) && e[1]["members"].includes(getLoggedUserID()));
+};
+
+const fillSharedEvents = async (sharedEventsContainer, user) => {
+    sharedEventsContainer = document.getElementById("shared-events-content");
+    let sharedEvents = await getSharedEvents(user);
+    let eventCardTemplate = loadTemplate("event_card_profile.html");
+    let fragment = document.createDocumentFragment();
+    for (let event in sharedEvents) {
+        event = sharedEvents[event][1];
+        let card = (await eventCardTemplate).cloneNode(true);
+        card.querySelector(".event-name").textContent = event["name"];
+        card.querySelector(".event-description").textContent = event["description"];
+        card.querySelector(".participants").textContent = event["members"].length;
+        card.querySelector(".event-time-text").textContent = event["time"];
+        card.querySelector(".event-location-text").textContent = event["place"];
+        fragment.appendChild(card);
+    }
+    if (getPageKey() === "user-profile") sharedEventsContainer.appendChild(fragment);
+};
+
 const loadProfileStaticsTexts = (profileParts) => {
     let profileConfig = config["profile"];
     profileParts.title.textContent = profileConfig["titles"][getPageKey()];
     if (getPageKey() === "self-profile") fillProfileUtils(profileParts.utilsContainer);
     profileParts.fullName.childNodes[0].textContent = profileConfig["profile-content"]["full-name"]["label"];
-    profileParts.username.childNodes[0].textContent = profileConfig["profile-content"]["username"]["label"];
+    profileParts.username.childNodes[0].textContent = profileConfig["profile-content"]["name"]["label"];
     if (getPageKey() === "self-profile") profileParts.userEmail.childNodes[0].textContent = profileConfig["profile-content"]["email"]["label"];
     else document.getElementById("user-email").remove();
     profileParts.description.childNodes[0].textContent = profileConfig["profile-description"]["label"];
@@ -52,22 +104,26 @@ const lastUser = () => {
     return new URLSearchParams(window.location.search).get("user_id");
 }
 
-const fillProfileInformation = (profileParts, user) => {
-    profileParts.photo.appendChild(buildPhoto(user["photo"]));
-    profileParts.fullName.querySelector("input").placeholder = user["full-name"];
-    profileParts.username.querySelector("input").placeholder = user["username"];
-    if (getPageKey() === "self-profile") profileParts.userEmail.querySelector("input").placeholder = user["e-mail"];
-    profileParts.description.querySelector("textarea").textContent = user["description"];
+const fillProfileInformation = async (profileParts, user) => {
+    await fillUserEvents(profileParts.userEvents, user);
+    await fillSharedEvents(profileParts.userEvents, user);
+    profileParts.photo.appendChild(buildPhoto(user.userData["photo"]));
+    profileParts.fullName.querySelector("input").placeholder = user.userData["full-name"];
+    profileParts.username.querySelector("input").placeholder = user.userData["name"];
+    if (getPageKey() === "self-profile") profileParts.userEmail.querySelector("input").placeholder = user.userData["e-mail"];
+    profileParts.description.querySelector("textarea").textContent = user.userData["description"];
 }
 
-const getUserData = async () => {
-    return await loadJSON("users.json").then(users => users[lastUser() !== null ? lastUser() : "0"]);
+const getUser = async () => {
+    let userID = lastUser() !== null ? lastUser() : getLoggedUserID();
+    let users = await loadJSON("users.json");
+    return {userID, userData: users[userID]};
 }
 
 const fillProfile = async () => {
     let profileParts = getProfileParts();
     loadProfileStaticsTexts(profileParts);
-    fillProfileInformation(profileParts, await getUserData());
+    fillProfileInformation(profileParts, await getUser());
 }
 
 const loadProfileAndFill = async () => {
