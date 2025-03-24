@@ -1,5 +1,10 @@
 import { initEssentials, loadJSON, loadTemplate } from "./common.js";
-import {buildUserProfileURL} from "./utils.js";
+import {buildUserProfileURL, getLoggedUserID} from "./utils.js";
+
+const users = await loadJSON("users.json");
+const userTemplate = await loadTemplate("user_chat.html");
+const chatsConfig = await loadJSON("config.json").then(config => config["chats"]);
+const messageTemplate = await loadTemplate("message.html");
 
 const getPageParts = () => {
     let userList = document.getElementById("chat-users-list");
@@ -23,10 +28,10 @@ const buildUserCardFrom = (userTemplate, userID, userData) => {
     nameTag.href = buildUserProfileURL(nameTag.href, userID);
     nameTag.textContent = name;
     return userCard;
+
 };
 
 const fillUserList = async (userList) => {
-    let userTemplate = await loadTemplate("user_chat.html");
     let fragment = document.createDocumentFragment();
     getUserFriends().forEach(([userID, userData]) => {
         fragment.appendChild(buildUserCardFrom(userTemplate, userID, userData));
@@ -36,51 +41,75 @@ const fillUserList = async (userList) => {
 
 const getCurrentChatUser = () => {
     return getCurrentChatUserID() !== null ? users[getCurrentChatUserID()] : users["2"];
+
 }
 
 const getCurrentChatUserID = () => {
     let urlParameters = new URLSearchParams(window.location.search);
     return urlParameters.get("user_id") !== null ? urlParameters.get("user_id") : "2";
+
 }
 
 const getMessagesIDFor = (loggedUserID, currentChatUserID) => {
     return `${loggedUserID}-${currentChatUserID}`;
+
 };
 
 const fillMessagesSectionFor = async (currentChatUser, messagesSection) => {
-    let messageTemplate = await loadTemplate("message.html");
+
     let messages = await loadJSON("messages.json").then(messages => messages[getMessagesIDFor(getLoggedUserID(), getCurrentChatUserID())]);
     let fragment = document.createDocumentFragment();
-    messages.forEach(m => {
+    if (messages) messages.forEach(m => {
         let messageArticle = messageTemplate.cloneNode(true);
         if (m["author"] === getLoggedUserID()) messageArticle.querySelector("article").classList.add("self-message");
         messageArticle.querySelector(".message-body").textContent = m["body"];
         fragment.append(messageArticle);
-    })
+    });
     messagesSection.appendChild(fragment);
+};
+
+const buildNewMessageWithText = (messageContent) => {
+    let newMessage = messageTemplate.cloneNode(true);
+    newMessage.querySelector(".message-body").textContent = messageContent;
+    newMessage.querySelector("article").classList.add("self-message");
+    return newMessage;
+};
+
+const setScrollToBottom = () => {
+    let messagesSection = document.getElementById("messages-section");
+    if (messagesSection.scrollHeight > messagesSection.clientHeight) {
+        messagesSection.scrollTop = messagesSection.scrollHeight;
+    }
+};
+
+const addListenerToMessageInput = (messageInput) => {
+    messageInput.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter") return;
+        event.preventDefault();
+        let messageContent = messageInput.value;
+        if (messageContent === "") return;
+        document.getElementById("messages-section").appendChild(buildNewMessageWithText(messageContent));
+        messageInput.value = "";
+        setScrollToBottom();
+    });
 };
 
 const loadUserChats = async () => {
     let pageParts = getPageParts();
     await fillUserList(pageParts.userList);
     pageParts.currentChatName.textContent = getCurrentChatUser()["name"];
-    fillMessagesSectionFor(getCurrentChatUser(), pageParts.messagesSection);
+    await fillMessagesSectionFor(getCurrentChatUser(), pageParts.messagesSection);
     await loadTemplate("message_input.html", "message-input-container");
+    document.getElementById("message-input").placeholder = chatsConfig["message-input-placeholder"];
+    addListenerToMessageInput(document.getElementById("message-input"));
 };
-
-let users ;
 
 const getLoggedUser = () => {
     return users[getLoggedUserID()];
 }
 
-const getLoggedUserID = () => {
-    return "1";
-}
-
 const init = async () => {
     await initEssentials();
-    users = await loadJSON("users.json");
     await loadUserChats();
 }
 

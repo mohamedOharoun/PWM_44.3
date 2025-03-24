@@ -1,5 +1,11 @@
 import {initEssentials, loadJSON, loadTemplate} from "./common.js";
 import {buildLinkURL, buildUserProfileURL, getLoggedUserID} from "./utils.js";
+import {
+    socialCardBlockedUtilsFunctionalities,
+    socialCardFriendUtilsFunctionalities, socialCardGroupUtilsFunctionalities,
+    socialCardPendingUtilsFunctionalities,
+    socialCardSentRequestUtilsFunctionalities
+} from "./social_cards_utils.js";
 
 let socialConfig = await loadJSON("config.json").then(config => config["social"]);
 const cardTemplate = await loadTemplate("social_card.html");
@@ -54,22 +60,20 @@ const loadStaticsTexts = async () => {
     await loadTemplate("social_navigation.html", "social-header");
     let titles = socialConfig["nav"]["titles"];
     loadNavigationTexts(titles);
-    document.getElementById("social-title").textContent = getTitleForCurrentPage();
     loadSocialUtils();
 }
 
 const addListenerToCardUtilButton = (button, tag, userID) => {
+    const socialCardsUtilsFunctions = {
+        "friends": socialCardFriendUtilsFunctionalities,
+        "pending": socialCardPendingUtilsFunctionalities,
+        "sent-requests": socialCardSentRequestUtilsFunctionalities,
+        "blocked": socialCardBlockedUtilsFunctionalities,
+        "groups": socialCardGroupUtilsFunctionalities
+    };
     button.addEventListener("click", (evt) => {
-        switch (tag) {
-            case "cancel":
-                window.location.href = buildLinkURL("create_group_page.html", "group_id", userID).toString();
-                break;
-            case "edit":
-                let a = document.createElement("a");
-                a.href = "create_group_page.html";
-                window.location.href = buildLinkURL(a.href, "group_id", userID).toString();
-                break;
-        }
+        socialCardsUtilsFunctions[getPageKey()]({button, tag, userID});
+        updateInformationTitle();
     });
 };
 
@@ -104,14 +108,19 @@ const buildCardWith = (userData, userID) => {
         buildUserProfileURL(socialCard.card.querySelector(".social-card-name").href, userID) :
         "#"
     fillCardUtils(socialCard.cardUtils, userID);
+    socialCard.card.querySelector("article").id = `card${userID}`;
     return socialCard.card;
 }
+
+const updateInformationTitle = () => {
+    let title = document.getElementById("social-title");
+    let number = document.getElementById("social-list").children.length;
+    title.textContent = `${number} ${getTitleForCurrentPage()}`;
+};
 
 const buildCards = (entities) => {
     let fragment = document.createDocumentFragment();
     Object.entries(entities).forEach(([userID, userData]) => {fragment.appendChild(buildCardWith(userData, userID));});
-    let title = document.getElementById("social-title");
-    title.textContent = `${fragment.children.length} ${title.textContent}`;
     return fragment;
 };
 
@@ -148,6 +157,7 @@ const getNeededEntities = () => {
 
 const loadCards = async () => {
     document.getElementById("social-list").appendChild(buildCards(getNeededEntities()));
+    updateInformationTitle();
 };
 
 const init = async () => {
