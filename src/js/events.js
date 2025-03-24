@@ -75,6 +75,14 @@ const makeEventCard = async (eventCard, event, user) => {
     let tagTemplate = await loadTemplate("tag.html");
     const tagSection = eventCard.querySelector(".tags-section");
 
+    event["tags"].forEach(t => {
+        const tagElement = tagTemplate.cloneNode(true);
+        const p = document.createElement("p");
+        p.innerText = `#${t}`;
+        tagElement.querySelector(".tag").appendChild(p);
+        tagSection.appendChild(tagElement);
+    });
+
     article.appendChild(eventCard);
     return article;
 };
