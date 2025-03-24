@@ -4,7 +4,6 @@ const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
 
 let events = eventsSource;
-
 let searchTags = [];
 
 const compactNumbers = (number) => {
@@ -14,57 +13,36 @@ const compactNumbers = (number) => {
 };
 
 const priceFormatting = (price) => {
-    return price == 0 ? "FREE" : "$" + price;
+    return parseFloat(price) === 0 ? "FREE" : "$" + price;
 };
 
-const makeEventCard = async (eventCard, event, user) => {
-    const eventIdParam = `?event_id=${event.id}`;
-    const staticText = await loadJSON("config.json")
-        .then(data => data["events"]["event-card"]);
+const createTagElements = async (tagSection, eventTags) => {
+    const tagTemplate = await loadTemplate("tag.html");
 
-    eventCard.querySelector(".see-more-button").textContent = staticText["expanded_event_button"];
-    eventCard.querySelector(".section-title").textContent = staticText["description"];
-    eventCard.querySelector(".participants-label").textContent = staticText["participants"];
-    eventCard.querySelector(".action-button").textContent = staticText["join_button"]["join"];
+    eventTags.forEach(t => {
+        const tagElement = tagTemplate.cloneNode(true);
+        const p = document.createElement("p");
+        p.innerText = `#${t}`;
+        tagElement.querySelector(".tag").appendChild(p);
+        tagSection.appendChild(tagElement);
+    });
+};
 
-    eventCard.querySelector(".main-title").textContent = event.name;
-    eventCard.querySelector(".subtitle").textContent = event.author;
-    eventCard.querySelector(".description-text").textContent = event.description;
-    eventCard.querySelector(".event-time").textContent = event.time;
-    eventCard.querySelector(".event-place").textContent = event.place;
-    eventCard.querySelector(".event-price").textContent = priceFormatting(event.price);
-    eventCard.querySelector(".participants-count").textContent = event.members.length;
-    eventCard.querySelector(".participants-count").setAttribute("number-participants", event.members.length);
-    eventCard.querySelector(".likes-count").textContent = compactNumbers(event.likes);
-    eventCard.querySelector(".likes-count").setAttribute("number-likes", event.likes);
-    eventCard.querySelector(".comments-count").textContent = compactNumbers(event.comments);
-    eventCard.querySelector(".see-more-button").href += eventIdParam;
-    eventCard.querySelector(".participants-item").href += eventIdParam;
-
-    const likesCount = eventCard.querySelector(".likes-count");
-    const likeButton = eventCard.querySelector(".like-button");
-
-    if (user["liked_events"].includes(event.id))
-        likeButton.classList.add("liked-event");
-
-    likeButton.addEventListener("click", (event) => {
+const setupLikeButton = (likeButton, likesCount, event) => {
+    likeButton.addEventListener("click", () => {
         let count = parseInt(likesCount.getAttribute("number-likes"));
         likeButton.classList.contains("liked-event") ? count-- : count++;
+
         likesCount.setAttribute("number-likes", count);
         likesCount.textContent = compactNumbers(count);
         likeButton.classList.toggle("liked-event");
     });
+};
 
-    const joinButton = eventCard.querySelector(".action-button");
-    const participantsCount = eventCard.querySelector(".participants-count");
-
-    if (event["members"].includes(user["id"]) || event["user"] === user["id"]) {
-        joinButton.classList.add("joined-event");
-        joinButton.textContent = staticText["join_button"]["joined"];
-    }
-
-    joinButton.addEventListener("click", (event) => {
+const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
+    joinButton.addEventListener("click", () => {
         let count = parseInt(participantsCount.getAttribute("number-participants"));
+
         if (joinButton.classList.contains("joined-event")) {
             count--;
             joinButton.textContent = staticText["join_button"]["join"];
@@ -72,21 +50,66 @@ const makeEventCard = async (eventCard, event, user) => {
             count++;
             joinButton.textContent = staticText["join_button"]["joined"];
         }
+
         participantsCount.setAttribute("number-participants", count);
         participantsCount.textContent = compactNumbers(count);
         joinButton.classList.toggle("joined-event");
     });
+};
 
-    let tagTemplate = await loadTemplate("tag.html");
+const makeEventCard = async (eventCard, event, user) => {
+    const eventIdParam = `?event_id=${event["id"]}`;
+    const staticText = await loadJSON("config.json")
+        .then(data => data["events"]["event-card"]);
+
+    const updateElementText = (selector, text) => {
+        eventCard.querySelector(selector).textContent = text;
+    };
+
+    const updateElementHref = (selector, href) => {
+        eventCard.querySelector(selector).href += href;
+    };
+
+    updateElementText(".see-more-button", staticText["expanded_event_button"]);
+    updateElementText(".section-title", staticText["description"]);
+    updateElementText(".participants-label", staticText["participants"]);
+    updateElementText(".action-button", staticText["join_button"]["join"]);
+
+    updateElementText(".main-title", event["name"]);
+    updateElementText(".subtitle", event["author"]);
+    updateElementText(".description-text", event["description"]);
+    updateElementText(".event-time", event["time"]);
+    updateElementText(".event-place", event["place"]);
+    updateElementText(".event-price", priceFormatting(event["price"]));
+
+    const participantsCount = eventCard.querySelector(".participants-count");
+    updateElementText(".participants-count", event["members"].length);
+    participantsCount.setAttribute("number-participants", event["members"].length);
+
+    const likesCount = eventCard.querySelector(".likes-count");
+    updateElementText(".likes-count", compactNumbers(event["likes"]));
+    likesCount.setAttribute("number-likes", event["likes"]);
+
+    updateElementText(".comments-count", compactNumbers(event["comments"]));
+
+    updateElementHref(".see-more-button", eventIdParam);
+    updateElementHref(".participants-item", eventIdParam);
+
+    const likeButton = eventCard.querySelector(".like-button");
+    if (user["liked_events"].includes(event["id"])) {
+        likeButton.classList.add("liked-event");
+    }
+    setupLikeButton(likeButton, likesCount, event);
+
+    const joinButton = eventCard.querySelector(".action-button");
+    if (event["members"].includes(user["id"]) || event["user"] === user["id"]) {
+        joinButton.classList.add("joined-event");
+        joinButton.textContent = staticText["join_button"]["joined"];
+    }
+    setupJoinButton(joinButton, participantsCount, event, staticText);
+
     const tagSection = eventCard.querySelector(".tags-section");
-
-    event["tags"].forEach(t => {
-        const tagElement = tagTemplate.cloneNode(true);
-        const p = document.createElement("p");
-        p.innerText = `#${t}`;
-        tagElement.querySelector(".tag").appendChild(p);
-        tagSection.appendChild(tagElement);
-    });
+    await createTagElements(tagSection, event["tags"]);
 
     const article = document.createElement("article");
     article.classList.add("card");
@@ -95,31 +118,37 @@ const makeEventCard = async (eventCard, event, user) => {
 };
 
 const getPageKey = (defaultPage) => {
-    let URLParameters = new URLSearchParams(window.location.search);
-    return URLParameters.get("page_key") === null ? defaultPage : URLParameters.get("page_key");
+    const URLParameters = new URLSearchParams(window.location.search);
+    return URLParameters.get("page_key") || defaultPage;
 };
 
-const loadEventStructure = async () => {
-    return await fetch("../../templates/html/reduced_card.html")
-        .then(res => res.text());
+const filterEventsByPage = (events, page, user) => {
+    switch (page) {
+        case "favourites":
+            return events.filter(event => user["liked_events"].includes(event["id"]));
+        case "joined":
+            return events.filter(event => event["members"].includes(user["id"]));
+        default:
+            return events;
+    }
 };
 
 const loadEvents = async () => {
     localStorage.setItem("user_id", "1");
     const userId = localStorage.getItem("user_id");
-    const user = Object.entries(await loadJSON("users.json"))
-        .map(([id, user]) => ({id, ...user}))
-        .filter(user => user.id === userId)[0];
+    const users = Object.entries(await loadJSON("users.json"))
+        .map(([id, user]) => ({id, ...user}));
+    const user = users.find(user => user.id === userId);
 
-    let templateSource = "reduced_card.html";
     const page = getPageKey("explore");
+    const templateSource = page === "owned" ? "reduced_owned_card.html" : "reduced_card.html";
 
-    if (page === "favourites") {
-        events = events.filter(event => user["liked_events"].includes(event.id));
-    } else if (page === "joined") {
-        events = events.filter(event => event["members"].includes(user.id));
-    } else if (page === "owned") {
-        templateSource = "reduced_owned_card.html";
+    events = filterEventsByPage(eventsSource, page, user);
+
+    if (searchTags.length > 0) {
+        events = events.filter(event =>
+            event["tags"].some(t => searchTags.includes(t.toLowerCase()))
+        );
     }
 
     const template = await loadTemplate(templateSource);
@@ -147,17 +176,11 @@ const createSearchTagElement = async (tag) => {
     return tagTemplate;
 };
 
-const handleTagRemoval = (tag, tagElement) => {
+const handleTagRemoval = async (tag, tagElement) => {
     searchTags = searchTags.filter(t => t !== tag.toLowerCase());
 
-    events = searchTags.length === 0
-        ? eventsSource
-        : eventsSource.filter(event =>
-            event["tags"].some(t => searchTags.includes(t))
-        );
-
     document.getElementById("events").innerHTML = "";
-    loadEvents();
+    await loadEvents();
 
     tagElement.style.display = "none";
 };
@@ -175,10 +198,6 @@ const setupSearchInputListener = (searchInput, searchBox, staticText) => {
 
                 const tagTemplate = await createSearchTagElement(tag);
                 searchBox.appendChild(tagTemplate);
-
-                events = eventsSource.filter(event =>
-                    event["tags"].some(t => searchTags.includes(t))
-                );
 
                 document.getElementById("events").innerHTML = "";
                 await loadEvents();
@@ -214,4 +233,4 @@ const init = async () => {
     await loadEvents();
 };
 
-init();
+await init();
