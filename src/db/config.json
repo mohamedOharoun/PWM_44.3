@@ -160,6 +160,9 @@
         "expanded_event_button": "SEE MORE",
         "description": "Description",
         "participants": "participants",
-        "join_button": "JOIN"
+        "join_button": {
+            "join": "JOIN",
+            "joined": "JOINED"
+        }
     }
 }

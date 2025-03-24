@@ -41,8 +41,7 @@ const fillHeaderNav = () => {
 }
 
 export const initEssentials = async () => {
-    config = await fetch("../../locales/config.json")
-        .then(res => res.json());
+    config = await loadJSON("config.json");
     await loadHeader();
     await loadTemplate("../../templates/html/footer.html", "page-footer");
 }
