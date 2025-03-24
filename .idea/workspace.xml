@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add events filtering according to sidebar menu.">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add dynamic loading of events' tags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/event_members.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/event_members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/events_explore.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/events_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/interactive_tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/interactive_tag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/tag.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +176,7 @@
       <workItem from="1742405542875" duration="841000" />
       <workItem from="1742484100480" duration="2777000" />
       <workItem from="1742576517113" duration="6543000" />
-      <workItem from="1742826781853" duration="4538000" />
+      <workItem from="1742826781853" duration="10638000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -241,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742832235485</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add dynamic loading of events' tags">
+      <option name="closed" value="true" />
+      <created>1742832317155</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742832317155</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +286,7 @@
     <MESSAGE value="Add dynamic number of likes setting" />
     <MESSAGE value="Fix compactNumbers function to make jump of type precise" />
     <MESSAGE value="Add events filtering according to sidebar menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add events filtering according to sidebar menu." />
+    <MESSAGE value="Add dynamic loading of events' tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dynamic loading of events' tags" />
   </component>
 </project>

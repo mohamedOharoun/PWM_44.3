@@ -1,4 +1,11 @@
-import { loadJSON, loadTemplate, initEssentials } from "./common.js";
+import {loadJSON, loadTemplate, initEssentials} from "./common.js";
+
+const eventsSource = Object.entries(await loadJSON("events.json"))
+    .map(([id, event]) => ({id, ...event}));
+
+let events = eventsSource;
+
+let searchTags = [];
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -13,10 +20,8 @@ const priceFormatting = (price) => {
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event.id}`;
     const staticText = await loadJSON("config.json")
-        .then(data => data["events"]);
+        .then(data => data["events"]["event-card"]);
 
-    const article = document.createElement("article");
-    article.classList.add("card");
     eventCard.querySelector(".see-more-button").textContent = staticText["expanded_event_button"];
     eventCard.querySelector(".section-title").textContent = staticText["description"];
     eventCard.querySelector(".participants-label").textContent = staticText["participants"];
@@ -60,10 +65,10 @@ const makeEventCard = async (eventCard, event, user) => {
 
     joinButton.addEventListener("click", (event) => {
         let count = parseInt(participantsCount.getAttribute("number-participants"));
-        if(joinButton.classList.contains("joined-event")) {
+        if (joinButton.classList.contains("joined-event")) {
             count--;
             joinButton.textContent = staticText["join_button"]["join"];
-        }  else {
+        } else {
             count++;
             joinButton.textContent = staticText["join_button"]["joined"];
         }
@@ -83,6 +88,8 @@ const makeEventCard = async (eventCard, event, user) => {
         tagSection.appendChild(tagElement);
     });
 
+    const article = document.createElement("article");
+    article.classList.add("card");
     article.appendChild(eventCard);
     return article;
 };
@@ -97,24 +104,21 @@ const loadEventStructure = async () => {
         .then(res => res.text());
 };
 
-const init = async () => {
-    await initEssentials();
+const loadEvents = async () => {
     localStorage.setItem("user_id", "1");
     const userId = localStorage.getItem("user_id");
     const user = Object.entries(await loadJSON("users.json"))
-                          .map(([id, user]) => ({ id, ...user }))
-                          .filter(user => user.id === userId)[0];
-    let events = Object.entries(await loadJSON("events.json"))
-                       .map(([id, event]) => ({ id, ...event }));
+        .map(([id, user]) => ({id, ...user}))
+        .filter(user => user.id === userId)[0];
 
     let templateSource = "reduced_card.html";
     const page = getPageKey("explore");
 
-    if(page === "favourites") {
+    if (page === "favourites") {
         events = events.filter(event => user["liked_events"].includes(event.id));
     } else if (page === "joined") {
         events = events.filter(event => event["members"].includes(user.id));
-    } else if(page === "owned") {
+    } else if (page === "owned") {
         templateSource = "reduced_owned_card.html";
     }
 
@@ -125,6 +129,89 @@ const init = async () => {
         const eventCard = await makeEventCard(template.cloneNode(true), event, user);
         eventsList.appendChild(eventCard);
     }
+};
+
+const createSearchTagElement = async (tag) => {
+    const tagTemplate = await loadTemplate("interactive_tag.html");
+    const tagElement = tagTemplate.querySelector(".tag");
+    const removeButton = tagElement.querySelector("button");
+    const tagText = document.createElement("p");
+
+    tagText.innerText = tag;
+    tagElement.prepend(tagText);
+
+    removeButton.addEventListener("click", () => {
+        handleTagRemoval(tag, tagElement);
+    });
+
+    return tagTemplate;
+};
+
+const handleTagRemoval = (tag, tagElement) => {
+    searchTags = searchTags.filter(t => t !== tag.toLowerCase());
+
+    events = searchTags.length === 0
+        ? eventsSource
+        : eventsSource.filter(event =>
+            event["tags"].some(t => searchTags.includes(t))
+        );
+
+    document.getElementById("events").innerHTML = "";
+    loadEvents();
+
+    tagElement.style.display = "none";
+};
+
+const setupSearchInputListener = (searchInput, searchBox, staticText) => {
+    searchInput.placeholder = staticText["search-placeholder"];
+
+    searchInput.addEventListener("keydown", async (event) => {
+        if (event.key === "Enter") {
+            const tag = event.target.value;
+            const normalizedTag = tag.toLowerCase();
+
+            if (!searchTags.includes(normalizedTag)) {
+                searchTags.push(normalizedTag);
+
+                const tagTemplate = await createSearchTagElement(tag);
+                searchBox.appendChild(tagTemplate);
+
+                events = eventsSource.filter(event =>
+                    event["tags"].some(t => searchTags.includes(t))
+                );
+
+                document.getElementById("events").innerHTML = "";
+                await loadEvents();
+
+                event.target.value = "";
+            }
+        }
+    });
+};
+
+const loadSideBar = async () => {
+    const staticText = await loadJSON("config.json")
+        .then(data => data["events"]["sidebar-menu"]);
+
+    const template = await loadTemplate("events_sidebar.html");
+
+    const menuItems = ["explore", "joined", "favourites", "owned"];
+    menuItems.forEach(item => {
+        template.querySelector(`#${item}`).textContent = staticText[item];
+    });
+
+    const searchInput = template.querySelector("#sidebar-search");
+    const searchBox = template.querySelector(".result-box");
+
+    setupSearchInputListener(searchInput, searchBox, staticText);
+
+    document.getElementById("sidebar-menu").appendChild(template);
+};
+
+const init = async () => {
+    await initEssentials();
+    await loadSideBar();
+    await loadEvents();
 };
 
 init();

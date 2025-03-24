@@ -44,7 +44,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png)
   - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png)
   - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png)
-  - [Página de eventos](src/pages/html/events_explore.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png)
+  - [Página de eventos](src/pages/html/events.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png)
   - [Página de evento expandido](src/pages/html/expanded_event_page.html) implementa el mockup [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png)
   - [Página de eventos marcados como favoritos](src/pages/html/events_favourite.html) implementa el mockup [FavouriteEvents](docs/mockups/FavouriteEvents.png)
   - [Página de creación de grupo](src/pages/html/create_group_page.html) implementa el mockup [GroupCreation](docs/mockups/GroupCreation.png)
@@ -78,7 +78,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - **Mensaje**
     - [Página de chat individual](src/pages/html/chat.html)
   - **Tarjeta de eventos**
-    - [Página de eventos principal](src/pages/html/events_explore.html)
+    - [Página de eventos principal](src/pages/html/events.html)
     - [Página de eventos favoritos](src/pages/html/events_favourite.html)
     - [Página de eventos unidos](src/pages/html/events_joined.html)
     - [Página de eventos creados](src/pages/html/events_owned.html)
@@ -116,7 +116,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     - [Template de lista de tarjeta de evento expandida](src/templates/html/expand_card.html)
     - [Página de chat individual](src/pages/html/chat.html)
   - **Sidebar de eventos**
-    - [Página de eventos principal](src/pages/html/events_explore.html)
+    - [Página de eventos principal](src/pages/html/events.html)
     - [Página de eventos favoritos](src/pages/html/events_favourite.html)
     - [Página de eventos unidos](src/pages/html/events_joined.html)
     - [Página de eventos creados](src/pages/html/events_owned.html)  

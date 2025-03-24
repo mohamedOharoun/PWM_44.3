@@ -7,7 +7,7 @@
     "time": "Wed 20, January 22:00",
     "place": "Mi Casa",
     "price": 0,
-    "likes": 999999,
+    "likes": 1000000,
     "comments": 0,
     "members": [
       "1",
@@ -144,7 +144,8 @@
     ],
     "tags": [
       "music",
-      "entertainment"
+      "entertainment",
+      "food"
     ]
   },
   "8": {
