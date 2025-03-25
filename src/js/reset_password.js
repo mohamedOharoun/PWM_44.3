@@ -21,7 +21,7 @@ const fillResetPassword = () => {
             let firstPart = resetPasswordTexts["message"]["first-part"];
             let secondPart = resetPasswordTexts["message"]["second-part"];
 
-            message.innerHTML = `${firstPart} <a href="#" id="login-link" class="custom_link"><strong>${secondPart}</strong></a>`;
+            message.innerHTML = `${firstPart} <a href="sign_in.html" id="login-link" class="custom_link"><strong>${secondPart}</strong></a>`;
             loginLink.textContent = secondPart;
         });
 };

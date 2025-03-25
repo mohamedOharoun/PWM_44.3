@@ -1,12 +1,16 @@
 {
     "0": {
-        "e-mail": "johnsmith0@gmail.com",
+        "e-mail": "ernestina@gmail.com",
         "password": "1234",
-        "full-name": "John Smith",
-        "username": "johnsmith0",
+        "full-name": "Ernestina",
+        "name": "ernestina24",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=0",
         "friends": [
+            "1",
+            "2",
+            "3",
+            "4",
             "73",
             "44",
             "61",
@@ -23,14 +27,18 @@
             "54",
             "14"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "4",
             "40",
             "57"
         ],
-        "description": "Hello, my name is (insert name).",
+        "description": "Hello, my name is Ernestina!",
         "liked-events": [
             1,
             4,
@@ -40,13 +48,18 @@
         ]
     },
     "1": {
-        "e-mail": "lauragarcia1@outlook.com",
+        "e-mail": "javier.castilla@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Laura Garcia",
-        "username": "lauragarcia1",
+        "full-name": "Javier Castilla",
+        "name": "javiercastilla101",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=1",
         "friends": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
             "70",
             "94",
             "60",
@@ -60,7 +73,11 @@
             "7",
             "19"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "96",
@@ -78,13 +95,17 @@
         ]
     },
     "2": {
-        "e-mail": "sarahbrown2@outlook.com",
+        "e-mail": "ayman.asbai101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Sarah Brown",
-        "username": "sarahbrown2",
+        "full-name": "Ayman Asbai",
+        "name": "aymanasbai101",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=2",
         "friends": [
+            "0",
+            "1",
+            "3",
+            "4",
             "89",
             "84",
             "9",
@@ -97,7 +118,11 @@
             "67",
             "29"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "48"
@@ -113,13 +138,17 @@
         ]
     },
     "3": {
-        "e-mail": "danielmartinez3@hotmail.com",
+        "e-mail": "mohamed.oulad101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Daniel Martinez",
-        "username": "danielmartinez3",
+        "full-name": "Mohamed Oulad",
+        "name": "mohamedoulad101",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=3",
         "friends": [
+            "0",
+            "1",
+            "2",
+            "4",
             "5",
             "56",
             "48",
@@ -134,7 +163,11 @@
             "91",
             "83"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "16"
@@ -151,13 +184,17 @@
         ]
     },
     "4": {
-        "e-mail": "michaelmartinez4@hotmail.com",
+        "e-mail": "laura.herrera113@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Michael Martinez",
-        "username": "michaelmartinez4",
+        "full-name": "Laura Herrera",
+        "name": "lauraherrera113",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=4",
         "friends": [
+            "0",
+            "1",
+            "2",
+            "3",
             "21",
             "83",
             "10",
@@ -191,13 +228,14 @@
         ]
     },
     "5": {
-        "e-mail": "danieljones5@yahoo.com",
+        "e-mail": "asmae.ez101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Daniel Jones",
-        "username": "danieljones5",
+        "full-name": "Asmae Ez Zaim",
+        "name": "asmaeezzaim101",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=5",
         "friends": [
+            "1",
             "50",
             "60",
             "9",
@@ -233,7 +271,7 @@
         "e-mail": "emilylopez6@outlook.com",
         "password": "1234",
         "full-name": "Emily Lopez",
-        "username": "emilylopez6",
+        "name": "emilylopez6",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=6",
         "friends": [
@@ -274,7 +312,7 @@
         "e-mail": "davidsmith7@outlook.com",
         "password": "1234",
         "full-name": "David Smith",
-        "username": "davidsmith7",
+        "name": "davidsmith7",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=7",
         "friends": [
@@ -312,7 +350,7 @@
         "e-mail": "johnwilliams8@hotmail.com",
         "password": "1234",
         "full-name": "John Williams",
-        "username": "johnwilliams8",
+        "name": "johnwilliams8",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=8",
         "friends": [
@@ -349,7 +387,7 @@
         "e-mail": "chrislopez9@hotmail.com",
         "password": "1234",
         "full-name": "Chris Lopez",
-        "username": "chrislopez9",
+        "name": "chrislopez9",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=9",
         "friends": [
@@ -388,7 +426,7 @@
         "e-mail": "janejones10@hotmail.com",
         "password": "1234",
         "full-name": "Jane Jones",
-        "username": "janejones10",
+        "name": "janejones10",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=10",
         "friends": [
@@ -424,7 +462,7 @@
         "e-mail": "jessicajohnson11@outlook.com",
         "password": "1234",
         "full-name": "Jessica Johnson",
-        "username": "jessicajohnson11",
+        "name": "jessicajohnson11",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=11",
         "friends": [
@@ -460,7 +498,7 @@
         "e-mail": "chrishernandez12@hotmail.com",
         "password": "1234",
         "full-name": "Chris Hernandez",
-        "username": "chrishernandez12",
+        "name": "chrishernandez12",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=12",
         "friends": [
@@ -500,7 +538,7 @@
         "e-mail": "sarahbrown13@aol.com",
         "password": "1234",
         "full-name": "Sarah Brown",
-        "username": "sarahbrown13",
+        "name": "sarahbrown13",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=13",
         "friends": [
@@ -533,7 +571,7 @@
         "e-mail": "johnwilliams14@aol.com",
         "password": "1234",
         "full-name": "John Williams",
-        "username": "johnwilliams14",
+        "name": "johnwilliams14",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=14",
         "friends": [
@@ -567,7 +605,7 @@
         "e-mail": "michaellopez15@outlook.com",
         "password": "1234",
         "full-name": "Michael Lopez",
-        "username": "michaellopez15",
+        "name": "michaellopez15",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=15",
         "friends": [
@@ -607,7 +645,7 @@
         "e-mail": "davidlopez16@gmail.com",
         "password": "1234",
         "full-name": "David Lopez",
-        "username": "davidlopez16",
+        "name": "davidlopez16",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=16",
         "friends": [
@@ -645,7 +683,7 @@
         "e-mail": "sarahjohnson17@aol.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson17",
+        "name": "sarahjohnson17",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=17",
         "friends": [
@@ -678,7 +716,7 @@
         "e-mail": "jessicalopez18@yahoo.com",
         "password": "1234",
         "full-name": "Jessica Lopez",
-        "username": "jessicalopez18",
+        "name": "jessicalopez18",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=18",
         "friends": [
@@ -714,7 +752,7 @@
         "e-mail": "jessicajones19@aol.com",
         "password": "1234",
         "full-name": "Jessica Jones",
-        "username": "jessicajones19",
+        "name": "jessicajones19",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=19",
         "friends": [
@@ -745,7 +783,7 @@
         "e-mail": "sarahgarcia20@gmail.com",
         "password": "1234",
         "full-name": "Sarah Garcia",
-        "username": "sarahgarcia20",
+        "name": "sarahgarcia20",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=20",
         "friends": [
@@ -781,7 +819,7 @@
         "e-mail": "davidgarcia21@yahoo.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia21",
+        "name": "davidgarcia21",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=21",
         "friends": [
@@ -820,7 +858,7 @@
         "e-mail": "janejohnson22@yahoo.com",
         "password": "1234",
         "full-name": "Jane Johnson",
-        "username": "janejohnson22",
+        "name": "janejohnson22",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=22",
         "friends": [
@@ -853,7 +891,7 @@
         "e-mail": "danielwilliams23@yahoo.com",
         "password": "1234",
         "full-name": "Daniel Williams",
-        "username": "danielwilliams23",
+        "name": "danielwilliams23",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=23",
         "friends": [
@@ -891,7 +929,7 @@
         "e-mail": "michaeljones24@hotmail.com",
         "password": "1234",
         "full-name": "Michael Jones",
-        "username": "michaeljones24",
+        "name": "michaeljones24",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=24",
         "friends": [
@@ -930,7 +968,7 @@
         "e-mail": "michaelwilliams25@yahoo.com",
         "password": "1234",
         "full-name": "Michael Williams",
-        "username": "michaelwilliams25",
+        "name": "michaelwilliams25",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=25",
         "friends": [
@@ -969,7 +1007,7 @@
         "e-mail": "jessicamartinez26@aol.com",
         "password": "1234",
         "full-name": "Jessica Martinez",
-        "username": "jessicamartinez26",
+        "name": "jessicamartinez26",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=26",
         "friends": [
@@ -1004,7 +1042,7 @@
         "e-mail": "jessicasmith27@aol.com",
         "password": "1234",
         "full-name": "Jessica Smith",
-        "username": "jessicasmith27",
+        "name": "jessicasmith27",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=27",
         "friends": [
@@ -1045,7 +1083,7 @@
         "e-mail": "danieljohnson28@outlook.com",
         "password": "1234",
         "full-name": "Daniel Johnson",
-        "username": "danieljohnson28",
+        "name": "danieljohnson28",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=28",
         "friends": [
@@ -1087,7 +1125,7 @@
         "e-mail": "laurasmith29@outlook.com",
         "password": "1234",
         "full-name": "Laura Smith",
-        "username": "laurasmith29",
+        "name": "laurasmith29",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=29",
         "friends": [
@@ -1123,7 +1161,7 @@
         "e-mail": "michaelhernandez30@yahoo.com",
         "password": "1234",
         "full-name": "Michael Hernandez",
-        "username": "michaelhernandez30",
+        "name": "michaelhernandez30",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=30",
         "friends": [
@@ -1159,7 +1197,7 @@
         "e-mail": "sarahdavis31@outlook.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis31",
+        "name": "sarahdavis31",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=31",
         "friends": [
@@ -1194,7 +1232,7 @@
         "e-mail": "danielwilliams32@outlook.com",
         "password": "1234",
         "full-name": "Daniel Williams",
-        "username": "danielwilliams32",
+        "name": "danielwilliams32",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=32",
         "friends": [
@@ -1234,7 +1272,7 @@
         "e-mail": "jessicawilliams33@hotmail.com",
         "password": "1234",
         "full-name": "Jessica Williams",
-        "username": "jessicawilliams33",
+        "name": "jessicawilliams33",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=33",
         "friends": [
@@ -1271,7 +1309,7 @@
         "e-mail": "danielmartinez34@gmail.com",
         "password": "1234",
         "full-name": "Daniel Martinez",
-        "username": "danielmartinez34",
+        "name": "danielmartinez34",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=34",
         "friends": [
@@ -1303,7 +1341,7 @@
         "e-mail": "johnhernandez35@outlook.com",
         "password": "1234",
         "full-name": "John Hernandez",
-        "username": "johnhernandez35",
+        "name": "johnhernandez35",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=35",
         "friends": [
@@ -1342,7 +1380,7 @@
         "e-mail": "chrisjones36@outlook.com",
         "password": "1234",
         "full-name": "Chris Jones",
-        "username": "chrisjones36",
+        "name": "chrisjones36",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=36",
         "friends": [
@@ -1378,7 +1416,7 @@
         "e-mail": "laurajohnson37@outlook.com",
         "password": "1234",
         "full-name": "Laura Johnson",
-        "username": "laurajohnson37",
+        "name": "laurajohnson37",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=37",
         "friends": [
@@ -1414,7 +1452,7 @@
         "e-mail": "chrishernandez38@yahoo.com",
         "password": "1234",
         "full-name": "Chris Hernandez",
-        "username": "chrishernandez38",
+        "name": "chrishernandez38",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=38",
         "friends": [
@@ -1445,7 +1483,7 @@
         "e-mail": "janemartinez39@aol.com",
         "password": "1234",
         "full-name": "Jane Martinez",
-        "username": "janemartinez39",
+        "name": "janemartinez39",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=39",
         "friends": [
@@ -1486,7 +1524,7 @@
         "e-mail": "davidbrown40@outlook.com",
         "password": "1234",
         "full-name": "David Brown",
-        "username": "davidbrown40",
+        "name": "davidbrown40",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=40",
         "friends": [
@@ -1531,7 +1569,7 @@
         "e-mail": "michaeldavis41@yahoo.com",
         "password": "1234",
         "full-name": "Michael Davis",
-        "username": "michaeldavis41",
+        "name": "michaeldavis41",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=41",
         "friends": [
@@ -1569,7 +1607,7 @@
         "e-mail": "michaelsmith42@outlook.com",
         "password": "1234",
         "full-name": "Michael Smith",
-        "username": "michaelsmith42",
+        "name": "michaelsmith42",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=42",
         "friends": [
@@ -1607,7 +1645,7 @@
         "e-mail": "emilyjohnson43@aol.com",
         "password": "1234",
         "full-name": "Emily Johnson",
-        "username": "emilyjohnson43",
+        "name": "emilyjohnson43",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=43",
         "friends": [
@@ -1646,7 +1684,7 @@
         "e-mail": "laurahernandez44@aol.com",
         "password": "1234",
         "full-name": "Laura Hernandez",
-        "username": "laurahernandez44",
+        "name": "laurahernandez44",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=44",
         "friends": [
@@ -1689,7 +1727,7 @@
         "e-mail": "chriswilliams45@aol.com",
         "password": "1234",
         "full-name": "Chris Williams",
-        "username": "chriswilliams45",
+        "name": "chriswilliams45",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=45",
         "friends": [
@@ -1733,7 +1771,7 @@
         "e-mail": "chriswilliams46@hotmail.com",
         "password": "1234",
         "full-name": "Chris Williams",
-        "username": "chriswilliams46",
+        "name": "chriswilliams46",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=46",
         "friends": [
@@ -1774,7 +1812,7 @@
         "e-mail": "emilymartinez47@gmail.com",
         "password": "1234",
         "full-name": "Emily Martinez",
-        "username": "emilymartinez47",
+        "name": "emilymartinez47",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=47",
         "friends": [
@@ -1810,7 +1848,7 @@
         "e-mail": "jessicajones48@outlook.com",
         "password": "1234",
         "full-name": "Jessica Jones",
-        "username": "jessicajones48",
+        "name": "jessicajones48",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=48",
         "friends": [
@@ -1850,7 +1888,7 @@
         "e-mail": "davidsmith49@outlook.com",
         "password": "1234",
         "full-name": "David Smith",
-        "username": "davidsmith49",
+        "name": "davidsmith49",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=49",
         "friends": [
@@ -1892,7 +1930,7 @@
         "e-mail": "michaeljones50@gmail.com",
         "password": "1234",
         "full-name": "Michael Jones",
-        "username": "michaeljones50",
+        "name": "michaeljones50",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=50",
         "friends": [
@@ -1933,7 +1971,7 @@
         "e-mail": "emilylopez51@outlook.com",
         "password": "1234",
         "full-name": "Emily Lopez",
-        "username": "emilylopez51",
+        "name": "emilylopez51",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=51",
         "friends": [
@@ -1973,7 +2011,7 @@
         "e-mail": "janegarcia52@outlook.com",
         "password": "1234",
         "full-name": "Jane Garcia",
-        "username": "janegarcia52",
+        "name": "janegarcia52",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=52",
         "friends": [
@@ -2008,7 +2046,7 @@
         "e-mail": "laurahernandez53@outlook.com",
         "password": "1234",
         "full-name": "Laura Hernandez",
-        "username": "laurahernandez53",
+        "name": "laurahernandez53",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=53",
         "friends": [
@@ -2053,7 +2091,7 @@
         "e-mail": "johndavis54@yahoo.com",
         "password": "1234",
         "full-name": "John Davis",
-        "username": "johndavis54",
+        "name": "johndavis54",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=54",
         "friends": [
@@ -2093,7 +2131,7 @@
         "e-mail": "chrisbrown55@outlook.com",
         "password": "1234",
         "full-name": "Chris Brown",
-        "username": "chrisbrown55",
+        "name": "chrisbrown55",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=55",
         "friends": [
@@ -2137,7 +2175,7 @@
         "e-mail": "davidgarcia56@hotmail.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia56",
+        "name": "davidgarcia56",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=56",
         "friends": [
@@ -2176,7 +2214,7 @@
         "e-mail": "johndavis57@hotmail.com",
         "password": "1234",
         "full-name": "John Davis",
-        "username": "johndavis57",
+        "name": "johndavis57",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=57",
         "friends": [
@@ -2218,7 +2256,7 @@
         "e-mail": "michaelwilliams58@aol.com",
         "password": "1234",
         "full-name": "Michael Williams",
-        "username": "michaelwilliams58",
+        "name": "michaelwilliams58",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=58",
         "friends": [
@@ -2262,7 +2300,7 @@
         "e-mail": "lauradavis59@hotmail.com",
         "password": "1234",
         "full-name": "Laura Davis",
-        "username": "lauradavis59",
+        "name": "lauradavis59",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=59",
         "friends": [
@@ -2300,7 +2338,7 @@
         "e-mail": "michaeljohnson60@outlook.com",
         "password": "1234",
         "full-name": "Michael Johnson",
-        "username": "michaeljohnson60",
+        "name": "michaeljohnson60",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=60",
         "friends": [
@@ -2338,7 +2376,7 @@
         "e-mail": "johnmartinez61@aol.com",
         "password": "1234",
         "full-name": "John Martinez",
-        "username": "johnmartinez61",
+        "name": "johnmartinez61",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=61",
         "friends": [
@@ -2382,7 +2420,7 @@
         "e-mail": "sarahmartinez62@yahoo.com",
         "password": "1234",
         "full-name": "Sarah Martinez",
-        "username": "sarahmartinez62",
+        "name": "sarahmartinez62",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=62",
         "friends": [
@@ -2417,7 +2455,7 @@
         "e-mail": "sarahdavis63@yahoo.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis63",
+        "name": "sarahdavis63",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=63",
         "friends": [
@@ -2458,7 +2496,7 @@
         "e-mail": "michaelsmith64@outlook.com",
         "password": "1234",
         "full-name": "Michael Smith",
-        "username": "michaelsmith64",
+        "name": "michaelsmith64",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=64",
         "friends": [
@@ -2495,7 +2533,7 @@
         "e-mail": "michaelwilliams65@gmail.com",
         "password": "1234",
         "full-name": "Michael Williams",
-        "username": "michaelwilliams65",
+        "name": "michaelwilliams65",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=65",
         "friends": [
@@ -2530,7 +2568,7 @@
         "e-mail": "michaelmartinez66@gmail.com",
         "password": "1234",
         "full-name": "Michael Martinez",
-        "username": "michaelmartinez66",
+        "name": "michaelmartinez66",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=66",
         "friends": [
@@ -2572,7 +2610,7 @@
         "e-mail": "sarahdavis67@hotmail.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis67",
+        "name": "sarahdavis67",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=67",
         "friends": [
@@ -2612,7 +2650,7 @@
         "e-mail": "danielwilliams68@aol.com",
         "password": "1234",
         "full-name": "Daniel Williams",
-        "username": "danielwilliams68",
+        "name": "danielwilliams68",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=68",
         "friends": [
@@ -2649,7 +2687,7 @@
         "e-mail": "emilyjones69@yahoo.com",
         "password": "1234",
         "full-name": "Emily Jones",
-        "username": "emilyjones69",
+        "name": "emilyjones69",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=69",
         "friends": [
@@ -2683,7 +2721,7 @@
         "e-mail": "sarahjohnson70@yahoo.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson70",
+        "name": "sarahjohnson70",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=70",
         "friends": [
@@ -2727,7 +2765,7 @@
         "e-mail": "chrisbrown71@outlook.com",
         "password": "1234",
         "full-name": "Chris Brown",
-        "username": "chrisbrown71",
+        "name": "chrisbrown71",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=71",
         "friends": [
@@ -2772,7 +2810,7 @@
         "e-mail": "danieldavis72@aol.com",
         "password": "1234",
         "full-name": "Daniel Davis",
-        "username": "danieldavis72",
+        "name": "danieldavis72",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=72",
         "friends": [
@@ -2813,7 +2851,7 @@
         "e-mail": "danielsmith73@hotmail.com",
         "password": "1234",
         "full-name": "Daniel Smith",
-        "username": "danielsmith73",
+        "name": "danielsmith73",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=73",
         "friends": [
@@ -2853,7 +2891,7 @@
         "e-mail": "sarahgarcia74@gmail.com",
         "password": "1234",
         "full-name": "Sarah Garcia",
-        "username": "sarahgarcia74",
+        "name": "sarahgarcia74",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=74",
         "friends": [
@@ -2896,7 +2934,7 @@
         "e-mail": "danieljohnson75@hotmail.com",
         "password": "1234",
         "full-name": "Daniel Johnson",
-        "username": "danieljohnson75",
+        "name": "danieljohnson75",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=75",
         "friends": [
@@ -2941,7 +2979,7 @@
         "e-mail": "sarahjohnson76@gmail.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson76",
+        "name": "sarahjohnson76",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=76",
         "friends": [
@@ -2979,7 +3017,7 @@
         "e-mail": "davidgarcia77@gmail.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia77",
+        "name": "davidgarcia77",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=77",
         "friends": [
@@ -3012,7 +3050,7 @@
         "e-mail": "chrissmith78@yahoo.com",
         "password": "1234",
         "full-name": "Chris Smith",
-        "username": "chrissmith78",
+        "name": "chrissmith78",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=78",
         "friends": [
@@ -3052,7 +3090,7 @@
         "e-mail": "davidbrown79@aol.com",
         "password": "1234",
         "full-name": "David Brown",
-        "username": "davidbrown79",
+        "name": "davidbrown79",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=79",
         "friends": [
@@ -3091,7 +3129,7 @@
         "e-mail": "michaelgarcia80@hotmail.com",
         "password": "1234",
         "full-name": "Michael Garcia",
-        "username": "michaelgarcia80",
+        "name": "michaelgarcia80",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=80",
         "friends": [
@@ -3139,7 +3177,7 @@
         "e-mail": "davidgarcia81@aol.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia81",
+        "name": "davidgarcia81",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=81",
         "friends": [
@@ -3187,7 +3225,7 @@
         "e-mail": "daviddavis82@hotmail.com",
         "password": "1234",
         "full-name": "David Davis",
-        "username": "daviddavis82",
+        "name": "daviddavis82",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=82",
         "friends": [
@@ -3231,7 +3269,7 @@
         "e-mail": "chrisjohnson83@aol.com",
         "password": "1234",
         "full-name": "Chris Johnson",
-        "username": "chrisjohnson83",
+        "name": "chrisjohnson83",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=83",
         "friends": [
@@ -3271,7 +3309,7 @@
         "e-mail": "emilywilliams84@outlook.com",
         "password": "1234",
         "full-name": "Emily Williams",
-        "username": "emilywilliams84",
+        "name": "emilywilliams84",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=84",
         "friends": [
@@ -3314,7 +3352,7 @@
         "e-mail": "sarahdavis85@outlook.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis85",
+        "name": "sarahdavis85",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=85",
         "friends": [
@@ -3358,7 +3396,7 @@
         "e-mail": "sarahsmith86@hotmail.com",
         "password": "1234",
         "full-name": "Sarah Smith",
-        "username": "sarahsmith86",
+        "name": "sarahsmith86",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=86",
         "friends": [
@@ -3401,7 +3439,7 @@
         "e-mail": "davidhernandez87@hotmail.com",
         "password": "1234",
         "full-name": "David Hernandez",
-        "username": "davidhernandez87",
+        "name": "davidhernandez87",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=87",
         "friends": [
@@ -3441,7 +3479,7 @@
         "e-mail": "sarahwilliams88@aol.com",
         "password": "1234",
         "full-name": "Sarah Williams",
-        "username": "sarahwilliams88",
+        "name": "sarahwilliams88",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=88",
         "friends": [
@@ -3487,7 +3525,7 @@
         "e-mail": "sarahjohnson89@gmail.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson89",
+        "name": "sarahjohnson89",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=89",
         "friends": [
@@ -3532,7 +3570,7 @@
         "e-mail": "janesmith90@hotmail.com",
         "password": "1234",
         "full-name": "Jane Smith",
-        "username": "janesmith90",
+        "name": "janesmith90",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=90",
         "friends": [
@@ -3574,7 +3612,7 @@
         "e-mail": "janewilliams91@outlook.com",
         "password": "1234",
         "full-name": "Jane Williams",
-        "username": "janewilliams91",
+        "name": "janewilliams91",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=91",
         "friends": [
@@ -3617,7 +3655,7 @@
         "e-mail": "michaelmartinez92@outlook.com",
         "password": "1234",
         "full-name": "Michael Martinez",
-        "username": "michaelmartinez92",
+        "name": "michaelmartinez92",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=92",
         "friends": [
@@ -3655,7 +3693,7 @@
         "e-mail": "lauramartinez93@outlook.com",
         "password": "1234",
         "full-name": "Laura Martinez",
-        "username": "lauramartinez93",
+        "name": "lauramartinez93",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=93",
         "friends": [
@@ -3696,7 +3734,7 @@
         "e-mail": "janejones94@hotmail.com",
         "password": "1234",
         "full-name": "Jane Jones",
-        "username": "janejones94",
+        "name": "janejones94",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=94",
         "friends": [
@@ -3744,7 +3782,7 @@
         "e-mail": "lauramartinez95@outlook.com",
         "password": "1234",
         "full-name": "Laura Martinez",
-        "username": "lauramartinez95",
+        "name": "lauramartinez95",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=95",
         "friends": [
@@ -3784,7 +3822,7 @@
         "e-mail": "emilymartinez96@gmail.com",
         "password": "1234",
         "full-name": "Emily Martinez",
-        "username": "emilymartinez96",
+        "name": "emilymartinez96",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=96",
         "friends": [
@@ -3820,7 +3858,7 @@
         "e-mail": "chrisdavis97@aol.com",
         "password": "1234",
         "full-name": "Chris Davis",
-        "username": "chrisdavis97",
+        "name": "chrisdavis97",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=97",
         "friends": [
@@ -3862,7 +3900,7 @@
         "e-mail": "davidbrown98@hotmail.com",
         "password": "1234",
         "full-name": "David Brown",
-        "username": "davidbrown98",
+        "name": "davidbrown98",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=98",
         "friends": [
@@ -3903,7 +3941,7 @@
         "e-mail": "sarahjohnson99@aol.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson99",
+        "name": "sarahjohnson99",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=99",
         "friends": [

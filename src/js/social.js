@@ -1,7 +1,17 @@
-import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
+import {initEssentials, loadJSON, loadTemplate} from "./common.js";
 import {buildLinkURL, buildUserProfileURL, getLoggedUserID} from "./utils.js";
+import {
+    socialCardBlockedUtilsFunctionalities,
+    socialCardFriendUtilsFunctionalities, socialCardGroupUtilsFunctionalities,
+    socialCardPendingUtilsFunctionalities,
+    socialCardSentRequestUtilsFunctionalities
+} from "./social_cards_utils.js";
 
-let socialConfig = "";
+let socialConfig = await loadJSON("config.json").then(config => config["social"]);
+const cardTemplate = await loadTemplate("social_card.html");
+const users = await loadJSON("users.json");
+const groups = await loadJSON("groups.json");
+const loggedUser = users[getLoggedUserID()];
 
 const getPageKey = () => {
     let URLParameters = new URLSearchParams(window.location.search);
@@ -22,9 +32,7 @@ const addListenerToCreateButton = (button, href) => {
     });
 };
 
-const loadSocialUtils = () => {
-    let util = socialConfig["utils"]["groups"];
-    let utilsContainer = document.getElementById("social-utils-container");
+const buildUtilFrom = (util) => {
     let button = document.createElement("button");
     let img = document.createElement("img");
     img.loading = "lazy";
@@ -32,70 +40,130 @@ const loadSocialUtils = () => {
     button.appendChild(img);
     button.className = "util-button";
     addListenerToCreateButton(button, util["url"]);
-    utilsContainer.appendChild(button);
+    return button;
+}
+
+const loadSocialUtils = () => {
+    if (getPageKey() !== "groups") return;
+    document.getElementById("social-utils-container").appendChild(buildUtilFrom(socialConfig["utils"]["groups"]));
 };
+
+const loadNavigationTexts = (titles) => {
+    let socialHeaderNavLinks = document.getElementById("social-header").querySelectorAll(".nav-link");
+    for (let i = 0; i < socialHeaderNavLinks.length; i++) {
+        socialHeaderNavLinks[i].text = titles[i];
+        socialHeaderNavLinks[i].href = buildLinkURL(socialHeaderNavLinks[i].href, "page_key", normalizeString(titles[i]));
+    }
+}
 
 const loadStaticsTexts = async () => {
     await loadTemplate("social_navigation.html", "social-header");
     let titles = socialConfig["nav"]["titles"];
-    let i = 0;
-    document.getElementById("social-header").querySelectorAll(".nav-link").forEach(a => {
-        a.text = titles[i];
-        a.href = buildLinkURL(a.href, "page_key", normalizeString(titles[i++]));
-    });
-    document.getElementById("social-title").textContent = getTitleForCurrentPage();
-    if (getPageKey() === "groups") loadSocialUtils();
+    loadNavigationTexts(titles);
+    loadSocialUtils();
 }
 
-const fillCardUtils = (cardUtils) => {
+const addListenerToCardUtilButton = (button, tag, userID) => {
+    const socialCardsUtilsFunctions = {
+        "friends": socialCardFriendUtilsFunctionalities,
+        "pending": socialCardPendingUtilsFunctionalities,
+        "sent-requests": socialCardSentRequestUtilsFunctionalities,
+        "blocked": socialCardBlockedUtilsFunctionalities,
+        "groups": socialCardGroupUtilsFunctionalities
+    };
+    button.addEventListener("click", (evt) => {
+        socialCardsUtilsFunctions[getPageKey()]({button, tag, userID});
+        updateInformationTitle();
+    });
+};
+
+const fillCardUtils = (cardUtils, userID) => {
     let fragment = document.createDocumentFragment();
-    socialConfig["cards-icons"][getPageKey()].forEach(url => {
+    Object.entries(socialConfig["cards-icons"][getPageKey()]).forEach(([tag, url]) => {
         let img = document.createElement("img");
         img.src = url;
         img.loading = "lazy";
         let button = document.createElement("button");
         button.appendChild(img);
+        addListenerToCardUtilButton(button, tag, userID);
         fragment.appendChild(button);
     });
     cardUtils.appendChild(fragment);
 };
 
-const getSocialCardFrom = (template) => {
-    let card = template.cloneNode(true)
+const getSocialCardFromTemplate = () => {
+    let card = cardTemplate.cloneNode(true);
     let cardPhoto = card.querySelector(".social-card-photo");
     let cardName = card.querySelector(".social-card-name");
     let cardUtils = card.querySelector(".social-card-icons-container");
     return {card, cardPhoto, cardName, cardUtils};
 }
 
-const buildCards = (friends, template) => {
-    let fragment = document.createDocumentFragment();
-    Object.values(friends).forEach(([userID, userData]) => {
-        let socialCard = getSocialCardFrom(template);
-        socialCard.cardPhoto.src = userData.photo;
-        socialCard.cardPhoto.loading = "lazy";
-        socialCard.cardName.textContent = userData.username;
-        socialCard.cardName.href = buildUserProfileURL(socialCard.card.querySelector(".social-card-name").href, userID)
-        fillCardUtils(socialCard.cardUtils);
-        fragment.appendChild(socialCard.card);
-    });
+const buildCardWith = (userData, userID) => {
+    let socialCard = getSocialCardFromTemplate();
+    socialCard.cardPhoto.src = userData.photo;
+    socialCard.cardPhoto.loading = "lazy";
+    socialCard.cardName.textContent = userData.name;
+    socialCard.cardName.href = getPageKey() !== "groups" ?
+        buildUserProfileURL(socialCard.card.querySelector(".social-card-name").href, userID) :
+        "#"
+    fillCardUtils(socialCard.cardUtils, userID);
+    socialCard.card.querySelector("article").id = `card${userID}`;
+    return socialCard.card;
+}
+
+const updateInformationTitle = () => {
     let title = document.getElementById("social-title");
-    title.textContent = `${fragment.children.length} ${title.textContent}`;
+    let number = document.getElementById("social-list").children.length;
+    title.textContent = `${number} ${getTitleForCurrentPage()}`;
+};
+
+const buildCards = (entities) => {
+    let fragment = document.createDocumentFragment();
+    Object.entries(entities).forEach(([userID, userData]) => {fragment.appendChild(buildCardWith(userData, userID));});
     return fragment;
 };
 
-function getNeededUsers(users, loggedUser) {
-    return Object.entries(users).filter(
+const getNeededUsers = (users, loggedUser) => {
+    return Object.fromEntries(Object.entries(users).filter(
         ([userID, userData]) =>
             loggedUser[getPageKey()].includes(userID)
+    ));
+}
+
+const getGroupsFromJSON = (groups, loggedUser) => {
+    return Object.entries(groups).filter(
+        ([groupID, groupData]) =>
+            loggedUser[getPageKey()].includes(groupID)
     );
 }
 
-const loadCards = async () => {
-    const cardTemplate = await loadTemplate("social_card.html");
-    let users = await loadJSON("users.json");
-    let loggedUser = users[getLoggedUserID()];
-    let friends = getNeededUsers(users, loggedUser);
-    document.getElementById("social-list").appendChild(buildCards(friends, cardTemplate));
+const getGroupsFromLocal = () => {
+    let createdGroups = localStorage.getItem("createdGroups");
+    return Object.entries(JSON.parse(createdGroups !== null ? createdGroups : "{}")).filter(
+        ([groupID, groupData]) => {
+            return groupData["members"].includes(getLoggedUserID())
+        }
+    );
+}
+
+const getNeededGroups = (groups, loggedUser) => {
+    return {...Object.fromEntries(getGroupsFromJSON(groups, loggedUser)), ...Object.fromEntries(getGroupsFromLocal())};
 };
 
+const getNeededEntities = () => {
+    return getPageKey() !== "groups" ? getNeededUsers(users, loggedUser) : getNeededGroups(groups, loggedUser)
+};
+
+const loadCards = async () => {
+    document.getElementById("social-list").appendChild(buildCards(getNeededEntities()));
+    updateInformationTitle();
+};
+
+const init = async () => {
+    await initEssentials();
+    await loadStaticsTexts();
+    await loadCards();
+}
+
+await init();

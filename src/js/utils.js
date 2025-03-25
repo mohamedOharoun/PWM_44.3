@@ -22,5 +22,5 @@ export const getURLParameter = (href, key) => {
 
 export const getLoggedUserID = () => {
     let userID = localStorage.getItem("user_id");
-    return userID === null || userID === undefined ? "1" : userID;
+    return userID === null || userID === undefined ? "0" : userID;
 }

@@ -23,9 +23,20 @@ const loadStaticText = async () => {
 
     document.querySelector(".home-title").textContent = homePageTexts["title"];
     document.querySelector(".text").textContent = homePageTexts["text-info"];
-    document.getElementById("button-one").textContent = homePageTexts["button-one"];
-    document.getElementById("button-two").textContent = homePageTexts["button-two"];
-
+    let buttonOne = document.getElementById("button-one");
+    buttonOne.textContent = homePageTexts["button-one"];
+    buttonOne.addEventListener("click", () => {
+        let a = document.createElement("a");
+        a.href = "create_event_page.html";
+        window.location.href = a.href;
+    });
+    let buttonTwo = document.getElementById("button-two");
+    buttonTwo.textContent = homePageTexts["button-two"];
+    buttonTwo.addEventListener("click", () => {
+        let a = document.createElement("a");
+        a.href = "create_group_page.html";
+        window.location.href = a.href;
+    });
     ["friends-container", "events-container", "payments-container"].forEach(id =>
         updateSectionTitle(id, homePageTexts[id])
     );
