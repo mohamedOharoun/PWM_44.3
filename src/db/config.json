@@ -81,24 +81,21 @@
     }
   },
   "events": {
-    "expanded_event_button": "SEE MORE",
-    "description": "Description",
-    "participants": "participants",
-    "join_button": "JOIN",
-    "events-side-bar": {
-      "nav": [
-        "Explore",
-        "Joined",
-        "Favourites",
-        "My events"
-      ],
-      "event-search-input-placeholder": "Search"
+    "event-card" : {
+      "expanded_event_button": "SEE MORE",
+      "description": "Description",
+      "participants": "participants",
+      "join_button": {
+        "join": "JOIN",
+        "joined": "JOINED"
+      }
     },
-    "create-event-button": "Create event",
-    "join-event-button": "Join",
-    "leave-event-button": "Leave",
-    "event-members": {
-      "title": "member(s)"
+    "sidebar-menu": {
+      "explore": "Explore",
+      "favourites": "Favourites",
+      "joined": "Joined",
+      "owned": "My Events",
+      "search-placeholder": "Search by tags"
     }
   },
   "social": {
