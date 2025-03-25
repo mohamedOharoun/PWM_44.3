@@ -102,7 +102,7 @@ const makeEventCard = async (eventCard, event, user) => {
     setupLikeButton(likeButton, likesCount, event);
 
     const joinButton = eventCard.querySelector(".action-button");
-    if (event["members"].includes(user["id"]) || event["user"] === user["id"]) {
+    if (event["members"].includes(user["id"])) {
         joinButton.classList.add("joined-event");
         joinButton.textContent = staticText["join_button"]["joined"];
     }
@@ -128,6 +128,8 @@ const filterEventsByPage = (events, page, user) => {
             return events.filter(event => user["liked_events"].includes(event["id"]));
         case "joined":
             return events.filter(event => event["members"].includes(user["id"]));
+        case "owned":
+            return events.filter(event => event["user"] === user["id"]);
         default:
             return events;
     }
@@ -166,7 +168,7 @@ const createSearchTagElement = async (tag) => {
     const removeButton = tagElement.querySelector("button");
     const tagText = document.createElement("p");
 
-    tagText.innerText = tag;
+    tagText.innerText = `#${tag}`;
     tagElement.prepend(tagText);
 
     removeButton.addEventListener("click", () => {

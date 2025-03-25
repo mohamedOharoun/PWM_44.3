@@ -1,10 +1,14 @@
 .tag {
+    background-color: #f0faf9;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
     display: flex;
-    border: 2px solid #23CFA7;
-    border-radius: 10px;
-    font-size: 5px;
-    margin: 5px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 .tag button {
@@ -27,4 +31,8 @@
     font-size: 14px;
     font-weight: lighter;
     margin: 5px;
+}
+
+.interacive {
+    margin: 2px;
 }

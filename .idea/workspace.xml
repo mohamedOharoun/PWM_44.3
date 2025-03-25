@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add search events through tags.">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix refactor code to improve legibility.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/events_side_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/events_side_bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/tag.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +106,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -169,7 +173,10 @@
       <workItem from="1742405542875" duration="841000" />
       <workItem from="1742484100480" duration="2777000" />
       <workItem from="1742576517113" duration="6543000" />
-      <workItem from="1742826781853" duration="11546000" />
+      <workItem from="1742826781853" duration="12153000" />
+      <workItem from="1742842954472" duration="55000" />
+      <workItem from="1742913944227" duration="664000" />
+      <workItem from="1742914684931" duration="2048000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -259,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742838663924</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fix refactor code to improve legibility.">
+      <option name="closed" value="true" />
+      <created>1742839489609</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742839489609</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +304,7 @@
     <MESSAGE value="Add events filtering according to sidebar menu." />
     <MESSAGE value="Add dynamic loading of events' tags" />
     <MESSAGE value="Add search events through tags." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add search events through tags." />
+    <MESSAGE value="Fix refactor code to improve legibility." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix refactor code to improve legibility." />
   </component>
 </project>
