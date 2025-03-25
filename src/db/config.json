@@ -35,10 +35,12 @@
             "second-part": "here."
         }
     },
-    "home-page" : {
-        "photo": ["../../../assets/images/home_icon.png"],
+    "home-page": {
+        "photo": [
+            "../../../assets/images/home_icon.png"
+        ],
         "title": "Welcome to JoinUp!",
-        "text-info":"Welcome to JoinUP, your platform to connect and discover unique events! Whether you're organizing an event or looking for something that interests you, we're here to make it happen. Ready to join the fun?",
+        "text-info": "Welcome to JoinUP, your platform to connect and discover unique events! Whether you're organizing an event or looking for something that interests you, we're here to make it happen. Ready to join the fun?",
         "button-one": "Create event",
         "button-two": "Create group",
         "friends-container": "Friends online",
@@ -51,7 +53,9 @@
             "self-profile": "Self profile"
         },
         "utils-icons": {
-            "self-profile": ["../../../assets/images/edit_icon.svg"]
+            "self-profile": [
+                "../../../assets/images/edit_icon.svg"
+            ]
         },
         "profile-content": {
             "full-name": {
@@ -138,34 +142,42 @@
         "message-input-placeholder": "Send a message..."
     },
     "sign-up": {
-    "first": {
-        "first-title": "Basic information",
-        "second-title": "the first step",
-        "email-placeholder": "Introduce you e-mail address...",
-        "first-password-placeholder": "Create a password...",
-        "second-password-placeholder": "Repeat your password..."
-    },
-    "second": {
-        "first-title": "Account information",
-        "second-title": "we are looking forward to know you",
-        "name-placeholder": "Full name",
-        "username-placeholder": "Choose your username",
-        "birth-date-placeholder": "Birth date"
-    },
-    "third": {
-        "first-title": "Account photo",
-        "second-title": "represent yourself with it",
-        "photo-text": "Upload your photo"
-    },
-    "fourth": {
-        "first-title": "Privacy policy",
-        "second-title": "the last step",
-    },
-    "sign-up-lower-info": {
-        "steps-info": {
-            "first-step": "Basic information",
-            "second-step": "Account information",
-            "third-step": "Account photo",
+        "first": {
+            "first-title": "Basic information",
+            "second-title": "the first step",
+            "email-placeholder": "Introduce you e-mail address...",
+            "first-password-placeholder": "Create a password...",
+            "second-password-placeholder": "Repeat your password..."
+        },
+        "second": {
+            "first-title": "Account information",
+            "second-title": "we are looking forward to know you",
+            "name-placeholder": "Full name",
+            "username-placeholder": "Choose your username",
+            "birth-date-placeholder": "Birth date"
+        },
+        "third": {
+            "first-title": "Account photo",
+            "second-title": "represent yourself with it",
+            "photo-text": "Upload your photo"
+        },
+        "fourth": {
+            "first-title": "Privacy policy",
+            "second-title": "the last step",
+            "first-text": " I accept the Terms and Conditions of use for the platform. By accepting, I acknowledge that I have read, understood, and agree to comply with the rules and guidelines set forth, including those related to the proper use of the social network, intellectual property rights, and privacy of data.\n I accept the Privacy Policy, understanding how my personal data is collected, stored, and processed on the platform.",
+            "second-text": " I accept the Privacy Policy, understanding how my personal data is collected, stored, and processed on the platform. I am aware of my rights regarding the information I provide and how this data is used to enhance my experience on the social network. I understand that I have the ability to manage and modify my privacy preferences at any time, and that my trust in the handling of my data is crucial for maintaining a safe and transparent environment."
+        },
+        "sign-up-lower-info": {
+            "next-step-button": "NEXT",
+            "previous-step-button": "PREVIOUS",
+            "sign-in-info": "Already have an account? Try ",
+            "login-link": "signing in.",
+            "steps-info": {
+                "first-step": "Basic information",
+                "second-step": "Account information",
+                "third-step": "Account photo",
+                "fourth-step": "Privacy policy"
+            }
         }
     }
 }
