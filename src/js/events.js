@@ -2,6 +2,7 @@ import {loadJSON, loadTemplate, initEssentials} from "./common.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
+const users = await loadJSON("users.json");
 
 let events = eventsSource;
 let searchTags = [];
@@ -76,7 +77,7 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementText(".action-button", staticText["join_button"]["join"]);
 
     updateElementText(".main-title", event["name"]);
-    updateElementText(".subtitle", user["username"]);
+    updateElementText(".subtitle", users[event["user"]]["username"]);
     updateElementText(".description-text", event["description"]);
     updateElementText(".event-time", event["time"]);
     updateElementText(".event-place", event["place"]);
@@ -96,7 +97,7 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementHref(".participants-item", eventIdParam);
 
     const likeButton = eventCard.querySelector(".like-button");
-    if (user["liked_events"].includes(event["id"])) {
+    if (user["liked-events"].includes(event["id"])) {
         likeButton.classList.add("liked-event");
     }
     setupLikeButton(likeButton, likesCount, event);
@@ -125,7 +126,7 @@ const getPageKey = (defaultPage) => {
 const filterEventsByPage = (events, page, user) => {
     switch (page) {
         case "favourites":
-            return events.filter(event => user["liked_events"].includes(event["id"]));
+            return events.filter(event => user["liked-events"].includes(event["id"]));
         case "joined":
             return events.filter(event => event["members"].includes(user["id"]));
         case "owned":
