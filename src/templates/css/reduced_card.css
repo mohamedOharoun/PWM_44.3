@@ -280,7 +280,7 @@ body {
     content: url("../../../assets/images/filled_heart_icon.svg");
 }
 
-.joined-event .action-button {
+.joined-event {
     background: white;
     color: black;
     border: 3px solid #23CFA7;

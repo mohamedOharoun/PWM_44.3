@@ -1,6 +1,7 @@
-export const loadTemplate = async (file, id) => {
+export const loadTemplate = async (file, id, callback) => {
     let text = await fetch(`../../templates/html/${file}`).then(res => res.text());
     if (id !== undefined) document.getElementById(id).innerHTML = text;
+    if (callback) callback();
     return document.createRange().createContextualFragment(text);
 };
 

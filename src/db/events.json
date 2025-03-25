@@ -7,15 +7,18 @@
     "time": "Wed 20, January 22:00",
     "place": "Mi Casa",
     "price": 0,
-    "likes": 901110,
+    "likes": 1000000,
     "comments": 0,
     "members": [
       "1",
-      "2",
       "13",
       "17",
       "21",
       "34"
+    ],
+    "tags": [
+      "home",
+      "social"
     ]
   },
   "2": {
@@ -29,14 +32,17 @@
     "likes": 5,
     "comments": 2,
     "members": [
-      "1",
       "13",
       "17",
       "21"
+    ],
+    "tags": [
+      "outdoors",
+      "community"
     ]
   },
   "3": {
-    "user": 2,
+    "user": "2",
     "name": "Event Name 3",
     "author": "Host Name 3",
     "description": "This is a sample description for event 3.",
@@ -49,10 +55,14 @@
       "50",
       "32",
       "21"
+    ],
+    "tags": [
+      "nightlife",
+      "music"
     ]
   },
   "4": {
-    "user": 3,
+    "user": "3",
     "name": "Event Name 4",
     "author": "Host Name 4",
     "description": "This is a sample description for event 4.",
@@ -66,10 +76,14 @@
       "25",
       "37",
       "49"
+    ],
+    "tags": [
+      "education",
+      "books"
     ]
   },
   "5": {
-    "user": 4,
+    "user": "4",
     "name": "Event Name 5",
     "author": "Host Name 5",
     "description": "This is a sample description for event 5.",
@@ -82,11 +96,16 @@
       "10",
       "20",
       "30",
-      "40"
+      "40",
+      "1"
+    ],
+    "tags": [
+      "food",
+      "social"
     ]
   },
   "6": {
-    "user": 5,
+    "user": "5",
     "name": "Event Name 6",
     "author": "Host Name 6",
     "description": "This is a sample description for event 6.",
@@ -100,10 +119,14 @@
       "15",
       "25",
       "35"
+    ],
+    "tags": [
+      "nightlife",
+      "drinks"
     ]
   },
   "7": {
-    "user": 6,
+    "user": "6",
     "name": "Event Name 7",
     "author": "Host Name 7",
     "description": "This is a sample description for event 7.",
@@ -114,13 +137,19 @@
     "comments": 50,
     "members": [
       "1",
+      "2",
       "3",
       "4",
       "5"
+    ],
+    "tags": [
+      "music",
+      "entertainment",
+      "food"
     ]
   },
   "8": {
-    "user": 7,
+    "user": "7",
     "name": "Event Name 8",
     "author": "Host Name 8",
     "description": "This is a sample description for event 8.",
@@ -135,10 +164,14 @@
       "8",
       "9",
       "10"
+    ],
+    "tags": [
+      "community",
+      "volunteering"
     ]
   },
   "9": {
-    "user": 8,
+    "user": "8",
     "name": "Event Name 9",
     "author": "Host Name 9",
     "description": "This is a sample description for event 9.",
@@ -153,10 +186,14 @@
       "13",
       "14",
       "15"
+    ],
+    "tags": [
+      "art",
+      "culture"
     ]
   },
   "10": {
-    "user": 9,
+    "user": "9",
     "name": "Event Name 10",
     "author": "Host Name 10",
     "description": "This is a sample description for event 10.",
@@ -171,6 +208,10 @@
       "18",
       "19",
       "20"
+    ],
+    "tags": [
+      "sports",
+      "competition"
     ]
   }
 }

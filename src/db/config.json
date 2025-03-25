@@ -179,5 +179,23 @@
                 "fourth-step": "Privacy policy"
             }
         }
+    },
+    "events": {
+        "event-card" : {
+            "expanded_event_button": "SEE MORE",
+            "description": "Description",
+            "participants": "participants",
+            "join_button": {
+                "join": "JOIN",
+                "joined": "JOINED"
+            }
+        },
+        "sidebar-menu": {
+            "explore": "Explore",
+            "favourites": "Favourites",
+            "joined": "Joined",
+            "owned": "My Events",
+            "search-placeholder": "Search by tags"
+        }
     }
 }
