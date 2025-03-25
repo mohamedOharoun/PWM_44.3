@@ -45,10 +45,6 @@ main {
     height: 100px;
 }
 
-#group-name-input-container {
-    flex: 1;
-}
-
 #group-upload-photo-utilities {
     display: flex;
     justify-content: center;
@@ -56,7 +52,7 @@ main {
     gap: 5px;
 }
 
-#group-upload-photo-container {
+#upload-photo-container {
     align-content: center;
     justify-items: center;
     margin-right: 20px;
@@ -84,4 +80,56 @@ main {
 
 #submit-button:focus {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#group-name-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#members-input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: white;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #f0f0f0;
+}
+
+#uploaded-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#uploaded-img {
+    width: 100%;
+    height: auto;
 }

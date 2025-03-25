@@ -3,6 +3,16 @@
     margin: 5px 2%;
 }
 
+.self-message {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.self-message .message-content{
+    max-width: 40%;
+    word-wrap: break-word;
+}
+
 .self-message button {
     display: none;
 }
@@ -10,14 +20,15 @@
 .message-content {
     border: 3px solid #23CFA7;
     border-radius: 10px;
-    display: inline-block;
     align-content: center;
     padding: 1%;
 }
 
-.message-content span {
+.message-content p {
     font-size: 0.8rem;
     font-weight: lighter;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .report-button {

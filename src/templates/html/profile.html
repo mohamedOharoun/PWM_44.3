@@ -8,54 +8,44 @@
 </header>
 <div id="profile-body">
     <div id="profile-content">
-        <div id="profile-photo">
-            <img src="../../../assets/images/userprofile_icon.svg" alt="Profile Image" loading="lazy" id="profile-image">
+        <div id="upload-photo-container" class="drop-area">
+            <div id="uploaded-img-container">
+                <img id="uploaded-img" src="../../../assets/images/userprofile_icon.svg" alt="Imagen de perfil">
+            </div>
         </div>
         <div id="profile-info">
             <label id="user-full-name">
                 Lorem ipsum
-                <input type="text" placeholder="Lorem ipsum" readonly>
+                <input class="animated-input" type="text" placeholder="Lorem ipsum" readonly>
             </label>
             <label id="user-name">
                 Lorem ipsum
-                <input type="text" placeholder="Lorem ipsum" readonly>
+                <input class="animated-input" type="text" placeholder="Lorem ipsum" readonly>
             </label>
             <label id="user-email">
                 Lorem ipsum
-                <input type="text" placeholder="Lorem ipsum" readonly>
+                <input class="animated-input" type="text" placeholder="Lorem ipsum" readonly>
             </label>
         </div>
     </div>
     <div id="profile-description-container">
         <label id="description">
             Lorem ipsum
-            <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...</textarea>
+            <textarea class="animated-input" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...</textarea>
         </label>
     </div>
     <div id="events-sections-container">
         <section class="events-section" id=user-events-section">
             <details>
                 <summary id="user-events">Lorem Ipsum</summary>
-                <div class="summary-content">
-                    <article class="event-card"
-                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                    <article class="event-card"
-                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                    <article class="event-card"
-                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                <div id="user-events-content" class="summary-content">
                 </div>
             </details>
         </section>
         <section class="events-section" id="shared-events-section">
             <details>
                 <summary id="shared-events">Lorem Ipsum</summary>
-                <div class="summary-content">
-                    <article class="event-card"
-                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                    <article class="event-card"
-                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
-                    <article class="event-card"
-                             xlu-include-file="../../templates/html/event_card_profile.html"></article>
+                <div id="shared-events-content" class="summary-content">
                 </div>
             </details>
         </section>

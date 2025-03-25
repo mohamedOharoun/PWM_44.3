@@ -1,5 +1,5 @@
-import {config, initEssentials, loadTemplate } from "./common.js";
-import {buildLinkURL, buildUserProfileURL} from "./utils.js";
+import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
+import {buildLinkURL, buildUserProfileURL, getLoggedUserID} from "./utils.js";
 
 let socialConfig = "";
 
@@ -16,8 +16,27 @@ const normalizeString = (title) => {
     return title.toLowerCase().replace(" ", "-");
 }
 
+const addListenerToCreateButton = (button, href) => {
+    button.addEventListener('click', (event) => {
+        window.location.href = href;
+    });
+};
+
+const loadSocialUtils = () => {
+    let util = socialConfig["utils"]["groups"];
+    let utilsContainer = document.getElementById("social-utils-container");
+    let button = document.createElement("button");
+    let img = document.createElement("img");
+    img.loading = "lazy";
+    img.src = util["icon"];
+    button.appendChild(img);
+    button.className = "util-button";
+    addListenerToCreateButton(button, util["url"]);
+    utilsContainer.appendChild(button);
+};
+
 const loadStaticsTexts = async () => {
-    await loadTemplate("../../templates/html/social_navigation.html", "social-header");
+    await loadTemplate("social_navigation.html", "social-header");
     let titles = socialConfig["nav"]["titles"];
     let i = 0;
     document.getElementById("social-header").querySelectorAll(".nav-link").forEach(a => {
@@ -25,6 +44,7 @@ const loadStaticsTexts = async () => {
         a.href = buildLinkURL(a.href, "page_key", normalizeString(titles[i++]));
     });
     document.getElementById("social-title").textContent = getTitleForCurrentPage();
+    if (getPageKey() === "groups") loadSocialUtils();
 }
 
 const fillCardUtils = (cardUtils) => {
@@ -32,6 +52,7 @@ const fillCardUtils = (cardUtils) => {
     socialConfig["cards-icons"][getPageKey()].forEach(url => {
         let img = document.createElement("img");
         img.src = url;
+        img.loading = "lazy";
         let button = document.createElement("button");
         button.appendChild(img);
         fragment.appendChild(button);
@@ -52,6 +73,7 @@ const buildCards = (friends, template) => {
     Object.values(friends).forEach(([userID, userData]) => {
         let socialCard = getSocialCardFrom(template);
         socialCard.cardPhoto.src = userData.photo;
+        socialCard.cardPhoto.loading = "lazy";
         socialCard.cardName.textContent = userData.username;
         socialCard.cardName.href = buildUserProfileURL(socialCard.card.querySelector(".social-card-name").href, userID)
         fillCardUtils(socialCard.cardUtils);
@@ -70,18 +92,10 @@ function getNeededUsers(users, loggedUser) {
 }
 
 const loadCards = async () => {
-    const cardTemplate = await loadTemplate("../../templates/html/social_card.html");
-    let users = await fetch("../../locales/users.json").then(res => res.json());
-    let loggedUser = users["10"];
+    const cardTemplate = await loadTemplate("social_card.html");
+    let users = await loadJSON("users.json");
+    let loggedUser = users[getLoggedUserID()];
     let friends = getNeededUsers(users, loggedUser);
     document.getElementById("social-list").appendChild(buildCards(friends, cardTemplate));
 };
 
-const init = async () => {
-    await initEssentials();
-    socialConfig = config["social"];
-    await loadStaticsTexts();
-    await loadCards();
-}
-
-await init();

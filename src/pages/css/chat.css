@@ -1,4 +1,4 @@
-#chat-user-list {
+#chat-users-list {
     background: white;
     overflow-y: auto;
     width: 20%;
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     background: white;
-    flex-grow: 1;
+    flex: 1 1 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,21 +31,15 @@
 #messages-section {
     display: flex;
     flex-direction: column;
+    flex: 1;
     overflow-y: auto;
-    flex-grow: 1;
 }
 
 #message-input-container {
-    position: absolute;
     box-sizing: border-box;
     bottom: 2%;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px;
-}
-
-.self-message {
-    display: flex;
-    justify-content: flex-end;
 }

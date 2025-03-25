@@ -1,36 +1,37 @@
-import {initEssentials, loadTemplate} from "./common.js";
+import {initEssentials, loadJSON, loadTemplate} from "./common.js";
+import {buildUserProfileURL} from "./utils.js";
 
 let membersAmount = 0;
 const membersListSection = document.getElementById("members-list-section");
 const membersListTitle = document.getElementById("members-list-title");
-const userTemplate = await loadTemplate("../../templates/html/user.html");
+
+const getCurrentEventID = () => {
+    let urlParameters = new URLSearchParams(window.location.search);
+    return urlParameters.get("event_id");
+};
+
+const getEventUsers = async () => {
+    return await loadJSON("events.json").then(events => events[getCurrentEventID()]["members"]);
+};
 
 const loadUsers = async () => {
-    const users = await (await fetch("../../locales/users.json")).json();
-    await buildUsersSection(users, userTemplate);
+    const eventUsersIds = await getEventUsers();
+    await buildUsersSection(eventUsersIds, await loadTemplate("user.html"));
     await updateMembersTitle();
 };
 
-const buildUsersSection = async (users, userTemplate) => {
+const buildUsersSection = async (eventUsersIds, userTemplate) => {
     const fragment = document.createDocumentFragment();
-    Object.entries(users).forEach(([userID, userData]) => {
-        fragment.appendChild(buildUserTemplate(userTemplate.cloneNode(true), userID, userData));
+    let users = await loadJSON("users.json");
+    eventUsersIds.forEach(userID => {
+        fragment.appendChild(buildUserTemplate(userTemplate.cloneNode(true), userID, users[userID]));
     });
     membersListSection.appendChild(fragment);
 }
 
-const buildUserProfileURL = (href, userID) => {
-    let userProfileURL = new URL(href);
-    let userProfileURLParameters = new URLSearchParams(userProfileURL.search);
-    console.log(userProfileURLParameters.toString());
-    userProfileURLParameters.set("user_id", userID);
-    userProfileURL.search = userProfileURLParameters.toString();
-    return userProfileURL;
-}
-
 const setUserData = (userArticle, userData, userID) => {
     let usernameLabel = userArticle.querySelector(".user-name");
-    usernameLabel.textContent = userData.username;
+    usernameLabel.textContent = userData["name"];
     usernameLabel.href = buildUserProfileURL(usernameLabel.href, userID);
 }
 
@@ -50,12 +51,8 @@ const buildUserTemplate = (userArticle, userID, userData) => {
 };
 
 const updateMembersTitle = async () => {
-    fetch("../../locales/config.json")
-        .then(res => res.json())
-        .then(data => {
-            membersListTitle.textContent = `${membersAmount} ${data.events["event-members"].title}`;
-        })
-        .catch(err => console.error("Could not load configuration:", err));
+    await loadJSON("config.json")
+        .then(data => membersListTitle.textContent = `${membersAmount} ${data["events"]["event-members"]["title"]}`);
 };
 
 const init = async () => {

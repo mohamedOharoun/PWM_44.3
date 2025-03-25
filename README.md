@@ -52,7 +52,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png)
   - [Página de eventos unidos](src/pages/html/events_joined.html) implementa el mockup [EventsJoined](docs/mockups/EventsJoined.png)
   - [Página de eventos creados](src/pages/html/events_owned.html) implementa el mockup [MyEvents](docs/mockups/MyEvents.png)
-  - [Página de política de privacidad](src/pages/html/privacypolicypage.html) implementa el mockup [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)
+  - [Página de política de privacidad](src/pages/html/privacy_policy_page.html) implementa el mockup [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)
   - [Página de recuperar contraseña](src/pages/html/reset_password_page.html) implementa el mockup [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png)
   - [Página de perfil propio](src/pages/html/profile_page_self.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png)
   - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png)

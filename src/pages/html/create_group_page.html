@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Group Creation</title>
     <script type="module" src="../../js/create_group.js" defer></script>
+    <script src="../../js/drag_and_drop_image.js" defer></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../templates/css/header.css">
     <link rel="stylesheet" href="../../templates/css/footer.css">
     <link rel="stylesheet" href="../../templates/css/user.css">
     <link rel="stylesheet" href="../../templates/css/members_list.css">
-    <link rel="stylesheet" href="../../templates/css/generic_input.css">
     <link rel="stylesheet" href="../css/group_creation.css">
 </head>
 <body>
@@ -18,18 +18,29 @@
         <div id="center-panel">
             <h1 id="title">Lorem Ipsum</h1>
             <hr>
-            <form method="post" id="group-form">
+            <form action="social.html?page_key=groups" method="post" id="group-form">
                 <div id="upper-group-creations-inputs">
-                    <div id="group-upload-photo-container">
-                        <img src="../../../assets/images/userprofile_icon.svg">
+                    <div id="upload-photo-container" class="drop-area">
+                        <div id="uploaded-img-container">
+                            <img id="uploaded-img" src="../../../assets/images/userprofile_icon.svg" alt="Imagen de perfil">
+                        </div>
                         <div id="group-upload-photo-utilities">
-                            <img src="../../../assets/images/upload_icon.svg">
+                            <img src="../../../assets/images/upload_icon.svg" alt="Subir foto">
                             <span id="upload-photo-text">Lorem Ipsum</span>
                         </div>
+                        <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)" style="display: none;">
+                        <label for="fileElem" class="upload-label">Or select one</label>
                     </div>
-                    <div id="group-name-input-container"></div>
+                    <div id="group-name-container">
+                        <label for="group-name-input" id="group-name-label"></label>
+                        <input class="animated-input" id="group-name-input" type="text" required>
+                    </div>
                 </div>
-                <div id="member-input-container"></div>
+                <div id="members-input-container">
+                    <label for="group-members-input" id="group-members-label"></label>
+                    <input class="animated-input" id="group-members-input" type="text">
+                    <div class="suggestions" id="suggestions"></div>
+                </div>
                 <div id="members-list-container">
                     <section id="members-list-section"></section>
                 </div>

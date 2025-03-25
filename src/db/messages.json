@@ -1,9 +1,16 @@
 {
-  "usuario1-usuario2": [
+  "0-1": [
     {
-      "author": "usuario1",
-      "body": "psj´ppsjg´sfjgásfjgalsfhgljsfhgosfhgoshfg",
-      "date": "12-12-2012 00:00"
+      "author": "0",
+      "body": "Hola, Javier."
+    },
+    {
+      "author": "1",
+      "body": "Hola Ernestina"
+    },
+    {
+      "author": "1",
+      "body": "Esperamos obtener una gran calificación en este sprint!"
     }
   ]
 }

@@ -18,7 +18,7 @@ main {
     height: 100vh;
     display: flex;
     background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: hidden;
+    overflow: auto;
 }
 
 a {
@@ -38,11 +38,12 @@ a {
 }
 
 #page-footer {
-    font-size: 0.5rem;
     z-index: 1000;
-    padding: 0.5rem;
+    padding: 20px;
     font-family: "League Spartan", serif;
-    text-align: center;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: white;
     width: 100%;
     bottom: 0;
