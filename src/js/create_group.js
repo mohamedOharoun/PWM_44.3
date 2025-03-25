@@ -149,6 +149,7 @@ const init = async () => {
     await addListenerToMembersInput();
     await loadStaticsTexts();
     await addCreatorUser();
+    initializeDragAndDrop();
     if (getURLParameter(window.location.href, "group_id")) await fillPage();
 };
 

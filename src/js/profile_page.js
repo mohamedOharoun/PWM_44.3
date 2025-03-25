@@ -31,27 +31,26 @@ const fillProfileUtils = (utilsContainer) => {
     let editingProfile = false;
     img.addEventListener("click", (evt) => {
         evt.preventDefault();
+        editingProfile = !editingProfile;
         let nameInput = document.getElementById("user-full-name").querySelector("input");
         let usernameInput = document.getElementById("user-name").querySelector("input");
         let emailInput = document.getElementById("user-email").querySelector("input");
         let description = document.getElementById("description").querySelector("textarea");
         if (editingProfile) {
-            nameInput.readOnly = true;
-            usernameInput.readOnly = true;
-            emailInput.readOnly = true;
-            description.readOnly = true;
-            img.src = url;
-            initializeDragAndDrop();
-        } else {
             nameInput.readOnly = false;
             usernameInput.readOnly = false;
             emailInput.readOnly = false;
             description.readOnly = false;
             img.src = "../../../assets/images/check_icon.svg";
+            initializeDragAndDrop();
+        } else {
+            nameInput.readOnly = true;
+            usernameInput.readOnly = true;
+            emailInput.readOnly = true;
+            description.readOnly = true;
+            img.src = url;
             stopDragAndDrop();
-        }
-        editingProfile = !editingProfile;
-    });
+        }});
     fragment.appendChild(img);
     utilsContainer.appendChild(fragment);
 };

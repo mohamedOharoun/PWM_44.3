@@ -1,4 +1,5 @@
-import { loadTemplate, getPageKey } from "./common.js";
+import {loadTemplate, getPageKey, loadJSON} from "./common.js";
+import {buildLinkURL} from "./utils.js";
 
 const fillStepCircles = async () => {
     const currentPage = getPageKey("first");
@@ -8,15 +9,25 @@ const fillStepCircles = async () => {
         "third": "3",
         "fourth": "4"
     };
+    const reverseStepMapping = {
+        "1": "first",
+        "2": "second",
+        "3": "third",
+        "4": "fourth"
+    };
     const currentStep = stepMapping[currentPage];
 
     try {
-        const response = await fetch("../../db/config.json");
-        const config = await response.json();
+        const config = await loadJSON("config.json");
         const stepTexts = config["sign-up"]["sign-up-lower-info"]["steps-info"];
 
         document.querySelectorAll(".step-circle").forEach(circle => {
             const stepNumber = circle.getAttribute("data-step");
+
+            circle.addEventListener("click", (evt) => {
+               evt.preventDefault();
+               window.location.href = buildLinkURL(window.location.href, "page_key", reverseStepMapping[stepNumber]);
+            });
 
             if (stepNumber === currentStep) {
                 circle.classList.remove("step-circle-non-focused");

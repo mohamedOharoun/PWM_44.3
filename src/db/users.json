@@ -1,12 +1,16 @@
 {
     "0": {
-        "e-mail": "johnsmith0@gmail.com",
+        "e-mail": "ernestina@gmail.com",
         "password": "1234",
-        "full-name": "John Smith",
-        "username": "johnsmith0",
+        "full-name": "Ernestina",
+        "name": "ernestina24",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=0",
         "friends": [
+            "1",
+            "2",
+            "3",
+            "4",
             "73",
             "44",
             "61",
@@ -23,30 +27,41 @@
             "54",
             "14"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "4",
             "40",
             "57"
         ],
-        "description": "Hello, my name is (insert name).",
+        "description": "Hello, my name is Ernestina!",
         "liked-events": [
-            1,
-            4,
-            5,
-            7,
-            8
+            "10",
+            "2",
+            "8",
+            "9",
+            "1",
+            "7",
+            "6"
         ]
     },
     "1": {
-        "e-mail": "lauragarcia1@outlook.com",
+        "e-mail": "javier.castilla@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Laura Garcia",
-        "username": "lauragarcia1",
+        "full-name": "Javier Castilla",
+        "name": "javiercastilla101",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=1",
         "friends": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
             "70",
             "94",
             "60",
@@ -60,7 +75,11 @@
             "7",
             "19"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "96",
@@ -68,23 +87,25 @@
             "74"
         ],
         "liked-events": [
-            1,
-            4,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "8",
+            "5",
+            "9",
+            "7"
         ]
     },
     "2": {
-        "e-mail": "sarahbrown2@outlook.com",
+        "e-mail": "ayman.asbai101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Sarah Brown",
-        "username": "sarahbrown2",
+        "full-name": "Ayman Asbai",
+        "name": "aymanasbai101",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=2",
         "friends": [
+            "0",
+            "1",
+            "3",
+            "4",
             "89",
             "84",
             "9",
@@ -97,29 +118,35 @@
             "67",
             "29"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "48"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            7,
-            8,
-            10
+            "8",
+            "9",
+            "5",
+            "7",
+            "6"
         ]
     },
     "3": {
-        "e-mail": "danielmartinez3@hotmail.com",
+        "e-mail": "mohamed.oulad101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Daniel Martinez",
-        "username": "danielmartinez3",
+        "full-name": "Mohamed Oulad",
+        "name": "mohamedoulad101",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=3",
         "friends": [
+            "0",
+            "1",
+            "2",
+            "4",
             "5",
             "56",
             "48",
@@ -134,30 +161,37 @@
             "91",
             "83"
         ],
-        "groups": [],
+        "groups": [
+            "1",
+            "2",
+            "3"
+        ],
         "pending": [],
         "sent-requests": [
             "16"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            6,
-            7,
-            8,
-            9,
-            10
+            "2",
+            "3",
+            "8",
+            "5",
+            "1",
+            "7",
+            "6"
         ]
     },
     "4": {
-        "e-mail": "michaelmartinez4@hotmail.com",
+        "e-mail": "laura.herrera113@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Michael Martinez",
-        "username": "michaelmartinez4",
+        "full-name": "Laura Herrera",
+        "name": "lauraherrera113",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=4",
         "friends": [
+            "0",
+            "1",
+            "2",
+            "3",
             "21",
             "83",
             "10",
@@ -183,21 +217,22 @@
             "0"
         ],
         "liked-events": [
-            5,
-            6,
-            7,
-            9,
-            10
+            "10",
+            "2",
+            "8",
+            "5",
+            "7"
         ]
     },
     "5": {
-        "e-mail": "danieljones5@yahoo.com",
+        "e-mail": "asmae.ez101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Daniel Jones",
-        "username": "danieljones5",
+        "full-name": "Asmae Ez Zaim",
+        "name": "asmaeezzaim101",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=5",
         "friends": [
+            "1",
             "50",
             "60",
             "9",
@@ -220,20 +255,19 @@
             "0"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            6,
-            8,
-            9
+            "10",
+            "3",
+            "9",
+            "5",
+            "4",
+            "7"
         ]
     },
     "6": {
         "e-mail": "emilylopez6@outlook.com",
         "password": "1234",
         "full-name": "Emily Lopez",
-        "username": "emilylopez6",
+        "name": "emilylopez6",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=6",
         "friends": [
@@ -260,21 +294,21 @@
             "58"
         ],
         "liked-events": [
-            2,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
+            "2",
+            "3",
+            "8",
+            "9",
+            "5",
+            "4",
+            "1",
+            "6"
         ]
     },
     "7": {
         "e-mail": "davidsmith7@outlook.com",
         "password": "1234",
         "full-name": "David Smith",
-        "username": "davidsmith7",
+        "name": "davidsmith7",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=7",
         "friends": [
@@ -299,20 +333,19 @@
             "24"
         ],
         "liked-events": [
-            1,
-            4,
-            5,
-            6,
-            7,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "5",
+            "4",
+            "1"
         ]
     },
     "8": {
         "e-mail": "johnwilliams8@hotmail.com",
         "password": "1234",
         "full-name": "John Williams",
-        "username": "johnwilliams8",
+        "name": "johnwilliams8",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=8",
         "friends": [
@@ -337,19 +370,20 @@
             "28"
         ],
         "liked-events": [
-            4,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "9",
+            "7"
         ]
     },
     "9": {
         "e-mail": "chrislopez9@hotmail.com",
         "password": "1234",
         "full-name": "Chris Lopez",
-        "username": "chrislopez9",
+        "name": "chrislopez9",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=9",
         "friends": [
@@ -376,19 +410,19 @@
             "33"
         ],
         "liked-events": [
-            2,
-            3,
-            7,
-            8,
-            9,
-            10
+            "3",
+            "8",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "10": {
         "e-mail": "janejones10@hotmail.com",
         "password": "1234",
         "full-name": "Jane Jones",
-        "username": "janejones10",
+        "name": "janejones10",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=10",
         "friends": [
@@ -410,21 +444,17 @@
             "74"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            8,
-            10
+            "1",
+            "5",
+            "10",
+            "4"
         ]
     },
     "11": {
         "e-mail": "jessicajohnson11@outlook.com",
         "password": "1234",
         "full-name": "Jessica Johnson",
-        "username": "jessicajohnson11",
+        "name": "jessicajohnson11",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=11",
         "friends": [
@@ -448,19 +478,20 @@
             "89"
         ],
         "liked-events": [
-            1,
-            4,
-            6,
-            7,
-            8,
-            10
+            "10",
+            "2",
+            "8",
+            "5",
+            "4",
+            "7",
+            "6"
         ]
     },
     "12": {
         "e-mail": "chrishernandez12@hotmail.com",
         "password": "1234",
         "full-name": "Chris Hernandez",
-        "username": "chrishernandez12",
+        "name": "chrishernandez12",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=12",
         "friends": [
@@ -489,18 +520,19 @@
             "92"
         ],
         "liked-events": [
-            1,
-            4,
-            5,
-            7,
-            9
+            "10",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1"
         ]
     },
     "13": {
         "e-mail": "sarahbrown13@aol.com",
         "password": "1234",
         "full-name": "Sarah Brown",
-        "username": "sarahbrown13",
+        "name": "sarahbrown13",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=13",
         "friends": [
@@ -520,20 +552,20 @@
             "32"
         ],
         "liked-events": [
-            1,
-            4,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "8",
+            "5",
+            "9",
+            "7",
+            "6"
         ]
     },
     "14": {
         "e-mail": "johnwilliams14@aol.com",
         "password": "1234",
         "full-name": "John Williams",
-        "username": "johnwilliams14",
+        "name": "johnwilliams14",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=14",
         "friends": [
@@ -554,20 +586,21 @@
             "90"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            5,
-            6,
-            8,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "9",
+            "1",
+            "6"
         ]
     },
     "15": {
         "e-mail": "michaellopez15@outlook.com",
         "password": "1234",
         "full-name": "Michael Lopez",
-        "username": "michaellopez15",
+        "name": "michaellopez15",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=15",
         "friends": [
@@ -593,21 +626,21 @@
             "5"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "3",
+            "8",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "16": {
         "e-mail": "davidlopez16@gmail.com",
         "password": "1234",
         "full-name": "David Lopez",
-        "username": "davidlopez16",
+        "name": "davidlopez16",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=16",
         "friends": [
@@ -633,19 +666,18 @@
             "63"
         ],
         "liked-events": [
-            3,
-            5,
-            6,
-            8,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "4",
+            "1"
         ]
     },
     "17": {
         "e-mail": "sarahjohnson17@aol.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson17",
+        "name": "sarahjohnson17",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=17",
         "friends": [
@@ -666,19 +698,21 @@
             "57"
         ],
         "liked-events": [
-            1,
-            3,
-            5,
-            6,
-            7,
-            9
+            "10",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "18": {
         "e-mail": "jessicalopez18@yahoo.com",
         "password": "1234",
         "full-name": "Jessica Lopez",
-        "username": "jessicalopez18",
+        "name": "jessicalopez18",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=18",
         "friends": [
@@ -701,20 +735,21 @@
             "16"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            8,
-            10
+            "2",
+            "3",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "19": {
         "e-mail": "jessicajones19@aol.com",
         "password": "1234",
         "full-name": "Jessica Jones",
-        "username": "jessicajones19",
+        "name": "jessicajones19",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=19",
         "friends": [
@@ -733,19 +768,18 @@
             "71"
         ],
         "liked-events": [
-            1,
-            5,
-            6,
-            7,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "4",
+            "6"
         ]
     },
     "20": {
         "e-mail": "sarahgarcia20@gmail.com",
         "password": "1234",
         "full-name": "Sarah Garcia",
-        "username": "sarahgarcia20",
+        "name": "sarahgarcia20",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=20",
         "friends": [
@@ -768,20 +802,20 @@
             "53"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            7,
-            8,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "1",
+            "6"
         ]
     },
     "21": {
         "e-mail": "davidgarcia21@yahoo.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia21",
+        "name": "davidgarcia21",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=21",
         "friends": [
@@ -806,21 +840,20 @@
             "88"
         ],
         "liked-events": [
-            1,
-            2,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "4",
+            "6"
         ]
     },
     "22": {
         "e-mail": "janejohnson22@yahoo.com",
         "password": "1234",
         "full-name": "Jane Johnson",
-        "username": "janejohnson22",
+        "name": "janejohnson22",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=22",
         "friends": [
@@ -842,18 +875,21 @@
             "2"
         ],
         "liked-events": [
-            3,
-            5,
-            6,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "9",
+            "5",
+            "4",
+            "7"
         ]
     },
     "23": {
         "e-mail": "danielwilliams23@yahoo.com",
         "password": "1234",
         "full-name": "Daniel Williams",
-        "username": "danielwilliams23",
+        "name": "danielwilliams23",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=23",
         "friends": [
@@ -878,20 +914,20 @@
             "65"
         ],
         "liked-events": [
-            2,
-            3,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "5",
+            "9",
+            "4",
+            "7",
+            "6"
         ]
     },
     "24": {
         "e-mail": "michaeljones24@hotmail.com",
         "password": "1234",
         "full-name": "Michael Jones",
-        "username": "michaeljones24",
+        "name": "michaeljones24",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=24",
         "friends": [
@@ -918,19 +954,21 @@
             "44"
         ],
         "liked-events": [
-            1,
-            3,
-            5,
-            6,
-            7,
-            8
+            "10",
+            "2",
+            "3",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "25": {
         "e-mail": "michaelwilliams25@yahoo.com",
         "password": "1234",
         "full-name": "Michael Williams",
-        "username": "michaelwilliams25",
+        "name": "michaelwilliams25",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=25",
         "friends": [
@@ -955,21 +993,19 @@
             "84"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "5",
+            "1",
+            "6"
         ]
     },
     "26": {
         "e-mail": "jessicamartinez26@aol.com",
         "password": "1234",
         "full-name": "Jessica Martinez",
-        "username": "jessicamartinez26",
+        "name": "jessicamartinez26",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=26",
         "friends": [
@@ -991,20 +1027,19 @@
             "68"
         ],
         "liked-events": [
-            1,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
+            "2",
+            "8",
+            "9",
+            "1",
+            "7",
+            "6"
         ]
     },
     "27": {
         "e-mail": "jessicasmith27@aol.com",
         "password": "1234",
         "full-name": "Jessica Smith",
-        "username": "jessicasmith27",
+        "name": "jessicasmith27",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=27",
         "friends": [
@@ -1033,19 +1068,19 @@
             "15"
         ],
         "liked-events": [
-            2,
-            5,
-            6,
-            7,
-            8,
-            9
+            "2",
+            "3",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "28": {
         "e-mail": "danieljohnson28@outlook.com",
         "password": "1234",
         "full-name": "Daniel Johnson",
-        "username": "danieljohnson28",
+        "name": "danieljohnson28",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=28",
         "friends": [
@@ -1075,19 +1110,19 @@
             "83"
         ],
         "liked-events": [
-            1,
-            3,
-            4,
-            6,
-            8,
-            10
+            "10",
+            "8",
+            "5",
+            "9",
+            "1",
+            "7"
         ]
     },
     "29": {
         "e-mail": "laurasmith29@outlook.com",
         "password": "1234",
         "full-name": "Laura Smith",
-        "username": "laurasmith29",
+        "name": "laurasmith29",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=29",
         "friends": [
@@ -1110,20 +1145,18 @@
             "73"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            6,
-            7,
-            10
+            "2",
+            "8",
+            "9",
+            "5",
+            "7"
         ]
     },
     "30": {
         "e-mail": "michaelhernandez30@yahoo.com",
         "password": "1234",
         "full-name": "Michael Hernandez",
-        "username": "michaelhernandez30",
+        "name": "michaelhernandez30",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=30",
         "friends": [
@@ -1146,20 +1179,19 @@
             "44"
         ],
         "liked-events": [
-            1,
-            3,
-            4,
-            6,
-            7,
-            8,
-            10
+            "10",
+            "2",
+            "3",
+            "9",
+            "5",
+            "4"
         ]
     },
     "31": {
         "e-mail": "sarahdavis31@outlook.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis31",
+        "name": "sarahdavis31",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=31",
         "friends": [
@@ -1182,19 +1214,19 @@
             "85"
         ],
         "liked-events": [
-            1,
-            4,
-            6,
-            7,
-            8,
-            10
+            "2",
+            "3",
+            "8",
+            "9",
+            "5",
+            "4"
         ]
     },
     "32": {
         "e-mail": "danielwilliams32@outlook.com",
         "password": "1234",
         "full-name": "Daniel Williams",
-        "username": "danielwilliams32",
+        "name": "danielwilliams32",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=32",
         "friends": [
@@ -1221,20 +1253,19 @@
             "86"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            7,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "4",
+            "1",
+            "7"
         ]
     },
     "33": {
         "e-mail": "jessicawilliams33@hotmail.com",
         "password": "1234",
         "full-name": "Jessica Williams",
-        "username": "jessicawilliams33",
+        "name": "jessicawilliams33",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=33",
         "friends": [
@@ -1258,20 +1289,19 @@
             "58"
         ],
         "liked-events": [
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            10
+            "10",
+            "3",
+            "5",
+            "9",
+            "1",
+            "6"
         ]
     },
     "34": {
         "e-mail": "danielmartinez34@gmail.com",
         "password": "1234",
         "full-name": "Daniel Martinez",
-        "username": "danielmartinez34",
+        "name": "danielmartinez34",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=34",
         "friends": [
@@ -1292,18 +1322,20 @@
             "94"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            7,
-            8
+            "3",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "35": {
         "e-mail": "johnhernandez35@outlook.com",
         "password": "1234",
         "full-name": "John Hernandez",
-        "username": "johnhernandez35",
+        "name": "johnhernandez35",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=35",
         "friends": [
@@ -1330,19 +1362,19 @@
             "62"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            8,
-            9
+            "10",
+            "8",
+            "5",
+            "4",
+            "1",
+            "7"
         ]
     },
     "36": {
         "e-mail": "chrisjones36@outlook.com",
         "password": "1234",
         "full-name": "Chris Jones",
-        "username": "chrisjones36",
+        "name": "chrisjones36",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=36",
         "friends": [
@@ -1366,19 +1398,20 @@
             "94"
         ],
         "liked-events": [
-            1,
-            3,
-            5,
-            6,
-            7,
-            9
+            "10",
+            "8",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7"
         ]
     },
     "37": {
         "e-mail": "laurajohnson37@outlook.com",
         "password": "1234",
         "full-name": "Laura Johnson",
-        "username": "laurajohnson37",
+        "name": "laurajohnson37",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=37",
         "friends": [
@@ -1401,20 +1434,20 @@
             "79"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            6,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "9",
+            "4",
+            "7",
+            "6"
         ]
     },
     "38": {
         "e-mail": "chrishernandez38@yahoo.com",
         "password": "1234",
         "full-name": "Chris Hernandez",
-        "username": "chrishernandez38",
+        "name": "chrishernandez38",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=38",
         "friends": [
@@ -1434,18 +1467,19 @@
             "34"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            9,
-            10
+            "2",
+            "8",
+            "5",
+            "4",
+            "1",
+            "6"
         ]
     },
     "39": {
         "e-mail": "janemartinez39@aol.com",
         "password": "1234",
         "full-name": "Jane Martinez",
-        "username": "janemartinez39",
+        "name": "janemartinez39",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=39",
         "friends": [
@@ -1474,19 +1508,19 @@
             "34"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            6,
-            9
+            "10",
+            "3",
+            "9",
+            "5",
+            "7",
+            "6"
         ]
     },
     "40": {
         "e-mail": "davidbrown40@outlook.com",
         "password": "1234",
         "full-name": "David Brown",
-        "username": "davidbrown40",
+        "name": "davidbrown40",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=40",
         "friends": [
@@ -1518,20 +1552,18 @@
             "12"
         ],
         "liked-events": [
-            1,
-            4,
-            5,
-            6,
-            7,
-            8,
-            10
+            "10",
+            "3",
+            "9",
+            "4",
+            "1"
         ]
     },
     "41": {
         "e-mail": "michaeldavis41@yahoo.com",
         "password": "1234",
         "full-name": "Michael Davis",
-        "username": "michaeldavis41",
+        "name": "michaeldavis41",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=41",
         "friends": [
@@ -1556,20 +1588,17 @@
             "8"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            8,
-            9,
-            10
+            "9",
+            "10",
+            "2",
+            "5"
         ]
     },
     "42": {
         "e-mail": "michaelsmith42@outlook.com",
         "password": "1234",
         "full-name": "Michael Smith",
-        "username": "michaelsmith42",
+        "name": "michaelsmith42",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=42",
         "friends": [
@@ -1594,20 +1623,20 @@
             "71"
         ],
         "liked-events": [
-            2,
-            3,
-            4,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "8",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "43": {
         "e-mail": "emilyjohnson43@aol.com",
         "password": "1234",
         "full-name": "Emily Johnson",
-        "username": "emilyjohnson43",
+        "name": "emilyjohnson43",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=43",
         "friends": [
@@ -1634,19 +1663,20 @@
             "87"
         ],
         "liked-events": [
-            3,
-            4,
-            6,
-            7,
-            9,
-            10
+            "10",
+            "3",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7"
         ]
     },
     "44": {
         "e-mail": "laurahernandez44@aol.com",
         "password": "1234",
         "full-name": "Laura Hernandez",
-        "username": "laurahernandez44",
+        "name": "laurahernandez44",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=44",
         "friends": [
@@ -1676,20 +1706,21 @@
             "20"
         ],
         "liked-events": [
-            1,
-            2,
-            5,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "8",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "45": {
         "e-mail": "chriswilliams45@aol.com",
         "password": "1234",
         "full-name": "Chris Williams",
-        "username": "chriswilliams45",
+        "name": "chriswilliams45",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=45",
         "friends": [
@@ -1719,21 +1750,19 @@
             "8"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            6,
-            7,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "5",
+            "4",
+            "6"
         ]
     },
     "46": {
         "e-mail": "chriswilliams46@hotmail.com",
         "password": "1234",
         "full-name": "Chris Williams",
-        "username": "chriswilliams46",
+        "name": "chriswilliams46",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=46",
         "friends": [
@@ -1762,19 +1791,19 @@
             "94"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            5,
-            8,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "6"
         ]
     },
     "47": {
         "e-mail": "emilymartinez47@gmail.com",
         "password": "1234",
         "full-name": "Emily Martinez",
-        "username": "emilymartinez47",
+        "name": "emilymartinez47",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=47",
         "friends": [
@@ -1797,20 +1826,22 @@
             "3"
         ],
         "liked-events": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "48": {
         "e-mail": "jessicajones48@outlook.com",
         "password": "1234",
         "full-name": "Jessica Jones",
-        "username": "jessicajones48",
+        "name": "jessicajones48",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=48",
         "friends": [
@@ -1837,20 +1868,18 @@
             "1"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "8",
+            "9",
+            "4",
+            "1"
         ]
     },
     "49": {
         "e-mail": "davidsmith49@outlook.com",
         "password": "1234",
         "full-name": "David Smith",
-        "username": "davidsmith49",
+        "name": "davidsmith49",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=49",
         "friends": [
@@ -1878,21 +1907,19 @@
             "23"
         ],
         "liked-events": [
-            1,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
+            "2",
+            "8",
+            "9",
+            "4",
+            "7",
+            "6"
         ]
     },
     "50": {
         "e-mail": "michaeljones50@gmail.com",
         "password": "1234",
         "full-name": "Michael Jones",
-        "username": "michaeljones50",
+        "name": "michaeljones50",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=50",
         "friends": [
@@ -1920,20 +1947,18 @@
             "46"
         ],
         "liked-events": [
-            1,
-            3,
-            4,
-            5,
-            6,
-            8,
-            10
+            "2",
+            "8",
+            "9",
+            "1",
+            "7"
         ]
     },
     "51": {
         "e-mail": "emilylopez51@outlook.com",
         "password": "1234",
         "full-name": "Emily Lopez",
-        "username": "emilylopez51",
+        "name": "emilylopez51",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=51",
         "friends": [
@@ -1961,19 +1986,20 @@
             "8"
         ],
         "liked-events": [
-            2,
-            3,
-            5,
-            6,
-            8,
-            10
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "52": {
         "e-mail": "janegarcia52@outlook.com",
         "password": "1234",
         "full-name": "Jane Garcia",
-        "username": "janegarcia52",
+        "name": "janegarcia52",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=52",
         "friends": [
@@ -1996,19 +2022,20 @@
             "32"
         ],
         "liked-events": [
-            2,
-            3,
-            4,
-            6,
-            7,
-            9
+            "10",
+            "2",
+            "8",
+            "5",
+            "4",
+            "7",
+            "6"
         ]
     },
     "53": {
         "e-mail": "laurahernandez53@outlook.com",
         "password": "1234",
         "full-name": "Laura Hernandez",
-        "username": "laurahernandez53",
+        "name": "laurahernandez53",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=53",
         "friends": [
@@ -2040,20 +2067,19 @@
             "6"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "3",
+            "5",
+            "1",
+            "7",
+            "6"
         ]
     },
     "54": {
         "e-mail": "johndavis54@yahoo.com",
         "password": "1234",
         "full-name": "John Davis",
-        "username": "johndavis54",
+        "name": "johndavis54",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=54",
         "friends": [
@@ -2080,20 +2106,20 @@
             "16"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            7,
-            8,
-            9
+            "10",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "55": {
         "e-mail": "chrisbrown55@outlook.com",
         "password": "1234",
         "full-name": "Chris Brown",
-        "username": "chrisbrown55",
+        "name": "chrisbrown55",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=55",
         "friends": [
@@ -2124,20 +2150,19 @@
             "8"
         ],
         "liked-events": [
-            1,
-            2,
-            5,
-            6,
-            7,
-            8,
-            10
+            "2",
+            "3",
+            "5",
+            "4",
+            "1",
+            "7"
         ]
     },
     "56": {
         "e-mail": "davidgarcia56@hotmail.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia56",
+        "name": "davidgarcia56",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=56",
         "friends": [
@@ -2163,20 +2188,19 @@
             "30"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            8,
-            10
+            "3",
+            "8",
+            "9",
+            "4",
+            "1",
+            "6"
         ]
     },
     "57": {
         "e-mail": "johndavis57@hotmail.com",
         "password": "1234",
         "full-name": "John Davis",
-        "username": "johndavis57",
+        "name": "johndavis57",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=57",
         "friends": [
@@ -2205,20 +2229,20 @@
             "91"
         ],
         "liked-events": [
-            2,
-            3,
-            4,
-            5,
-            7,
-            9,
-            10
+            "2",
+            "3",
+            "9",
+            "5",
+            "4",
+            "7",
+            "6"
         ]
     },
     "58": {
         "e-mail": "michaelwilliams58@aol.com",
         "password": "1234",
         "full-name": "Michael Williams",
-        "username": "michaelwilliams58",
+        "name": "michaelwilliams58",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=58",
         "friends": [
@@ -2249,20 +2273,19 @@
             "23"
         ],
         "liked-events": [
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            10
+            "2",
+            "5",
+            "9",
+            "4",
+            "7",
+            "6"
         ]
     },
     "59": {
         "e-mail": "lauradavis59@hotmail.com",
         "password": "1234",
         "full-name": "Laura Davis",
-        "username": "lauradavis59",
+        "name": "lauradavis59",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=59",
         "friends": [
@@ -2288,19 +2311,19 @@
             "61"
         ],
         "liked-events": [
-            2,
-            4,
-            6,
-            7,
-            8,
-            10
+            "10",
+            "3",
+            "8",
+            "4",
+            "7",
+            "6"
         ]
     },
     "60": {
         "e-mail": "michaeljohnson60@outlook.com",
         "password": "1234",
         "full-name": "Michael Johnson",
-        "username": "michaeljohnson60",
+        "name": "michaeljohnson60",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=60",
         "friends": [
@@ -2326,19 +2349,20 @@
             "72"
         ],
         "liked-events": [
-            2,
-            4,
-            5,
-            6,
-            8,
-            10
+            "10",
+            "2",
+            "3",
+            "9",
+            "5",
+            "7",
+            "6"
         ]
     },
     "61": {
         "e-mail": "johnmartinez61@aol.com",
         "password": "1234",
         "full-name": "John Martinez",
-        "username": "johnmartinez61",
+        "name": "johnmartinez61",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=61",
         "friends": [
@@ -2369,20 +2393,19 @@
             "35"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            8,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "5",
+            "7",
+            "6"
         ]
     },
     "62": {
         "e-mail": "sarahmartinez62@yahoo.com",
         "password": "1234",
         "full-name": "Sarah Martinez",
-        "username": "sarahmartinez62",
+        "name": "sarahmartinez62",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=62",
         "friends": [
@@ -2404,20 +2427,20 @@
             "49"
         ],
         "liked-events": [
-            2,
-            4,
-            5,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "9",
+            "4",
+            "1",
+            "6"
         ]
     },
     "63": {
         "e-mail": "sarahdavis63@yahoo.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis63",
+        "name": "sarahdavis63",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=63",
         "friends": [
@@ -2444,21 +2467,19 @@
             "91"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "8",
+            "5",
+            "1",
+            "6"
         ]
     },
     "64": {
         "e-mail": "michaelsmith64@outlook.com",
         "password": "1234",
         "full-name": "Michael Smith",
-        "username": "michaelsmith64",
+        "name": "michaelsmith64",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=64",
         "friends": [
@@ -2482,20 +2503,19 @@
             "71"
         ],
         "liked-events": [
-            2,
-            4,
-            5,
-            6,
-            8,
-            9,
-            10
+            "8",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "65": {
         "e-mail": "michaelwilliams65@gmail.com",
         "password": "1234",
         "full-name": "Michael Williams",
-        "username": "michaelwilliams65",
+        "name": "michaelwilliams65",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=65",
         "friends": [
@@ -2518,19 +2538,19 @@
             "11"
         ],
         "liked-events": [
-            1,
-            3,
-            5,
-            6,
-            7,
-            9
+            "2",
+            "8",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "66": {
         "e-mail": "michaelmartinez66@gmail.com",
         "password": "1234",
         "full-name": "Michael Martinez",
-        "username": "michaelmartinez66",
+        "name": "michaelmartinez66",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=66",
         "friends": [
@@ -2559,20 +2579,20 @@
             "73"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            8
+            "3",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "6"
         ]
     },
     "67": {
         "e-mail": "sarahdavis67@hotmail.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis67",
+        "name": "sarahdavis67",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=67",
         "friends": [
@@ -2599,20 +2619,20 @@
             "21"
         ],
         "liked-events": [
-            1,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "8",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7"
         ]
     },
     "68": {
         "e-mail": "danielwilliams68@aol.com",
         "password": "1234",
         "full-name": "Daniel Williams",
-        "username": "danielwilliams68",
+        "name": "danielwilliams68",
         "birth-date": "25-08-1990",
         "photo": "https://picsum.photos/800/800?random=68",
         "friends": [
@@ -2637,19 +2657,19 @@
             "34"
         ],
         "liked-events": [
-            1,
-            4,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "3",
+            "9",
+            "5",
+            "4",
+            "6"
         ]
     },
     "69": {
         "e-mail": "emilyjones69@yahoo.com",
         "password": "1234",
         "full-name": "Emily Jones",
-        "username": "emilyjones69",
+        "name": "emilyjones69",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=69",
         "friends": [
@@ -2672,18 +2692,20 @@
             "9"
         ],
         "liked-events": [
-            3,
-            4,
-            5,
-            6,
-            9
+            "10",
+            "2",
+            "3",
+            "9",
+            "5",
+            "1",
+            "7"
         ]
     },
     "70": {
         "e-mail": "sarahjohnson70@yahoo.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson70",
+        "name": "sarahjohnson70",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=70",
         "friends": [
@@ -2714,20 +2736,19 @@
             "50"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            5,
-            6,
-            8,
-            10
+            "2",
+            "8",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "71": {
         "e-mail": "chrisbrown71@outlook.com",
         "password": "1234",
         "full-name": "Chris Brown",
-        "username": "chrisbrown71",
+        "name": "chrisbrown71",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=71",
         "friends": [
@@ -2759,20 +2780,19 @@
             "44"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            5,
-            6,
-            7,
-            9
+            "10",
+            "2",
+            "3",
+            "5",
+            "4",
+            "1"
         ]
     },
     "72": {
         "e-mail": "danieldavis72@aol.com",
         "password": "1234",
         "full-name": "Daniel Davis",
-        "username": "danieldavis72",
+        "name": "danieldavis72",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=72",
         "friends": [
@@ -2800,20 +2820,21 @@
             "83"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            5,
-            6,
-            8,
-            10
+            "10",
+            "3",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "6"
         ]
     },
     "73": {
         "e-mail": "danielsmith73@hotmail.com",
         "password": "1234",
         "full-name": "Daniel Smith",
-        "username": "danielsmith73",
+        "name": "danielsmith73",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=73",
         "friends": [
@@ -2841,19 +2862,20 @@
             "83"
         ],
         "liked-events": [
-            1,
-            4,
-            5,
-            7,
-            8,
-            9
+            "10",
+            "3",
+            "5",
+            "9",
+            "4",
+            "7",
+            "6"
         ]
     },
     "74": {
         "e-mail": "sarahgarcia74@gmail.com",
         "password": "1234",
         "full-name": "Sarah Garcia",
-        "username": "sarahgarcia74",
+        "name": "sarahgarcia74",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=74",
         "friends": [
@@ -2884,19 +2906,20 @@
             "22"
         ],
         "liked-events": [
-            1,
-            3,
-            6,
-            7,
-            9,
-            10
+            "2",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "75": {
         "e-mail": "danieljohnson75@hotmail.com",
         "password": "1234",
         "full-name": "Daniel Johnson",
-        "username": "danieljohnson75",
+        "name": "danieljohnson75",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=75",
         "friends": [
@@ -2928,20 +2951,19 @@
             "78"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            6,
-            9,
-            10
+            "10",
+            "3",
+            "9",
+            "4",
+            "7",
+            "6"
         ]
     },
     "76": {
         "e-mail": "sarahjohnson76@gmail.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson76",
+        "name": "sarahjohnson76",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=76",
         "friends": [
@@ -2966,20 +2988,19 @@
             "21"
         ],
         "liked-events": [
-            2,
-            3,
-            5,
-            6,
-            7,
-            9,
-            10
+            "10",
+            "2",
+            "9",
+            "5",
+            "4",
+            "7"
         ]
     },
     "77": {
         "e-mail": "davidgarcia77@gmail.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia77",
+        "name": "davidgarcia77",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=77",
         "friends": [
@@ -3001,18 +3022,18 @@
             "43"
         ],
         "liked-events": [
-            1,
-            3,
-            4,
-            5,
-            7
+            "10",
+            "3",
+            "8",
+            "5",
+            "4"
         ]
     },
     "78": {
         "e-mail": "chrissmith78@yahoo.com",
         "password": "1234",
         "full-name": "Chris Smith",
-        "username": "chrissmith78",
+        "name": "chrissmith78",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=78",
         "friends": [
@@ -3039,20 +3060,22 @@
             "70"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            7,
-            8,
-            9,
-            10
+            "2",
+            "3",
+            "8",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "79": {
         "e-mail": "davidbrown79@aol.com",
         "password": "1234",
         "full-name": "David Brown",
-        "username": "davidbrown79",
+        "name": "davidbrown79",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=79",
         "friends": [
@@ -3080,18 +3103,19 @@
             "88"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            10
+            "2",
+            "8",
+            "9",
+            "5",
+            "1",
+            "6"
         ]
     },
     "80": {
         "e-mail": "michaelgarcia80@hotmail.com",
         "password": "1234",
         "full-name": "Michael Garcia",
-        "username": "michaelgarcia80",
+        "name": "michaelgarcia80",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=80",
         "friends": [
@@ -3126,20 +3150,19 @@
             "54"
         ],
         "liked-events": [
-            1,
-            3,
-            5,
-            6,
-            7,
-            8,
-            9
+            "2",
+            "8",
+            "9",
+            "5",
+            "4",
+            "7"
         ]
     },
     "81": {
         "e-mail": "davidgarcia81@aol.com",
         "password": "1234",
         "full-name": "David Garcia",
-        "username": "davidgarcia81",
+        "name": "davidgarcia81",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=81",
         "friends": [
@@ -3172,22 +3195,20 @@
             "30"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            6,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "4",
+            "7"
         ]
     },
     "82": {
         "e-mail": "daviddavis82@hotmail.com",
         "password": "1234",
         "full-name": "David Davis",
-        "username": "daviddavis82",
+        "name": "daviddavis82",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=82",
         "friends": [
@@ -3218,20 +3239,20 @@
             "10"
         ],
         "liked-events": [
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
+            "10",
+            "2",
+            "3",
+            "8",
+            "5",
+            "7",
+            "6"
         ]
     },
     "83": {
         "e-mail": "chrisjohnson83@aol.com",
         "password": "1234",
         "full-name": "Chris Johnson",
-        "username": "chrisjohnson83",
+        "name": "chrisjohnson83",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=83",
         "friends": [
@@ -3259,19 +3280,22 @@
             "94"
         ],
         "liked-events": [
-            1,
-            3,
-            5,
-            6,
-            9,
-            10
+            "10",
+            "2",
+            "8",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "84": {
         "e-mail": "emilywilliams84@outlook.com",
         "password": "1234",
         "full-name": "Emily Williams",
-        "username": "emilywilliams84",
+        "name": "emilywilliams84",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=84",
         "friends": [
@@ -3302,19 +3326,19 @@
             "78"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            8,
-            10
+            "2",
+            "3",
+            "8",
+            "4",
+            "1",
+            "6"
         ]
     },
     "85": {
         "e-mail": "sarahdavis85@outlook.com",
         "password": "1234",
         "full-name": "Sarah Davis",
-        "username": "sarahdavis85",
+        "name": "sarahdavis85",
         "birth-date": "01-01-1990",
         "photo": "https://picsum.photos/800/800?random=85",
         "friends": [
@@ -3345,20 +3369,20 @@
             "2"
         ],
         "liked-events": [
-            1,
-            4,
-            5,
-            6,
-            8,
-            9,
-            10
+            "3",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "86": {
         "e-mail": "sarahsmith86@hotmail.com",
         "password": "1234",
         "full-name": "Sarah Smith",
-        "username": "sarahsmith86",
+        "name": "sarahsmith86",
         "birth-date": "05-10-1989",
         "photo": "https://picsum.photos/800/800?random=86",
         "friends": [
@@ -3388,20 +3412,19 @@
             "51"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "9",
+            "5",
+            "1"
         ]
     },
     "87": {
         "e-mail": "davidhernandez87@hotmail.com",
         "password": "1234",
         "full-name": "David Hernandez",
-        "username": "davidhernandez87",
+        "name": "davidhernandez87",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=87",
         "friends": [
@@ -3427,21 +3450,20 @@
             "10"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            9,
-            10
+            "2",
+            "3",
+            "9",
+            "5",
+            "1",
+            "7",
+            "6"
         ]
     },
     "88": {
         "e-mail": "sarahwilliams88@aol.com",
         "password": "1234",
         "full-name": "Sarah Williams",
-        "username": "sarahwilliams88",
+        "name": "sarahwilliams88",
         "birth-date": "10-05-1988",
         "photo": "https://picsum.photos/800/800?random=88",
         "friends": [
@@ -3475,19 +3497,19 @@
             "21"
         ],
         "liked-events": [
-            1,
-            2,
-            5,
-            6,
-            7,
-            10
+            "10",
+            "2",
+            "8",
+            "9",
+            "4",
+            "1"
         ]
     },
     "89": {
         "e-mail": "sarahjohnson89@gmail.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson89",
+        "name": "sarahjohnson89",
         "birth-date": "20-03-1991",
         "photo": "https://picsum.photos/800/800?random=89",
         "friends": [
@@ -3521,18 +3543,22 @@
             "83"
         ],
         "liked-events": [
-            2,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "2",
+            "3",
+            "8",
+            "9",
+            "5",
+            "4",
+            "1",
+            "6"
         ]
     },
     "90": {
         "e-mail": "janesmith90@hotmail.com",
         "password": "1234",
         "full-name": "Jane Smith",
-        "username": "janesmith90",
+        "name": "janesmith90",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=90",
         "friends": [
@@ -3562,19 +3588,19 @@
             "66"
         ],
         "liked-events": [
-            1,
-            2,
-            4,
-            5,
-            6,
-            8
+            "10",
+            "8",
+            "5",
+            "9",
+            "1",
+            "6"
         ]
     },
     "91": {
         "e-mail": "janewilliams91@outlook.com",
         "password": "1234",
         "full-name": "Jane Williams",
-        "username": "janewilliams91",
+        "name": "janewilliams91",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=91",
         "friends": [
@@ -3605,19 +3631,19 @@
             "83"
         ],
         "liked-events": [
-            1,
-            2,
-            3,
-            4,
-            6,
-            10
+            "10",
+            "2",
+            "3",
+            "4",
+            "1",
+            "6"
         ]
     },
     "92": {
         "e-mail": "michaelmartinez92@outlook.com",
         "password": "1234",
         "full-name": "Michael Martinez",
-        "username": "michaelmartinez92",
+        "name": "michaelmartinez92",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=92",
         "friends": [
@@ -3644,18 +3670,19 @@
             "56"
         ],
         "liked-events": [
-            3,
-            5,
-            7,
-            8,
-            9
+            "2",
+            "3",
+            "8",
+            "5",
+            "7",
+            "6"
         ]
     },
     "93": {
         "e-mail": "lauramartinez93@outlook.com",
         "password": "1234",
         "full-name": "Laura Martinez",
-        "username": "lauramartinez93",
+        "name": "lauramartinez93",
         "birth-date": "11-06-1990",
         "photo": "https://picsum.photos/800/800?random=93",
         "friends": [
@@ -3684,19 +3711,20 @@
             "47"
         ],
         "liked-events": [
-            2,
-            3,
-            7,
-            8,
-            9,
-            10
+            "10",
+            "3",
+            "5",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     },
     "94": {
         "e-mail": "janejones94@hotmail.com",
         "password": "1234",
         "full-name": "Jane Jones",
-        "username": "janejones94",
+        "name": "janejones94",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=94",
         "friends": [
@@ -3732,19 +3760,20 @@
             "48"
         ],
         "liked-events": [
-            1,
-            2,
-            6,
-            7,
-            9,
-            10
+            "2",
+            "3",
+            "5",
+            "9",
+            "4",
+            "1",
+            "7"
         ]
     },
     "95": {
         "e-mail": "lauramartinez95@outlook.com",
         "password": "1234",
         "full-name": "Laura Martinez",
-        "username": "lauramartinez95",
+        "name": "lauramartinez95",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=95",
         "friends": [
@@ -3772,19 +3801,19 @@
             "73"
         ],
         "liked-events": [
-            3,
-            6,
-            7,
-            8,
-            9,
-            10
+            "2",
+            "3",
+            "8",
+            "5",
+            "1",
+            "6"
         ]
     },
     "96": {
         "e-mail": "emilymartinez96@gmail.com",
         "password": "1234",
         "full-name": "Emily Martinez",
-        "username": "emilymartinez96",
+        "name": "emilymartinez96",
         "birth-date": "01-07-1992",
         "photo": "https://picsum.photos/800/800?random=96",
         "friends": [
@@ -3808,19 +3837,19 @@
             "21"
         ],
         "liked-events": [
-            2,
-            5,
-            6,
-            7,
-            8,
-            9
+            "10",
+            "2",
+            "3",
+            "9",
+            "1",
+            "6"
         ]
     },
     "97": {
         "e-mail": "chrisdavis97@aol.com",
         "password": "1234",
         "full-name": "Chris Davis",
-        "username": "chrisdavis97",
+        "name": "chrisdavis97",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=97",
         "friends": [
@@ -3851,18 +3880,20 @@
             "58"
         ],
         "liked-events": [
-            1,
-            4,
-            7,
-            9,
-            10
+            "10",
+            "3",
+            "8",
+            "9",
+            "5",
+            "4",
+            "7"
         ]
     },
     "98": {
         "e-mail": "davidbrown98@hotmail.com",
         "password": "1234",
         "full-name": "David Brown",
-        "username": "davidbrown98",
+        "name": "davidbrown98",
         "birth-date": "30-04-1995",
         "photo": "https://picsum.photos/800/800?random=98",
         "friends": [
@@ -3890,20 +3921,19 @@
             "26"
         ],
         "liked-events": [
-            2,
-            4,
-            5,
-            6,
-            7,
-            8,
-            10
+            "10",
+            "8",
+            "5",
+            "1",
+            "7",
+            "6"
         ]
     },
     "99": {
         "e-mail": "sarahjohnson99@aol.com",
         "password": "1234",
         "full-name": "Sarah Johnson",
-        "username": "sarahjohnson99",
+        "name": "sarahjohnson99",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=99",
         "friends": [
@@ -3926,12 +3956,14 @@
             "33"
         ],
         "liked-events": [
-            2,
-            3,
-            4,
-            5,
-            7,
-            8
+            "10",
+            "2",
+            "9",
+            "5",
+            "4",
+            "1",
+            "7",
+            "6"
         ]
     }
 }
