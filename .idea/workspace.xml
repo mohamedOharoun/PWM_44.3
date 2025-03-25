@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix refactor code to improve legibility.">
+      <change afterPath="$PROJECT_DIR$/src/js/create_event.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/create_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/create_event_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742839489609</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fix events' usernames and liked-events.">
+      <option name="closed" value="true" />
+      <created>1742933412314</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742933412314</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +312,7 @@
     <MESSAGE value="Add dynamic loading of events' tags" />
     <MESSAGE value="Add search events through tags." />
     <MESSAGE value="Fix refactor code to improve legibility." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix refactor code to improve legibility." />
+    <MESSAGE value="Fix events' usernames and liked-events." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix events' usernames and liked-events." />
   </component>
 </project>

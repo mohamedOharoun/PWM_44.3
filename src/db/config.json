@@ -197,5 +197,22 @@
             "owned": "My Events",
             "search-placeholder": "Search by tags"
         }
+    },
+    "create-event": {
+        "title": "New Event",
+        "submit-button": "Create Event",
+        "labels": {
+            "name": "Name",
+            "date": "Date",
+            "cost": "Price",
+            "public": "Public",
+            "private": "Private",
+            "members": "Members",
+            "description": "Description",
+            "tags": "Tags"
+        },
+        "placeholders": {
+            "members": "Select Members"
+        }
     }
 }
