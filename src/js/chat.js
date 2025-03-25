@@ -1,5 +1,5 @@
 import { initEssentials, loadJSON, loadTemplate } from "./common.js";
-import {buildUserProfileURL, getLoggedUserID} from "./utils.js";
+import {buildLinkURL, buildUserProfileURL, getLoggedUserID} from "./utils.js";
 
 const users = await loadJSON("users.json");
 const userTemplate = await loadTemplate("user_chat.html");
@@ -20,6 +20,9 @@ const getUserFriends = () => {
 
 const buildUserCardFrom = (userTemplate, userID, userData) => {
     let userCard = userTemplate.cloneNode(true);
+    userCard.querySelector("article").addEventListener("click", (evt) => {
+        window.location.href = buildLinkURL(window.location.href, "chat_id", userID);
+    });
     let photo = userData["photo"];
     let name = userData["name"];
     userCard.querySelector(".user-photo").src = photo;
@@ -28,7 +31,6 @@ const buildUserCardFrom = (userTemplate, userID, userData) => {
     nameTag.href = buildUserProfileURL(nameTag.href, userID);
     nameTag.textContent = name;
     return userCard;
-
 };
 
 const fillUserList = async (userList) => {
@@ -40,24 +42,32 @@ const fillUserList = async (userList) => {
 };
 
 const getCurrentChatUser = () => {
-    return getCurrentChatUserID() !== null ? users[getCurrentChatUserID()] : users["2"];
-
+    return users[getCurrentChatUserID()];
 }
 
 const getCurrentChatUserID = () => {
     let urlParameters = new URLSearchParams(window.location.search);
-    return urlParameters.get("user_id") !== null ? urlParameters.get("user_id") : "2";
-
+    return urlParameters.get("chat_id") ? urlParameters.get("chat_id") : "1";
 }
 
 const getMessagesIDFor = (loggedUserID, currentChatUserID) => {
-    return `${loggedUserID}-${currentChatUserID}`;
+    let ids = [loggedUserID, currentChatUserID].sort((a, b) => Number(a) - Number(b));
+    return `${ids[0]}-${ids[1]}`;
+};
 
+const getMessagesFromLocal = () => {
+    let localMessages = localStorage.getItem("messages");
+    let object = localMessages ?
+        JSON.parse(localMessages) : {}
+    let messagesID = getMessagesIDFor(getCurrentChatUserID(), getLoggedUserID());
+    if (!(messagesID in object)) object[messagesID] = [];
+    return object[messagesID];
 };
 
 const fillMessagesSectionFor = async (currentChatUser, messagesSection) => {
-
-    let messages = await loadJSON("messages.json").then(messages => messages[getMessagesIDFor(getLoggedUserID(), getCurrentChatUserID())]);
+    let messages = await loadJSON("messages.json")
+        .then(messages => messages[getMessagesIDFor(getCurrentChatUserID(), getLoggedUserID())])
+        .then(messages => messages ? messages.concat(getMessagesFromLocal()) : getMessagesFromLocal());
     let fragment = document.createDocumentFragment();
     if (messages) messages.forEach(m => {
         let messageArticle = messageTemplate.cloneNode(true);
@@ -82,6 +92,19 @@ const setScrollToBottom = () => {
     }
 };
 
+const saveMessageInLocal = (messageContent) => {
+    let localMessages = localStorage.getItem("messages");
+    let object = localMessages ?
+        JSON.parse(localMessages) : {};
+    let messagesID = getMessagesIDFor(getCurrentChatUserID(), getLoggedUserID());
+    if (!(messagesID in object)) object[messagesID] = [];
+    object[messagesID].push({
+        "author": getLoggedUserID(),
+        "body": messageContent
+    });
+    localStorage.setItem("messages", JSON.stringify(object));
+};
+
 const addListenerToMessageInput = (messageInput) => {
     messageInput.addEventListener("keydown", (event) => {
         if (event.key !== "Enter") return;
@@ -91,6 +114,7 @@ const addListenerToMessageInput = (messageInput) => {
         document.getElementById("messages-section").appendChild(buildNewMessageWithText(messageContent));
         messageInput.value = "";
         setScrollToBottom();
+        saveMessageInLocal(messageContent);
     });
 };
 

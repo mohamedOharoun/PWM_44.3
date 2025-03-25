@@ -59,6 +59,7 @@
             "2",
             "3",
             "4",
+            "5",
             "70",
             "94",
             "60",
@@ -186,7 +187,7 @@
         "e-mail": "laura.herrera113@alu.ulpgc.es",
         "password": "1234",
         "full-name": "Laura Herrera",
-        "name": "laura.herrera113",
+        "name": "lauraherrera113",
         "birth-date": "15-02-1992",
         "photo": "https://picsum.photos/800/800?random=4",
         "friends": [
@@ -227,13 +228,14 @@
         ]
     },
     "5": {
-        "e-mail": "danieljones5@yahoo.com",
+        "e-mail": "asmae.ez101@alu.ulpgc.es",
         "password": "1234",
-        "full-name": "Daniel Jones",
-        "name": "danieljones5",
+        "full-name": "Asmae Ez Zaim",
+        "name": "asmaeezzaim101",
         "birth-date": "12-09-1993",
         "photo": "https://picsum.photos/800/800?random=5",
         "friends": [
+            "1",
             "50",
             "60",
             "9",

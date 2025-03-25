@@ -2,19 +2,18 @@ import {config, initEssentials, loadTemplate, loggedUser, loadJSON} from "./comm
 import {buildLinkURL, getLoggedUserID} from "./utils.js";
 
 const buildPhoto = (url) => {
-    let img = document.getElementById("profile-image");
+    let img = document.getElementById("uploaded-img");
     img.src = url;
-    return img;
 };
 
 const getPageKey = () => {
-    return lastUser() !== null ? "user-profile" : "self-profile";
+    return getProfileUserID() !== null ? "user-profile" : "self-profile";
 }
 
-function getProfileParts() {
+const getProfileParts = () => {
     let title = document.getElementById("profile-title");
     let utilsContainer = document.getElementById("profile-utils-icons");
-    let photo = document.getElementById("profile-photo");
+    let photo = document.getElementById("uploaded-img");
     let fullName = document.getElementById("user-full-name");
     let username = document.getElementById("user-name");
     let userEmail = document.getElementById("user-email");
@@ -22,16 +21,38 @@ function getProfileParts() {
     let userEvents = document.getElementById("user-events");
     let sharedEvents = document.getElementById("shared-events");
     return {title, utilsContainer, photo, fullName, username, userEmail, description, userEvents, sharedEvents};
-}
+};
 
 const fillProfileUtils = (utilsContainer) => {
-    let utilsIcons = config["profile"]["utils-icons"][getPageKey()];
+    let url = config["profile"]["utils-icons"][getPageKey()][0];
     let fragment = document.createDocumentFragment();
-    utilsIcons.forEach(url => {
-        let img = document.createElement("img");
-        img.src = url;
-        fragment.appendChild(img);
+    let img = document.createElement("img");
+    img.src = url;
+    let editingProfile = false;
+    img.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        let nameInput = document.getElementById("user-full-name").querySelector("input");
+        let usernameInput = document.getElementById("user-name").querySelector("input");
+        let emailInput = document.getElementById("user-email").querySelector("input");
+        let description = document.getElementById("description").querySelector("textarea");
+        if (editingProfile) {
+            nameInput.readOnly = true;
+            usernameInput.readOnly = true;
+            emailInput.readOnly = true;
+            description.readOnly = true;
+            img.src = url;
+            initializeDragAndDrop();
+        } else {
+            nameInput.readOnly = false;
+            usernameInput.readOnly = false;
+            emailInput.readOnly = false;
+            description.readOnly = false;
+            img.src = "../../../assets/images/check_icon.svg";
+            stopDragAndDrop();
+        }
+        editingProfile = !editingProfile;
     });
+    fragment.appendChild(img);
     utilsContainer.appendChild(fragment);
 };
 
@@ -98,38 +119,38 @@ const loadProfileStaticsTexts = (profileParts) => {
     profileParts.userEvents.textContent = profileConfig["events-sections-container"]["labels"][0];
     profileParts.sharedEvents.textContent = profileConfig["events-sections-container"]["labels"][1];
     if (getPageKey() === "self-profile")  document.getElementById("shared-events-section").remove();
-}
+};
 
-const lastUser = () => {
+const getProfileUserID = () => {
     return new URLSearchParams(window.location.search).get("user_id");
-}
+};
 
 const fillProfileInformation = async (profileParts, user) => {
     await fillUserEvents(profileParts.userEvents, user);
     await fillSharedEvents(profileParts.userEvents, user);
-    profileParts.photo.appendChild(buildPhoto(user.userData["photo"]));
+    buildPhoto(user.userData["photo"]);
     profileParts.fullName.querySelector("input").placeholder = user.userData["full-name"];
     profileParts.username.querySelector("input").placeholder = user.userData["name"];
     if (getPageKey() === "self-profile") profileParts.userEmail.querySelector("input").placeholder = user.userData["e-mail"];
     profileParts.description.querySelector("textarea").textContent = user.userData["description"];
-}
+};
 
-const getUser = async () => {
-    let userID = lastUser() !== null ? lastUser() : getLoggedUserID();
+const getProfileUser = async () => {
+    let userID = getProfileUserID() ? getProfileUserID() : getLoggedUserID();
     let users = await loadJSON("users.json");
     return {userID, userData: users[userID]};
-}
+};
 
 const fillProfile = async () => {
     let profileParts = getProfileParts();
     loadProfileStaticsTexts(profileParts);
-    fillProfileInformation(profileParts, await getUser());
-}
+    await fillProfileInformation(profileParts, await getProfileUser());
+};
 
 const loadProfileAndFill = async () => {
     await loadTemplate("profile.html", "profile-container");
     await fillProfile();
-}
+};
 
 const init = async () => {
     await initEssentials();

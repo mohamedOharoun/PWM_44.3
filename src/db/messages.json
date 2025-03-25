@@ -1,14 +1,16 @@
 {
-  "1-2": [
+  "0-1": [
     {
-      "author": "1",
-      "body": "Hola, qué tal estás.",
-      "date": "12-12-2012 00:00"
+      "author": "0",
+      "body": "Hola, Javier."
     },
     {
-      "author": "2",
-      "body": "Hola, esto es una prueba.",
-      "date": "12-12-2012 00:00"
+      "author": "1",
+      "body": "Hola Ernestina"
+    },
+    {
+      "author": "1",
+      "body": "Esperamos obtener una gran calificación en este sprint!"
     }
   ]
 }

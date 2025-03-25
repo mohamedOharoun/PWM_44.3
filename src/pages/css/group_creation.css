@@ -52,7 +52,7 @@ main {
     gap: 5px;
 }
 
-#group-upload-photo-container {
+#upload-photo-container {
     align-content: center;
     justify-items: center;
     margin-right: 20px;
