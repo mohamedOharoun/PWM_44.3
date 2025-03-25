@@ -76,7 +76,7 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementText(".action-button", staticText["join_button"]["join"]);
 
     updateElementText(".main-title", event["name"]);
-    updateElementText(".subtitle", event["author"]);
+    updateElementText(".subtitle", user["username"]);
     updateElementText(".description-text", event["description"]);
     updateElementText(".event-time", event["time"]);
     updateElementText(".event-place", event["place"]);

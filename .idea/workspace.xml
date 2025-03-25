@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix refactor code to improve legibility.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/events_side_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/events_side_bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/tag.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
