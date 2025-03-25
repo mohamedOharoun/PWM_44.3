@@ -11,6 +11,40 @@
         "sign-in-button": "Sign in",
         "log-out-button": "Log out"
     },
+    "login": {
+        "logo-alt": "JoinUp Logo",
+        "title": "Log in",
+        "placeholders": {
+            "email": "johndoe@gmail.com",
+            "password": "Password"
+        },
+        "options": {
+            "keep-logged-in": "Keep Logged",
+            "forgot-password": "I forgot my password",
+            "register": "Sign up"
+        },
+        "button-text": "LOG IN"
+    },
+    "reset-password": {
+        "title": "Reset password",
+        "text-information": "Enter the email address you used to create your account.\nWe will send you instructions to reset your password.",
+        "email-placeholder": "johndoe@gmail.com",
+        "button-text": "SEND",
+        "message": {
+            "first-part": "Already have your password? Log in ",
+            "second-part": "here."
+        }
+    },
+    "home-page" : {
+        "photo": ["../../../assets/images/home_icon.png"],
+        "title": "Welcome to JoinUp!",
+        "text-info":"Welcome to JoinUP, your platform to connect and discover unique events! Whether you're organizing an event or looking for something that interests you, we're here to make it happen. Ready to join the fun?",
+        "button-one": "Create event",
+        "button-two": "Create group",
+        "friends-container": "Friends online",
+        "events-container": "Upcoming events",
+        "payments-container": "Pending payments"
+    },
     "profile": {
         "titles": {
             "user-profile": "User profile",
@@ -80,32 +114,7 @@
             "blocked": "blocked user(s)",
             "groups": "group(s)"
         },
-        "utils": {
-            "groups": {
-                "icon": "../../../assets/images/add_icon.svg",
-                "url": "create_group_page.html"
-            }
-        },
         "cards-icons": {
-            "friends": {
-                "remove-user": "../../../assets/images/remove_user_icon.svg",
-                "block-user": "../../../assets/images/block_user_icon.svg",
-                "message": "../../../assets/images/message_icon.svg"
-            },
-            "pending": {
-                "cancel": "../../../assets/images/cross_icon.svg",
-                "accept": "../../../assets/images/check_icon.svg"
-            },
-            "sent-requests": {
-                "cancel": "../../../assets/images/cross_icon.svg"
-            },
-            "blocked": {
-                "cancel": "../../../assets/images/cross_icon.svg"
-            },
-            "groups": {
-                "cancel": "../../../assets/images/cross_icon.svg",
-                "edit": "../../../assets/images/edit_icon.svg"
-            }
         }
     },
     "create-group": {
@@ -129,7 +138,6 @@
         "message-input-placeholder": "Send a message..."
     },
     "sign-up": {
-    },
     "first": {
         "first-title": "Basic information",
         "second-title": "the first step",
@@ -152,18 +160,12 @@
     "fourth": {
         "first-title": "Privacy policy",
         "second-title": "the last step",
-        "first-text": "",
-        "second-text": ""
     },
     "sign-up-lower-info": {
-        "next-step-button": "Next",
-        "previous-step-button": "Previous",
-        "sign-in-info": "Already have an account? Try signing in.",
         "steps-info": {
             "first-step": "Basic information",
             "second-step": "Account information",
             "third-step": "Account photo",
-            "ford-step": "Privacy policy"
         }
     }
 }

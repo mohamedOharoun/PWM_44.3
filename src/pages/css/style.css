@@ -17,7 +17,7 @@ main {
     flex: 1;
     height: 100vh;
     display: flex;
-    background: radial-gradient(circle, #006D77, #23CFA7);
+    background: linear-gradient(45deg, #006D77, #23CFA7);
     overflow: auto;
 }
 
@@ -38,11 +38,12 @@ a {
 }
 
 #page-footer {
-    font-size: 0.5rem;
     z-index: 1000;
-    padding: 0.5rem;
+    padding: 20px;
     font-family: "League Spartan", serif;
-    text-align: center;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: white;
     width: 100%;
     bottom: 0;
@@ -85,14 +86,4 @@ input {
     background: linear-gradient(45deg, #006D77, #23CFA7);
     border-radius: 15px;
     border: 2px solid white;
-}
-
-.animated-input {
-    background: #eeeeff;
-    transition: background 0.3s ease, box-shadow 0.3s ease, backgorund 0.3s ease;
-}
-
-.animated-input:focus {
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }

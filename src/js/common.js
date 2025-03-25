@@ -2,8 +2,8 @@ export const loadTemplate = async (file, id) => {
     let text = await fetch(`../../templates/html/${file}`).then(res => res.text());
     if (id !== undefined) document.getElementById(id).innerHTML = text;
     return document.createRange().createContextualFragment(text);
-
 };
+
 export const initEssentials = async () => {
     await loadHeader();
     await loadTemplate("footer.html", "page-footer");
@@ -46,3 +46,8 @@ const fillHeaderNav = () => {
         a.text = titles[i++];
     })
 }
+
+export const getPageKey = (base) => {
+    let URLParameters = new URLSearchParams(window.location.search);
+    return URLParameters.get("page_key") === null ? base : URLParameters.get("page_key");
+};
