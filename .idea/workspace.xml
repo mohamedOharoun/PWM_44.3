@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix refactor code to improve legibility.">
-      <change afterPath="$PROJECT_DIR$/src/js/create_event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge from dev">
       <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/create_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/create_event_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742933412314</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge from dev">
+      <option name="closed" value="true" />
+      <created>1742943187598</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742943187598</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +317,7 @@
     <MESSAGE value="Add search events through tags." />
     <MESSAGE value="Fix refactor code to improve legibility." />
     <MESSAGE value="Fix events' usernames and liked-events." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix events' usernames and liked-events." />
+    <MESSAGE value="Merge from dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge from dev" />
   </component>
 </project>
