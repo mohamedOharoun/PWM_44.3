@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Merge from dev">
-      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add static text for create event form.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/create_event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create_event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/create_event_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/create_event_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -285,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742943187598</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add static text for create event form.">
+      <option name="closed" value="true" />
+      <created>1742943279067</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742943279067</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +329,7 @@
     <MESSAGE value="Fix refactor code to improve legibility." />
     <MESSAGE value="Fix events' usernames and liked-events." />
     <MESSAGE value="Merge from dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge from dev" />
+    <MESSAGE value="Add static text for create event form." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add static text for create event form." />
   </component>
 </project>

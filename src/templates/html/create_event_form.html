@@ -15,19 +15,18 @@
                 <input type="checkbox" name="is-private" id="is-private">
                 <label id="privacy-event" for="is-private"></label>
             </div>
-            <label id="members-event" for="members-select"></label>
-            <input id="members-select" list="members" placeholder=""/>
-            <datalist id="members">
-                <option value="Lorem Ipsum">
-                <option value="Lorem">
-                <option value="Ipsum">
-                <option value="LoremIpsum">
-            </datalist>
-            <div id="members-list-container" xlu-include-file="../../templates/html/members_list.html"></div>
+            <label id="members-event" for="event-members-input"></label>
+            <div id="members-input-container">
+                <input class="animated-input" id="event-members-input" type="text">
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+            <div id="members-list-container">
+                <section id="members-list-section"></section>
+            </div>
         </div>
         <div id="right-side" class="form-side">
             <label id="description-event" for="event-description"></label>
-            <textarea rows="30" id="event-description" name="event-description" required></textarea>
+            <textarea rows="20" id="event-description" name="event-description" required></textarea>
             <label id="tags-event" for="event-tags"></label>
             <input id="event-tags" name="event-tags" type="text">
             <div id="tags-section-container">
