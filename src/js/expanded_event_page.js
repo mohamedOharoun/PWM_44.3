@@ -73,7 +73,6 @@ const createCommentElement = async (commentsSection, eventComments) => {
         const commentContentElement = commentElement.querySelector(".comment_content p");
         const userNameElement = commentElement.querySelector(".user-name");
 
-
         const userId = comment["user"];
         const users = await loadJSON("users.json");
         const user = users[userId];
@@ -85,6 +84,11 @@ const createCommentElement = async (commentsSection, eventComments) => {
         commentsSection.appendChild(commentElement);
     }
 };
+
+const createInputCommentElement = async (inputSection, eventsComments, user, events) => {
+    const commentsSection = await loadTemplate("message_input.html");
+    inputSection.appendChild(commentsSection);
+}
 
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event["id"]}`;
@@ -141,6 +145,8 @@ const makeEventCard = async (eventCard, event, user) => {
 
     const commentSection = eventCard.querySelector(".comments_list");
     await createCommentElement(commentSection, event["comments"])
+    const inputSection = eventCard.querySelector(".message-input-container");
+    await createInputCommentElement(inputSection, event.comments, user, event);
 
     document.querySelector(".events-section").appendChild(eventCard);
 };
