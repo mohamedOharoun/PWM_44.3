@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix CSS bug, auto submit and positioning for small screen size.">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix date-time format and add new parsing method for that">
+      <change afterPath="$PROJECT_DIR$/src/js/create_event_form_validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/create_event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create_event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -177,7 +176,7 @@
       <workItem from="1742914684931" duration="2048000" />
       <workItem from="1743004115612" duration="1672000" />
       <workItem from="1743005820282" duration="1549000" />
-      <workItem from="1743086260845" duration="2530000" />
+      <workItem from="1743086260845" duration="8032000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -307,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743087886372</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix date-time format and add new parsing method for that">
+      <option name="closed" value="true" />
+      <created>1743089086305</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743089086305</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +349,7 @@
     <MESSAGE value="Merge from dev" />
     <MESSAGE value="Add static text for create event form." />
     <MESSAGE value="Fix CSS bug, auto submit and positioning for small screen size." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix CSS bug, auto submit and positioning for small screen size." />
+    <MESSAGE value="Fix date-time format and add new parsing method for that" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix date-time format and add new parsing method for that" />
   </component>
 </project>

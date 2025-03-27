@@ -1,5 +1,6 @@
 import { initEssentials, loadJSON, loadTemplate } from "./common.js"
 import { buildUserProfileURL, getLoggedUserID } from "./utils.js";
+import { validateEventForm, createEventObject } from "./create_event_form_validation.js";
 
 const staticText = await loadJSON("config.json");
 const userTemplate = await loadTemplate("user.html");
@@ -179,16 +180,30 @@ const setupTagsInput = (form) => {
 };
 
 const handleFormEvents = (form) => {
-  form.querySelector("form").addEventListener("submit", (event) => {
-      event.preventDefault();
-      console.log(document.getElementById("event-date").value);
-  });
+    form.querySelector("#submit_button").addEventListener("click", (event) => {
+        if (!validateEventForm(document.querySelector("#event-form-container form"))) {
+            return;
+        }
 
-  form.querySelector("form").addEventListener("keydown", (event) => {
-     if(event.key === "Enter") {
-         event.preventDefault();
-     }
-  });
+        const eventData = createEventObject(document.querySelector("#event-form-container form"));
+
+        // Store in localStorage similar to groups
+        console.log("eventData", eventData);
+        const createdEvents = JSON.parse(localStorage.getItem("createdEvents")) || {};
+        const eventId = Object.keys(createdEvents).length + 1;
+        createdEvents[eventId] = eventData;
+        localStorage.setItem("eventsFromUse", JSON.stringify(createdEvents));
+    });
+
+    form.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+    });
+
+    form.querySelector("form").addEventListener("keydown", (event) => {
+        if(event.key === "Enter") {
+            event.preventDefault();
+        }
+    });
 };
 
 const init = async () => {
