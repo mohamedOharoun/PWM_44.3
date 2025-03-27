@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add dynamic inputs to form">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix CSS bug, auto submit and positioning for small screen size.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/create_event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create_event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/create_event_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/create_event_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,7 @@
       <workItem from="1742914684931" duration="2048000" />
       <workItem from="1743004115612" duration="1672000" />
       <workItem from="1743005820282" duration="1549000" />
-      <workItem from="1743086260845" duration="1314000" />
+      <workItem from="1743086260845" duration="2530000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -300,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742943279067</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fix CSS bug, auto submit and positioning for small screen size.">
+      <option name="closed" value="true" />
+      <created>1743087886372</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743087886372</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +341,7 @@
     <MESSAGE value="Fix events' usernames and liked-events." />
     <MESSAGE value="Merge from dev" />
     <MESSAGE value="Add static text for create event form." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add static text for create event form." />
+    <MESSAGE value="Fix CSS bug, auto submit and positioning for small screen size." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix CSS bug, auto submit and positioning for small screen size." />
   </component>
 </project>

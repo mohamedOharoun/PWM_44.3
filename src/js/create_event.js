@@ -179,11 +179,12 @@ const setupTagsInput = (form) => {
 };
 
 const handleFormEvents = (form) => {
-  form.addEventListener("submit", (event) => {
+  form.querySelector("form").addEventListener("submit", (event) => {
       event.preventDefault();
+      console.log(document.getElementById("event-date").value);
   });
 
-  form.addEventListener("keydown", (event) => {
+  form.querySelector("form").addEventListener("keydown", (event) => {
      if(event.key === "Enter") {
          event.preventDefault();
      }
@@ -193,7 +194,6 @@ const handleFormEvents = (form) => {
 const init = async () => {
     await initEssentials();
     const template = await loadTemplate("create_event_form.html");
-    console.log(template.querySelector("#members-input-container"));
     await loadStatic(template);
     await addListenerToMembersInput(template);
     await setupTagsInput(template);
