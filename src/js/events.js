@@ -90,7 +90,7 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementText(".likes-count", compactNumbers(event["likes"]));
     likesCount.setAttribute("number-likes", event["likes"]);
 
-    updateElementText(".comments-count", compactNumbers(event["comments"]));
+    updateElementText(".comments-count", compactNumbers(event.comments.length));
 
     updateElementHref(".see-more-button", eventIdParam);
     updateElementHref(".participants-item", eventIdParam);
