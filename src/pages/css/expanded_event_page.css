@@ -9,3 +9,7 @@
 article {
     position: relative;
 }
+
+.search-container {
+    display: none;
+}
