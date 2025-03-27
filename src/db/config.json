@@ -207,7 +207,7 @@
     "submit-button": "Create Event",
     "labels": {
       "name": "Name",
-      "date": "Date",
+      "date": "Date & Time",
       "cost": "Price",
       "public": "Public",
       "private": "Private",

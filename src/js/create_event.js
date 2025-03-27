@@ -77,8 +77,8 @@ const displayUsersFrom = (coincidences, suggestionsBox) => {
 }
 
 const addListenerToMembersInput = async (template) => {
-    let membersInputContainer = template.querySelector("#members-input-container");
-    let input = template.querySelector("#event-members-input");
+    const membersInputContainer = template.querySelector("#members-input-container");
+    const input = template.querySelector("#event-members-input");
     const suggestionsBox = template.querySelector("#suggestions");
     const checkFocus = () => {
         setTimeout(() => {
@@ -107,13 +107,13 @@ const addListenerToMembersInput = async (template) => {
 };
 
 const setUserData = (userArticle, userData, userID) => {
-    let usernameLabel = userArticle.querySelector(".user-name");
+    const usernameLabel = userArticle.querySelector(".user-name");
     usernameLabel.textContent = userData["name"];
     usernameLabel.href = buildUserProfileURL(usernameLabel.href, userID);
 };
 
 const setUserPhoto = (userArticle, userData) => {
-    let userPhoto = userArticle.querySelector(".user-photo");
+    const userPhoto = userArticle.querySelector(".user-photo");
     userPhoto.src = userData.photo;
     userPhoto.alt = `${userData.username} photo`;
     userPhoto.loading = "lazy";
@@ -121,7 +121,7 @@ const setUserPhoto = (userArticle, userData) => {
 
 const buildUserTemplate = (userArticle, userID, userData) => {
     userArticle.querySelector("article").id = `user${userID}`;
-    let button = userArticle.querySelector(".remove-button");
+    const button = userArticle.querySelector(".remove-button");
     button.addEventListener("click", (evt) => {
         evt.preventDefault();
         document.getElementById(`user${userID}`).remove();
@@ -145,7 +145,8 @@ const createTagElements = async (tag) => {
     tagText.innerText = `#${tag}`;
     tagElement.prepend(tagText);
 
-    removeButton.addEventListener("click", () => {
+    removeButton.addEventListener("click", (event) => {
+        event.preventDefault();
         handleTagRemoval(tag, tagElement);
     });
 
@@ -177,6 +178,18 @@ const setupTagsInput = (form) => {
     })
 };
 
+const handleFormEvents = (form) => {
+  form.addEventListener("submit", (event) => {
+      event.preventDefault();
+  });
+
+  form.addEventListener("keydown", (event) => {
+     if(event.key === "Enter") {
+         event.preventDefault();
+     }
+  });
+};
+
 const init = async () => {
     await initEssentials();
     const template = await loadTemplate("create_event_form.html");
@@ -185,6 +198,7 @@ const init = async () => {
     await addListenerToMembersInput(template);
     await setupTagsInput(template);
     manageFormEvents(template);
+    handleFormEvents(template);
     document.getElementById("event-form").appendChild(template);
 };
 

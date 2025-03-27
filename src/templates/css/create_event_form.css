@@ -132,4 +132,21 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    max-height: 200px;
+}
+
+#members-input-container, #event-members-input {
+    width: 100%;
+}
+
+@media (width < 1000px) {
+    #event-form form {
+        flex-direction: column;
+    }
+    #event-form {
+        width: 90%;
+    }
+    .form-side {
+        width: 100%;
+    }
 }
