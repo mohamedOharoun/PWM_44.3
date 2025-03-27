@@ -1,11 +1,9 @@
-import {loadJSON, loadTemplate, initEssentials} from "./common.js";
+import { loadJSON, loadTemplate, initEssentials } from "./common.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
-    .map(([id, event]) => ({id, ...event}));
-const users = await loadJSON("users.json");
+    .map(([eventId, event]) => ({ id: eventId, ...event }));
 
-let events = eventsSource;
-let searchTags = [];
+const eventId = new URLSearchParams(window.location.search).get("event_id");
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -58,6 +56,36 @@ const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
     });
 };
 
+const createCommentElement = async (commentsSection, eventComments) => {
+    const commentTemplate = await loadTemplate("comment.html");
+
+    if (eventComments.length === 0) {
+        const noCommentsMessage = document.createElement("p");
+        noCommentsMessage.textContent = "No comments yet.";
+        commentsSection.appendChild(noCommentsMessage);
+        return;
+    }
+
+    for (const comment of eventComments) {
+        const commentElement = commentTemplate.cloneNode(true);
+
+        const userPhotoElement = commentElement.querySelector(".user-card-photo img");
+        const commentContentElement = commentElement.querySelector(".comment_content p");
+        const userNameElement = commentElement.querySelector(".user-name");
+
+
+        const userId = comment["user"];
+        const users = await loadJSON("users.json");
+        const user = users[userId];
+
+        userPhotoElement.src = user ? user.photo : "path/to/default-photo.jpg";
+        userNameElement.innerText = user ? user.name : "Unknown User";
+        commentContentElement.innerText = comment.comment;
+
+        commentsSection.appendChild(commentElement);
+    }
+};
+
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event["id"]}`;
     const staticText = await loadJSON("config.json")
@@ -71,13 +99,13 @@ const makeEventCard = async (eventCard, event, user) => {
         eventCard.querySelector(selector).href += href;
     };
 
-    updateElementText(".see-more-button", staticText["expanded_event_button"]);
+    updateElementText(".see-less-button", staticText["reduced_event_button"]);
     updateElementText(".section-title", staticText["description"]);
     updateElementText(".participants-label", staticText["participants"]);
     updateElementText(".action-button", staticText["join_button"]["join"]);
 
     updateElementText(".main-title", event["name"]);
-    updateElementText(".subtitle", users[event["user"]]["username"]);
+    updateElementText(".subtitle", user["username"]);
     updateElementText(".description-text", event["description"]);
     updateElementText(".event-time", event["time"]);
     updateElementText(".event-place", event["place"]);
@@ -91,9 +119,6 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementText(".likes-count", compactNumbers(event["likes"]));
     likesCount.setAttribute("number-likes", event["likes"]);
 
-    updateElementText(".comments-count", compactNumbers(event.comments.length));
-
-    updateElementHref(".see-more-button", eventIdParam);
     updateElementHref(".participants-item", eventIdParam);
 
     const likeButton = eventCard.querySelector(".like-button");
@@ -106,86 +131,31 @@ const makeEventCard = async (eventCard, event, user) => {
     if (event["members"].includes(user["id"])) {
         joinButton.classList.add("joined-event");
         joinButton.textContent = staticText["join_button"]["joined"];
+    } else {
+        joinButton.textContent = staticText["join_button"]["join"];
     }
     setupJoinButton(joinButton, participantsCount, event, staticText);
 
     const tagSection = eventCard.querySelector(".tags-section");
     await createTagElements(tagSection, event["tags"]);
 
-    const article = document.createElement("article");
-    article.classList.add("card");
-    article.appendChild(eventCard);
-    return article;
+    const commentSection = eventCard.querySelector(".comments_list");
+    await createCommentElement(commentSection, event["comments"])
+
+    document.querySelector(".events-section").appendChild(eventCard);
 };
 
-const getPageKey = (defaultPage) => {
-    const URLParameters = new URLSearchParams(window.location.search);
-    return URLParameters.get("page_key") || defaultPage;
-};
+const loadEvent = async () => {
+    const event = eventsSource.find(event => event.id === eventId);
 
-const filterEventsByPage = (events, page, user) => {
-    switch (page) {
-        case "favourites":
-            return events.filter(event => user["liked-events"].includes(event["id"]));
-        case "joined":
-            return events.filter(event => event["members"].includes(user["id"]));
-        case "owned":
-            return events.filter(event => event["user"] === user["id"]);
-        default:
-            return events;
-    }
-};
-
-const loadEvents = async () => {
-    localStorage.setItem("user_id", "1");
-    const userId = localStorage.getItem("user_id");
+    const userId = localStorage.getItem("user_id") || "1";
     const users = Object.entries(await loadJSON("users.json"))
-        .map(([id, user]) => ({id, ...user}));
+        .map(([id, user]) => ({ id, ...user }));
     const user = users.find(user => user.id === userId);
 
-    const page = getPageKey("explore");
-    const templateSource = page === "owned" ? "reduced_owned_card.html" : "reduced_card.html";
+    const template = await loadTemplate("expand_card.html");
+    await makeEventCard(template, event, user);
 
-    events = filterEventsByPage(eventsSource, page, user);
-
-    if (searchTags.length > 0) {
-        events = events.filter(event =>
-            event["tags"].some(t => searchTags.includes(t.toLowerCase()))
-        );
-    }
-
-    const template = await loadTemplate(templateSource);
-    const eventsList = document.getElementById("events");
-
-    for (const event of events) {
-        const eventCard = await makeEventCard(template.cloneNode(true), event, user);
-        eventsList.appendChild(eventCard);
-    }
-};
-
-const createSearchTagElement = async (tag) => {
-    const tagTemplate = await loadTemplate("interactive_tag.html");
-    const tagElement = tagTemplate.querySelector(".tag");
-    const removeButton = tagElement.querySelector("button");
-    const tagText = document.createElement("p");
-
-    tagText.innerText = `#${tag}`;
-    tagElement.prepend(tagText);
-
-    removeButton.addEventListener("click", () => {
-        handleTagRemoval(tag, tagElement);
-    });
-
-    return tagTemplate;
-};
-
-const handleTagRemoval = async (tag, tagElement) => {
-    searchTags = searchTags.filter(t => t !== tag.toLowerCase());
-
-    document.getElementById("events").innerHTML = "";
-    await loadEvents();
-
-    tagElement.style.display = "none";
 };
 
 const setupSearchInputListener = (searchInput, searchBox, staticText) => {
@@ -233,7 +203,7 @@ const loadSideBar = async () => {
 const init = async () => {
     await initEssentials();
     await loadSideBar();
-    await loadEvents();
+    await loadEvent();
 };
 
 await init();

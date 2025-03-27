@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="../../js/xlu-include-file.js" defer></script>
+    <script type="module" src="../../js/expanded_event_page.js" defer></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/events.css">
     <link rel="stylesheet" href="../css/expanded_event_page.css">
@@ -17,22 +17,21 @@
     <link rel="stylesheet" href="../../templates/css/message_input.css">
 </head>
 <body>
-<header id="page-header" xlu-include-file="../../templates/html/header.html"></header>
+<header id="page-header"></header>
 <main>
-    <aside id="sidebar-menu" xlu-include-file="../../templates/html/events_sidebar.html"></aside>
+    <aside id="sidebar-menu"></aside>
     <div id="events-container">
         <div id="events-header">
             <div id="events-header-title">
-                <h1>Lorem Ipsum</h1>
-                <a href="create_event_page.html" id="create-event-link">Lorem Ipsum</a>
+                <h1>Explore events</h1>
+                <a href="create_event_page.html" id="create-event-link">Create Event</a>
             </div>
             <hr id="events-hr">
         </div>
         <section class="events-section">
-            <article xlu-include-file="../../templates/html/expand_card.html" class="card"></article>
         </section>
     </div>
 </main>
-<footer id="page-footer" xlu-include-file="../../templates/html/footer.html"></footer>
+<footer id="page-footer"></footer>
 </body>
 </html>

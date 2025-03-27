@@ -83,6 +83,7 @@
   "events": {
     "event-card" : {
       "expanded_event_button": "SEE MORE",
+      "reduced_event_button": "SEE LESS",
       "description": "Description",
       "participants": "participants",
       "join_button": {

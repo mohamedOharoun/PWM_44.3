@@ -8,19 +8,9 @@
     "place": "Mi Casa",
     "price": 0,
     "likes": 1000000,
-    "comments": 0,
-    "members": [
-      "1",
-      "2",
-      "13",
-      "17",
-      "21",
-      "34"
-    ],
-    "tags": [
-      "home",
-      "social"
-    ]
+    "comments": [],
+    "members": ["1", "2", "13", "17", "21", "34"],
+    "tags": ["home", "social"]
   },
   "2": {
     "user": "1",
@@ -31,17 +21,12 @@
     "place": "Central Park",
     "price": 10,
     "likes": 5,
-    "comments": 2,
-    "members": [
-      "1",
-      "13",
-      "17",
-      "21"
+    "comments": [
+      { "user": "13", "comment": "This event looks relaxing!" },
+      { "user": "17", "comment": "I'll bring some friends!" }
     ],
-    "tags": [
-      "outdoors",
-      "community"
-    ]
+    "members": ["1", "13", "17", "21"],
+    "tags": ["outdoors", "community"]
   },
   "3": {
     "user": "2",
@@ -52,16 +37,15 @@
     "place": "Downtown Club",
     "price": 20,
     "likes": 12,
-    "comments": 5,
-    "members": [
-      "50",
-      "32",
-      "21"
+    "comments": [
+      { "user": "32", "comment": "I hope the DJ is good!" },
+      { "user": "21", "comment": "Let’s party all night!" },
+      { "user": "50", "comment": "Who else is going?" },
+      { "user": "17", "comment": "This club is my favorite!" },
+      { "user": "13", "comment": "Can't wait!" }
     ],
-    "tags": [
-      "nightlife",
-      "music"
-    ]
+    "members": ["50", "32", "21"],
+    "tags": ["nightlife", "music"]
   },
   "4": {
     "user": "3",
@@ -72,17 +56,20 @@
     "place": "City Library",
     "price": 5,
     "likes": 45,
-    "comments": 10,
-    "members": [
-      "13",
-      "25",
-      "37",
-      "49"
+    "comments": [
+      { "user": "25", "comment": "A great event for book lovers!" },
+      { "user": "49", "comment": "Will there be book signings?" },
+      { "user": "37", "comment": "I love library events!" },
+      { "user": "13", "comment": "Looking forward to learning something new!" },
+      { "user": "21", "comment": "I’ll definitely be there!" },
+      { "user": "50", "comment": "A great way to spend a Saturday!" },
+      { "user": "3", "comment": "Any recommended books?" },
+      { "user": "19", "comment": "Is there a reading session?" },
+      { "user": "33", "comment": "Knowledge is power!" },
+      { "user": "9", "comment": "Books and coffee, perfect!" }
     ],
-    "tags": [
-      "education",
-      "books"
-    ]
+    "members": ["13", "25", "37", "49"],
+    "tags": ["education", "books"]
   },
   "5": {
     "user": "4",
@@ -93,127 +80,34 @@
     "place": "Beachside Cafe",
     "price": 0,
     "likes": 120,
-    "comments": 25,
-    "members": [
-      "10",
-      "20",
-      "30",
-      "40",
-      "1"
+    "comments": [
+      { "user": "30", "comment": "Food by the beach? Count me in!" },
+      { "user": "1", "comment": "Can’t wait to try the seafood!" },
+      { "user": "40", "comment": "I love this place!" },
+      { "user": "20", "comment": "Brunch with a view!" },
+      { "user": "10", "comment": "Hope they have good coffee!" },
+      { "user": "15", "comment": "Anyone up for a beach walk after?" },
+      { "user": "2", "comment": "It’s going to be a great Sunday!" },
+      { "user": "18", "comment": "Do they have vegetarian options?" },
+      { "user": "8", "comment": "Looking forward to some good vibes!" },
+      { "user": "12", "comment": "Best way to spend the weekend!" },
+      { "user": "50", "comment": "Great spot for a meetup!" },
+      { "user": "33", "comment": "See you all there!" },
+      { "user": "5", "comment": "Sun, sea, and good food!" },
+      { "user": "19", "comment": "Can't miss this!" },
+      { "user": "6", "comment": "Is there a dress code?" },
+      { "user": "22", "comment": "Will there be live music?" },
+      { "user": "35", "comment": "Sounds like fun!" },
+      { "user": "28", "comment": "Who’s coming with me?" },
+      { "user": "47", "comment": "I hope it's not too crowded!" },
+      { "user": "9", "comment": "Perfect weather for this!" },
+      { "user": "37", "comment": "Excited to meet new people!" },
+      { "user": "3", "comment": "A Sunday well spent!" },
+      { "user": "16", "comment": "Beachside cafes are the best!" },
+      { "user": "4", "comment": "I’m bringing my camera!" },
+      { "user": "7", "comment": "Let’s have fun!" }
     ],
-    "tags": [
-      "food",
-      "social"
-    ]
-  },
-  "6": {
-    "user": "5",
-    "name": "Event Name 6",
-    "author": "Host Name 6",
-    "description": "This is a sample description for event 6.",
-    "time": "Mon 25, January 19:00",
-    "place": "Rooftop Bar",
-    "price": 15,
-    "likes": 75,
-    "comments": 15,
-    "members": [
-      "5",
-      "15",
-      "25",
-      "35"
-    ],
-    "tags": [
-      "nightlife",
-      "drinks"
-    ]
-  },
-  "7": {
-    "user": "6",
-    "name": "Event Name 7",
-    "author": "Host Name 7",
-    "description": "This is a sample description for event 7.",
-    "time": "Tue 26, January 21:00",
-    "place": "Concert Hall",
-    "price": 30,
-    "likes": 300,
-    "comments": 50,
-    "members": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "tags": [
-      "music",
-      "entertainment",
-      "food"
-    ]
-  },
-  "8": {
-    "user": "7",
-    "name": "Event Name 8",
-    "author": "Host Name 8",
-    "description": "This is a sample description for event 8.",
-    "time": "Wed 27, January 17:00",
-    "place": "Community Center",
-    "price": 0,
-    "likes": 60,
-    "comments": 8,
-    "members": [
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "tags": [
-      "community",
-      "volunteering"
-    ]
-  },
-  "9": {
-    "user": "8",
-    "name": "Event Name 9",
-    "author": "Host Name 9",
-    "description": "This is a sample description for event 9.",
-    "time": "Thu 28, January 14:00",
-    "place": "Art Gallery",
-    "price": 10,
-    "likes": 90,
-    "comments": 20,
-    "members": [
-      "11",
-      "12",
-      "13",
-      "14",
-      "15"
-    ],
-    "tags": [
-      "art",
-      "culture"
-    ]
-  },
-  "10": {
-    "user": "9",
-    "name": "Event Name 10",
-    "author": "Host Name 10",
-    "description": "This is a sample description for event 10.",
-    "time": "Fri 29, January 18:00",
-    "place": "Sports Arena",
-    "price": 25,
-    "likes": 200,
-    "comments": 40,
-    "members": [
-      "16",
-      "17",
-      "18",
-      "19",
-      "20"
-    ],
-    "tags": [
-      "sports",
-      "competition"
-    ]
+    "members": ["10", "20", "30", "40", "1"],
+    "tags": ["food", "social"]
   }
 }
