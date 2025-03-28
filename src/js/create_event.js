@@ -180,19 +180,31 @@ const setupTagsInput = (form) => {
 };
 
 const handleFormEvents = (form) => {
-    form.querySelector("#submit_button").addEventListener("click", (event) => {
+    form.querySelector("#submit_button").addEventListener("click", async (event) => {
         if (!validateEventForm(document.querySelector("#event-form-container form"))) {
             return;
         }
 
-        const eventData = createEventObject(document.querySelector("#event-form-container form"));
+        const eventData = await createEventObject(document.querySelector("#event-form-container form"));
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventId = urlParams.get('event_id');
 
-        // Store in localStorage similar to groups
-        console.log("eventData", eventData);
-        const createdEvents = JSON.parse(localStorage.getItem("createdEvents")) || {};
-        const eventId = Object.keys(createdEvents).length + 1;
-        createdEvents[eventId] = eventData;
-        localStorage.setItem("eventsFromUse", JSON.stringify(createdEvents));
+        const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+
+        if (eventId) {
+            // Updating existing event
+            storedEvents[eventId] = {
+                ...storedEvents[eventId],
+                ...eventData
+            };
+        } else {
+            // Creating new event
+            const newEventId = Object.keys(storedEvents).length + 1;
+            storedEvents[newEventId] = eventData;
+        }
+
+        localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
+        window.location.href = 'events.html?page_key=owned';
     });
 
     form.querySelector("form").addEventListener("submit", (event) => {
@@ -206,6 +218,43 @@ const handleFormEvents = (form) => {
     });
 };
 
+const loadEventData = async (form) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventId = urlParams.get('event_id');
+
+    if (!eventId) {
+        addCreatorUser();
+        return;
+    }
+
+    // Load events data
+    const events = await loadJSON("events.json");
+    const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+    const event = {
+        ...events[eventId],
+        ...(storedEvents[eventId] || {})
+    };
+
+    // Fill form fields
+    document.querySelector("#event-name").value = event.name;
+    document.querySelector("#event-date").value = new Date(event.time).toISOString().slice(0, 16);
+    document.querySelector("#event-place").value = event.place;
+    document.querySelector("#event-price").value = event.price;
+    document.querySelector("#event-description").value = event.description;
+
+    // Add existing tags
+    for (const tag of event.tags) {
+        eventTags.push(tag.toLowerCase());
+        const tagTemplate = await createTagElements(tag);
+        document.querySelector("#tags-section").appendChild(tagTemplate);
+    }
+
+    // Add existing members
+    for (const memberId of event.members) {
+        addUser(memberId, userTemplate.cloneNode(true), users);
+    }
+};
+
 const init = async () => {
     await initEssentials();
     const template = await loadTemplate("create_event_form.html");
@@ -215,6 +264,7 @@ const init = async () => {
     manageFormEvents(template);
     handleFormEvents(template);
     document.getElementById("event-form").appendChild(template);
+    await loadEventData(template);
 };
 
 await init();

@@ -1,4 +1,5 @@
 import {getLoggedUserID} from "./utils.js";
+import {loadJSON} from "./common.js";
 
 export const validateEventForm = (form) => {
     let isValid = true;
@@ -63,10 +64,19 @@ export const validateEventForm = (form) => {
         priceInput.setCustomValidity("");
     }
 
+    // Validate required place
+    const placeInput = form.querySelector("#event-place");
+    if (!placeInput.value.trim()) {
+        placeInput.setCustomValidity("Event location is required");
+        isValid = false;
+    } else {
+        placeInput.setCustomValidity("");
+    }
+
     return isValid;
 };
 
-export const createEventObject = (form) => {
+export const createEventObject = async (form) => {
     const members = Array.from(form.querySelectorAll("#members-list-section article"))
         .map(user => user.id.replace("user", ""));
 
@@ -75,16 +85,44 @@ export const createEventObject = (form) => {
         .map(tag => tag.replace("#", ""))
         .map(tag => tag.trim());
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventId = urlParams.get('event_id');
+
+    // If editing, get existing likes and comments
+    let likes = 0;
+    let comments = [];
+
+    if (eventId) {
+        const modifiedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+        const fileEvents = await loadJSON("events.json");
+
+        const fileEvent = fileEvents[eventId] || {};
+
+        const modifiedEvent = modifiedEvents[eventId] || {};
+
+        const existingEvent = {
+            ...fileEvent,   // Base event data
+            ...modifiedEvent,  // Override with modified properties
+            likes: modifiedEvent.likes ?? fileEvent.likes ?? 0,
+            comments: modifiedEvent.comments ?? fileEvent.comments ?? [],
+        };
+        if (existingEvent) {
+            likes = existingEvent.likes || 0;
+            comments = existingEvent.comments || [];
+        }
+    }
+
     return {
         user: getLoggedUserID(),
         name: form.querySelector("#event-name").value,
-        date: form.querySelector("#event-date").value,
+        time: form.querySelector("#event-date").value,
+        place: form.querySelector("#event-place").value,
         price: parseFloat(form.querySelector("#event-price").value),
         isPrivate: form.querySelector("#is-private").checked,
         description: form.querySelector("#event-description").value,
         members: members,
         tags: eventTags,
-        likes: 0,
-        comments: []
+        likes: likes,
+        comments: comments
     };
 };

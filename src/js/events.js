@@ -201,6 +201,13 @@ const makeEventCard = async (eventCard, event, user) => {
         if (deleteButton) {
             deleteButton.addEventListener("click", () => handleEventDeletion(event, article));
         }
+
+        const editButton = article.querySelector(".edit-button");
+        if (editButton) {
+            editButton.addEventListener("click", () => {
+                window.location.href = `create_event_page.html?event_id=${event.id}`;
+            });
+        }
     }
     return article;
 };

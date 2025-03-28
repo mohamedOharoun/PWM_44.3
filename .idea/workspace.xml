@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add deletion of events.">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add static elements for place input.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/create_event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create_event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/create_event_form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create_event_form_validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/html/create_event_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/create_event_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +180,7 @@
       <workItem from="1743005820282" duration="1549000" />
       <workItem from="1743086260845" duration="12066000" />
       <workItem from="1743120689803" duration="35000" />
-      <workItem from="1743166212507" duration="3818000" />
+      <workItem from="1743166212507" duration="8849000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -340,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743173050933</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add static elements for place input.">
+      <option name="closed" value="true" />
+      <created>1743173320811</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743173320811</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +389,7 @@
     <MESSAGE value="Add create event form validation and store it in localStorage" />
     <MESSAGE value="Add storage of modifications in events (likes and number of members)" />
     <MESSAGE value="Add deletion of events." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add deletion of events." />
+    <MESSAGE value="Add static elements for place input." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add static elements for place input." />
   </component>
 </project>
