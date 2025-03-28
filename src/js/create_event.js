@@ -9,16 +9,17 @@ let dropdownClick = false;
 let eventTags = [];
 
 const loadStatic = async (form) => {
-    form.querySelector("#create-event-title").textContent = staticText["create-event"]["title"];
-    form.querySelector("#submit_button").textContent = staticText["create-event"]["submit-button"];
-    form.querySelector("#name-event").textContent = staticText["create-event"]["labels"]["name"];
-    form.querySelector("#date-event").textContent = staticText["create-event"]["labels"]["date"];
-    form.querySelector("#price-event").textContent = staticText["create-event"]["labels"]["cost"];
-    form.querySelector("#privacy-event").textContent = staticText["create-event"]["labels"]["public"];
-    form.querySelector("#members-event").textContent = staticText["create-event"]["labels"]["members"];
-    form.querySelector("#event-members-input").placeholder = staticText["create-event"]["placeholders"]["members"];
-    form.querySelector("#description-event").textContent = staticText["create-event"]["labels"]["description"];
-    form.querySelector("#tags-event").textContent = staticText["create-event"]["labels"]["tags"];
+    const formMode = new URLSearchParams(window.location.search).get("event_id") === null ? "create" : "edit";
+    form.querySelector("#create-event-title").textContent = staticText["event-form"][formMode]["title"];
+    form.querySelector("#submit_button").textContent = staticText["event-form"][formMode]["submit-button"];
+    form.querySelector("#name-event").textContent = staticText["event-form"]["labels"]["name"];
+    form.querySelector("#date-event").textContent = staticText["event-form"]["labels"]["date"];
+    form.querySelector("#price-event").textContent = staticText["event-form"]["labels"]["cost"];
+    form.querySelector("#privacy-event").textContent = staticText["event-form"]["labels"]["public"];
+    form.querySelector("#members-event").textContent = staticText["event-form"]["labels"]["members"];
+    form.querySelector("#event-members-input").placeholder = staticText["event-form"]["placeholders"]["members"];
+    form.querySelector("#description-event").textContent = staticText["event-form"]["labels"]["description"];
+    form.querySelector("#tags-event").textContent = staticText["event-form"]["labels"]["tags"];
 };
 
 const manageFormEvents = (form) => {
@@ -32,9 +33,9 @@ const manageFormEvents = (form) => {
 
     form.querySelector("#is-private").addEventListener("change", (e) => {
         if(e.target.checked) {
-            document.getElementById("privacy-event").textContent = staticText["create-event"]["labels"]["private"];
+            document.getElementById("privacy-event").textContent = staticText["event-form"]["labels"]["private"];
         } else {
-            document.getElementById("privacy-event").textContent = staticText["create-event"]["labels"]["public"];
+            document.getElementById("privacy-event").textContent = staticText["event-form"]["labels"]["public"];
         }
     });
 };

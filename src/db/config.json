@@ -203,9 +203,15 @@
       }
     }
   },
-  "create-event": {
-    "title": "New Event",
-    "submit-button": "Create Event",
+  "event-form": {
+    "create": {
+      "title": "New Event",
+      "submit-button": "Create Event"
+    },
+    "edit": {
+      "title": "Modify Event",
+      "submit-button": "Edit Event"
+    },
     "labels": {
       "name": "Name",
       "date": "Date & Time",
