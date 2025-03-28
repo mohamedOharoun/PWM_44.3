@@ -6,6 +6,10 @@ const eventsSource = Object.entries(await loadJSON("events.json"))
 const eventId = new URLSearchParams(window.location.search).get("event_id");
 const commentTemplate = await loadTemplate("comment.html");
 
+const eventConfig = await loadJSON("config.json")
+    .then(data => data["events"]["event-card"]);
+
+
 const compactNumbers = (number) => {
     if (number <= 999) return number;
     if (number <= 999_999) return Math.floor(number / 1000) + "K";
@@ -88,6 +92,7 @@ const createInputCommentElement = async (inputSection, commentsSection, user) =>
     const commentInputTemplate = await loadTemplate("message_input.html");
 
     inputSection.appendChild(commentInputTemplate);
+    inputSection.querySelector("#message-input").placeholder = eventConfig["message-input-placeholder"];
     const messageInput = inputSection.querySelector("#message-input");
 
     messageInput.addEventListener("keydown", async (e) => {
@@ -115,8 +120,6 @@ const createInputCommentElement = async (inputSection, commentsSection, user) =>
 
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event["id"]}`;
-    const staticText = await loadJSON("config.json")
-        .then(data => data["events"]["event-card"]);
 
     const updateElementText = (selector, text) => {
         eventCard.querySelector(selector).textContent = text;
@@ -126,10 +129,10 @@ const makeEventCard = async (eventCard, event, user) => {
         eventCard.querySelector(selector).href += href;
     };
 
-    updateElementText(".see-less-button", staticText["reduced_event_button"]);
-    updateElementText(".section-title", staticText["description"]);
-    updateElementText(".participants-label", staticText["participants"]);
-    updateElementText(".action-button", staticText["join_button"]["join"]);
+    updateElementText(".see-less-button", eventConfig["reduced_event_button"]);
+    updateElementText(".section-title", eventConfig["description"]);
+    updateElementText(".participants-label", eventConfig["participants"]);
+    updateElementText(".action-button", eventConfig["join_button"]["join"]);
 
     updateElementText(".main-title", event["name"]);
     updateElementText(".subtitle", user["username"]);
@@ -157,11 +160,11 @@ const makeEventCard = async (eventCard, event, user) => {
     const joinButton = eventCard.querySelector(".action-button");
     if (event["members"].includes(user["id"])) {
         joinButton.classList.add("joined-event");
-        joinButton.textContent = staticText["join_button"]["joined"];
+        joinButton.textContent = eventConfig["join_button"]["joined"];
     } else {
-        joinButton.textContent = staticText["join_button"]["join"];
+        joinButton.textContent = eventConfig["join_button"]["join"];
     }
-    setupJoinButton(joinButton, participantsCount, event, staticText);
+    setupJoinButton(joinButton, participantsCount, event, eventConfig);
 
     const tagSection = eventCard.querySelector(".tags-section");
     await createTagElements(tagSection, event["tags"]);
