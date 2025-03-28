@@ -325,8 +325,16 @@ const loadSideBar = async () => {
     document.getElementById("sidebar-menu").appendChild(template);
 };
 
+const loadStaticText = async () => {
+    const staticText = await loadJSON("config.json")
+        .then(data => data["events"]);
+    document.getElementById("events-title").textContent = staticText["title"][getPageKey("explore")];
+    document.getElementById("create-event-link").textContent = staticText["create-button"];
+}
+
 const init = async () => {
     await initEssentials();
+    await loadStaticText();
     await loadSideBar();
     await loadEvents();
 };

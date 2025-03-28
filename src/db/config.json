@@ -97,7 +97,14 @@
       "joined": "Joined",
       "owned": "My Events",
       "search-placeholder": "Search by tags"
-    }
+    },
+    "title": {
+      "explore": "Explore Events",
+      "favourites": "Favourite Events",
+      "joined": "Joined Events",
+      "owned": "My Events"
+    },
+    "create-button": "Create Event"
   },
   "social": {
     "nav": {
