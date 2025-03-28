@@ -4,6 +4,7 @@ const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([eventId, event]) => ({ id: eventId, ...event }));
 
 const eventId = new URLSearchParams(window.location.search).get("event_id");
+const commentTemplate = await loadTemplate("comment.html");
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -57,8 +58,6 @@ const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
 };
 
 const createCommentElement = async (commentsSection, eventComments) => {
-    const commentTemplate = await loadTemplate("comment.html");
-
     if (eventComments.length === 0) {
         const noCommentsMessage = document.createElement("p");
         noCommentsMessage.textContent = "No comments yet.";
@@ -85,10 +84,34 @@ const createCommentElement = async (commentsSection, eventComments) => {
     }
 };
 
-const createInputCommentElement = async (inputSection, eventsComments, user, events) => {
-    const commentsSection = await loadTemplate("message_input.html");
-    inputSection.appendChild(commentsSection);
-}
+const createInputCommentElement = async (inputSection, commentsSection, user) => {
+    const commentInputTemplate = await loadTemplate("message_input.html");
+
+    inputSection.appendChild(commentInputTemplate);
+    const messageInput = inputSection.querySelector("#message-input");
+
+    messageInput.addEventListener("keydown", async (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+
+            const commentText = messageInput.value.trim();
+            if (commentText) {
+                const newComment = { user: user.id, comment: commentText };
+                const commentElement = commentTemplate.cloneNode(true);
+                const userPhotoElement = commentElement.querySelector(".user-card-photo img");
+                const commentContentElement = commentElement.querySelector(".comment_content p");
+                const userNameElement = commentElement.querySelector(".user-name");
+
+                userPhotoElement.src = user.photo;
+                userNameElement.innerText = user.name;
+                commentContentElement.innerText = newComment.comment;
+
+                commentsSection.appendChild(commentElement);
+                messageInput.value = "";
+            }
+        }
+    });
+};
 
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event["id"]}`;
@@ -146,7 +169,7 @@ const makeEventCard = async (eventCard, event, user) => {
     const commentSection = eventCard.querySelector(".comments_list");
     await createCommentElement(commentSection, event["comments"])
     const inputSection = eventCard.querySelector(".message-input-container");
-    await createInputCommentElement(inputSection, event.comments, user, event);
+    await createInputCommentElement(inputSection, commentSection, user);
 
     document.querySelector(".events-section").appendChild(eventCard);
 };
