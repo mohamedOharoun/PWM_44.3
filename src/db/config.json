@@ -209,6 +209,7 @@
     "labels": {
       "name": "Name",
       "date": "Date & Time",
+      "place": "Location",
       "cost": "Price",
       "public": "Public",
       "private": "Private",
