@@ -4,7 +4,15 @@ const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
 const users = await loadJSON("users.json");
 
-let events = eventsSource;
+const getModifiedEvents = () => {
+    const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+    return eventsSource.map(event => ({
+        ...event,
+        ...(storedEvents[event.id] || {}),
+    }));
+};
+
+let events = getModifiedEvents();
 let searchTags = [];
 
 const parseDateTimeLocal = (datetimeLocal) => {
@@ -49,32 +57,74 @@ const createTagElements = async (tagSection, eventTags) => {
     });
 };
 
+const getUserData = (userId, users) => {
+    const storedUserData = JSON.parse(localStorage.getItem("userData")) || {};
+    const baseUser = users.find(user => user.id === userId);
+    return {
+        ...baseUser,
+        ...storedUserData
+    };
+};
+
 const setupLikeButton = (likeButton, likesCount, event) => {
     likeButton.addEventListener("click", () => {
         let count = parseInt(likesCount.getAttribute("number-likes"));
-        likeButton.classList.contains("liked-event") ? count-- : count++;
+        const userId = localStorage.getItem("user_id");
+        const storedUserData = JSON.parse(localStorage.getItem("userData")) || {};
+
+        if (likeButton.classList.contains("liked-event")) {
+            count--;
+            storedUserData["liked-events"] = (storedUserData["liked-events"] || [])
+                .filter(id => id !== event.id);
+        } else {
+            count++;
+            storedUserData["liked-events"] = [
+                ...(storedUserData["liked-events"] || []),
+                event.id
+            ];
+        }
+
+        localStorage.setItem("userData", JSON.stringify(storedUserData));
 
         likesCount.setAttribute("number-likes", count);
         likesCount.textContent = compactNumbers(count);
         likeButton.classList.toggle("liked-event");
+
+        const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+        storedEvents[event.id] = {
+            ...storedEvents[event.id],
+            likes: count
+        };
+        localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
     });
 };
 
 const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
     joinButton.addEventListener("click", () => {
         let count = parseInt(participantsCount.getAttribute("number-participants"));
+        let members = [...event.members];
 
         if (joinButton.classList.contains("joined-event")) {
             count--;
+            members = members.filter(id => id !== localStorage.getItem("user_id"));
             joinButton.textContent = staticText["join_button"]["join"];
         } else {
             count++;
+            members.push(localStorage.getItem("user_id"));
             joinButton.textContent = staticText["join_button"]["joined"];
         }
 
         participantsCount.setAttribute("number-participants", count);
         participantsCount.textContent = compactNumbers(count);
         joinButton.classList.toggle("joined-event");
+
+        // Store modified event data
+        const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+        storedEvents[event.id] = {
+            ...storedEvents[event.id],
+            members: members
+        };
+        localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
     });
 };
 
@@ -161,12 +211,13 @@ const loadEvents = async () => {
     const userId = localStorage.getItem("user_id");
     const users = Object.entries(await loadJSON("users.json"))
         .map(([id, user]) => ({id, ...user}));
-    const user = users.find(user => user.id === userId);
+    const user = getUserData(userId, users);
 
     const page = getPageKey("explore");
     const templateSource = page === "owned" ? "reduced_owned_card.html" : "reduced_card.html";
 
-    events = filterEventsByPage(eventsSource, page, user);
+    events = getModifiedEvents();
+    events = filterEventsByPage(events, page, user);
 
     if (searchTags.length > 0) {
         events = events.filter(event =>
