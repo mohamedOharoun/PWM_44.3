@@ -6,10 +6,13 @@ const users = await loadJSON("users.json");
 
 const getModifiedEvents = () => {
     const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
-    return eventsSource.map(event => ({
-        ...event,
-        ...(storedEvents[event.id] || {}),
-    }));
+    const deletedEvents = JSON.parse(localStorage.getItem("deletedEvents")) || [];
+    return eventsSource
+        .filter(event => !deletedEvents.includes(event.id))
+        .map(event => ({
+            ...event,
+            ...(storedEvents[event.id] || {}),
+        }));
 };
 
 let events = getModifiedEvents();
@@ -128,6 +131,13 @@ const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
     });
 };
 
+const handleEventDeletion = async (event, eventCard) => {
+    const deletedEvents = JSON.parse(localStorage.getItem("deletedEvents")) || [];
+    deletedEvents.push(event.id);
+    localStorage.setItem("deletedEvents", JSON.stringify(deletedEvents));
+    eventCard.remove();
+};
+
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event["id"]}`;
     const staticText = await loadJSON("config.json")
@@ -185,6 +195,13 @@ const makeEventCard = async (eventCard, event, user) => {
     const article = document.createElement("article");
     article.classList.add("card");
     article.appendChild(eventCard);
+
+    if (event.user === user.id) {
+        const deleteButton = article.querySelector(".delete-button");
+        if (deleteButton) {
+            deleteButton.addEventListener("click", () => handleEventDeletion(event, article));
+        }
+    }
     return article;
 };
 

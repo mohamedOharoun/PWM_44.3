@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add create event form validation and store it in localStorage">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add storage of modifications in events (likes and number of members)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_owned_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/reduced_owned_card.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +178,7 @@
       <workItem from="1743005820282" duration="1549000" />
       <workItem from="1743086260845" duration="12066000" />
       <workItem from="1743120689803" duration="35000" />
-      <workItem from="1743166212507" duration="864000" />
+      <workItem from="1743166212507" duration="3543000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -323,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743094778173</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add storage of modifications in events (likes and number of members)">
+      <option name="closed" value="true" />
+      <created>1743168074652</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1743168074652</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,6 +369,7 @@
     <MESSAGE value="Fix CSS bug, auto submit and positioning for small screen size." />
     <MESSAGE value="Fix date-time format and add new parsing method for that" />
     <MESSAGE value="Add create event form validation and store it in localStorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add create event form validation and store it in localStorage" />
+    <MESSAGE value="Add storage of modifications in events (likes and number of members)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add storage of modifications in events (likes and number of members)" />
   </component>
 </project>
