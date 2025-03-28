@@ -16,6 +16,21 @@ main {
     border-left: 5px solid #23CFA7;
 }
 
+@media screen and (max-width: 700px) {
+    #social-container {
+        width: 100%;
+        border: none;
+    }
+
+    .social-card {
+        padding: 1rem 0.5rem;
+    }
+
+    #social-header {
+        padding: 0.5rem;
+    }
+}
+
 #social-title-container h1 {
     font-size: 2rem;
 }

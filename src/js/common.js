@@ -42,10 +42,20 @@ const fillHeaderUtilities = () => {
 
 const fillHeaderNav = () => {
     let titles = config["header"]["nav"]["titles"];
-    let i = 0;
-    document.querySelectorAll(".page-header-link").forEach(a => {
-        a.text = titles[i++];
-    })
+    let headerNavigationChildren = document.getElementById("header-navigation").children;
+    let headerNavigationDropdownChildren = document.getElementById("header-navigation-dropdown").children;
+    for (let i = 0; i < headerNavigationChildren.length; i++) {
+        headerNavigationChildren[i].querySelector("a").textContent = titles[i];
+        headerNavigationDropdownChildren[i].querySelector("a").textContent = titles[i];
+    }
+    let dropdownButton = document.getElementById("toggle-dropdown-menu");
+    let displayMenu = false;
+    let dropdownMenu = document.getElementById("header-dropdown-navigation");
+    dropdownButton.addEventListener("click", () => {
+        displayMenu = !displayMenu;
+        if (displayMenu) dropdownMenu.style.display = "flex";
+        else dropdownMenu.style.display = "none";
+    });
 }
 
 export const getPageKey = (base) => {

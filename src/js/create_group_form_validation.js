@@ -2,8 +2,9 @@ import {getLoggedUserID, getURLParameter} from "./utils.js";
 
 export const addListenerToSubmitButton = (submitButton) => {
     submitButton.addEventListener("click", (event) => {
-        if (document.getElementById("members-list-section").innerHTML === "") {
+        if (document.getElementById("members-list-section").children.length > 2) {
             document.getElementById("group-members-input").setCustomValidity("At least one member should be added.");
+            return;
         } else {
             document.getElementById("group-members-input").setCustomValidity("");
         }
@@ -12,6 +13,7 @@ export const addListenerToSubmitButton = (submitButton) => {
 
         if (checkGroupNameExistence(groupName)) {
             document.getElementById("group-name-input").setCustomValidity("This group name already exists!");
+            return;
         } else {
             document.getElementById("group-name-input").setCustomValidity("");
         }
