@@ -92,3 +92,22 @@ input[type="password"] {
     height: 100px;
 }
 
+#error-message-container {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: -7px;
+    color: red;
+    font-weight: bold;
+}
+
+@media (width <= 700px) {
+    #sign-in-container h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    #sign-in-container img {
+        width: 80px;
+        height: 80px;
+    }
+}
