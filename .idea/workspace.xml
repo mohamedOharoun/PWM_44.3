@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix refactor code to improve legibility.">
+      <change afterPath="$PROJECT_DIR$/assets/images/credit_card.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/high_five.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/search.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/feature_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/feature_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/html/feature_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/feature_info.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +49,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;6a1d2200-9dd6-48f0-b7d1-054ed64a3167&quot;
+    &quot;accountId&quot;: &quot;9b4ab927-d64b-43f3-b14e-c1bb20dae89e&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -70,9 +80,9 @@
     &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;developer-Mohamed&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop-ayman&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Subjects/PWM_44.3/src/templates/html&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eymen/WebstormProjects/PWM_44.3/assets/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -85,11 +95,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eymen\WebstormProjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\html" />
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
       <recent name="E:\Subjects\PWM_44.3\assets\images" />
       <recent name="E:\Subjects\PWM_44.3\src\templates\css" />
-      <recent name="D:\Subjects\PWM_44.3\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Subjects\PWM_44.3\src\pages\html" />
@@ -102,7 +112,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
       </set>
     </attachedChunks>
   </component>
@@ -173,6 +183,10 @@
       <workItem from="1742842954472" duration="55000" />
       <workItem from="1742913944227" duration="664000" />
       <workItem from="1742914684931" duration="2048000" />
+      <workItem from="1743156492132" duration="8113000" />
+      <workItem from="1743181549644" duration="5632000" />
+      <workItem from="1743205053871" duration="4330000" />
+      <workItem from="1743243241985" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
