@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix static text for event page.">
-      <change afterPath="$PROJECT_DIR$/src/js/sign_in_validation.js" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add sign_in responsiveness">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/sign_in.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sign_in.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/sign_in.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/sign_in.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/html/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/sign_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/sign_in_circle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/sign_in_circle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/sign_in_circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/sign_in_circle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/events.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +364,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743186442289</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add sing_in functionality and form validation.">
+      <option name="closed" value="true" />
+      <created>1743215226630</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1743215226630</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add sign_in responsiveness">
+      <option name="closed" value="true" />
+      <created>1743215253923</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1743215253923</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +398,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build: header template created." />
     <MESSAGE value="build: footer template created." />
     <MESSAGE value="merge: develop-Laura merged into main" />
     <MESSAGE value="Add input for price" />
@@ -411,6 +421,8 @@
     <MESSAGE value="Add static elements for place input." />
     <MESSAGE value="Fix static text for event form." />
     <MESSAGE value="Fix static text for event page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix static text for event page." />
+    <MESSAGE value="Add sing_in functionality and form validation." />
+    <MESSAGE value="Add sign_in responsiveness" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sign_in responsiveness" />
   </component>
 </project>

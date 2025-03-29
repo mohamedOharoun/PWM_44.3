@@ -1,4 +1,5 @@
 import {loadJSON, loadTemplate, initEssentials} from "./common.js";
+import {getLoggedUserID} from "./utils.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
@@ -231,8 +232,7 @@ const filterEventsByPage = (events, page, user) => {
 };
 
 const loadEvents = async () => {
-    localStorage.setItem("user_id", "1");
-    const userId = localStorage.getItem("user_id");
+    const userId = getLoggedUserID();
     const users = Object.entries(await loadJSON("users.json"))
         .map(([id, user]) => ({id, ...user}));
     const user = getUserData(userId, users);
