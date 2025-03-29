@@ -113,6 +113,57 @@ const checkUserAvailability = (inputElement, key) => {
     });
 };
 
+const addListenerToBirthDateInput = (birthDateInput) => {
+    birthDateInput.addEventListener("input", () => {
+        const birthDate = new Date(birthDateInput.value);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        if (age < 18) {
+            birthDateInput.setCustomValidity("You must be at least 18 years old to register.");
+        } else {
+            birthDateInput.setCustomValidity("");
+        }
+        birthDateInput.reportValidity();
+    });
+};
+
+const validateTermsAgreement = () => {
+    const termsCheckboxes = document.querySelectorAll(".terms");
+    return Array.from(termsCheckboxes).every(checkbox => checkbox.checked);
+};
+
+const checkFormValidity = () => {
+    const inputs = document.querySelectorAll("input");
+    let allValid = true;
+    let emptyFields = false;
+
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            emptyFields = true;
+        }
+        if (!input.checkValidity()) {
+            allValid = false;
+        }
+    });
+
+    if (emptyFields) {
+        alert("Please fill in the fields.");
+        return false;
+    }
+
+    if (!validateTermsAgreement()) {
+        alert("You must accept all terms and conditions to proceed.");
+        return false;
+    }
+
+    return allValid;
+};
+
 const fillSignUp = (page) => {
     let firstTitle = document.getElementById("first-title");
     let secondTitle = document.getElementById("second-title");
@@ -152,6 +203,7 @@ const fillSignUp = (page) => {
                 usernameInput.placeholder = signup["second"]["username-placeholder"];
                 checkUserAvailability(usernameInput, "name");
                 birthDateInput.placeholder = signup["second"]["birth-date-placeholder"];
+                addListenerToBirthDateInput(birthDateInput);
             } else if (page === "third") {
                 photoText.textContent = signup["third"]["photo-text"];
             } else if (page === "fourth") {
@@ -172,7 +224,12 @@ const fillSignUp = (page) => {
             nextStepButton.textContent = signup["sign-up-lower-info"]["next-step-button"];
             nextStepButton.addEventListener("click", (event) => {
                 event.preventDefault();
-                navigateStep("next", page);
+
+                if (checkFormValidity()) {
+                    navigateStep("next", page);
+                } else {
+                    alert("Please correct errors before proceeding.");
+                }
             });
 
             let firstPart = signup["sign-up-lower-info"]["sign-in-info"];
