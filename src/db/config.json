@@ -23,7 +23,8 @@
       "forgot-password": "I forgot my password",
       "register": "Sign up"
     },
-    "button-text": "LOG IN"
+    "button-text": "LOG IN",
+    "error-message": "INCORRECT CREDENTIALS"
   },
   "reset-password": {
     "title": "Reset password",

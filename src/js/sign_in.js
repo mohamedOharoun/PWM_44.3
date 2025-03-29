@@ -1,4 +1,5 @@
 import {initEssentials, loadTemplate} from "./common.js";
+import {applyValidations} from "./sign_in_validation.js";
 
 const fillLogin = () => {
     let logoImage = document.getElementById("logo-image");
@@ -38,3 +39,4 @@ const init = async () => {
 }
 
 await init();
+applyValidations();
