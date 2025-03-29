@@ -42,3 +42,15 @@
     width: 9.5rem;
     height: 9.5rem;
 }
+
+#password-strength {
+    height: 5px;
+    border-radius: 3px;
+    transition: width 0.3s ease-in-out;
+}
+
+#confirm-strength {
+    height: 100%;
+    width: 0;
+    background-color: red;
+}

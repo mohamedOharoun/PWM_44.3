@@ -1,13 +1,13 @@
 import {loadTemplate, getPageKey, initEssentials, loadJSON} from "./common.js";
-import { buildLinkURL } from "./utils.js";
+import {buildLinkURL} from "./utils.js";
 import {loadStepCirclesAndFill} from "./stepper.js";
 
 const navigateStep = (direction, page) => {
     const pageOrder = {
-        "first": { "next": "second", "prev": null },
-        "second": { "next": "third", "prev": "first" },
-        "third": { "next": "fourth", "prev": "second" },
-        "fourth": { "next": "home_page", "prev": "third" }
+        "first": {"next": "second", "prev": null},
+        "second": {"next": "third", "prev": "first"},
+        "third": {"next": "fourth", "prev": "second"},
+        "fourth": {"next": "home_page", "prev": "third"}
     };
 
     let targetPageKey = pageOrder[page]?.[direction];
@@ -23,35 +23,66 @@ const navigateStep = (direction, page) => {
     }
 };
 
+const passwordCriteria = {
+    length: {regex: /.{8,}/, message: "At least 8 characters long"},
+    uppercase: {regex: /[A-Z]/, message: "At least one uppercase letter"},
+    number: {regex: /\d/, message: "At least one number"},
+    specialChar: {regex: /[@$!%*?&]/, message: "At least one special character (@$!%*?&)"}
+};
+
+const evaluatePasswordStrength = (password) => {
+    return Object.values(passwordCriteria).reduce((strength, criteria) =>
+        criteria.regex.test(password) ? strength + 25 : strength, 0);
+};
+
+const updateStrengthBar = (barElement, strength) => {
+    barElement.style.width = `${strength}%`;
+    barElement.style.backgroundColor = strength <= 25 ? "red" :
+        strength <= 50 ? "orange" :
+            strength <= 75 ? "yellow" : "green";
+};
+
+const validatePassword = (passwordInput) => {
+    let unmetCriteria = Object.values(passwordCriteria)
+        .filter(criteria => !criteria.regex.test(passwordInput.value))
+        .map(criteria => criteria.message);
+
+    passwordInput.setCustomValidity(unmetCriteria.length > 0
+        ? "Password must contain:\n" + unmetCriteria.join("\n")
+        : "");
+    passwordInput.reportValidity();
+};
+
 const addListenerToPasswordInput = (passwordInput) => {
-    let passwordCriteria = {
-        length: { regex: /.{8,}/, message: "At least 8 characters long" },
-        uppercase: { regex: /[A-Z]/, message: "At least one uppercase letter" },
-        number: { regex: /\d/, message: "At least one number" },
-        specialChar: { regex: /[@$!%*?&]/, message: "At least one special character (@$!%*?&)" }
-    };
+    const passwordStrengthBar = document.getElementById("password-strength");
 
     passwordInput.addEventListener("input", () => {
-        let unmetCriteria = Object.values(passwordCriteria)
-            .filter(criteria => !criteria.regex.test(passwordInput.value))
-            .map(criteria => criteria.message);
-
-        if (unmetCriteria.length > 0) {
-            passwordInput.setCustomValidity("Password must contain:\n" + unmetCriteria.join("\n"));
-        } else {
-            passwordInput.setCustomValidity("");
-        }
-
-        passwordInput.reportValidity();
+        validatePassword(passwordInput);
+        const strength = evaluatePasswordStrength(passwordInput.value);
+        updateStrengthBar(passwordStrengthBar, strength);
     });
-
 };
 
 const addListenerToPasswordConfirmationInput = (repeatPasswordInput) => {
     let passwordInput = document.getElementById("password");
-    repeatPasswordInput.addEventListener("input", (evt) => {
-        if (passwordInput.value !== repeatPasswordInput.value) repeatPasswordInput.setCustomValidity("Passwords does not match!");
-        else repeatPasswordInput.setCustomValidity("");
+    const confirmStrengthBar = document.getElementById("confirm-strength");
+
+    repeatPasswordInput.addEventListener("input", () => {
+        const password = passwordInput.value;
+        const repeatPassword = repeatPasswordInput.value;
+
+        if (repeatPassword.length === 0) {
+            updateStrengthBar(confirmStrengthBar, 0);
+            repeatPasswordInput.setCustomValidity("");
+            return;
+        }
+
+        const matchStrength = password.startsWith(repeatPassword)
+            ? (repeatPassword.length / password.length) * 100
+            : 0;
+
+        updateStrengthBar(confirmStrengthBar, matchStrength);
+        repeatPasswordInput.setCustomValidity(password !== repeatPassword ? "Passwords do not match!" : "");
         repeatPasswordInput.reportValidity();
     });
 };
