@@ -54,3 +54,7 @@
     width: 0;
     background-color: red;
 }
+
+label {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+}

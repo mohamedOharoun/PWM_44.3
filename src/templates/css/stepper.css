@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     padding: 1.5rem 1rem 0 1rem;
+    margin-top: -1rem
 }
 
 .step-circle-middle-circle-first {
@@ -88,4 +89,43 @@
     background: white;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+
+
+@media (max-width: 700px) {
+    .step-circle-middle-circles {
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .step-circle-middle-circles {
+        gap: 0.4rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .step-circle-middle-circle-first {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .step-circle-middle-circle-second,
+    .step-circle-middle-circle-third {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    #circles-container{
+        gap: 1rem;
+    }
+    .step-circle-middle-circles {
+        display: none;
+    }
+    .step-info {
+        display: none;
+    }
 }
