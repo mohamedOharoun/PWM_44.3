@@ -141,7 +141,6 @@ const setToggleChatListener = () => {
     })
 };
 
-
 const init = async () => {
     await initEssentials();
     await loadUserChats();

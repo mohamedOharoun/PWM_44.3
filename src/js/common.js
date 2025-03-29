@@ -47,6 +47,9 @@ const fillHeaderNav = () => {
     for (let i = 0; i < headerNavigationChildren.length; i++) {
         headerNavigationChildren[i].querySelector("a").textContent = titles[i];
         headerNavigationDropdownChildren[i].querySelector("a").textContent = titles[i];
+        headerNavigationDropdownChildren[i].addEventListener("click", () => {
+            window.location.href = headerNavigationDropdownChildren[i].querySelector("a").href;
+        });
     }
     let dropdownButton = document.getElementById("toggle-dropdown-menu");
     let displayMenu = false;

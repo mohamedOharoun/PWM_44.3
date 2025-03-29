@@ -285,3 +285,84 @@ body {
     color: black;
     border: 3px solid #23CFA7;
 }
+
+#rwd-card-content-separator {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    #rwd-card-content-separator {
+        display: block;
+    }
+    
+    .statistics {
+        width: 100%;
+        display: flex;
+    }
+
+    .statistics div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .participants-section {
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .participants-section * {
+        transform: scale(0.9);
+    }
+
+    .short-separator {
+        width: 100%;
+    }
+
+    .card-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-section {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .info-item-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: none;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        width: 100%;
+        align-items: normal;
+    }
+
+    .participants-section {
+        margin-top: -3rem;
+        width: 100%;
+    }
+
+    .participants-item-wrapper {
+        margin-left: auto;
+    }
+
+    .participants-label {
+        display: none;
+    }
+}

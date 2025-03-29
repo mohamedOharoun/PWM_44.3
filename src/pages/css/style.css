@@ -54,16 +54,26 @@ a {
     width: 100%;
 }
 
-input {
-    outline: none;
-}
-
 button {
-    transition: background 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
     transform: scale(1.05);
+}
+
+.animated-input {
+    background: #eeeeee;
+    transition : box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.animated-input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.animated-input:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: white;
 }
 
 input {

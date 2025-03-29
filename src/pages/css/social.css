@@ -26,8 +26,8 @@ main {
         padding: 1rem 0.5rem;
     }
 
-    #social-header {
-        padding: 0.5rem;
+    .social-navigation {
+        padding: 10px 0;
     }
 }
 
