@@ -226,6 +226,27 @@ const fillSignUp = (page) => {
                 event.preventDefault();
 
                 if (checkFormValidity()) {
+                    let userData = {};
+
+                    if (page === "first") {
+                        userData = {
+                            "e-mail": emailInput.value,
+                            "password": passwordInput.value
+                        };
+                    } else if (page === "second") {
+                        userData = {
+                            "full-name": nameInput.value,
+                            "name": usernameInput.value,
+                            "birth-date": birthDateInput.value
+                        };
+                    }
+
+                    let storedUserData = JSON.parse(localStorage.getItem("user_data")) || {};
+
+                    storedUserData = { ...storedUserData, ...userData };
+
+                    localStorage.setItem("user_data", JSON.stringify(storedUserData));
+
                     navigateStep("next", page);
                 } else {
                     alert("Please correct errors before proceeding.");
