@@ -23,6 +23,30 @@ const navigateStep = (direction, page) => {
     }
 };
 
+const addListenerToPasswordInput = (passwordInput) => {
+    let passwordCriteria = {
+        length: { regex: /.{8,}/, message: "At least 8 characters long" },
+        uppercase: { regex: /[A-Z]/, message: "At least one uppercase letter" },
+        number: { regex: /\d/, message: "At least one number" },
+        specialChar: { regex: /[@$!%*?&]/, message: "At least one special character (@$!%*?&)" }
+    };
+
+    passwordInput.addEventListener("input", () => {
+        let unmetCriteria = Object.values(passwordCriteria)
+            .filter(criteria => !criteria.regex.test(passwordInput.value))
+            .map(criteria => criteria.message);
+
+        if (unmetCriteria.length > 0) {
+            passwordInput.setCustomValidity("Password must contain:\n" + unmetCriteria.join("\n"));
+        } else {
+            passwordInput.setCustomValidity("");
+        }
+
+        passwordInput.reportValidity();
+    });
+
+};
+
 const addListenerToPasswordConfirmationInput = (repeatPasswordInput) => {
     let passwordInput = document.getElementById("password");
     repeatPasswordInput.addEventListener("input", (evt) => {
@@ -90,6 +114,7 @@ const fillSignUp = (page) => {
                 repeatPasswordInput.placeholder = signup["first"]["second-password-placeholder"];
                 addListenerToEmailInput(emailInput);
                 checkUserAvailability(emailInput, "e-mail");
+                addListenerToPasswordInput(passwordInput);
                 addListenerToPasswordConfirmationInput(repeatPasswordInput);
             } else if (page === "second") {
                 nameInput.placeholder = signup["second"]["name-placeholder"];
