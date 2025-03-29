@@ -19,3 +19,15 @@ main {
     padding: 20px;
     position: relative;
 }
+
+@media screen and (max-width: 700px) {
+    #center-panel {
+        width: 100%;
+        padding: 0;
+    }
+
+    .profile-container {
+        width: 100%;
+        padding: 0;
+    }
+}

@@ -4,7 +4,6 @@
         <span class="subtitle-separator">&gt;</span>
         <span class="subtitle"></span>
     </div>
-
     <div class="action-buttons">
         <button class="icon-button">
             <img src="../../../assets/images/report_icon.svg" alt="Flag" class="icon">
@@ -15,7 +14,6 @@
         </button>
     </div>
 </header>
-
 <div class="card-body">
     <hr>
     <div class="card-content">
@@ -24,32 +22,29 @@
             <p class="description-text">
             </p>
         </section>
-
+        <hr id="rwd-card-content-separator">
         <section class="info-section">
             <div class="info-item">
                 <img src="../../../assets/images/clock_icon.svg" alt="Time" class="info-icon clock-icon">
                 <span class="info-text event-time"></span>
             </div>
-
-            <div class="info-item">
-                <img src="../../../assets/images/location_icon.svg" alt="Location" class="info-icon">
-                <span class="info-text event-place"></span>
-            </div>
-
-            <div class="info-item">
-                <img src="../../../assets/images/money_icon.svg" alt="Price" class="info-icon">
-                <span class="info-text event-price"></span>
+            <div class="info-item-wrapper">
+                <div class="info-item">
+                    <img src="../../../assets/images/location_icon.svg" alt="Location" class="info-icon">
+                    <span class="info-text event-place"></span>
+                </div>
+                <div class="info-item">
+                    <img src="../../../assets/images/money_icon.svg" alt="Price" class="info-icon">
+                    <span class="info-text event-price"></span>
+                </div>
             </div>
         </section>
     </div>
-
     <hr class="short-separator">
-
     <div class="tags-section">
     </div>
     <hr class="short-separator">
 </div>
-
 <div class="card-footer">
     <div class="statistics">
         <div class="count-item">
@@ -58,25 +53,25 @@
                 <img src="../../../assets/images/heart_icon.svg" alt="Likes" class="count-icon like-icon">
             </button>
         </div>
-
         <div class="count-item">
             <span class="count comments-count"></span>
             <button class="icon-button">
                 <img src="../../../assets/images/square_message_icon.svg" alt="Comments" class="count-icon">
             </button>
         </div>
+        <div class="filler-container"></div>
     </div>
-
     <div class="footer-center">
         <a href="../../pages/html/expanded_event_page.html" class="see-more-button"></a>
     </div>
-
     <div class="participants-section">
-        <a class="participants-item" href="event_members.html">
-            <span class="participants-count" number-participants="0"></span>
-            <img src="../../../assets/images/participants_icon.svg" alt="Participants" class="participants-icon">
-        </a>
-        <span class="participants-label"></span>
+        <div class="participants-item-wrapper">
+            <a class="participants-item" href="event_members.html">
+                <span class="participants-count" number-participants="0"></span>
+                <img src="../../../assets/images/participants_icon.svg" alt="Participants" class="participants-icon">
+            </a>
+            <span class="participants-label"></span>
+        </div>
         <button class="action-button"></button>
     </div>
 </div>

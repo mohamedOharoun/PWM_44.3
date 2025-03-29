@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate, loggedUser, loadJSON} from "./common.js";
+import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
 import {buildLinkURL, getLoggedUserID} from "./utils.js";
 
 const buildPhoto = (url) => {
@@ -36,12 +36,18 @@ const fillProfileUtils = (utilsContainer) => {
         let usernameInput = document.getElementById("user-name").querySelector("input");
         let emailInput = document.getElementById("user-email").querySelector("input");
         let description = document.getElementById("description").querySelector("textarea");
+        let uploadPhotoInput = document.getElementById("fileElem");
+        let uploadPhotoUtil = document.querySelector(".upload-label");
         if (editingProfile) {
             nameInput.readOnly = false;
             usernameInput.readOnly = false;
             emailInput.readOnly = false;
             description.readOnly = false;
             img.src = "../../../assets/images/check_icon.svg";
+            uploadPhotoUtil.style.display = "flex";
+            uploadPhotoInput.addEventListener("onchange", () => {
+                handleFiles(this.files);
+            });
             initializeDragAndDrop();
         } else {
             nameInput.readOnly = true;
@@ -49,6 +55,7 @@ const fillProfileUtils = (utilsContainer) => {
             emailInput.readOnly = true;
             description.readOnly = true;
             img.src = url;
+            uploadPhotoUtil.style.display = "none";
             stopDragAndDrop();
         }});
     fragment.appendChild(img);

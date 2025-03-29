@@ -132,9 +132,19 @@ const getLoggedUser = () => {
     return users[getLoggedUserID()];
 }
 
+const setToggleChatListener = () => {
+    let toggleButton = document.getElementById("toggle-chat");
+    let userList = document.getElementById("chat-users-list");
+    toggleButton.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        userList.classList.toggle("active");
+    })
+};
+
 const init = async () => {
     await initEssentials();
     await loadUserChats();
+    setToggleChatListener();
 }
 
 await init();

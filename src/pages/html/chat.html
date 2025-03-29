@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Chat</title>
-    <script src="../../js/xlu-include-file.js" defer></script>
     <script type="module" src="../../js/chat.js" defer></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../templates/css/header.css">
@@ -14,10 +13,14 @@
     <link rel="stylesheet" href="../css/chat.css">
 </head>
 <body>
-    <header id="page-header"></header>
-    <main>
-        <section id="chat-users-list">
-        </section>
+<header id="page-header"></header>
+<main>
+    <div class="content">
+        <button id="toggle-chat">TOGGLE</button>
+        <div id="users-list-wrapper">
+            <section id="chat-users-list" class="hidden-menu">
+            </section>
+        </div>
         <div id="current-chat">
             <div id="current-chat-name-container">
                 <h1 id="current-chat-name">Lorem Ipsum</h1>
@@ -27,7 +30,8 @@
             </section>
             <div id="message-input-container"></div>
         </div>
-    </main>
-    <footer id="page-footer"></footer>
+    </div>
+</main>
+<footer id="page-footer"></footer>
 </body>
 </html>

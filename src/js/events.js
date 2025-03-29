@@ -229,10 +229,19 @@ const loadSideBar = async () => {
     document.getElementById("sidebar-menu").appendChild(template);
 };
 
+const addListenerToToggleHiddenMenu = () => {
+    let toggleButton = document.querySelector(".toggle-menu");
+    let hiddenMenu = document.querySelector(".hidden-menu");
+    toggleButton.addEventListener("click", () => {
+        hiddenMenu.classList.toggle("active");
+    });
+};
+
 const init = async () => {
     await initEssentials();
     await loadSideBar();
     await loadEvents();
+    addListenerToToggleHiddenMenu();
 };
 
 await init();

@@ -4,7 +4,7 @@ import {getLoggedUserID} from "./utils.js";
 function handleLocalObject(parameters, key) {
     let objectFromLocal = localStorage.getItem(key);
     let object = objectFromLocal ? JSON.parse(objectFromLocal) : {};
-    if (!(getLoggedUserID() in Object.keys(object))) object[getLoggedUserID()] = [];
+    if (!Object.keys(object).includes(getLoggedUserID())) object[getLoggedUserID()] = [];
     object[getLoggedUserID()] = [...new Set(object[getLoggedUserID()]).add(parameters["userID"])];
     localStorage.setItem(key, JSON.stringify(object));
 }

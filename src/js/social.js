@@ -120,15 +120,58 @@ const updateInformationTitle = () => {
 
 const buildCards = (entities) => {
     let fragment = document.createDocumentFragment();
-    Object.entries(entities).forEach(([userID, userData]) => {fragment.appendChild(buildCardWith(userData, userID));});
+    Object.entries(entities).forEach(([userID, userData]) => {
+        fragment.appendChild(buildCardWith(userData, userID));
+    });
     return fragment;
 };
 
 const getNeededUsers = (users, loggedUser) => {
+    let usersFromLocal = getUsersFromLocal();
     return Object.fromEntries(Object.entries(users).filter(
         ([userID, userData]) =>
-            loggedUser[getPageKey()].includes(userID)
+            loggedUser[getPageKey()].includes(userID) && !usersFromLocal["remove"].includes(userID) || usersFromLocal["add"].includes(userID)
     ));
+}
+
+const getUsersFromLocal = () => {
+    let localUsers = {
+        "remove": [],
+        "add": []
+    };
+    let keysListObject = entititesMap[getPageKey()];
+    keysListObject["add"].forEach(k => {
+        let localData = localStorage.getItem(k);
+        let localDataJSON = localData ? JSON.parse(localData) : {};
+        localUsers["add"] = localUsers["remove"].concat(localDataJSON[getLoggedUserID()]);
+    });
+    keysListObject["remove"].forEach(k => {
+        let localData = localStorage.getItem(k);
+        let localDataJSON = localData ? JSON.parse(localData) : null;
+        if (localDataJSON) localDataJSON[getLoggedUserID()].forEach(u => {
+            if (!localUsers["add"].includes(u)) localUsers["remove"].push(u)
+        });
+    });
+    return localUsers;
+}
+
+const entititesMap = {
+    "friends": {
+        "remove": ["removedUsers", "blockedUsers"],
+        "add": ["friends"]
+    },
+    "pending": {
+        "remove": ["canceledPending", "friends"],
+        "add": []
+    },
+    "sent-requests": {
+        "remove": ["canceledSentRequests"],
+        "add": []
+    },
+    "blocked": {
+        "remove": ["canceledBlockUsers"],
+        "add": ["blockedUsers"]
+    }
 }
 
 const getGroupsFromJSON = (groups, loggedUser) => {

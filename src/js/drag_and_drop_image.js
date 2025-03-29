@@ -1,10 +1,13 @@
 let running = false;
 
+const stopDragAndDrop = () => {
+    running = false;
+};
+
 const initializeDragAndDrop = () => {
     running = true;
-    const dropArea = document.getElementById('upload-photo-container');
-    const uploadedImg = document.getElementById('uploaded-img');
-
+    dropArea = document.getElementById('upload-photo-container');
+    uploadedImg = document.getElementById('uploaded-img');
     dropArea.addEventListener('dragover', (event) => {
         if (!running) return;
         event.preventDefault();
@@ -26,33 +29,20 @@ const initializeDragAndDrop = () => {
             handleFiles(files);
         }
     });
-
-    const handleFiles = (files) => {
-        if (!running) return;
-        const file = files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(event) {
-                uploadedImg.src = event.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    };
 };
+
+let dropArea = document.getElementById('upload-photo-container');
+let uploadedImg = document.getElementById('uploaded-img');
 
 const handleFiles = (files) => {
     if (!running) return;
+    console.log(running)
     const file = files[0];
     if (file) {
         const reader = new FileReader();
         reader.onload = function(event) {
-            let uploadedImg;
             uploadedImg.src = event.target.result;
         };
         reader.readAsDataURL(file);
     }
-};
-
-const stopDragAndDrop = () => {
-    running = false;
 };
