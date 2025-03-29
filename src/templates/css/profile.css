@@ -151,3 +151,26 @@ summary {
     border: none;
     background-color: black;
 }
+
+@media screen and (max-width: 700px) {
+    #uploaded-img-container {
+        margin: 0;
+    }
+
+    #profile-header {
+        padding: 2rem;
+    }
+
+    #profile-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #profile-info label {
+        width: 100%;
+    }
+
+    #profile-body {
+        padding: 1rem;
+    }
+}
