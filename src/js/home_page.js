@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate} from "./common.js";
+import {initEssentials, loadTemplate} from "./common.js";
 
 
 const getRandomItems = (arr, num) => arr.length <= num ? arr : arr.sort(() => Math.random() - 0.5).slice(0, num);
@@ -52,20 +52,23 @@ const loadItems = async (url, containerId, itemName, additionalContent = "") => 
     }
 
     const container = document.getElementById(containerId);
-    let cards = container.querySelectorAll(".card");
+    randomItems.forEach((item) => {
 
-    while (cards.length > randomItems.length) {
-        container.removeChild(cards[cards.length - 1]);
-        cards = container.querySelectorAll(".card");
-    }
+        const id = Object.keys(data).find(key => data[key] === item);
 
-    for (let i = cards.length; i < randomItems.length; i++) {
-        container.appendChild(document.createElement("div")).classList.add("card");
-    }
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-    cards = container.querySelectorAll(".card");
+        const cardLink = document.createElement("a");
 
-    randomItems.forEach((item, index) => {
+        if(url.includes("events")) {
+            cardLink.href = `../../pages/html/expanded_event_page.html?event_id=${id}`;
+        }
+
+        else if (url.includes("users")) {
+            cardLink.href = `../../pages/html/profile_page_user.html?user_id=${id}`;
+        }
+
         let content = `<p>${item[itemName]}</p>`;
 
         if (additionalContent) {
@@ -73,7 +76,9 @@ const loadItems = async (url, containerId, itemName, additionalContent = "") => 
                 .replace("{{date}}", item.time || "Fecha no disponible");
         }
 
-        cards[index].innerHTML = content;
+        card.innerHTML = content;
+        cardLink.appendChild(card);
+        container.appendChild(cardLink);
     });
 };
 

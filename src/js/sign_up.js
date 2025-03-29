@@ -41,6 +41,23 @@ const addListenerToEmailInput = (emailInput) => {
     });
 };
 
+
+const checkUserAvailability = (inputElement, key) => {
+    loadJSON("users.json").then(users => {
+        inputElement.addEventListener("input", () => {
+            const inputValue = inputElement.value.trim();
+            const exists = Object.values(users).some(user => user[key] === inputValue);
+
+            if (exists) {
+                inputElement.setCustomValidity(`${key === "name" ? "Username" : "Email"} already exists!`);
+            } else {
+                inputElement.setCustomValidity("");
+            }
+            inputElement.reportValidity();
+        });
+    });
+};
+
 const fillSignUp = (page) => {
     let firstTitle = document.getElementById("first-title");
     let secondTitle = document.getElementById("second-title");
@@ -72,10 +89,12 @@ const fillSignUp = (page) => {
                 passwordInput.placeholder = signup["first"]["first-password-placeholder"];
                 repeatPasswordInput.placeholder = signup["first"]["second-password-placeholder"];
                 addListenerToEmailInput(emailInput);
+                checkUserAvailability(emailInput, "e-mail");
                 addListenerToPasswordConfirmationInput(repeatPasswordInput);
             } else if (page === "second") {
                 nameInput.placeholder = signup["second"]["name-placeholder"];
                 usernameInput.placeholder = signup["second"]["username-placeholder"];
+                checkUserAvailability(usernameInput, "name");
                 birthDateInput.placeholder = signup["second"]["birth-date-placeholder"];
             } else if (page === "third") {
                 photoText.textContent = signup["third"]["photo-text"];

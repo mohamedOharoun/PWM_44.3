@@ -4,6 +4,11 @@ const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([eventId, event]) => ({ id: eventId, ...event }));
 
 const eventId = new URLSearchParams(window.location.search).get("event_id");
+const commentTemplate = await loadTemplate("comment.html");
+
+const eventConfig = await loadJSON("config.json")
+    .then(data => data["events"]["event-card"]);
+
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -57,8 +62,6 @@ const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
 };
 
 const createCommentElement = async (commentsSection, eventComments) => {
-    const commentTemplate = await loadTemplate("comment.html");
-
     if (eventComments.length === 0) {
         const noCommentsMessage = document.createElement("p");
         noCommentsMessage.textContent = "No comments yet.";
@@ -73,7 +76,6 @@ const createCommentElement = async (commentsSection, eventComments) => {
         const commentContentElement = commentElement.querySelector(".comment_content p");
         const userNameElement = commentElement.querySelector(".user-name");
 
-
         const userId = comment["user"];
         const users = await loadJSON("users.json");
         const user = users[userId];
@@ -86,10 +88,38 @@ const createCommentElement = async (commentsSection, eventComments) => {
     }
 };
 
+const createInputCommentElement = async (inputSection, commentsSection, user) => {
+    const commentInputTemplate = await loadTemplate("message_input.html");
+
+    inputSection.appendChild(commentInputTemplate);
+    inputSection.querySelector("#message-input").placeholder = eventConfig["message-input-placeholder"];
+    const messageInput = inputSection.querySelector("#message-input");
+
+    messageInput.addEventListener("keydown", async (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+
+            const commentText = messageInput.value.trim();
+            if (commentText) {
+                const newComment = { user: user.id, comment: commentText };
+                const commentElement = commentTemplate.cloneNode(true);
+                const userPhotoElement = commentElement.querySelector(".user-card-photo img");
+                const commentContentElement = commentElement.querySelector(".comment_content p");
+                const userNameElement = commentElement.querySelector(".user-name");
+
+                userPhotoElement.src = user.photo;
+                userNameElement.innerText = user.name;
+                commentContentElement.innerText = newComment.comment;
+
+                commentsSection.appendChild(commentElement);
+                messageInput.value = "";
+            }
+        }
+    });
+};
+
 const makeEventCard = async (eventCard, event, user) => {
     const eventIdParam = `?event_id=${event["id"]}`;
-    const staticText = await loadJSON("config.json")
-        .then(data => data["events"]["event-card"]);
 
     const updateElementText = (selector, text) => {
         eventCard.querySelector(selector).textContent = text;
@@ -99,10 +129,10 @@ const makeEventCard = async (eventCard, event, user) => {
         eventCard.querySelector(selector).href += href;
     };
 
-    updateElementText(".see-less-button", staticText["reduced_event_button"]);
-    updateElementText(".section-title", staticText["description"]);
-    updateElementText(".participants-label", staticText["participants"]);
-    updateElementText(".action-button", staticText["join_button"]["join"]);
+    updateElementText(".see-less-button", eventConfig["reduced_event_button"]);
+    updateElementText(".section-title", eventConfig["description"]);
+    updateElementText(".participants-label", eventConfig["participants"]);
+    updateElementText(".action-button", eventConfig["join_button"]["join"]);
 
     updateElementText(".main-title", event["name"]);
     updateElementText(".subtitle", user["username"]);
@@ -130,17 +160,19 @@ const makeEventCard = async (eventCard, event, user) => {
     const joinButton = eventCard.querySelector(".action-button");
     if (event["members"].includes(user["id"])) {
         joinButton.classList.add("joined-event");
-        joinButton.textContent = staticText["join_button"]["joined"];
+        joinButton.textContent = eventConfig["join_button"]["joined"];
     } else {
-        joinButton.textContent = staticText["join_button"]["join"];
+        joinButton.textContent = eventConfig["join_button"]["join"];
     }
-    setupJoinButton(joinButton, participantsCount, event, staticText);
+    setupJoinButton(joinButton, participantsCount, event, eventConfig);
 
     const tagSection = eventCard.querySelector(".tags-section");
     await createTagElements(tagSection, event["tags"]);
 
     const commentSection = eventCard.querySelector(".comments_list");
     await createCommentElement(commentSection, event["comments"])
+    const inputSection = eventCard.querySelector(".message-input-container");
+    await createInputCommentElement(inputSection, commentSection, user);
 
     document.querySelector(".events-section").appendChild(eventCard);
 };
