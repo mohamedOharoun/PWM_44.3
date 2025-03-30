@@ -57,7 +57,7 @@ main {
 #sign-up-fourth-input-container {
     display: block;
     flex-grow: 1;
-    overflow-y: auto; /
+    overflow-y: auto;
     max-height: 100%;
 }
 
