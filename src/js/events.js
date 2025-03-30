@@ -3,7 +3,7 @@ import {getLoggedUserID, getURLParameter, parseDateTimeLocal} from "./utils.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
-const users = await loadJSON("users.json");
+const users = await getUsers();
 
 const eventConfig = await loadJSON("config.json")
     .then(data => data["events"]["event-card"]);
