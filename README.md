@@ -64,14 +64,14 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
 - **[Página de registro de cuenta](src/pages/html/sign_up.html)** implementa los mockups:  
   - **Desktop**: [SignUpFrameFirstStep](docs/mockups/SignUpFrameFirstStep.png), [SignUpFrameSecondStep](docs/mockups/SignUpFrameSecondStep.png), [SignUpFrameThirdStep](docs/mockups/SignUpFrameThirdStep.png), [SignUpFrameFourthStep](docs/mockups/SignUpFrameFourthStep.png)  
   - **Tablet**:  [SignUpFrameFirstStep](docs/mockups/tablet/SignUpFrameFirstStep.png), [SignUpFrameSecondStep](docs/mockups/tablet/SignUpFrameSecondStep.png), [SignUpFrameThirdStep](docs/mockups/tablet/SignUpFrameThirdStep.png), [SignUpFrameFourthStep](docs/mockups/tablet/SignUpFrameFourthStep.png)  
-  - **Móvil**:   [SignUpFrameFirstStep](docs/mockups/mobile/SignUpFirstStepFrame.png), [SignUpFrameSecondStep](docs/mockups/mobile/SignUpSecondStepFrame.png), [SignUpFrameThirdStep](docs/mockups/mobile/SignUpThirdStepFrame.png), [SignUpFrameFourthStep](docs/mockups/mobile/SignUpFourthStepFrame.png)
+  - **Móvil**:   [SignUpFrameFirstStep](docs/mockups/mobile/SignUpFrameFirstStep.png), [SignUpFrameSecondStep](docs/mockups/mobile/SignUpFrameSecondStep.png), [SignUpFrameThirdStep](docs/mockups/mobile/SignUpFrameThirdStep.png), [SignUpFrameFourthStep](docs/mockups/mobile/SignUpFrameFourthStep.png)
 
 - **[Página de recuperar contraseña](src/pages/html/reset_password_page.html)** implementa el mockup:  
   - **Desktop**: [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png)  
   - **Tablet**:  [ResetPasswordFrame](docs/mockups/tablet/ResetPasswordFrame.png)  
   - **Móvil**:   [ResetPasswordFrame](docs/mockups/mobile/ResetPasswordFrame.png)
 
-- **[Página de política de privacidad](src/pages/html/privacypolicypage.html)** implementa el mockup:  
+- **[Página de política de privacidad](src/pages/html/privacy_policy_page.html)** implementa el mockup:  
   - **Desktop**: [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)  
   - **Tablet**:  [PrivacyPolicy](docs/mockups/tablet/PrivacyPolicy.png)  
   - **Móvil**:   [PrivacyPolicy](docs/mockups/mobile/PrivacyPolicy.png) 
@@ -86,7 +86,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - **Tablet**:  [Members](docs/mockups/tablet/Members.png)  
   - **Móvil**:   [Members](docs/mockups/mobile/Members.png)
 
-- **[Página de creación de grupo](src/pages/html/group_creation.html)** implementa el mockup:  
+- **[Página de creación de grupo](src/pages/html/create_group_page.html)** implementa el mockup:  
   - **Desktop**: [GroupCreation](docs/mockups/GroupCreation.png)  
   - **Tablet**:  [GroupCreation](docs/mockups/tablet/GroupCreation.png)  
   - **Móvil**:   [GroupCreation](docs/mockups/mobile/GroupCreation.png)
@@ -98,7 +98,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
 
 - **[Página de eventos](src/pages/html/events.html)** implementa el mockup:  
   - **Desktop**: [MyEvents](docs/mockups/MyEvents.png), [EventsJoined](docs/mockups/EventsJoined.png), [FavouriteEvents](docs/mockups/FavouriteEvents.png), [ExploreEvents](docs/mockups/ExploreEvents.png), [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png)  
-  - **Tablet**:  [MyEvents1](docs/mockups/tablet/MyEvents.png) & [MyEvents2](docs/mockups/tablet/ExpandedMyEvents.png), [EventsJoined](docs/mockups/tablet/EventsJoined.png) & [ExpandedEventsJoined](docs/mockups/tablet/ExpandedEventsJoined.png), [FavouriteEvents1](docs/mockups/tablet/FavouriteEvents.png) & [FavouriteEvents2](docs/mockups/tablet/ExpandedFavouriteEvents.png), [ExploreEvents1](docs/mockups/tablet/ExploreEvents.png) & [ExploreEvents2](docs/mockups/tablet/ExpandedExploreEvents.png), [EventsFrameExpandedJoined1](docs/mockups/tablet/EventsFrameExpandedJoined.png) & [EventsFrameExpandedJoined2](docs/mockups/tablet/ExpandedEventsFrameExpandedJoined.png)  
+  - **Tablet**:  [MyEvents1](docs/mockups/tablet/MyEvents1.png) & [MyEvents2](docs/mockups/tablet/MyEvents2.png), [EventsJoined](docs/mockups/tablet/EventsJoined.png) & [ExpandedEventsJoined](docs/mockups/tablet/ExpandedEventsJoined.png), [FavouriteEvents1](docs/mockups/tablet/FavouriteEvents1.png) & [FavouriteEvents2](docs/mockups/tablet/FavouriteEvents2.png), [ExploreEvents1](docs/mockups/tablet/ExploreEvents1.png) & [ExploreEvents2](docs/mockups/tablet/ExploreEvents2.png), [EventsFrameExpandedJoined1](docs/mockups/tablet/EventsFrameExpandedJoined1.png) & [EventsFrameExpandedJoined2](docs/mockups/tablet/EventsFrameExpandedJoined2.png)  
   - **Móvil**:   [MyEvents1](docs/mockups/mobile/MyEvents1.png) & [MyEvents2](docs/mockups/mobile/MyEvents2.png), [EventsJoined](docs/mockups/mobile/EventsJoined.png), [FavouriteEvents](docs/mockups/mobile/FavouriteEvents.png), [ExploreEvents](docs/mockups/mobile/ExploreEvents.png), [EventsFrameExpandedJoined](docs/mockups/mobile/EventsFrameExpandedJoined.png)  
 
 - **[Página de crear evento](src/pages/html/create_event_page.html)** implementa el mockup:  
@@ -106,15 +106,10 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - **Tablet**:  [CreateEvent](docs/mockups/tablet/CreateEvent.png)  
   - **Móvil**:   [CreateEvent](docs/mockups/mobile/CreateEvent.png)
 
-- **[Página de perfil propio](src/pages/html/self_profile_page.html)** implementa el mockup:  
-  - **Desktop**: [SelfProfile](docs/mockups/SelfProfile.png)  
-  - **Tablet**:  [SelfProfile](docs/mockups/tablet/SelfProfile.png)  
-  - **Móvil**:   [SelfProfile](docs/mockups/mobile/SelfProfile.png)  
-
-- **[Página de perfil ajeno](src/pages/html/user_profile_page.html)** implementa el mockup:  
-  - **Desktop**: [SomeonesProfile](docs/mockups/SomeonesProfile.png)  
-  - **Tablet**:  [SomeonesProfile](docs/mockups/tablet/SomeonesProfile.png)  
-  - **Móvil**:   [SomeonesProfile](docs/mockups/mobile/SomeonesProfile.png)    
+- **[Página de perfil propio](src/pages/html/profile_page_user.html)** implementa el mockup:  
+  - **Desktop**: [SelfProfile](docs/mockups/SelfProfile.png), [SomeonesProfile](docs/mockups/SomeonesProfile.png)  
+  - **Tablet**:  [SelfProfile](docs/mockups/tablet/SelfProfile.png), [SomeonesProfile](docs/mockups/tablet/SomeonesProfile.png)  
+  - **Móvil**:   [SelfProfile](docs/mockups/mobile/SelfProfile.png), [SomeonesProfile](docs/mockups/mobile/SomeonesProfile.png)         
 
 ## Templates identificados
   - **Header**
