@@ -169,7 +169,7 @@
         "label": "Members",
         "placeholder": "Type a username to add..."
       },
-      "submit-button": "Create group"
+      "submit-button": ["Create group", "Save group"]
     }
   },
   "chats": {

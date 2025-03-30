@@ -39,6 +39,7 @@ export const addListenerToSubmitButton = (submitButton) => {
 };
 
 const checkGroupNameExistence = (groupName) => {
+    if (getURLParameter(window.location.href, "group_id")) return false;
     let groups = JSON.parse(localStorage.getItem("createdGroups"));
     for (let g in groups) if (groups[g]["name"].toLowerCase() === groupName.toLowerCase()) return true;
 };
@@ -49,5 +50,5 @@ const getNextGroupIDFrom = (createdGroups) => {
         let currentID = Math.max(...keys.map(k => parseInt(k)));
         return (currentID + 1).toString();
     }
-    return "2";
+    return "10";
 };
