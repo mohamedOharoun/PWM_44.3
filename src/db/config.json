@@ -41,13 +41,36 @@
       "../../../assets/images/home_icon.png"
     ],
     "title": "Welcome to JoinUp!",
-    "text-info": "Welcome to JoinUP, your platform to connect and discover unique events! Whether you're organizing an event or looking for something that interests you, we're here to make it happen. Ready to join the fun?",
+    "text-info": "Meet people. Explore events. Join groups.",
     "button-one": "Create event",
     "button-two": "Create group",
     "friends-container": "Friends online",
     "events-container": "Upcoming events",
     "payments-container": "Pending payments"
   },
+
+  "index": {
+    "index-photo": [
+      "../../../assets/images/index_background.png"
+    ],
+    "title": "Welcome to JoinUp!",
+    "introduction": "JoinUp! is your platform to connect and discover unique events! Whether you're organizing an event or looking for something that interests you, we're here to make it happen. Ready to join the fun?",
+    "main-button": "Get started",
+    "see-more": "See more",
+
+    "first-card-image": "../../../assets/images/high_five.gif",
+    "first-card-title": "Add your friends",
+    "first-card-description": "With the new update, now you are able to add your friends and be in touch with them!",
+
+    "second-card-image": "../../../assets/images/search.gif",
+    "second-card-title": "Explore events",
+    "second-card-description": "No friends to meet up with? Don´t worry, search for new people by joining nearby events!",
+
+    "third-card-image": "../../../assets/images/credit_card.gif",
+    "third-card-title": "Split your payments",
+    "third-card-description": "Meet up with your friends at a paid event, sharing in equals parts the price."
+  },
+
   "profile": {
     "titles": {
       "user-profile": "User profile",
