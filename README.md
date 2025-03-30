@@ -41,11 +41,10 @@ Este proyecto consta de una aplicación web en la que, los usuarios registrados,
 El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf)  
 
 ## Páginas HTML
-  - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png) en desktop, [IndividualMessages](docs/mockups/tablet/IndividualMessages.png) en tablet y [IndividualMessages1](docs/mockups/mobile/IndividualMessages1.png) y [IndividualMessages2](docs/mockups/mobile/IndividualMessages2.png) en móvil.
-  - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png) en desktop, [CreateEvent](docs/mockups/tablet/CreateEvent.png) en tablet y  
-    [CreateEvent](docs/mockups/mobile/CreateEvent.png) en móvil.
-  - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png) en desktop, [Members](docs/mockups/tablet/Members.png) en tablet y  
-    [Members](docs/mockups/mobile/Members.png) en móvil.
+  - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png) en desktop, [IndividualMessages](docs/mockups/tablet/IndividualMessages.png) en tablet y  
+    [IndividualMessages1](docs/mockups/mobile/IndividualMessages1.png) y [IndividualMessages2](docs/mockups/mobile/IndividualMessages2.png) en móvil.
+  - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png) en desktop, [CreateEvent](docs/mockups/tablet/CreateEvent.png) en tablet y [CreateEvent](docs/mockups/mobile/CreateEvent.png) en móvil.
+  - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png) en desktop, [Members](docs/mockups/tablet/Members.png) en tablet y [Members](docs/mockups/mobile/Members.png) en móvil.
   - [Página de eventos](src/pages/html/events.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png) en desktop, [ExploreEvents](docs/mockups/tablet/ExploreEvents.png) y [ExpandedExploreEvents](docs/mockups/tablet/ExpandedExploreEvents.png) en tablet, y  
     [ExploreEvents](docs/mockups/mobile/ExploreEvents.png) en móvil.
   - [Página de evento expandido](src/pages/html/expanded_event_page.html) implementa el mockup [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png) en desktop,  
@@ -54,10 +53,8 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     [FavouriteEvents](docs/mockups/tablet/FavouriteEvents.png) y [ExpandedFavouriteEvents](docs/mockups/tablet/ExpandedFavouriteEvents.png) en tablet, y [FavouriteEvents](docs/mockups/mobile/FavouriteEvents.png) en móvil.
   - [Página de creación de grupo](src/pages/html/group_creation.html) implementa el mockup [GroupCreation](docs/mockups/GroupCreation.png) en desktop, [GroupCreation](docs/mockups/tablet/GroupCreation.png) en tablet y  
     [GroupCreation](docs/mockups/mobile/GroupCreation.png) en móvil.
-  - [Página home](src/pages/html/home_page.html) implementa el mockup [Home](docs/mockups/Home.png) en desktop, [Home](docs/mockups/tablet/Home.png) en tablet y  
-    [Home](docs/mockups/mobile/Home.png) en móvil.
-  - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png) en desktop, [FirstPage](docs/mockups/tablet/FirstPage.png) en tablet y  
-    [FirstPage](docs/mockups/mobile/FirstPage.png) en móvil.
+  - [Página home](src/pages/html/home_page.html) implementa el mockup [Home](docs/mockups/Home.png) en desktop, [Home](docs/mockups/tablet/Home.png) en tablet y [Home](docs/mockups/mobile/Home.png) en móvil.
+  - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png) en desktop, [FirstPage](docs/mockups/tablet/FirstPage.png) en tablet y [FirstPage](docs/mockups/mobile/FirstPage.png) en móvil.
   - [Página de eventos unidos](src/pages/html/joined_events.html) implementa el mockup [EventsJoined](docs/mockups/EventsJoined.png) en desktop, [EventsJoined](docs/mockups/tablet/EventsJoined.png) y [ExpandedEventsJoined](docs/mockups/tablet/ExpandedEventsJoined.png) en tablet, y  
     [EventsJoined](docs/mockups/mobile/EventsJoined.png) en móvil.
   - [Página de eventos creados](src/pages/html/owned_events.html) implementa el mockup [MyEvents](docs/mockups/MyEvents.png) en desktop, [MyEvents](docs/mockups/tablet/MyEvents.png) y [ExpandedMyEvents](docs/mockups/tablet/ExpandedMyEvents.png) en tablet, y  
@@ -66,8 +63,7 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     [PrivacyPolicy](docs/mockups/mobile/PrivacyPolicy.png) en móvil.
   - [Página de recuperar contraseña](src/pages/html/reset_password_page.html) implementa el mockup [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png) en desktop,  
     [ResetPasswordFrame](docs/mockups/tablet/ResetPasswordFrame.png) en tablet y [ResetPasswordFrame](docs/mockups/mobile/ResetPasswordFrame.png) en móvil.
-  - [Página de perfil propio](src/pages/html/self_profile_page.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png) en desktop, [SelfProfile](docs/mockups/tablet/SelfProfile.png) en tablet y  
-    [SelfProfile](docs/mockups/mobile/SelfProfile.png) en móvil.
+  - [Página de perfil propio](src/pages/html/self_profile_page.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png) en desktop, [SelfProfile](docs/mockups/tablet/SelfProfile.png) en tablet y [SelfProfile](docs/mockups/mobile/SelfProfile.png) en móvil.
   - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png) en desktop, [SignInFrame](docs/mockups/tablet/SignInFrame.png) en tablet y  
     [SignInFrame](docs/mockups/mobile/SignInFrame.png) en móvil.
   - [Página con primer paso de registro](src/pages/html/signupfirststep.html) implementa el mockup [SignUpFirstStep](docs/mockups/SignUpFirstStep.png) en desktop, [SignUpFirstStep](docs/mockups/tablet/SignUpFirstStep.png) en tablet y  
@@ -80,12 +76,9 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     [SignUpFourthStepFrame](docs/mockups/mobile/SignUpFourthStepFrame.png) en móvil.
   - [Página de usuarios bloqueados y peticiones pendientes](src/pages/html/social_block_and_send_request.html) implementa el mockup [Blocked](docs/mockups/Blocked.png) en desktop, [Blocked](docs/mockups/tablet/Blocked.png) en tablet y  
     [Blocked](docs/mockups/mobile/Blocked.png) en móvil.
-  - [Página de amigos agregados](src/pages/html/social_friends.html) implementa el mockup [Friends](docs/mockups/Friends.png) en desktop, [Friends](docs/mockups/tablet/Friends.png) en tablet y  
-    [Friends](docs/mockups/mobile/Friends.png) en móvil.
-  - [Página de grupos de amigos](src/pages/html/social_groups.html) implementa el mockup [Groups](docs/mockups/Groups.png) en desktop, [Groups](docs/mockups/tablet/Groups.png) en tablet y  
-    [Groups](docs/mockups/mobile/Groups.png) en móvil.
-  - [Página de peticiones de amistad](src/pages/html/social_received_request.html) implementa el mockup [Pending](docs/mockups/Pending.png) en desktop, [Pending](docs/mockups/tablet/Pending.png) en tablet y  
-    [Pending](docs/mockups/mobile/Pending.png) en móvil.
+  - [Página de amigos agregados](src/pages/html/social_friends.html) implementa el mockup [Friends](docs/mockups/Friends.png) en desktop, [Friends](docs/mockups/tablet/Friends.png) en tablet y [Friends](docs/mockups/mobile/Friends.png) en móvil.
+  - [Página de grupos de amigos](src/pages/html/social_groups.html) implementa el mockup [Groups](docs/mockups/Groups.png) en desktop, [Groups](docs/mockups/tablet/Groups.png) en tablet y [Groups](docs/mockups/mobile/Groups.png) en móvil.
+  - [Página de peticiones de amistad](src/pages/html/social_received_request.html) implementa el mockup [Pending](docs/mockups/Pending.png) en desktop, [Pending](docs/mockups/tablet/Pending.png) en tablet y [Pending](docs/mockups/mobile/Pending.png) en móvil.
   - [Página de perfil ajeno](src/pages/html/user_profile_page.html) implementa el mockup [SomeonesProfile](docs/mockups/SomeonesProfile.png) en desktop, [SomeonesProfile](docs/mockups/tablet/SomeonesProfile.png) en tablet y  
     [SomeonesProfile](docs/mockups/mobile/SomeonesProfile.png) en móvil.
 
