@@ -20,12 +20,11 @@ const loadStatic = async (form) => {
     form.querySelector("#event-members-input").placeholder = staticText["event-form"]["placeholders"]["members"];
     form.querySelector("#description-event").textContent = staticText["event-form"]["labels"]["description"];
     form.querySelector("#tags-event").textContent = staticText["event-form"]["labels"]["tags"];
+    form.querySelector("#place-event").textContent = staticText["event-form"]["labels"]["place"];
 };
 
 const manageFormEvents = (form) => {
-    // Remove the keydown prevention or modify it to only prevent form submission
     document.getElementById("event-form").addEventListener("keydown", (e) => {
-        // Only prevent form submission via Enter key
         if (e.key === "Enter" && e.target.tagName !== "TEXTAREA") {
             e.preventDefault();
         }
@@ -193,13 +192,11 @@ const handleFormEvents = (form) => {
         const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
 
         if (eventId) {
-            // Updating existing event
             storedEvents[eventId] = {
                 ...storedEvents[eventId],
                 ...eventData
             };
         } else {
-            // Creating new event
             const newEventId = Object.keys(storedEvents).length + 1;
             storedEvents[newEventId] = eventData;
         }
@@ -228,7 +225,6 @@ const loadEventData = async (form) => {
         return;
     }
 
-    // Load events data
     const events = await loadJSON("events.json");
     const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
     const event = {
@@ -236,21 +232,18 @@ const loadEventData = async (form) => {
         ...(storedEvents[eventId] || {})
     };
 
-    // Fill form fields
     document.querySelector("#event-name").value = event.name;
     document.querySelector("#event-date").value = new Date(event.time).toISOString().slice(0, 16);
     document.querySelector("#event-place").value = event.place;
     document.querySelector("#event-price").value = event.price;
     document.querySelector("#event-description").value = event.description;
 
-    // Add existing tags
     for (const tag of event.tags) {
         eventTags.push(tag.toLowerCase());
         const tagTemplate = await createTagElements(tag);
         document.querySelector("#tags-section").appendChild(tagTemplate);
     }
 
-    // Add existing members
     for (const memberId of event.members) {
         addUser(memberId, userTemplate.cloneNode(true), users);
     }

@@ -28,7 +28,7 @@ const fillResetPassword = () => {
 
 
 const loadResetPasswordAndFill = async () => {
-    await loadTemplate("../../templates/html/reset_password.html", "reset-password-container");
+    await loadTemplate("reset_password.html", "reset-password-container");
     fillResetPassword();
 };
 

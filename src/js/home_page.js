@@ -62,11 +62,11 @@ const loadItems = async (url, containerId, itemName, additionalContent = "") => 
         const cardLink = document.createElement("a");
 
         if(url.includes("events")) {
-            cardLink.href = `../../pages/html/expanded_event_page.html?event_id=${id}`;
+            cardLink.href = `expanded_event_page.html?event_id=${id}`;
         }
 
         else if (url.includes("users")) {
-            cardLink.href = `../../pages/html/profile_page_user.html?user_id=${id}`;
+            cardLink.href = `profile_page_user.html?user_id=${id}`;
         }
 
         let content = `<p>${item[itemName]}</p>`;
@@ -84,9 +84,9 @@ const loadItems = async (url, containerId, itemName, additionalContent = "") => 
 
 const loadSections = async () => {
     await Promise.all([
-        loadTemplate("../../templates/html/home_card.html", "friends-container"),
-        loadTemplate("../../templates/html/home_card.html", "events-container"),
-        loadTemplate("../../templates/html/home_card.html", "payments-container")
+        loadTemplate("home_card.html", "friends-container"),
+        loadTemplate("home_card.html", "events-container"),
+        loadTemplate("home_card.html", "payments-container")
     ]);
 
     await loadStaticText();

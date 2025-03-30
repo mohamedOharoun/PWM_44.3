@@ -257,7 +257,7 @@ const fillSignUp = (page) => {
             let secondPart = signup["sign-up-lower-info"]["login-link"];
 
             loginLink.textContent = secondPart;
-            signInInfo.innerHTML = `${firstPart} <a href="../../pages/html/sign_in.html" id="login-link" class="custom_link"><strong>${secondPart}</strong></a>`;
+            signInInfo.innerHTML = `${firstPart} <a href="sign_in.html" id="login-link" class="custom_link"><strong>${secondPart}</strong></a>`;
         });
 };
 

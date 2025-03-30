@@ -1,7 +1,7 @@
-import { config, initEssentials, loadTemplate } from "./common.js";
+import { initEssentials, loadTemplate } from "./common.js";
 
 const loadFeatureCard = async (containerId, imageSrc, title, description) => {
-    await loadTemplate("../../templates/html/feature_info.html", containerId);
+    await loadTemplate("feature_info.html", containerId);
     const container = document.getElementById(containerId);
 
     container.querySelector(".feature-info-img").src = imageSrc;

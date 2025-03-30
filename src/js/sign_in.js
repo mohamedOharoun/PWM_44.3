@@ -29,7 +29,7 @@ const fillLogin = () => {
 
 
 const loadLoginAndFill = async () => {
-    await loadTemplate("../../templates/html/sign_in_circle.html", "sign-in-container");
+    await loadTemplate("sign_in_circle.html", "sign-in-container");
     fillLogin();
 };
 

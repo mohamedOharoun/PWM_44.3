@@ -4,7 +4,6 @@ import {loadJSON} from "./common.js";
 export const validateEventForm = (form) => {
     let isValid = true;
 
-    // Validate required name
     const nameInput = form.querySelector("#event-name");
     if (!nameInput.value.trim()) {
         nameInput.setCustomValidity("Event name is required");
@@ -13,7 +12,6 @@ export const validateEventForm = (form) => {
         nameInput.setCustomValidity("");
     }
 
-    // Validate required date
     const dateInput = form.querySelector("#event-date");
     if (!dateInput.value) {
         dateInput.setCustomValidity("Event date is required");
@@ -28,7 +26,6 @@ export const validateEventForm = (form) => {
         }
     }
 
-    // Validate required description
     const descriptionInput = form.querySelector("#event-description");
     if (!descriptionInput.value.trim()) {
         descriptionInput.setCustomValidity("Event description is required");
@@ -37,7 +34,6 @@ export const validateEventForm = (form) => {
         descriptionInput.setCustomValidity("");
     }
 
-    // Validate members
     const membersSection = form.querySelector("#members-list-section");
     const membersInput = form.querySelector("#event-members-input");
     if (membersSection.innerHTML === "") {
@@ -47,7 +43,6 @@ export const validateEventForm = (form) => {
         membersInput.setCustomValidity("");
     }
 
-    // Validate price
     const priceInput = form.querySelector("#event-price");
     if (priceInput.value < 0) {
         priceInput.setCustomValidity("Price cannot be negative");
@@ -56,15 +51,6 @@ export const validateEventForm = (form) => {
         priceInput.setCustomValidity("");
     }
 
-    const tags = form.querySelector(".tag p");
-    if (priceInput.value < 0) {
-        priceInput.setCustomValidity("Price cannot be negative");
-        isValid = false;
-    } else {
-        priceInput.setCustomValidity("");
-    }
-
-    // Validate required place
     const placeInput = form.querySelector("#event-place");
     if (!placeInput.value.trim()) {
         placeInput.setCustomValidity("Event location is required");
