@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix events.json structure">
-      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add filtering by visibility">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/create_event_form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/create_event_form_validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -394,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743334965008</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add filtering by visibility">
+      <option name="closed" value="true" />
+      <created>1743335441814</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1743335441814</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +421,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
     <MESSAGE value="Add first version of event card loading" />
     <MESSAGE value="Change events.json structure and raname locales dir to db" />
@@ -437,6 +445,7 @@
     <MESSAGE value="Add sign_in responsiveness" />
     <MESSAGE value="Make event and owned card into one." />
     <MESSAGE value="Fix events.json structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix events.json structure" />
+    <MESSAGE value="Add filtering by visibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add filtering by visibility" />
   </component>
 </project>

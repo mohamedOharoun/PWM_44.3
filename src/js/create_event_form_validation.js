@@ -88,28 +88,17 @@ export const createEventObject = async (form) => {
     const urlParams = new URLSearchParams(window.location.search);
     const eventId = urlParams.get('event_id');
 
-    // If editing, get existing likes and comments
     let likes = 0;
     let comments = [];
 
     if (eventId) {
         const modifiedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
         const fileEvents = await loadJSON("events.json");
-
         const fileEvent = fileEvents[eventId] || {};
-
         const modifiedEvent = modifiedEvents[eventId] || {};
 
-        const existingEvent = {
-            ...fileEvent,   // Base event data
-            ...modifiedEvent,  // Override with modified properties
-            likes: modifiedEvent.likes ?? fileEvent.likes ?? 0,
-            comments: modifiedEvent.comments ?? fileEvent.comments ?? [],
-        };
-        if (existingEvent) {
-            likes = existingEvent.likes || 0;
-            comments = existingEvent.comments || [];
-        }
+        likes = modifiedEvent.likes ?? fileEvent.likes ?? 0;
+        comments = modifiedEvent.comments ?? fileEvent.comments ?? [];
     }
 
     return {
