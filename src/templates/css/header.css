@@ -40,6 +40,7 @@
 
 #log-button {
     font-weight: bold;
+    margin-right: 1rem;
     padding: 10px 30px;
     background: white;
     border-radius: 5px;
