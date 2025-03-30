@@ -1,10 +1,43 @@
 import {loadJSON, loadTemplate, initEssentials} from "./common.js";
+import {getLoggedUserID} from "./utils.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
+const users = await loadJSON("users.json");
 
-let events = eventsSource;
+const getModifiedEvents = () => {
+    const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+    const deletedEvents = JSON.parse(localStorage.getItem("deletedEvents")) || [];
+    return eventsSource
+        .filter(event => !deletedEvents.includes(event.id))
+        .map(event => ({
+            ...event,
+            ...(storedEvents[event.id] || {}),
+        }));
+};
+
+let events = getModifiedEvents();
 let searchTags = [];
+
+const parseDateTimeLocal = (datetimeLocal) => {
+    const date = new Date(datetimeLocal);
+
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const months = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
+    const dayOfWeek = days[date.getDay()];
+    const dayOfMonth = date.getDate();
+    const month = months[date.getMonth()];
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    const timeString = `${hours}:${minutes}`;
+
+    return `${dayOfWeek} ${dayOfMonth}, ${month} ${timeString}`;
+};
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;
@@ -28,33 +61,82 @@ const createTagElements = async (tagSection, eventTags) => {
     });
 };
 
+const getUserData = (userId, users) => {
+    const storedUserData = JSON.parse(localStorage.getItem("userData")) || {};
+    const baseUser = users.find(user => user.id === userId);
+    return {
+        ...baseUser,
+        ...storedUserData
+    };
+};
+
 const setupLikeButton = (likeButton, likesCount, event) => {
     likeButton.addEventListener("click", () => {
         let count = parseInt(likesCount.getAttribute("number-likes"));
-        likeButton.classList.contains("liked-event") ? count-- : count++;
+        const userId = localStorage.getItem("user_id");
+        const storedUserData = JSON.parse(localStorage.getItem("userData")) || {};
+
+        if (likeButton.classList.contains("liked-event")) {
+            count--;
+            storedUserData["liked-events"] = (storedUserData["liked-events"] || [])
+                .filter(id => id !== event.id);
+        } else {
+            count++;
+            storedUserData["liked-events"] = [
+                ...(storedUserData["liked-events"] || []),
+                event.id
+            ];
+        }
+
+        localStorage.setItem("userData", JSON.stringify(storedUserData));
 
         likesCount.setAttribute("number-likes", count);
         likesCount.textContent = compactNumbers(count);
         likeButton.classList.toggle("liked-event");
+
+        const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+        storedEvents[event.id] = {
+            ...storedEvents[event.id],
+            likes: count
+        };
+        localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
     });
 };
 
 const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
     joinButton.addEventListener("click", () => {
         let count = parseInt(participantsCount.getAttribute("number-participants"));
+        let members = [...event.members];
 
         if (joinButton.classList.contains("joined-event")) {
             count--;
+            members = members.filter(id => id !== localStorage.getItem("user_id"));
             joinButton.textContent = staticText["join_button"]["join"];
         } else {
             count++;
+            members.push(localStorage.getItem("user_id"));
             joinButton.textContent = staticText["join_button"]["joined"];
         }
 
         participantsCount.setAttribute("number-participants", count);
         participantsCount.textContent = compactNumbers(count);
         joinButton.classList.toggle("joined-event");
+
+        // Store modified event data
+        const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+        storedEvents[event.id] = {
+            ...storedEvents[event.id],
+            members: members
+        };
+        localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
     });
+};
+
+const handleEventDeletion = async (event, eventCard) => {
+    const deletedEvents = JSON.parse(localStorage.getItem("deletedEvents")) || [];
+    deletedEvents.push(event.id);
+    localStorage.setItem("deletedEvents", JSON.stringify(deletedEvents));
+    eventCard.remove();
 };
 
 const makeEventCard = async (eventCard, event, user) => {
@@ -76,9 +158,9 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementText(".action-button", staticText["join_button"]["join"]);
 
     updateElementText(".main-title", event["name"]);
-    updateElementText(".subtitle", user["username"]);
+    updateElementText(".subtitle", users[event["user"]]["name"]);
     updateElementText(".description-text", event["description"]);
-    updateElementText(".event-time", event["time"]);
+    updateElementText(".event-time", parseDateTimeLocal(event["time"]));
     updateElementText(".event-place", event["place"]);
     updateElementText(".event-price", priceFormatting(event["price"]));
 
@@ -114,6 +196,20 @@ const makeEventCard = async (eventCard, event, user) => {
     const article = document.createElement("article");
     article.classList.add("card");
     article.appendChild(eventCard);
+
+    if (event.user === user.id) {
+        const deleteButton = article.querySelector(".delete-button");
+        if (deleteButton) {
+            deleteButton.addEventListener("click", () => handleEventDeletion(event, article));
+        }
+
+        const editButton = article.querySelector(".edit-button");
+        if (editButton) {
+            editButton.addEventListener("click", () => {
+                window.location.href = `create_event_page.html?event_id=${event.id}`;
+            });
+        }
+    }
     return article;
 };
 
@@ -123,29 +219,40 @@ const getPageKey = (defaultPage) => {
 };
 
 const filterEventsByPage = (events, page, user) => {
+    // First filter out private events that user shouldn't see
+    const privacyFilteredEvents = events.filter(event =>
+        !event.isPrivate ||
+        event.user === user.id ||
+        event.members.includes(user.id)
+    );
+
     switch (page) {
         case "favourites":
-            return events.filter(event => user["liked-events"].includes(event["id"]));
+            return privacyFilteredEvents.filter(event => user["liked-events"].includes(event["id"]));
         case "joined":
-            return events.filter(event => event["members"].includes(user["id"]));
+            return privacyFilteredEvents.filter(event => event["members"].includes(user["id"]));
         case "owned":
-            return events.filter(event => event["user"] === user["id"]);
+            return privacyFilteredEvents.filter(event => event["user"] === user["id"]);
         default:
-            return events;
+            return privacyFilteredEvents;
     }
 };
 
+const loadOwnedEventActionButtons = async () => {
+    return await fetch("../../templates/html/owned_event_action_buttons.html")
+        .then(res => res.text());
+};
+
 const loadEvents = async () => {
-    localStorage.setItem("user_id", "1");
-    const userId = localStorage.getItem("user_id");
+    const userId = getLoggedUserID();
     const users = Object.entries(await loadJSON("users.json"))
         .map(([id, user]) => ({id, ...user}));
-    const user = users.find(user => user.id === userId);
+    const user = getUserData(userId, users);
 
     const page = getPageKey("explore");
-    const templateSource = page === "owned" ? "reduced_owned_card.html" : "reduced_card.html";
 
-    events = filterEventsByPage(eventsSource, page, user);
+    events = getModifiedEvents();
+    events = filterEventsByPage(events, page, user);
 
     if (searchTags.length > 0) {
         events = events.filter(event =>
@@ -153,12 +260,19 @@ const loadEvents = async () => {
         );
     }
 
-    const template = await loadTemplate(templateSource);
+    const template = await loadTemplate("reduced_card.html");
     const eventsList = document.getElementById("events");
 
     for (const event of events) {
-        const eventCard = await makeEventCard(template.cloneNode(true), event, user);
-        eventsList.appendChild(eventCard);
+        const eventCard = template.cloneNode(true);
+
+        if (event.user === user.id) {
+            const actionButtons = eventCard.querySelector('.action-buttons');
+            actionButtons.innerHTML = await loadOwnedEventActionButtons();
+        }
+
+        const card = await makeEventCard(eventCard, event, user);
+        eventsList.appendChild(card);
     }
 };
 
@@ -229,19 +343,18 @@ const loadSideBar = async () => {
     document.getElementById("sidebar-menu").appendChild(template);
 };
 
-const addListenerToToggleHiddenMenu = () => {
-    let toggleButton = document.querySelector(".toggle-menu");
-    let hiddenMenu = document.querySelector(".hidden-menu");
-    toggleButton.addEventListener("click", () => {
-        hiddenMenu.classList.toggle("active");
-    });
-};
+const loadStaticText = async () => {
+    const staticText = await loadJSON("config.json")
+        .then(data => data["events"]);
+    document.getElementById("events-title").textContent = staticText["title"][getPageKey("explore")];
+    document.getElementById("create-event-link").textContent = staticText["create-button"];
+}
 
 const init = async () => {
     await initEssentials();
+    await loadStaticText();
     await loadSideBar();
     await loadEvents();
-    addListenerToToggleHiddenMenu();
 };
 
 await init();

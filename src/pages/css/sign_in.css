@@ -16,3 +16,9 @@ main {
     height: 550px;
 }
 
+@media (width <= 700px) {
+    #sign-in-container {
+        width: 400px;
+        height: 400px;
+    }
+}

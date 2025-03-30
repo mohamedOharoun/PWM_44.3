@@ -23,7 +23,8 @@
       "forgot-password": "I forgot my password",
       "register": "Sign up"
     },
-    "button-text": "LOG IN"
+    "button-text": "LOG IN",
+    "error-message": "INCORRECT CREDENTIALS"
   },
   "reset-password": {
     "title": "Reset password",
@@ -98,7 +99,14 @@
       "joined": "Joined",
       "owned": "My Events",
       "search-placeholder": "Search by tags"
-    }
+    },
+    "title": {
+      "explore": "Explore Events",
+      "favourites": "Favourite Events",
+      "joined": "Joined Events",
+      "owned": "My Events"
+    },
+    "create-button": "Create Event"
   },
   "social": {
     "nav": {
@@ -202,6 +210,30 @@
         "third-step": "Account photo",
         "fourth-step": "Privacy policy"
       }
+    }
+  },
+  "event-form": {
+    "create": {
+      "title": "New Event",
+      "submit-button": "Create Event"
+    },
+    "edit": {
+      "title": "Modify Event",
+      "submit-button": "Edit Event"
+    },
+    "labels": {
+      "name": "Name",
+      "date": "Date & Time",
+      "place": "Location",
+      "cost": "Price",
+      "public": "Public",
+      "private": "Private",
+      "members": "Members",
+      "description": "Description",
+      "tags": "Tags"
+    },
+    "placeholders": {
+      "members": "Select Members"
     }
   }
 }
