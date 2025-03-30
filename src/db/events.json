@@ -2,7 +2,6 @@
   "1": {
     "user": "1",
     "name": "Event Name 1",
-    "author": "Host Name 1",
     "description": "This is a sample description for event 1.",
     "time": "2025-01-20T22:00",
     "place": "Mi Casa",
@@ -10,12 +9,12 @@
     "likes": 1000000,
     "comments": [],
     "members": ["1", "2", "13", "17", "21", "34"],
-    "tags": ["home", "social"]
+    "tags": ["home", "social"],
+    "isPrivate": false
   },
   "2": {
     "user": "1",
     "name": "Event Name 2",
-    "author": "Host Name 2",
     "description": "This is a sample description for event 2.",
     "time": "2025-01-21T18:30",
     "place": "Central Park",
@@ -26,12 +25,12 @@
       { "user": "17", "comment": "I'll bring some friends!" }
     ],
     "members": ["1", "13", "17", "21"],
-    "tags": ["outdoors", "community"]
+    "tags": ["outdoors", "community"],
+    "isPrivate": false
   },
   "3": {
     "user": "2",
     "name": "Event Name 3",
-    "author": "Host Name 3",
     "description": "This is a sample description for event 3.",
     "time": "2025-01-22T20:00",
     "place": "Downtown Club",
@@ -45,12 +44,12 @@
       { "user": "13", "comment": "Can't wait!" }
     ],
     "members": ["50", "32", "21"],
-    "tags": ["nightlife", "music"]
+    "tags": ["nightlife", "music"],
+    "isPrivate": false
   },
   "4": {
     "user": "3",
     "name": "Event Name 4",
-    "author": "Host Name 4",
     "description": "This is a sample description for event 4.",
     "time": "2025-01-23T15:00",
     "place": "City Library",
@@ -69,12 +68,12 @@
       { "user": "9", "comment": "Books and coffee, perfect!" }
     ],
     "members": ["13", "25", "37", "49"],
-    "tags": ["education", "books"]
+    "tags": ["education", "books"],
+    "isPrivate": false
   },
   "5": {
     "user": "4",
     "name": "Event Name 5",
-    "author": "Host Name 5",
     "description": "This is a sample description for event 5.",
     "time": "2025-01-24T12:00",
     "place": "Beachside Cafe",
@@ -108,6 +107,7 @@
       { "user": "7", "comment": "Let’s have fun!" }
     ],
     "members": ["10", "20", "30", "40", "1"],
-    "tags": ["food", "social"]
+    "tags": ["food", "social"],
+    "isPrivate": false
   }
 }

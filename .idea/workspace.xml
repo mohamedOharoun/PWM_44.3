@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Add sign_in responsiveness">
-      <change afterPath="$PROJECT_DIR$/src/templates/html/owned_event_action_buttons.html" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Make event and owned card into one.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/check_login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/check_login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/reduced_owned_card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/events.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743215253923</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Make event and owned card into one.">
+      <option name="closed" value="true" />
+      <created>1743333991748</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1743333991748</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build: footer template created." />
     <MESSAGE value="merge: develop-Laura merged into main" />
     <MESSAGE value="Add input for price" />
     <MESSAGE value="Merge resolution" />
@@ -425,6 +429,7 @@
     <MESSAGE value="Fix static text for event page." />
     <MESSAGE value="Add sing_in functionality and form validation." />
     <MESSAGE value="Add sign_in responsiveness" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sign_in responsiveness" />
+    <MESSAGE value="Make event and owned card into one." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make event and owned card into one." />
   </component>
 </project>
