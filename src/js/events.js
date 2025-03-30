@@ -219,15 +219,22 @@ const getPageKey = (defaultPage) => {
 };
 
 const filterEventsByPage = (events, page, user) => {
+    // First filter out private events that user shouldn't see
+    const privacyFilteredEvents = events.filter(event =>
+        !event.isPrivate ||
+        event.user === user.id ||
+        event.members.includes(user.id)
+    );
+
     switch (page) {
         case "favourites":
-            return events.filter(event => user["liked-events"].includes(event["id"]));
+            return privacyFilteredEvents.filter(event => user["liked-events"].includes(event["id"]));
         case "joined":
-            return events.filter(event => event["members"].includes(user["id"]));
+            return privacyFilteredEvents.filter(event => event["members"].includes(user["id"]));
         case "owned":
-            return events.filter(event => event["user"] === user["id"]);
+            return privacyFilteredEvents.filter(event => event["user"] === user["id"]);
         default:
-            return events;
+            return privacyFilteredEvents;
     }
 };
 
