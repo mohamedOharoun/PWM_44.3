@@ -1,5 +1,5 @@
 import {loadJSON, loadTemplate, initEssentials} from "./common.js";
-import {getLoggedUserID, getURLParameter} from "./utils.js";
+import {getLoggedUserID, getURLParameter, parseDateTimeLocal} from "./utils.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
@@ -22,26 +22,6 @@ const getModifiedEvents = () => {
 
 let events = getModifiedEvents();
 let searchTags = [];
-
-const parseDateTimeLocal = (datetimeLocal) => {
-    const date = new Date(datetimeLocal);
-
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    const months = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-
-    const dayOfWeek = days[date.getDay()];
-    const dayOfMonth = date.getDate();
-    const month = months[date.getMonth()];
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-
-    const timeString = `${hours}:${minutes}`;
-
-    return `${dayOfWeek} ${dayOfMonth}, ${month} ${timeString}`;
-};
 
 const compactNumbers = (number) => {
     if (number <= 999) return number;

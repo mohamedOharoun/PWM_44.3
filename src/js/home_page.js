@@ -1,5 +1,5 @@
 import {initEssentials, loadTemplate} from "./common.js";
-
+import {parseDateTimeLocal} from  "./utils.js";
 
 const getRandomItems = (arr, num) => arr.length <= num ? arr : arr.sort(() => Math.random() - 0.5).slice(0, num);
 
@@ -62,7 +62,7 @@ const loadItems = async (url, containerId, itemName, additionalContent = "") => 
         const cardLink = document.createElement("a");
 
         if(url.includes("events")) {
-            cardLink.href = `expanded_event_page.html?event_id=${id}`;
+            cardLink.href = `events.html?event_id=${id}`;
         }
 
         else if (url.includes("users")) {
@@ -73,7 +73,7 @@ const loadItems = async (url, containerId, itemName, additionalContent = "") => 
 
         if (additionalContent) {
             content += additionalContent.replace("{{price}}", item.price || "0")
-                .replace("{{date}}", item.time || "Fecha no disponible");
+                .replace("{{date}}", parseDateTimeLocal(item.time));
         }
 
         card.innerHTML = content;
