@@ -97,8 +97,8 @@ const fillUserEvents = async (userEventsContainer, user) => {
         card.querySelector(".event-location-text").textContent = eventData["place"];
         card.querySelector("article").addEventListener("click", (evt) => {
             let a = document.createElement("a");
-            a.href = "../../pages/html/expanded_event_page.html";
-            window.location.href = buildLinkURL(a.href, "event_id", event).toString();
+            a.href = "../../pages/html/events.html";
+            window.location.href = buildLinkURL(a.href, "event_id", userEvents[event][0]).toString();
         });
         fragment.appendChild(card);
     }

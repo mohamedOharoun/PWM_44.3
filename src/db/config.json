@@ -81,6 +81,9 @@
     }
   },
   "events": {
+    "event-members": {
+      "title": "members(s)"
+    },
     "event-card" : {
       "expanded_event_button": "SEE MORE",
       "reduced_event_button": "SEE LESS",
@@ -98,7 +101,14 @@
       "joined": "Joined",
       "owned": "My Events",
       "search-placeholder": "Search by tags"
-    }
+    },
+    "title": {
+      "explore": "Explore Events",
+      "favourites": "Favourite Events",
+      "joined": "Joined Events",
+      "owned": "My Events"
+    },
+    "create-button": "Create Event"
   },
   "social": {
     "nav": {
