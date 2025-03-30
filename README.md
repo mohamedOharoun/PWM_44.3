@@ -66,13 +66,13 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
   - [Página de perfil propio](src/pages/html/self_profile_page.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png) en desktop, [SelfProfile](docs/mockups/tablet/SelfProfile.png) en tablet y [SelfProfile](docs/mockups/mobile/SelfProfile.png) en móvil.
   - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png) en desktop, [SignInFrame](docs/mockups/tablet/SignInFrame.png) en tablet y  
     [SignInFrame](docs/mockups/mobile/SignInFrame.png) en móvil.
-  - [Página con primer paso de registro](src/pages/html/signupfirststep.html) implementa el mockup [SignUpFirstStep](docs/mockups/SignUpFirstStep.png) en desktop, [SignUpFirstStep](docs/mockups/tablet/SignUpFirstStep.png) en tablet y  
+  - [Página con primer paso de registro](src/pages/html/signupfirststep.html) implementa el mockup [SignUpFrameFirstStep](docs/mockups/SignUpFrameFirstStep.png) en desktop, [SignUpFrameFirstStep](docs/mockups/tablet/SignUpFrameFirstStep.png) en tablet y  
     [SignUpFirstStepFrame](docs/mockups/mobile/SignUpFirstStepFrame.png) en móvil.
-  - [Página con segundo paso de registro](src/pages/html/signupsecondstep.html) implementa el mockup [SignUpSecondStep](docs/mockups/SignUpSecondStep.png) en desktop, [SignUpSecondStep](docs/mockups/tablet/SignUpSecondStep.png) en tablet y  
+  - [Página con segundo paso de registro](src/pages/html/signupsecondstep.html) implementa el mockup [SignUpFrameSecondStep](docs/mockups/SignUpFrameSecondStep.png) en desktop, [SignUpFrameSecondStep](docs/mockups/tablet/SignUpFrameSecondStep.png) en tablet y  
     [SignUpSecondStepFrame](docs/mockups/mobile/SignUpSecondStepFrame.png) en móvil.
-  - [Página con tercer paso de registro](src/pages/html/signupthirdstep.html) implementa el mockup [SignUpThirdStep](docs/mockups/SignUpThirdStep.png) en desktop, [SignUpThirdStep](docs/mockups/tablet/SignUpThirdStep.png) en tablet y  
+  - [Página con tercer paso de registro](src/pages/html/signupthirdstep.html) implementa el mockup [SignUpFrameThirdStep](docs/mockups/SignUpFrameThirdStep.png) en desktop, [SignUpFrameThirdStep](docs/mockups/tablet/SignUpFrameThirdStep.png) en tablet y  
     [SignUpThirdStepFrame](docs/mockups/mobile/SignUpThirdStepFrame.png) en móvil.
-  - [Página con último paso de registro](src/pages/html/signuplaststep.html) implementa el mockup [SignUpLastStep](docs/mockups/SignUpLastStep.png) en desktop, [SignUpLastStep](docs/mockups/tablet/SignUpLastStep.png) en tablet y  
+  - [Página con último paso de registro](src/pages/html/signuplaststep.html) implementa el mockup [SignUpFrameFourthStep](docs/mockups/SignUpFrameFourthStep.png) en desktop, [SignUpFrameFourthStep](docs/mockups/tablet/SignUpFrameFourthStep.png) en tablet y  
     [SignUpFourthStepFrame](docs/mockups/mobile/SignUpFourthStepFrame.png) en móvil.
   - [Página de usuarios bloqueados y peticiones pendientes](src/pages/html/social_block_and_send_request.html) implementa el mockup [Blocked](docs/mockups/Blocked.png) en desktop, [Blocked](docs/mockups/tablet/Blocked.png) en tablet y  
     [Blocked](docs/mockups/mobile/Blocked.png) en móvil.
