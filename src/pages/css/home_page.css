@@ -55,6 +55,7 @@ button {
     border-radius: 0.6rem;
     cursor: pointer;
     font-weight: bold;
+    min-width: 8.5rem;
 }
 
 button:hover {
@@ -100,7 +101,7 @@ button:hover {
 
     .photo-container img {
         margin: 0;
-        max-width: 80%;
+        max-width: 50%;
         height: auto;
     }
 
