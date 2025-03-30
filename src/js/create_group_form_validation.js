@@ -2,6 +2,12 @@ import {getLoggedUserID, getURLParameter} from "./utils.js";
 
 export const addListenerToSubmitButton = (submitButton) => {
     submitButton.addEventListener("click", (event) => {
+        if (document.getElementById("group-name-input").value === "") {
+            document.getElementById("group-name-input").setCustomValidity("You must specify a name!");
+        } else {
+            document.getElementById("group-name-input").setCustomValidity("");
+        }
+
         if (document.getElementById("members-list-section").children.length < 2) {
             document.getElementById("group-members-input").setCustomValidity("At least one member should be added.");
             return;

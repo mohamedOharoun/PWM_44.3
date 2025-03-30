@@ -1,4 +1,4 @@
-import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
+import {config, initEssentials, loadTemplate, loadJSON, getUsers} from "./common.js";
 import {buildLinkURL, getLoggedUserID} from "./utils.js";
 
 const buildPhoto = (url) => {
@@ -164,7 +164,7 @@ const getLocalUser = () => {
 
 const getProfileUser = async () => {
     let userID = getProfileUserID() ? getProfileUserID() : getLoggedUserID();
-    let users = await loadJSON("users.json");
+    let users = await getUsers();
     let userData = { ...users[userID], ...getLocalUser()};
     return {userID, userData};
 };

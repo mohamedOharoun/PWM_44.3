@@ -1,4 +1,4 @@
-import {initEssentials, loadJSON, loadTemplate} from "./common.js";
+import {getUsers, initEssentials, loadJSON, loadTemplate} from "./common.js";
 import {buildUserProfileURL} from "./utils.js";
 
 let membersAmount = 0;
@@ -22,7 +22,7 @@ const loadUsers = async () => {
 
 const buildUsersSection = async (eventUsersIds, userTemplate) => {
     const fragment = document.createDocumentFragment();
-    let users = await loadJSON("users.json");
+    let users = await getUsers();
     eventUsersIds.forEach(userID => {
         fragment.appendChild(buildUserTemplate(userTemplate.cloneNode(true), userID, users[userID]));
     });

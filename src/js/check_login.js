@@ -1,3 +1,3 @@
 if(!localStorage.getItem("user_id")) {
-    window.location.href = "sign_in.html";
+    window.location.href = "index.html";
 }

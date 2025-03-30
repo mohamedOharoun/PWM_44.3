@@ -1,3 +1,5 @@
+import {getLoggedUserID} from "./utils.js";
+
 export const loadTemplate = async (file, id, callback) => {
     let text = await fetch(`../../templates/html/${file}`).then(res => res.text());
     if (id !== undefined) document.getElementById(id).innerHTML = text;
@@ -19,12 +21,8 @@ export const loadJSON = async (file) => {
 export const config = await loadJSON("config.json");
 
 export const isUserLogged = () => {
-    return loggedUser() !== undefined;
-
+    return getLoggedUserID();
 };
-export const loggedUser = () => {
-    return new URLSearchParams(window.location.search).get("logged");
-}
 
 const loadHeader = async () => {
     await loadTemplate("header.html", "page-header");
@@ -34,17 +32,23 @@ const loadHeader = async () => {
 
 const fillHeaderUtilities = () => {
     let logButton = document.getElementById("log-button");
-    logButton.innerText = config["header"][isUserLogged() ? "sign-in-button" : "log-out-button"];
+    logButton.innerText = config["header"][!isUserLogged() ? "sign-in-button" : "log-out-button"];
     logButton.addEventListener('click', () => {
-        if (loggedUser() === null) window.location.href = "./sign_in.html";
+        if (isUserLogged() === null) window.location.href = "./sign_in.html";
+        else {
+            window.location.href = "./index.html";
+            localStorage.removeItem("user_id");
+        }
     });
+    let profileButton = document.getElementById("profile-button");
+    if (!isUserLogged()) profileButton.remove();
 };
 
 const fillHeaderNav = () => {
     let titles = config["header"]["nav"]["titles"];
     let headerNavigationChildren = document.getElementById("header-navigation").children;
     let headerNavigationDropdownChildren = document.getElementById("header-navigation-dropdown").children;
-    for (let i = 0; i < headerNavigationChildren.length; i++) {
+    for (let i = 0; i < (isUserLogged() ? headerNavigationChildren.length : 0); i++) {
         headerNavigationChildren[i].querySelector("a").textContent = titles[i];
         headerNavigationDropdownChildren[i].querySelector("a").textContent = titles[i];
         headerNavigationDropdownChildren[i].addEventListener("click", () => {
@@ -60,6 +64,19 @@ const fillHeaderNav = () => {
         else dropdownMenu.style.display = "none";
     });
 }
+
+const getLocalUsers = () => {
+    let localUsers = localStorage.getItem("users");
+    return JSON.parse(localUsers ? localUsers : "{}");
+};
+
+export const getUsers = async () => {
+    return {
+        ...Object.fromEntries(
+            Object.entries(await loadJSON("users.json"))
+        ), ...getLocalUsers()
+    }
+};
 
 export const getPageKey = (base) => {
     let URLParameters = new URLSearchParams(window.location.search);

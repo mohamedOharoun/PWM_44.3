@@ -1,4 +1,4 @@
-import {initEssentials, loadJSON, loadTemplate} from "./common.js";
+import {getUsers, initEssentials, loadJSON, loadTemplate} from "./common.js";
 import {buildLinkURL, buildUserProfileURL, getLoggedUserID} from "./utils.js";
 import {
     socialCardBlockedUtilsFunctionalities,
@@ -9,7 +9,7 @@ import {
 
 let socialConfig = await loadJSON("config.json").then(config => config["social"]);
 const cardTemplate = await loadTemplate("social_card.html");
-const users = await loadJSON("users.json");
+const users = await getUsers();
 const groups = await loadJSON("groups.json");
 const loggedUser = users[getLoggedUserID()];
 
@@ -143,7 +143,7 @@ const getUsersFromLocal = () => {
     keysListObject["add"].forEach(k => {
         let localData = localStorage.getItem(k);
         let localDataJSON = localData ? JSON.parse(localData) : {};
-        localUsers["add"] = localUsers["remove"].concat(localDataJSON[getLoggedUserID()]);
+        if (localDataJSON[getLoggedUserID()]) localUsers["add"] = localUsers["remove"].concat(localDataJSON[getLoggedUserID()]);
     });
     keysListObject["remove"].forEach(k => {
         let localData = localStorage.getItem(k);
@@ -200,7 +200,6 @@ const getGroupsFromLocal = () => {
 }
 
 const getNeededGroups = (groups, loggedUser) => {
-    console.log(getGroupsFromLocal())
     return {...Object.fromEntries(getGroupsFromJSON(groups, loggedUser).filter(g => !getGroupsFromLocal()["remove"].includes(g[0]))), ...Object.fromEntries(getGroupsFromLocal()["add"])};
 };
 

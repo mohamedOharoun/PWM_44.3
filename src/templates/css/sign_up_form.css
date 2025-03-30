@@ -38,9 +38,22 @@
     position: relative;
 }
 
-#profilephoto {
-    width: 9.5rem;
-    height: 9.5rem;
+#upload-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#uploaded-img-container {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+#uploaded-img {
+    height: 100%;
+    width: auto;
 }
 
 #password-strength {

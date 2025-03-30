@@ -1,9 +1,9 @@
-import {config, initEssentials, loadTemplate, loadJSON} from "./common.js";
+import {config, initEssentials, loadTemplate, loadJSON, getUsers} from "./common.js";
 import {buildUserProfileURL, getLoggedUserID, getURLParameter} from "./utils.js";
 import {addListenerToSubmitButton} from "./create_group_form_validation.js";
 
 const userTemplate = await loadTemplate("user.html");
-const users = await loadJSON("users.json");
+const users = await getUsers();
 let dropdownClick = false;
 
 const getPageParts = () => {

@@ -1,4 +1,4 @@
-import {loadJSON, loadTemplate, initEssentials} from "./common.js";
+import {loadJSON, loadTemplate, initEssentials, getUsers} from "./common.js";
 import {getLoggedUserID, getURLParameter, parseDateTimeLocal} from "./utils.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
@@ -108,7 +108,7 @@ const setupJoinButton = (joinButtons, participantsCounts, event, staticText) => 
 
             let members = [...event.members];
 
-            if (joinButton.classList.contains("joined-event")) {
+            if (!joinButton.classList.contains("joined-event")) {
                 members = members.filter(id => id !== localStorage.getItem("user_id"));
             } else {
                 members.push(localStorage.getItem("user_id"));
@@ -213,6 +213,12 @@ const makeEventCard = async (eventCard, event, user) => {
             });
         }
     }
+
+    article.querySelector(".card-body").addEventListener("click", () => {
+        if (eventID || window.innerWidth > 700) return;
+        window.location.href = article.querySelector(".see-more-button").href;
+    });
+
     return article;
 };
 
@@ -262,7 +268,7 @@ const createCommentElement = async (commentsSection, eventComments) => {
         const userNameElement = commentElement.querySelector(".user-name");
 
         const userId = comment["user"];
-        const users = await loadJSON("users.json");
+        const users = await getUsers();
         const user = users[userId];
 
         userPhotoElement.src = user ? user.photo : "path/to/default-photo.jpg";
@@ -304,7 +310,7 @@ const loadOwnedEventActionButtons = async () => {
 
 const loadEvents = async () => {
     const userId = getLoggedUserID();
-    const users = Object.entries(await loadJSON("users.json"))
+    const users = Object.entries(await getUsers())
         .map(([id, user]) => ({id, ...user}));
     const user = getUserData(userId, users);
 

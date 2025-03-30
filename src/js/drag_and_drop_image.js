@@ -36,7 +36,6 @@ let uploadedImg = document.getElementById('uploaded-img');
 
 const handleFiles = (files) => {
     if (!running) return;
-    console.log(running)
     const file = files[0];
     if (file) {
         const reader = new FileReader();

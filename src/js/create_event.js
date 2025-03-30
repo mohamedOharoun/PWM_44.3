@@ -1,10 +1,10 @@
-import { initEssentials, loadJSON, loadTemplate } from "./common.js"
+import {getUsers, initEssentials, loadJSON, loadTemplate} from "./common.js"
 import { buildUserProfileURL, getLoggedUserID } from "./utils.js";
 import { validateEventForm, createEventObject } from "./create_event_form_validation.js";
 
 const staticText = await loadJSON("config.json");
 const userTemplate = await loadTemplate("user.html");
-const users = await loadJSON("users.json");
+const users = await getUsers();
 let dropdownClick = false;
 let eventTags = [];
 

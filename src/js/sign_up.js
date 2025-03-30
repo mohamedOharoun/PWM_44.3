@@ -1,4 +1,4 @@
-import {loadTemplate, getPageKey, initEssentials, loadJSON} from "./common.js";
+import {loadTemplate, getPageKey, initEssentials, loadJSON, getUsers} from "./common.js";
 import {buildLinkURL} from "./utils.js";
 import {loadStepCirclesAndFill} from "./stepper.js";
 
@@ -98,7 +98,7 @@ const addListenerToEmailInput = (emailInput) => {
 
 
 const checkUserAvailability = (inputElement, key) => {
-    loadJSON("users.json").then(users => {
+    getUsers().then(users => {
         inputElement.addEventListener("input", () => {
             const inputValue = inputElement.value.trim();
             const exists = Object.values(users).some(user => user[key] === inputValue);
@@ -143,7 +143,7 @@ const checkFormValidity = () => {
     let emptyFields = false;
 
     inputs.forEach(input => {
-        if (!input.value.trim()) {
+        if (!input.value.trim() && input.required) {
             emptyFields = true;
         }
         if (!input.checkValidity()) {
@@ -164,6 +164,37 @@ const checkFormValidity = () => {
     return allValid;
 };
 
+const getNextUserID = () => {
+    let localUsers = localStorage.getItem("users");
+    let localUsersObject = JSON.parse(localUsers ? localUsers : "{}");
+    let keys = Object.keys(localUsersObject);
+    if (keys.length > 0) {
+        let currentID = Math.max(...keys.map(k => parseInt(k)));
+        return (currentID + 1).toString();
+    }
+    return "101";
+};
+
+const buildCurrentUserObjectFrom = (userData) => {
+    let user = {};
+    userData["friends"] = [];
+    userData["blocked"] = [];
+    userData["groups"] = [];
+    userData["pending"] = [];
+    userData["sent-requests"] = [];
+    userData["description"] = "";
+    userData["liked-events"] = [];
+    user[getNextUserID()] = userData;
+    return user;
+};
+
+const mergeWithLocalUsers = (userData) => {
+    let localUsers = localStorage.getItem("users");
+    let localUsersObject = localUsers ? JSON.parse(localUsers) : {};
+    localUsersObject = {...localUsersObject, ...buildCurrentUserObjectFrom(userData)};
+    return localUsersObject;
+};
+
 const fillSignUp = (page) => {
     let firstTitle = document.getElementById("first-title");
     let secondTitle = document.getElementById("second-title");
@@ -173,13 +204,14 @@ const fillSignUp = (page) => {
     let nameInput = document.getElementById("name-placeholder");
     let usernameInput = document.getElementById("username-placeholder");
     let birthDateInput = document.getElementById("birth-date-placeholder");
-    let photoText = document.getElementById("photo-text");
+    let photoText = document.querySelector(".upload-label");
     let firstText = document.getElementById("first-text");
     let secondText = document.getElementById("second-text");
     let nextStepButton = document.getElementById("next-step-button");
     let previousStepButton = document.getElementById("previous-step-button");
     let signInInfo = document.getElementById("sign-up-footer-info");
     let loginLink = document.getElementById("login-link");
+    let uploadedPhoto = document.getElementById("uploaded-img");
 
     loadJSON("config.json")
         .then(config => {
@@ -239,13 +271,20 @@ const fillSignUp = (page) => {
                             "name": usernameInput.value,
                             "birth-date": birthDateInput.value
                         };
+                    } else if (page === "third") {
+                        userData = {
+                            "photo": uploadedPhoto.src
+                        };
+                    } else {
+                        localStorage.setItem("user_id", getNextUserID());
+                        localStorage.setItem("users", JSON.stringify(mergeWithLocalUsers(JSON.parse(localStorage.getItem("sign_up_user")))));
                     }
 
-                    let storedUserData = JSON.parse(localStorage.getItem("user_data")) || {};
+                    let storedUserData = JSON.parse(localStorage.getItem("sign_up_user")) || {};
 
                     storedUserData = { ...storedUserData, ...userData };
 
-                    localStorage.setItem("user_data", JSON.stringify(storedUserData));
+                    localStorage.setItem("sign_up_user", JSON.stringify(storedUserData));
 
                     navigateStep("next", page);
                 } else {
@@ -271,6 +310,7 @@ const init = async () => {
     await initEssentials();
     await loadSignUpAndFill(getPageKey("first"));
     await loadStepCirclesAndFill();
+    if (getPageKey("first") === "third") initializeDragAndDrop();
 }
 
 await init();

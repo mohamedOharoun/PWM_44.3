@@ -1,7 +1,7 @@
-import { initEssentials, loadJSON, loadTemplate } from "./common.js";
+import {getUsers, initEssentials, loadJSON, loadTemplate} from "./common.js";
 import {buildLinkURL, buildUserProfileURL, getLoggedUserID} from "./utils.js";
 
-const users = await loadJSON("users.json");
+const users = await getUsers();
 const userTemplate = await loadTemplate("user_chat.html");
 const chatsConfig = await loadJSON("config.json").then(config => config["chats"]);
 const messageTemplate = await loadTemplate("message.html");

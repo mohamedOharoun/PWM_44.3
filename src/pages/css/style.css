@@ -103,3 +103,15 @@ input {
     border-radius: 15px;
     border: 2px solid white;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar-track {
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    display: none;
+}
