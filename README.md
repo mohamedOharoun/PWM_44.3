@@ -41,30 +41,54 @@ Este proyecto consta de una aplicación web en la que, los usuarios registrados,
 El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf)  
 
 ## Páginas HTML
-  - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png)
-  - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png)
-  - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png)
-  - [Página de eventos](src/pages/html/events.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png)
-  - [Página de evento expandido](src/pages/html/expanded_event_page.html) implementa el mockup [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png)
-  - [Página de eventos marcados como favoritos](src/pages/html/favorite_events.html) implementa el mockup [FavouriteEvents](docs/mockups/FavouriteEvents.png)
-  - [Página de creación de grupo](src/pages/html/group_creation.html) implementa el mockup [GroupCreation](docs/mockups/GroupCreation.png)
-  - [Página home](src/pages/html/home_page.html) implementa el mockup [Home](docs/mockups/Home.png)
-  - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png)
-  - [Página de eventos unidos](src/pages/html/joined_events.html) implementa el mockup [EventsJoined](docs/mockups/EventsJoined.png)
-  - [Página de eventos creados](src/pages/html/owned_events.html) implementa el mockup [MyEvents](docs/mockups/MyEvents.png)
-  - [Página de política de privacidad](src/pages/html/privacypolicypage.html) implementa el mockup [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)
-  - [Página de recuperar contraseña](src/pages/html/reset_password_page.html) implementa el mockup [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png)
-  - [Página de perfil propio](src/pages/html/self_profile_page.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png)
-  - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png)
-  - [Página con primer paso de registro](src/pages/html/signupfirststep.html) implementa el mockup [SignUpFirstStep](docs/mockups/SignUpFirstStep.png)
-  - [Página con segundo paso de registro](src/pages/html/signupsecondstep.html) implementa el mockup [SignUpSecondStep](docs/mockups/SignUpSecondStep.png)
-  - [Página con tercer paso de registro](src/pages/html/signupthirdstep.html) implementa el mockup [SignUpThirdStep](docs/mockups/SignUpThirdStep.png)
-  - [Página con último paso de registro](src/pages/html/signuplaststep.html) implementa el mockup [SignUpLastStep](docs/mockups/SignUpLastStep.png)
-  - [Página de usuarios bloqueados y peticiones pendientes](src/pages/html/social_block_and_send_request.html) implementa el mockup [Blocked](docs/mockups/Blocked.png)
-  - [Página de amigos agregados](src/pages/html/social_friends.html) implementa el mockup [Friends](docs/mockups/Friends.png)
-  - [Página de grupos de amigos](src/pages/html/social_groups.html) implementa el mockup [Groups](docs/mockups/Groups.png)
-  - [Página de peticiones de amistad](src/pages/html/social_received_request.html) implementa el mockup [Pending](docs/mockups/Pending.png)
-  - [Página de perfil ajeno](src/pages/html/user_profile_page.html) implementa el mockup [SomeonesProfile](docs/mockups/SomeonesProfile.png)
+  - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png) en desktop, [IndividualMessages](docs/mockups/tablet/IndividualMessages.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png) en desktop, [CreateEvent](docs/mockups/tablet/CreateEvent.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png) en desktop, [Members](docs/mockups/tablet/Members.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de eventos](src/pages/html/events.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png) en desktop, [ExploreEvents](docs/mockups/tablet/ExploreEvents.png) y [ExpandedExploreEvents](docs/mockups/tablet/ExpandedExploreEvents.png) en tablet, y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de evento expandido](src/pages/html/expanded_event_page.html) implementa el mockup [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png) en desktop,  
+    [EventsFrameExpandedJoined](docs/mockups/tablet/EventsFrameExpandedJoined.png) y [ExpandedEventsFrameExpandedJoined](docs/mockups/tablet/ExpandedEventsFrameExpandedJoined.png) en tablet, y [](docs/mockups/mobile/.png) en móvil.
+  - [Página de eventos marcados como favoritos](src/pages/html/favorite_events.html) implementa el mockup [FavouriteEvents](docs/mockups/FavouriteEvents.png) en desktop,  
+    [FavouriteEvents](docs/mockups/tablet/FavouriteEvents.png) y [ExpandedFavouriteEvents](docs/mockups/tablet/ExpandedFavouriteEvents.png) en tablet, y [](docs/mockups/mobile/.png) en móvil.
+  - [Página de creación de grupo](src/pages/html/group_creation.html) implementa el mockup [GroupCreation](docs/mockups/GroupCreation.png) en desktop, [GroupCreation](docs/mockups/tablet/GroupCreation.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página home](src/pages/html/home_page.html) implementa el mockup [Home](docs/mockups/Home.png) en desktop, [Home](docs/mockups/tablet/Home.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png) en desktop, [FirstPage](docs/mockups/tablet/FirstPage.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de eventos unidos](src/pages/html/joined_events.html) implementa el mockup [EventsJoined](docs/mockups/EventsJoined.png) en desktop, [EventsJoined](docs/mockups/tablet/EventsJoined.png) y [ExpandedEventsJoined](docs/mockups/tablet/ExpandedEventsJoined.png) en tablet, y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de eventos creados](src/pages/html/owned_events.html) implementa el mockup [MyEvents](docs/mockups/MyEvents.png) en desktop, [MyEvents](docs/mockups/tablet/MyEvents.png) y [ExpandedMyEvents](docs/mockups/tablet/ExpandedMyEvents.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de política de privacidad](src/pages/html/privacypolicypage.html) implementa el mockup [PrivacyPolicy](docs/mockups/PrivacyPolicy.png) en desktop, [PrivacyPolicy](docs/mockups/tablet/PrivacyPolicy.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de recuperar contraseña](src/pages/html/reset_password_page.html) implementa el mockup [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png) en desktop,  
+    [ResetPasswordFrame](docs/mockups/tablet/ResetPasswordFrame.png) en tablet y [](docs/mockups/mobile/.png) en móvil.
+  - [Página de perfil propio](src/pages/html/self_profile_page.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png) en desktop, [SelfProfile](docs/mockups/tablet/SelfProfile.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png) en desktop, [SignInFrame](docs/mockups/tablet/SignInFrame.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página con primer paso de registro](src/pages/html/signupfirststep.html) implementa el mockup [SignUpFirstStep](docs/mockups/SignUpFirstStep.png) en desktop, [SignUpFirstStep](docs/mockups/tablet/SignUpFirstStep.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página con segundo paso de registro](src/pages/html/signupsecondstep.html) implementa el mockup [SignUpSecondStep](docs/mockups/SignUpSecondStep.png) en desktop, [SignUpSecondStep](docs/mockups/tablet/SignUpSecondStep.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página con tercer paso de registro](src/pages/html/signupthirdstep.html) implementa el mockup [SignUpThirdStep](docs/mockups/SignUpThirdStep.png) en desktop, [SignUpThirdStep](docs/mockups/tablet/SignUpThirdStep.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página con último paso de registro](src/pages/html/signuplaststep.html) implementa el mockup [SignUpLastStep](docs/mockups/SignUpLastStep.png) en desktop, [SignUpLastStep](docs/mockups/tablet/SignUpLastStep.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de usuarios bloqueados y peticiones pendientes](src/pages/html/social_block_and_send_request.html) implementa el mockup [Blocked](docs/mockups/Blocked.png) en desktop, [Blocked](docs/mockups/tablet/Blocked.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de amigos agregados](src/pages/html/social_friends.html) implementa el mockup [Friends](docs/mockups/Friends.png) en desktop, [Friends](docs/mockups/tablet/Friends.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de grupos de amigos](src/pages/html/social_groups.html) implementa el mockup [Groups](docs/mockups/Groups.png) en desktop, [Groups](docs/mockups/tablet/Groups.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de peticiones de amistad](src/pages/html/social_received_request.html) implementa el mockup [Pending](docs/mockups/Pending.png) en desktop, [Pending](docs/mockups/tablet/Pending.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
+  - [Página de perfil ajeno](src/pages/html/user_profile_page.html) implementa el mockup [SomeonesProfile](docs/mockups/SomeonesProfile.png) en desktop, [SomeonesProfile](docs/mockups/tablet/SomeonesProfile.png) en tablet y  
+    [](docs/mockups/mobile/.png) en móvil.
 
 ## Templates identificados
   - **Header**
