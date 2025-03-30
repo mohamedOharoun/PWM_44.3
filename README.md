@@ -1,5 +1,10 @@
 # 🌟 JoinUp! 🌟
 
+> [!CAUTION]
+> ## Credenciales para iniciar sesión en la página
+> Email: ernestina@gmail.com  
+> Contraseña: 1234
+
 ## Componentes
 - Ayman Asbai Ghoudan
 - Javier Castilla Moreno
@@ -41,30 +46,75 @@ Este proyecto consta de una aplicación web en la que, los usuarios registrados,
 El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf)  
 
 ## Páginas HTML
-  - [Página de chat](src/pages/html/chat.html) implementa el mockup [IndividualMessages](docs/mockups/IndividualMessages.png)
-  - [Página de crear evento](src/pages/html/create_event_page.html) implementa el mockup [CreateEvent](docs/mockups/CreateEvent.png)
-  - [Página de lista de miembros de evento](src/pages/html/event_members.html) implementa el mockup [Members](docs/mockups/Members.png)
-  - [Página de eventos](src/pages/html/events.html) implementa el mockup [ExploreEvents](docs/mockups/ExploreEvents.png)
-  - [Página de evento expandido](src/pages/html/expanded_event_page.html) implementa el mockup [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png)
-  - [Página de eventos marcados como favoritos](src/pages/html/events_favourite.html) implementa el mockup [FavouriteEvents](docs/mockups/FavouriteEvents.png)
-  - [Página de creación de grupo](src/pages/html/create_group_page.html) implementa el mockup [GroupCreation](docs/mockups/GroupCreation.png)
-  - [Página home](src/pages/html/home_page.html) implementa el mockup [Home](docs/mockups/Home.png)
-  - [Página Index](src/pages/html/index.html) implementa el mockup [FirstPage](docs/mockups/FirstPage.png)
-  - [Página de eventos unidos](src/pages/html/events_joined.html) implementa el mockup [EventsJoined](docs/mockups/EventsJoined.png)
-  - [Página de eventos creados](src/pages/html/events_owned.html) implementa el mockup [MyEvents](docs/mockups/MyEvents.png)
-  - [Página de política de privacidad](src/pages/html/privacy_policy_page.html) implementa el mockup [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)
-  - [Página de recuperar contraseña](src/pages/html/reset_password_page.html) implementa el mockup [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png)
-  - [Página de perfil propio](src/pages/html/profile_page_self.html) implementa el mockup [SelfProfile](docs/mockups/SelfProfile.png)
-  - [Página de iniciar sesión](src/pages/html/sign_in.html) implementa el mockup [SignInFrame](docs/mockups/SignInFrame.png)
-  - [Página con primer paso de registro](src/pages/html/sign_up_first_step_page.html) implementa el mockup [SignUpFirstStep](docs/mockups/SignUpFirstStep.png)
-  - [Página con segundo paso de registro](src/pages/html/sign_up_second_step_page.html) implementa el mockup [SignUpSecondStep](docs/mockups/SignUpSecondStep.png)
-  - [Página con tercer paso de registro](src/pages/html/sign_up_third_step_page.html) implementa el mockup [SignUpThirdStep](docs/mockups/SignUpThirdStep.png)
-  - [Página con último paso de registro](src/pages/html/sign_up_fourth_step_page.html) implementa el mockup [SignUpLastStep](docs/mockups/SignUpLastStep.png)
-  - [Página de usuarios bloqueados y peticiones pendientes](src/pages/html/social_block_and_send_request.html) implementa el mockup [Blocked](docs/mockups/Blocked.png)
-  - [Página de amigos agregados](src/pages/html/social_friends.html) implementa el mockup [Friends](docs/mockups/Friends.png)
-  - [Página de grupos de amigos](src/pages/html/social_groups.html) implementa el mockup [Groups](docs/mockups/Groups.png)
-  - [Página de peticiones de amistad](src/pages/html/social_received_request.html) implementa el mockup [Pending](docs/mockups/Pending.png)
-  - [Página de perfil ajeno](src/pages/html/profile_page_user.html) implementa el mockup [SomeonesProfile](docs/mockups/SomeonesProfile.png)
+- **[Página Index](src/pages/html/index.html)** implementa el mockup:  
+  - **Desktop**: [FirstPage](docs/mockups/FirstPage.png)  
+  - **Tablet**:  [FirstPage](docs/mockups/tablet/FirstPage.png)  
+  - **Móvil**:   [FirstPage](docs/mockups/mobile/FirstPage.png)
+
+- **[Página home](src/pages/html/home_page.html)** implementa el mockup:  
+  - **Desktop**: [Home](docs/mockups/Home.png)  
+  - **Tablet**:  [Home](docs/mockups/tablet/Home.png)  
+  - **Móvil**:   [Home](docs/mockups/mobile/Home.png)  
+
+- **[Página de iniciar sesión](src/pages/html/sign_in.html)** implementa el mockup:  
+  - **Desktop**: [SignInFrame](docs/mockups/SignInFrame.png)  
+  - **Tablet**:  [SignInFrame](docs/mockups/tablet/SignInFrame.png)  
+  - **Móvil**:   [SignInFrame](docs/mockups/mobile/SignInFrame.png)
+
+- **[Página de registro de cuenta](src/pages/html/sign_up.html)** implementa los mockups:  
+  - **Desktop**: [SignUpFrameFirstStep](docs/mockups/SignUpFrameFirstStep.png), [SignUpFrameSecondStep](docs/mockups/SignUpFrameSecondStep.png), [SignUpFrameThirdStep](docs/mockups/SignUpFrameThirdStep.png), [SignUpFrameFourthStep](docs/mockups/SignUpFrameFourthStep.png)  
+  - **Tablet**:  [SignUpFrameFirstStep](docs/mockups/tablet/SignUpFrameFirstStep.png), [SignUpFrameSecondStep](docs/mockups/tablet/SignUpFrameSecondStep.png), [SignUpFrameThirdStep](docs/mockups/tablet/SignUpFrameThirdStep.png), [SignUpFrameFourthStep](docs/mockups/tablet/SignUpFrameFourthStep.png)  
+  - **Móvil**:   [SignUpFrameFirstStep](docs/mockups/mobile/SignUpFirstStepFrame.png), [SignUpFrameSecondStep](docs/mockups/mobile/SignUpSecondStepFrame.png), [SignUpFrameThirdStep](docs/mockups/mobile/SignUpThirdStepFrame.png), [SignUpFrameFourthStep](docs/mockups/mobile/SignUpFourthStepFrame.png)
+
+- **[Página de recuperar contraseña](src/pages/html/reset_password_page.html)** implementa el mockup:  
+  - **Desktop**: [ResetPasswordFrame](docs/mockups/ResetPasswordFrame.png)  
+  - **Tablet**:  [ResetPasswordFrame](docs/mockups/tablet/ResetPasswordFrame.png)  
+  - **Móvil**:   [ResetPasswordFrame](docs/mockups/mobile/ResetPasswordFrame.png)
+
+- **[Página de política de privacidad](src/pages/html/privacypolicypage.html)** implementa el mockup:  
+  - **Desktop**: [PrivacyPolicy](docs/mockups/PrivacyPolicy.png)  
+  - **Tablet**:  [PrivacyPolicy](docs/mockups/tablet/PrivacyPolicy.png)  
+  - **Móvil**:   [PrivacyPolicy](docs/mockups/mobile/PrivacyPolicy.png) 
+
+- **[Página de social](src/pages/html/social.html)** implementa el mockup:  
+  - **Desktop**: [Friends](docs/mockups/Friends.png), [Pending](docs/mockups/Pending.png), [Blocked](docs/mockups/Blocked.png), [Groups](docs/mockups/Groups.png)  
+  - **Tablet**:  [Friends](docs/mockups/tablet/Friends.png), [Pending](docs/mockups/tablet/Pending.png), [Blocked](docs/mockups/tablet/Blocked.png), [Groups](docs/mockups/tablet/Groups.png)  
+  - **Móvil**:   [Friends](docs/mockups/mobile/Friends.png), [Pending](docs/mockups/mobile/Pending.png), [Blocked](docs/mockups/mobile/Blocked.png), [Groups](docs/mockups/mobile/Groups.png)
+
+- **[Página de lista de miembros de evento](src/pages/html/event_members.html)** implementa el mockup:  
+  - **Desktop**: [Members](docs/mockups/Members.png)  
+  - **Tablet**:  [Members](docs/mockups/tablet/Members.png)  
+  - **Móvil**:   [Members](docs/mockups/mobile/Members.png)
+
+- **[Página de creación de grupo](src/pages/html/group_creation.html)** implementa el mockup:  
+  - **Desktop**: [GroupCreation](docs/mockups/GroupCreation.png)  
+  - **Tablet**:  [GroupCreation](docs/mockups/tablet/GroupCreation.png)  
+  - **Móvil**:   [GroupCreation](docs/mockups/mobile/GroupCreation.png)
+
+- **[Página de chat](src/pages/html/chat.html)** implementa el mockup:  
+  - **Desktop**: [IndividualMessages](docs/mockups/IndividualMessages.png)  
+  - **Tablet**:  [IndividualMessages](docs/mockups/tablet/IndividualMessages.png)  
+  - **Móvil**:   [IndividualMessages1](docs/mockups/mobile/IndividualMessages1.png), [IndividualMessages2](docs/mockups/mobile/IndividualMessages2.png)  
+
+- **[Página de eventos](src/pages/html/events.html)** implementa el mockup:  
+  - **Desktop**: [MyEvents](docs/mockups/MyEvents.png), [EventsJoined](docs/mockups/EventsJoined.png), [FavouriteEvents](docs/mockups/FavouriteEvents.png), [ExploreEvents](docs/mockups/ExploreEvents.png), [EventsFrameExpandedJoined](docs/mockups/EventsFrameExpandedJoined.png)  
+  - **Tablet**:  [MyEvents1](docs/mockups/tablet/MyEvents.png) & [MyEvents2](docs/mockups/tablet/ExpandedMyEvents.png), [EventsJoined](docs/mockups/tablet/EventsJoined.png) & [ExpandedEventsJoined](docs/mockups/tablet/ExpandedEventsJoined.png), [FavouriteEvents1](docs/mockups/tablet/FavouriteEvents.png) & [FavouriteEvents2](docs/mockups/tablet/ExpandedFavouriteEvents.png), [ExploreEvents1](docs/mockups/tablet/ExploreEvents.png) & [ExploreEvents2](docs/mockups/tablet/ExpandedExploreEvents.png), [EventsFrameExpandedJoined1](docs/mockups/tablet/EventsFrameExpandedJoined.png) & [EventsFrameExpandedJoined2](docs/mockups/tablet/ExpandedEventsFrameExpandedJoined.png)  
+  - **Móvil**:   [MyEvents1](docs/mockups/mobile/MyEvents1.png) & [MyEvents2](docs/mockups/mobile/MyEvents2.png), [EventsJoined](docs/mockups/mobile/EventsJoined.png), [FavouriteEvents](docs/mockups/mobile/FavouriteEvents.png), [ExploreEvents](docs/mockups/mobile/ExploreEvents.png), [EventsFrameExpandedJoined](docs/mockups/mobile/EventsFrameExpandedJoined.png)  
+
+- **[Página de crear evento](src/pages/html/create_event_page.html)** implementa el mockup:  
+  - **Desktop**: [CreateEvent](docs/mockups/CreateEvent.png)  
+  - **Tablet**:  [CreateEvent](docs/mockups/tablet/CreateEvent.png)  
+  - **Móvil**:   [CreateEvent](docs/mockups/mobile/CreateEvent.png)
+
+- **[Página de perfil propio](src/pages/html/self_profile_page.html)** implementa el mockup:  
+  - **Desktop**: [SelfProfile](docs/mockups/SelfProfile.png)  
+  - **Tablet**:  [SelfProfile](docs/mockups/tablet/SelfProfile.png)  
+  - **Móvil**:   [SelfProfile](docs/mockups/mobile/SelfProfile.png)  
+
+- **[Página de perfil ajeno](src/pages/html/user_profile_page.html)** implementa el mockup:  
+  - **Desktop**: [SomeonesProfile](docs/mockups/SomeonesProfile.png)  
+  - **Tablet**:  [SomeonesProfile](docs/mockups/tablet/SomeonesProfile.png)  
+  - **Móvil**:   [SomeonesProfile](docs/mockups/mobile/SomeonesProfile.png)    
 
 ## Templates identificados
   - **Header**
@@ -73,15 +123,15 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     - Se utiliza en todas las páginas
   - **Tarjeta de usuario**
     - [Página de Miembros](src/pages/html/event_members.html)
-    - [Página de crear grupo](src/pages/html/create_group_page.html)
+    - [Página de crear grupo](src/pages/html/group_creation.html)
     - [Página de crear evento](src/pages/html/create_event_page.html)
   - **Mensaje**
     - [Página de chat individual](src/pages/html/chat.html)
   - **Tarjeta de eventos**
     - [Página de eventos principal](src/pages/html/events.html)
-    - [Página de eventos favoritos](src/pages/html/events_favourite.html)
-    - [Página de eventos unidos](src/pages/html/events_joined.html)
-    - [Página de eventos creados](src/pages/html/events_owned.html)
+    - [Página de eventos favoritos](src/pages/html/favorite_events.html)
+    - [Página de eventos unidos](src/pages/html/joined_events.html)
+    - [Página de eventos creados](src/pages/html/owned_events.html)
   - **Comentario**
     - [Página de evento expandido](src/templates/html/comment.html)
   - **Tag Interactivo**
@@ -91,21 +141,21 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     - [Tarjeta de evento expandido](src/templates/html/expand_card.html)
   - **Lista de usuarios**
     - [Template de formulario de creación de evento](src/templates/html/create_event_form.html)
-    - [Página de creación de grupo](src/pages/html/create_group_page.html)
+    - [Página de creación de grupo](src/pages/html/group_creation.html)
     - [Página de miembros de un evento](src/pages/html/event_members.html)
   - **Tarjetas de evento expandido**
     - [Página de evento expandido](src/pages/html/expanded_event_page.html)
   - **Usuario tipo amigo**
     - [Página de amigos](src/pages/html/social_friends.html)
   - **Usuario tipo bloqueado y solicitud enviada**
-    - [Página de usuarios bloqueados y solicitudes enviadas](src/pages/html/social_blocked.html)
+    - [Página de usuarios bloqueados y solicitudes enviadas](src/pages/html/social_block_and_sent_requests.html)
   - **Usuario tipo solicitud recibida**
-    - [Página de solicitudes recibidas](src/pages/html/social_pending.html)
+    - [Página de solicitudes recibidas](src/pages/html/social_received_requests.html)
   - **Usuario tipo grupo**
     - [Página de grupos](src/pages/html/social_groups.html)
   - **Tarjeta de evento de perfil**
-    - [Página de perfil propio](src/pages/html/profile_page_self.html)
-    - [Página de perfil propio](src/pages/html/profile_page_user.html)
+    - [Página de perfil propio](src/pages/html/self_profile_page.html)
+    - [Página de perfil propio](src/pages/html/user_profile_page.html)
   - **Tarjetas de HomePage**
     - [HomePage](src/pages/html/home_page.html)
   - **Tarjeta de feature de LandingPage**
@@ -117,9 +167,9 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     - [Página de chat individual](src/pages/html/chat.html)
   - **Sidebar de eventos**
     - [Página de eventos principal](src/pages/html/events.html)
-    - [Página de eventos favoritos](src/pages/html/events_favourite.html)
-    - [Página de eventos unidos](src/pages/html/events_joined.html)
-    - [Página de eventos creados](src/pages/html/events_owned.html)  
+    - [Página de eventos favoritos](src/pages/html/favorite_events.html)
+    - [Página de eventos unidos](src/pages/html/joined_events.html)
+    - [Página de eventos creados](src/pages/html/owned_events.html)  
 
 ## ❗Aspectos a tener en cuenta
 ### *Organización del código*
