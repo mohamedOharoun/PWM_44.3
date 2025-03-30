@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="Fix refactor code to improve legibility.">
-      <change afterPath="$PROJECT_DIR$/assets/images/credit_card.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/high_five.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/search.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/css/home_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/home_page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/html/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/home_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/feature_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/feature_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/html/feature_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/html/feature_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/css/home_card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/home_card.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +182,9 @@
       <workItem from="1743156492132" duration="8113000" />
       <workItem from="1743181549644" duration="5632000" />
       <workItem from="1743205053871" duration="4330000" />
-      <workItem from="1743243241985" duration="2045000" />
+      <workItem from="1743243241985" duration="30413000" />
+      <workItem from="1743291783494" duration="98000" />
+      <workItem from="1743326267997" duration="6897000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -284,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742839489609</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: RWD on landing page implemented. refactored some aspects as well.">
+      <option name="closed" value="true" />
+      <created>1743258975744</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743258975744</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +321,7 @@
     <MESSAGE value="Add dynamic loading of events' tags" />
     <MESSAGE value="Add search events through tags." />
     <MESSAGE value="Fix refactor code to improve legibility." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix refactor code to improve legibility." />
+    <MESSAGE value="feat: RWD on landing page implemented. refactored some aspects as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: RWD on landing page implemented. refactored some aspects as well." />
   </component>
 </project>
