@@ -166,6 +166,19 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
     - [Página de eventos unidos](src/pages/html/joined_events.html)
     - [Página de eventos creados](src/pages/html/owned_events.html)  
 
+## JSON para la carga dinámica
+  - [Texto estático](src/db/config.json)
+  - [Eventos](src/db/events.json)
+  - [Grupos](src/db/groups.json)
+  - [Messages](src/db/messages.json)
+  - [Usuarios](src/db/users.json)
+
+## Código validación de formulario
+  - [Sgin Up](src/ja/sign_up.js)
+  - [Sign In](src/js/sign_in_validation.json)
+  - [Create Event](src/js/create_event_form_validation.js)
+  - [Create Group](src/js/create_group_form_validation.js)
+
 ## ❗Aspectos a tener en cuenta
 ### *Organización del código*
 Se ha establecido el código bajo la carpeta src. Ahí, los archivos se dividen en templates y pages (otros dos directorios internos), donde se encuentra el archivo html y css en sus respectivos directorios. Además, se establece una hoja de estilo general para manejar partes comunes en diferentes páginas.  
