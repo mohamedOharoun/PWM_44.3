@@ -13,7 +13,7 @@
     position: relative;
     display: flex;
     align-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 #message-utilities {

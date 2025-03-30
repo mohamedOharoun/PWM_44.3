@@ -26,7 +26,7 @@ const loadStaticsTexts = () => {
     pageParts.nameInput.placeholder = createGroupConfig["form"]["group-name"]["placeholder"];
     pageParts.memberLabel.textContent = createGroupConfig["form"]["members"]["label"];
     pageParts.memberInput.placeholder = createGroupConfig["form"]["members"]["placeholder"];
-    pageParts.submitButton.textContent = createGroupConfig["form"]["submit-button"];
+    pageParts.submitButton.textContent = createGroupConfig["form"]["submit-button"][getURLParameter(window.location.href, "group_id") ? 1 : 0];
     addListenerToSubmitButton(pageParts.submitButton);
 };
 

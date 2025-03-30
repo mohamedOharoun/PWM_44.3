@@ -23,6 +23,20 @@ const getProfileParts = () => {
     return {title, utilsContainer, photo, fullName, username, userEmail, description, userEvents, sharedEvents};
 };
 
+const storeProfileData = (nameInput, usernameInput, emailInput, description) => {
+    let profiles = localStorage.getItem("profiles");
+    let profilesObject = profiles ? JSON.parse(profiles) : {};
+    let userProfile = profilesObject[getLoggedUserID()] ? profilesObject[getLoggedUserID()] : {};
+    if (nameInput.value) userProfile["full-name"] = nameInput.value;
+    if (usernameInput.value) userProfile["name"] = usernameInput.value;
+    if (emailInput.value) userProfile["e-mail"] = emailInput.value;
+    if (description.value) userProfile["description"] = description.value;
+    userProfile["photo"] = document.getElementById("uploaded-img").src;
+    profilesObject[getLoggedUserID()] = userProfile;
+    localStorage.setItem("profiles", JSON.stringify(profilesObject));
+    location.reload();
+};
+
 const fillProfileUtils = (utilsContainer) => {
     let url = config["profile"]["utils-icons"][getPageKey()][0];
     let fragment = document.createDocumentFragment();
@@ -54,6 +68,7 @@ const fillProfileUtils = (utilsContainer) => {
             usernameInput.readOnly = true;
             emailInput.readOnly = true;
             description.readOnly = true;
+            storeProfileData(nameInput, usernameInput, emailInput, description);
             img.src = url;
             uploadPhotoUtil.style.display = "none";
             stopDragAndDrop();
@@ -82,8 +97,8 @@ const fillUserEvents = async (userEventsContainer, user) => {
         card.querySelector(".event-location-text").textContent = eventData["place"];
         card.querySelector("article").addEventListener("click", (evt) => {
             let a = document.createElement("a");
-            a.href = "../../pages/html/expanded_event_page.html";
-            window.location.href = buildLinkURL(a.href, "event_id", event).toString();
+            a.href = "../../pages/html/events.html";
+            window.location.href = buildLinkURL(a.href, "event_id", userEvents[event][0]).toString();
         });
         fragment.appendChild(card);
     }
@@ -141,10 +156,17 @@ const fillProfileInformation = async (profileParts, user) => {
     profileParts.description.querySelector("textarea").textContent = user.userData["description"];
 };
 
+const getLocalUser = () => {
+    let profiles = localStorage.getItem("profiles");
+    let profilesObject = profiles ? JSON.parse(profiles) : {};
+    return profilesObject[getProfileUserID() ? getProfileUserID() : getLoggedUserID()];
+};
+
 const getProfileUser = async () => {
     let userID = getProfileUserID() ? getProfileUserID() : getLoggedUserID();
     let users = await loadJSON("users.json");
-    return {userID, userData: users[userID]};
+    let userData = { ...users[userID], ...getLocalUser()};
+    return {userID, userData};
 };
 
 const fillProfile = async () => {

@@ -182,16 +182,26 @@ const getGroupsFromJSON = (groups, loggedUser) => {
 }
 
 const getGroupsFromLocal = () => {
+    let localGroups = {
+        "remove": [],
+        "add": []
+    }
     let createdGroups = localStorage.getItem("createdGroups");
-    return Object.entries(JSON.parse(createdGroups !== null ? createdGroups : "{}")).filter(
+    let removedGroups = localStorage.getItem("removedGroups");
+    let removeGroupsObject = JSON.parse(removedGroups !== null ? removedGroups : "{}");
+    let userRemoveGroups = removeGroupsObject[getLoggedUserID()];
+    if (userRemoveGroups) localGroups["remove"] = localGroups["remove"].concat(userRemoveGroups);
+    localGroups["add"] = localGroups["add"].concat(Object.entries(JSON.parse(createdGroups !== null ? createdGroups : "{}")).filter(
         ([groupID, groupData]) => {
-            return groupData["members"].includes(getLoggedUserID())
+            return groupData["members"].includes(getLoggedUserID()) && !localGroups["remove"].includes(groupID);
         }
-    );
+    ));
+    return localGroups;
 }
 
 const getNeededGroups = (groups, loggedUser) => {
-    return {...Object.fromEntries(getGroupsFromJSON(groups, loggedUser)), ...Object.fromEntries(getGroupsFromLocal())};
+    console.log(getGroupsFromLocal())
+    return {...Object.fromEntries(getGroupsFromJSON(groups, loggedUser).filter(g => !getGroupsFromLocal()["remove"].includes(g[0]))), ...Object.fromEntries(getGroupsFromLocal()["add"])};
 };
 
 const getNeededEntities = () => {

@@ -1,9 +1,13 @@
 import {loadJSON, loadTemplate, initEssentials} from "./common.js";
-import {getLoggedUserID} from "./utils.js";
+import {getLoggedUserID, getURLParameter} from "./utils.js";
 
 const eventsSource = Object.entries(await loadJSON("events.json"))
     .map(([id, event]) => ({id, ...event}));
 const users = await loadJSON("users.json");
+
+const eventConfig = await loadJSON("config.json")
+    .then(data => data["events"]["event-card"]);
+const commentTemplate = await loadTemplate("comment.html");
 
 const getModifiedEvents = () => {
     const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
@@ -103,32 +107,41 @@ const setupLikeButton = (likeButton, likesCount, event) => {
     });
 };
 
-const setupJoinButton = (joinButton, participantsCount, event, staticText) => {
-    joinButton.addEventListener("click", () => {
-        let count = parseInt(participantsCount.getAttribute("number-participants"));
-        let members = [...event.members];
+const setupJoinButton = (joinButtons, participantsCounts, event, staticText) => {
+    joinButtons.forEach(joinButton => {
+        joinButton.addEventListener("click", () => {
+            joinButtons.forEach((button, i) => {
+                let count = parseInt(participantsCounts[i].getAttribute("number-participants"));
 
-        if (joinButton.classList.contains("joined-event")) {
-            count--;
-            members = members.filter(id => id !== localStorage.getItem("user_id"));
-            joinButton.textContent = staticText["join_button"]["join"];
-        } else {
-            count++;
-            members.push(localStorage.getItem("user_id"));
-            joinButton.textContent = staticText["join_button"]["joined"];
-        }
+                if (button.classList.contains("joined-event")) {
+                    count--;
+                    button.textContent = staticText["join_button"]["join"];
+                } else {
+                    count++;
+                    button.textContent = staticText["join_button"]["joined"];
+                }
 
-        participantsCount.setAttribute("number-participants", count);
-        participantsCount.textContent = compactNumbers(count);
-        joinButton.classList.toggle("joined-event");
+                participantsCounts[i].setAttribute("number-participants", count);
+                participantsCounts[i].textContent = compactNumbers(count);
+                button.classList.toggle("joined-event");
+            });
 
-        // Store modified event data
-        const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
-        storedEvents[event.id] = {
-            ...storedEvents[event.id],
-            members: members
-        };
-        localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
+            let members = [...event.members];
+
+            if (joinButton.classList.contains("joined-event")) {
+                members = members.filter(id => id !== localStorage.getItem("user_id"));
+            } else {
+                members.push(localStorage.getItem("user_id"));
+            }
+
+            // Store modified event data
+            const storedEvents = JSON.parse(localStorage.getItem("modifiedEvents")) || {};
+            storedEvents[event.id] = {
+                ...storedEvents[event.id],
+                members: members
+            };
+            localStorage.setItem("modifiedEvents", JSON.stringify(storedEvents));
+        });
     });
 };
 
@@ -145,14 +158,15 @@ const makeEventCard = async (eventCard, event, user) => {
         .then(data => data["events"]["event-card"]);
 
     const updateElementText = (selector, text) => {
-        eventCard.querySelector(selector).textContent = text;
+        eventCard.querySelectorAll(selector).forEach(e => e.textContent = text);
     };
 
     const updateElementHref = (selector, href) => {
-        eventCard.querySelector(selector).href += href;
+        eventCard.querySelectorAll(selector).forEach(e => e.href += href);
     };
 
-    updateElementText(".see-more-button", staticText["expanded_event_button"]);
+    let eventID = getURLParameter(window.location.href, "event_id")
+    updateElementText(!eventID ? ".see-more-button" : ".see-less-button", staticText[!eventID ?  "expanded_event_button" : "reduced_event_button"]);
     updateElementText(".section-title", staticText["description"]);
     updateElementText(".participants-label", staticText["participants"]);
     updateElementText(".action-button", staticText["join_button"]["join"]);
@@ -164,17 +178,17 @@ const makeEventCard = async (eventCard, event, user) => {
     updateElementText(".event-place", event["place"]);
     updateElementText(".event-price", priceFormatting(event["price"]));
 
-    const participantsCount = eventCard.querySelector(".participants-count");
+    const participantsCounts = eventCard.querySelectorAll(".participants-count");
     updateElementText(".participants-count", event["members"].length);
-    participantsCount.setAttribute("number-participants", event["members"].length);
+    participantsCounts.forEach(participantsCount => participantsCount.setAttribute("number-participants", event["members"].length));
 
     const likesCount = eventCard.querySelector(".likes-count");
     updateElementText(".likes-count", compactNumbers(event["likes"]));
     likesCount.setAttribute("number-likes", event["likes"]);
 
-    updateElementText(".comments-count", compactNumbers(event.comments.length));
+    if (!eventID) updateElementText(".comments-count", compactNumbers(event.comments.length));
 
-    updateElementHref(".see-more-button", eventIdParam);
+    if (!eventID) updateElementHref(".see-more-button", eventIdParam);
     updateElementHref(".participants-item", eventIdParam);
 
     const likeButton = eventCard.querySelector(".like-button");
@@ -183,15 +197,24 @@ const makeEventCard = async (eventCard, event, user) => {
     }
     setupLikeButton(likeButton, likesCount, event);
 
-    const joinButton = eventCard.querySelector(".action-button");
+    const joinButtons = eventCard.querySelectorAll(".action-button");
     if (event["members"].includes(user["id"])) {
-        joinButton.classList.add("joined-event");
-        joinButton.textContent = staticText["join_button"]["joined"];
+        joinButtons.forEach(joinButton => {
+            joinButton.classList.add("joined-event");
+            joinButton.textContent = staticText["join_button"]["joined"];
+        });
     }
-    setupJoinButton(joinButton, participantsCount, event, staticText);
+    setupJoinButton(joinButtons, participantsCounts, event, staticText);
 
     const tagSection = eventCard.querySelector(".tags-section");
     await createTagElements(tagSection, event["tags"]);
+
+    if (eventID) {
+        const commentSection = eventCard.querySelector(".comments_list");
+        await createCommentElement(commentSection, event["comments"])
+        const inputSection = eventCard.querySelector(".message-input-container");
+        await createInputCommentElement(inputSection, commentSection, user);
+    }
 
     const article = document.createElement("article");
     article.classList.add("card");
@@ -213,9 +236,65 @@ const makeEventCard = async (eventCard, event, user) => {
     return article;
 };
 
+const createInputCommentElement = async (inputSection, commentsSection, user) => {
+    const commentInputTemplate = await loadTemplate("message_input.html");
+
+    inputSection.appendChild(commentInputTemplate);
+    inputSection.querySelector("#message-input").placeholder = eventConfig["message-input-placeholder"];
+    const messageInput = inputSection.querySelector("#message-input");
+
+    messageInput.addEventListener("keydown", async (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+
+            const commentText = messageInput.value.trim();
+            if (commentText) {
+                const newComment = {user: user.id, comment: commentText};
+                const commentElement = commentTemplate.cloneNode(true);
+                const userPhotoElement = commentElement.querySelector(".user-card-photo img");
+                const commentContentElement = commentElement.querySelector(".comment_content p");
+                const userNameElement = commentElement.querySelector(".user-name");
+
+                userPhotoElement.src = user.photo;
+                userNameElement.innerText = user.name;
+                commentContentElement.innerText = newComment.comment;
+
+                commentsSection.appendChild(commentElement);
+                messageInput.value = "";
+            }
+        }
+    });
+};
+
+const createCommentElement = async (commentsSection, eventComments) => {
+    if (eventComments.length === 0) {
+        const noCommentsMessage = document.createElement("p");
+        noCommentsMessage.textContent = "No comments yet.";
+        commentsSection.appendChild(noCommentsMessage);
+        return;
+    }
+
+    for (const comment of eventComments) {
+        const commentElement = commentTemplate.cloneNode(true);
+
+        const userPhotoElement = commentElement.querySelector(".user-card-photo img");
+        const commentContentElement = commentElement.querySelector(".comment_content p");
+        const userNameElement = commentElement.querySelector(".user-name");
+
+        const userId = comment["user"];
+        const users = await loadJSON("users.json");
+        const user = users[userId];
+
+        userPhotoElement.src = user ? user.photo : "path/to/default-photo.jpg";
+        userNameElement.innerText = user ? user.name : "Unknown User";
+        commentContentElement.innerText = comment.comment;
+
+        commentsSection.appendChild(commentElement);
+    }
+};
+
 const getPageKey = (defaultPage) => {
-    const URLParameters = new URLSearchParams(window.location.search);
-    return URLParameters.get("page_key") || defaultPage;
+    return getURLParameter(window.location.href, "page_key") || defaultPage;
 };
 
 const filterEventsByPage = (events, page, user) => {
@@ -251,17 +330,22 @@ const loadEvents = async () => {
 
     const page = getPageKey("explore");
 
+    let template = await loadTemplate("reduced_card.html");
+    const eventsList = document.getElementById("events");
+
     events = getModifiedEvents();
     events = filterEventsByPage(events, page, user);
+    let eventID = getURLParameter(window.location.href, "event_id")
+    if (eventID) {
+        events = events.filter(e => eventID === e.id);
+        template = await loadTemplate("expand_card.html");
+    }
 
     if (searchTags.length > 0) {
         events = events.filter(event =>
             event["tags"].some(t => searchTags.includes(t.toLowerCase()))
         );
     }
-
-    const template = await loadTemplate("reduced_card.html");
-    const eventsList = document.getElementById("events");
 
     for (const event of events) {
         const eventCard = template.cloneNode(true);
@@ -350,11 +434,21 @@ const loadStaticText = async () => {
     document.getElementById("create-event-link").textContent = staticText["create-button"];
 }
 
+const addToggleListener = () => {
+    let toggleButton = document.querySelector(".toggle-menu");
+    let userList = document.querySelector(".hidden-menu");
+    toggleButton.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        userList.classList.toggle("active");
+    })
+};
+
 const init = async () => {
     await initEssentials();
     await loadStaticText();
     await loadSideBar();
     await loadEvents();
+    await addToggleListener();
 };
 
 await init();

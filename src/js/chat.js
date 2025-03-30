@@ -47,7 +47,7 @@ const getCurrentChatUser = () => {
 
 const getCurrentChatUserID = () => {
     let urlParameters = new URLSearchParams(window.location.search);
-    return urlParameters.get("chat_id") ? urlParameters.get("chat_id") : "1";
+    return urlParameters.get("chat_id") ? urlParameters.get("chat_id") : getUserFriends()[0][0];
 }
 
 const getMessagesIDFor = (loggedUserID, currentChatUserID) => {

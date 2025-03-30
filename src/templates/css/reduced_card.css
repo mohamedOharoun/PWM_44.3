@@ -353,6 +353,19 @@ body {
         align-items: normal;
     }
 
+    .statistics, .footer-center {
+        z-index: 499;
+    }
+
+    .statistics {
+        padding-right: 1rem;
+        gap: 2rem;
+    }
+
+    .participants-item-wrapper {
+        z-index: 500;
+    }
+
     .participants-section {
         margin-top: -3rem;
         width: 100%;
@@ -360,6 +373,7 @@ body {
 
     .participants-item-wrapper {
         margin-left: auto;
+        margin-right: 2rem;
     }
 
     .participants-label {
