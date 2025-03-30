@@ -231,6 +231,11 @@ const filterEventsByPage = (events, page, user) => {
     }
 };
 
+const loadOwnedEventActionButtons = async () => {
+    return await fetch("../../templates/html/owned_event_action_buttons.html")
+        .then(res => res.text());
+};
+
 const loadEvents = async () => {
     const userId = getLoggedUserID();
     const users = Object.entries(await loadJSON("users.json"))
@@ -238,7 +243,6 @@ const loadEvents = async () => {
     const user = getUserData(userId, users);
 
     const page = getPageKey("explore");
-    const templateSource = page === "owned" ? "reduced_owned_card.html" : "reduced_card.html";
 
     events = getModifiedEvents();
     events = filterEventsByPage(events, page, user);
@@ -249,12 +253,19 @@ const loadEvents = async () => {
         );
     }
 
-    const template = await loadTemplate(templateSource);
+    const template = await loadTemplate("reduced_card.html");
     const eventsList = document.getElementById("events");
 
     for (const event of events) {
-        const eventCard = await makeEventCard(template.cloneNode(true), event, user);
-        eventsList.appendChild(eventCard);
+        const eventCard = template.cloneNode(true);
+
+        if (event.user === user.id) {
+            const actionButtons = eventCard.querySelector('.action-buttons');
+            actionButtons.innerHTML = await loadOwnedEventActionButtons();
+        }
+
+        const card = await makeEventCard(eventCard, event, user);
+        eventsList.appendChild(card);
     }
 };
 
