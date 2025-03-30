@@ -434,11 +434,21 @@ const loadStaticText = async () => {
     document.getElementById("create-event-link").textContent = staticText["create-button"];
 }
 
+const addToggleListener = () => {
+    let toggleButton = document.querySelector(".toggle-menu");
+    let userList = document.querySelector(".hidden-menu");
+    toggleButton.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        userList.classList.toggle("active");
+    })
+};
+
 const init = async () => {
     await initEssentials();
     await loadStaticText();
     await loadSideBar();
     await loadEvents();
+    await addToggleListener();
 };
 
 await init();

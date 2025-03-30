@@ -354,7 +354,7 @@ body {
     }
 
     .statistics, .footer-center {
-        z-index: 999;
+        z-index: 499;
     }
 
     .statistics {
@@ -363,7 +363,7 @@ body {
     }
 
     .participants-item-wrapper {
-        z-index: 1000;
+        z-index: 500;
     }
 
     .participants-section {

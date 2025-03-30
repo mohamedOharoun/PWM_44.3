@@ -80,7 +80,7 @@
         position: fixed;
         height: 100%;
         left: -18rem;
-        z-index: 1000;
+        z-index: 2000;
         transition: left 0.3s ease;
     }
 
