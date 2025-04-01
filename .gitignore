@@ -1,5 +1,8 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
+.angular
+node_modules
+
 # Compiled output
 /dist
 /tmp
@@ -12,6 +15,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
+.idea/workspace.xml
 .idea/
 .project
 .classpath
