@@ -1,10 +1,10 @@
 <header class="page-header d-flex align-items-center p-2">
-    <img src="icons/logo.svg" width="50" height="50">
-    <nav class="bg-black p-0">
-        <ul id="header-navigation" class="d-flex align-items-center list-unstyled gap-3">
+    <img src="icons/logo.svg" width="50" height="50" class="me-3">
+    <nav>
+        <ul id="header-navigation" class="d-flex align-items-center list-unstyled pt-3 gap-3">
             @for (link of navLinks; track $index) {
-                <li class="d-flex align-items-center bg-primary">
-                    <a href="#">{{ link.page }}</a>
+                <li class="d-flex align-items-center">
+                    {{ link.page }}
                 </li>
             }
         </ul>
