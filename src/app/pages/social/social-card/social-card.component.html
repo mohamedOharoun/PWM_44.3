@@ -1,0 +1,13 @@
+<article class="d-flex">
+    <div class="social-card-image-container">
+        <img [src]="socialCard.image">
+    </div>
+    <div class="social-card-text-container">
+        {{socialCard.text}}
+    </div>
+    <div class="social-card-utils-icons-container">
+        @for (iconURL of socialCard.icons; track $index) {
+            <img src="{{iconURL}}">
+        }
+    </div>
+</article>
