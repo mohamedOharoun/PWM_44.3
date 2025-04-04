@@ -1,95 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#current_chat_name_wrapper h1 {
-    font-size: 30px;
-}
-
-#current_chat_name_wrapper {
-    height: 10%;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    overflow: auto;
-}
-
-#user_chat_list {
+#chat-users-list {
     background: white;
     overflow-y: auto;
-    width: 20%;
+    width: 20rem;
+    height: 100%;
 }
 
-::-webkit-scrollbar {
+#users-list-wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+#toggle-chat {
+    position: absolute;
     background: transparent;
-    width: 10px;
+    border: none;
+    display: none;
+    z-index: 1001;
 }
 
-::-webkit-scrollbar-track {
-    background: transparent;
-    width: 10px;
+@media screen and (max-width: 700px) {
+    .hidden-menu {
+        padding-top: 1rem;
+        position: fixed;
+        left: -20rem;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    .hidden-menu.active {
+        left: 0;
+    }
+
+    #toggle-chat {
+        display: flex;
+    }
 }
 
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #006D77, #23CFA7);
-    border-radius: 15px;
-    border: 2px solid white;
-}
-
-#chat {
-    position: relative;
+#current-chat {
     display: flex;
     flex-direction: column;
     background: white;
-    flex-grow: 1;
+    flex: 1 1 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#current_chat_name_wrapper {
+#current-chat-name-container {
+    padding: 5% 0 5px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
-    font-size: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
-#current_chat_name_wrapper hr {
+#current-chat-name-container hr {
     width: 70%;
+    border: none;
+    background: black;
+    height: 1px;
 }
 
-#messages_section {
+#messages-section {
     display: flex;
     flex-direction: column;
+    flex: 1;
     overflow-y: auto;
-    flex-grow: 1;
-    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.self_message .report_button {
-    display: none;
-}
-
-#message_input_wrapper {
-    position: absolute;
-    box-sizing: border-box;
+#message-input-container {
     bottom: 2%;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px;
-}
-
-.self_message {
-    margin-left: auto;
 }

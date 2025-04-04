@@ -1,41 +1,35 @@
-#page_header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: white;
-    position: sticky;
-    top: 0;
+#page-header {
+    height: 5rem;
 }
 
-#page_header img {
+#page-header img {
     margin: 10px 20px 10px 20px;
 }
 
-#page_header nav {
+#page-header nav {
     margin: 0;
     padding: 0;
 }
 
-#page_header ul {
+#header-navigation {
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-#page_header li {
+#page-header li {
     list-style: none;
     cursor: pointer;
 }
 
-#page_header_buttons {
+#page-header-buttons {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-#profile_button {
+#profile-button {
     background: none;
     padding: 0;
     border: none;
@@ -44,12 +38,61 @@
     cursor: pointer;
 }
 
-#log_button {
+#log-button {
     font-weight: bold;
+    margin-right: 1rem;
     padding: 10px 30px;
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 4px solid #23CFA7;
     cursor: pointer;
+}
+
+#header-dropdown-navigation {
+    gap: 0.3rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#header-dropdown-navigation li {
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+#header-dropdown-navigation li:hover {
+    background: #eeeeee;
+}
+
+#header-dropdown-navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#toggle-dropdown-menu {
+    display: none;
+    border: none;
+    background: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+    #toggle-dropdown-menu {
+        display: flex;
+    }
+
+    #header-navigation {
+        display: none;
+    }
+
+    #logo-icon {
+        display: none;
+    }
 }

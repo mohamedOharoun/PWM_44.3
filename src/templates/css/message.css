@@ -1,26 +1,45 @@
 .message {
     display: flex;
-    margin: 20px;
+    margin: 5px 2%;
 }
 
-.message_content {
+.self-message {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.self-message .message-content{
+    max-width: 40%;
+    word-wrap: break-word;
+}
+
+.self-message button {
+    display: none;
+}
+
+.message-content {
     border: 3px solid #23CFA7;
     border-radius: 10px;
-    display: inline-block;
     align-content: center;
-    padding: 20px;
+    padding: 1%;
 }
 
-.message_content p {
-    font-size: 14px;
+.message-content p {
+    font-size: 0.8rem;
     font-weight: lighter;
-    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-.message button {
+.report-button {
     border: none;
     background: transparent;
     margin: 10px;
     cursor: pointer;
     padding: 0;
+}
+
+.report-button img {
+    width: 14px;
+    height: 14px;
 }

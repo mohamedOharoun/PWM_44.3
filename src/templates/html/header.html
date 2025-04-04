@@ -1,13 +1,30 @@
-<img src="../../../assets/images/logo.svg" width="50" height="50" alt="">
+<a id="logo-icon" href="../../pages/html/index.html" target="_self">
+    <img src="../../../assets/images/logo.svg" width="50" height="50" alt="">
+</a>
 <nav>
-    <ul>
-        <li><a target=_self href="../../pages/html/home_page.html">Lorem Ipsum</a></li>
-        <li><a target=_self href="../../pages/html/events.html">Lorem Ipsum</a></li>
-        <li><a target=_self href="../../pages/html/social_friends.html">Lorem Ipsum</a></li>
-        <li><a target=_self href="../../pages/html/chat.html">Lorem Ipsum</a></li>
+    <ul id="header-navigation">
+        <li><a class="page-header-link" href="../../pages/html/home_page.html"></a></li>
+        <li><a class="page-header-link" href="../../pages/html/events.html"></a></li>
+        <li><a class="page-header-link" href="../../pages/html/social.html"></a></li>
+        <li><a class="page-header-link" href="../../pages/html/chat.html"></a></li>
     </ul>
 </nav>
-<div id="page_header_buttons">
-    <button id="log_button">Lorem Ipsum</button>
-    <a id="profile_button" target=_self href="../../pages/html/self_profile_page.html"><img src="../../../assets/images/user_icon.svg" width="30px" height="30px"></a>
+<button id="toggle-dropdown-menu">
+    <img id="menu-icon" src="../../../assets/images/menu_icon.svg" height="40" alt="Menu icon">
+</button>
+<div id="header-dropdown-navigation">
+    <nav>
+        <ul id="header-navigation-dropdown">
+            <li><a class="page-header-link" href="../../pages/html/home_page.html"></a></li>
+            <li><a class="page-header-link" href="../../pages/html/events.html"></a></li>
+            <li><a class="page-header-link" href="../../pages/html/social.html"></a></li>
+            <li><a class="page-header-link" href="../../pages/html/chat.html"></a></li>
+        </ul>
+    </nav>
+</div>
+<div id="page-header-buttons">
+    <button id="log-button"></button>
+    <a id="profile-button" target=_self href="../../pages/html/profile_page_user.html">
+        <img src="../../../assets/images/user_icon.svg" width="30px" height="30px">
+    </a>
 </div>

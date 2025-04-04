@@ -1,28 +1,38 @@
 .tag {
-    border: 3px solid #23CFA7;
-    border-radius: 10px;
-    font-size: 5px;
-    margin: 5px;
-    width: auto;
+    background-color: #f0faf9;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
     display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 .tag button {
+    display: flex;
+    align-items: center;
     padding: 0;
     background: transparent;
     box-shadow: none;
     width: auto;
     border: none;
-}
-
-.tag img {
-    width: 25px;
-    height: 25px;
     margin-right: 3px;
 }
 
+.tag img {
+    width: 20px;
+    height: 20px;
+}
+
 .tag p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: lighter;
     margin: 5px;
+}
+
+.interacive {
+    margin: 2px;
 }

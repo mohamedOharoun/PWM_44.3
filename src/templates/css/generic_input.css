@@ -1,31 +1,23 @@
-html body {
-    margin: 0;
-}
-
-* {
-    font-family: "League Spartan", sans-serif;
-}
-
-label {
-    font-size: 32px;
+.generic-input-label {
+    font-size: 18px;
     display: flex;
     flex-direction: column;
 }
 
-input {
+.generic-input {
     margin-top: 5px;
-    padding: 20px 25px 20px 25px;
+    padding: 15px;
     border-radius: 10px;
     border: transparent;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
-    font-size: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    transition: box-shadow 0.4s ease;
 }
 
-label span {
+.generic-input:focus {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.generic-input-label span {
     margin-left: 5px;
-}
-
-section p {
-    font-size: 40px;
-    font-weight: bold;
 }

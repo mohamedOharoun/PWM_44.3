@@ -1,0 +1,113 @@
+{
+  "1": {
+    "user": "1",
+    "name": "Event Name 1",
+    "description": "This is a sample description for event 1.",
+    "time": "2025-01-20T22:00",
+    "place": "Mi Casa",
+    "price": 0,
+    "likes": 1000000,
+    "comments": [],
+    "members": ["1", "2", "13", "17", "21", "34"],
+    "tags": ["home", "social"],
+    "isPrivate": false
+  },
+  "2": {
+    "user": "1",
+    "name": "Event Name 2",
+    "description": "This is a sample description for event 2.",
+    "time": "2025-01-21T18:30",
+    "place": "Central Park",
+    "price": 10,
+    "likes": 5,
+    "comments": [
+      { "user": "13", "comment": "This event looks relaxing!" },
+      { "user": "17", "comment": "I'll bring some friends!" }
+    ],
+    "members": ["1", "13", "17", "21"],
+    "tags": ["outdoors", "community"],
+    "isPrivate": false
+  },
+  "3": {
+    "user": "2",
+    "name": "Event Name 3",
+    "description": "This is a sample description for event 3.",
+    "time": "2025-01-22T20:00",
+    "place": "Downtown Club",
+    "price": 20,
+    "likes": 12,
+    "comments": [
+      { "user": "32", "comment": "I hope the DJ is good!" },
+      { "user": "21", "comment": "Let’s party all night!" },
+      { "user": "50", "comment": "Who else is going?" },
+      { "user": "17", "comment": "This club is my favorite!" },
+      { "user": "13", "comment": "Can't wait!" }
+    ],
+    "members": ["50", "32", "21"],
+    "tags": ["nightlife", "music"],
+    "isPrivate": false
+  },
+  "4": {
+    "user": "3",
+    "name": "Event Name 4",
+    "description": "This is a sample description for event 4.",
+    "time": "2025-01-23T15:00",
+    "place": "City Library",
+    "price": 5,
+    "likes": 45,
+    "comments": [
+      { "user": "25", "comment": "A great event for book lovers!" },
+      { "user": "49", "comment": "Will there be book signings?" },
+      { "user": "37", "comment": "I love library events!" },
+      { "user": "13", "comment": "Looking forward to learning something new!" },
+      { "user": "21", "comment": "I’ll definitely be there!" },
+      { "user": "50", "comment": "A great way to spend a Saturday!" },
+      { "user": "3", "comment": "Any recommended books?" },
+      { "user": "19", "comment": "Is there a reading session?" },
+      { "user": "33", "comment": "Knowledge is power!" },
+      { "user": "9", "comment": "Books and coffee, perfect!" }
+    ],
+    "members": ["13", "25", "37", "49"],
+    "tags": ["education", "books"],
+    "isPrivate": false
+  },
+  "5": {
+    "user": "4",
+    "name": "Event Name 5",
+    "description": "This is a sample description for event 5.",
+    "time": "2025-01-24T12:00",
+    "place": "Beachside Cafe",
+    "price": 0,
+    "likes": 120,
+    "comments": [
+      { "user": "30", "comment": "Food by the beach? Count me in!" },
+      { "user": "1", "comment": "Can’t wait to try the seafood!" },
+      { "user": "40", "comment": "I love this place!" },
+      { "user": "20", "comment": "Brunch with a view!" },
+      { "user": "10", "comment": "Hope they have good coffee!" },
+      { "user": "15", "comment": "Anyone up for a beach walk after?" },
+      { "user": "2", "comment": "It’s going to be a great Sunday!" },
+      { "user": "18", "comment": "Do they have vegetarian options?" },
+      { "user": "8", "comment": "Looking forward to some good vibes!" },
+      { "user": "12", "comment": "Best way to spend the weekend!" },
+      { "user": "50", "comment": "Great spot for a meetup!" },
+      { "user": "33", "comment": "See you all there!" },
+      { "user": "5", "comment": "Sun, sea, and good food!" },
+      { "user": "19", "comment": "Can't miss this!" },
+      { "user": "6", "comment": "Is there a dress code?" },
+      { "user": "22", "comment": "Will there be live music?" },
+      { "user": "35", "comment": "Sounds like fun!" },
+      { "user": "28", "comment": "Who’s coming with me?" },
+      { "user": "47", "comment": "I hope it's not too crowded!" },
+      { "user": "9", "comment": "Perfect weather for this!" },
+      { "user": "37", "comment": "Excited to meet new people!" },
+      { "user": "3", "comment": "A Sunday well spent!" },
+      { "user": "16", "comment": "Beachside cafes are the best!" },
+      { "user": "4", "comment": "I’m bringing my camera!" },
+      { "user": "7", "comment": "Let’s have fun!" }
+    ],
+    "members": ["10", "20", "30", "40", "1"],
+    "tags": ["food", "social"],
+    "isPrivate": false
+  }
+}

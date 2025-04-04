@@ -1,14 +1,80 @@
-footer {
-    font-family: "League Spartan", serif;
-    justify-items: center;
-    align-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: white;
-    width: 100%;
-    bottom: 0;
-    position: sticky;
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-footer p {
-    margin: 25px;
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+@media  screen and (max-width: 700px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.button:hover {
+    color: #23CFA7;
+    text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.icon, .button {
+    transition: all 0.4s ease-in-out;
+}
+
+.icon:hover {
+    text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.15);
+}
+
+ul.icons {
+    cursor: default;
+    text-align: center;
+}
+
+ul.icons li a .icon {
+    display: block;
+    width: 32px;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul.icons, ul.others {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.icons li, ul.others li, ul.copyright li {
+    display: inline-block;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding: 0 0.5em;
+}
+
+ul.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.others hr {
+    border: 0;
+    width: 1.5px;
+    height: 12px;
+    background-color: black;
+}
+
+ul.others li {
+    display: flex;
+    align-items: center;
 }

@@ -1,0 +1,87 @@
+.event-card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 2px solid #00bfa5;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.eventcard-img {
+    width: 20px;
+    height: 20px;
+}
+
+.event-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+.event-description {
+    color: gray;
+    font-size: 14px;
+}
+
+.event-info {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.participants-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.event-card-info {
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.event-card-title {
+    width: 50%;
+}
+
+.event-members {
+    display: flex;
+    align-items: center;
+}
+
+.time-location {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.event-members hr {
+    margin: 0 20px;
+    width: 3px;
+    height: 50px;
+    background-color: black;
+}
+
+.participants {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.participants-icon-container img {
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .event-members {
+        display: none;
+    }
+}

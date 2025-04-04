@@ -1,8 +1,117 @@
+* {
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    height: 93vh;
+    width: 100%;
+    border: 1px solid black;
+}
+
+main {
+    display: flex;
+    min-height: 93vh;
+    background: linear-gradient(45deg, #006D77, #23CFA7);
+    overflow: auto;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
+#page-header {
+    height: 7vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    z-index: 1000;
+    top: 0;
+}
+
+#page-footer {
+    z-index: 1000;
+    padding: 20px;
+    font-family: "League Spartan", serif;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 100%;
+}
+
+button {
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.animated-input {
+    background: #eeeeee;
+    transition : box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.animated-input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.animated-input:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: white;
+}
+
 input {
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 15px;
+    border: none;
     outline: none;
+    transition: box-shadow 0.4s ease;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #006D77, #23CFA7);
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar-track {
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    display: none;
 }
