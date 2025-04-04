@@ -1,0 +1,30 @@
+.button {
+  text-decoration: none;
+  color: #000;
+}
+
+.button:hover {
+  color: #23CFA7;
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.icon, .button {
+  transition: all 0.4s ease-in-out;
+}
+
+.icon:hover {
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.15);
+}
+
+.icon {
+  display: block;
+  width: 32px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
