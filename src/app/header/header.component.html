@@ -1,0 +1,15 @@
+<header class="page-header d-flex align-items-center p-2">
+    <img src="icons/logo.svg" width="50" height="50">
+    <nav class="bg-black p-0">
+        <ul id="header-navigation" class="d-flex align-items-center list-unstyled gap-3">
+            @for (link of navLinks; track $index) {
+                <li class="d-flex align-items-center bg-primary">
+                    <a href="#">{{ link.page }}</a>
+                </li>
+            }
+        </ul>
+    </nav>
+    <div id="page-header-buttons" class="ms-auto">
+        <app-generic-button [text]="buttonText"></app-generic-button>
+    </div>
+</header>
