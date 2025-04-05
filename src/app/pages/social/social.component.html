@@ -1,14 +1,21 @@
 <main class="main d-flex align-items-center justify-content-center">
-    <div class="d-flex flex-column overflow-hidden">
+    <div class="d-flex flex-column w-50 overflow-hidden bg-white h-100">
         <div class="social-header-container">
-            <header class="social-header-navigation">
+            <header class="social-header-navigation p-3  d-flex justify-content-center shadow">
                 <nav>
+                    <ul class="d-flex list-unstyled gap-3">
+                        @for (link of navLinks; track $index) {
+                            <li class="text-center">{{link}}</li>
+                        }
+                    </ul>
                 </nav>
             </header>
-            <div class="social-header-information"></div>
+            <div class="social-header-information  d-flex justify-content-center p-5"> Manolo </div>
         </div>
-        <section class="social-cards-list overflow-scroll">
-
+        <section class="social-cards-list flex-grow-1 shadow overflow-scroll">
+            @for (socialCard of socialCards; track $index) {
+                <app-social-card [socialCard]="socialCard"></app-social-card>
+            }
         </section>
     </div>
 </main>

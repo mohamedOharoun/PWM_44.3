@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {SocialCard} from "../../../../model/socialCard";
+import {Component, Input} from '@angular/core';
+import {SocialCard} from "../../../model/socialCard";
 
 @Component({
   selector: 'app-social-card',
@@ -9,6 +9,5 @@ import {SocialCard} from "../../../../model/socialCard";
   styleUrl: './social-card.component.css'
 })
 export class SocialCardComponent {
-  protected socialCard!: SocialCard;
-
+  @Input() socialCard!: SocialCard;
 }

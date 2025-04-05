@@ -1,11 +1,85 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {SocialCard} from "../../model/socialCard";
+import {SocialCardComponent} from "./social-card/social-card.component";
 
 @Component({
-  selector: 'app-social',
-  imports: [],
-  templateUrl: './social.component.html',
-  styleUrl: './social.component.css'
+    selector: 'app-social',
+    imports: [
+        SocialCardComponent
+    ],
+    templateUrl: './social.component.html',
+    standalone: true,
+    styleUrl: './social.component.css'
 })
 export class SocialComponent {
+    protected socialCards: SocialCard[] = [
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },{
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },{
+            image: "icons/logo.svg",
+            text: "Hi",
+            icons: [""]
+        },
+        {
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },{
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },{
+            image: "",
+            text: "Hi",
+            icons: [""]
+        },{
+            image: "",
+            text: "Hi",
+            icons: [""]
+        }
 
+
+
+
+
+
+    ];
+    navLinks: string[] = [
+        "Friends",
+        "Pending",
+        "Sent requests",
+        "Blocked",
+        "Groups",
+    ];
 }
