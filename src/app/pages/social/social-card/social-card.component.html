@@ -1,13 +1,14 @@
-<article class="d-flex">
-    <div class="social-card-image-container">
-        <img [src]="socialCard.image">
+<article class="social-card d-flex gap-3 p-5 m-2 align-items-center p-3">
+    <div class="social-card-image-container overflow-hidden">
+        <img src="https://picsum.photos/200">
     </div>
     <div class="social-card-text-container">
-        {{socialCard.text}}
+        {{ socialCard.text }}
     </div>
     <div class="social-card-utils-icons-container">
         @for (iconURL of socialCard.icons; track $index) {
-            <img src="{{iconURL}}">
+            <div class="util-icon-container w-25 overflow-hidden">
+            </div>
         }
     </div>
 </article>

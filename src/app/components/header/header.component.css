@@ -3,3 +3,12 @@
     height: 8vh;
     z-index: 1000;
 }
+
+.header-nav-text {
+    transition: font-weight 0.3s ease;
+    cursor: pointer;
+}
+
+.header-nav-text:hover {
+    font-weight: bold;
+}

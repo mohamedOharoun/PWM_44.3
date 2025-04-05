@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
 import {SocialCard} from "../../model/socialCard";
 import {SocialCardComponent} from "./social-card/social-card.component";
+import {HeaderComponent} from "../../components/header/header.component";
 
 @Component({
     selector: 'app-social',
     imports: [
-        SocialCardComponent
+        SocialCardComponent,
+        HeaderComponent
     ],
     templateUrl: './social.component.html',
     standalone: true,
