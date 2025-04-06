@@ -6,8 +6,7 @@ import {HeaderComponent} from "../../components/header/header.component";
 @Component({
     selector: 'app-social',
     imports: [
-        SocialCardComponent,
-        HeaderComponent
+        SocialCardComponent
     ],
     templateUrl: './social.component.html',
     standalone: true,
@@ -15,67 +14,6 @@ import {HeaderComponent} from "../../components/header/header.component";
 })
 export class SocialComponent {
     protected socialCards: SocialCard[] = [
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },{
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },{
-            image: "icons/logo.svg",
-            text: "Hi",
-            icons: [""]
-        },
-        {
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },{
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },{
-            image: "",
-            text: "Hi",
-            icons: [""]
-        },{
-            image: "",
-            text: "Hi",
-            icons: [""]
-        }
-
-
-
-
-
-
     ];
     navLinks: string[] = [
         "Friends",

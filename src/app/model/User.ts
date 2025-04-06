@@ -1,6 +1,7 @@
 import {Group} from "./Group";
 
 export type User = {
+    email: string;
     name: string;
     username: string;
     description: string;

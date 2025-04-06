@@ -1,0 +1,28 @@
+.step-circle {
+    cursor: pointer;
+    border: 2px solid #23CFA7;
+    color: black;
+    text-underline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.focused-step {
+    background: linear-gradient(45deg, #006D77, #23CFA7);
+    color: white;
+}
+
+.previous-step {
+    background: linear-gradient(45deg, rgba(0, 109, 119, 0.42), rgba(35, 207, 167, 0.4));
+    color: white;
+}
+
+.step-information {
+    width: 3rem;
+    font-size: 0.7rem;
+    text-wrap: balance;
+}
