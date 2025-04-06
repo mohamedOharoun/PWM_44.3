@@ -1,0 +1,38 @@
+<main class="main d-flex align-items-center justify-content-center">
+    <div class="central-card d-flex flex-column bg-white p-5">
+        <div class="group-creation-header w-100 d-flex flex-column">
+            <h1>Group creation</h1>
+            <hr>
+        </div>
+        <div class="w-100 d-flex mb-4">
+            <div class="input-container drop-zone d-flex flex-column align-items-center justify-content-center"
+                 (dragover)="onDragOver($event)"
+                 (drop)="onDrop($event)"
+                 (click)="triggerFileInput()">
+                <input type="file" id="fileInput" class="d-none" (change)="onFileSelected($event)"/>
+                @if (!image) {
+                    <i class="bi-upload fs-5"></i>
+                    <p class="text-center">Upload your image!</p>
+                } @else {
+                    <div class="image-preview">
+                        <img [src]="image" alt="Loaded Image" />
+                    </div>
+                }
+            </div>
+            <div class="d-flex flex-column flex-grow-1">
+                <label class="fw-lighter fs-5" for="group-name-input">Group name</label>
+                <input class="input" id="group-name-input" type="text">
+            </div>
+        </div>
+        <div class="w-100">
+            <div class="w-100 d-flex flex-column">
+                <label class="fw-lighter fs-5" for="group-member-input">Member name</label>
+                <input class="input" id="group-member-input" type="text">
+            </div>
+            <div class="users-list-container overflow-auto">
+                <app-users-list [users]="members"></app-users-list>
+            </div>
+        </div>
+        <app-generic-button class="mt-auto" text="Create group" buttonClass="solid-button"></app-generic-button>
+    </div>
+</main>
