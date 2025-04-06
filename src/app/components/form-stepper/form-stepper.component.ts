@@ -12,13 +12,13 @@ import {NgClass} from "@angular/common";
 export class FormStepperComponent {
     @Input() steps: { step: number; route: string; text: String }[] = [];
     @Input() currentStep: number = 1;
-    @Output() saveDataEmitter = new EventEmitter<string>();
+    @Output() changePageEmitter = new EventEmitter<{ step: number; route: string; text: String }>();
 
     protected getStepClass(step: number) {
         return this.currentStep === step ? 'focused-step' : this.currentStep > step ? 'previous-step' : 'non-focused-step';
     }
 
-    emit(route: string) {
-        this.saveDataEmitter.emit(route);
+    emit(step: { step: number; route: string; text: String }) {
+        this.changePageEmitter.emit(step);
     }
 }

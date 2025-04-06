@@ -1,7 +1,7 @@
 <div class="container">
     <div class="d-flex align-items-center">
         @for (step of steps; track $index) {
-            <div class="text-center" (click)="emit(step.route)">
+            <div class="text-center" (click)="emit(step)">
                 <div
                         class="step-circle rounded-circle d-flex align-items-center justify-content-center"
                         [ngClass]="getStepClass(step.step)"

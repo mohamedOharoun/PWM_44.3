@@ -1,0 +1,5 @@
+<form class="d-flex flex-column gap-5">
+    <app-input-with-icon [value]="email" (valueEmitter)="setEmailValue($event)" icon="bi-envelope" placeholder="E-mail" type="email"></app-input-with-icon>
+    <app-input-with-icon [value]="password" (valueEmitter)="setPasswordValue($event)" icon="bi-lock" placeholder="Introduce your password" type="password"></app-input-with-icon>
+    <app-input-with-icon [value]="passwordConfirmation" (valueEmitter)="setPasswordConfirmationValue($event)" icon="bi-lock" placeholder="Repeat your password" type="password"></app-input-with-icon>
+</form>
