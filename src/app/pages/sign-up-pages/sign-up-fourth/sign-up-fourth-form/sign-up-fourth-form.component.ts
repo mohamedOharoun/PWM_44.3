@@ -30,12 +30,4 @@ export class SignUpFourthFormComponent {
         this.formData?.update();
         this.formService.update();
     }
-
-    protected setFirstPolicyValue(value: string) {
-        this.firstPolicy = value;
-    }
-
-    protected setSecondPolicyValue(value: string) {
-        this.secondPolicy = value;
-    }
 }

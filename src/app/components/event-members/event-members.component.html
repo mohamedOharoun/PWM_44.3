@@ -1,0 +1,16 @@
+<main class="main">
+    @if (isVisible) {
+        <div class="container-blur w-100 h-100 d-flex align-items-center justify-content-center">
+            <div class="members-card d-flex flex-column p-3">
+                <i (click)="close()" class="exit-icon bi-x-circle fs-4"></i>
+                <div class="members-card-header d-flex align-items-center justify-content-center p-4">
+                    <h1 class="fw-bolder">{{members.length}} member(s)</h1>
+                </div>
+                <div class="members-card-list-container overflow-scroll">
+                    <app-users-list [users]="members"></app-users-list>
+                </div>
+            </div>
+        </div>
+
+    }
+</main>

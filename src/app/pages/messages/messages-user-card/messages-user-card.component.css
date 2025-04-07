@@ -1,0 +1,21 @@
+.messages-user-card {
+    height: 5rem;
+    border-radius: 10px;
+    transition: background 0.1s ease;
+}
+
+.messages-user-card:hover {
+    background: #eeeeee;
+}
+
+.messages-user-card-image-container {
+    border-radius: 50%;
+    border: 1px solid #23CFA7;
+    height: 4rem;
+    width: 4rem;
+}
+
+.user-img {
+    height: 100%;
+    width: 100%;
+}

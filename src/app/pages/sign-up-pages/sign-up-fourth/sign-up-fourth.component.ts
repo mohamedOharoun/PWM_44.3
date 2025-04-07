@@ -3,6 +3,8 @@ import {FormStepperComponent} from "../../../components/form-stepper/form-steppe
 import {GenericButtonComponent} from "../../../components/generic-button/generic-button.component";
 import {Router} from "@angular/router";
 import {SignUpFourthFormComponent} from "./sign-up-fourth-form/sign-up-fourth-form.component";
+import {FirebaseService} from "../../../services/firebase.service";
+import {FormService} from "../../../services/form.service";
 
 @Component({
     selector: 'app-sign-up-fourth',
@@ -23,7 +25,17 @@ export class SignUpFourthComponent {
         text: ''
     };
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private formService: FormService, private storage: FirebaseService) {
+    }
+
+    createAccount() {
+        this.form.saveFormData();
+        const signUpInfo: FormService = this.formService.get('signUp');
+        this.storage.registerUser(
+            signUpInfo.get('email'),
+            signUpInfo.get('password'),
+            null
+        ).then();
     }
 
     protected saveFormData() {

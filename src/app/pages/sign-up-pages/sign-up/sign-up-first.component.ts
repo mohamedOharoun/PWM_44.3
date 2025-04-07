@@ -11,10 +11,10 @@ import {Router} from "@angular/router";
         GenericButtonComponent,
         SignUpFirstFormComponent
     ],
-    templateUrl: './sign-up.component.html',
+    templateUrl: './sign-up-first.component.html',
     styleUrl: '../sign-up.css'
 })
-export class SignUpComponent {
+export class SignUpFirstComponent {
     @ViewChild(SignUpFirstFormComponent) form!: SignUpFirstFormComponent;
     protected currentStep: number = 1;
     protected nextStep: { step: number; route: string; text: String } = {
