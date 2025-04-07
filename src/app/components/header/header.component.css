@@ -1,7 +1,14 @@
 .page-header {
+    display: flex;
+    align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 8vh;
     z-index: 1000;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 1rem;
 }
 
 .header-nav-text {
@@ -12,3 +19,50 @@
 .header-nav-text:hover {
     font-weight: bold;
 }
+
+.toggle-menu-button {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .toggle-menu-button {
+        display: unset;
+    }
+
+    .header-navigation {
+        z-index: 500;
+        top: -20rem;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+        background: white;
+        transition: 0.3s top ease-in;
+    }
+
+    .header-navigation-opened {
+        pointer-events: auto;
+        top: 4rem;
+    }
+
+    .header-navigation li {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .header-navigation-opened li:hover {
+        background: #eeeeee;
+    }
+
+    .page-header-opened {
+        box-shadow: unset;
+    }
+}
+
