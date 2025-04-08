@@ -1,0 +1,16 @@
+<form class="d-flex flex-column align-items-center">
+    <div class="input-container drop-zone d-flex flex-column align-items-center justify-content-center"
+         (dragover)="onDragOver($event)"
+         (drop)="onDrop($event)"
+         (click)="triggerFileInput()">
+        <input type="file" id="fileInput" class="d-none" (change)="onFileSelected($event)"/>
+        @if (!image) {
+            <i class="bi-upload fs-5"></i>
+            <p>Upload your image!</p>
+        } @else {
+            <div class="image-preview">
+                <img [src]="image" alt="Loaded Image" />
+            </div>
+        }
+    </div>
+</form>

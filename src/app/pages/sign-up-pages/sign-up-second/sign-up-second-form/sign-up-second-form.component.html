@@ -1,0 +1,5 @@
+<form class="d-flex flex-column gap-5">
+    <app-input-with-icon [value]="name" (valueEmitter)="setNameValue($event)" icon="bi-person" placeholder="Full name" type="text"></app-input-with-icon>
+    <app-input-with-icon [value]="username" (valueEmitter)="setUsernameValue($event)" icon="bi-person" placeholder="Choose your username" type="text"></app-input-with-icon>
+    <app-input-with-icon [value]="birthDate" (valueEmitter)="setBirthDateValue($event)" icon="bi-calendar" type="date" inputDirection="rotate-input"></app-input-with-icon>
+</form>

@@ -1,0 +1,38 @@
+<main class="main d-flex">
+    <aside class="users-list-aside h-100 bg-white overflow-auto">
+        <section class="users-list">
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+            <app-messages-user-card></app-messages-user-card>
+        </section>
+    </aside>
+    <div class="chat-container d-flex flex-column bg-white">
+        <div class="chat-header d-flex flex-column align-items-center">
+            <h1 class="fw-bolder">Manolo</h1>
+            <hr class="w-75">
+        </div>
+        <section class="chat p-3">
+            @for (message of messages; track $index) {
+                <app-message-card [message]="message"></app-message-card>
+            }
+        </section>
+        <div class="message-input-container p-4 mt-auto">
+            <app-message-input></app-message-input>
+        </div>
+    </div>
+</main>

@@ -1,5 +1,7 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
+src/app/services/firebase.service.ts
+
 .angular
 node_modules
 
@@ -44,3 +46,4 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/src/app/services/firebase.service.ts
