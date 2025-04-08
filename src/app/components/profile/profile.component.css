@@ -1,0 +1,177 @@
+:host {
+  display: block;
+}
+
+.profile-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-title-container {
+  display: flex;
+}
+
+.profile-title-container img {
+  margin-left: auto;
+}
+
+.edit-button {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  font-size: 18px;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.profile-content {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.uploaded-img-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 30px 90px;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.uploaded-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex-grow: 1;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    transition: box-shadow 0.4s ease;
+
+    &:focus {
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.profile-description-container {
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  textarea {
+    color: grey;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: box-shadow 0.4s ease-in-out;
+    height: 200px;
+    width: 100%;
+
+    &:focus {
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.profile-body {
+  padding: 0 70px;
+}
+
+.summary-content {
+  width: 100%;
+}
+
+.events-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+  position: relative;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.profile-header hr {
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .uploaded-img-container {
+    margin: 0;
+  }
+
+  .profile-header {
+    padding: 2rem;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profile-info label {
+    width: 100%;
+  }
+
+  .profile-body {
+    padding: 1rem;
+  }
+}
+
+.upload-label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-top: 10px;
+}
