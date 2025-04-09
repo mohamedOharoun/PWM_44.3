@@ -8,6 +8,7 @@ import {GroupCreationComponent} from "./pages/group-creation/group-creation.comp
 import {MessagesComponent} from "./pages/messages/messages.component";
 import {AlertComponent} from "./components/alert/alert.component";
 import {EventMembersComponent} from "./components/event-members/event-members.component";
+import {SignInComponent} from './pages/sign-in/sign-in.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -19,4 +20,5 @@ export const routes: Routes = [
     {path: 'messages', component: MessagesComponent},
     {path: 'alert', component: AlertComponent},
     {path: 'members', component: EventMembersComponent},
+    {path: 'signin', component: SignInComponent },
 ];
