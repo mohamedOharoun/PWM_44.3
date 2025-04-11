@@ -9,6 +9,7 @@ import {MessagesComponent} from "./pages/messages/messages.component";
 import {AlertComponent} from "./components/alert/alert.component";
 import {EventMembersComponent} from "./components/event-members/event-members.component";
 import {SignInComponent} from './pages/sign-in/sign-in.component';
+import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -21,4 +22,5 @@ export const routes: Routes = [
     {path: 'alert', component: AlertComponent},
     {path: 'members', component: EventMembersComponent},
     {path: 'signin', component: SignInComponent },
+    {path: 'resetPassword', component: ResetPasswordComponent},
 ];

@@ -3,14 +3,14 @@ import {GenericButtonComponent} from '../../components/generic-button/generic-bu
 import {RouterLink} from '@angular/router';
 
 @Component({
-  selector: 'app-sign-in',
+  selector: 'app-reset-password',
   imports: [
     GenericButtonComponent,
     RouterLink
   ],
-  templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.css'
+  templateUrl: './reset-password.component.html',
+  styleUrl: './reset-password.component.css'
 })
-export class SignInComponent {
+export class ResetPasswordComponent {
 
 }
