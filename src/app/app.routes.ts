@@ -11,6 +11,7 @@ import {EventMembersComponent} from "./components/event-members/event-members.co
 import {SignInComponent} from './pages/sign-in/sign-in.component';
 import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
 import {LandingPageComponent} from './pages/landing-page/landing-page.component';
+import {HomePageComponent} from './pages/home-page/home-page.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -25,4 +26,5 @@ export const routes: Routes = [
     {path: 'signin', component: SignInComponent },
     {path: 'resetPassword', component: ResetPasswordComponent},
     {path: 'landingPage', component: LandingPageComponent},
+    {path: 'homePage', component: HomePageComponent},
 ];
