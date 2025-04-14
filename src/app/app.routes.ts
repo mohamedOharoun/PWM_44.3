@@ -10,6 +10,7 @@ import {AlertComponent} from "./components/alert/alert.component";
 import {EventMembersComponent} from "./components/event-members/event-members.component";
 import {SignInComponent} from './pages/sign-in/sign-in.component';
 import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
+import {LandingPageComponent} from './pages/landing-page/landing-page.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -23,4 +24,5 @@ export const routes: Routes = [
     {path: 'members', component: EventMembersComponent},
     {path: 'signin', component: SignInComponent },
     {path: 'resetPassword', component: ResetPasswordComponent},
+    {path: 'landingPage', component: LandingPageComponent},
 ];
