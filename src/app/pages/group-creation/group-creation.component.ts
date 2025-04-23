@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {GenericButtonComponent} from "../../components/generic-button/generic-button.component";
 import {UsersListComponent} from "../../components/users-list/users-list.component";
-import {User} from "../../model/User";
-import {Group} from "../../model/Group";
+import {User} from "../../../architecture/model/User";
+import {Group} from "../../../architecture/model/Group";
 
 @Component({
     selector: 'app-group-creation',

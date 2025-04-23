@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {SocialCard} from "../../../model/SocialCard";
+import {SocialCard} from "../../../../architecture/model/SocialCard";
 
 @Component({
   selector: 'app-social-card',

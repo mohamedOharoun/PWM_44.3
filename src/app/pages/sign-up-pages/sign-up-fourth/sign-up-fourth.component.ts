@@ -3,8 +3,11 @@ import {FormStepperComponent} from "../../../components/form-stepper/form-steppe
 import {GenericButtonComponent} from "../../../components/generic-button/generic-button.component";
 import {Router} from "@angular/router";
 import {SignUpFourthFormComponent} from "./sign-up-fourth-form/sign-up-fourth-form.component";
-import {FirebaseService} from "../../../services/firebase.service";
 import {FormService} from "../../../services/form.service";
+import {ServiceFactory} from "../../../services/service-factory.service";
+import {AuthenticationService} from "../../../../architecture/io/services/AuthenticationService";
+import {UserService} from "../../../../architecture/io/services/UserService";
+import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
 
 @Component({
     selector: 'app-sign-up-fourth',
@@ -14,6 +17,7 @@ import {FormService} from "../../../services/form.service";
         SignUpFourthFormComponent
     ],
     templateUrl: './sign-up-fourth.component.html',
+    standalone: true,
     styleUrl: '../sign-up.css'
 })
 export class SignUpFourthComponent {
@@ -25,17 +29,32 @@ export class SignUpFourthComponent {
         text: ''
     };
 
-    constructor(private router: Router, private formService: FormService, private storage: FirebaseService) {
+    ngOnInit() {
+    }
+
+    constructor(
+        private router: Router,
+        private formService: FormService,
+        private serviceFactory: ServiceFactory
+    ) {
     }
 
     createAccount() {
         this.form.saveFormData();
         const signUpInfo: FormService = this.formService.get('signUp');
-        this.storage.registerUser(
+        (this.serviceFactory.get('auth') as AuthenticationService).register(
             signUpInfo.get('email'),
             signUpInfo.get('password'),
-            null
-        ).then();
+            {
+                username: signUpInfo.get('username'),
+                description: "",
+                friends: [],
+                pending: [],
+                sentRequests: [],
+                blocked: [],
+                groups: []
+            }
+        ).subscribe(res => console.log(res));
     }
 
     protected saveFormData() {

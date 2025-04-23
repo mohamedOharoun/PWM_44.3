@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {UserCardComponent} from "../users-list/user-card/user-card.component";
-import {User} from '../../model/User';
+import {User} from '../../../architecture/model/User';
 import {UsersListComponent} from "../users-list/users-list.component";
 
 @Component({
