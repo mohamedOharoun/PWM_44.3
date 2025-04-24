@@ -24,12 +24,15 @@ export class EventCreationThirdComponent {
   };
 
   constructor(private router: Router) {}
-
-  protected changePage(step: { step: number; route: string; text: String }) {
-    this.router.navigate([step.route]).then();
+  createEvent() {
   }
 
-  createEvent() {
+  protected saveFormData() {
+    this.form.saveFormData();
+  }
 
+  protected changePage(step: { step: number; route: string; text: String }) {
+    this.saveFormData();
+    this.router.navigate([step.route]).then();
   }
 }
