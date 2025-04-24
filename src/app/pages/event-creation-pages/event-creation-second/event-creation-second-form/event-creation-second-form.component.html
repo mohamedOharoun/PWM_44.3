@@ -1,1 +1,9 @@
-<p>event-creation-second-form works!</p>
+<div class="w-100">
+  <div class="w-100 d-flex flex-column">
+    <label class="fw-lighter fs-5" for="group-member-input">Member name</label>
+    <input class="input" id="group-member-input" type="text">
+  </div>
+  <div class="users-list-container overflow-auto">
+    <app-users-list [users]="members"></app-users-list>
+  </div>
+</div>

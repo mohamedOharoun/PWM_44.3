@@ -12,7 +12,6 @@ import {EventCreationFirstFormComponent} from './event-creation-first-form/event
     EventCreationFirstFormComponent,
   ],
   templateUrl: './event-creation-first.component.html',
-
   styleUrl: '../event-creation.css'
 })
 export class EventCreationFirstComponent {
