@@ -9,6 +9,10 @@ export class FirebaseAuthenticationService implements AuthenticationService {
     constructor(private auth: Auth, private store: Firestore) {
     }
 
+    getLoggedUserUID() {
+        return this.auth.currentUser?.uid;
+    }
+
     getUserByName(username: string): Observable<User | null> {
         const q = query(collection(this.store, 'users'), where('username', '==', username))
         return from(getDocs(q)).pipe(
