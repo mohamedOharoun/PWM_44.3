@@ -1,0 +1,30 @@
+<div id="description-tags-step" class="px-3">
+  <div class="mb-3">
+    <label for="event-description" class="form-label"
+           id="description-event">Description</label>
+    <textarea rows="6" id="event-description"
+              class="form-control shadow-sm p-3"></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="event-tags" class="form-label"
+           id="tags-event">Tags</label>
+    <input
+      id="event-tags"
+      type="text"
+      class="form-control shadow-sm py-3"
+      #tagInput
+      (keyup.enter)="addTag(tagInput.value)">
+  </div>
+
+  <div id="tags-section-container" class="mb-3" style="max-height: 150px; overflow-y: auto;">
+    <div id="tags-section" class="d-flex flex-wrap">
+      <app-tag-item
+        *ngFor="let tag of eventForm.get('tags')?.value; let i = index"
+        [tag]="tag"
+        [index]="i"
+        (remove)="removeTag($event)">
+      </app-tag-item>
+    </div>
+  </div>
+</div>

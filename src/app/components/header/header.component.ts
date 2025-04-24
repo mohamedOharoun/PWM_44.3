@@ -14,7 +14,7 @@ import {Router, RouterLink} from "@angular/router";
 })
 export class HeaderComponent {
     navLinks: { page: string; route: string | null }[] = [
-        {page: 'Home', route: null},
+        {page: 'Home', route: 'homePage'},
         {page: 'Events', route: null},
         {page: 'Social', route: 'social'},
         {page: 'Messages', route: 'messages'},

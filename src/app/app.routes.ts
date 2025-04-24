@@ -18,6 +18,9 @@ import {
 import {
   EventCreationSecondComponent
 } from './pages/event-creation-pages/event-creation-second/event-creation-second.component';
+import {
+  EventCreationThirdComponent
+} from './pages/event-creation-pages/event-creation-third/event-creation-third.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -35,4 +38,5 @@ export const routes: Routes = [
     {path: 'homePage', component: HomePageComponent},
     {path: 'eventCreationFirst', component: EventCreationFirstComponent},
     {path: 'eventCreationSecond', component: EventCreationSecondComponent},
+    {path: 'eventCreationThird', component: EventCreationThirdComponent},
 ];
