@@ -12,7 +12,9 @@ import {SignInComponent} from './pages/sign-in/sign-in.component';
 import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
 import {LandingPageComponent} from './pages/landing-page/landing-page.component';
 import {HomePageComponent} from './pages/home-page/home-page.component';
-import {EventCreationComponent} from './pages/event-creation/event-creation.component';
+import {
+  EventCreationFirstComponent
+} from './pages/event-creation-pages/event-creation-first/event-creation-first.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -28,5 +30,5 @@ export const routes: Routes = [
     {path: 'resetPassword', component: ResetPasswordComponent},
     {path: 'landingPage', component: LandingPageComponent},
     {path: 'homePage', component: HomePageComponent},
-    {path: 'createEvent', component: EventCreationComponent},
+    {path: 'eventCreationFirst', component: EventCreationFirstComponent},
 ];
