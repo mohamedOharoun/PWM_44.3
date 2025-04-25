@@ -1,16 +1,16 @@
 <div class="card border-2 border-success p-3 m-2">
-  <div class="card-header d-flex justify-content-between align-items-center pe-4">
+  <div class="d-flex justify-content-between align-items-center pe-4">
     <div class="d-flex align-items-center">
       <h2 class="me-2 mb-0">{{ eventName }}</h2>
       <span class="mx-2 text-muted">&gt;</span>
       <span class="text-secondary">{{ eventCreator }}</span>
     </div>
     <div class="d-flex gap-2">
-      <button class="btn btn-light p-1">
-        <img [src]="icons.report" alt="Flag" width="24" height="24">
+      <button class="button-container">
+        <img [src]="icons.report" alt="Flag" class="icons-img">
       </button>
-      <button class="btn btn-light p-1">
-        <img [src]="icons.share" alt="Share" width="24" height="24">
+      <button class="button-container">
+        <img [src]="icons.share" alt="Share" class="icons-img">
       </button>
     </div>
   </div>
@@ -25,15 +25,15 @@
 
       <section class="d-flex flex-column gap-2 w-25">
         <div class="d-flex align-items-center gap-2">
-          <img [src]="icons.date" alt="Time" width="22" height="22">
+          <img [src]="icons.date" alt="Time" class="icons-img">
           <span class="fs-6">{{ date }}</span>
         </div>
         <div class="d-flex align-items-center gap-2">
-          <img [src]="icons.place" alt="Location" width="25" height="25">
+          <img [src]="icons.place" alt="Location" class="icons-img">
           <span class="fs-6">{{ place }}</span>
         </div>
         <div class="d-flex align-items-center gap-2">
-          <img [src]="icons.price" alt="Price" width="25" height="25">
+          <img [src]="icons.price" alt="Price" class="icons-img">
           <span class="fs-6">{{ price }}</span>
         </div>
       </section>
@@ -48,33 +48,33 @@
     <hr class="w-75">
   </div>
 
-  <div class="card-footer d-flex justify-content-between align-items-center">
+  <div class="d-flex justify-content-between align-items-center">
     <div class="d-flex gap-3">
       <div class="d-flex align-items-center gap-1">
         <span class="fw-bold fs-5">{{ likes }}</span>
-        <button class="btn btn-light p-1">
-          <img [src]="icons.like" alt="Likes" width="24" height="24">
+        <button class="button-container">
+          <img [src]="icons.like" alt="Likes" class="icons-img">
         </button>
       </div>
       <div class="d-flex align-items-center gap-1">
         <span class="fw-bold fs-5">{{ comments }}</span>
-        <button class="btn btn-light p-1">
-          <img [src]="icons.square" alt="Comments" width="24" height="24">
+        <button class="button-container">
+          <img [src]="icons.square" alt="Comments" class="icons-img">
         </button>
       </div>
     </div>
 
     <div class="flex-grow-1 d-flex justify-content-center">
-      <a href="../../pages/html/events.html" class="btn btn-outline-secondary">Ver más</a>
+      <a href="../../pages/html/events.html" class="button-container">SEE MORE</a>
     </div>
 
     <div class="d-flex flex-column align-items-center gap-1" style="width: 21%; margin-top: -80px;">
-      <a href="event_members.html" class="d-flex align-items-center justify-content-center w-100">
-        <span class="fw-bold fs-3">{{ participants }}</span>
-        <img [src]="icons.participants" alt="Participants" width="40" height="40">
+      <a href="event_members.html" class="participants-anchor d-flex align-items-center justify-content-center w-100">
+        <span class="participants-count fw-bold fs-3 text-black" style="margin-top: 10px">{{ participants }}</span>
+        <img class="mx-3" [src]="icons.participants" alt="Participants">
       </a>
-      <span class="fs-5 text-center w-100">{{ participantsLabel }}</span>
-      <app-generic-button text="Join"></app-generic-button>
+      <span class="text-center w-100">{{ participantsLabel }}</span>
+      <app-generic-button text="Join" buttonClass="solid-button"></app-generic-button>
     </div>
   </div>
 </div>
