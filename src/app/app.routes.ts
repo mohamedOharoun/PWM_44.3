@@ -8,6 +8,19 @@ import {GroupCreationComponent} from "./pages/group-creation/group-creation.comp
 import {MessagesComponent} from "./pages/messages/messages.component";
 import {AlertComponent} from "./components/alert/alert.component";
 import {EventMembersComponent} from "./components/event-members/event-members.component";
+import {SignInComponent} from './pages/sign-in/sign-in.component';
+import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
+import {LandingPageComponent} from './pages/landing-page/landing-page.component';
+import {HomePageComponent} from './pages/home-page/home-page.component';
+import {
+  EventCreationFirstComponent
+} from './pages/event-creation-pages/event-creation-first/event-creation-first.component';
+import {
+  EventCreationSecondComponent
+} from './pages/event-creation-pages/event-creation-second/event-creation-second.component';
+import {
+  EventCreationThirdComponent
+} from './pages/event-creation-pages/event-creation-third/event-creation-third.component';
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent},
@@ -19,4 +32,11 @@ export const routes: Routes = [
     {path: 'messages', component: MessagesComponent},
     {path: 'alert', component: AlertComponent},
     {path: 'members', component: EventMembersComponent},
+    {path: 'signin', component: SignInComponent },
+    {path: 'resetPassword', component: ResetPasswordComponent},
+    {path: 'landingPage', component: LandingPageComponent},
+    {path: 'homePage', component: HomePageComponent},
+    {path: 'eventCreationFirst', component: EventCreationFirstComponent},
+    {path: 'eventCreationSecond', component: EventCreationSecondComponent},
+    {path: 'eventCreationThird', component: EventCreationThirdComponent},
 ];

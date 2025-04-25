@@ -6,7 +6,7 @@ main {
     margin: 0;
     padding: 0;
     background: radial-gradient(circle, #006D77, #23CFA7);
-    height: 92vh;
+    min-height: 92vh;
 }
 
 ::-webkit-scrollbar {

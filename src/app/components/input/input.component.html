@@ -1,0 +1,11 @@
+<div class="input-wrapper">
+  <label class="form-label">{{ label }}</label>
+  <div class="input-without-icon">
+    <input
+      [type]="type"
+      [(ngModel)]="value"
+      (ngModelChange)="emitValue()"
+      class="form-control custom-input"
+    />
+  </div>
+</div>

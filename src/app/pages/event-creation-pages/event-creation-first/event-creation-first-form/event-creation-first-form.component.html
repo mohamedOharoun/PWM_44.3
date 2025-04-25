@@ -1,0 +1,47 @@
+<form class="d-flex flex-column">
+  <app-input
+    [type]="'text'"
+    [label]="'Name'"
+    [(value)]="name"
+    (valueChange)="setName($event)"
+    class="mb-3">
+  </app-input>
+
+  <app-input
+    [type]="'datetime-local'"
+    [label]="'Date & Time'"
+    [(value)]="dateTime"
+    (valueChange)="setDateTime($event)"
+    class="mb-3">
+  </app-input>
+
+  <app-input
+    [type]="'number'"
+    [label]="'Price'"
+    [(value)]="price"
+    (valueChange)="setPrice($event)"
+    class="mb-3">
+  </app-input>
+
+  <app-input
+    [type]="'text'"
+    [label]="'Location'"
+    [(value)]="place"
+    (valueChange)="setPlace($event)"
+    class="mb-3">
+  </app-input>
+
+  <div class="input-without-icon mb-3 gap-1 d-flex align-content-center">
+    <input
+      id="event-private"
+      type="checkbox"
+      class="form-check-input"
+      [checked]="isPrivate"
+      (change)="togglePrivacy()"
+    />
+    <label for="event-private" class="form-check-label">
+      {{ isPrivate ? 'Private' : 'Public' }}
+    </label>
+  </div>
+
+</form>
