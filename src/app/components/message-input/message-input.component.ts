@@ -8,6 +8,7 @@ import {NgClass} from "@angular/common";
         FormsModule
     ],
     templateUrl: './message-input.component.html',
+    standalone: true,
     styleUrl: './message-input.component.css'
 })
 export class MessageInputComponent {
