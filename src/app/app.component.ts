@@ -7,13 +7,15 @@ import {Auth} from "@angular/fire/auth";
 import {Firestore} from "@angular/fire/firestore";
 import {FirebaseUserService} from "./io/services/FirebaseUserService";
 import {FirebaseMessageService} from "./io/services/FirebaseMessageService";
+import {FooterComponent} from './components/footer/footer.component';
 
 @Component({
     selector: 'app-root',
-    imports: [
-        RouterOutlet,
-        HeaderComponent
-    ],
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    FooterComponent
+  ],
     templateUrl: './app.component.html',
     standalone: true,
     styleUrl: './app.component.css'
