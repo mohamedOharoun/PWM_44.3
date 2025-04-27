@@ -7,6 +7,7 @@ import {NgClass} from "@angular/common";
         NgClass
     ],
     templateUrl: './form-stepper.component.html',
+    standalone: true,
     styleUrl: './form-stepper.component.css'
 })
 export class FormStepperComponent {

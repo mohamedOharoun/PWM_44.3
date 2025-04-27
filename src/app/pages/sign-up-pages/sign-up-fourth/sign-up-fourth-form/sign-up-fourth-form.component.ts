@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
         FormsModule
     ],
     templateUrl: './sign-up-fourth-form.component.html',
+    standalone: true,
     styleUrl: './sign-up-fourth-form.component.css'
 })
 export class SignUpFourthFormComponent {

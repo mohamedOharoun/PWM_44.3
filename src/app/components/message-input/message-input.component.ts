@@ -5,10 +5,10 @@ import {NgClass} from "@angular/common";
 @Component({
     selector: 'app-message-input',
     imports: [
-        FormsModule,
-        NgClass
+        FormsModule
     ],
     templateUrl: './message-input.component.html',
+    standalone: true,
     styleUrl: './message-input.component.css'
 })
 export class MessageInputComponent {
@@ -17,5 +17,6 @@ export class MessageInputComponent {
 
     emitValue() {
         this.valueEmitter.emit(this.value);
+        this.value = "";
     }
 }
