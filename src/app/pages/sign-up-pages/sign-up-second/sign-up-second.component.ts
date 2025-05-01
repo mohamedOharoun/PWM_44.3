@@ -5,7 +5,7 @@ import {Router} from "@angular/router";
 import {SignUpSecondFormComponent} from "../../../components/forms/sign-up-second-form/sign-up-second-form.component";
 
 @Component({
-    selector: 'app-sign-up-first-second',
+    selector: 'app-sign-up-second',
     imports: [
         FormStepperComponent,
         GenericButtonComponent,

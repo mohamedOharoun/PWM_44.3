@@ -25,7 +25,7 @@ export class MessagesComponent {
     @ViewChild('withScroll') private withScroll!: ElementRef;
     @ViewChildren('item') private itemsElements!: QueryList<ElementRef>;
     private recipientID = '3MlqqavZWJfRZoytm1dp6nhw0Or1';
-    protected friends: User[] = [];
+    protected friends: string[] = [];
     protected senderID: string | null = null;
     protected currentChatUser: User | null = null;
 
@@ -37,13 +37,12 @@ export class MessagesComponent {
     }
 
     ngOnInit() {
-        (this.serviceFactory.get('auth') as AuthenticationService).signIn('javier.casno@gmail.com', '123456');
         (this.serviceFactory.get('user') as UserService).userWith(this.recipientID).subscribe(res => this.currentChatUser = res);
-        (this.serviceFactory.get('auth') as AuthenticationService).user$.subscribe(user => {
+        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(user => {
             this.senderID = user?.id!;
             (this.serviceFactory.get('user') as UserService).friendsOf(user!.id!).subscribe(users => {
                 this.friends = users!;
-                this.recipientID = this.friends[0].id!;
+                this.recipientID = this.friends[0];
             });
             (this.serviceFactory.get('message') as MessageService).messagesOf(this.senderID, this.recipientID).subscribe(messages => {
                 this.messages = messages.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());

@@ -13,7 +13,7 @@ import {where} from "@angular/fire/firestore";
 
 export class FirebaseAuthenticationService implements AuthenticationService {
     private userSubject = new BehaviorSubject<User | null>(null);
-    user$: Observable<User | null> = this.userSubject.asObservable();
+    user: Observable<User | null> = this.userSubject.asObservable();
 
     constructor(private auth: Auth, private store: Firestore) {
         setPersistence(this.auth, browserLocalPersistence).then(() => {

@@ -1,8 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import {FormStepperComponent} from "../../../components/form-stepper/form-stepper.component";
 import {GenericButtonComponent} from "../../../components/generic-button/generic-button.component";
-import {SignUpFirstFormComponent} from "../../../components/forms/sign-up-first-form/sign-up-first-form.component";
 import {Router} from "@angular/router";
+import {SignUpFirstFormComponent} from "../../../components/forms/sign-up-first-form/sign-up-first-form.component";
 
 @Component({
     selector: 'app-sign-up-first',

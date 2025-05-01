@@ -5,10 +5,9 @@
     <div class="social-card-text-container">
         {{ socialCard.text }}
     </div>
-    <div class="social-card-utils-icons-container">
-        @for (iconURL of socialCard.icons; track $index) {
-            <div class="util-icon-container w-25 overflow-hidden">
-            </div>
+    <div class="d-flex ms-auto gap-2 social-card-utils-icons-container">
+        @for (icon of socialCard.icons; track $index) {
+            <span [innerHTML]="icon"></span>
         }
     </div>
 </article>

@@ -1,58 +1,57 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
-import {SocialCard} from "../../../architecture/model/SocialCard";
-import {SocialCardComponent} from "../../components/social-card/social-card.component";
-import {ActivatedRoute} from "@angular/router";
+import {Component} from '@angular/core';
 import {ServiceFactory} from "../../services/service-factory.service";
 import {User} from "../../../architecture/model/User";
 import {UserService} from "../../../architecture/io/services/UserService";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
+import {FormsModule} from "@angular/forms";
+import {SocialNavigationComponent} from "../../components/social-navigation/social-navigation.component";
+import {UserCardComponent} from "../../components/social-cards/user-card/user-card.component";
 
 @Component({
     selector: 'app-social',
     imports: [
-        SocialCardComponent
+        FormsModule,
+        SocialNavigationComponent,
+        UserCardComponent
     ],
     templateUrl: './social.component.html',
     standalone: true,
     styleUrl: './social.component.css'
 })
 export class SocialComponent {
-    protected socialCards: SocialCard[] = [];
-    protected navLinks: string[] = [
-        "Friends",
-        "Pending",
-        "Sent requests",
-        "Blocked",
-        "Groups",
-    ];
-    protected currentSocialCategory: string = "friends";
+    protected users: User[] = [];
     protected user: User | null = null;
+    protected friends: string[] = [];
+    protected blocked: string[] = [];
+    protected requests: string[] = [];
+    protected username: string = "";
 
     constructor(
-        private route: ActivatedRoute,
         private serviceFactory: ServiceFactory
     ) {
     }
 
     ngOnInit() {
-        this.route.queryParams.subscribe(params => {
-            this.currentSocialCategory = params['socialCategory'];
-            (this.serviceFactory.get('auth') as AuthenticationService).user$.subscribe(res => {
-                this.user = res;
-                (this.serviceFactory.get('user') as UserService).friendsOf(this.user!.id!).subscribe(res => this.socialCards = res!.map(u => this.toSocialCard(u)));
+        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => {
+            this.user = res;
+            (this.serviceFactory.get('user') as UserService).friendsOf(this.user?.id!).subscribe(res => {
+                this.friends = [...res];
+                (this.serviceFactory.get('user') as UserService).blockedOf(this.user?.id!).subscribe(res => {
+                    this.blocked = [...res];
+                    (this.serviceFactory.get('user') as UserService).sentRequestsOf(this.user?.id!).subscribe(res => {
+                        this.requests = [...res];
+                        this.search();
+                    });
+                });
             });
         });
     }
 
-    private toSocialCard(user: User): SocialCard {
-        return {
-            comments: 0,
-            creator: user,
-            icons: [],
-            image: "https://picsum.photos/200",
-            likes: 0,
-            members: [],
-            text: user.username
-        }
+    protected search() {
+        (this.serviceFactory.get('user') as UserService).userNamed(this.username).subscribe(res => this.users = [...res].filter(u => u.id !== this.user?.id && !this.friends.includes(u.id!) && !this.blocked.includes(u.id!) && !this.requests.includes(u.id!)));
+    }
+
+    protected addUser(id: string) {
+        (this.serviceFactory.get('user') as UserService).addUser(this.user?.id!, id);
     }
 }

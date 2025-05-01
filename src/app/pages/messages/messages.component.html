@@ -1,9 +1,9 @@
 <main class="main d-flex">
     <aside class="users-list-aside h-100 bg-white overflow-auto">
         <section class="users-list">
-            @for (friend of friends; track friend.id) {
+            @for (friend of friends; track friend) {
                 <app-messages-user-card
-                    [userID]="friend.id!"
+                    [userID]="friend!"
                 ></app-messages-user-card>
             }
         </section>
