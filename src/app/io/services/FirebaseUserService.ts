@@ -29,15 +29,15 @@ export class FirebaseUserService implements UserService {
     }
 
     acceptRequest(request: FriendRequest): void {
-        deleteDoc(doc(this.store, `users/${request.from}/pending/${request.id}`)).then();
-        deleteDoc(doc(this.store, `users/${request.to}/sent_requests/${request.id}`)).then();
-        this.addUser(request.from, request.to);
-        this.addUser(request.to, request.from);
+        deleteDoc(doc(this.store, `users/${request.to}/pending/${request.from}`)).then();
+        deleteDoc(doc(this.store, `users/${request.from}/sent_requests/${request.to}`)).then();
+        setDoc(doc(this.store, `users/${request.from}/friends/${request.to}`), {id: request.to}).then();
+        setDoc(doc(this.store, `users/${request.to}/friends/${request.from}`), {id: request.from}).then();
     }
 
     cancelRequest(request: FriendRequest): void {
-        deleteDoc(doc(this.store, `users/${request.from}/pending/${request.id}`)).then();
-        deleteDoc(doc(this.store, `users/${request.to}/sent_requests/${request.id}`)).then();
+        deleteDoc(doc(this.store, `users/${request.from}/sent_requests/${request.to}`)).then();
+        deleteDoc(doc(this.store, `users/${request.to}/pending/${request.from}`)).then();
     }
 
     unblockUser(from: string, to: string): void {
@@ -51,6 +51,7 @@ export class FirebaseUserService implements UserService {
 
     removeUser(from: string, to: string): void {
         deleteDoc(doc(this.store, `users/${from}/friends/${to}`)).then();
+        deleteDoc(doc(this.store, `users/${to}/friends/${from}`)).then();
     }
 
     addUser(from: string, to: string): void {

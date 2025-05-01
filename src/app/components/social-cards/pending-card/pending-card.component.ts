@@ -27,7 +27,7 @@ export class PendingCardComponent {
     ngOnInit() {
         (this.serviceFactory.get('user') as UserService).pendingTo(this.userID, this.pendingID).subscribe(res => {
             this.request = res;
-            (this.serviceFactory.get('user') as UserService).userWith(res.to).subscribe(res => this.pendingUser = res);
+            (this.serviceFactory.get('user') as UserService).userWith(res.from).subscribe(res => this.pendingUser = res);
         });
     }
 

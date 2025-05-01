@@ -1,5 +1,5 @@
-<main class="main d-flex align-items-center justify-content-center">
-    <div class="d-flex flex-column w-50 overflow-hidden bg-white h-100">
+<main class="main d-flex justify-content-center">
+    <div class="d-flex flex-column w-50 overflow-hidden bg-white">
         <app-social-navigation></app-social-navigation>
         <form #usernameForm="ngForm" (ngSubmit)="search()" class="d-flex align-items-center justify-content-center p-4">
             <input name="username" [(ngModel)]="username" type="text" class="p-2 fw-lighter fs-5 flex-grow-1 form-control" placeholder="Enter username">

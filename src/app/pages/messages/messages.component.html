@@ -1,5 +1,5 @@
 <main class="main d-flex">
-    <aside class="users-list-aside h-100 bg-white overflow-auto">
+    <aside class="users-list-aside bg-white overflow-auto">
         <section class="users-list">
             @for (friend of friends; track friend) {
                 <app-messages-user-card
@@ -8,7 +8,7 @@
             }
         </section>
     </aside>
-    <div class="chat-container h-100 overflow-auto d-flex flex-column bg-white">
+    <div class="chat-container overflow-auto d-flex flex-column bg-white">
         <div class="chat-header d-flex flex-column align-items-center">
             <h1 class="fw-bolder">{{currentChatUser?.username}}</h1>
             <hr class="w-75">

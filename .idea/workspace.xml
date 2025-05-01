@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/io/services/FirebaseMessageService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseMessageService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/io/services/FirebaseUserService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseUserService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/event-creation-pages/event-creation-second/event-creation-second.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/event-creation-pages/event-creation-second/event-creation-second.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/social.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/social.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +91,7 @@
     "JavaScript Debug.user.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "develop-Javier",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/eymen/WebstormProjects/PWM_44.3/assets/images",
     "list.type.of.created.stylesheet": "CSS",

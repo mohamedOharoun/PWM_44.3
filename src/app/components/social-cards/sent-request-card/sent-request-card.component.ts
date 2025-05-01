@@ -26,6 +26,7 @@ export class SentRequestCardComponent {
     ngOnInit() {
         (this.serviceFactory.get('user') as UserService).requestFrom(this.userID, this.requestID).subscribe(res => {
             this.request = res;
+            if (!res) return;
             (this.serviceFactory.get('user') as UserService).userWith(res.to).subscribe(res => this.requestUser = res);
         });
     }

@@ -1,6 +1,10 @@
 import {Component, Input} from '@angular/core';
 import {GenericButtonComponent} from "../generic-button/generic-button.component";
 import {Router, RouterLink} from "@angular/router";
+import {ServiceFactory} from "../../services/service-factory.service";
+import {User} from "../../../architecture/model/User";
+import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
+import {signOut} from "@angular/fire/auth";
 
 @Component({
     selector: 'app-header',
@@ -21,8 +25,16 @@ export class HeaderComponent {
     ];
     @Input() buttonText: string = "Sign in";
     private isMenuOpened: boolean = false;
+    protected user: User | null = null;
 
-    constructor(private router: Router) {
+    constructor(
+        private serviceFactory: ServiceFactory,
+        private router: Router
+    ) {
+    }
+
+    ngOnInit() {
+        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => this.user = res);
     }
 
     navigateTo(route: string | null) {
@@ -34,6 +46,11 @@ export class HeaderComponent {
         this.isMenuOpened = !this.isMenuOpened;
         document.querySelector('.page-header')!.classList.toggle('page-header-opened');
         document.querySelector('.header-navigation')!.classList.toggle('header-navigation-opened');
+    }
+
+    protected signOut() {
+        (this.serviceFactory.get('auth') as AuthenticationService).signOut();
+        this.router.navigate(['homePage']).then();
     }
 }
 

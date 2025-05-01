@@ -22,6 +22,10 @@ export class MessageCardComponent {
     ) {
     }
 
+    ngOnInit() {
+        this.hour = `${new Date(this.message.timestamp).getHours().toString()}:${new Date(this.message.timestamp).getMinutes().toString()}`;
+    }
+
     getClass() {
         return this.own ? 'align-items-end' : 'align-items-start';
     }
@@ -29,4 +33,7 @@ export class MessageCardComponent {
     removeMessage() {
         (this.serviceFactory.get('message') as MessageService).delete(this.message.id!);
     }
+
+    protected readonly Date = Date;
+    hour!: string;
 }

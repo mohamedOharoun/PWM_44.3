@@ -1,10 +1,10 @@
-<main class="main d-flex align-items-center justify-content-center">
-    <div class="d-flex flex-column w-50 overflow-hidden bg-white h-100">
+<main class="main d-flex justify-content-center">
+    <div class="d-flex flex-column w-50 overflow-hidden bg-white">
         <div class="social-header-container">
             <app-social-navigation></app-social-navigation>
             <div class="social-header-information  d-flex justify-content-center p-5">
                 <h1>
-                    {{ pending.length > 0 ? pending.length + (pending.length > 1 ? ' friends' : ' friend') : 'None' }}
+                    {{ pending.length > 0 ? pending.length + (pending.length > 1 ? ' pending requests' : ' pending requests') : 'None' }}
                 </h1>
             </div>
         </div>
