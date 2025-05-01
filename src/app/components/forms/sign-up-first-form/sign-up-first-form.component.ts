@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {InputWithIconComponent} from "../../../../components/input-with-icon/input-with-icon.component";
-import {FormService} from "../../../../services/form.service";
+import {InputWithIconComponent} from "../../input-with-icon/input-with-icon.component";
+import {FormService} from "../../../services/form.service";
 
 @Component({
     selector: 'app-sign-up-first-form',

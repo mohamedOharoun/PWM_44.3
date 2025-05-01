@@ -5,7 +5,7 @@ import {Service} from "./Service";
 
 export interface UserService extends Service {
     userWith(id: string): Observable<User>;
-    friendsOf(id: string): Observable<User[]>;
+    friendsOf(id: string): Observable<User[] | null>;
     groupsOf(id: string): Observable<Group[]>;
     blockedOf(id: string): Observable<User[]>;
     pendingOf(id: string): Observable<User[]>;

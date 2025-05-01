@@ -1,13 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {SocialCard} from "../../../architecture/model/SocialCard";
-import {SocialCardComponent} from "./social-card/social-card.component";
-import {HeaderComponent} from "../../components/header/header.component";
+import {SocialCardComponent} from "../../components/social-card/social-card.component";
 import {ActivatedRoute} from "@angular/router";
 import {ServiceFactory} from "../../services/service-factory.service";
 import {User} from "../../../architecture/model/User";
 import {UserService} from "../../../architecture/io/services/UserService";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
-import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
 
 @Component({
     selector: 'app-social',
@@ -29,7 +27,6 @@ export class SocialComponent {
     ];
     protected currentSocialCategory: string = "friends";
     protected user: User | null = null;
-    protected cards: any[] = [];
 
     constructor(
         private route: ActivatedRoute,
@@ -38,18 +35,24 @@ export class SocialComponent {
     }
 
     ngOnInit() {
-            console.log((this.serviceFactory.get('auth') as AuthenticationService).getLoggedUserUID()!)
         this.route.queryParams.subscribe(params => {
             this.currentSocialCategory = params['socialCategory'];
-            (this.serviceFactory.get('user') as UserService)
-                .userWith(
-                    (this.serviceFactory.get('auth') as AuthenticationService).getLoggedUserUID()!
-                ).subscribe(res => {
+            (this.serviceFactory.get('auth') as AuthenticationService).user$.subscribe(res => {
                 this.user = res;
-                this.cards = this.user.friends;
-                console.log(this.cards)
+                (this.serviceFactory.get('user') as UserService).friendsOf(this.user!.id!).subscribe(res => this.socialCards = res!.map(u => this.toSocialCard(u)));
             });
         });
+    }
 
+    private toSocialCard(user: User): SocialCard {
+        return {
+            comments: 0,
+            creator: user,
+            icons: [],
+            image: "https://picsum.photos/200",
+            likes: 0,
+            members: [],
+            text: user.username
+        }
     }
 }

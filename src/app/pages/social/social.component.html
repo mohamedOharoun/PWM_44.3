@@ -10,9 +10,9 @@
                     </ul>
                 </nav>
             </header>
-            <div class="social-header-information  d-flex justify-content-center p-5"> <h1>Manolo</h1> </div>
+            <div class="social-header-information  d-flex justify-content-center p-5"> <h1>{{socialCards.length}}</h1> </div>
         </div>
-        <section class="social-cards-list flex-grow-1 overflow-auto">
+        <section #withScroll class="social-cards-list flex-grow-1 overflow-auto">
             @for (socialCard of socialCards; track $index) {
                 <app-social-card [socialCard]="socialCard"></app-social-card>
             }

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormService} from "../../../../services/form.service";
+import {FormService} from "../../../services/form.service";
 
 @Component({
     selector: 'app-sign-up-third-form',

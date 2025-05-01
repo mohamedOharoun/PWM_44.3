@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import {SocialComponent} from "./pages/social/social.component";
-import {SignUpFirstComponent} from "./pages/sign-up-pages/sign-up/sign-up-first.component";
+import {SignUpFirstComponent} from "./pages/sign-up-pages/sign-up-first/sign-up-first.component";
 import {SignUpSecondComponent} from "./pages/sign-up-pages/sign-up-second/sign-up-second.component";
 import {SignUpThirdComponent} from "./pages/sign-up-pages/sign-up-third/sign-up-third.component";
 import {SignUpFourthComponent} from "./pages/sign-up-pages/sign-up-fourth/sign-up-fourth.component";

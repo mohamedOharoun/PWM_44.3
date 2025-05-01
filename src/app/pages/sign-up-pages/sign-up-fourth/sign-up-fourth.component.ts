@@ -2,7 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {FormStepperComponent} from "../../../components/form-stepper/form-stepper.component";
 import {GenericButtonComponent} from "../../../components/generic-button/generic-button.component";
 import {Router} from "@angular/router";
-import {SignUpFourthFormComponent} from "./sign-up-fourth-form/sign-up-fourth-form.component";
+import {SignUpFourthFormComponent} from "../../../components/forms/sign-up-fourth-form/sign-up-fourth-form.component";
 import {FormService} from "../../../services/form.service";
 import {ServiceFactory} from "../../../services/service-factory.service";
 import {AuthenticationService} from "../../../../architecture/io/services/AuthenticationService";
@@ -10,7 +10,7 @@ import {UserService} from "../../../../architecture/io/services/UserService";
 import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
 
 @Component({
-    selector: 'app-sign-up-fourth',
+    selector: 'app-sign-up-first-fourth',
     imports: [
         FormStepperComponent,
         GenericButtonComponent,
