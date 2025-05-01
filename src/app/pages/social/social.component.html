@@ -1,20 +1,15 @@
 <main class="main d-flex align-items-center justify-content-center">
     <div class="d-flex flex-column w-50 overflow-hidden bg-white h-100">
-        <div class="social-header-container">
-            <header class="social-header-navigation p-3  d-flex justify-content-center">
-                <nav>
-                    <ul class="d-flex list-unstyled gap-3">
-                        @for (link of navLinks; track $index) {
-                            <li class="social-nav-text text-center">{{link}}</li>
-                        }
-                    </ul>
-                </nav>
-            </header>
-            <div class="social-header-information  d-flex justify-content-center p-5"> <h1>Manolo</h1> </div>
-        </div>
+        <app-social-navigation></app-social-navigation>
+        <form #usernameForm="ngForm" (ngSubmit)="search()" class="d-flex align-items-center justify-content-center p-4">
+            <input name="username" [(ngModel)]="username" type="text" class="p-2 fw-lighter fs-5 flex-grow-1 form-control" placeholder="Enter username">
+        </form>
         <section class="social-cards-list flex-grow-1 overflow-auto">
-            @for (socialCard of socialCards; track $index) {
-                <app-social-card [socialCard]="socialCard"></app-social-card>
+            @for (user of users; track user.id) {
+                <app-user-card
+                        [userID]="user.id!"
+                        (addEmitter)="addUser($event)"
+                ></app-user-card>
             }
         </section>
     </div>

@@ -1,12 +1,26 @@
 import {from, map, Observable} from "rxjs";
 import {MessageService} from "../../../architecture/io/services/MessageService";
 import {Message} from "../../../architecture/model/Message";
-import {addDoc, collection, collectionData, Firestore, getDocs, query, where} from "@angular/fire/firestore";
+import {
+    addDoc,
+    collection,
+    collectionData,
+    deleteDoc,
+    doc,
+    Firestore,
+    getDocs,
+    query,
+    where
+} from "@angular/fire/firestore";
 
 export class FirebaseMessageService implements MessageService {
     constructor(
         private store: Firestore
     ) {
+    }
+
+    delete(id: string): void {
+        deleteDoc(doc(this.store, `messages/${id}`)).then();
     }
 
     messagesOf(senderID: string, recipientID: string): Observable<Message[]> {

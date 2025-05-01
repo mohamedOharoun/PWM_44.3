@@ -14,68 +14,8 @@ import {Group} from "../../../architecture/model/Group";
     styleUrl: './group-creation.component.css'
 })
 export class GroupCreationComponent {
-    protected members: User[] = [
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        }
-    ]
+    protected members: User[] = []
+
     protected image: string = "";
 
     protected onDragOver(event: DragEvent) {
