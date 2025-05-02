@@ -15,6 +15,7 @@ import {NgForOf, NgIf} from "@angular/common";
 
 export class ProfilePageUserComponent {
   editIcon = 'icons/edit_icon.svg'
+  saveChanges = 'icons/check_icon.svg'
 
   userData = {
     fullName: 'Example user',
@@ -32,6 +33,12 @@ export class ProfilePageUserComponent {
     title: 'Shared events',
     events: []
   };
+
+  isReadOnly = true;
+  toggleReadOnly() {
+    this.isReadOnly = !this.isReadOnly;
+    this.editIcon = this.editIcon === 'icons/edit_icon.svg' ? 'icons/check_icon.svg' : 'icons/edit_icon.svg';
+  }
 
   protected image: string = 'icons/userprofile_icon.svg';
   protected onDragOver(event: DragEvent) {

@@ -2,7 +2,7 @@
   <div class="d-flex justify-content-between align-items-center pe-4">
     <div class="d-flex align-items-center">
       <h2 class="me-2 mb-0">{{ eventName }}</h2>
-      <span class="mx-2 text-muted">&gt;</span>
+      <span class="mx-2 text-muted">></span>
       <span class="text-secondary">{{ eventCreator }}</span>
     </div>
     <div class="d-flex gap-2">
@@ -41,9 +41,11 @@
 
     <hr class="w-75">
     <div class="d-flex flex-wrap align-items-center gap-2 mt-3 mb-3 w-75">
-      <span *ngFor="let tag of tags" class="badge bg-info text-dark px-3 py-2 rounded-pill">
-        {{ tag }}
-      </span>
+      @for (tag of tags; track $index) {
+        <span class="badge bg-info text-dark px-3 py-2 rounded-pill">
+          {{ tag }}
+        </span>
+      }
     </div>
     <hr class="w-75">
   </div>
