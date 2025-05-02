@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {UsersListComponent} from '../../../../components/users-list/users-list.component';
-import {User} from '../../../../model/User';
+import {User} from '../../../../../architecture/model/User';
 import {FormService} from '../../../../services/form.service';
 
 @Component({
