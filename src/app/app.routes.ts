@@ -44,7 +44,7 @@ export const routes: Routes = [
     {path: 'members', component: EventMembersComponent},
     {path: 'signin', component: SignInComponent },
     {path: 'resetPassword', component: ResetPasswordComponent},
-    {path: 'landingPage', component: LandingPageComponent},
+    {path: '', component: LandingPageComponent},
     {path: 'homePage', component: HomePageComponent},
     {path: 'eventCreationFirst', component: EventCreationFirstComponent},
     {path: 'eventCreationSecond', component: EventCreationSecondComponent},

@@ -18,19 +18,20 @@
   <div id="see-more-button-section"
        class="d-flex justify-content-center align-items-center text-center position-relative" style="top: -9.25rem;">
     <a href="#features-info-section" (click)="scrollToFeatures($event)" class="text-decoration-none text-white">
-      <p>{{ seeMoreText }}</p>
+      <p class="mb-0">{{ seeMoreText }}</p>
       <img id="arrow" src="/icons/arrow.svg" alt="arrow icon">
     </a>
   </div>
 
   <div id="second-info-container" class="d-flex justify-content-center align-items-center">
     <section id="features-info-section" class="d-flex flex-wrap flex-md-row shadow bg-white rounded p-3 mx-4 justify-content-center">
-      <app-feature-info
-        *ngFor="let feature of features"
-        [imageSrc]="feature.image"
-        [title]="feature.title"
-        [description]="feature.description">
-      </app-feature-info>
+      @for (feature of features; track feature) {
+        <app-feature-info
+          [imageSrc]="feature.image"
+          [title]="feature.title"
+          [description]="feature.description">
+        </app-feature-info>
+      }
     </section>
   </div>
 </main>
