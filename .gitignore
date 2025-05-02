@@ -47,3 +47,4 @@ testem.log
 .DS_Store
 Thumbs.db
 /src/app/services/firebase.service.ts
+/src/environments/environment.ts

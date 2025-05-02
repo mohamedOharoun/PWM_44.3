@@ -13,6 +13,10 @@
         </ul>
     </nav>
     <div id="page-header-buttons" class="ms-auto">
-        <app-generic-button [text]="buttonText" routerLink="signUpFirst"></app-generic-button>
+        @if (user) {
+            <app-generic-button text="Sign out" (click)="signOut()" routerLink="social"></app-generic-button>
+        } @else {
+            <app-generic-button [text]="buttonText" routerLink="signin"></app-generic-button>
+        }
     </div>
 </header>

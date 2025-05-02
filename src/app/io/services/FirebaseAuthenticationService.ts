@@ -1,24 +1,31 @@
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
 import {User} from "../../../architecture/model/User";
-import {from, map, Observable, switchMap} from "rxjs";
+import {BehaviorSubject, from, map, Observable, switchMap} from "rxjs";
 import {
     Auth,
     browserLocalPersistence,
     createUserWithEmailAndPassword, onAuthStateChanged,
     setPersistence,
-    signInWithEmailAndPassword,
-    user
+    signInWithEmailAndPassword
 } from "@angular/fire/auth";
-import {addDoc, collection, doc, docData, Firestore, getDocs, query, setDoc} from "@angular/fire/firestore";
+import {collection, doc, docData, Firestore, getDocs, query, setDoc} from "@angular/fire/firestore";
 import {where} from "@angular/fire/firestore";
 
 export class FirebaseAuthenticationService implements AuthenticationService {
-    user$: Observable<User> | null = null;
+    private userSubject = new BehaviorSubject<User | null>(null);
+    user: Observable<User | null> = this.userSubject.asObservable();
 
     constructor(private auth: Auth, private store: Firestore) {
-        setPersistence(this.auth, browserLocalPersistence).then(() => console.log('Si'));
-        onAuthStateChanged(this.auth, (user) => {
-            if (user) this.user$ = this.getLoggedUser(user.uid);
+        setPersistence(this.auth, browserLocalPersistence).then(() => {
+            onAuthStateChanged(this.auth, user => {
+                if (user) {
+                    this.getLoggedUser(user.uid).subscribe(userData => {
+                        this.userSubject.next(userData);
+                    });
+                } else {
+                    this.userSubject.next(null);
+                }
+            });
         });
     }
 
@@ -52,10 +59,7 @@ export class FirebaseAuthenticationService implements AuthenticationService {
 
     signIn(email: string, password: string): Observable<User> {
         return from(signInWithEmailAndPassword(this.auth, email, password)).pipe(
-            switchMap((cred) => {
-                this.user$ = this.getLoggedUser(cred.user.uid);
-                return this.user$;
-            })
+            switchMap((cred) => this.getLoggedUser(cred.user.uid))
         );
     }
 
