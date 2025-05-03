@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {GenericButtonComponent} from "../../components/generic-button/generic-button.component";
 import {UsersListComponent} from "../../components/users-list/users-list.component";
-import {User} from "../../model/User";
-import {Group} from "../../model/Group";
+import {User} from "../../../architecture/model/User";
+import {Group} from "../../../architecture/model/Group";
 
 @Component({
     selector: 'app-group-creation',
@@ -14,68 +14,8 @@ import {Group} from "../../model/Group";
     styleUrl: './group-creation.component.css'
 })
 export class GroupCreationComponent {
-    protected members: User[] = [
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        },
-        {
-            email: "string",
-            name: "string",
-            username: "string",
-            description: "string",
-            image: "string",
-            friends: [],
-            pending: [],
-            sentRequests: [],
-            blocked: [],
-            groups: []
-        }
-    ]
+    protected members: User[] = []
+
     protected image: string = "";
 
     protected onDragOver(event: DragEvent) {

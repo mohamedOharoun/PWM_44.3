@@ -1,0 +1,29 @@
+.input {
+  outline: none;
+  border: none;
+  margin: 0 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding-right: 0.5rem;
+  padding-left: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input:focus-within {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  margin-left: 1.5rem;
+}
+
+.users-list-container {
+  margin-top: 0.5rem;
+  height: 21.7rem;
+}

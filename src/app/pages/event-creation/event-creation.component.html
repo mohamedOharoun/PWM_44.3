@@ -1,0 +1,127 @@
+<main class="d-flex flex-column align-items-center justify-content-center py-4">
+  <div class="bg-white rounded-3 shadow-lg w-75">
+    <div id="event-form-title" class="text-center m-4">
+      <h1
+        id="create-event-title">{{ eventId ? staticText['event-form']['edit']['title'] : staticText['event-form']['create']['title'] }}</h1>
+      <hr class="bg-dark border-0">
+    </div>
+    <div id="event-form-container" class="container-fluid">
+      <form [formGroup]="eventForm" class="d-flex flex-wrap">
+        <div id="left-side" class="form-side col-md-6 px-3">
+          <div class="mb-3">
+            <label for="event-name" class="form-label"
+                   id="name-event">{{ staticText['event-form']['labels']['name'] }}</label>
+            <input id="event-name" formControlName="name" type="text" class="form-control shadow-sm py-3" required>
+            <div *ngIf="eventForm.get('name')?.touched && eventForm.get('name')?.invalid" class="text-danger">
+              <small>{{ getErrorMessage('name') }}</small>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="event-date" class="form-label"
+                   id="date-event">{{ staticText['event-form']['labels']['date'] }}</label>
+            <input type="datetime-local" formControlName="date" id="event-date" class="form-control shadow-sm py-3"
+                   required>
+            <div *ngIf="eventForm.get('date')?.touched && eventForm.get('date')?.invalid" class="text-danger">
+              <small>{{ getErrorMessage('date') }}</small>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="event-price" class="form-label"
+                   id="price-event">{{ staticText['event-form']['labels']['cost'] }}</label>
+            <input type="number" step="0.01" formControlName="price" id="event-price" min="0.00"
+                   class="form-control shadow-sm py-3">
+            <div *ngIf="eventForm.get('price')?.touched && eventForm.get('price')?.invalid" class="text-danger">
+              <small>{{ getErrorMessage('price') }}</small>
+            </div>
+          </div>
+
+          <div id="privacy-container" class="mb-3 d-flex align-items-center">
+            <input type="checkbox" formControlName="isPrivate" id="is-private" class="form-check-input me-2">
+            <label id="privacy-event" for="is-private" class="form-check-label">
+              {{ eventForm.get('isPrivate')?.value ? staticText['event-form']['labels']['private'] : staticText['event-form']['labels']['public'] }}
+            </label>
+          </div>
+
+          <div class="mb-3">
+            <label for="event-members" class="form-label"
+                   id="members-event">{{ staticText['event-form']['labels']['members'] }}</label>
+            <div id="members-input-container" class="position-relative">
+              <input
+                id="event-members"
+                type="text"
+                class="form-control shadow-sm py-3"
+                #memberInput
+                [placeholder]="staticText['event-form']['placeholders']['members']">
+
+              <div *ngIf="filteredMembers.length > 0"
+                   class="position-absolute w-100 bg-white border rounded shadow-sm mt-1 z-3" id="suggestions">
+                <div *ngFor="let member of filteredMembers"
+                     class="p-2 member-suggestion">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="users-list-container overflow-auto" style="max-height: 200px;">
+            <app-users-list [users]="selectedMembers"></app-users-list>
+          </div>
+
+        </div>
+
+          <div id="right-side" class="form-side col-md-6 px-3">
+            <div class="mb-3">
+              <label for="event-place" class="form-label"
+                     id="place-event">{{ staticText['event-form']['labels']['place'] }}</label>
+              <input id="event-place" formControlName="place" type="text" class="form-control shadow-sm py-3" required>
+              <div *ngIf="eventForm.get('place')?.touched && eventForm.get('place')?.invalid" class="text-danger">
+                <small>{{ getErrorMessage('place') }}</small>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="event-description" class="form-label"
+                     id="description-event">{{ staticText['event-form']['labels']['description'] }}</label>
+              <textarea rows="6" id="event-description" formControlName="description" class="form-control shadow-sm p-3"
+                        required></textarea>
+              <div *ngIf="eventForm.get('description')?.touched && eventForm.get('description')?.invalid"
+                   class="text-danger">
+                <small>{{ getErrorMessage('description') }}</small>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="event-tags" class="form-label"
+                     id="tags-event">{{ staticText['event-form']['labels']['tags'] }}</label>
+              <input
+                id="event-tags"
+                type="text"
+                class="form-control shadow-sm py-3"
+                #tagInput
+                (keyup.enter)="addTag(tagInput.value)">
+            </div>
+
+            <div id="tags-section-container" class="mb-3" style="max-height: 150px; overflow-y: auto;">
+              <div id="tags-section" class="d-flex flex-wrap">
+                <app-tag-item
+                  *ngFor="let tag of eventForm.get('tags')?.value; let i = index"
+                  [tag]="tag"
+                  [index]="i"
+                  (remove)="removeTag($event)">
+                </app-tag-item>
+              </div>
+
+            </div>
+
+            <div class="w-100 mt-4">
+              <app-generic-button
+                [text]="eventId ? staticText?.['event-form']?.['edit']?.['submit-button'] : staticText?.['event-form']?.['create']?.['submit-button']"
+                buttonClass="solid-button w-100">
+              </app-generic-button>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</main>
