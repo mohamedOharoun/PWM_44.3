@@ -1,15 +1,20 @@
 import {Component} from '@angular/core';
 import {GenericButtonComponent} from '../../components/generic-button/generic-button.component';
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {User} from '../../../architecture/model/User';
 import {Event} from '../../../architecture/model/Event';
+import {AuthenticationService} from '../../../architecture/io/services/AuthenticationService';
+import {UserService} from '../../../architecture/io/services/UserService';
+import {ServiceFactory} from '../../services/service-factory.service';
+import {CardHomeComponent} from '../../components/card-home/card-home.component';
 
 @Component({
   selector: 'app-home-page',
-    imports: [
-        GenericButtonComponent,
-        RouterLink,
-    ],
+  imports: [
+    GenericButtonComponent,
+    RouterLink,
+    CardHomeComponent,
+  ],
   templateUrl: './home-page.component.html',
   standalone: true,
   styleUrl: './home-page.component.css'
@@ -24,54 +29,28 @@ export class HomePageComponent {
   eventsContainer = "Upcoming events";
   paymentsContainer = "Pending payments";
 
-  onlineFriends: User[] = [];
   upcomingEvents: Event[] = [];
   unpaidEvents: Event[] = [];
 
-  ngOnInit() {
-    const sampleCreator: User = {
-      id: '123',
-      email: 'user@example.com',
-      name: 'John Doe',
-      username: 'johndoe',
-      description: 'Event organizer',
-      image: 'profile.jpg'
-    };
+  protected user: User | null = null;
+  protected friends: string[] = [];
 
-    this.unpaidEvents = [
-      {
-        name: 'Concert',
-        description: 'Live music event',
-        date: new Date('2025-05-15'),
-        location: 'Central Park',
-        creator: sampleCreator.id!,
-        tags: ['music', 'outdoor'],
-        members: [sampleCreator.id!],
-        likes: 24,
-        isPrivate: true,
-        comments: 5,
-        price: 5,
-      }
-    ];
-
-    this.onlineFriends = [sampleCreator];
-
-    this.upcomingEvents = [
-      {
-        name: 'Concert',
-        description: 'Live music event',
-        date: new Date('2025-05-15'),
-        location: 'Central Park',
-        creator: sampleCreator.id!,
-        tags: ['music', 'outdoor'],
-        members: [sampleCreator.id!],
-        likes: 24,
-        isPrivate: true,
-        comments: 5,
-        price: 5,
-      }
-    ];
+  constructor(
+    private serviceFactory: ServiceFactory
+  ) {
   }
+
+  ngOnInit() {
+    (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => {
+      this.user = res;
+      (this.serviceFactory.get('user') as UserService).friendsOf(this.user?.id!).subscribe(res => {
+        const shuffled = res.sort(() => 0.5 - Math.random());
+        const count = Math.floor(Math.random() * 5);
+        this.friends = shuffled.slice(0, count);
+      });
+    });
+  }
+
 
   formatEventDate(date: Date): string {
     const weekday = date.toLocaleDateString('en-US', { weekday: 'short' });
