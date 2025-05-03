@@ -20,6 +20,15 @@ import {HomePageComponent} from './pages/home-page/home-page.component';
 import {AuthGuard} from "./guards/auth.guard";
 import {ProfilePageUserComponent} from "./pages/profile-page-user/profile-page-user.component";
 import {PrivacyPolicyComponent} from "./pages/privacy-policy/privacy-policy.component";
+import {
+    EventCreationFirstComponent
+} from "./pages/event-creation-pages/event-creation-first/event-creation-first.component";
+import {
+    EventCreationSecondComponent
+} from "./pages/event-creation-pages/event-creation-second/event-creation-second.component";
+import {
+    EventCreationThirdComponent
+} from "./pages/event-creation-pages/event-creation-third/event-creation-third.component";
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent, canActivate: [AuthGuard]},
@@ -33,13 +42,13 @@ export const routes: Routes = [
     {path: 'signUpThird', component: SignUpThirdComponent},
     {path: 'signUpFourth', component: SignUpFourthComponent},
     {path: 'group_creation', component: GroupCreationComponent, canActivate: [AuthGuard]},
-    {path: 'messages', component: MessagesComponent, canActivate: [AuthGuard]},
-    {path: 'alert', component: AlertComponent, canActivate: [AuthGuard]},
-    {path: 'members', component: EventMembersComponent, canActivate: [AuthGuard]},
     {path: 'signin', component: SignInComponent},
     {path: 'resetPassword', component: ResetPasswordComponent},
     {path: '', component: LandingPageComponent},
     {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationFirst', component: EventCreationFirstComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationSecond', component: EventCreationSecondComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationThird', component: EventCreationThirdComponent, canActivate: [AuthGuard]},
     {path: 'profile', component: ProfilePageUserComponent},
     {path: 'privacyPolicy', component: PrivacyPolicyComponent},
     {path: 'groupCreation', component: GroupCreationComponent},
