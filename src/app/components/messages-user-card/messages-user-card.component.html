@@ -1,8 +1,10 @@
 <article class="messages-user-card d-flex gap-3 p-3 m-2 align-items-center">
-    <div class="messages-user-card-image-container overflow-hidden">
-        <img src="https://picsum.photos/200">
-    </div>
-    <div class="messages-user-card-text-container">
-        {{this.user?.username}}
-    </div>
+    @defer (when user) {
+        <div class="messages-user-card-image-container d-flex align-items-center justify-content-center overflow-hidden">
+            <img class="object-fit-cover w-100 h-100" [src]="user.image ? user.image : 'icons/logo.svg'">
+        </div>
+        <div class="messages-user-card-text-container">
+            {{ this.user?.username }}
+        </div>
+    }
 </article>

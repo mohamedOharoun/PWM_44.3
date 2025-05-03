@@ -15,6 +15,7 @@ export class InputWithIconComponent {
     @Input() icon: string = "";
     @Input() placeholder: string = "E-mail";
     @Input() type: string = "text";
+    @Input() required: boolean = false;
     @Input() inputDirection: string = "rotate-90";
     @Input() value: string = "";
     @Output() valueEmitter = new EventEmitter<string>();

@@ -61,3 +61,14 @@ label {
     margin-top: 0.5rem;
     height: 21.7rem;
 }
+
+.members-input-container {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.users-suggestions {
+    position: absolute;
+    border: 1px solid black;
+    bottom: -2.7rem;
+}

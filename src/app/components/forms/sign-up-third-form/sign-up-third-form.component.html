@@ -1,4 +1,4 @@
-<form class="d-flex flex-column align-items-center">
+<form class="d-flex flex-column align-items-center d-flex flex-column gap-5">
     <div class="input-container drop-zone d-flex flex-column align-items-center justify-content-center"
          (dragover)="onDragOver($event)"
          (drop)="onDrop($event)"
@@ -12,5 +12,16 @@
                 <img [src]="image" alt="Loaded Image" />
             </div>
         }
+    </div>
+    <div class="d-flex flex-column gap-1 mt-auto w-100">
+        <div class="d-flex">
+            <div class="w-50 px-2">
+                <app-generic-button (click)="changePage(previousStep)" text="PREVIOUS" buttonClass="transparent-button" class="w"></app-generic-button>
+            </div>
+            <div class="w-50 px-2">
+                <app-generic-button (click)="changePage(nextStep)" text="NEXT" buttonClass="solid-button"></app-generic-button>
+            </div>
+        </div>
+        <p class="w-100 text-center">Already have an account? Try <strong class="sign-in-text">signing in.</strong></p>
     </div>
 </form>

@@ -26,27 +26,28 @@ import {
 import {
   EventCreationThirdComponent
 } from './pages/event-creation-pages/event-creation-third/event-creation-third.component';
+import {AuthGuard} from "./guards/auth.guard";
 
 export const routes: Routes = [
-    {path: 'social', component: SocialComponent},
-    {path: 'social/friends', component: FriendsComponent},
-    {path: 'social/pending', component: PendingComponent},
-    {path: 'social/sent_requests', component: SentRequestsComponent},
-    {path: 'social/blocked', component: BlockedComponent},
-    {path: 'social/groups', component: GroupsComponent},
+    {path: 'social', component: SocialComponent, canActivate: [AuthGuard]},
+    {path: 'social/friends', component: FriendsComponent, canActivate: [AuthGuard]},
+    {path: 'social/pending', component: PendingComponent, canActivate: [AuthGuard]},
+    {path: 'social/sent_requests', component: SentRequestsComponent, canActivate: [AuthGuard]},
+    {path: 'social/blocked', component: BlockedComponent, canActivate: [AuthGuard]},
+    {path: 'social/groups', component: GroupsComponent, canActivate: [AuthGuard]},
     {path: 'signUpFirst', component: SignUpFirstComponent},
     {path: 'signUpSecond', component: SignUpSecondComponent},
     {path: 'signUpThird', component: SignUpThirdComponent},
     {path: 'signUpFourth', component: SignUpFourthComponent},
-    {path: 'groupCreation', component: GroupCreationComponent},
-    {path: 'messages', component: MessagesComponent},
-    {path: 'alert', component: AlertComponent},
-    {path: 'members', component: EventMembersComponent},
-    {path: 'signin', component: SignInComponent },
+    {path: 'group_creation', component: GroupCreationComponent, canActivate: [AuthGuard]},
+    {path: 'messages', component: MessagesComponent, canActivate: [AuthGuard]},
+    {path: 'alert', component: AlertComponent, canActivate: [AuthGuard]},
+    {path: 'members', component: EventMembersComponent, canActivate: [AuthGuard]},
+    {path: 'signin', component: SignInComponent},
     {path: 'resetPassword', component: ResetPasswordComponent},
     {path: '', component: LandingPageComponent},
-    {path: 'homePage', component: HomePageComponent},
-    {path: 'eventCreationFirst', component: EventCreationFirstComponent},
-    {path: 'eventCreationSecond', component: EventCreationSecondComponent},
-    {path: 'eventCreationThird', component: EventCreationThirdComponent},
+    {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationFirst', component: EventCreationFirstComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationSecond', component: EventCreationSecondComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationThird', component: EventCreationThirdComponent, canActivate: [AuthGuard]},
 ];

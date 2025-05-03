@@ -40,6 +40,6 @@ export class AppComponent {
             .put('auth', new FirebaseAuthenticationService(this.auth, this.fireStore))
             .put('user', new FirebaseUserService(this.fireStore))
             .put('message', new FirebaseMessageService(this.fireStore))
-            .put('events', new FirebaseEventService(this.fireStore))
+            .put('event', new FirebaseEventService(this.fireStore))
     }
 }

@@ -4,7 +4,6 @@ import {Router, RouterLink} from "@angular/router";
 import {ServiceFactory} from "../../services/service-factory.service";
 import {User} from "../../../architecture/model/User";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
-import {signOut} from "@angular/fire/auth";
 
 @Component({
     selector: 'app-header',
@@ -20,7 +19,7 @@ export class HeaderComponent {
     navLinks: { page: string; route: string | null }[] = [
         {page: 'Home', route: 'homePage'},
         {page: 'Events', route: null},
-        {page: 'Social', route: 'social/blocked'},
+        {page: 'Social', route: 'social'},
         {page: 'Messages', route: 'messages'},
     ];
     @Input() buttonText: string = "Sign in";

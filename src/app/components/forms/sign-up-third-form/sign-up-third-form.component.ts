@@ -1,9 +1,12 @@
 import {Component} from '@angular/core';
 import {FormService} from "../../../services/form.service";
+import {GenericButtonComponent} from "../../generic-button/generic-button.component";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-sign-up-third-form',
     imports: [
+        GenericButtonComponent
 
     ],
     templateUrl: './sign-up-third-form.component.html',
@@ -12,8 +15,21 @@ import {FormService} from "../../../services/form.service";
 export class SignUpThirdFormComponent {
     private formData: FormService | null = null;
     protected image: string = "";
+    protected previousStep: { step: number; route: string; text: String } = {
+        step: 2,
+        route: 'signUpSecond',
+        text: ''
+    };
+    protected nextStep: { step: number; route: string; text: String } = {
+        step: 4,
+        route: 'signUpFourth',
+        text: ''
+    };
 
-    constructor(private formService: FormService) {
+    constructor(
+        private formService: FormService,
+        private router: Router
+    ) {
     }
 
     ngOnInit() {
@@ -66,5 +82,10 @@ export class SignUpThirdFormComponent {
         if (file) {
             this.handleFile(file);
         }
+    }
+
+    protected changePage(step: { step: number; route: string; text: String }) {
+        this.saveFormData();
+        this.router.navigate([step.route]).then();
     }
 }

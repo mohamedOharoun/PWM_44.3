@@ -8,8 +8,7 @@ import {
     setPersistence,
     signInWithEmailAndPassword
 } from "@angular/fire/auth";
-import {collection, doc, docData, Firestore, getDocs, query, setDoc} from "@angular/fire/firestore";
-import {where} from "@angular/fire/firestore";
+import {doc, docData, Firestore, setDoc} from "@angular/fire/firestore";
 
 export class FirebaseAuthenticationService implements AuthenticationService {
     private userSubject = new BehaviorSubject<User | null>(null);
@@ -33,18 +32,6 @@ export class FirebaseAuthenticationService implements AuthenticationService {
         return this.auth.currentUser?.uid;
     }
 
-    getUserByName(username: string): Observable<User | null> {
-        const q = query(collection(this.store, 'users'), where('username', '==', username))
-        return from(getDocs(q)).pipe(
-            map((querySnapshot) => {
-                if (querySnapshot.empty) {
-                    return null;
-                }
-                return querySnapshot.docs[0].data() as User;
-            })
-        );
-    }
-
     register(email: string, password: string, extraData: { [key: string]: any; }) {
         return from(createUserWithEmailAndPassword(this.auth, email, password)).pipe(
             switchMap((userCredential) => {
@@ -65,6 +52,7 @@ export class FirebaseAuthenticationService implements AuthenticationService {
 
     async signOut(): Promise<void> {
         await this.auth.signOut();
+        this.userSubject.next(null);
     }
 
     private getLoggedUser(id: string) {

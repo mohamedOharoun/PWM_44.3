@@ -15,7 +15,6 @@ import {PendingCardComponent} from "../../../components/social-cards/pending-car
         FormsModule,
         ReactiveFormsModule,
         SocialNavigationComponent,
-        SentRequestCardComponent,
         PendingCardComponent
     ],
     templateUrl: './pending.component.html',
