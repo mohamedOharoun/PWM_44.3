@@ -8,6 +8,7 @@ import {Firestore} from "@angular/fire/firestore";
 import {FirebaseUserService} from "./io/services/FirebaseUserService";
 import {FirebaseMessageService} from "./io/services/FirebaseMessageService";
 import {FooterComponent} from './components/footer/footer.component';
+import {FirebaseEventService} from './io/services/FirebaseEventService';
 
 @Component({
     selector: 'app-root',
@@ -39,5 +40,6 @@ export class AppComponent {
             .put('auth', new FirebaseAuthenticationService(this.auth, this.fireStore))
             .put('user', new FirebaseUserService(this.fireStore))
             .put('message', new FirebaseMessageService(this.fireStore))
+            .put('events', new FirebaseEventService(this.fireStore))
     }
 }

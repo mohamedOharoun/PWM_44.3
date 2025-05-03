@@ -14,13 +14,16 @@ import {FormService} from '../../../../services/form.service';
 export class EventCreationThirdFormComponent implements OnInit {
   eventForm!: FormGroup;
 
+  private formData: FormService | null = null;
   @ViewChild('tagInput', {static: false}) tagInput!: ElementRef;
 
   constructor(private fb: FormBuilder, private formService: FormService) {}
 
   ngOnInit(): void {
-    const description = this.formService.get('description') || '';
-    const tags = this.formService.get('tags') || [];
+    this.formData = this.formService.get('newEvent');
+    const description = this.formData?.getOrDefault('description', '');
+    const tags = this.formData?.getOrDefault('tags', []);
+
 
     this.eventForm = this.fb.group({
       description: [description, Validators.required],
@@ -48,7 +51,7 @@ export class EventCreationThirdFormComponent implements OnInit {
     const currentTags: string[] = this.eventForm.get('tags')?.value || [];
     currentTags.splice(index, 1);
     this.eventForm.get('tags')?.setValue([...currentTags]);
-    this.formService.put('tags', [...currentTags]);
+    this.formData?.put('tags', [...currentTags]);
   }
 
   get tags(): string[] {
@@ -60,8 +63,8 @@ export class EventCreationThirdFormComponent implements OnInit {
   }
 
   saveFormData() {
-    this.formService.put('description', this.description);
-    this.formService.put('tags', this.tags);
+    this.formData?.put('description', this.description);
+    this.formData?.put('tags', this.tags);
     this.formService.update();
   }
 }

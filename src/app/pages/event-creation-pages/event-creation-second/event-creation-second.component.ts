@@ -33,7 +33,12 @@ export class EventCreationSecondComponent {
 
   constructor(private router: Router) {}
 
+  protected saveFormData(){
+    this.form.saveFormData();
+  }
+
   protected changePage(step: { step: number; route: string; text: String }) {
+    this.saveFormData();
     this.router.navigate([step.route]).then();
   }
 }

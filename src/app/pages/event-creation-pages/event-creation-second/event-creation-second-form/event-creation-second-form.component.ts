@@ -12,16 +12,24 @@ import {FormService} from '../../../../services/form.service';
 })
 export class EventCreationSecondFormComponent implements OnInit {
   protected members: User[] = [];
+  private formData: FormService | null = null;
+
 
   constructor(private formService: FormService) {}
 
   ngOnInit() {
-    const storedMembers = this.formService.get('members');
-    this.members = storedMembers ? storedMembers : [];
+    this.formData = this.formService.get('newEvent');
+    this.members = this.formData?.getOrDefault('members', '');
   }
 
   addMember(member: User) {
     this.members.push(member);
     this.formService.put('members', this.members);
+  }
+
+  saveFormData(){
+    this.formData?.put('members', this.members);
+    this.formData?.update();
+    this.formService.update();
   }
 }
