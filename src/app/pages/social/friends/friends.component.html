@@ -1,0 +1,22 @@
+<main class="main d-flex justify-content-center">
+    <div class="d-flex flex-column w-50 overflow-hidden bg-white">
+        <div class="social-header-container">
+            <app-social-navigation></app-social-navigation>
+            <div class="social-header-information  d-flex justify-content-center p-5">
+                <h1>
+                    {{ friends.length > 0 ? friends.length + (friends.length > 1 ? ' friends' : ' friend') : 'None' }}
+                </h1>
+            </div>
+        </div>
+        <section class="social-cards-list flex-grow-1 overflow-auto">
+            @for (user of friends; track user) {
+                <app-friend-card
+                        [userID]="user"
+                        (blockEmitter)="blockUser($event)"
+                        (removeEmitter)="removeUser($event)"
+                        (chatWithEmitter)="chatWithUser($event)"
+                ></app-friend-card>
+            }
+        </section>
+    </div>
+</main>

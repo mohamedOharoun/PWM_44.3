@@ -6,9 +6,6 @@ import {FormStepperComponent} from '../../../components/form-stepper/form-steppe
 import {GenericButtonComponent} from '../../../components/generic-button/generic-button.component';
 import {Router} from '@angular/router';
 import {EventCreationSecondFormComponent} from './event-creation-second-form/event-creation-second-form.component';
-import {
-  SignUpSecondFormComponent
-} from '../../sign-up-pages/sign-up-second/sign-up-second-form/sign-up-second-form.component';
 
 @Component({
   selector: 'app-event-creation-second',
