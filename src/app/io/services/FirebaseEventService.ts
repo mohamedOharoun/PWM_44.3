@@ -1,7 +1,7 @@
 import { Observable } from "rxjs";
 import {EventService} from "../../../architecture/io/services/EventService";
 import {Event} from "../../../architecture/model/Event";
-import {addDoc, collection, Firestore} from "@angular/fire/firestore";
+import {addDoc, collection, collectionData, Firestore} from "@angular/fire/firestore";
 
 export class FirebaseEventService implements EventService {
     constructor(
@@ -12,6 +12,11 @@ export class FirebaseEventService implements EventService {
     createEvent(event: Event): void {
         const eventsCollection = collection(this.store, 'events');
         addDoc(eventsCollection, event).then();
+    }
+
+    getAllEvents(): Observable<Event[]> {
+        const eventsCollection = collection(this.store, 'events');
+        return collectionData(eventsCollection, { idField: "id" }) as Observable<Event[]>;
     }
 
     updateEvent(event: Event): void {

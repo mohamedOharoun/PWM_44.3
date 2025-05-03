@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {NgForOf, NgIf} from "@angular/common";
-
+import { EventCardProfileComponent } from './event-card-profile/event-card-profile.component';
 @Component({
   selector: 'app-profile',
   imports: [
-    FormsModule,
-    NgForOf,
-    NgIf
+    FormsModule, EventCardProfileComponent
   ],
   templateUrl: './profile-page-user.component.html',
   styleUrl: './profile-page-user.component.css'
@@ -15,7 +12,6 @@ import {NgForOf, NgIf} from "@angular/common";
 
 export class ProfilePageUserComponent {
   editIcon = 'icons/edit_icon.svg'
-  saveChanges = 'icons/check_icon.svg'
 
   userData = {
     fullName: 'Example user',

@@ -59,9 +59,7 @@
             <div class="user-events-content summary-content mt-2">
               @if (userEvents.events.length > 0) {
                 @for (event of userEvents.events; track $index) {
-                  <div>
-                    <!-- Añadir los eventos -->
-                  </div>
+                  <app-event-card-profile [event]="event"></app-event-card-profile>>
                 }
               } @else {
                 <p>No information available.</p>
