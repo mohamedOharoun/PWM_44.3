@@ -1,9 +1,14 @@
 <div id="description-tags-step" class="px-3">
-  <div class="mb-3">
-    <label for="event-description" class="form-label"
-           id="description-event">Description</label>
-    <textarea rows="6" id="event-description"
-              class="form-control shadow-sm p-3"></textarea>
+  <div class="input-wrapper">
+    <label class="form-label">Description</label>
+    <div>
+      <input
+        [type]="'text'"
+        [(ngModel)]="description"
+        (ngModelChange)="setDescription($event)"
+        class="tall-input form-control custom-input"
+      />
+    </div>
   </div>
 
   <div class="mb-3">

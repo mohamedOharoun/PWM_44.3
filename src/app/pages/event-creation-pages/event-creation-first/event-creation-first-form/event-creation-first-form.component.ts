@@ -15,7 +15,7 @@ export class EventCreationFirstFormComponent implements OnInit {
   protected dateTime = '';
   protected price: number | null = null;
   protected isPrivate = false;
-  protected place = '';
+  protected location = '';
   private formData: FormService | null = null;
 
   constructor(private formService: FormService) {}
@@ -26,7 +26,7 @@ export class EventCreationFirstFormComponent implements OnInit {
     this.dateTime = this.formData?.getOrDefault('dateTime', '');
     this.price = this.formData?.getOrDefault('price', '');
     this.isPrivate = this.formData?.getOrDefault('isPrivate', '');
-    this.place = this.formData?.getOrDefault('place', '');
+    this.location = this.formData?.getOrDefault('location', '');
   }
 
   saveFormData() {
@@ -34,7 +34,7 @@ export class EventCreationFirstFormComponent implements OnInit {
     this.formData?.put('date', this.dateTime);
     this.formData?.put('price', this.price);
     this.formData?.put('isPrivate', this.isPrivate);
-    this.formData?.put('location', this.place);
+    this.formData?.put('location', this.location);
     this.formData?.update();
   }
 
@@ -55,6 +55,6 @@ export class EventCreationFirstFormComponent implements OnInit {
   }
 
   protected setPlace(value: string) {
-    this.place = value;
+    this.location = value;
   }
 }
