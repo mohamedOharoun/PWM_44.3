@@ -1,8 +1,8 @@
 <article class="social-card d-flex gap-3 p-5 m-2 align-items-center p-3">
-    <div class="social-card-image-container d-flex align-items-center justify-content-center overflow-hidden">
-        <img class="object-fit-cover w-100 h-100" [src]="requestUser.image ? requestUser.image : 'icons/logo.svg'">
-    </div>
     @defer (when requestUser) {
+        <div class="social-card-image-container d-flex align-items-center justify-content-center overflow-hidden">
+            <img class="object-fit-cover w-100 h-100" [src]="requestUser.image ? requestUser.image : 'icons/logo.svg'">
+        </div>
         <div class="social-card-text-container">
             {{ requestUser.username }}
         </div>
