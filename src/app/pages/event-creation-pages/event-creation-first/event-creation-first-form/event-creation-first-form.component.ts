@@ -22,7 +22,7 @@ export class EventCreationFirstFormComponent implements OnInit {
 
   ngOnInit() {
     this.formData = this.formService.createFormEntry('newEvent')
-    this.name = this.formData?.getOrDefault('email', '');
+    this.name = this.formData?.getOrDefault('name', '');
     this.dateTime = this.formData?.getOrDefault('dateTime', '');
     this.price = this.formData?.getOrDefault('price', '');
     this.isPrivate = this.formData?.getOrDefault('isPrivate', '');
