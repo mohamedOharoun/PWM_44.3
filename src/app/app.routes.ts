@@ -40,7 +40,7 @@ export const routes: Routes = [
     {path: 'signUpSecond', component: SignUpSecondComponent},
     {path: 'signUpThird', component: SignUpThirdComponent},
     {path: 'signUpFourth', component: SignUpFourthComponent},
-    {path: 'profile/:id', component: ProfilePageUserComponent},
+    {path: 'profile/:username', component: ProfilePageUserComponent},
     {path: 'privacyPolicy', component: PrivacyPolicyComponent},
     {path: 'groupCreation', component: GroupCreationComponent},
     {path: 'messages', component: MessagesComponent},

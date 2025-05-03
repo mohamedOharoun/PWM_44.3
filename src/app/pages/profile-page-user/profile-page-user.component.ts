@@ -5,7 +5,9 @@ import {ActivatedRoute} from "@angular/router";
 import {Auth, user} from "@angular/fire/auth";
 import {ServiceFactory} from "../../services/service-factory.service";
 import {FirebaseEventService} from "../../io/services/FirebaseEventService";
+import {FirebaseUserService} from '../../io/services/FirebaseUserService';
 import {Event} from "../../../architecture/model/Event";
+import {User} from '../../../architecture/model/User';
 
 @Component({
   selector: 'app-profile',
@@ -19,6 +21,7 @@ import {Event} from "../../../architecture/model/Event";
 export class ProfilePageUserComponent {
   private serviceFactory = inject(ServiceFactory);
   private eventService = this.serviceFactory.get('event') as FirebaseEventService;
+  private userService = this.serviceFactory.get('user') as FirebaseUserService;
   private auth = inject(Auth);
   private route = inject(ActivatedRoute);
 
@@ -26,11 +29,13 @@ export class ProfilePageUserComponent {
   isOwnProfile = false;
   editIcon = 'icons/edit_icon.svg'
 
-  userData = {
-    fullName: 'Example user',
-    username: 'example_user',
-    email: 'user@example.com',
-    description: 'Hi! I´m an example user.'
+  userData: User = {
+    id: '',
+    name: '',
+    username: '',
+    email: '',
+    description: '',
+    image: ''
   };
 
   userEvents = {
@@ -45,14 +50,20 @@ export class ProfilePageUserComponent {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      const id = params.get('id');
-      if (id) {
-        this.profileUserId = id;
+      const username = params.get('username');
 
-        user(this.auth).subscribe(currentUser => {
-          if (currentUser) {
-            this.isOwnProfile = currentUser.uid === this.profileUserId;
-            this.loadEvents(this.profileUserId);
+      if (username) {
+        this.userService.getUserByUsername(username).subscribe(userData => {
+          if (userData && userData.id) {
+            this.profileUserId = userData.id;
+            this.userData = userData;
+
+            user(this.auth).subscribe(currentUser => {
+              if (currentUser) {
+                this.isOwnProfile = currentUser.uid === this.profileUserId;
+                this.loadEvents(this.profileUserId);
+              }
+            });
           }
         });
       }
@@ -74,7 +85,9 @@ export class ProfilePageUserComponent {
   isReadOnly = true;
   toggleReadOnly() {
     this.isReadOnly = !this.isReadOnly;
-    this.editIcon = this.editIcon === 'icons/edit_icon.svg' ? 'icons/check_icon.svg' : 'icons/edit_icon.svg';
+    if (this.isOwnProfile) {
+      this.editIcon = this.editIcon === 'icons/edit_icon.svg' ? 'icons/check_icon.svg' : 'icons/edit_icon.svg';
+    }
   }
 
   protected image: string = 'icons/userprofile_icon.svg';

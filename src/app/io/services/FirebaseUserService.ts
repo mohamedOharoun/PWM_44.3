@@ -20,7 +20,14 @@ export class FirebaseUserService implements UserService {
     ) {
     }
 
-    requestFrom(userID: string, requestID: string): Observable<FriendRequest> {
+  getUserByUsername(username: string): Observable<User | null> {
+    return collectionData(query(collection(this.store, 'users'), where('username', '==', username)))
+      .pipe(
+        map(users => users.length > 0 ? users[0] as User : null)
+      );
+  }
+
+  requestFrom(userID: string, requestID: string): Observable<FriendRequest> {
         return docData(doc(this.store, `users/${userID}/sent_requests/${requestID}`), {idField: 'id'}) as Observable<FriendRequest>;
     }
 

@@ -5,10 +5,12 @@
       <div class="profile-title-container d-flex align-items-center justify-content-between">
         <h1 class="profile-title m-0">{{ userData.username }}'s profile</h1>
         <div class="profile-utils-icons">
-          <img class="edit-icon" [src]="editIcon" alt="Edit icon"
-               style="cursor: pointer; width: 40px; height: 40px;"
-               (click)="toggleReadOnly()"
-          >
+          @if (isOwnProfile) {
+            <img class="edit-icon" [src]="editIcon" alt="Edit icon"
+                 style="cursor: pointer; width: 40px; height: 40px;"
+                 (click)="toggleReadOnly()"
+            >
+          }
         </div>
       </div>
       <hr class="mt-1 mb-2 border-black">
@@ -30,7 +32,7 @@
 
         <div class="profile-info w-100">
           <label class="user-full-name w-100">
-            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.fullName"
+            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.name"
                    [readonly]="isReadOnly">
           </label>
           <label class="user-name w-100">
