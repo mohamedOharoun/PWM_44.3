@@ -8,8 +8,8 @@ import {Firestore} from "@angular/fire/firestore";
 import {FirebaseUserService} from "./io/services/FirebaseUserService";
 import {FirebaseMessageService} from "./io/services/FirebaseMessageService";
 import {FooterComponent} from './components/footer/footer.component';
-import {FirebaseEventService} from "./io/services/FirebaseEventService";
 import {FirebaseGroupService} from "./io/services/FirebaseGroupService";
+import {FirebaseEventService} from './io/services/FirebaseEventService';
 
 @Component({
     selector: 'app-root',

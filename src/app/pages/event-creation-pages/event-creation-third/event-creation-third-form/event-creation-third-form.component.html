@@ -1,0 +1,36 @@
+<div id="description-tags-step" class="px-3">
+  <div class="input-wrapper">
+    <label class="form-label">Description</label>
+    <div>
+      <input
+        [type]="'text'"
+        [(ngModel)]="description"
+        (ngModelChange)="setDescription($event)"
+        class="tall-input form-control custom-input"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="event-tags" class="form-label"
+           id="tags-event">Tags</label>
+    <input
+      id="event-tags"
+      type="text"
+      class="form-control shadow-sm py-3"
+      #tagInput
+      (keyup.enter)="addTag(tagInput.value)">
+  </div>
+
+  <div id="tags-section-container" class="mb-3" style="max-height: 150px; overflow-y: auto;">
+    <div id="tags-section" class="d-flex flex-wrap">
+      @for (tag of tags; track $index) {
+        <app-tag-item
+          [tag]="tag"
+          [index]="$index"
+          (remove)="removeTag($event)">
+        </app-tag-item>
+      }
+    </div>
+  </div>
+</div>
