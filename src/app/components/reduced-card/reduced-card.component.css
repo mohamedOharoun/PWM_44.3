@@ -1,0 +1,21 @@
+.participants-anchor {
+  text-decoration: none;
+}
+
+.button-container {
+  background-color: white;
+  padding: 0.25rem;
+  border: 0;
+  color: #888888;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.button-container:hover {
+  transform: scale(1.2);
+}
+
+.icons-img {
+  width: 1.75rem;
+  height: 1.75rem;
+}

@@ -1,0 +1,92 @@
+<main class="d-flex justify-content-center align-items-start">
+  <div class="profile-container bg-white my-4 p-5 rounded-3 shadow">
+
+    <header class="profile-header container">
+      <div class="profile-title-container d-flex align-items-center justify-content-between">
+        <h1 class="profile-title m-0">{{ userData.username }}'s profile</h1>
+        <div class="profile-utils-icons">
+          <img class="edit-icon" [src]="editIcon" alt="Edit icon"
+               style="cursor: pointer; width: 40px; height: 40px;"
+               (click)="toggleReadOnly()"
+          >
+        </div>
+      </div>
+      <hr class="mt-1 mb-2 border-black">
+    </header>
+
+    <div class="profile-body px-lg-5">
+      <div class="profile-content d-flex flex-column flex-md-row align-items-center gap-4 mt-4">
+        <div id="upload-photo-container" class="drop-area text-center"
+             (dragover)="onDragOver($event)"
+             (drop)="onDrop($event)"
+             (click)="triggerFileInput()">
+          <div class="uploaded-img-container mx-4">
+            <img class="uploaded-img" [src]="image" alt="Profile Image">
+          </div>
+
+          <input type="file" id="fileElem" accept="image/*" (change)="onFileSelected($event)" hidden>
+          <label for="fileElem" class="upload-label mt-2">Upload photo</label>
+        </div>
+
+        <div class="profile-info w-100">
+          <label class="user-full-name w-100">
+            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.fullName"
+                   [readonly]="isReadOnly">
+          </label>
+          <label class="user-name w-100">
+            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.username"
+                   [readonly]="isReadOnly">
+          </label>
+          <label class="user-email w-100">
+            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.email"
+                   [readonly]="isReadOnly">
+          </label>
+        </div>
+      </div>
+
+      <div class="profile-description-container mt-4">
+        <label class="description w-100">
+          <textarea class="animated-input form-control" [(ngModel)]="userData.description"
+                    [readonly]="isReadOnly">
+          </textarea>
+        </label>
+      </div>
+
+      <div class="events-sections-container mt-3">
+        <section class="events-section user-events-section d-flex justify-content-center">
+          <details class="w-100">
+            <summary>{{ userEvents.title }}</summary>
+            <div class="user-events-content summary-content mt-2">
+              @if (userEvents.events.length > 0) {
+                @for (event of userEvents.events; track $index) {
+                  <div>
+                    <!-- Añadir los eventos -->
+                  </div>
+                }
+              } @else {
+                <p>No information available.</p>
+              }
+            </div>
+          </details>
+        </section>
+
+        <section class="events-section shared-events-section d-flex justify-content-center">
+          <details class="w-100">
+            <summary>{{ sharedEvents.title }}</summary>
+            <div class="shared-events-content summary-content mt-2">
+              @if (sharedEvents.events.length > 0) {
+                @for (event of sharedEvents.events; track $index) {
+                  <div>
+                    <!-- Añadir los eventos -->
+                  </div>
+                }
+              } @else {
+                <p>No information available.</p>
+              }
+            </div>
+          </details>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
