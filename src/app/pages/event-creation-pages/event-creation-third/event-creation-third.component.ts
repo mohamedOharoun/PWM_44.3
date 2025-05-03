@@ -59,7 +59,7 @@ export class EventCreationThirdComponent {
 
         console.log(event);
 
-        (this.serviceFactory.get('events') as EventService).createEvent(event);
+        (this.serviceFactory.get('event') as EventService).createEvent(event);
       } else {
         console.error("There is not user logged in.");
       }
