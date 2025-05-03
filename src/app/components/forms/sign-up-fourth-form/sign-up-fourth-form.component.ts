@@ -63,6 +63,13 @@ export class SignUpFourthFormComponent {
                 description: signUpInfo.getOrDefault('description', ''),
                 image: signUpInfo.get('image')
             }
-        ).subscribe();
+        ).subscribe({
+          next: () => {
+            this.router.navigate(['/homePage']).then();
+          },
+          error: err => {
+            console.log(err);
+          }
+        });
     }
 }
