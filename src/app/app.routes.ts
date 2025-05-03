@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import {SocialComponent} from "./pages/social/social.component";
 import {SignUpFirstComponent} from "./pages/sign-up-pages/sign-up-first/sign-up-first.component";
 import {SignUpSecondComponent} from "./pages/sign-up-pages/sign-up-second/sign-up-second.component";
 import {SignUpThirdComponent} from "./pages/sign-up-pages/sign-up-third/sign-up-third.component";
@@ -12,12 +13,13 @@ import {PendingComponent} from "./pages/social/pending/pending.component";
 import {SentRequestsComponent} from "./pages/social/sent-requests/sent-requests.component";
 import {BlockedComponent} from "./pages/social/blocked/blocked.component";
 import {GroupsComponent} from "./pages/social/groups/groups.component";
-import {SocialComponent} from "./pages/social/social.component";
 import {SignInComponent} from './pages/sign-in/sign-in.component';
 import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
 import {LandingPageComponent} from './pages/landing-page/landing-page.component';
 import {HomePageComponent} from './pages/home-page/home-page.component';
 import {AuthGuard} from "./guards/auth.guard";
+import {ProfilePageUserComponent} from "./pages/profile-page-user/profile-page-user.component";
+import {PrivacyPolicyComponent} from "./pages/privacy-policy/privacy-policy.component";
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent, canActivate: [AuthGuard]},
@@ -37,5 +39,11 @@ export const routes: Routes = [
     {path: 'signin', component: SignInComponent},
     {path: 'resetPassword', component: ResetPasswordComponent},
     {path: '', component: LandingPageComponent},
-    {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]}
+    {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]},
+    {path: 'profile', component: ProfilePageUserComponent},
+    {path: 'privacyPolicy', component: PrivacyPolicyComponent},
+    {path: 'groupCreation', component: GroupCreationComponent},
+    {path: 'messages', component: MessagesComponent},
+    {path: 'alert', component: AlertComponent},
+    {path: 'members', component: EventMembersComponent},
 ];

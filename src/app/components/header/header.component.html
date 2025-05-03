@@ -12,8 +12,9 @@
             }
         </ul>
     </nav>
-    <div id="page-header-buttons" class="ms-auto">
+    <div id="page-header-buttons" class="ms-auto d-flex align-items-center justify-content-center gap-3">
         @if (user) {
+            <i routerLink='/profile' class="bi-person-circle fs-1 mt-3"></i>
             <app-generic-button text="Sign out" (click)="signOut()" routerLink="homePage"></app-generic-button>
         } @else {
             <app-generic-button [text]="buttonText" routerLink="signin"></app-generic-button>
