@@ -1,6 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { EventCardProfileComponent } from './event-card-profile/event-card-profile.component';
+import {ActivatedRoute} from "@angular/router";
+import {Auth, user} from "@angular/fire/auth";
+import {ServiceFactory} from "../../services/service-factory.service";
+import {FirebaseEventService} from "../../io/services/FirebaseEventService";
+import {Event} from "../../../architecture/model/Event";
+
 @Component({
   selector: 'app-profile',
   imports: [
@@ -11,6 +17,13 @@ import { EventCardProfileComponent } from './event-card-profile/event-card-profi
 })
 
 export class ProfilePageUserComponent {
+  private serviceFactory = inject(ServiceFactory);
+  private eventService = this.serviceFactory.get('event') as FirebaseEventService;
+  private auth = inject(Auth);
+  private route = inject(ActivatedRoute);
+
+  profileUserId = '';
+  isOwnProfile = false;
   editIcon = 'icons/edit_icon.svg'
 
   userData = {
@@ -22,13 +35,41 @@ export class ProfilePageUserComponent {
 
   userEvents = {
     title: 'User events',
-    events: []
+    events: [] as Event[]
   };
 
   sharedEvents = {
     title: 'Shared events',
-    events: []
+    events: [] as Event[]
   };
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      if (id) {
+        this.profileUserId = id;
+
+        user(this.auth).subscribe(currentUser => {
+          if (currentUser) {
+            this.isOwnProfile = currentUser.uid === this.profileUserId;
+            this.loadEvents(this.profileUserId);
+          }
+        });
+      }
+    });
+  }
+
+  private loadEvents(userId: string): void {
+    this.eventService.createdEventsOf(userId).subscribe(events => {
+      this.userEvents.events = events;
+    });
+
+    if (!this.isOwnProfile) {
+      this.eventService.joinedEventsOf(userId).subscribe(events => {
+        this.sharedEvents.events = events;
+      });
+    }
+  }
 
   isReadOnly = true;
   toggleReadOnly() {

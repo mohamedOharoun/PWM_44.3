@@ -59,7 +59,7 @@
             <div class="user-events-content summary-content mt-2">
               @if (userEvents.events.length > 0) {
                 @for (event of userEvents.events; track $index) {
-                  <app-event-card-profile [event]="event"></app-event-card-profile>>
+                  <app-event-card-profile [event]="event" />
                 }
               } @else {
                 <p>No information available.</p>
@@ -68,22 +68,22 @@
           </details>
         </section>
 
-        <section class="events-section shared-events-section d-flex justify-content-center">
-          <details class="w-100">
-            <summary>{{ sharedEvents.title }}</summary>
-            <div class="shared-events-content summary-content mt-2">
-              @if (sharedEvents.events.length > 0) {
-                @for (event of sharedEvents.events; track $index) {
-                  <div>
-                    <!-- Añadir los eventos -->
-                  </div>
+        @if (!isOwnProfile) {
+          <section class="events-section shared-events-section d-flex justify-content-center">
+            <details class="w-100">
+              <summary>{{ sharedEvents.title }}</summary>
+              <div class="shared-events-content summary-content mt-2">
+                @if (sharedEvents.events.length > 0) {
+                  @for (event of sharedEvents.events; track $index) {
+                    <app-event-card-profile [event]="event" />
+                  }
+                } @else {
+                  <p>No information available.</p>
                 }
-              } @else {
-                <p>No information available.</p>
-              }
-            </div>
-          </details>
-        </section>
+              </div>
+            </details>
+          </section>
+        }
       </div>
     </div>
   </div>
