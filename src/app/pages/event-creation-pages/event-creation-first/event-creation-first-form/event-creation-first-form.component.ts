@@ -31,10 +31,10 @@ export class EventCreationFirstFormComponent implements OnInit {
 
   saveFormData() {
     this.formData?.put('name', this.name);
-    this.formData?.put('dateTime', this.dateTime);
+    this.formData?.put('date', this.dateTime);
     this.formData?.put('price', this.price);
     this.formData?.put('isPrivate', this.isPrivate);
-    this.formData?.put('place', this.place);
+    this.formData?.put('location', this.place);
     this.formData?.update();
   }
 

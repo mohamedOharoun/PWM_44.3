@@ -19,7 +19,7 @@
 
   <div id="tags-section-container" class="mb-3" style="max-height: 150px; overflow-y: auto;">
     <div id="tags-section" class="d-flex flex-wrap">
-      @for (tag of eventForm.get('tags')?.value; track $index) {
+      @for (tag of tags; track $index) {
         <app-tag-item
           [tag]="tag"
           [index]="$index"

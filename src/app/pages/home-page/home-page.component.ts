@@ -44,10 +44,11 @@ export class HomePageComponent {
         description: 'Live music event',
         date: new Date('2025-05-15'),
         location: 'Central Park',
-        creator: sampleCreator,
+        creator: sampleCreator.id!,
         tags: ['music', 'outdoor'],
-        members: [sampleCreator],
+        members: [sampleCreator.id!],
         likes: 24,
+        isPrivate: true,
         comments: 5,
         price: 5,
       }
@@ -59,16 +60,17 @@ export class HomePageComponent {
       {
         name: 'Concert',
         description: 'Live music event',
-        date: new Date(2025, 4, 15, 21, 0),
+        date: new Date('2025-05-15'),
         location: 'Central Park',
-        creator: sampleCreator,
+        creator: sampleCreator.id!,
         tags: ['music', 'outdoor'],
-        members: [sampleCreator],
+        members: [sampleCreator.id!],
         likes: 24,
+        isPrivate: true,
         comments: 5,
         price: 5,
       }
-    ]
+    ];
   }
 
   formatEventDate(date: Date): string {

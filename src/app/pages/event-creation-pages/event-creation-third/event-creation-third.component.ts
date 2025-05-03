@@ -50,11 +50,14 @@ export class EventCreationThirdComponent {
           location: eventInfo.get('location'),
           price: Number(eventInfo.get('price')),
           tags: eventInfo.get('tags') || [],
-          creator: user,
+          creator: user.id!,
           members: [],
+          isPrivate: eventInfo.get('isPrivate'),
           likes: 0,
           comments: 0
         };
+
+        console.log(event);
 
         (this.serviceFactory.get('events') as EventService).createEvent(event);
       } else {
