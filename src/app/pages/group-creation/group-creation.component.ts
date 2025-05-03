@@ -2,21 +2,28 @@ import {Component} from '@angular/core';
 import {GenericButtonComponent} from "../../components/generic-button/generic-button.component";
 import {UsersListComponent} from "../../components/users-list/users-list.component";
 import {User} from "../../../architecture/model/User";
-import {Group} from "../../../architecture/model/Group";
+import {ServiceFactory} from "../../services/service-factory.service";
+import {UsersSearchInputComponent} from "../../components/users-search-input/users-search-input.component";
 
 @Component({
     selector: 'app-group-creation',
     imports: [
         GenericButtonComponent,
-        UsersListComponent
+        UsersListComponent,
+        UsersSearchInputComponent
     ],
     templateUrl: './group-creation.component.html',
     styleUrl: './group-creation.component.css'
 })
 export class GroupCreationComponent {
     protected members: User[] = []
-
     protected image: string = "";
+    protected isUserListVisible: boolean = false;
+
+    constructor(
+        private serviceFactory: ServiceFactory
+    ) {
+    }
 
     protected onDragOver(event: DragEvent) {
         event.preventDefault();
@@ -57,5 +64,18 @@ export class GroupCreationComponent {
 
     private setImageValue(value: string) {
         this.image = value;
+    }
+
+    showUsersList() {
+        this.isUserListVisible = true;
+    }
+
+    hideUsersList() {
+        this.isUserListVisible = false;
+    }
+
+    addMember(user: User) {
+        this.members.push(user);
+        this.isUserListVisible = true;
     }
 }

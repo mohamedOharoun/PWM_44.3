@@ -1,5 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {User} from "../../../../architecture/model/User";
+import {ServiceFactory} from "../../../services/service-factory.service";
+import {UserService} from "../../../../architecture/io/services/UserService";
 
 @Component({
     selector: 'app-user-card',
@@ -8,5 +10,15 @@ import {User} from "../../../../architecture/model/User";
     styleUrl: './user-card.component.css'
 })
 export class UserCardComponent {
-    @Input() user!: User;
+    @Input() userID!: string;
+    protected user!: User;
+
+    constructor(
+        private serviceFactory: ServiceFactory
+    ) {
+    }
+
+    ngOnInit() {
+        (this.serviceFactory.get('user') as UserService).userWith(this.userID).subscribe(res => this.user = res);
+    }
 }

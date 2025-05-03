@@ -8,7 +8,6 @@ import {MessageService} from "../../../architecture/io/services/MessageService";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
 import {UserService} from "../../../architecture/io/services/UserService";
 import {User} from "../../../architecture/model/User";
-import {Auth} from "@angular/fire/auth";
 
 @Component({
     selector: 'app-messages',

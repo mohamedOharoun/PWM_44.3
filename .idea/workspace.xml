@@ -6,26 +6,51 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-first-form/sign-up-first-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-first-form/sign-up-first-form.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-first-form/sign-up-first-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-first-form/sign-up-first-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-first-form/sign-up-first-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-first-form/sign-up-first-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/generic-button/generic-button.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/generic-button/generic-button.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/generic-button/generic-button.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/generic-button/generic-button.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/message-card/message-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/io/services/FirebaseMessageService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseMessageService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/input-with-icon/input-with-icon.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/input-with-icon/input-with-icon.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/input-with-icon/input-with-icon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/input-with-icon/input-with-icon.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/blocked-card/blocked-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/blocked-card/blocked-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/friend-card/friend-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/friend-card/friend-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/user-card/user-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/user-card/user-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/users-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/users-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/io/services/FirebaseAuthenticationService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseAuthenticationService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/io/services/FirebaseUserService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseUserService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/event-creation-pages/event-creation-second/event-creation-second.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/event-creation-pages/event-creation-second/event-creation-second.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/social.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/social.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-first/sign-up-first.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-first/sign-up-first.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-first/sign-up-first.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-first/sign-up-first.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-fourth/sign-up-fourth.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-fourth/sign-up-fourth.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-fourth/sign-up-fourth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-fourth/sign-up-fourth.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-second/sign-up-second.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-second/sign-up-second.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-second/sign-up-second.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-second/sign-up-second.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-third/sign-up-third.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-up-pages/sign-up-third/sign-up-third.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/architecture/io/services/UserService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/architecture/io/services/UserService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +82,12 @@
     &quot;assignee&quot;: &quot;Javier-Castilla&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mohamedOharoun/PWM_44.3.git",
+    "accountId": "253bd5c7-92ca-431c-ac0e-b725cdefdb39"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -236,6 +261,10 @@
       <workItem from="1746008702661" duration="4126000" />
       <workItem from="1746023996799" duration="351000" />
       <workItem from="1746099741756" duration="20995000" />
+      <workItem from="1746134966217" duration="174000" />
+      <workItem from="1746199175863" duration="764000" />
+      <workItem from="1746201405497" duration="1019000" />
+      <workItem from="1746280541760" duration="14450000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />

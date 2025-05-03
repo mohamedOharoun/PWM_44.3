@@ -1,5 +1,28 @@
-<form class="d-flex flex-column gap-5">
-    <app-input-with-icon [value]="email" (valueEmitter)="setEmailValue($event)" icon="bi-envelope" placeholder="E-mail" type="email"></app-input-with-icon>
-    <app-input-with-icon [value]="password" (valueEmitter)="setPasswordValue($event)" icon="bi-lock" placeholder="Introduce your password" type="password"></app-input-with-icon>
-    <app-input-with-icon [value]="passwordConfirmation" (valueEmitter)="setPasswordConfirmationValue($event)" icon="bi-lock" placeholder="Repeat your password" type="password"></app-input-with-icon>
+<form #first_form="ngForm" class="d-flex flex-column gap-4" (ngSubmit)="changePage(nextStep, first_form)">
+    <div class="d-flex flex-column mb-4">
+        <div class="input-with-icon gap-1 d-flex align-content-center">
+            <i class="align-content-center bi-envelope"></i>
+            <input #email_input="ngModel" (focusout)="checkEmail()" pattern="^.+@.+\.\w{2,}$" name="email_input" type="email" [(ngModel)]="email" class="flex-grow-1 border-0" placeholder="E-mail*" required>
+        </div>
+    </div>
+    <div class="d-flex flex-column mb-4">
+        <div class="input-with-icon gap-1 d-flex align-content-center">
+            <i class="align-content-center bi-lock"></i>
+            <input #password_input="ngModel" pattern=".{6,}" name="password_input" type="password" [(ngModel)]="password" class="flex-grow-1 border-0" placeholder="Introduce your password*" required>
+        </div>
+    </div>
+    <div class="d-flex flex-column mb-4">
+        <div class="input-with-icon gap-1 d-flex align-content-center">
+            <i class="align-content-center bi-lock"></i>
+            <input #password_confirmation_input="ngModel" pattern=".{6,}" name="confirm_password_input" type="password" [(ngModel)]="passwordConfirmation" class="flex-grow-1 border-0" placeholder="Repeat your password*" required>
+        </div>
+    </div>
+    <div class="d-flex flex-column gap-1 mt-auto">
+        <app-generic-button type="submit" text="NEXT" buttonClass="solid-button"></app-generic-button>
+        <p class="w-100 text-center">
+            Already have an account? Try <strong routerLink="/signin" class="sign-in-text">signing in.</strong>
+            <br>
+            <span class="text-danger">{{email.length && !email_input.valid ? 'Introduce a valid e-mail.' : ''}} {{emailExists ? 'E-mail already in use.' : ''}} {{password.length && passwordConfirmation && password !== passwordConfirmation ? 'Passwords does not match.' : ''}} {{password && password_input.invalid ? 'Password minimum length is 6.' : ''}} {{!first_form.valid ? 'Require fields must be filled.' : ''}}</span>
+        </p>
+    </div>
 </form>

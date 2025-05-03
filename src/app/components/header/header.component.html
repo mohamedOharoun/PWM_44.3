@@ -14,7 +14,7 @@
     </nav>
     <div id="page-header-buttons" class="ms-auto">
         @if (user) {
-            <app-generic-button text="Sign out" (click)="signOut()" routerLink="social"></app-generic-button>
+            <app-generic-button text="Sign out" (click)="signOut()" routerLink="homePage"></app-generic-button>
         } @else {
             <app-generic-button [text]="buttonText" routerLink="signin"></app-generic-button>
         }
