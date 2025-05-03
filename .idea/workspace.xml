@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
+      <change afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseGroupService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/architecture/io/services/GroupService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/messages-user-card/messages-user-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/messages-user-card/messages-user-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/blocked-card/blocked-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/blocked-card/blocked-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/friend-card/friend-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/friend-card/friend-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/pending-card/pending-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/sent-request-card/sent-request-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/social-cards/user-card/user-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/social-cards/user-card/user-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/input/input.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/input/input.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/user-card/user-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/users-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/users-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-list/users-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-list/users-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/users-search-input/users-search-input.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/users-search-input/users-search-input.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/architecture/model/Group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/architecture/model/Group.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +30,9 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="package.json" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -228,7 +232,7 @@
       <workItem from="1746134966217" duration="174000" />
       <workItem from="1746199175863" duration="764000" />
       <workItem from="1746201405497" duration="1019000" />
-      <workItem from="1746280541760" duration="15971000" />
+      <workItem from="1746280541760" duration="17982000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />

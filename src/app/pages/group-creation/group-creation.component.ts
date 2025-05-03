@@ -4,13 +4,18 @@ import {UsersListComponent} from "../../components/users-list/users-list.compone
 import {User} from "../../../architecture/model/User";
 import {ServiceFactory} from "../../services/service-factory.service";
 import {UsersSearchInputComponent} from "../../components/users-search-input/users-search-input.component";
+import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
+import {FormsModule, NgForm} from "@angular/forms";
+import {GroupService} from "../../../architecture/io/services/GroupService";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-group-creation',
     imports: [
         GenericButtonComponent,
         UsersListComponent,
-        UsersSearchInputComponent
+        UsersSearchInputComponent,
+        FormsModule
     ],
     templateUrl: './group-creation.component.html',
     styleUrl: './group-creation.component.css'
@@ -19,10 +24,16 @@ export class GroupCreationComponent {
     protected members: User[] = []
     protected image: string = "";
     protected isUserListVisible: boolean = false;
+    protected name: string = "";
 
     constructor(
+        private router: Router,
         private serviceFactory: ServiceFactory
     ) {
+    }
+
+    ngOnInit() {
+        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => this.members.push(res!));
     }
 
     protected onDragOver(event: DragEvent) {
@@ -66,16 +77,23 @@ export class GroupCreationComponent {
         this.image = value;
     }
 
-    showUsersList() {
-        this.isUserListVisible = true;
-    }
-
-    hideUsersList() {
-        this.isUserListVisible = false;
-    }
-
     addMember(user: User) {
         this.members.push(user);
         this.isUserListVisible = true;
+    }
+
+    removeMember(id: string) {
+        this.members = this.members.filter(m => m.id !== id);
+    }
+
+    createGroup(form: NgForm) {
+        if (form.invalid || this.members.length < 2) return;
+        (this.serviceFactory.get('group') as GroupService).create({
+            creator: this.members[0].id!,
+            image: this.image,
+            members: this.members.map(m => m.id!),
+            name: this.name
+        });
+        this.router.navigate(['/social/groups']).then();
     }
 }

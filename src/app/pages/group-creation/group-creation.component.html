@@ -1,5 +1,5 @@
 <main class="main d-flex align-items-center justify-content-center">
-    <form class="central-card d-flex flex-column bg-white p-5">
+    <form #form="ngForm" class="central-card d-flex flex-column bg-white p-5">
         <div class="group-creation-header w-100 d-flex flex-column">
             <h1>Group creation</h1>
             <hr>
@@ -21,17 +21,17 @@
             </div>
             <div class="d-flex flex-column flex-grow-1">
                 <label class="fw-lighter fs-5" for="group-name-input">Group name</label>
-                <input class="input" id="group-name-input" type="text">
+                <input name="name-input" class="input" [(ngModel)]="name" id="group-name-input" type="text" required>
             </div>
         </div>
         <div class="w-100">
             <div class="members-input-container w-100 d-flex flex-column">
-                <app-users-search-input (selectedEmitter)="addMember($event)" [exclude]="members"></app-users-search-input>
+                <app-users-search-input class="users-input-component" (selectedEmitter)="addMember($event)" [exclude]="members"></app-users-search-input>
             </div>
             <div class="users-list-container overflow-auto">
-                <app-users-list [users]="members"></app-users-list>
+                <app-users-list (removeEmitter)="removeMember($event)" [users]="members"></app-users-list>
             </div>
         </div>
-        <app-generic-button class="mt-auto" text="Create group" buttonClass="solid-button"></app-generic-button>
+        <app-generic-button (click)="createGroup(form)" class="mt-auto" text="Create group" buttonClass="solid-button"></app-generic-button>
     </form>
 </main>

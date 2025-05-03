@@ -67,8 +67,7 @@ label {
     box-sizing: border-box;
 }
 
-.users-suggestions {
-    position: absolute;
-    border: 1px solid black;
-    bottom: -2.7rem;
+.users-input-component {
+    z-index: 1000;
 }
+

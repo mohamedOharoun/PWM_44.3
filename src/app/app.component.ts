@@ -9,6 +9,7 @@ import {FirebaseUserService} from "./io/services/FirebaseUserService";
 import {FirebaseMessageService} from "./io/services/FirebaseMessageService";
 import {FooterComponent} from './components/footer/footer.component';
 import {FirebaseEventService} from "./io/services/FirebaseEventService";
+import {FirebaseGroupService} from "./io/services/FirebaseGroupService";
 
 @Component({
     selector: 'app-root',
@@ -41,5 +42,6 @@ export class AppComponent {
             .put('user', new FirebaseUserService(this.fireStore))
             .put('message', new FirebaseMessageService(this.fireStore))
             .put('event', new FirebaseEventService(this.fireStore))
+            .put('group', new FirebaseGroupService(this.fireStore))
     }
 }
