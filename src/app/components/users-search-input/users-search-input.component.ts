@@ -13,8 +13,8 @@ import {User} from "../../../architecture/model/User";
     styleUrl: './users-search-input.component.css'
 })
 export class UsersSearchInputComponent {
-    @Input() exclude: User[] = [];
-    @Output() selectedEmitter = new EventEmitter<User>;
+    @Input() exclude: string[] = [];
+    @Output() selectedEmitter = new EventEmitter<string>;
     protected searchedUsers: User[] = [];
 
     constructor(
@@ -23,12 +23,12 @@ export class UsersSearchInputComponent {
     }
 
     protected searchCoincidencesUsers(name: string) {
-        if (name && name.length > 0) (this.serviceFactory.get('user') as UserService).userNamed(name).subscribe(res => this.searchedUsers = [...res].filter(u => this.exclude.find(e => e.id === u.id) === undefined));
+        if (name && name.length > 0) (this.serviceFactory.get('user') as UserService).userNamed(name).subscribe(res => this.searchedUsers = [...res].filter(u => !this.exclude.includes(u.id!)));
         else this.searchedUsers = [];
     }
 
-    selectUser(user: User) {
-        this.selectedEmitter.emit(user);
-        this.searchedUsers = this.searchedUsers.filter(u => u.id !== user.id);
+    selectUser(id: string) {
+        this.selectedEmitter.emit(id);
+        this.searchedUsers = this.searchedUsers.filter(u => u.id !== id);
     }
 }

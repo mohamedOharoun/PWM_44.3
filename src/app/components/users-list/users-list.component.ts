@@ -13,7 +13,7 @@ import {AuthenticationService} from "../../../architecture/io/services/Authentic
     styleUrl: './users-list.component.css'
 })
 export class UsersListComponent {
-    @Input() users: User[] = [];
+    @Input() users: string[] = [];
     @Output() removeEmitter = new EventEmitter<string>();
     protected loggedUserID: string = '';
 

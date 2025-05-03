@@ -64,5 +64,6 @@ export class SignUpFourthFormComponent {
                 image: signUpInfo.get('image')
             }
         ).subscribe();
+        this.router.navigate(['/signin']).then();
     }
 }

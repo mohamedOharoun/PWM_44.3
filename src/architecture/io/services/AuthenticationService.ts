@@ -6,6 +6,6 @@ export interface AuthenticationService extends Service {
     user: Observable<User |null>;
     register(email: string, password: string, extraData: {[key: string]: any}): Observable<User>;
     signIn(email: string, password: string): Observable<User>;
-    signOut(): void;
+    signOut(): Promise<void>;
     getLoggedUserUID(): string | undefined;
 }

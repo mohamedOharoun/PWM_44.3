@@ -1,6 +1,4 @@
 import {Component} from '@angular/core';
-import {SocialCardComponent} from "../../../components/social-card/social-card.component";
-import {PendingCardComponent} from "../../../components/social-cards/pending-card/pending-card.component";
 import {SocialNavigationComponent} from "../../../components/social-navigation/social-navigation.component";
 import {User} from "../../../../architecture/model/User";
 import {ServiceFactory} from "../../../services/service-factory.service";
@@ -8,19 +6,21 @@ import {AuthenticationService} from "../../../../architecture/io/services/Authen
 import {UserService} from "../../../../architecture/io/services/UserService";
 import {FriendRequest} from "../../../../architecture/model/FriendRequest";
 import {Router} from "@angular/router";
+import {GroupService} from "../../../../architecture/io/services/GroupService";
+import {GroupCardComponent} from "../../../components/social-cards/group-card/group-card.component";
 
 @Component({
     selector: 'app-groups',
     imports: [
-        PendingCardComponent,
-        SocialNavigationComponent
+        SocialNavigationComponent,
+        GroupCardComponent
     ],
     templateUrl: './groups.component.html',
     styleUrl: './groups.component.css'
 })
 export class GroupsComponent {
     protected user: User | null = null;
-    protected pending: string[] = [];
+    protected groups: string[] = [];
 
     constructor(
         private serviceFactory: ServiceFactory,
@@ -31,16 +31,10 @@ export class GroupsComponent {
     ngOnInit() {
         (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => {
             this.user = res;
-            (this.serviceFactory.get('user') as UserService).pendingOf(this.user?.id!).subscribe(res => this.pending = [...res]);
+            (this.serviceFactory.get('group') as GroupService).groupsOf(this.user?.id!).subscribe(res => {
+                this.groups = [...res].map(g => g.id!)
+            });
         });
-    }
-
-    acceptRequest(request: FriendRequest) {
-        (this.serviceFactory.get('user') as UserService).acceptRequest(request);
-    }
-
-    cancelRequest(request: FriendRequest) {
-        (this.serviceFactory.get('user') as UserService).cancelRequest(request);
     }
 
     protected showGroupCreationForm() {

@@ -2,7 +2,7 @@
 @if (searchedUsers.length) {
     <section class="users-suggestions d-flex flex-column align-items-center justify-content-center w-100 gap-2 p-2 shadow">
         @for (user of searchedUsers; track user.id) {
-            <article (click)="selectUser(user)">{{user.username}}</article>
+            <article (click)="selectUser(user.id!)">{{user.username}}</article>
         }
     </section>
 }

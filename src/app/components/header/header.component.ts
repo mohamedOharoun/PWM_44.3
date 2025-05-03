@@ -4,6 +4,7 @@ import {Router, RouterLink} from "@angular/router";
 import {ServiceFactory} from "../../services/service-factory.service";
 import {User} from "../../../architecture/model/User";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
+import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
 
 @Component({
     selector: 'app-header',
@@ -47,9 +48,10 @@ export class HeaderComponent {
         document.querySelector('.header-navigation')!.classList.toggle('header-navigation-opened');
     }
 
-    protected signOut() {
-        (this.serviceFactory.get('auth') as AuthenticationService).signOut();
-        this.router.navigate(['homePage']).then();
+    protected async signOut() {
+        await (this.serviceFactory.get('auth') as AuthenticationService).signOut();
+        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => console.log(res));
+        this.router.navigate(['/']).then();
     }
 }
 

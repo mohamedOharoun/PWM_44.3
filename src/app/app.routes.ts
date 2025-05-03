@@ -17,15 +17,6 @@ import {SignInComponent} from './pages/sign-in/sign-in.component';
 import {ResetPasswordComponent} from './pages/reset-password/reset-password.component';
 import {LandingPageComponent} from './pages/landing-page/landing-page.component';
 import {HomePageComponent} from './pages/home-page/home-page.component';
-import {
-  EventCreationFirstComponent
-} from './pages/event-creation-pages/event-creation-first/event-creation-first.component';
-import {
-  EventCreationSecondComponent
-} from './pages/event-creation-pages/event-creation-second/event-creation-second.component';
-import {
-  EventCreationThirdComponent
-} from './pages/event-creation-pages/event-creation-third/event-creation-third.component';
 import {AuthGuard} from "./guards/auth.guard";
 
 export const routes: Routes = [
@@ -46,8 +37,5 @@ export const routes: Routes = [
     {path: 'signin', component: SignInComponent},
     {path: 'resetPassword', component: ResetPasswordComponent},
     {path: '', component: LandingPageComponent},
-    {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]},
-    {path: 'eventCreationFirst', component: EventCreationFirstComponent, canActivate: [AuthGuard]},
-    {path: 'eventCreationSecond', component: EventCreationSecondComponent, canActivate: [AuthGuard]},
-    {path: 'eventCreationThird', component: EventCreationThirdComponent, canActivate: [AuthGuard]},
+    {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]}
 ];

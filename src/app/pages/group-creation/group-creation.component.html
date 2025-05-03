@@ -32,6 +32,10 @@
                 <app-users-list (removeEmitter)="removeMember($event)" [users]="members"></app-users-list>
             </div>
         </div>
-        <app-generic-button (click)="createGroup(form)" class="mt-auto" text="Create group" buttonClass="solid-button"></app-generic-button>
+        @if (!editing) {
+            <app-generic-button (click)="createGroup(form)" class="mt-auto" text="Create group" buttonClass="solid-button"></app-generic-button>
+        } @else {
+            <app-generic-button (click)="updateGroup(form)" class="mt-auto" text="Update group" buttonClass="solid-button"></app-generic-button>
+        }
     </form>
 </main>
