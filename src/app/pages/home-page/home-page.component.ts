@@ -48,7 +48,8 @@ export class HomePageComponent {
         tags: ['music', 'outdoor'],
         members: [sampleCreator],
         likes: 24,
-        comments: 5
+        comments: 5,
+        price: 5,
       }
     ];
 
@@ -64,7 +65,8 @@ export class HomePageComponent {
         tags: ['music', 'outdoor'],
         members: [sampleCreator],
         likes: 24,
-        comments: 5
+        comments: 5,
+        price: 5,
       }
     ]
   }

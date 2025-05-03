@@ -10,4 +10,5 @@ export type Event = {
     members: User[];
     likes: number;
     comments: number;
+    price: number;
 }
