@@ -19,7 +19,7 @@ import {signOut} from "@angular/fire/auth";
 export class HeaderComponent {
     navLinks: { page: string; route: string | null }[] = [
         {page: 'Home', route: 'homePage'},
-        {page: 'Events', route: null},
+        {page: 'Events', route: 'events'},
         {page: 'Social', route: 'social/blocked'},
         {page: 'Messages', route: 'messages'},
     ];
