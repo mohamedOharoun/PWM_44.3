@@ -49,5 +49,5 @@ export const routes: Routes = [
     {path: 'homePage', component: HomePageComponent, canActivate: [AuthGuard]},
     {path: 'eventCreationFirst', component: EventCreationFirstComponent, canActivate: [AuthGuard]},
     {path: 'eventCreationSecond', component: EventCreationSecondComponent, canActivate: [AuthGuard]},
-    {path: 'eventCreationThird', component: EventCreationThirdComponent, canActivate: [AuthGuard]},
+    {path: 'eventCreationThird', component: EventCreationThirdComponent, canActivate: [AuthGuard]}
 ];
