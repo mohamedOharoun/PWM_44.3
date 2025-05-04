@@ -18,7 +18,7 @@ import {PendingCardComponent} from "../../../components/social-cards/pending-car
         PendingCardComponent
     ],
     templateUrl: './pending.component.html',
-    styleUrl: './pending.component.css'
+    styleUrl: '../social.component.css'
 })
 export class PendingComponent {
     protected user: User | null = null;

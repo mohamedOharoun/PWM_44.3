@@ -16,7 +16,7 @@ import {GroupCardComponent} from "../../../components/social-cards/group-card/gr
         GroupCardComponent
     ],
     templateUrl: './groups.component.html',
-    styleUrl: './groups.component.css'
+    styleUrl: '../social.component.css'
 })
 export class GroupsComponent {
     protected user: User | null = null;

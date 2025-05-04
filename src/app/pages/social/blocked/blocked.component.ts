@@ -11,13 +11,11 @@ import {BlockedCardComponent} from "../../../components/social-cards/blocked-car
 @Component({
     selector: 'app-blocked',
     imports: [
-        SocialCardComponent,
         SocialNavigationComponent,
-        UserCardComponent,
         BlockedCardComponent
     ],
     templateUrl: './blocked.component.html',
-    styleUrl: './blocked.component.css'
+    styleUrl: '../social.component.css'
 })
 export class BlockedComponent {
     protected user: User | null = null;

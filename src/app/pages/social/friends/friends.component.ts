@@ -14,7 +14,7 @@ import {Router} from "@angular/router";
         FriendCardComponent
     ],
     templateUrl: './friends.component.html',
-    styleUrl: './friends.component.css'
+    styleUrl: '../social.component.css'
 })
 export class FriendsComponent {
     protected user: User | null = null;

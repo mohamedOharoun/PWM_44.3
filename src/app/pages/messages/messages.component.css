@@ -1,9 +1,37 @@
 .users-list-aside {
-    width: 20%;
-    z-index: 10;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    width: 20rem;
+    transition: left 0.3s ease;
 }
 
 .chat-container {
-    width: 80%;
+    display: flex;
+    flex: 1 1 0;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.toggle-button {
+    z-index: 1000;
+}
+
+@media screen and (max-width: 700px) {
+    .users-list-aside {
+        position: absolute;
+        z-index: 5;
+        height: 92%;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        background: transparent;
+        padding-top: 2rem;
+        left: -20rem;
+    }
+
+    .users-list-aside.active {
+        left: 0;
+    }
+
+    .toggle-button {
+        display: block;
+    }
 }

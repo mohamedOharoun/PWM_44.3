@@ -23,6 +23,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class MessagesComponent {
     @ViewChild('withScroll') private withScroll!: ElementRef;
+    @ViewChild('users_list') private usersList!: ElementRef;
     @ViewChildren('item') private itemsElements!: QueryList<ElementRef>;
     private recipientID = '';
     protected friends: string[] = [];
@@ -74,5 +75,9 @@ export class MessagesComponent {
 
     setUserChat(id: string) {
         this.router.navigate(['/messages'], { queryParams: {'userID': id}})
+    }
+
+    toggleUsersList() {
+        this.usersList.nativeElement.classList.toggle('active');
     }
 }

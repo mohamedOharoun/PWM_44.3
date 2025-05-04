@@ -14,7 +14,7 @@ import {FriendRequest} from "../../../../architecture/model/FriendRequest";
         SentRequestCardComponent
     ],
     templateUrl: './sent-requests.component.html',
-    styleUrl: './sent-requests.component.css'
+    styleUrl: '../social.component.css'
 })
 export class SentRequestsComponent {
     protected user: User | null = null;
