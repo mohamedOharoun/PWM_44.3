@@ -27,6 +27,13 @@ export class FirebaseUserService implements UserService {
       );
   }
 
+  updateUser(user: User): Promise<void> {
+    if (!user.id) throw new Error("User ID is required to update");
+
+    const ref = doc(this.store, `users/${user.id}`);
+    return setDoc(ref, user, { merge: true });
+  }
+
   requestFrom(userID: string, requestID: string): Observable<FriendRequest> {
         return docData(doc(this.store, `users/${userID}/sent_requests/${requestID}`), {idField: 'id'}) as Observable<FriendRequest>;
     }

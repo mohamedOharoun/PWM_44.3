@@ -18,7 +18,7 @@
       <div class="d-flex flex-column justify-content-center">
         <p class="mb-2 d-flex align-items-center">
           <img [src]="timeIcon" alt="Time icon" class="me-2" style="width: 20px; height: 20px;">
-          <span class="event-time-text small">{{ event.date | date: 'short' }}</span>
+          <span class="event-time-text small">{{ formatEventDate(event.date) }}</span>
         </p>
         <p class="mb-0 d-flex align-items-center">
           <img [src]="locationIcon" alt="Location icon" class="me-2" style="width: 20px; height: 20px;">

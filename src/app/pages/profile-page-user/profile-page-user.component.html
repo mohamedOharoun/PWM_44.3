@@ -8,7 +8,7 @@
           @if (isOwnProfile) {
             <img class="edit-icon" [src]="editIcon" alt="Edit icon"
                  style="cursor: pointer; width: 40px; height: 40px;"
-                 (click)="toggleReadOnly()"
+                 (click)="canToggle() && toggleReadOnly()"
             >
           }
         </div>
@@ -31,23 +31,35 @@
         </div>
 
         <div class="profile-info w-100">
-          <label class="user-full-name w-100">
+          <label class="user-full-name w-100 fw-bold mb-0"><span>Name</span>
             <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.name"
                    [readonly]="isReadOnly">
           </label>
-          <label class="user-name w-100">
-            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.username"
-                   [readonly]="isReadOnly">
+
+          <label class="user-name w-100 fw-bold mb-0"><span>Username</span>
+            <input class="animated-input form-control mb-2" type="text" name="username"
+                   [(ngModel)]="userData.username" [readonly]="isReadOnly" required
+                   #username="ngModel" [ngClass]="{ 'is-invalid': username.invalid && username.touched && !isReadOnly }"
+            >
+            @if (username.invalid && username.touched && !isReadOnly) {
+              <div class="invalid-feedback">Username can not be null.</div>
+            }
           </label>
-          <label class="user-email w-100">
-            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.email"
-                   [readonly]="isReadOnly">
+
+          <label class="user-email w-100 fw-bold mb-0"><span>Email</span>
+            <input class="animated-input form-control mb-2" type="email" name="email"
+                   [(ngModel)]="userData.email" [readonly]="isReadOnly" required
+                   #email="ngModel" [ngClass]="{ 'is-invalid': email.invalid && email.touched && !isReadOnly }"
+            >
+            @if (email.invalid && email.touched && !isReadOnly) {
+              <div class="invalid-feedback">Introduce a valid email.</div>
+            }
           </label>
         </div>
       </div>
 
       <div class="profile-description-container mt-4">
-        <label class="description w-100">
+        <label class="description w-100 fw-bold mb-0"><span>Description</span>
           <textarea class="animated-input form-control" [(ngModel)]="userData.description"
                     [readonly]="isReadOnly">
           </textarea>
@@ -60,7 +72,7 @@
             <summary>{{ userEvents.title }}</summary>
             <div class="user-events-content summary-content mt-2">
               @if (userEvents.events.length > 0) {
-                @for (event of userEvents.events; track $index) {
+                @for (event of userEvents.events; track event) {
                   <app-event-card-profile [event]="event" />
                 }
               } @else {
@@ -76,7 +88,7 @@
               <summary>{{ sharedEvents.title }}</summary>
               <div class="shared-events-content summary-content mt-2">
                 @if (sharedEvents.events.length > 0) {
-                  @for (event of sharedEvents.events; track $index) {
+                  @for (event of sharedEvents.events; track event) {
                     <app-event-card-profile [event]="event" />
                   }
                 } @else {
