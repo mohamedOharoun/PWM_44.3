@@ -31,6 +31,7 @@ export class HomePageComponent {
   ngOnInit() {
     const sampleCreator: User = {
       id: '123',
+      birthDate: new Date(),
       email: 'user@example.com',
       name: 'John Doe',
       username: 'johndoe',

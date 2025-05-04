@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/group-creation/group-creation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-fourth-form/sign-up-fourth-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-second-form/sign-up-second-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/architecture/model/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/architecture/model/User.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

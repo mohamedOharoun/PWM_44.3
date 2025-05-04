@@ -9,7 +9,6 @@ import {Router, RouterLink} from "@angular/router";
 @Component({
     selector: 'app-sign-up-second-form',
     imports: [
-        InputWithIconComponent,
         ReactiveFormsModule,
         FormsModule,
         NgClass,
