@@ -1,0 +1,8 @@
+<app-input #member_input (focusin)="searchCoincidencesUsers(member_input.value)" (keyup)="searchCoincidencesUsers(member_input.value)" label="Member name"></app-input>
+@if (searchedUsers.length) {
+    <section class="users-suggestions d-flex flex-column align-items-center justify-content-center w-100 gap-2 p-2 shadow">
+        @for (user of searchedUsers; track user.id) {
+            <article (click)="selectUser(user.id!)">{{user.username}}</article>
+        }
+    </section>
+}

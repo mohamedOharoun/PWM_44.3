@@ -1,21 +1,58 @@
 <main>
-    <article class="d-flex justify-content-between align-items-center gap-3 main-content">
-        <div class="d-flex flex-column align-items-center gap-3 p-3" style="width: 50%;">
-            <h1 class="home-title text-white fw-bold">{{ title }}</h1>
-            <p class="text text-white">{{ textInfo }}</p>
-            <div class="button-container d-flex align-items-center gap-3">
-                <app-generic-button [text]="firstButton" routerLink=""></app-generic-button>
-                <app-generic-button [text]="secondButton" routerLink=""></app-generic-button>
-            </div>
-        </div>
-        <section class="photo-container flex-grow-1">
-            <img [src]="photo" alt="Home image" class="img-fluid" style="object-fit: cover; aspect-ratio: 645 / 385;">
-        </section>
-    </article>
-
-    <div id="second-info-container" class="d-flex justify-content-center align-items-center">
-        <section id="info-container" class="d-flex justify-content-between p-4 my-4 rounded-3 shadow-lg bg-white">
-
-        </section>
+  <article class="d-flex justify-content-between align-items-center gap-3 main-content">
+    <div class="d-flex flex-column align-items-center gap-3 p-3" style="width: 50%;">
+      <h1 class="home-title text-white fw-bold">{{ title }}</h1>
+      <p class="text text-white">{{ textInfo }}</p>
+      <div class="button-container d-flex align-items-center gap-3">
+        <app-generic-button [text]="firstButton" routerLink="/eventCreationFirst"></app-generic-button>
+        <app-generic-button [text]="secondButton" routerLink="/groupCreation"></app-generic-button>
+      </div>
     </div>
+    <section class="photo-container flex-grow-1">
+      <img [src]="photo" alt="Home image" class="img-fluid" style="object-fit: cover; aspect-ratio: 645 / 385;">
+    </section>
+  </article>
+  <div id="second-info-container" class="d-flex justify-content-center align-items-center">
+    <section id="info-container"
+             class="d-flex justify-content-between p-4 my-4 rounded-3 shadow-lg bg-white"
+             style="width: 50%;">
+      <article class="w-100 p-4 rounded shadow-sm bg-body-secondary" style="max-width: 30%; height: 400px">
+        <h1 class="h4 fw-bold text-center mb-2">{{ friendsContainer }}</h1>
+        <hr class="mb-3">
+        @for (user of friends; track user) {
+          <div class="friend-item">
+            <app-card-home [userID]="user" ></app-card-home>
+          </div>
+        }
+      </article>
+
+
+      <article class="w-100 p-4 rounded shadow-sm bg-body-secondary" style="max-width: 30%;">
+        <h1 class="h4 fw-bold text-center mb-2">{{ eventsContainer }}</h1>
+        <hr class="mb-3">
+        @for (event of upcomingEvents; track event) {
+          <div class="event-item">
+            <app-card-event-home
+              [type]="'upComingEvent'"
+              [event]="event">
+            </app-card-event-home>
+          </div>
+        }
+      </article>
+
+      <article class="w-100 p-4 rounded shadow-sm bg-body-secondary" style="max-width: 30%;">
+        <h1 class="h4 fw-bold text-center mb-2">{{ paymentsContainer }}</h1>
+        <hr class="mb-3">
+        @for (event of unpaidEvents; track event) {
+          <div class="event-item">
+            <app-card-event-home
+              [type]="'unpaidEvent'"
+              [event]="event">
+            </app-card-event-home>
+          </div>
+        }
+      </article>
+    </section>
+  </div>
+
 </main>

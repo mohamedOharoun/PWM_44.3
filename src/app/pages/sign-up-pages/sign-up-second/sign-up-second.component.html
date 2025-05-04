@@ -2,21 +2,10 @@
     <div class="central-card bg-white p-4">
         <div class="central-card-header d-flex flex-column align-items-center justify-content-center">
             <h1 class="fw-bolder">Account information</h1>
-            <h2 class="fw-lighter">we are looking forward to know you</h2>
+            <h2 class="fw-lighter text-center">we are looking forward to know you</h2>
         </div>
         <div class="central-card-center d-flex flex-column gap-5 p-3">
             <app-sign-up-second-form></app-sign-up-second-form>
-            <div class="d-flex flex-column gap-1  mt-auto">
-                <div class="d-flex">
-                    <div class="w-50 px-2">
-                        <app-generic-button (click)="changePage(previousStep)" text="PREVIOUS" buttonClass="transparent-button" class="w"></app-generic-button>
-                    </div>
-                    <div class="w-50 px-2">
-                        <app-generic-button (click)="changePage(nextStep)" text="NEXT" buttonClass="solid-button"></app-generic-button>
-                    </div>
-                </div>
-                <p class="w-100 text-center">Already have an account? Try <strong class="sign-in-text">signing in.</strong></p>
-            </div>
         </div>
         <div class="central-card-footer align-content-center">
             <app-form-stepper (changePageEmitter)="changePage($event)"

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrivacyPolicyComponent } from './privacy-policy.component';
+import { CardEventHomeComponent } from './card-event-home.component';
 
-describe('PrivacyPolicyComponent', () => {
-  let component: PrivacyPolicyComponent;
-  let fixture: ComponentFixture<PrivacyPolicyComponent>;
+describe('CardEventHomeComponent', () => {
+  let component: CardEventHomeComponent;
+  let fixture: ComponentFixture<CardEventHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrivacyPolicyComponent]
+      imports: [CardEventHomeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PrivacyPolicyComponent);
+    fixture = TestBed.createComponent(CardEventHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

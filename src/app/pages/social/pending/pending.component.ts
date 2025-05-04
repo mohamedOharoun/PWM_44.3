@@ -15,11 +15,10 @@ import {PendingCardComponent} from "../../../components/social-cards/pending-car
         FormsModule,
         ReactiveFormsModule,
         SocialNavigationComponent,
-        SentRequestCardComponent,
         PendingCardComponent
     ],
     templateUrl: './pending.component.html',
-    styleUrl: './pending.component.css'
+    styleUrl: '../social.component.css'
 })
 export class PendingComponent {
     protected user: User | null = null;

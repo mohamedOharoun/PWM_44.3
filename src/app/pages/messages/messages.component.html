@@ -1,16 +1,18 @@
 <main class="main d-flex">
-    <aside class="users-list-aside bg-white overflow-auto">
+    <i #toggle_button (click)="toggleUsersList()" class="toggle-button bi-chevron-double-right m-3 position-absolute"></i>
+    <aside #users_list class="users-list-aside bg-white overflow-auto ">
         <section class="users-list">
             @for (friend of friends; track friend) {
                 <app-messages-user-card
-                    [userID]="friend!"
+                        (click)="setUserChat(friend)"
+                        [userID]="friend!"
                 ></app-messages-user-card>
             }
         </section>
     </aside>
-    <div class="chat-container overflow-auto d-flex flex-column bg-white">
-        <div class="chat-header d-flex flex-column align-items-center">
-            <h1 class="fw-bolder">{{currentChatUser?.username}}</h1>
+    <div class="chat-container shadow overflow-auto d-flex flex-column bg-white">
+        <div class="chat-header d-flex flex-column align-items-center p-3">
+            <h1 class="fw-bolder">{{ currentChatUser?.username }}</h1>
             <hr class="w-75">
         </div>
         <section #withScroll class="chat p-3 overflow-auto">

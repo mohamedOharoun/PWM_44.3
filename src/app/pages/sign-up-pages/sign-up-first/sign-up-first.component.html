@@ -6,10 +6,6 @@
         </div>
         <div class="central-card-center d-flex flex-column gap-5 p-3">
             <app-sign-up-first-form></app-sign-up-first-form>
-            <div class="d-flex flex-column gap-1  mt-auto">
-                <app-generic-button (click)="changePage(nextStep)" text="NEXT" buttonClass="solid-button"></app-generic-button>
-                <p class="w-100 text-center">Already have an account? Try <strong class="sign-in-text">signing in.</strong></p>
-            </div>
         </div>
         <div class="central-card-footer align-content-center">
             <app-form-stepper (changePageEmitter)="changePage($event)"

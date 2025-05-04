@@ -1,10 +1,12 @@
 import {Component, ElementRef, Input, ViewChild} from '@angular/core';
 import {NgClass} from "@angular/common";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @Component({
     selector: 'app-generic-button',
     imports: [
-        NgClass
+        NgClass,
+        ReactiveFormsModule
     ],
     templateUrl: './generic-button.component.html',
     standalone: true,
@@ -13,4 +15,5 @@ import {NgClass} from "@angular/common";
 export class GenericButtonComponent {
     @Input() text: string =  "";
     @Input() buttonClass: string = "";
+    @Input() type: string = 'submit';
 }

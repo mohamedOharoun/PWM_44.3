@@ -1,8 +1,7 @@
-import {User} from "./User";
-
 export type Group = {
+    id?: string;
     name: string;
-    creator: User;
-    members: User[];
+    creator: string;
+    members: string[];
     image: string;
 }

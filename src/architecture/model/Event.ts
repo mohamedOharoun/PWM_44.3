@@ -1,14 +1,14 @@
-import {User} from "./User";
-
 export type Event = {
+    id?: string;
     name: string;
     description: string;
     date: Date;
     location: string;
-    creator: User;
+    creator: string;
     tags: string[];
-    members: User[];
+    members: string[];
     likes: number;
+    isPrivate: boolean;
     comments: number;
     price: number;
 }

@@ -8,7 +8,7 @@ import {MessageService} from "../../../architecture/io/services/MessageService";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
 import {UserService} from "../../../architecture/io/services/UserService";
 import {User} from "../../../architecture/model/User";
-import {Auth} from "@angular/fire/auth";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
     selector: 'app-messages',
@@ -23,6 +23,8 @@ import {Auth} from "@angular/fire/auth";
 })
 export class MessagesComponent {
     @ViewChild('withScroll') private withScroll!: ElementRef;
+    @ViewChild('users_list') private usersList!: ElementRef;
+    @ViewChild('toggle_button') private toggleButton!: ElementRef;
     @ViewChildren('item') private itemsElements!: QueryList<ElementRef>;
     private recipientID = '';
     protected friends: string[] = [];
@@ -32,25 +34,27 @@ export class MessagesComponent {
     protected messages: Message[] = [];
 
     constructor(
-        private serviceFactory: ServiceFactory
+        private router: Router,
+        private serviceFactory: ServiceFactory,
+        private route: ActivatedRoute
     ) {
     }
 
     ngOnInit() {
-        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(user => {
-            this.senderID = user?.id!;
-            (this.serviceFactory.get('user') as UserService).friendsOf(user!.id!).subscribe(users => {
-                this.friends = users!;
-                this.recipientID = this.friends[0];
-                (this.serviceFactory.get('user') as UserService).userWith(this.recipientID).subscribe(res => {
-                    this.currentChatUser = res;
-                    (this.serviceFactory.get('message') as MessageService).messagesOf(this.senderID!, this.recipientID).subscribe(messages => {
-                        console.log(res);
-                        this.messages = messages.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
-                    })
+        this.route.queryParams.subscribe(params => {
+            (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(user => {
+                this.senderID = user?.id!;
+                (this.serviceFactory.get('user') as UserService).friendsOf(user!.id!).subscribe(users => {
+                    this.friends = users!;
+                    this.recipientID = params['userID'] ? params['userID'] : this.friends[0];
+                    (this.serviceFactory.get('user') as UserService).userWith(this.recipientID).subscribe(res => {
+                        this.currentChatUser = res;
+                        (this.serviceFactory.get('message') as MessageService).messagesOf(this.senderID!, this.recipientID).subscribe(messages => this.messages = messages.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()))
+                    });
                 });
             });
         });
+
     }
 
     ngAfterViewInit() {
@@ -68,5 +72,14 @@ export class MessagesComponent {
 
     private scrollToBottom() {
         this.withScroll.nativeElement.scrollTop = this.withScroll.nativeElement.scrollHeight;
+    }
+
+    setUserChat(id: string) {
+        this.router.navigate(['/messages'], { queryParams: {'userID': id}})
+    }
+
+    toggleUsersList() {
+        this.usersList.nativeElement.classList.toggle('active');
+        this.toggleButton.nativeElement.classList.toggle('active');
     }
 }

@@ -15,25 +15,27 @@ export class EventCreationFirstFormComponent implements OnInit {
   protected dateTime = '';
   protected price: number | null = null;
   protected isPrivate = false;
-  protected place = '';
+  protected location = '';
+  private formData: FormService | null = null;
 
   constructor(private formService: FormService) {}
 
   ngOnInit() {
-    this.name = this.formService.get('name') || '';
-    this.dateTime = this.formService.get('dateTime') || '';
-    this.price = this.formService.get('price') || null;
-    this.isPrivate = this.formService.get('isPrivate') || false;
-    this.place = this.formService.get('place') || '';
+    this.formData = this.formService.createFormEntry('newEvent')
+    this.name = this.formData?.getOrDefault('name', '');
+    this.dateTime = this.formData?.getOrDefault('date', '');
+    this.price = this.formData?.getOrDefault('price', '');
+    this.isPrivate = this.formData?.getOrDefault('isPrivate', '');
+    this.location = this.formData?.getOrDefault('location', '');
   }
 
   saveFormData() {
-    this.formService.put('name', this.name);
-    this.formService.put('dateTime', this.dateTime);
-    this.formService.put('price', this.price);
-    this.formService.put('isPrivate', this.isPrivate);
-    this.formService.put('place', this.place);
-    this.formService.update();
+    this.formData?.put('name', this.name);
+    this.formData?.put('date', this.dateTime);
+    this.formData?.put('price', this.price);
+    this.formData?.put('isPrivate', this.isPrivate);
+    this.formData?.put('location', this.location);
+    this.formData?.update();
   }
 
   protected setName(value: string) {
@@ -53,6 +55,6 @@ export class EventCreationFirstFormComponent implements OnInit {
   }
 
   protected setPlace(value: string) {
-    this.place = value;
+    this.location = value;
   }
 }

@@ -5,6 +5,7 @@ import {AuthenticationService} from "../../../../architecture/io/services/Authen
 import {UserService} from "../../../../architecture/io/services/UserService";
 import {SocialNavigationComponent} from "../../../components/social-navigation/social-navigation.component";
 import {FriendCardComponent} from "../../../components/social-cards/friend-card/friend-card.component";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-friends',
@@ -13,13 +14,14 @@ import {FriendCardComponent} from "../../../components/social-cards/friend-card/
         FriendCardComponent
     ],
     templateUrl: './friends.component.html',
-    styleUrl: './friends.component.css'
+    styleUrl: '../social.component.css'
 })
 export class FriendsComponent {
     protected user: User | null = null;
     protected friends: string[] = [];
 
     constructor(
+        private router: Router,
         private serviceFactory: ServiceFactory
     ) {
     }
@@ -40,6 +42,6 @@ export class FriendsComponent {
     }
 
     protected chatWithUser(id: string) {
-
+        this.router.navigate(['/messages'], { queryParams: {'userID': id} }).then();
     }
 }

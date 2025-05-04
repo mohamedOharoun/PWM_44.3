@@ -6,6 +6,7 @@ import {FriendRequest} from "../../model/FriendRequest";
 export interface UserService extends Service {
     userWith(id: string): Observable<User>;
     userNamed(name: string): Observable<User[]>;
+    userWithEmail(email: string): Observable<User[]>;
     friendsOf(id: string): Observable<string[]>;
     groupsOf(id: string): Observable<string[]>;
     blockedOf(id: string): Observable<string[]>;

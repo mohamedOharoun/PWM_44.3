@@ -61,3 +61,13 @@ label {
     margin-top: 0.5rem;
     height: 21.7rem;
 }
+
+.members-input-container {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.users-input-component {
+    z-index: 1000;
+}
+

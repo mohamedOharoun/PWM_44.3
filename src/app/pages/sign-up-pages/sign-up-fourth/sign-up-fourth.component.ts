@@ -4,14 +4,12 @@ import {GenericButtonComponent} from "../../../components/generic-button/generic
 import {Router} from "@angular/router";
 import {FormService} from "../../../services/form.service";
 import {ServiceFactory} from "../../../services/service-factory.service";
-import {AuthenticationService} from "../../../../architecture/io/services/AuthenticationService";
 import {SignUpFourthFormComponent} from "../../../components/forms/sign-up-fourth-form/sign-up-fourth-form.component";
 
 @Component({
     selector: 'app-sign-up-fourth',
     imports: [
         FormStepperComponent,
-        GenericButtonComponent,
         SignUpFourthFormComponent,
     ],
     templateUrl: './sign-up-fourth.component.html',
@@ -27,32 +25,9 @@ export class SignUpFourthComponent {
         text: ''
     };
 
-    ngOnInit() {
-    }
-
     constructor(
-        private router: Router,
-        private formService: FormService,
-        private serviceFactory: ServiceFactory
+        private router: Router
     ) {
-    }
-
-    createAccount() {
-        this.form.saveFormData();
-        const signUpInfo: FormService = this.formService.get('signUp');
-        (this.serviceFactory.get('auth') as AuthenticationService).register(
-            signUpInfo.get('email'),
-            signUpInfo.get('password'),
-            {
-                username: signUpInfo.get('username'),
-                description: "",
-                friends: [],
-                pending: [],
-                sentRequests: [],
-                blocked: [],
-                groups: []
-            }
-        ).subscribe(res => console.log(res));
     }
 
     protected saveFormData() {

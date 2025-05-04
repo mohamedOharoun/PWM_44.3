@@ -8,7 +8,6 @@ import {SignUpSecondFormComponent} from "../../../components/forms/sign-up-secon
     selector: 'app-sign-up-second',
     imports: [
         FormStepperComponent,
-        GenericButtonComponent,
         SignUpSecondFormComponent
     ],
     templateUrl: './sign-up-second.component.html',
@@ -17,16 +16,6 @@ import {SignUpSecondFormComponent} from "../../../components/forms/sign-up-secon
 export class SignUpSecondComponent {
     @ViewChild(SignUpSecondFormComponent) form!: SignUpSecondFormComponent;
     protected currentStep: number = 2;
-    protected previousStep: { step: number; route: string; text: String } = {
-        step: 1,
-        route: 'signUpFirst',
-        text: ''
-    };
-    protected nextStep: { step: number; route: string; text: String } = {
-        step: 3,
-        route: 'signUpThird',
-        text: ''
-    };
 
     constructor(private router: Router) {
     }

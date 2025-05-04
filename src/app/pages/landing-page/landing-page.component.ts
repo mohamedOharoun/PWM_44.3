@@ -3,14 +3,14 @@ import {FeatureInfoComponent} from './feature-info/feature-info.component';
 import {GenericButtonComponent} from '../../components/generic-button/generic-button.component';
 import {RouterLink} from '@angular/router';
 import {NgForOf} from '@angular/common';
+import {Feature} from '../../../architecture/model/Features';
 
 @Component({
   selector: 'app-landing',
   imports: [
     FeatureInfoComponent,
     GenericButtonComponent,
-    RouterLink,
-    NgForOf
+    RouterLink
   ],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
@@ -21,7 +21,7 @@ export class LandingPageComponent {
   mainButtonText = 'Get started';
   seeMoreText = 'See more';
   mainPhoto = '/icons/index_background.png';
-  features = [
+  features: Feature[]  = [
     {
       image: '/icons/high_five.gif',
       title: 'Add your friends',

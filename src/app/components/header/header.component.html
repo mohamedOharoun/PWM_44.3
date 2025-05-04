@@ -1,4 +1,4 @@
-<header class="page-header p-2">
+<header class="page-header shadow p-2">
     <img src="icons/logo.svg" width="50" height="50" class="me-3">
     <button (click)="toggleMenu()" class="toggle-menu-button bg-transparent border-0">
         <i class="bi-list d-flex align-items-center justify-content-center fs-1"></i>
@@ -12,9 +12,10 @@
             }
         </ul>
     </nav>
-    <div id="page-header-buttons" class="ms-auto">
+    <div id="page-header-buttons" class="ms-auto d-flex align-items-center justify-content-center gap-3">
         @if (user) {
-            <app-generic-button text="Sign out" (click)="signOut()" routerLink="social"></app-generic-button>
+            <i routerLink='/profile' class="bi-person-circle fs-1 mt-3"></i>
+            <app-generic-button text="Sign out" (click)="signOut()" routerLink="homePage"></app-generic-button>
         } @else {
             <app-generic-button [text]="buttonText" routerLink="signin"></app-generic-button>
         }

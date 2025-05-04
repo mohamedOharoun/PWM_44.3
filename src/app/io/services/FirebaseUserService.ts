@@ -20,6 +20,18 @@ export class FirebaseUserService implements UserService {
     ) {
     }
 
+    userWithEmail(email: string): Observable<User[]> {
+        const q = query(
+            collection(this.store, 'users'),
+            where('email', '==', email)
+        );
+
+        return from(getDocs(q).then(querySnapshot => {
+            if (querySnapshot.empty) return [];
+            return querySnapshot.docs.map(doc => doc.data() as User);
+        }));
+    }
+
     requestFrom(userID: string, requestID: string): Observable<FriendRequest> {
         return docData(doc(this.store, `users/${userID}/sent_requests/${requestID}`), {idField: 'id'}) as Observable<FriendRequest>;
     }

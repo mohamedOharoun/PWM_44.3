@@ -14,7 +14,7 @@ import {UserService} from "../../../architecture/io/services/UserService";
 })
 export class EventMembersComponent {
     @Input() isVisible: boolean = true;
-    @Input() members: User[] = []
+    @Input() members: string[] = []
 
     constructor(
         private serviceFactory: ServiceFactory
@@ -22,7 +22,7 @@ export class EventMembersComponent {
     }
 
     ngOnInit() {
-        (this.serviceFactory.get('user') as UserService).userNamed("").subscribe(res => this.members = [...res]);
+        (this.serviceFactory.get('user') as UserService).userNamed("").subscribe(res => this.members = [...res].map(u => u.id!));
     }
 
     close() {
