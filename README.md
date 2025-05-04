@@ -12,7 +12,7 @@
 - Mohamed O. Haroun Zarkik
 
 ## Descripción del Proyecto
-Este proyecto consta de una aplicación web en la que, los usuarios registrados, podrán unirse y crear eventos así como relacionarse con otros usuarios de la aplicación mediante chats individuales. Dentro de los nombrados eventos, se podrán dejar comentarios y establecer un presupuesto a repartir entre los miembros del mismo.
+Este proyecto consta de una aplicación web en la que, los usuarios registrados, podrán unirse y crear eventos así como relacionarse con otros usuarios de la aplicación mediante chats individuales. Dentro de los nombrados eventos, se podrá establecer un presupuesto a repartir entre los miembros del mismo.
 
 ## Requisitos funcionales
 ### 1.  *Autenticación y Seguridad*
