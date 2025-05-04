@@ -64,7 +64,6 @@ export class ProfilePageUserComponent {
             user(this.auth).subscribe(currentUser => {
               if (currentUser) {
                 this.isOwnProfile = currentUser.uid === this.profileUserId;
-                this.loadEvents(this.profileUserId);
               }
             });
           }
@@ -74,23 +73,13 @@ export class ProfilePageUserComponent {
         eventService.createdEventsOf(this.userData?.id!).subscribe(events => {
           this.userEvents.events = events;
         });
-        eventService.joinedEventsOf(this.userData?.id!).subscribe(events => {
-          this.sharedEvents.events = events;
-        });
+        if (!this.isOwnProfile) {
+          eventService.joinedEventsOf(this.userData?.id!).subscribe(events => {
+            this.sharedEvents.events = events;
+          });
+        }
       }
     });
-  }
-
-  private loadEvents(userId: string): void {
-    this.eventService.createdEventsOf(userId).subscribe(events => {
-      this.userEvents.events = events;
-    });
-
-    if (!this.isOwnProfile) {
-      this.eventService.joinedEventsOf(userId).subscribe(events => {
-        this.sharedEvents.events = events;
-      });
-    }
   }
 
   isReadOnly = true;

@@ -1,14 +1,8 @@
 import {Component, Input} from '@angular/core';
 import { Event } from '../../../../architecture/model/Event';
-import {FirebaseEventService} from '../../../io/services/FirebaseEventService';
-import {ServiceFactory} from '../../../services/service-factory.service';
-import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-event-card-profile',
-  imports: [
-    DatePipe
-  ],
   templateUrl: './event-card-profile.component.html',
   styleUrl: './event-card-profile.component.css'
 })
