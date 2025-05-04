@@ -24,6 +24,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class MessagesComponent {
     @ViewChild('withScroll') private withScroll!: ElementRef;
     @ViewChild('users_list') private usersList!: ElementRef;
+    @ViewChild('toggle_button') private toggleButton!: ElementRef;
     @ViewChildren('item') private itemsElements!: QueryList<ElementRef>;
     private recipientID = '';
     protected friends: string[] = [];
@@ -79,5 +80,6 @@ export class MessagesComponent {
 
     toggleUsersList() {
         this.usersList.nativeElement.classList.toggle('active');
+        this.toggleButton.nativeElement.classList.toggle('active');
     }
 }

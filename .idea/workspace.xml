@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

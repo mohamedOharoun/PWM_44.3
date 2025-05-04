@@ -1,5 +1,5 @@
 <main class="main d-flex">
-    <i (click)="toggleUsersList()" class="toggle-button bi-chevron-double-right m-3 position-absolute"></i>
+    <i #toggle_button (click)="toggleUsersList()" class="toggle-button bi-chevron-double-right m-3 position-absolute"></i>
     <aside #users_list class="users-list-aside bg-white overflow-auto ">
         <section class="users-list">
             @for (friend of friends; track friend) {
