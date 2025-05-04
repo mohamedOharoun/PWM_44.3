@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/messages/messages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/blocked/blocked.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/friends/friends.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/groups/groups.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/pending/pending.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/sent-requests/sent-requests.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/social.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/social.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/social/social.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/social/social.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
