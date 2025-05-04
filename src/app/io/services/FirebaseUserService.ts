@@ -141,4 +141,18 @@ export class FirebaseUserService implements UserService {
             map(b => b.map(blocked => blocked.id))
         ) as Observable<string[]>;
     }
+
+    getUserByUsername(username: string): Observable<User | null> {
+        return collectionData(query(collection(this.store, 'users'), where('username', '==', username)))
+            .pipe(
+                map(users => users.length > 0 ? users[0] as User : null)
+            );
+    }
+
+    updateUser(user: User): Promise<void> {
+        if (!user.id) throw new Error("User ID is required to update");
+
+        const ref = doc(this.store, `users/${user.id}`);
+        return setDoc(ref, user, { merge: true });
+    }
 }

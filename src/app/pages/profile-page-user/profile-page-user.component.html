@@ -1,14 +1,16 @@
-<main class="d-flex justify-content-center align-items-start">
+<main class="d-flex justify-content-center align-items-start overflow-auto">
   <div class="profile-container bg-white my-4 p-5 rounded-3 shadow">
 
     <header class="profile-header container">
       <div class="profile-title-container d-flex align-items-center justify-content-between">
         <h1 class="profile-title m-0">{{ userData.username }}'s profile</h1>
         <div class="profile-utils-icons">
-          <img class="edit-icon" [src]="editIcon" alt="Edit icon"
-               style="cursor: pointer; width: 40px; height: 40px;"
-               (click)="toggleReadOnly()"
-          >
+          @if (isOwnProfile) {
+            <img class="edit-icon" [src]="editIcon" alt="Edit icon"
+                 style="cursor: pointer; width: 40px; height: 40px;"
+                 (click)="canToggle() && toggleReadOnly()"
+            >
+          }
         </div>
       </div>
       <hr class="mt-1 mb-2 border-black">
@@ -24,28 +26,44 @@
             <img class="uploaded-img" [src]="image" alt="Profile Image">
           </div>
 
-          <input type="file" id="fileElem" accept="image/*" (change)="onFileSelected($event)" hidden>
-          <label for="fileElem" class="upload-label mt-2">Upload photo</label>
+          @if (isOwnProfile) {
+            <input type="file" id="fileElem" accept="image/*" (change)="onFileSelected($event)" hidden>
+            <label for="fileElem" class="upload-label mt-2">Upload photo</label>
+          }
         </div>
 
         <div class="profile-info w-100">
-          <label class="user-full-name w-100">
-            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.fullName"
+          <label class="user-full-name w-100 fw-bold mb-0"><span>Name</span>
+            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.name"
                    [readonly]="isReadOnly">
           </label>
-          <label class="user-name w-100">
-            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.username"
-                   [readonly]="isReadOnly">
+
+          <label class="user-name w-100 fw-bold mb-0"><span>Username</span>
+            <input class="animated-input form-control mb-2" type="text" name="username"
+                   [(ngModel)]="userData.username" [readonly]="isReadOnly" required
+                   #username="ngModel" [ngClass]="{ 'is-invalid': username.invalid && username.touched && !isReadOnly }"
+            >
+            @if (username.invalid && username.touched && !isReadOnly) {
+              <div class="invalid-feedback">Username can not be null.</div>
+            }
           </label>
-          <label class="user-email w-100">
-            <input class="animated-input form-control mb-2" type="text" [(ngModel)]="userData.email"
-                   [readonly]="isReadOnly">
-          </label>
+
+          @if (isOwnProfile){
+            <label class="user-email w-100 fw-bold mb-0"><span>Email</span>
+              <input class="animated-input form-control mb-2" type="email" name="email"
+                     [(ngModel)]="userData.email" [readonly]="isReadOnly" required
+                     #email="ngModel" [ngClass]="{ 'is-invalid': email.invalid && email.touched && !isReadOnly }"
+              >
+              @if (email.invalid && email.touched && !isReadOnly) {
+                <div class="invalid-feedback">Introduce a valid email.</div>
+              }
+            </label>
+          }
         </div>
       </div>
 
       <div class="profile-description-container mt-4">
-        <label class="description w-100">
+        <label class="description w-100 fw-bold mb-0"><span>Description</span>
           <textarea class="animated-input form-control" [(ngModel)]="userData.description"
                     [readonly]="isReadOnly">
           </textarea>
@@ -55,13 +73,11 @@
       <div class="events-sections-container mt-3">
         <section class="events-section user-events-section d-flex justify-content-center">
           <details class="w-100">
-            <summary>{{ userEvents.title }}</summary>
+            <summary> User events </summary>
             <div class="user-events-content summary-content mt-2">
-              @if (userEvents.events.length > 0) {
-                @for (event of userEvents.events; track $index) {
-                  <div>
-                    <!-- Añadir los eventos -->
-                  </div>
+              @if (userEvents.length > 0) {
+                @for (event of userEvents; track event) {
+                  <app-event-card-profile [event]="event" />
                 }
               } @else {
                 <p>No information available.</p>
@@ -70,22 +86,22 @@
           </details>
         </section>
 
-        <section class="events-section shared-events-section d-flex justify-content-center">
-          <details class="w-100">
-            <summary>{{ sharedEvents.title }}</summary>
-            <div class="shared-events-content summary-content mt-2">
-              @if (sharedEvents.events.length > 0) {
-                @for (event of sharedEvents.events; track $index) {
-                  <div>
-                    <!-- Añadir los eventos -->
-                  </div>
+        @if (!isOwnProfile) {
+          <section class="events-section shared-events-section d-flex justify-content-center">
+            <details class="w-100">
+              <summary>Shared events </summary>
+              <div class="shared-events-content summary-content mt-2">
+                @if (sharedEvents.length > 0) {
+                  @for (event of sharedEvents; track event) {
+                    <app-event-card-profile [event]="event" />
+                  }
+                } @else {
+                  <p>No information available.</p>
                 }
-              } @else {
-                <p>No information available.</p>
-              }
-            </div>
-          </details>
-        </section>
+              </div>
+            </details>
+          </section>
+        }
       </div>
     </div>
   </div>
