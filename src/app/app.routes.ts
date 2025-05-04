@@ -6,7 +6,6 @@ import {SignUpThirdComponent} from "./pages/sign-up-pages/sign-up-third/sign-up-
 import {SignUpFourthComponent} from "./pages/sign-up-pages/sign-up-fourth/sign-up-fourth.component";
 import {GroupCreationComponent} from "./pages/group-creation/group-creation.component";
 import {MessagesComponent} from "./pages/messages/messages.component";
-import {AlertComponent} from "./components/alert/alert.component";
 import {EventMembersComponent} from "./components/event-members/event-members.component";
 import {FriendsComponent} from "./pages/social/friends/friends.component";
 import {PendingComponent} from "./pages/social/pending/pending.component";
@@ -53,6 +52,5 @@ export const routes: Routes = [
     {path: 'privacyPolicy', component: PrivacyPolicyComponent},
     {path: 'groupCreation', component: GroupCreationComponent, canActivate: [AuthGuard]},
     {path: 'messages', component: MessagesComponent, canActivate: [AuthGuard]},
-    {path: 'alert', component: AlertComponent},
-    {path: 'members', component: EventMembersComponent, canActivate: [AuthGuard]},
+    {path: 'members', component: EventMembersComponent, canActivate: [AuthGuard]}
 ];
