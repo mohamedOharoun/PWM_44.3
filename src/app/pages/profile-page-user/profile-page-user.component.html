@@ -26,8 +26,10 @@
             <img class="uploaded-img" [src]="image" alt="Profile Image">
           </div>
 
-          <input type="file" id="fileElem" accept="image/*" (change)="onFileSelected($event)" hidden>
-          <label for="fileElem" class="upload-label mt-2">Upload photo</label>
+          @if (isOwnProfile) {
+            <input type="file" id="fileElem" accept="image/*" (change)="onFileSelected($event)" hidden>
+            <label for="fileElem" class="upload-label mt-2">Upload photo</label>
+          }
         </div>
 
         <div class="profile-info w-100">

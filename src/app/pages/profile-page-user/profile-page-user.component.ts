@@ -22,6 +22,7 @@ import {EventService} from '../../../architecture/io/services/EventService';
 
 export class ProfilePageUserComponent {
   private serviceFactory = inject(ServiceFactory);
+  private eventService = this.serviceFactory.get('event') as FirebaseEventService;
   private userService = this.serviceFactory.get('user') as FirebaseUserService;
   private auth = inject(Auth);
   private route = inject(ActivatedRoute);
