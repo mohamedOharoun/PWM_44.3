@@ -46,15 +46,17 @@
             }
           </label>
 
-          <label class="user-email w-100 fw-bold mb-0"><span>Email</span>
-            <input class="animated-input form-control mb-2" type="email" name="email"
-                   [(ngModel)]="userData.email" [readonly]="isReadOnly" required
-                   #email="ngModel" [ngClass]="{ 'is-invalid': email.invalid && email.touched && !isReadOnly }"
-            >
-            @if (email.invalid && email.touched && !isReadOnly) {
-              <div class="invalid-feedback">Introduce a valid email.</div>
-            }
-          </label>
+          @if (isOwnProfile){
+            <label class="user-email w-100 fw-bold mb-0"><span>Email</span>
+              <input class="animated-input form-control mb-2" type="email" name="email"
+                     [(ngModel)]="userData.email" [readonly]="isReadOnly" required
+                     #email="ngModel" [ngClass]="{ 'is-invalid': email.invalid && email.touched && !isReadOnly }"
+              >
+              @if (email.invalid && email.touched && !isReadOnly) {
+                <div class="invalid-feedback">Introduce a valid email.</div>
+              }
+            </label>
+          }
         </div>
       </div>
 
@@ -69,10 +71,10 @@
       <div class="events-sections-container mt-3">
         <section class="events-section user-events-section d-flex justify-content-center">
           <details class="w-100">
-            <summary>{{ userEvents.title }}</summary>
+            <summary> User events </summary>
             <div class="user-events-content summary-content mt-2">
-              @if (userEvents.events.length > 0) {
-                @for (event of userEvents.events; track event) {
+              @if (userEvents.length > 0) {
+                @for (event of userEvents; track event) {
                   <app-event-card-profile [event]="event" />
                 }
               } @else {
@@ -85,10 +87,10 @@
         @if (!isOwnProfile) {
           <section class="events-section shared-events-section d-flex justify-content-center">
             <details class="w-100">
-              <summary>{{ sharedEvents.title }}</summary>
+              <summary>Shared events </summary>
               <div class="shared-events-content summary-content mt-2">
-                @if (sharedEvents.events.length > 0) {
-                  @for (event of sharedEvents.events; track event) {
+                @if (sharedEvents.length > 0) {
+                  @for (event of sharedEvents; track event) {
                     <app-event-card-profile [event]="event" />
                   }
                 } @else {

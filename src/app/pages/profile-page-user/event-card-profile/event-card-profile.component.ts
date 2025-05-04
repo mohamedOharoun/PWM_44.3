@@ -13,8 +13,6 @@ export class EventCardProfileComponent {
   timeIcon = 'icons/clock_icon.svg'
   locationIcon = 'icons/location_icon.svg'
 
-  events: Event[] = [];
-
   get participantsNumber(): string {
     const count = this.event?.members?.length || 0;
     return count > 99 ? '+99' : `${count}`;

@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import { EventCardProfileComponent } from './event-card-profile/event-card-profile.component';
+import {EventCardProfileComponent} from './event-card-profile/event-card-profile.component';
 import {ActivatedRoute, Router} from "@angular/router";
 import {Auth, user} from "@angular/fire/auth";
 import {ServiceFactory} from "../../services/service-factory.service";
@@ -22,7 +22,6 @@ import {EventService} from '../../../architecture/io/services/EventService';
 
 export class ProfilePageUserComponent {
   private serviceFactory = inject(ServiceFactory);
-  private eventService = this.serviceFactory.get('event') as FirebaseEventService;
   private userService = this.serviceFactory.get('user') as FirebaseUserService;
   private auth = inject(Auth);
   private route = inject(ActivatedRoute);
@@ -41,15 +40,8 @@ export class ProfilePageUserComponent {
     image: ''
   };
 
-  userEvents = {
-    title: 'User events',
-    events: [] as Event[]
-  };
-
-  sharedEvents = {
-    title: 'Shared events',
-    events: [] as Event[]
-  };
+  userEvents: Event[] = [];
+  sharedEvents: Event[] = [];
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -66,23 +58,24 @@ export class ProfilePageUserComponent {
                 this.isOwnProfile = currentUser.uid === this.profileUserId;
               }
             });
+
+            const eventService = this.serviceFactory.get('event') as EventService;
+            eventService.createdEventsOf(this.userData?.id!).subscribe(events => {
+              this.userEvents = events;
+            });
+
+            eventService.joinedEventsOf(this.userData?.id!).subscribe(events => {
+              this.sharedEvents = events;
+            });
+
           }
         });
-
-        const eventService = this.serviceFactory.get('event') as EventService;
-        eventService.createdEventsOf(this.userData?.id!).subscribe(events => {
-          this.userEvents.events = events;
-        });
-        if (!this.isOwnProfile) {
-          eventService.joinedEventsOf(this.userData?.id!).subscribe(events => {
-            this.sharedEvents.events = events;
-          });
-        }
       }
     });
   }
 
   isReadOnly = true;
+
   canToggle(): boolean {
     if (this.isReadOnly) return true;
     return this.userData.username.trim() !== '' && this.userData.email.includes('@');
@@ -118,6 +111,7 @@ export class ProfilePageUserComponent {
   }
 
   protected image: string = 'icons/userprofile_icon.svg';
+
   protected onDragOver(event: DragEvent) {
     event.preventDefault();
   }
