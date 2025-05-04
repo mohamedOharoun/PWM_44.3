@@ -1,1 +1,16 @@
-<app-reduced-card></app-reduced-card>
+<main id="events-bg">
+    @for (event of events; track $index) {
+        <app-reduced-card
+            eventName="{{ event.name }}"
+            eventCreator="{{ event.creator.name }}"
+            descriptionText="{{ event.description }}"
+            date="{{ event.date }}"
+            place="{{ event.location }}"
+            [participants]="event.members.length"
+            [price]="event.price"
+            [tags]="event.tags"
+            [likes]="event.likes"
+            [comments]="event.comments"
+        ></app-reduced-card>
+    }
+</main>
