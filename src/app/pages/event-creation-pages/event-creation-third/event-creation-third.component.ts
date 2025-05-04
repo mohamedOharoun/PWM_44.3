@@ -51,15 +51,13 @@ export class EventCreationThirdComponent {
           price: Number(eventInfo.get('price')),
           tags: eventInfo.get('tags') || [],
           creator: user.id!,
-          members: [],
+          members: eventInfo.get('members'),
           isPrivate: eventInfo.get('isPrivate'),
           likes: 0,
           comments: 0
         };
-
-        console.log(event);
-
         (this.serviceFactory.get('event') as EventService).createEvent(event);
+        this.router.navigate(['/homePage']).then();
       } else {
         console.error("There is not user logged in.");
       }
