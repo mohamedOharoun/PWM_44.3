@@ -181,7 +181,17 @@ El fichero en cuestión se encuentra en la carpeta [*docs.*](docs/storyboard.pdf
 
 ## ❗Aspectos a tener en cuenta
 ### *Organización del código*
-Se ha divido en código en **architecture** y en **app**. **Architecture** corresponde a la parte de la web que no tiene dependencia con ninguna librería externa al dominio de la misma. En esta zona del proyecto también puede encontrarse el modelo de las entidades de la web. Por otro lado, en **app** se encuentran las carpetas correspondientes a **architecture** que tienen una implementación usando alguna dependencia externa, por ejemplo, los servicios que usan Firebase. Además, **app** se divide a su vez en **pages**, donde se encuentran aquellos componentes enrutables, y en **components**, alojando aquellos componentes que utilizan lso enrutables y no son páginas.
+Se ha divido en código en **architecture** y en **app**. **Architecture** corresponde a la parte de la web que no tiene dependencia con ninguna librería externa al dominio de la misma. En esta zona del proyecto también puede encontrarse el modelo de las entidades de la web. Por otro lado, en **app** se encuentran las carpetas correspondientes a **architecture** que tienen una implementación usando alguna dependencia externa, por ejemplo, los servicios que usan Firebase. Además, **app** se divide a su vez en **pages**, donde se encuentran aquellos componentes enrutables, y en **components**, alojando aquellos componentes que utilizan lso enrutables y no son páginas. Véase a continuación un diagrama de la estructura definia:
+
+- **app**
+  - *components*
+  - *pages*
+  - *io*
+  - *services*
+  - *guards*
+- **architecture**
+  - *io*
+  - *model*
 
 > [!IMPORTANT]
 > ### [Enlace a FIGMA](https://www.figma.com/design/ABeWHXO1qitqzbR2bnhS9T/PWM-JoinUp!?node-id=1-3&t=TyWa8IP3k8JfVk5e-1)
