@@ -32,8 +32,10 @@
         <hr class="mb-3">
         @for (event of upcomingEvents; track event) {
           <div class="event-item">
-            <span class="fs-5">{{ event.name }}</span>
-            <span class="fs-6">{{ formatEventDate(event.date) }}</span>
+            <app-card-event-home
+              [type]="'upComingEvent'"
+              [event]="event">
+            </app-card-event-home>
           </div>
         }
       </article>
@@ -43,8 +45,10 @@
         <hr class="mb-3">
         @for (event of unpaidEvents; track event) {
           <div class="event-item">
-            <span class="fs-5">{{ event.name }}</span>
-            <span class="fs-6">{{ event.price }}€</span>
+            <app-card-event-home
+              [type]="'unpaidEvent'"
+              [event]="event">
+            </app-card-event-home>
           </div>
         }
       </article>

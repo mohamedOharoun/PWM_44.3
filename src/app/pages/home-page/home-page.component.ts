@@ -7,6 +7,8 @@ import {AuthenticationService} from '../../../architecture/io/services/Authentic
 import {UserService} from '../../../architecture/io/services/UserService';
 import {ServiceFactory} from '../../services/service-factory.service';
 import {CardHomeComponent} from '../../components/card-home/card-home.component';
+import {EventService} from '../../../architecture/io/services/EventService';
+import {CardEventHomeComponent} from '../../components/card-event-home/card-event-home.component';
 
 @Component({
   selector: 'app-home-page',
@@ -14,6 +16,7 @@ import {CardHomeComponent} from '../../components/card-home/card-home.component'
     GenericButtonComponent,
     RouterLink,
     CardHomeComponent,
+    CardEventHomeComponent,
   ],
   templateUrl: './home-page.component.html',
   standalone: true,
@@ -43,24 +46,20 @@ export class HomePageComponent {
   ngOnInit() {
     (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => {
       this.user = res;
-      (this.serviceFactory.get('user') as UserService).friendsOf(this.user?.id!).subscribe(res => {
+      console.log(this.user);
+
+      const userService = this.serviceFactory.get('user') as UserService;
+      userService.friendsOf(this.user?.id!).subscribe(res => {
         const shuffled = res.sort(() => 0.5 - Math.random());
         const count = Math.floor(Math.random() * 5);
         this.friends = shuffled.slice(0, count);
       });
+
+      const eventService = this.serviceFactory.get('event') as EventService;
+      eventService.joinedEventsOf(this.user?.id!).subscribe(events => {
+        this.upcomingEvents = events;
+        this.unpaidEvents = events.filter(event => event.price !== 0);
+      });
     });
   }
-
-
-  formatEventDate(date: Date): string {
-    const weekday = date.toLocaleDateString('en-US', { weekday: 'short' });
-    const day = date.getDate().toString().padStart(2, '0');
-    const month = date.toLocaleDateString('en-US', { month: 'long' });
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-
-    return `${weekday} ${day}, ${month} ${hours}:${minutes}`;
-  }
-
-
 }
