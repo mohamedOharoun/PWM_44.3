@@ -1,9 +1,8 @@
 <div class="card">
   <span class="fs-5">{{ event.name }}</span>
   @if (type === 'upComingEvent') {
-   <!-- <span class="fs-6">{{ event.date }}</span> -->
+    <span class="fs-6">{{ formatEventDate(event.date) }}</span>
   } @else {
     <span class="fs-6">{{ event.price }}€</span>
   }
 </div>
-

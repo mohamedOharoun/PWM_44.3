@@ -12,13 +12,15 @@ export class CardEventHomeComponent {
   @Input() type: string = '';
   @Input() event!: Event;
 
-  formatEventDate(date: Date): string {
-    const weekday = date.toLocaleDateString('en-US', { weekday: 'short' });
-    const day = date.getDate().toString().padStart(2, '0');
-    const month = date.toLocaleDateString('en-US', { month: 'long' });
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
+  formatEventDate(date: any): string {
+    const eventDate = new Date(date.seconds * 1000);
+    const weekday = eventDate.toLocaleDateString('en-US', {weekday: 'short'});
+    const day = eventDate.getDate().toString().padStart(2, '0');
+    const month = eventDate.toLocaleDateString('en-US', {month: 'long'});
+    const hours = eventDate.getHours().toString().padStart(2, '0');
+    const minutes = eventDate.getMinutes().toString().padStart(2, '0');
 
     return `${weekday} ${day}, ${month} ${hours}:${minutes}`;
+
   }
 }
