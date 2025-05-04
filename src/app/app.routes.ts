@@ -29,7 +29,7 @@ import {
 import {
     EventCreationThirdComponent
 } from "./pages/event-creation-pages/event-creation-third/event-creation-third.component";
-import {EventsComponent} from './pages/events/events.component';
+import {EventsComponent} from "./pages/events/events.component";
 
 export const routes: Routes = [
     {path: 'social', component: SocialComponent, canActivate: [AuthGuard]},

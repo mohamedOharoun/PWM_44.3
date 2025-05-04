@@ -6,7 +6,7 @@ import {UsersSearchInputComponent} from "../../components/users-search-input/use
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
 import {FormsModule, NgForm} from "@angular/forms";
 import {GroupService} from "../../../architecture/io/services/GroupService";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink} from "@angular/router";
 
 @Component({
     selector: 'app-group-creation',
@@ -14,7 +14,8 @@ import {ActivatedRoute, Router} from "@angular/router";
         GenericButtonComponent,
         UsersListComponent,
         UsersSearchInputComponent,
-        FormsModule
+        FormsModule,
+        RouterLink
     ],
     templateUrl: './group-creation.component.html',
     styleUrl: './group-creation.component.css'

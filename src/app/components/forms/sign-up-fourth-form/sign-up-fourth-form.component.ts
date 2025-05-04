@@ -59,6 +59,7 @@ export class SignUpFourthFormComponent {
             signUpInfo.get('email'),
             signUpInfo.get('password'),
             {
+                birthDate: new Date(signUpInfo.get('birthDate')),
                 username: signUpInfo.get('username'),
                 description: signUpInfo.getOrDefault('description', ''),
                 image: signUpInfo.get('image')

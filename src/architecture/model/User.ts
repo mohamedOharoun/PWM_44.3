@@ -5,4 +5,5 @@ export type User = {
     username: string;
     description: string;
     image: string;
+    birthDate: Date;
 }
