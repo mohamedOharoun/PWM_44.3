@@ -55,6 +55,6 @@ export const routes: Routes = [
     {path: 'groupCreation', component: GroupCreationComponent, canActivate: [AuthGuard]},
     {path: 'messages', component: MessagesComponent, canActivate: [AuthGuard]},
     {path: 'alert', component: AlertComponent},
-    {path: 'members', component: EventMembersComponent, canActivate: [AuthGuard]},
-    {path: 'events', component: EventsComponent},
+    {path: 'members', component: EventMembersComponent},
+    {path: 'events/:section', component: EventsComponent},
 ];

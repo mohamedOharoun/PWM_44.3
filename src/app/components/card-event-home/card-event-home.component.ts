@@ -13,7 +13,7 @@ export class CardEventHomeComponent {
   @Input() event!: Event;
 
   formatEventDate(date: any): string {
-    const eventDate = new Date(date.seconds * 1000);
+    const eventDate = new Date(date);
     const weekday = eventDate.toLocaleDateString('en-US', {weekday: 'short'});
     const day = eventDate.getDate().toString().padStart(2, '0');
     const month = eventDate.toLocaleDateString('en-US', {month: 'long'});

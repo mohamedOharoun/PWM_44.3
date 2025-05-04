@@ -2,77 +2,108 @@ import {Observable, from, map} from "rxjs";
 import {EventService} from "../../../architecture/io/services/EventService";
 import {Event} from "../../../architecture/model/Event";
 import {
-  addDoc,
-  collection,
-  deleteDoc,
-  doc,
-  Firestore,
-  getDoc,
-  updateDoc,
-  query,
-  where,
-  getDocs
+    addDoc,
+    collection,
+    deleteDoc,
+    doc,
+    Firestore,
+    getDoc,
+    updateDoc,
+    query,
+    where,
+    getDocs, collectionData, docData, setDoc
 } from "@angular/fire/firestore";
 
 export class FirebaseEventService implements EventService {
-  constructor(private store: Firestore) {
-  }
+    constructor(private store: Firestore) {
+    }
 
-  createEvent(event: Event): void {
-    const eventsCollection = collection(this.store, 'events');
-    addDoc(eventsCollection, event).then();
-  }
+    isJoinedEvent(eventID: string, userID: string): Observable<boolean> {
+        return from(getDoc(doc(this.store, `users/${userID}/joined_events/${eventID}`))).pipe(
+            map(snapshot => snapshot.exists())
+        );
+    }
 
-  updateEvent(event: Event): void {
-    const eventRef = doc(this.store, 'events', event.id!);
-    updateDoc(eventRef, {...event}).then();
-  }
+    isLikedEvent(eventID: string, userID: string): Observable<boolean> {
+        return from(getDoc(doc(this.store, `users/${userID}/liked_events/${eventID}`))).pipe(
+            map(snapshot => snapshot.exists())
+        );
+    }
 
-  removeEventGiven(id: string): Observable<Event> {
-    const eventRef = doc(this.store, 'events', id);
-    return from(getDoc(eventRef)).pipe(
-      map(snapshot => {
-        const eventData = snapshot.data() as Event;
-        deleteDoc(eventRef);
-        return {id: snapshot.id, ...eventData};
-      })
-    );
-  }
+    joinEvent(event: Event, userID: string): void {
+        event.members.push(userID);
+        setDoc(doc(this.store, `users/${userID}/joined_events/${event.id}`), {id: event.id}).then();
+        updateDoc(doc(this.store, `events/${event.id}`), {...event}).then();
+    }
 
-  eventWith(id: string): Observable<Event> {
-    const eventRef = doc(this.store, 'events', id);
-    return from(getDoc(eventRef)).pipe(
-      map(snapshot => ({id: snapshot.id, ...(snapshot.data() as Event)}))
-    );
-  }
+    leaveEvent(event: Event, userID: string): void {
+        event.members = event.members.filter(m => m !== userID);
+        deleteDoc(doc(this.store, `users/${userID}/joined_events/${event.id}`)).then();
+        updateDoc(doc(this.store, `events/${event.id}`), {...event}).then();
+    }
 
-  createdEventsOf(userID: string): Observable<Event[]> {
-    const eventsCollection = collection(this.store, 'events');
-    const q = query(eventsCollection, where('creator', '==', userID));
-    return from(getDocs(q)).pipe(
-      map(snapshot =>
-        snapshot.docs.map(doc => ({id: doc.id, ...(doc.data() as Event)}))
-      )
-    );
-  }
+    likeEvent(event: Event, userID: string): void {
+        event.likes++;
+        setDoc(doc(this.store, `users/${userID}/liked_events/${event.id}`), {id: event.id}).then();
+        updateDoc(doc(this.store, `events/${event.id}`), {...event}).then();
+    }
 
-  favouriteEventsOf(userID: string): Observable<Event[]> {
-    const eventsCollection = collection(this.store, 'events');
-    const q = query(eventsCollection, where('favourites', 'array-contains', userID));
-    return from(getDocs(q)).pipe(
-      map(snapshot =>
-        snapshot.docs.map(doc => ({id: doc.id, ...(doc.data() as Event)}))
-      )
-    );
-  }
+    unlikeEvent(event: Event, userID: string): void {
+        event.likes--;
+        deleteDoc(doc(this.store, `users/${userID}/liked_events/${event.id}`)).then();
+        updateDoc(doc(this.store, `events/${event.id}`), {...event}).then();
+    }
 
-  joinedEventsOf(userID: string): Observable<Event[]> {
-    const eventsCollection = collection(this.store, 'events');
-    const q = query(eventsCollection, where('members', 'array-contains', userID));
-    return from(getDocs(q)).pipe(
-      map(snapshot =>
-        snapshot.docs.map(doc => ({id: doc.id, ...(doc.data() as Event)}))
-      )
-    );
-  }
+    events(): Observable<Event[]> {
+        const data = collectionData(collection(this.store, 'events'), {idField: 'id'});
+        return data as Observable<Event[]>;
+    }
+
+    createEvent(event: Event): void {
+        const eventsCollection = collection(this.store, 'events');
+        addDoc(eventsCollection, event).then();
+    }
+
+    updateEvent(event: Event): void {
+        const eventRef = doc(this.store, `events/${event.id}`);
+        updateDoc(eventRef, {...event}).then();
+    }
+
+    removeEventGiven(id: string): void {
+        deleteDoc(doc(this.store, `events/${id}`)).then();
+    }
+
+    eventWith(id: string): Observable<Event> {
+        return docData(doc(this.store, `events/${id}`), {idField: 'id'}) as Observable<Event>;
+    }
+
+    createdEventsOf(userID: string): Observable<Event[]> {
+        const eventsCollection = collection(this.store, 'events');
+        const q = query(eventsCollection, where('creator', '==', userID));
+        return from(getDocs(q)).pipe(
+            map(snapshot =>
+                snapshot.docs.map(doc => ({id: doc.id, ...(doc.data() as Event)}))
+            )
+        );
+    }
+
+    favouriteEventsOf(userID: string): Observable<Event[]> {
+        const eventsCollection = collection(this.store, 'events');
+        const q = query(eventsCollection, where('favourites', 'array-contains', userID));
+        return from(getDocs(q)).pipe(
+            map(snapshot =>
+                snapshot.docs.map(doc => ({id: doc.id, ...(doc.data() as Event)}))
+            )
+        );
+    }
+
+    joinedEventsOf(userID: string): Observable<Event[]> {
+        const eventsCollection = collection(this.store, 'events');
+        const q = query(eventsCollection, where('members', 'array-contains', userID));
+        return from(getDocs(q)).pipe(
+            map(snapshot =>
+                snapshot.docs.map(doc => ({id: doc.id, ...(doc.data() as Event)}))
+            )
+        );
+    }
 }

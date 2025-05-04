@@ -1,16 +1,36 @@
-<main id="events-bg">
-    @for (event of events; track $index) {
-        <app-reduced-card
-            eventName="{{ event.name }}"
-            eventCreator="{{ event.creator.name }}"
-            descriptionText="{{ event.description }}"
-            date="{{ event.date }}"
-            place="{{ event.location }}"
-            [participants]="event.members.length"
-            [price]="event.price"
-            [tags]="event.tags"
-            [likes]="event.likes"
-            [comments]="event.comments"
-        ></app-reduced-card>
-    }
+<main id="events-bg" class="main d-flex h-100">
+    <i #toggle_button (click)="toggleAside()" class="toggle-button bi-chevron-double-right m-3 position-absolute"></i>
+    <aside #aside class="events-aside d-flex flex-column bg-white align-items-center shadow">
+        <form #form="ngForm" class="d-flex p-3" (ngSubmit)="filterEvents(name_input.value)">
+            <div class="input-with-icon gap-1 d-flex align-content-center">
+                <i class="align-content-center bi-search"></i>
+                <input #name_input pattern=".{6,}" name="password_input" type="text" class="flex-grow-1 border-0" placeholder="Search by name">
+            </div>        </form>
+        <hr class="w-75">
+        <nav>
+            <ul class="list-unstyled text-center">
+                <li [routerLink]="['/events', 'Explore']" class="fs-3 m-3">Explore</li>
+                <li [routerLink]="['/events', 'Favourite']" class="fs-3 m-3">Favourites</li>
+                <li [routerLink]="['/events', 'Joined']" class="fs-3 m-3">Joined</li>
+                <li [routerLink]="['/events', 'Owned']" class="fs-3 m-3">Owned</li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="events-section p-5">
+        <div class="d-flex">
+            <h1>{{title}} Events</h1>
+            <app-generic-button class="ms-auto" routerLink="/eventCreationFirst" text="Create event"></app-generic-button>
+        </div>
+        <hr class="w-100">
+        <section>
+            @for (event of filteredEvents; track event.id) {
+                <app-reduced-card
+                        (openMembersListEmitter)="openWith($event)"
+                        [eventID]="event.id!"
+                        class="m-3"
+                ></app-reduced-card>
+            }
+        </section>
+    </div>
+    <app-event-members (closeEmitter)="close()" [isVisible]="isVisible" [eventID]="selectedEventID"></app-event-members>
 </main>

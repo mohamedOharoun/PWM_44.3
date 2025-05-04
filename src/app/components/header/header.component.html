@@ -7,7 +7,7 @@
         <nav class="page-header-navigation">
             <ul class="header-navigation align-items-center list-unstyled pt-3">
                 @for (link of navLinks; track $index) {
-                    <li (click)="navigateTo(link.route)" class="header-nav-text d-flex align-items-center">
+                    <li (click)="navigateTo(link)" class="header-nav-text d-flex align-items-center">
                         {{ link.page }}
                     </li>
                 }

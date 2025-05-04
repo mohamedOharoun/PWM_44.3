@@ -2,6 +2,7 @@ import {Observable} from "rxjs";
 import {User} from "../../model/User";
 import {Service} from "./Service";
 import {FriendRequest} from "../../model/FriendRequest";
+import {Event} from "../../../architecture/model/Event";
 
 export interface UserService extends Service {
     userWith(id: string): Observable<User>;
@@ -20,4 +21,7 @@ export interface UserService extends Service {
     cancelRequest(request: FriendRequest): void;
     requestFrom(userID: string, requestID: string): Observable<FriendRequest>;
     pendingTo(userID: string, requestID: string): Observable<FriendRequest>;
+    likedEventsOf(id: string): Observable<Event[]>;
+    joinedEventsOf(id: string): Observable<Event[]>;
+    ownedEventsOf(id: string): Observable<Event[]>;
 }

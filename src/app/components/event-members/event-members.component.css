@@ -24,3 +24,8 @@
     margin-left: auto;
     color: grey;
 }
+
+.dialog {
+    z-index: 1000;
+    height: 100%;
+}

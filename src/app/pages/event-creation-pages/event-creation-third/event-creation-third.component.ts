@@ -46,7 +46,7 @@ export class EventCreationThirdComponent {
         const event: Event = {
           name: eventInfo.get('name'),
           description: eventInfo.get('description'),
-          date: new Date(eventInfo.get('date')),
+          date: new Date(eventInfo.get('date')).toISOString(),
           location: eventInfo.get('location'),
           price: Number(eventInfo.get('price')),
           tags: eventInfo.get('tags') || [],

@@ -1,6 +1,7 @@
 import {from, map, Observable} from "rxjs";
 import {UserService} from "../../../architecture/io/services/UserService";
 import {User} from "../../../architecture/model/User";
+import {Event} from "../../../architecture/model/Event";
 import {
     collection, collectionData,
     deleteDoc,
@@ -18,6 +19,29 @@ export class FirebaseUserService implements UserService {
     constructor(
         private store: Firestore
     ) {
+    }
+
+    joinedEventsOf(id: string): Observable<Event[]> {
+        return collectionData(collection(this.store, `users/${id}/joined_events`), {idField: 'id'}) as Observable<Event[]>;
+    }
+
+    ownedEventsOf(id: string): Observable<Event[]> {
+        const q = query(
+            collection(this.store, 'events'),
+            where('creator', '==', id),
+        );
+
+        return from(getDocs(q).then(querySnapshot => {
+            if (querySnapshot.empty) return [];
+            return querySnapshot.docs.map(doc => ({
+                id: doc.id,
+                ...(doc.data() as Event)
+            }));
+        }));
+    }
+
+    likedEventsOf(id: string): Observable<Event[]> {
+        return collectionData(collection(this.store, `users/${id}/liked_events`), {idField: 'id'}) as Observable<Event[]>;
     }
 
     userWithEmail(email: string): Observable<User[]> {
@@ -93,7 +117,6 @@ export class FirebaseUserService implements UserService {
             map(f => f.map(friend => friend.id))
         ) as Observable<string[]>;
     }
-
 
     groupsOf(id: string): Observable<string[]> {
         return collectionData(collection(this.store, `users/${id}/groups`), { idField: 'id' }).pipe(

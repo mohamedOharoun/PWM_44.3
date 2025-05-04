@@ -17,11 +17,11 @@ import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
     styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    navLinks: { page: string; route: string | null }[] = [
-        {page: 'Home', route: 'homePage'},
-        {page: 'Events', route: 'events'},
-        {page: 'Social', route: 'social'},
-        {page: 'Messages', route: 'messages'},
+    navLinks: { page: string; route: string | null, param?: string }[] = [
+        {page: 'Home', route: '/homePage'},
+        {page: 'Events', route: '/events', param: 'Explore'},
+        {page: 'Social', route: '/social'},
+        {page: 'Messages', route: '/messages'},
     ];
     @Input() buttonText: string = "Sign in";
     private isMenuOpened: boolean = false;
@@ -37,8 +37,9 @@ export class HeaderComponent {
         (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => this.user = res);
     }
 
-    navigateTo(route: string | null) {
-        this.router.navigate([route]).then();
+    navigateTo(route: { page: string; route: string | null, param?: string }) {
+        if (!route.param) this.router.navigate([route.route]).then();
+        else this.router.navigate([route.route, route.param]).then();
         if (this.isMenuOpened) this.toggleMenu();
     }
 
