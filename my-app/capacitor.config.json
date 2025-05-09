@@ -1,0 +1,10 @@
+{
+  "appId": "software.ulpgc.joinup",
+  "appName": "JoinUp",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}

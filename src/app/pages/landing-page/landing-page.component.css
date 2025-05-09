@@ -1,7 +1,0 @@
-.custom-image-style {
-  aspect-ratio: 1440 / 1080;
-  filter: blur(0.5px);
-  max-width: 100%;
-  mask-image: radial-gradient(ellipse 69% 69% at center, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 75%);
-  -webkit-mask-image: radial-gradient(ellipse 69% 69% at center, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 75%);
-}

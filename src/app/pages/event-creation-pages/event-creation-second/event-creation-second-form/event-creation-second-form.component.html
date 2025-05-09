@@ -1,8 +1,0 @@
-<div class="w-100 position-relative">
-    <div class="members-input-container w-100 d-flex flex-column">
-        <app-users-search-input class="users-input-component" (selectedEmitter)="addMember($event)" [exclude]="members"></app-users-search-input>
-    </div>
-    <div class="users-list-container overflow-auto w-100">
-        <app-users-list (removeEmitter)="removeMember($event)" [users]="members"></app-users-list>
-    </div>
-</div>
