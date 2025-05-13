@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Log In</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <div class="d-flex flex-column align-items-center justify-content-center text-center">
+        <ion-img src="/icons/logo.svg" alt="JoinUp Logo" class="mb-3" style="width: 100px; height: 100px"></ion-img>
+        <h1 class="fw-bold mb-4" style="font-size: 80px;">Log In</h1>
+
+        <form id="sign-in-form" class="w-75">
+            <ion-item class="mb-3">
+                <ion-label position="floating">Email Address</ion-label>
+                <ion-input name="email" [(ngModel)]="email" type="email" placeholder="johndoe@example.com" required></ion-input>
+            </ion-item>
+
+            <ion-item class="mb-3">
+                <ion-label position="floating">Password</ion-label>
+                <ion-input name="password" [(ngModel)]="password" type="password" placeholder="********" required></ion-input>
+            </ion-item>
+
+            <ion-text color="danger" id="error-message-container" class="d-none">Incorrect email or password</ion-text>
+
+            <div class="options d-flex align-items-center justify-content-center gap-3 my-4">
+                <ion-item lines="none">
+                    <ion-checkbox slot="start" id="keep-logged-button"></ion-checkbox>
+                    <ion-label>Keep me signed in</ion-label>
+                </ion-item>
+
+                <ion-router-link routerLink="/resetPassword" id="forgot-password-link" class="text-muted">Forgot password?</ion-router-link>
+
+                <ion-router-link routerLink="/signUpFirst" id="register-link" class="text-muted">Create an account</ion-router-link>
+            </div>
+
+            <div class="d-flex justify-content-center w-10 mt-4">
+                <div class="w-auto">
+                    <app-generic-button (click)="signIn()" text="LOG IN" buttonClass="solid-button w-100" class="p-2 w-75 fs-4"></app-generic-button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ion-content>

@@ -1,0 +1,58 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #006D77, #23CFA7);
+    min-height: 92vh;
+    max-height: 92vh;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #006D77, #23CFA7);
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar-track {
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+app-header {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+}
+
+app-footer {
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+}
+
+router-outlet {
+    display: block;
+    flex: 1;
+    overflow: auto;
+}
