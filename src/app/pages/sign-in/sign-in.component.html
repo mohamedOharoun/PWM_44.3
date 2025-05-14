@@ -1,52 +1,32 @@
-<main class="d-flex justify-content-center align-items-center">
-    <div
-            class="d-flex flex-column align-items-center justify-content-center rounded-circle shadow p-4 bg-white text-center"
-            style="width: 800px; height: 800px">
-        <img src="/icons/logo.svg" alt="JoinUp Logo" class="input-icon mb-3" style="width: 100px; height: 100px"
-             id="logo-image">
-        <h1 class="fw-bold mb-4" style="font-size: 80px;">Log In</h1>
-
-        <form id="sign-in-form" class="w-75">
-            <div class="mb-3 d-flex flex-column align-items-center">
-                <label for="email-input" class="form-label fs-3 m-0">Email Address</label>
-                <input name="email" [(ngModel)]="email" type="email" id="email-input"
-                       class="form-control"
-                       placeholder="johndoe@example.com"
-                       required>
-            </div>
-
-            <div class="mb-3 d-flex flex-column align-items-center">
-                <label for="password-input" class="form-label fs-3 m-0">Password</label>
-                <input name="password" [(ngModel)]="password" type="password" id="password-input"
-                       class="form-control"
-                       placeholder="********"
-                       required>
-            </div>
-
-            <span id="error-message-container" class="text-danger d-none">Incorrect email or password</span>
-
-            <div class="options d-flex align-items-center justify-content-center gap-3 my-4">
-                <div class="form-check">
-                    <input type="checkbox" id="keep-logged-button" class="form-check-input">
-                    <label for="keep-logged-button" class="form-check-label fs-5 ">Keep me signed in</label>
-                </div>
-
-                <hr class="vr" style="height: 20px; border: 1px solid black;">
-
-                <a routerLink="/resetPassword" id="forgot-password-link" class="text-decoration-none text-muted fs-5">Forgot
-                    password?</a>
-
-                <hr class="vr" style="height: 20px; border: 1px solid black;">
-
-                <a routerLink="/signUpFirst" id="register-link" class="text-decoration-none text-muted fs-5">Create an
-                    account</a>
-            </div>
-            <div class="d-flex justify-content-center w-10 mt-4">
-                <div class="w-auto">
-                    <app-generic-button (click)="signIn()" text="LOG IN" buttonClass="solid-button w-100"
-                                        class="p-2 w-75 fs-4"></app-generic-button>
-                </div>
-            </div>
-        </form>
-    </div>
+<main class="main-container">
+  <div class="sign-in-container">
+    <img src="/icons/logo.svg" alt="JoinUp Logo" class="logo-image" id="logo-image">
+    <h1 class="sign-in-title">Log In</h1>
+    <form id="sign-in-form" class="sign-in-form">
+      <div class="form-group">
+        <label for="email-input" class="form-label">Email Address</label>
+        <input name="email" [(ngModel)]="email" type="email" id="email-input"
+               class="form-input" placeholder="johndoe@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password-input" class="form-label">Password</label>
+        <input name="password" [(ngModel)]="password" type="password" id="password-input"
+               class="form-input" placeholder="********" required>
+      </div>
+      <span id="error-message-container" class="error-message">Incorrect email or password</span>
+      <div class="options">
+        <div class="form-check">
+          <input type="checkbox" id="keep-logged-button" class="form-check-input">
+          <label for="keep-logged-button" class="form-check-label">Keep me signed in</label>
+        </div>
+        <div class="vertical-divider"></div>
+        <a href="/resetPassword" id="forgot-password-link" class="link">Forgot password?</a>
+        <div class="vertical-divider"></div>
+        <a href="/signUpFirst" id="register-link" class="link">Create an account</a>
+      </div>
+      <div class="button-container">
+        <button type="button" (click)="signIn()" class="btn-gradient">LOG IN</button>
+      </div>
+    </form>
+  </div>
 </main>

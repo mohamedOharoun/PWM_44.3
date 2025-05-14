@@ -21,6 +21,7 @@
     "@capacitor/android": "7.2.0",
     "@capacitor/cli": "^7.2.0",
     "@capacitor/core": "^7.2.0",
+    "@capacitor/ios": "7.2.0",
     "@ionic/angular": "latest",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
