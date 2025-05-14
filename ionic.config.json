@@ -1,0 +1,12 @@
+{
+  "defaultProject": "join_up",
+  "projects": {
+    "join_up": {
+      "name": "join_up-angular",
+      "type": "angular-standalone",
+      "integrations": {
+        "capacitor": {}
+      }
+    }
+  }
+}

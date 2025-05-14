@@ -6,6 +6,7 @@ import {initializeApp, provideFirebaseApp} from "@angular/fire/app";
 import {environment} from "../environment/environment";
 import {getAuth, provideAuth} from "@angular/fire/auth";
 import {getFirestore, provideFirestore} from "@angular/fire/firestore";
+import { provideIonicAngular } from '@ionic/angular/standalone';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -13,6 +14,6 @@ export const appConfig: ApplicationConfig = {
         provideRouter(routes),
         provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
         provideAuth(() => getAuth()),
-        provideFirestore(() => getFirestore())
+        provideFirestore(() => getFirestore()), provideIonicAngular({})
     ]
 };
