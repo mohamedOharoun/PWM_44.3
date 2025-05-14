@@ -6,15 +6,132 @@
   <component name="ChangeListManager">
     <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/.npmkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/capacitor.build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/capacitor.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/capacitor.plugins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-3IVKBF6N.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-3URSBNH6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-53MGMGSW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-5TSG52GP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-7D2EH4XU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-C5RQ2IC2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-D7YYRZS5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-EB3FUW3Z.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-FIHWJL3W.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-FR5ZLMTG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-JOVTWZFF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-K3GX4FC7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-KMPAVET6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-KXDVYVR3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-MMIXVVWR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-NE7N2C3I.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-NMYJD6OP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-OOFXNSJC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-OVZOHBXO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-SV7S5NYR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-SVYJG7MD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-US5H33OE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-WH7A3G5V.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-X3VBRIRU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-XV247VAB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/chunk-YQURNTHG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/cordova.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/cordova_plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/add_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/bin_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/block_user_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/calendar_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/cancel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/cancel_circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/check_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/clock_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/credit_card.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/cross_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/edit_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/filled_heart_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/gif_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/heart_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/high_five.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/home_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/index_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/location_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/mail_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/menu_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/message_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/money_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/participants_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/password_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/remove_user_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/report_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/rounded_message_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/search.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/search_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/share_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/square_message_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/upload_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/user_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/icons/userprofile_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/main-ZCVQWHXA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/polyfills-FFHMD2TL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/prerendered-routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/public/styles-WKLLPFDB.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/xml/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor-cordova-android-plugins/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor-cordova-android-plugins/cordova.variables.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor-cordova-android-plugins/src/main/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor-cordova-android-plugins/src/main/res/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor.settings.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-3IVKBF6N.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-3IVKBF6N.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-3URSBNH6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-3URSBNH6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-53MGMGSW.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-53MGMGSW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-5TSG52GP.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-5TSG52GP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-7D2EH4XU.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-7D2EH4XU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-C5RQ2IC2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-C5RQ2IC2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-D7YYRZS5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-D7YYRZS5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-EB3FUW3Z.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-EB3FUW3Z.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-FIHWJL3W.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-FIHWJL3W.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-FR5ZLMTG.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-FR5ZLMTG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-JOVTWZFF.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-JOVTWZFF.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-K3GX4FC7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-K3GX4FC7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-KMPAVET6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-KMPAVET6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-KXDVYVR3.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-KXDVYVR3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-MMIXVVWR.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-MMIXVVWR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-NE7N2C3I.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-NE7N2C3I.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-NMYJD6OP.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-NMYJD6OP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-OOFXNSJC.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-OOFXNSJC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-OVZOHBXO.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-OVZOHBXO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-SV7S5NYR.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-SV7S5NYR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-SVYJG7MD.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-SVYJG7MD.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-US5H33OE.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-US5H33OE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-WH7A3G5V.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-WH7A3G5V.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-X3VBRIRU.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-X3VBRIRU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-XV247VAB.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-XV247VAB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-YQURNTHG.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-YQURNTHG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main-ZCVQWHXA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-FFHMD2TL.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-FFHMD2TL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/prerendered-routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/prerendered-routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles-WKLLPFDB.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-WKLLPFDB.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,7 +200,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JSON",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "http.proxy",
     "ts.external.directory.path": "/home/malek/uni/PWM/PWM_44.3/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }

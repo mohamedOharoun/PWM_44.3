@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">join_up</string>
+    <string name="title_activity_main">join_up</string>
+    <string name="package_name">com.join_up.app</string>
+    <string name="custom_url_scheme">com.join_up.app</string>
+</resources>
