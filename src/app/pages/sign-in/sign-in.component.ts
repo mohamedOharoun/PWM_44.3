@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {GenericButtonComponent} from '../../components/generic-button/generic-button.component';
-import {Router, RouterLink} from '@angular/router';
+import {Router} from '@angular/router';
 import {ServiceFactory} from "../../services/service-factory.service";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
 import {FormsModule} from "@angular/forms";
@@ -8,8 +7,6 @@ import {FormsModule} from "@angular/forms";
 @Component({
     selector: 'app-sign-in',
     imports: [
-        GenericButtonComponent,
-        RouterLink,
         FormsModule
     ],
     templateUrl: './sign-in.component.html',
