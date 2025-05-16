@@ -2,18 +2,29 @@
   <div class="sign-in-container">
     <img src="/icons/logo.svg" alt="JoinUp Logo" class="logo-image" id="logo-image">
     <h1 class="sign-in-title">Log In</h1>
-    <form id="sign-in-form" class="sign-in-form">
+    <form #signInForm="ngForm" id="sign-in-form" class="sign-in-form" (ngSubmit)="signIn(signInForm)">
       <div class="form-group">
         <label for="email-input" class="form-label">Email Address</label>
-        <input name="email" [(ngModel)]="email" type="email" id="email-input"
-               class="form-input" placeholder="johndoe@example.com" required>
+        <div class="input gap-1 d-flex align-content-center">
+          <i class="align-content-center bi-envelope"></i>
+          <input #email_input="ngModel" name="email" [(ngModel)]="email" type="email" id="email-input"
+                 class="form-input flex-grow-1 border-0" placeholder="johndoe@example.com"
+                 pattern="^.+@.+\.\w{2,}$" required>
+        </div>
       </div>
       <div class="form-group">
         <label for="password-input" class="form-label">Password</label>
-        <input name="password" [(ngModel)]="password" type="password" id="password-input"
-               class="form-input" placeholder="********" required>
+        <div class="input gap-1 d-flex align-content-center">
+          <i class="align-content-center bi-lock"></i>
+          <input #password_input="ngModel" name="password" [(ngModel)]="password" type="password" id="password-input"
+                 class="form-input flex-grow-1 border-0" placeholder="********" required>
+        </div>
       </div>
-      <span id="error-message-container" class="error-message">Incorrect email or password</span>
+      <div class="error-message text-danger">
+        <span>{{email.length && !email_input.valid ? 'Please enter a valid email.' : ''}}</span>
+        <span>{{invalidCredentials ? 'Incorrect email or password.' : ''}}</span>
+        <span>{{!signInForm.valid && signInForm.submitted ? 'All fields are required.' : ''}}</span>
+      </div>
       <div class="options">
         <div class="form-check">
           <input type="checkbox" id="keep-logged-button" class="form-check-input">
@@ -25,7 +36,7 @@
         <a href="/signUpFirst" id="register-link" class="link">Create an account</a>
       </div>
       <div class="button-container">
-        <button type="button" (click)="signIn()" class="btn-gradient">LOG IN</button>
+        <button type="submit" class="btn-gradient">LOG IN</button>
       </div>
     </form>
   </div>
