@@ -26,19 +26,22 @@
 .header-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  width: 100%;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-bottom: 3 px;
 }
 
 .header-content h1 {
   font-size: 24px;
   margin: 0;
+  flex: 1;
 }
 
-.bi-x-circle {
-  font-size: 24px;
-  cursor: pointer;
-  margin-left: auto;
-}
 
 hr {
   border: 0;
@@ -72,11 +75,6 @@ hr {
 
 .drop-zone:hover {
   background-color: #e0f7fa;
-}
-
-.bi-upload {
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .drop-zone p {
@@ -182,10 +180,6 @@ hr {
     font-size: 20px;
   }
 
-  .bi-x-circle {
-    font-size: 20px;
-  }
-
   hr {
     border: 0;
     border-top: 1px solid #ccc;
@@ -208,10 +202,6 @@ hr {
   .image-preview {
     width: 5rem;
     height: 5rem;
-  }
-
-  .bi-upload {
-    font-size: 20px;
   }
 
   .drop-zone p {

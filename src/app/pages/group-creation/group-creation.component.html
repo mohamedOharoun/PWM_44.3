@@ -3,7 +3,9 @@
     <div class="group-creation-header">
       <div class="header-content">
         <h1>Group creation</h1>
-        <i routerLink="/social/groups" class="bi-x-circle"></i>
+        <a routerLink="/social/groups">
+          <img class="icon" src="icons/cancel_circle.svg" alt="Close Icon">
+        </a>
       </div>
       <hr>
     </div>
@@ -14,7 +16,7 @@
            (click)="triggerFileInput()">
         <input type="file" id="fileInput" class="hidden" (change)="onFileSelected($event)"/>
         @if (!image) {
-          <i class="bi-upload"></i>
+          <img class="icon" src="icons/upload_icon.svg" alt="Close Icon">
           <p>Upload your image!</p>
         } @else {
           <div class="image-preview">

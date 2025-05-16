@@ -1,25 +1,43 @@
 .user-card {
-    border: 2px solid #23CFA7;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.user-card-icon {
-    margin-left: auto;
-}
-
-.user-card-icon {
-    cursor: pointer;
-    color: grey;
+  border: 2px solid #23CFA7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  width: 100%;
 }
 
 .user-card-image-container {
-    border-radius: 10px;
-    border: 2px solid #23CFA7;
-    width: 3rem;
-    height: 3rem;
+  border-radius: 10px;
+  border: 2px solid #23CFA7;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-card-image-container img {
-    height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-card-name {
+  flex-grow: 1;
+}
+
+.user-card-icons {
+  display: flex;
+  align-items: center;
+}
+
+.user-card-icon {
+  margin-left: auto;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
