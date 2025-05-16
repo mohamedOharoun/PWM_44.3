@@ -1,3 +1,146 @@
-.event-item{
-  height: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content-container {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  color: white;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-container {
+  gap: 1rem;
+  flex: 1;
+}
+
+.photo-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 645 / 385;
+  object-fit: cover;
+}
+
+.second-info-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 400px;
+  overflow-y: auto;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.friend-item, .event-item {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .content-container,
+  .photo-container {
+    width: 100%;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .info-container {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    height: auto;
+    max-height: 400px;
+  }
+
+  .photo-container {
+    display: none;
+  }
+
+  .button-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
 }

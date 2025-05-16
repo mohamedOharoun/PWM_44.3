@@ -4,18 +4,100 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="ionic v2">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="deleted unnecessary imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing-page/feature-info/feature-info.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/landing-page/feature-info/feature-info.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing-page/feature-info/feature-info.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/landing-page/feature-info/feature-info.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing-page/landing-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/landing-page/landing-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing-page/landing-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/landing-page/landing-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/capacitor.build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/join_up/app/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-hdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-mdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-xhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-xxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-xxxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-hdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-mdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-xhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-xxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-xxxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/xml/file_paths.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor.settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/variables.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/card-event-home/card-event-home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/card-event-home/card-event-home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/generic-button/generic-button.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/generic-button/generic-button.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home-page/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/www/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-3IVKBF6N.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-3URSBNH6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-53MGMGSW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-5TSG52GP.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-5TSG52GP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-7D2EH4XU.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-7D2EH4XU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-C5RQ2IC2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-C5RQ2IC2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-D7YYRZS5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-D7YYRZS5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-EB3FUW3Z.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-FIHWJL3W.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-FIHWJL3W.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-FR5ZLMTG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-JOVTWZFF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-K3GX4FC7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-K3GX4FC7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-KMPAVET6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-KMPAVET6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-KXDVYVR3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-MMIXVVWR.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-MMIXVVWR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-NE7N2C3I.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-NMYJD6OP.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-NMYJD6OP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-OOFXNSJC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-OVZOHBXO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-SV7S5NYR.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-SV7S5NYR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-SVYJG7MD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-US5H33OE.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-US5H33OE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-WH7A3G5V.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-X3VBRIRU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-XV247VAB.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-XV247VAB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/chunk-YQURNTHG.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/main-ISQPJSVX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-FFHMD2TL.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-FFHMD2TL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/prerendered-routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/prerendered-routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles-WKLLPFDB.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-WKLLPFDB.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +135,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;1ae87ccc-1821-433c-a8a1-c358f097b85f&quot;
+    &quot;accountId&quot;: &quot;bcf610b8-cc4a-4076-8d88-9886956e1348&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -90,7 +172,7 @@
     &quot;git-widget-placeholder&quot;: &quot;develop-Laura&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eymen/WebstormProjects/PWM_44.3/assets/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/WebstormProjects/PWM_44.3&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -101,7 +183,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/malek/uni/PWM/PWM_44.3/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Laura\\WebstormProjects\\PWM_44.3\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -241,6 +323,8 @@
       <workItem from="1746201405497" duration="1019000" />
       <workItem from="1746280541760" duration="17982000" />
       <workItem from="1746357806010" duration="967000" />
+      <workItem from="1747409476528" duration="6917000" />
+      <workItem from="1747429660097" duration="2407000" />
     </task>
     <task id="LOCAL-00001" summary="build: header template created.">
       <option name="closed" value="true" />
@@ -354,7 +438,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747224490821</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed some styles in landing-page">
+      <option name="closed" value="true" />
+      <created>1747410197888</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747410197888</updated>
+    </task>
+    <task id="LOCAL-00016" summary="deleted unnecessary imports">
+      <option name="closed" value="true" />
+      <created>1747412226620</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1747412226620</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +487,8 @@
     <MESSAGE value="Fix refactor code to improve legibility." />
     <MESSAGE value="feat: RWD on landing page implemented. refactored some aspects as well." />
     <MESSAGE value="ionic v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ionic v2" />
+    <MESSAGE value="fixed some styles in landing-page" />
+    <MESSAGE value="deleted unnecessary imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted unnecessary imports" />
   </component>
 </project>
