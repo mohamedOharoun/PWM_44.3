@@ -1,20 +1,16 @@
-<div class="container">
-    <div class="d-flex align-items-center">
+<div class="stepper-container">
+    <div class="stepper-wrapper">
         @for (step of steps; track $index) {
-            <div class="text-center" (click)="emit(step)">
-                <div
-                        class="step-circle rounded-circle d-flex align-items-center justify-content-center"
-                        [ngClass]="getStepClass(step.step)"
-                        style="width: 3.5rem; height: 3.5rem;"
-                >
+            <div class="step-item" (click)="emit(step)">
+                <div class="step-circle" [ngClass]="getStepClass(step.step)">
                     {{ step.step }}
                 </div>
-                <p class="step-information text-center">
+                <p class="step-information">
                     {{step.text}}
                 </p>
             </div>
             @if ($index < steps.length - 1) {
-                <div class="align-self-lg-start mt-4 flex-grow-1 mx-2" style="height: 2px; background-color: #ccc;"></div>
+                <div class="step-line"></div>
             }
         }
     </div>
