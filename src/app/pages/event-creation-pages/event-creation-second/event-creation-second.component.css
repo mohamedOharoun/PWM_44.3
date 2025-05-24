@@ -1,0 +1,110 @@
+/* Main container */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Central card */
+.central-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Card header */
+.central-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Card header titles */
+.central-card-header h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.central-card-header h2 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* Card center */
+.central-card-center {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Button container */
+.central-card-center > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: auto;
+}
+
+.button-group {
+  display: flex;
+  gap: 8rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+/* Button wrappers */
+.central-card-center .w-50 {
+  width: 50%;
+  padding: 0 0.5rem;
+}
+
+/* Generic button styles */
+app-generic-button {
+  display: block;
+  width: 100%;
+}
+
+app-generic-button[buttonClass="transparent-button"] button {
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+app-generic-button[buttonClass="transparent-button"] button:hover {
+  background-color: #f8f9fa;
+}
+
+app-generic-button[buttonClass="solid-button"] button {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #ffffff;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+app-generic-button[buttonClass="solid-button"] button:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Card footer */
+.central-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

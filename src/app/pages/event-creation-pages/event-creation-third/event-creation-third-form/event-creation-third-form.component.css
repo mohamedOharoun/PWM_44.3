@@ -3,3 +3,55 @@
   padding: 1rem;
   resize: none;
 }
+
+.description-tags-container {
+  padding: 0 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.textarea-input {
+  height: 250px;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.tags-container {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .description-tags-container {
+    padding: 0 0.5rem;
+  }
+
+  .textarea-input {
+    height: 200px;
+  }
+}
