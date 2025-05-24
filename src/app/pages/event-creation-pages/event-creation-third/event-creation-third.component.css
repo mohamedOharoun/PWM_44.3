@@ -43,14 +43,42 @@
 
 .button-group {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
   padding: 1rem 0;
   margin: 1rem 0;
 }
 
 .button-wrapper {
-  flex: 1;
+  display: flex;
   padding: 0 0.5rem;
+}
+
+.button-group .button-wrapper:last-child {
+  margin-top: 3rem !important; /* Force vertical space above last button */
+}
+
+.button-group .button-wrapper + .button-wrapper {
+  margin-top: 3rem !important; /* Add vertical space between the two buttons */
+}
+
+.button-group app-generic-button {
+  display: block; /* Ensure buttons behave as block elements */
+  margin: 0; /* Override any default margins */
+  width: 100%; /* Ensure buttons fill the wrapper */
+}
+
+.button-group app-generic-button .transparent-button,
+.button-group app-generic-button .solid-button,
+.button-group app-generic-button .log-button {
+  margin: 0; /* Remove conflicting margins */
+  width: 100%; /* Ensure full width */
+  padding: 0.5rem; /* Consistent padding */
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    gap: 1rem; /* Slightly smaller gap for mobile */
+  }
 }
 
 .card-footer {

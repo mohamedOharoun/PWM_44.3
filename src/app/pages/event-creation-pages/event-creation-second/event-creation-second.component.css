@@ -52,15 +52,27 @@
 
 .button-group {
   display: flex;
-  gap: 8rem;
+  flex-direction: column;
   padding: 1rem 0;
   margin: 1rem 0;
 }
 
 /* Button wrappers */
 .central-card-center .w-50 {
-  width: 50%;
+  width: 100%;
   padding: 0 0.5rem;
+}
+
+.central-card-center .w-50:last-child {
+  margin-top: 3rem; /* Add vertical space above the last button */
+}
+
+.button-group .w-50:last-child {
+  margin-top: 3rem !important; /* Force vertical space above last button */
+}
+
+.button-group .w-50 + .w-50 {
+  margin-top: 3rem !important; /* Add vertical space between the two buttons */
 }
 
 /* Generic button styles */
