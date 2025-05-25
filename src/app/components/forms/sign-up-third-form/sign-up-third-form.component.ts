@@ -3,6 +3,7 @@ import {FormService} from "../../../services/form.service";
 import {GenericButtonComponent} from "../../generic-button/generic-button.component";
 import {Router} from "@angular/router";
 import {FormsModule} from '@angular/forms';
+import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 
 @Component({
     selector: 'app-sign-up-third-form',
@@ -49,40 +50,20 @@ export class SignUpThirdFormComponent {
         this.image = value;
     }
 
-    protected onDragOver(event: DragEvent) {
-        event.preventDefault();
-    }
-
-    protected onDrop(event: DragEvent) {
-        event.preventDefault();
-
-        const files = event.dataTransfer?.files;
-        if (files && files.length > 0) {
-            this.handleFile(files[0]);
-        }
-    }
-
-    protected handleFile(file: File) {
-        if (file && file.type.startsWith('image/')) {
-            const reader = new FileReader();
-            reader.onload = (e: any) => {
-                this.setImageValue(e.target?.result);
-            };
-            reader.readAsDataURL(file);
-        }
-    }
-
-    protected triggerFileInput() {
-        const fileInput = document.getElementById('fileInput') as HTMLInputElement;
-        if (fileInput) {
-            fileInput.click();
-        }
-    }
-
-    protected onFileSelected(event: any) {
-        const file = event.target.files[0];
-        if (file) {
-            this.handleFile(file);
+    protected async triggerFileInput() {
+        try {
+            const image = await Camera.getPhoto({
+                quality: 90,
+                allowEditing: false,
+                resultType: CameraResultType.DataUrl,
+                source: CameraSource.Photos
+            });
+            
+            if (image.dataUrl) {
+                this.setImageValue(image.dataUrl);
+            }
+        } catch (error) {
+            console.error('Error selecting image:', error);
         }
     }
 

@@ -1,9 +1,8 @@
 <form #third_form="ngForm" class="image-form-container">
-    <div class="input-container drop-zone">
-        <input type="file" id="fileInput" (change)="onFileSelected($event)"/>
+    <div class="input-container drop-zone" (click)="triggerFileInput()">
         @if (!image) {
             <i class="bi-upload fs-5"></i>
-            <p>Upload your image!</p>
+            <p>Select your image!</p>
         } @else {
             <div class="image-preview">
                 <img [src]="image" alt="Loaded Image" />

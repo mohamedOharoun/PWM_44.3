@@ -8,51 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/capacitor.build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/capacitor.settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/reduced-card/reduced-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/reduced-card/reduced-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/reduced-card/reduced-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/reduced-card/reduced-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/reduced-card/reduced-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/reduced-card/reduced-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/io/services/FirebaseEventService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/io/services/FirebaseEventService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/event-creation-pages/event-creation-third/event-creation-third.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/event-creation-pages/event-creation-third/event-creation-third.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/events/events.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/events/events.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/events/events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/events/events.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/events/events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/events/events.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/architecture/io/services/EventService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/architecture/io/services/EventService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/architecture/model/Event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/architecture/model/Event.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/www/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-3IVKBF6N.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-3URSBNH6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-53MGMGSW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-5TSG52GP.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-5TSG52GP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-7D2EH4XU.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-7D2EH4XU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-C5RQ2IC2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-C5RQ2IC2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-D7YYRZS5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-D7YYRZS5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-EB3FUW3Z.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-FIHWJL3W.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-FIHWJL3W.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-FR5ZLMTG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-JOVTWZFF.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-K3GX4FC7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-K3GX4FC7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-KMPAVET6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-KMPAVET6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-KXDVYVR3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-MMIXVVWR.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-MMIXVVWR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-NE7N2C3I.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-NMYJD6OP.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-NMYJD6OP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-OOFXNSJC.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-OVZOHBXO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-SV7S5NYR.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-SV7S5NYR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-SVYJG7MD.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-US5H33OE.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-US5H33OE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-WH7A3G5V.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-X3VBRIRU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-XV247VAB.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/chunk-XV247VAB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/chunk-YQURNTHG.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/polyfills-FFHMD2TL.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-FFHMD2TL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/prerendered-routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/prerendered-routes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/styles-WKLLPFDB.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-WKLLPFDB.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

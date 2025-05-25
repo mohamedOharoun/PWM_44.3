@@ -24,6 +24,6 @@ export class SignInComponent {
     }
 
     protected signIn() {
-        (this.serviceFactory.get('auth') as AuthenticationService).signIn(this.email, this.password).subscribe(() => this.router.navigate(['/events/:section']).then());
+        (this.serviceFactory.get('auth') as AuthenticationService).signIn(this.email, this.password).subscribe(() => this.router.navigate(['/events/Explore']).then());
     }
 }
