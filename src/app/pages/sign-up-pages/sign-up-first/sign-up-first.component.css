@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensures full viewport height for centering, common in Ionic apps */
+}
+
+.central-card {
+  background-color: #ffffff; /* Equivalent to bg-white */
+  padding: 1.5rem; /* Equivalent to p-4 (Bootstrap's padding scale: 4 = 1.5rem) */
+  border-radius: 0.25rem; /* Ionic-friendly subtle border radius */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ionic-like shadow for card effect */
+  max-width: 100%; /* Ensures responsiveness in Ionic */
+  width: 100%;
+}
+
+.central-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-card-header h1 {
+  font-weight: 700; /* Equivalent to fw-bolder */
+  margin: 0;
+}
+
+.central-card-header h2 {
+  font-weight: 300; /* Equivalent to fw-lighter */
+  margin: 0;
+}
+
+.central-card-center {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Equivalent to gap-5 (Bootstrap's gap scale: 5 = 3rem) */
+  padding: 1rem; /* Equivalent to p-3 (Bootstrap's padding scale: 3 = 1rem) */
+}
+
+.central-card-footer {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap; /* Ensures content alignment, mimics align-content-center */
+}
+
+/* Ensure compatibility with Ionic's responsive design */
+@media (max-width: 576px) {
+  .central-card {
+    padding: 1rem;
+  }
+
+  .central-card-center {
+    gap: 1.5rem; /* Smaller gap for mobile */
+  }
+}

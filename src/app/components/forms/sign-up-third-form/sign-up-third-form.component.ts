@@ -2,13 +2,15 @@ import {Component} from '@angular/core';
 import {FormService} from "../../../services/form.service";
 import {GenericButtonComponent} from "../../generic-button/generic-button.component";
 import {Router} from "@angular/router";
+import {FormsModule} from '@angular/forms';
 
 @Component({
     selector: 'app-sign-up-third-form',
-    imports: [
-        GenericButtonComponent
+  imports: [
+    GenericButtonComponent,
+    FormsModule
 
-    ],
+  ],
     templateUrl: './sign-up-third-form.component.html',
     styleUrl: './sign-up-third-form.component.css'
 })

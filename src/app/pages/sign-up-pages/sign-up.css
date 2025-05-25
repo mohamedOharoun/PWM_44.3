@@ -1,32 +1,50 @@
 .central-card {
-    width: 40rem;
-    height: 50rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    width: 90%;
+    max-width: 40rem;
+    margin: 1rem;
 }
 
 .central-card-header {
-    width: 100%;
-    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .central-card-center {
-    width: 100%;
-    height: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .central-card-footer {
-    width: 100%;
-    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
 }
 
 .sign-in-text {
     cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 768px) {
     .central-card {
-        width: 95%;
-        height: 50rem;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+
+    .central-card-center {
+        gap: 1rem;
+        padding: 0.5rem;
     }
 }

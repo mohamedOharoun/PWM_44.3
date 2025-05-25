@@ -1,19 +1,19 @@
-<main class="main d-flex align-items-center justify-content-center">
-    <div class="central-card bg-white p-4">
-        <div class="central-card-header d-flex flex-column align-items-center justify-content-center">
-            <h1 class="fw-bolder">Account information</h1>
-            <h2 class="fw-lighter text-center">we are looking forward to know you</h2>
+<main class="main">
+    <div class="central-card">
+        <div class="central-card-header">
+            <h1>Account information</h1>
+            <h2>we are looking forward to know you</h2>
         </div>
-        <div class="central-card-center d-flex flex-column gap-5 p-3">
+        <div class="central-card-center">
             <app-sign-up-second-form></app-sign-up-second-form>
         </div>
-        <div class="central-card-footer align-content-center">
+        <div class="central-card-footer">
             <app-form-stepper (changePageEmitter)="changePage($event)"
                               [steps]="[
                     {step: 1, route: 'signUpFirst', text: 'Basic information'},
                     {step: 2, route: 'signUpSecond', text: 'Account information'},
                     {step: 3, route: 'signUpThird', text: 'Account photo'},
-                    {step: 4, route: 'signUpFourth', text: 'Privacy policy'},
+                    {step: 4, route: 'signUpFourth', text: 'Privacy policy'}
                 ]"
                               [currentStep]="currentStep"
             ></app-form-stepper>
