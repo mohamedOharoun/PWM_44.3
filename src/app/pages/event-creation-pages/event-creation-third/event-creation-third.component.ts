@@ -53,11 +53,10 @@ export class EventCreationThirdComponent {
           creator: user.id!,
           members: eventInfo.get('members'),
           isPrivate: eventInfo.get('isPrivate'),
-          likes: 0,
           comments: 0
         };
         (this.serviceFactory.get('event') as EventService).createEvent(event);
-        this.router.navigate(['/homePage']).then();
+        this.router.navigate(['/events/Owned']).then();
       } else {
         console.error("There is not user logged in.");
       }

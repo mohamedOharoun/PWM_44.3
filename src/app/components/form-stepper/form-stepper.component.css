@@ -1,8 +1,31 @@
+.stepper-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.stepper-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .step-circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     cursor: pointer;
     border: 2px solid #23CFA7;
     color: black;
-    text-underline: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -25,4 +48,29 @@
     width: 3rem;
     font-size: 0.7rem;
     text-wrap: balance;
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 0.5rem;
+    margin-top: 1.75rem;
+}
+
+@media (max-width: 768px) {
+    .step-circle {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .step-information {
+        font-size: 0.6rem;
+        width: 2.5rem;
+    }
+
+    .step-line {
+        margin-top: 1.25rem;
+    }
 }

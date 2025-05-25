@@ -7,17 +7,17 @@ import {Auth} from "@angular/fire/auth";
 import {Firestore} from "@angular/fire/firestore";
 import {FirebaseUserService} from "./io/services/FirebaseUserService";
 import {FirebaseMessageService} from "./io/services/FirebaseMessageService";
-import {FooterComponent} from './components/footer/footer.component';
 import {FirebaseEventService} from "./io/services/FirebaseEventService";
 import {FirebaseGroupService} from "./io/services/FirebaseGroupService";
+import {IonContent} from "@ionic/angular/standalone";
 
 @Component({
     selector: 'app-root',
-  imports: [
+    imports: [
     RouterOutlet,
     HeaderComponent,
-    FooterComponent
-  ],
+    IonContent
+],
     templateUrl: './app.component.html',
     standalone: true,
     styleUrl: './app.component.css'

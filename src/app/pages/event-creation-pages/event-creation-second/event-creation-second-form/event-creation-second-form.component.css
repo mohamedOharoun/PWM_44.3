@@ -26,4 +26,17 @@ label {
 .users-list-container {
   margin-top: 0.5rem;
   height: 21.7rem;
+  width: 100%;
+  overflow: auto;
+}
+
+.form-container {
+  width: 100%;
+  position: relative;
+}
+
+.members-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }

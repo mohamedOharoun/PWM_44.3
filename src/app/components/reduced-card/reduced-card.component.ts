@@ -5,6 +5,7 @@ import {UserService} from "../../../architecture/io/services/UserService";
 import {EventService} from "../../../architecture/io/services/EventService";
 import { Event } from "../../../architecture/model/Event";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
+import {DatabaseService} from "../../services/database.service";
 
 @Component({
     selector: 'app-reduced-card',
@@ -35,6 +36,7 @@ export class ReducedCardComponent {
 
     @Input() eventID!: string;
     @Output() openMembersListEmitter = new EventEmitter<string>();
+    @Output() unlikeEvent = new EventEmitter<string>();
 
     protected event!: Event;
     protected eventCreator: string = "";
@@ -44,7 +46,8 @@ export class ReducedCardComponent {
     protected isOwned: boolean = false;
 
     constructor(
-        private serviceFactory: ServiceFactory
+        private serviceFactory: ServiceFactory,
+        private databaseService: DatabaseService
     ) {
     }
 
@@ -54,7 +57,7 @@ export class ReducedCardComponent {
             (this.serviceFactory.get('user') as UserService).userWith(res.creator).subscribe(res => this.eventCreator = res.username);
             (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => {
                 this.loggedUserID = res?.id!;
-                (this.serviceFactory.get('event') as EventService).isLikedEvent(this.eventID, this.loggedUserID).subscribe(res => this.isLiked = res);
+                this.databaseService.isFavorite(this.eventID).then(res => this.isLiked = res);
                 (this.serviceFactory.get('event') as EventService).isJoinedEvent(this.eventID, this.loggedUserID).subscribe(res => this.isJoined = res);
                 this.isOwned = this.loggedUserID === this.event.creator;
             });
@@ -96,8 +99,13 @@ export class ReducedCardComponent {
     }
 
     protected toggleLike() {
-        if (!this.isLiked) (this.serviceFactory.get('event') as EventService).likeEvent(this.event, this.loggedUserID);
-        else (this.serviceFactory.get('event') as EventService).unlikeEvent(this.event, this.loggedUserID);
+        if (!this.isLiked) {
+            this.databaseService.addFavorite(this.event);
+        } else {
+            this.databaseService.removeFavorite(this.event.id!);
+            this.unlikeEvent.emit(this.event.id);
+        }
+        this.isLiked = !this.isLiked;
     }
 
     toggleJoin() {

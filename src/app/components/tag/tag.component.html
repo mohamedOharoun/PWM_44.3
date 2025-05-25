@@ -1,6 +1,6 @@
-<div class="tag d-inline-flex align-items-center rounded-pill px-2 py-1 ">
-  <p class="mb-0 me-1 small fs-6 fw-light">#{{ tag }}</p>
-  <button type="button" class="btn p-0 border-0 shadow-none me-1" (click)="onRemove()">
+<div class="tag-item">
+  <p class="tag-text">#{{ tag }}</p>
+  <button type="button" class="tag-button" (click)="onRemove()">
     <img ngSrc="/icons/cancel_circle.svg" alt="Remove tag" width="15" height="15" />
   </button>
 </div>

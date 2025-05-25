@@ -43,13 +43,11 @@ export class FirebaseEventService implements EventService {
     }
 
     likeEvent(event: Event, userID: string): void {
-        event.likes++;
         setDoc(doc(this.store, `users/${userID}/liked_events/${event.id}`), {id: event.id}).then();
         updateDoc(doc(this.store, `events/${event.id}`), {...event}).then();
     }
 
     unlikeEvent(event: Event, userID: string): void {
-        event.likes--;
         deleteDoc(doc(this.store, `users/${userID}/liked_events/${event.id}`)).then();
         updateDoc(doc(this.store, `events/${event.id}`), {...event}).then();
     }

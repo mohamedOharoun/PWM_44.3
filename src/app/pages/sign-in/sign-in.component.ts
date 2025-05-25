@@ -8,10 +8,8 @@ import {FormsModule} from "@angular/forms";
 @Component({
     selector: 'app-sign-in',
     imports: [
-        GenericButtonComponent,
-        RouterLink,
-        FormsModule
-    ],
+    FormsModule
+],
     templateUrl: './sign-in.component.html',
     styleUrl: './sign-in.component.css'
 })
@@ -26,6 +24,6 @@ export class SignInComponent {
     }
 
     protected signIn() {
-        (this.serviceFactory.get('auth') as AuthenticationService).signIn(this.email, this.password).subscribe(() => this.router.navigate(['/homePage']).then());
+        (this.serviceFactory.get('auth') as AuthenticationService).signIn(this.email, this.password).subscribe(() => this.router.navigate(['/events/Explore']).then());
     }
 }

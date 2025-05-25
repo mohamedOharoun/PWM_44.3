@@ -1,22 +1,19 @@
-<header class="page-header shadow p-2">
-    <img routerLink="/" src="icons/logo.svg" width="50" height="50" class="me-3">
-    <button (click)="toggleMenu()" class="toggle-menu-button bg-transparent border-0">
-        <i class="bi-list d-flex align-items-center justify-content-center fs-1"></i>
-    </button>
+<header class="page-header">
+    <img routerLink="/" src="icons/logo.svg" width="50" height="50" class="header-logo">
     @if (user) {
         <nav class="page-header-navigation">
-            <ul class="header-navigation align-items-center list-unstyled pt-3">
-                @for (link of navLinks; track $index) {
-                    <li (click)="navigateTo(link)" class="header-nav-text d-flex align-items-center">
+            <ul class="header-navigation">
+                @for (link of navLinks; track link.page) {
+                    <li (click)="navigateTo(link)" class="header-nav-text">
                         {{ link.page }}
                     </li>
                 }
             </ul>
         </nav>
     }
-    <div id="page-header-buttons" class="ms-auto d-flex align-items-center justify-content-center gap-3">
+    <div id="page-header-buttons" class="header-buttons">
         @if (user) {
-            <i [routerLink]="['/profile', user.username]" class="bi-person-circle fs-1 mt-3"></i>
+            <i [routerLink]="['/profile', user.username]" class="bi-person-circle toggle-menu-icon"></i>
             <app-generic-button text="Sign out" (click)="signOut()" routerLink="homePage"></app-generic-button>
         } @else {
             <app-generic-button [text]="buttonText" routerLink="signin"></app-generic-button>

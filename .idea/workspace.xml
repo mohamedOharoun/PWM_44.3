@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="feat: RWD on landing page implemented. refactored some aspects as well.">
+    <list default="true" id="b738dc12-c61f-47a2-a4a8-8d3930fe5249" name="Changes" comment="fix: arrow image for datetime input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/capacitor.settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/forms/sign-up-third-form/sign-up-third-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/sign-in/sign-in.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/www/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sprint1_PWM_44.3" />
+        <entry key="$PROJECT_DIR$" value="sprint4_PWM_44.3_v2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +52,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mohamedOharoun/PWM_44.3.git&quot;,
-    &quot;accountId&quot;: &quot;253bd5c7-92ca-431c-ac0e-b725cdefdb39&quot;
+    &quot;accountId&quot;: &quot;1ae87ccc-1821-433c-a8a1-c358f097b85f&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -57,37 +65,45 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.chat.html.executor": "Run",
-    "JavaScript Debug.expanded_event_page.html.executor": "Run",
-    "JavaScript Debug.footer.html.executor": "Run",
-    "JavaScript Debug.gorup_creation.html.executor": "Run",
-    "JavaScript Debug.group_creation.html.executor": "Run",
-    "JavaScript Debug.header.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.message_input.html.executor": "Run",
-    "JavaScript Debug.social_navegation.html.executor": "Run",
-    "JavaScript Debug.social_navigation.html.executor": "Run",
-    "JavaScript Debug.tag.html.executor": "Run",
-    "JavaScript Debug.user.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sprint4__PWM__44.3__v2",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/eymen/WebstormProjects/PWM_44.3/assets/images",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JSON",
-    "ts.external.directory.path": "/home/malek/uni/PWM/PWM_44.3/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.chat.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.expanded_event_page.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.footer.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.gorup_creation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.group_creation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.header.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.message_input.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.social_navegation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.social_navigation.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.tag.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.user.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop-Mohamed&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eymen/WebstormProjects/PWM_44.3/assets/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Mohamed O. Haroun\\WebstormProjects\\PWM_44.3_Sprint3\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\eymen\WebstormProjects\PWM_44.3\assets\images" />
@@ -329,7 +345,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743258975744</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ionic v2">
+      <option name="closed" value="true" />
+      <created>1747224490821</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747224490821</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: arrow image for datetime input">
+      <option name="closed" value="true" />
+      <created>1748114985181</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748114985181</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +393,8 @@
     <MESSAGE value="Add search events through tags." />
     <MESSAGE value="Fix refactor code to improve legibility." />
     <MESSAGE value="feat: RWD on landing page implemented. refactored some aspects as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: RWD on landing page implemented. refactored some aspects as well." />
+    <MESSAGE value="ionic v2" />
+    <MESSAGE value="fix: arrow image for datetime input" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: arrow image for datetime input" />
   </component>
 </project>

@@ -1,3 +1,58 @@
+/* Bootstrap class replacements */
+.privacy-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Equivalent to gap-5 */
+}
+
 .checks-container {
-    height: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Equivalent to gap-5 */
+  overflow: auto;
+  height: 15rem; /* Provided CSS */
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 0.5rem; /* Equivalent to gap-2 */
+}
+
+.checkbox-group input {
+  margin-bottom: auto; /* Equivalent to mb-auto */
+  margin-top: 0.5rem; /* Equivalent to mt-2 */
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* Equivalent to gap-1 */
+  margin-top: auto; /* Equivalent to mt-auto */
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-container {
+  width: 50%; /* Equivalent to w-50 */
+  padding-left: 0.5rem; /* Equivalent to px-2 */
+  padding-right: 0.5rem;
+}
+
+.form-footer p {
+  width: 100%; /* Equivalent to w-100 */
+  text-align: center; /* Equivalent to text-center */
+}
+
+/* Ensure compatibility with Ionic's responsive design */
+@media (max-width: 576px) {
+  .checks-container {
+    height: 12rem; /* Adjusted for smaller screens */
+  }
+
+  .button-container {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
 }

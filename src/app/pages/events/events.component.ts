@@ -9,10 +9,11 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
 import {UserService} from "../../../architecture/io/services/UserService";
 import {AuthenticationService} from "../../../architecture/io/services/AuthenticationService";
 import {FormsModule} from "@angular/forms";
+import {DatabaseService} from "../../services/database.service";
 
 @Component({
     selector: 'app-events',
-    imports: [ReducedCardComponent, EventMembersComponent, GenericButtonComponent, RouterLink, FormsModule],
+  imports: [ReducedCardComponent, EventMembersComponent, GenericButtonComponent, RouterLink, FormsModule],
     templateUrl: './events.component.html',
     styleUrl: './events.component.css'
 })
@@ -29,7 +30,8 @@ export class EventsComponent {
 
     constructor(
         private serviceFactory: ServiceFactory,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private databaseService: DatabaseService
     ) {
     }
 
@@ -38,13 +40,12 @@ export class EventsComponent {
             this.title = res.get('section')!;
             (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => {
                 this.loggedUserID = res?.id!;
-                (this.serviceFactory.get('event') as EventService).events().subscribe(res => {
+                (this.serviceFactory.get('event') as EventService).events().subscribe(async res => {
                     const eventsResponse = res;
                     if (this.title === 'Favourite') {
-                        (this.serviceFactory.get('user') as UserService).likedEventsOf(this.loggedUserID).subscribe(res => {
-                            this.events = [...eventsResponse].filter(e => res.find(e2 => e2.id === e.id));
-                            this.filterEvents('');
-                        });
+                        this.events = await this.databaseService.getFavorites();
+                        console.log("Hola ", this.events);
+                        this.filterEvents('');
                     } else if (this.title === 'Joined') {
                         (this.serviceFactory.get('user') as UserService).joinedEventsOf(this.loggedUserID).subscribe(res => {
                             this.events = [...eventsResponse].filter(e => res.find(e2 => e2.id === e.id));
@@ -81,5 +82,12 @@ export class EventsComponent {
     toggleAside() {
         this.aside.nativeElement.classList.toggle('active');
         this.toggleButton.nativeElement.classList.toggle('active');
+    }
+
+    handleUnlike(eventId: string) {
+        if (this.title === 'Favourite') {
+            this.events = this.events.filter(e => e.id !== eventId);
+            this.filteredEvents = this.filteredEvents.filter(e => e.id !== eventId);
+        }
     }
 }

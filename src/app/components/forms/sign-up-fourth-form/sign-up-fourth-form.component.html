@@ -1,28 +1,28 @@
-<form #fourth_form="ngForm" class="d-flex flex-column gap-5">
-    <div class="checks-container d-flex flex-column gap-5 overflow-auto">
-        <div class="d-flex gap-2">
-            <input name="firstPolicyInput" [(ngModel)]="firstPolicy" class="mb-auto mt-2" type="checkbox" id="first-policy" required>
+<form #fourth_form="ngForm" class="privacy-form-container">
+    <div class="checks-container">
+        <div class="checkbox-group">
+            <input name="firstPolicyInput" [(ngModel)]="firstPolicy" type="checkbox" id="first-policy" required>
             <label for="first-policy">
                 I accept the Terms and Conditions of use for the platform. By accepting, I acknowledge that I have read, understood, and agree to comply with the rules and guidelines set forth, including those related to the proper use of the social network, intellectual property rights, and privacy of data.\n I accept the Privacy Policy, understanding how my personal data is collected, stored, and processed on the platform.
             </label>
         </div>
-        <div class="d-flex gap-2">
-            <input name="secondPolicyInput" [(ngModel)]="secondPolicy" class="mb-auto mt-2" type="checkbox" id="second-policy" required>
+        <div class="checkbox-group">
+            <input name="secondPolicyInput" [(ngModel)]="secondPolicy" type="checkbox" id="second-policy" required>
             <label for="second-policy">
                 I accept the Privacy Policy, understanding how my personal data is collected, stored, and processed on the platform. I am aware of my rights regarding the information I provide and how this data is used to enhance my experience on the social network. I understand that I have the ability to manage and modify my privacy preferences at any time, and that my trust in the handling of my data is crucial for maintaining a safe and transparent environment
             </label>
         </div>
     </div>
-    <div class="d-flex flex-column gap-1  mt-auto">
-        <div class="d-flex">
-            <div class="w-50 px-2">
-                <app-generic-button (click)="changePage(previousStep)" text="PREVIOUS" buttonClass="transparent-button" class="w"></app-generic-button>
+    <div class="form-footer">
+        <div class="button-group">
+            <div class="button-container">
+                <app-generic-button (click)="changePage(previousStep)" text="PREVIOUS" buttonClass="transparent-button"></app-generic-button>
             </div>
-            <div class="w-50 px-2">
+            <div class="button-container">
                 <app-generic-button (click)="createAccount(fourth_form)" text="CREATE" buttonClass="solid-button"></app-generic-button>
             </div>
         </div>
-        <p class="w-100 text-center">
+        <p>
             Already have an account? Try <strong class="sign-in-text">signing in.</strong>
             <br>
             <span class="text-danger">{{fourth_form.invalid ? 'Terms must be accepted before creating the account.' : ''}}</span>

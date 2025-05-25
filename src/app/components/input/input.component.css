@@ -34,3 +34,15 @@ select:focus {
   outline: none;
   box-shadow: none;
 }
+
+.input-without-icon input[type="datetime-local"] {
+  padding-right: 2rem; /* Increased padding to accommodate arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.25rem center; /* Arrow closer to the end */
+  background-size: 20px; /* Ensure arrow is appropriately sized */
+  width: 100%; /* Ensure input fills the container */
+}

@@ -1,25 +1,16 @@
 @defer (when event) {
-    <article class="card border-2 border-success p-3 m-2">
-        <div class="d-flex justify-content-between align-items-center pe-4">
-            <div class="d-flex align-items-center">
-                <h2 class="me-2 mb-0">{{ event.name }}</h2>
-                <span class="mx-2 text-muted">></span>
-                <span class="text-secondary">{{ eventCreator }}</span>
+    <article class="event-card">
+        <div class="card-header">
+            <div class="header-title">
+                <div class="name-group">
+                    <h2>{{ event.name }}</h2>
+                </div>
+                <span class="creator">{{ eventCreator }}</span>
             </div>
-            <div class="d-flex gap-2">
+            <div class="header-buttons">
                 @if (isOwned) {
-                    <button class="button-container">
-                        <img [src]="icons.edit" alt="Flag" class="icons-img">
-                    </button>
                     <button (click)="removeEvent()" class="button-container">
-                        <img [src]="icons.remove" alt="Share" class="icons-img">
-                    </button>
-                } @else {
-                    <button class="button-container">
-                        <img [src]="icons.report" alt="Flag" class="icons-img">
-                    </button>
-                    <button class="button-container">
-                        <img [src]="icons.share" alt="Share" class="icons-img">
+                        <img [src]="icons.remove" alt="Remove" class="icons-img">
                     </button>
                 }
             </div>
@@ -27,69 +18,53 @@
 
         <div class="card-body">
             <hr>
-            <div class="d-flex justify-content-between flex-wrap mt-2">
-                <section class="w-75">
-                    <h3 class="h5">Description</h3>
-                    <p class="text-muted">{{ event.description }}</p>
+            <div class="body-content">
+                <section class="description-section">
+                    <h3>Description</h3>
+                    <p>{{ event.description }}</p>
                 </section>
-
-                <section class="d-flex flex-column gap-2 w-25">
-                    <div class="d-flex align-items-center gap-2">
+                <section class="details-section">
+                    <div class="detail-item">
                         <img [src]="icons.date" alt="Time" class="icons-img">
-                        <span class="fs-6">{{ parseDateTimeLocal(event.date) }}</span>
+                        <span>{{ parseDateTimeLocal(event.date) }}</span>
                     </div>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="detail-item">
                         <img [src]="icons.place" alt="Location" class="icons-img">
-                        <span class="fs-6">{{ event.location }}</span>
+                        <span>{{ event.location }}</span>
                     </div>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="detail-item">
                         <img [src]="icons.price" alt="Price" class="icons-img">
-                        <span class="fs-6">{{ priceFormat() }}</span>
+                        <span>{{ priceFormat() }}</span>
                     </div>
                 </section>
             </div>
-
             <hr class="w-75">
-            <div class="d-flex flex-wrap align-items-center gap-2 mt-3 mb-3 w-75">
+            <div class="tags-section">
                 @for (tag of event.tags; track $index) {
-                    <span class="badge text-dark px-3 py-2 rounded-pill tag">
-          {{ tag }}
-        </span>
+                    <span class="tag">{{ tag }}</span>
                 }
             </div>
             <hr class="w-75">
         </div>
 
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex gap-3">
-                <div class="d-flex align-items-center gap-1">
-                    <span class="fw-bold fs-5">{{ compactNumbers(event.likes) }}</span>
-                    <button class="button-container">
-                        <img (click)="toggleLike()" [src]="isLiked ? icons.filled_like : icons.like" alt="Likes" class="icons-img">
-                    </button>
+        <div class="card-footer">
+            <div class="left-group">
+                <div class="interaction-group">
+                    <div class="interaction-item">
+                        <button class="button-container">
+                            <img (click)="toggleLike()" [src]="isLiked ? icons.filled_like : icons.like" alt="Likes" class="icons-img">
+                        </button>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-1">
-                    <span class="fw-bold fs-5">{{ compactNumbers(event.comments) }}</span>
-                    <button class="button-container">
-                        <img [src]="icons.square" alt="Comments" class="icons-img">
-                    </button>
+                <div class="participants-section">
+                    <div class="participants-anchor">
+                        <span class="participants-count">{{ compactNumbers(event.members.length) }}</span>
+                        <img [src]="icons.participants" alt="Participants">
+                    </div>
+                    <span class="participants-label">Participant{{ event.members.length !== 1 ? 's' : '' }}</span>
                 </div>
             </div>
-
-            <div class="flex-grow-1 d-flex justify-content-center">
-                <a href="../../pages/html/events.html" class="button-container">SEE MORE</a>
-            </div>
-
-            <div class="d-flex flex-column align-items-center gap-1" style="width: 21%; margin-top: -80px;">
-                <div (click)="openMembersList()"
-                     class="participants-anchor d-flex align-items-center justify-content-center w-100">
-                <span class="participants-count fw-bold fs-3 text-black"
-                      style="margin-top: 10px">{{ compactNumbers(event.members.length) }}</span>
-                    <img class="mx-3" [src]="icons.participants" alt="Participants">
-                </div>
-                <span class="text-center w-100">Participant{{ event.members.length !== 1 ? 's' : '' }}</span>
-                <app-generic-button (click)="toggleJoin()" [text]="isJoined ? 'Leave' : 'Join'" [buttonClass]="isJoined ? '' : 'solid-button'"></app-generic-button>
-            </div>
+            <app-generic-button (click)="toggleJoin()" [text]="isJoined ? 'Leave' : 'Join'" [buttonClass]="isJoined ? '' : 'solid-button'"></app-generic-button>
         </div>
     </article>
 }

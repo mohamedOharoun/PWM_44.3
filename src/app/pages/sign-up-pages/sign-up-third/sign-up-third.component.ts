@@ -1,16 +1,14 @@
 import {Component, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
 import {FormStepperComponent} from "../../../components/form-stepper/form-stepper.component";
-import {GenericButtonComponent} from "../../../components/generic-button/generic-button.component";
 import {SignUpThirdFormComponent} from "../../../components/forms/sign-up-third-form/sign-up-third-form.component";
 
 @Component({
     selector: 'app-sign-up-third',
     imports: [
-        FormStepperComponent,
-        GenericButtonComponent,
-        SignUpThirdFormComponent
-    ],
+    FormStepperComponent,
+    SignUpThirdFormComponent
+],
     templateUrl: './sign-up-third.component.html',
     styleUrl: '../sign-up.css'
 })
