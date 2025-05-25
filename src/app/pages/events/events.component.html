@@ -1,31 +1,37 @@
-<main id="events-bg" class="main d-flex h-100">
-    <i #toggle_button (click)="toggleAside()" class="toggle-button bi-chevron-double-right m-3 position-absolute"></i>
-    <aside #aside class="events-aside d-flex flex-column bg-white align-items-center shadow">
-        <form #form="ngForm" class="d-flex p-3" (ngSubmit)="filterEvents(name_input.value)">
-            <div class="input-with-icon gap-1 d-flex align-content-center">
-                <i class="align-content-center bi-search"></i>
-                <input #name_input pattern=".{6,}" name="password_input" type="text" class="flex-grow-1 border-0" placeholder="Search by name">
-            </div>        </form>
+<main id="events-bg">
+    <span #toggle_button (click)="toggleAside()" class="toggle-button">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 4l8 8-8 8V4z"/>
+        </svg>
+    </span>
+    <aside #aside class="events-aside">
+        <form #form="ngForm" class="search-form" (ngSubmit)="filterEvents(name_input.value)">
+            <div class="input-with-icon">
+                <i class="bi-search"></i>
+                <input #name_input pattern=".{6,}" name="name_input" type="text" class="flex-grow-1" placeholder="Search by name">
+            </div>
+        </form>
         <hr class="w-75">
         <nav>
-            <ul class="list-unstyled text-center">
-                <li [routerLink]="['/events', 'Explore']" class="fs-3 m-3">Explore</li>
-                <li [routerLink]="['/events', 'Favourite']" class="fs-3 m-3">Favourites</li>
-                <li [routerLink]="['/events', 'Joined']" class="fs-3 m-3">Joined</li>
-                <li [routerLink]="['/events', 'Owned']" class="fs-3 m-3">Owned</li>
+            <ul class="nav-list">
+                <li [routerLink]="['/events', 'Explore']">Explore</li>
+                <li [routerLink]="['/events', 'Favourite']">Favourites</li>
+                <li [routerLink]="['/events', 'Joined']">Joined</li>
+                <li [routerLink]="['/events', 'Owned']">Owned</li>
             </ul>
         </nav>
     </aside>
-    <div class="events-section p-5">
-        <div class="d-flex">
-            <h1>{{title}} Events</h1>
-            <app-generic-button class="ms-auto" routerLink="/eventCreationFirst" text="Create event"></app-generic-button>
+    <div class="events-section">
+        <div class="header-section">
+            <h1>{{title}}</h1>
+            <app-generic-button routerLink="/eventCreationFirst" text="Create event"></app-generic-button>
         </div>
         <hr class="w-100">
         <section>
             @for (event of filteredEvents; track event.id) {
                 <app-reduced-card
                         (openMembersListEmitter)="openWith($event)"
+                        (unlikeEvent)="handleUnlike($event)"
                         [eventID]="event.id!"
                         class="m-3"
                 ></app-reduced-card>

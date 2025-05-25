@@ -1,73 +1,174 @@
+/* Provided CSS */
 #events-bg {
-    background: white;
-}
-
-.events-section {
-    flex: 1 1 0;
-    overflow: auto;
-    height: 92.5vh;
-}
-
-.input-with-icon {
-    margin: 0 1rem;
-    height: 3rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    padding-right: 0.5rem;
-    padding-left: 1rem;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.input-with-icon:hover {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.input-with-icon:focus-within {
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.input-with-icon input {
-    outline: none;
-    background: transparent;
+  background: white;
+  display: flex;
+  height: 100%;
 }
 
 .events-aside {
-    background: white;
-    width: 20rem;
-    transition: left 0.3s ease;
-    z-index: 10;
-    height: 92.5vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 20rem;
+  transition: left 0.3s ease;
+  z-index: 10;
+  height: 95vh;
 }
 
 .toggle-button {
-    display: none;
-    z-index: 1000;
-    transition: transform 0.3s ease, left 0.3s ease;
+  display: none;
+  z-index: 1000;
+  transition: transform 0.3s ease, left 0.3s ease;
+  margin: 1rem;
+  position: absolute;
+  cursor: pointer;
+  width: 2rem; /* Increased size */
+  height: 2rem;
+  color: #000000; /* Ensure visibility */
+  background: rgba(255, 255, 255, 0.8); /* Slight background for contrast */
+  padding: 0.5rem; /* Add padding for better touch target */
+  border-radius: 50%; /* Circular appearance */
+  top: 0.5rem; /* Moved higher */
+  left: 0.5rem; /* Slight offset from edge */
 }
 
+.toggle-button svg {
+  fill: currentColor; /* Inherit color from .toggle-button */
+  width: 100%;
+  height: 100%;
+}
+
+.events-section {
+  flex: 1 1 0;
+  overflow: auto;
+  height: 95vh;
+  padding: 2rem;
+}
+
+.search-form {
+  display: flex;
+  padding: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list li {
+  font-size: 1.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.header-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Keep button on right */
+  align-items: center; /* Center vertically */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 0.5rem; /* Space between title and button */
+}
+
+.header-section h1 {
+  flex: 1 1 auto; /* Allow title to take available space */
+  min-width: 0; /* Prevent overflow */
+  white-space: nowrap; /* Prevent title from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long titles */
+}
+
+.header-section app-generic-button {
+  flex: 0 0 auto; /* Prevent button from wrapping or shrinking */
+}
+
+/* Reuse input-with-icon styles from form-styles.css */
+.input-with-icon {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding-right: 0.5rem;
+  padding-left: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-with-icon:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-with-icon:focus-within {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-with-icon input {
+  outline: none;
+  background: transparent;
+  flex-grow: 1;
+  border: none;
+}
+
+/* Provided media query */
 @media screen and (max-width: 700px) {
-    .events-aside {
-        position: absolute;
-        z-index: 5;
-        height: 92%;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        background: transparent;
-        padding-top: 2rem;
-        left: -20rem;
-    }
+  .events-aside {
+    position: absolute;
+    z-index: 5;
+    height: 100vh; /* Full screen height */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background: white;
+    padding-top: 2rem;
+    left: -20rem;
+  }
 
-    .events-aside.active {
-        left: 0;
-    }
+  .events-aside.active {
+    left: 0;
+    background: white;
+    height: 100vh; /* Full screen height */
+  }
 
-    .toggle-button {
-        display: block;
-        left: 0;
-    }
+  .toggle-button {
+    display: block;
+    left: 0.5rem;
+  }
 
-    .toggle-button.active {
-        left: 17rem;
-        transform: rotate(-180deg);
-    }
+  .toggle-button.active {
+    left: 17rem;
+    transform: rotate(-180deg); /* Rotate arrow left when active */
+  }
+
+  .events-section {
+    padding: 1rem;
+  }
+}
+
+/* Additional Ionic compatibility */
+@media (max-width: 576px) {
+  .events-aside {
+    width: 16rem;
+  }
+
+  .toggle-button.active {
+    left: 13rem;
+  }
+
+  .input-with-icon {
+    margin: 0 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.25rem;
+  }
+
+  .header-section {
+    gap: 0.5rem;
+  }
+
+  .header-section app-generic-button {
+    margin-left: 0;
+  }
 }
