@@ -55,16 +55,27 @@ export class SignUpFourthFormComponent {
         this.saveFormData();
         if (form.invalid) return;
         const signUpInfo: FormService = this.formService.get('signUp');
+
         (this.serviceFactory.get('auth') as AuthenticationService).register(
             signUpInfo.get('email'),
             signUpInfo.get('password'),
             {
-                birthDate: new Date(signUpInfo.get('birthDate')),
+                name: signUpInfo.get('name'),
                 username: signUpInfo.get('username'),
                 description: signUpInfo.getOrDefault('description', ''),
-                image: signUpInfo.get('image')
+                image: signUpInfo.get('image'),
+                birthDate: new Date(signUpInfo.get('birthDate'))
             }
-        ).subscribe();
-        this.router.navigate(['/signin']).then();
+        ).subscribe({
+            next: () => {
+                this.formService.remove('signUp');
+                setTimeout(() => {
+                    this.router.navigate(['/signin'], { replaceUrl: true }).then();
+                }, 100);
+            },
+            error: (error) => {
+                console.error('Registration error:', error);
+            }
+        });
     }
 }

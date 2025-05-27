@@ -41,10 +41,23 @@ export class FirebaseAuthenticationService implements AuthenticationService {
         return from(createUserWithEmailAndPassword(this.auth, email, password)).pipe(
             switchMap((userCredential) => {
                 const userDocRef = doc(this.store, `users/${userCredential.user.uid}`);
-                const userData = { id: userCredential.user.uid, email: userCredential.user.email, ...extraData };
+                const userData = {
+                    id: userCredential.user.uid,
+                    email: email,
+                    name: extraData["name"],
+                    username: extraData["username"],
+                    description: extraData["description"],
+                    image: extraData["image"],
+                    birthDate: extraData["birthDate"]
+                };
+                
                 return from(setDoc(userDocRef, userData)).pipe(
-                    map(() => userData as User)
-                )
+                    switchMap(() => from(this.auth.signOut())),
+                    map(() => {
+                        this.userSubject.next(null);
+                        return userData as User;
+                    })
+                );
             })
         );
     }

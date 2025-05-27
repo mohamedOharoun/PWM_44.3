@@ -39,9 +39,16 @@ export class HeaderComponent {
     }
 
     protected async signOut() {
-        await (this.serviceFactory.get('auth') as AuthenticationService).signOut();
-        (this.serviceFactory.get('auth') as AuthenticationService).user.subscribe(res => console.log(res));
-        this.router.navigate(['/']).then();
+        try {
+            const auth = this.serviceFactory.get('auth') as AuthenticationService;
+            await auth.signOut();
+            // Unsubscribe from user updates before navigation
+            this.user = null;
+            // Force navigation to root and reload the page
+            window.location.href = '/';
+        } catch (error) {
+            console.error('Error during sign out:', error);
+        }
     }
 }
 

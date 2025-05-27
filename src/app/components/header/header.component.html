@@ -13,8 +13,7 @@
     }
     <div id="page-header-buttons" class="header-buttons">
         @if (user) {
-            <i [routerLink]="['/profile', user.username]" class="bi-person-circle toggle-menu-icon"></i>
-            <app-generic-button text="Sign out" (click)="signOut()" routerLink="homePage"></app-generic-button>
+            <app-generic-button text="Sign out" (click)="signOut()"></app-generic-button>
         } @else {
             <app-generic-button [text]="buttonText" routerLink="signin"></app-generic-button>
         }
